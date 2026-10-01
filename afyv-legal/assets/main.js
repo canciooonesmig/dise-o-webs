@@ -88,6 +88,27 @@
     }));
   });
 
+  /* ───── Chart tooltips (hover and keyboard focus) ───── */
+  $$('[data-chart]').forEach((chart) => {
+    const tip = $('.chart__tip', chart);
+    const show = (seg, x, y) => {
+      const [label, value] = seg.dataset.tip.split('|');
+      tip.querySelector('strong').textContent = value;
+      tip.querySelector('span').textContent = label;
+      const r = chart.getBoundingClientRect();
+      if (x === undefined) { const s = seg.getBoundingClientRect(); x = s.left + s.width / 2; y = s.top; }
+      tip.style.left = `${Math.min(Math.max(x - r.left, 90), r.width - 90)}px`;
+      tip.style.top = `${y - r.top}px`;
+      tip.hidden = false;
+    };
+    $$('.seg', chart).forEach((seg) => {
+      seg.addEventListener('pointermove', (e) => show(seg, e.clientX, e.clientY));
+      seg.addEventListener('focus', () => show(seg));
+      seg.addEventListener('pointerleave', () => { tip.hidden = true; });
+      seg.addEventListener('blur', () => { tip.hidden = true; });
+    });
+  });
+
   /* ───── Pointer niceties (fine pointers, full motion) ───── */
   if (finePointer && !reduce) {
     const cursor = document.createElement('div');
@@ -254,6 +275,17 @@
     });
     $$('.post-card__media img, .member__media img').forEach((img) => {
       gsap.fromTo(img, { clipPath: 'inset(12% 12% 12% 12% round 0px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', duration: 1.4, ease, scrollTrigger: { trigger: img, start: 'top 92%', once: true } });
+    });
+
+    // Data: bars grow from the baseline, figures count up
+    const nf = new Intl.NumberFormat('es-CL');
+    $$('[data-count]').forEach((el) => {
+      const end = Number(el.dataset.count);
+      const o = { v: 0 };
+      gsap.to(o, { v: end, duration: 1.8, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true }, onUpdate: () => { el.textContent = nf.format(Math.round(o.v)); } });
+    });
+    $$('[data-bar]').forEach((bar, i) => {
+      gsap.from(bar, { scaleX: 0, duration: 1.4, ease: 'expo.out', delay: (i % 3) * 0.08, scrollTrigger: { trigger: bar, start: 'top 92%', once: true } });
     });
 
     const mm = gsap.matchMedia();

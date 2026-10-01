@@ -312,6 +312,139 @@ const ART = {
   })(),
 };
 
+
+/* ───────────── Chile en cifras (datos públicos, con fuente) ───────────── */
+
+const fmt = (n) => n.toLocaleString('es-CL');
+const MINECON = 'Ministerio de Economía';
+const CIFRAS = {
+  empresas: [
+    { period: '2023', total: 167769, a: 147784, b: 19985, source: `${MINECON}, Informe RES diciembre 2023` },
+    { period: '2025', total: 221262, a: 202406, b: 18856, source: `${MINECON}, Informe RES diciembre 2025` },
+    { period: 'Ene–ago 2026', note: '8 meses', total: 161318, a: 148405, b: 12913, source: `${MINECON}, Informe RES agosto 2026` },
+  ],
+  rm: { total: 89715, pct: 44.3, source: `${MINECON}, 6 feb 2026` },
+  marcas: [
+    { period: '2024', total: 62391, a: 43689, b: 18702, source: 'INAPI, Reporte Cuenta Pública 2025' },
+    { period: '1 ene–1 dic 2025', total: 64508, a: 48590, b: 15918, source: `${MINECON}, 18 feb 2026` },
+  ],
+};
+
+const FLAG_CL = (() => {
+  // Official proportions 3:2; canton = half the height; star diameter = half the canton
+  const pts = Array.from({ length: 10 }, (_, i) => {
+    const r = i % 2 ? 1.0 : 2.5;
+    const a = -Math.PI / 2 + (i * Math.PI) / 5;
+    return `${(5 + r * Math.cos(a)).toFixed(3)},${(5 + r * Math.sin(a)).toFixed(3)}`;
+  }).join(' ');
+  return `<span class="flag-cl" role="img" aria-label="Bandera de Chile">
+  <svg viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="flag-clip"><rect width="30" height="20" rx="2.2"/></clipPath>
+      <linearGradient id="flag-shade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/>
+      </linearGradient>
+    </defs>
+    <g clip-path="url(#flag-clip)">
+      <rect width="30" height="10" fill="#ffffff"/>
+      <rect y="10" width="30" height="10" fill="#d52b1e"/>
+      <rect width="10" height="10" fill="#0039a6"/>
+      <polygon points="${pts}" fill="#ffffff"/>
+      <rect width="30" height="20" fill="url(#flag-shade)"/>
+      <rect class="flag-cl__sheen" x="-14" y="-4" width="8" height="28" fill="#fff" opacity=".35" transform="rotate(20 0 0)"/>
+    </g>
+    <rect x=".25" y=".25" width="29.5" height="19.5" rx="2" fill="none" stroke="rgba(255,255,255,.35)" stroke-width=".5"/>
+  </svg>
+</span>`;
+})();
+
+function barChart({ id, title, rows, keys, max, note }) {
+  const scale = (v) => ((v / max) * 100).toFixed(3);
+  return `<figure class="chart" data-chart aria-labelledby="${id}-t">
+  <div class="chart__head">
+    <h3 class="chart__title" id="${id}-t">${title}</h3>
+    <ul class="legend" aria-label="Leyenda">
+      <li><span class="legend__key legend__key--a" aria-hidden="true"></span>${keys[0]}</li>
+      <li><span class="legend__key legend__key--b" aria-hidden="true"></span>${keys[1]}</li>
+    </ul>
+  </div>
+  <div class="chart__rows">
+    ${rows.map((r) => `<div class="chart__row">
+      <div class="chart__label"><span>${r.period}</span>${r.note ? `<em>${r.note}</em>` : ''}</div>
+      <div class="chart__track">
+        <div class="chart__bar" style="width:${scale(r.total)}%" data-bar>
+          <span class="seg seg--a" style="flex-grow:${r.a}" tabindex="0" data-tip="${r.period} · ${keys[0]}|${fmt(r.a)}" aria-label="${r.period}, ${keys[0]}: ${fmt(r.a)}">${r.a / r.total > 0.3 ? `<span class="seg__label">${fmt(r.a)}</span>` : ''}</span>
+          <span class="seg seg--b" style="flex-grow:${r.b}" tabindex="0" data-tip="${r.period} · ${keys[1]}|${fmt(r.b)}" aria-label="${r.period}, ${keys[1]}: ${fmt(r.b)}"></span>
+        </div>
+        <span class="chart__total"><span data-count="${r.total}">${fmt(r.total)}</span></span>
+      </div>
+    </div>`).join('')}
+  </div>
+  <figcaption class="chart__src">
+    ${note ? `<p>${note}</p>` : ''}
+    <ul>${rows.map((r) => `<li><span>${r.period}</span> Fuente: ${r.source}</li>`).join('')}</ul>
+  </figcaption>
+  <div class="chart__tip" role="presentation" hidden><strong></strong><span></span></div>
+</figure>`;
+}
+
+function cifras() {
+  const e25 = CIFRAS.empresas[1];
+  const m25 = CIFRAS.marcas[1];
+  const table = (caption, rows, keys) => `<table>
+    <caption>${caption}</caption>
+    <thead><tr><th scope="col">Período</th><th scope="col">Total</th><th scope="col">${keys[0]}</th><th scope="col">${keys[1]}</th><th scope="col">Fuente</th></tr></thead>
+    <tbody>${rows.map((r) => `<tr><th scope="row">${r.period}</th><td>${fmt(r.total)}</td><td>${fmt(r.a)}</td><td>${fmt(r.b)}</td><td>${r.source}</td></tr>`).join('')}</tbody>
+  </table>`;
+  return `<section class="section cifras" id="cifras" aria-labelledby="cifras-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label" data-reveal>( 03 ) Chile en cifras ${FLAG_CL.replace('class="flag-cl"', 'class="flag-cl flag-cl--sm"').replace(/flag-clip|flag-shade/g, (m) => `${m}-2`)}</span>
+          <h2 class="title" id="cifras-title" data-split style="margin-top:1.5rem">Emprender en Chile, <span class="hl">en cifras</span></h2>
+        </div>
+        <p class="lede" data-reveal="1">Cifras oficiales sobre la creación de empresas y las solicitudes de marcas en Chile.</p>
+      </div>
+
+      <div class="kpis">
+        <article class="kpi" data-reveal>
+          <p class="kpi__label">Empresas creadas en Chile en 2025</p>
+          <p class="kpi__value"><span data-count="${e25.total}">${fmt(e25.total)}</span></p>
+          <p class="kpi__meta">${fmt(e25.a)} por Registro de Empresas y Sociedades (RES, en línea) · ${fmt(e25.b)} por Diario Oficial</p>
+          <p class="kpi__src">Fuente: ${e25.source}</p>
+        </article>
+        <article class="kpi" data-reveal="1">
+          <p class="kpi__label">Empresas creadas en la Región Metropolitana en 2025</p>
+          <p class="kpi__value"><span data-count="${CIFRAS.rm.total}">${fmt(CIFRAS.rm.total)}</span></p>
+          <div class="meter" role="img" aria-label="${String(CIFRAS.rm.pct).replace('.', ',')}% de las empresas creadas por RES en 2025">
+            <span class="meter__fill" style="width:${CIFRAS.rm.pct}%" data-bar></span>
+          </div>
+          <p class="kpi__meta"><strong>${String(CIFRAS.rm.pct).replace('.', ',')}%</strong> de las empresas creadas por RES</p>
+          <p class="kpi__src">Fuente: ${CIFRAS.rm.source}</p>
+        </article>
+        <article class="kpi" data-reveal="2">
+          <p class="kpi__label">Marcas solicitadas en INAPI, 1 de enero al 1 de diciembre de 2025</p>
+          <p class="kpi__value"><span data-count="${m25.total}">${fmt(m25.total)}</span></p>
+          <p class="kpi__meta">${fmt(m25.a)} de residentes · ${fmt(m25.b)} de no residentes</p>
+          <p class="kpi__src">Fuente: ${m25.source}</p>
+        </article>
+      </div>
+
+      <div class="charts">
+        ${barChart({ id: 'ch-empresas', title: 'Empresas creadas en Chile', rows: CIFRAS.empresas, keys: ['RES (en línea)', 'Diario Oficial'], max: 230000, note: 'El período 2026 abarca enero a agosto.' })}
+        ${barChart({ id: 'ch-marcas', title: 'Marcas solicitadas en INAPI', rows: CIFRAS.marcas, keys: ['Residentes', 'No residentes'], max: 70000, note: 'La cifra de 2025 cubre del 1 de enero al 1 de diciembre; el total del año completo no está publicado en un informe (está en el conjunto de datos «Solicitudes de Marcas» de INAPI, datos.gob.cl).' })}
+      </div>
+
+      <details class="datatable">
+        <summary class="paren">Ver datos en tabla</summary>
+        ${table('Empresas creadas en Chile', CIFRAS.empresas, ['RES (en línea)', 'Diario Oficial'])}
+        ${table('Marcas solicitadas en INAPI', CIFRAS.marcas, ['Residentes', 'No residentes'])}
+        <p class="kpi__src">Región Metropolitana 2025: ${fmt(CIFRAS.rm.total)} empresas, ${String(CIFRAS.rm.pct).replace('.', ',')}% de las creadas por RES (${CIFRAS.rm.source}).</p>
+      </details>
+    </div>
+  </section>`;
+}
+
 /* ───────────── Pages ───────────── */
 
 const built = [];
@@ -329,7 +462,7 @@ built.push(page({
   <div class="wrap hero__inner">
     <div class="hero__top">
       <span class="label" data-reveal>Bienvenidos a AFyV</span>
-      <span class="mono" data-reveal="1" style="color:var(--text-dim)">Santiago, Chile — 33°27′S 70°40′O</span>
+      <span class="hero__place" data-reveal="1">${FLAG_CL}<span class="mono">Santiago, Chile — 33°27′S 70°40′O</span></span>
     </div>
     <h1 class="display hero__title" id="hero-title" data-split>El Derecho <span class="hl">cerca</span> de&nbsp;ti</h1>
     <div class="hero__row">
@@ -411,13 +544,14 @@ built.push(page({
       </article>
     </div>
   </section>
+  ${cifras()}
 </div>
 
 <section class="hscroll section" data-hscroll aria-labelledby="equipo-title" style="padding-block:clamp(5rem,10vw,8rem)">
   <div class="hscroll__track">
     <div class="hscroll__intro">
       <div>
-        <span class="label" data-reveal>( 03 ) Conoce más Acerca de Nosotros</span>
+        <span class="label" data-reveal>( 04 ) Conoce más Acerca de Nosotros</span>
         <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Y nuestro compromiso por llevar el Derecho <span class="hl">cerca</span> de ti</h2>
       </div>
       <div data-reveal>${btn('equipo.html', 'Sobre Nosotros', 'btn--ghost')}</div>
@@ -431,7 +565,7 @@ built.push(page({
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          <span class="label" data-reveal>( 04 ) Blog</span>
+          <span class="label" data-reveal>( 05 ) Blog</span>
           <h2 class="title" id="informa-title" data-split style="margin-top:1.5rem">AFyV Informa</h2>
         </div>
         <a class="paren" href="blog.html" data-reveal="1">Ver todas las publicaciones</a>

@@ -60,6 +60,12 @@ node afyv-legal/_src/build.mjs
 
 Con `prefers-reduced-motion` se desactivan el scroll suave, la cortina y las animaciones de desplazamiento; todo el contenido queda visible y la portada muestra un fotograma fijo.
 
+## Chile en cifras
+
+Sección de la portada con datos públicos sobre creación de empresas y solicitudes de marcas, cada cifra con su fuente (Ministerio de Economía e INAPI). Los datos están en `CIFRAS` dentro de `_src/build.mjs`; para actualizarlos, edita los números y fuentes ahí y vuelve a generar el sitio. Incluye cifras destacadas con conteo animado, barras apiladas con información al pasar el cursor o al navegar con teclado, y una tabla con todos los datos. Los colores del gráfico (verde `#1f7a4d` y azul `#3f5bd0`) se validaron para personas con daltonismo.
+
+La portada muestra además una bandera de Chile junto a "Santiago, Chile", con proporciones oficiales.
+
 ## Notas
 
 - **Formulario de contacto:** abre el programa de correo del visitante con el mensaje dirigido a contacto@afyvlegal.com. Para recibir los mensajes sin que el visitante use su correo, se puede conectar a un servicio de formularios (Formspree, Netlify Forms, etc.).
