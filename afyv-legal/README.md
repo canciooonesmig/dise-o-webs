@@ -1,6 +1,6 @@
-# AFyV Legal — rediseño del sitio
+# AFyV Legal — rediseño del sitio (v2)
 
-Rediseño de [afyvlegal.com](https://www.afyvlegal.com) con el mismo contenido sustantivo, con una dirección visual y de animación inspirada en [crosby.ai](https://crosby.ai): fondo papel, tipografía editorial serif a gran escala, bandas de color sólido y movimiento sobrio. El rojo de Crosby se reemplazó por el verde de la marca AFyV.
+Rediseño de [afyvlegal.com](https://www.afyvlegal.com) con el mismo contenido sustantivo. La dirección visual toma ideas de [Crosby](https://crosby.ai), [Partech](https://partechpartners.com), [Peerscale](https://www.peerscale.com) y [AngelList](https://www.angellist.com) sin copiar ninguno: base verde casi negra con haces de luz y grano, tipografía serif editorial a gran escala, paneles claros que se deslizan sobre el fondo oscuro, y un único acento menta.
 
 ## Ver el sitio
 
@@ -46,18 +46,24 @@ node afyv-legal/_src/build.mjs
 
 ## Animaciones
 
-- Logotipo "AFyV" gigante que se revela letra por letra al cargar; el logotipo pequeño del encabezado aparece al pasar la portada.
-- Revelado suave de secciones al hacer scroll.
-- Cascadas tipográficas (DERECHO / CERCA…) en las bandas de color.
-- Carrusel continuo de áreas de práctica y del equipo (se pausa al pasar el cursor).
-- "Nuestro Método de Trabajo": placas isométricas que se activan según la etapa visible.
-- Retratos en blanco y negro que pasan a color al pasar el cursor.
+- **Portada en WebGL** (`assets/gl.js`): curvas de nivel finas iluminadas por un haz de luz que sigue al cursor, con grano de película. Se pausa fuera de pantalla y en pestañas ocultas.
+- **Cortina entre páginas** con contador la primera vez que se entra al sitio.
+- **Scroll suave** (Lenis) y coreografía con GSAP ScrollTrigger:
+  - titulares que suben línea a línea desde una máscara;
+  - el párrafo "Sobre Nosotros" se ilumina palabra a palabra al desplazarse;
+  - tarjetas de servicios que se apilan (escritorio), con ilustraciones de línea que se dibujan;
+  - galería horizontal del equipo controlada por el scroll vertical (escritorio);
+  - "Nuestro Método de Trabajo" fijado en pantalla con placas 3D que se activan por etapa;
+  - contador de razones que rueda según la razón visible;
+  - el logotipo del pie sube letra a letra al llegar al final.
+- **Detalles de interacción:** cursor propio, botones magnéticos, filas de áreas que se rellenan al pasar el cursor, menú en píldora que se oculta al bajar y reaparece al subir, barra de lectura en los artículos, reloj de Santiago en el pie.
 
-Todo respeta `prefers-reduced-motion`: con movimiento reducido, solo quedan los fundidos.
+Con `prefers-reduced-motion` se desactivan el scroll suave, la cortina y las animaciones de desplazamiento; todo el contenido queda visible y la portada muestra un fotograma fijo.
 
 ## Notas
 
 - **Formulario de contacto:** abre el programa de correo del visitante con el mensaje dirigido a contacto@afyvlegal.com. Para recibir los mensajes sin que el visitante use su correo, se puede conectar a un servicio de formularios (Formspree, Netlify Forms, etc.).
-- **Fuentes:** Newsreader y Geist (licencia SIL Open Font), alojadas localmente en `assets/fonts/`.
+- **Fuentes:** Newsreader, Geist y Geist Mono (licencia SIL Open Font), alojadas localmente en `assets/fonts/`.
+- **Librerías** (en `assets/vendor/`, sin CDN): GSAP 3.15 con ScrollTrigger y SplitText (licencia estándar gratuita de GSAP, apta para uso comercial) y Lenis 1.3 (MIT).
 - **Imágenes:** logo, retratos y portadas de los artículos provienen del sitio actual.
 - **Ajustes de texto respecto al original:** se corrigieron "Contratatación" → "Contratación" y "situaciones situaciones" → "situaciones"; se quitó del Plan Registra tu Marca un párrafo que repetía el del Plan Constituye tu Empresa; los títulos de artículos escritos en mayúsculas se muestran en tipo oración.

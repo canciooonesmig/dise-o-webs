@@ -6,7 +6,7 @@
 <title>Términos y Condiciones — AFyV Legal</title>
 <meta name="description" content="Términos y Condiciones de acceso, uso y consulta del sitio web de AFyV Legal.">
 <link rel="canonical" href="https://www.afyvlegal.com/terminos-y-condiciones.html">
-<meta name="theme-color" content="#f6f2e8">
+<meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
@@ -17,41 +17,43 @@
 <link rel="preload" href="assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('is-loading');setTimeout(function(){d.classList.remove('is-loading')},4000)}})(document.documentElement)</script>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/gl.js" defer></script>
 <script src="assets/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="topbar" aria-hidden="true"></div>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav class="nav" aria-label="Principal">
-      <ul class="nav__list"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul>
-      <a class="btn btn--sm" href="index.html#contacto">Contáctanos</a>
-    </nav>
-    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">
-      <span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span>
-    </button>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
+    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul></nav>
+    <div class="nav__cta"><a class="btn btn--mint" href="index.html#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
-<div class="mobile-menu" id="mobile-menu">
-  <nav aria-label="Principal (móvil)"><ul class="mobile-menu__list"><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="blog.html">Blog</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul></nav>
-  <a class="btn" href="index.html#contacto">Contáctanos</a>
+<div class="sheet" id="sheet">
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html"><span>01</span>Inicio</a></li><li><a href="servicios.html"><span>02</span>Servicios</a></li><li><a href="blog.html"><span>03</span>Blog</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="terminos-y-condiciones.html" aria-current="page"><span>05</span>Avisos Legales</a></li></ul></nav>
+  <div class="sheet__foot"><a class="btn btn--mint" href="index.html#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><span class="mono">Santiago, Chile.</span></div>
 </div>
 <main id="contenido" tabindex="-1">
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
+<section class="page-hero" data-intro aria-labelledby="t">
+  <div class="hero__gl" data-gl></div>
+  <div class="wrap page-hero__grid hero__inner" style="padding:0">
     <div>
-      <span class="eyebrow">Avisos Legales</span>
-      <h1 class="display" id="t">Términos y Condiciones</h1>
+      <span class="label" data-reveal>Avisos Legales</span>
+      <h1 class="display" id="t" data-split>Términos y Condiciones</h1>
     </div>
-    <p class="lede"><a class="link-arrow" href="politica-de-privacidad.html">Ver Política de Privacidad</a></p>
+    <p class="lede" data-reveal="2"><a class="paren" href="politica-de-privacidad.html">Ver Política de Privacidad</a></p>
   </div>
 </section>
-<section class="section">
-  <div class="wrap--narrow prose prose--legal">
-    <p>AFyV en adelante indistintamente "AFyV", la "Empresa", el "Estudio" o el "Prestador", con domicilio en comuna de Las Condes, ciudad de Santiago, correo electrónico de contacto "<a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a>", viene en establecer los siguientes Términos y Condiciones de acceso, uso y consulta del sitio web <a href="index.html">www.afyvlegal.com</a>, redes sociales, correo electrónico, formularios de contacto y demás canales presenciales o remotos habilitados por la Empresa, en adelante indistintamente el "Sitio", la "Plataforma" o los "Canales".</p>
+<div class="light">
+  <section class="section">
+    <div class="wrap--narrow prose prose--legal"><p>AFyV en adelante indistintamente "AFyV", la "Empresa", el "Estudio" o el "Prestador", con domicilio en comuna de Las Condes, ciudad de Santiago, correo electrónico de contacto "<a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a>", viene en establecer los siguientes Términos y Condiciones de acceso, uso y consulta del sitio web <a href="index.html">www.afyvlegal.com</a>, redes sociales, correo electrónico, formularios de contacto y demás canales presenciales o remotos habilitados por la Empresa, en adelante indistintamente el "Sitio", la "Plataforma" o los "Canales".</p>
 <p>A través del Sitio, los clientes o usuarios, en adelante el "Usuario" o los "Usuarios", podrán acceder a información general sobre AFyV, sus áreas de práctica y servicios, solicitar información, remitir antecedentes, formular consultas, pedir contacto, requerir reuniones, solicitar cotizaciones o propuestas y, en general, iniciar un acercamiento preliminar con la Empresa.</p>
 <p>Los actos, encargos, servicios, prestaciones, propuestas y contratos que eventualmente se celebren entre AFyV y un cliente no se perfeccionarán por el solo uso del Sitio, sino únicamente en la forma y bajo las condiciones que AFyV determine en cada caso particular y que consten expresamente en la respectiva propuesta, cotización, hoja de encargo, orden de trabajo, correo de confirmación, oferta particular o contrato específico suscrito o aceptado por las partes.</p>
 <p>Cada vez que se realice una actualización del presente documento, la nueva versión podrá ser publicada en el Sitio. El uso del Sitio por parte del Usuario importará conocimiento de los presentes Términos y Condiciones en su versión vigente al momento del acceso.</p>
@@ -131,34 +133,27 @@
 <p>15.3) Para todos los efectos legales, AFyV fija su domicilio en la comuna de Las Condes, ciudad de Santiago.</p>
 <h2 class="caps">XVI. VIGENCIA</h2>
 <p>16.1) Los presentes Términos y Condiciones corresponden a la versión vigente publicada en el Sitio a la fecha de su incorporación</p>
-  </div>
-</section>
+</div>
+  </section>
+</div>
 </main>
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <div class="site-footer__grid">
-      <div class="site-footer__meta">
-        <p style="margin:0">El Derecho cerca de ti.</p>
-        <p style="margin:0">Santiago, Chile.</p>
-        <a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a>
-        <a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <ul class="site-footer__nav">
-        <li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="blog.html">Blog</a></li><li><a href="equipo.html">Equipo</a></li>
-      </ul>
-      <ul class="site-footer__nav">
-        <li><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a></li>
-        <li><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a></li>
-        <li><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-    <div class="site-footer__legal">
-      <span>© 2026 AFyV Legal</span>
-      <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-      <a href="politica-de-privacidad.html">Política de Privacidad</a>
+      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="blog.html">Blog</a><a href="equipo.html">Equipo</a></div>
+      <div class="footer__col"><span class="mono">Redes</span><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></div>
+      <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a><span style="color:var(--text-soft)">Santiago, Chile.</span></div>
     </div>
   </div>
-  <p class="site-footer__mark wrap" aria-hidden="true">AFyV</p>
+  <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
+  <div class="wrap footer__legal mono">
+    <span>© 2026 AFyV Legal</span>
+    <nav aria-label="Avisos legales"><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
+  </div>
 </footer>
 </body>
 </html>

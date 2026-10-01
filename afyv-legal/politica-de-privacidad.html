@@ -6,7 +6,7 @@
 <title>Política de Privacidad — AFyV Legal</title>
 <meta name="description" content="Política de tratamiento de datos personales de AFyV Legal.">
 <link rel="canonical" href="https://www.afyvlegal.com/politica-de-privacidad.html">
-<meta name="theme-color" content="#f6f2e8">
+<meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
@@ -17,41 +17,43 @@
 <link rel="preload" href="assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/styles.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('is-loading');setTimeout(function(){d.classList.remove('is-loading')},4000)}})(document.documentElement)</script>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/gl.js" defer></script>
 <script src="assets/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="topbar" aria-hidden="true"></div>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav class="nav" aria-label="Principal">
-      <ul class="nav__list"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul>
-      <a class="btn btn--sm" href="index.html#contacto">Contáctanos</a>
-    </nav>
-    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">
-      <span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span>
-    </button>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
+    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul></nav>
+    <div class="nav__cta"><a class="btn btn--mint" href="index.html#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
-<div class="mobile-menu" id="mobile-menu">
-  <nav aria-label="Principal (móvil)"><ul class="mobile-menu__list"><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="blog.html">Blog</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="terminos-y-condiciones.html" aria-current="page">Avisos Legales</a></li></ul></nav>
-  <a class="btn" href="index.html#contacto">Contáctanos</a>
+<div class="sheet" id="sheet">
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html"><span>01</span>Inicio</a></li><li><a href="servicios.html"><span>02</span>Servicios</a></li><li><a href="blog.html"><span>03</span>Blog</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="terminos-y-condiciones.html" aria-current="page"><span>05</span>Avisos Legales</a></li></ul></nav>
+  <div class="sheet__foot"><a class="btn btn--mint" href="index.html#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><span class="mono">Santiago, Chile.</span></div>
 </div>
 <main id="contenido" tabindex="-1">
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
+<section class="page-hero" data-intro aria-labelledby="t">
+  <div class="hero__gl" data-gl></div>
+  <div class="wrap page-hero__grid hero__inner" style="padding:0">
     <div>
-      <span class="eyebrow">Avisos Legales</span>
-      <h1 class="display" id="t">Política de Privacidad</h1>
+      <span class="label" data-reveal>Avisos Legales</span>
+      <h1 class="display" id="t" data-split>Política de Privacidad</h1>
     </div>
-    <p class="lede"><a class="link-arrow" href="terminos-y-condiciones.html">Ver Términos y Condiciones</a></p>
+    <p class="lede" data-reveal="2"><a class="paren" href="terminos-y-condiciones.html">Ver Términos y Condiciones</a></p>
   </div>
 </section>
-<section class="section">
-  <div class="wrap--narrow prose prose--legal">
-    <p>El tratamiento de datos personales por parte de AFyV (tratado indistintamente como el “Estudio” la “Empresa” o el “Prestador”) se rige por la ley 19.628 y será modificado en diciembre de 2026 para dar cumplimiento a la ley 21.719. En este contexto, el estudio se compromete a tratar sus datos personales conforme a los siguientes principios.</p>
+<div class="light">
+  <section class="section">
+    <div class="wrap--narrow prose prose--legal"><p>El tratamiento de datos personales por parte de AFyV (tratado indistintamente como el “Estudio” la “Empresa” o el “Prestador”) se rige por la ley 19.628 y será modificado en diciembre de 2026 para dar cumplimiento a la ley 21.719. En este contexto, el estudio se compromete a tratar sus datos personales conforme a los siguientes principios.</p>
 <p>Calidad y exactitud de los datos.<br>
 Licitud, lealtad y transparencia.<br>
 Voluntariedad del titular.<br>
@@ -120,34 +122,27 @@ Seguridad.</p>
 <p>En caso de usar cookies de terceros, AFyV se asegurará de que el proveedor de servicios tenga un estándar de tratamiento de datos conforme a la legislación vigente.</p>
 <h2 class="caps">MODIFICACION A LA POLÍTICA</h2>
 <p>AFyV Legal se reserva el derecho de modificar unilateralmente la presente política para adaptarla a cambios normativos o mejoras internas. Dichas modificaciones serán informadas oportunamente por medio de los canales digitales del estudio.</p>
-  </div>
-</section>
+</div>
+  </section>
+</div>
 </main>
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <div class="site-footer__grid">
-      <div class="site-footer__meta">
-        <p style="margin:0">El Derecho cerca de ti.</p>
-        <p style="margin:0">Santiago, Chile.</p>
-        <a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a>
-        <a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <ul class="site-footer__nav">
-        <li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="blog.html">Blog</a></li><li><a href="equipo.html">Equipo</a></li>
-      </ul>
-      <ul class="site-footer__nav">
-        <li><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a></li>
-        <li><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a></li>
-        <li><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-    <div class="site-footer__legal">
-      <span>© 2026 AFyV Legal</span>
-      <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-      <a href="politica-de-privacidad.html">Política de Privacidad</a>
+      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="blog.html">Blog</a><a href="equipo.html">Equipo</a></div>
+      <div class="footer__col"><span class="mono">Redes</span><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></div>
+      <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a><span style="color:var(--text-soft)">Santiago, Chile.</span></div>
     </div>
   </div>
-  <p class="site-footer__mark wrap" aria-hidden="true">AFyV</p>
+  <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
+  <div class="wrap footer__legal mono">
+    <span>© 2026 AFyV Legal</span>
+    <nav aria-label="Avisos legales"><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
+  </div>
 </footer>
 </body>
 </html>

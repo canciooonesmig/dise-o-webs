@@ -6,7 +6,7 @@
 <title>Interdicción por demencia y nombramiento de curador — AFyV Informa</title>
 <meta name="description" content="¿Tienes un familiar con discapacidad mental severa que ya no puede administrar sus bienes ni tomar decisiones por sí mismo? La Ley contempla un procedimien">
 <link rel="canonical" href="https://www.afyvlegal.com/blog/interdiccion-por-demencia-y-nombramiento-de-curador.html">
-<meta name="theme-color" content="#f6f2e8">
+<meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
@@ -18,45 +18,49 @@
 <link rel="preload" href="../assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts.css">
 <link rel="stylesheet" href="../assets/styles.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('is-loading');setTimeout(function(){d.classList.remove('is-loading')},4000)}})(document.documentElement)</script>
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/SplitText.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/gl.js" defer></script>
 <script src="../assets/main.js" defer></script>
 </head>
 <body>
+<div class="progress" aria-hidden="true"><span></span></div>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="topbar" aria-hidden="true"></div>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="../index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav class="nav" aria-label="Principal">
-      <ul class="nav__list"><li><a class="nav__link" href="../index.html">Inicio</a></li><li><a class="nav__link" href="../servicios.html">Servicios</a></li><li><a class="nav__link" href="../blog.html" aria-current="page">Blog</a></li><li><a class="nav__link" href="../equipo.html">Equipo</a></li><li><a class="nav__link" href="../terminos-y-condiciones.html">Avisos Legales</a></li></ul>
-      <a class="btn btn--sm" href="#contacto">Contáctanos</a>
-    </nav>
-    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">
-      <span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span>
-    </button>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html" aria-label="AFyV Legal, inicio">AFyV</a>
+    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="../index.html">Inicio</a></li><li><a class="nav__link" href="../servicios.html">Servicios</a></li><li><a class="nav__link" href="../blog.html" aria-current="page">Blog</a></li><li><a class="nav__link" href="../equipo.html">Equipo</a></li><li><a class="nav__link" href="../terminos-y-condiciones.html">Avisos Legales</a></li></ul></nav>
+    <div class="nav__cta"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
-<div class="mobile-menu" id="mobile-menu">
-  <nav aria-label="Principal (móvil)"><ul class="mobile-menu__list"><li><a href="../index.html">Inicio</a></li><li><a href="../servicios.html">Servicios</a></li><li><a href="../blog.html" aria-current="page">Blog</a></li><li><a href="../equipo.html">Equipo</a></li><li><a href="../terminos-y-condiciones.html">Avisos Legales</a></li></ul></nav>
-  <a class="btn" href="#contacto">Contáctanos</a>
+<div class="sheet" id="sheet">
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="../index.html"><span>01</span>Inicio</a></li><li><a href="../servicios.html"><span>02</span>Servicios</a></li><li><a href="../blog.html" aria-current="page"><span>03</span>Blog</a></li><li><a href="../equipo.html"><span>04</span>Equipo</a></li><li><a href="../terminos-y-condiciones.html"><span>05</span>Avisos Legales</a></li></ul></nav>
+  <div class="sheet__foot"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><span class="mono">Santiago, Chile.</span></div>
 </div>
 <main id="contenido" tabindex="-1">
 <article aria-labelledby="t">
-  <header class="article-head">
-    <div class="wrap--narrow">
-      <a class="link-arrow" href="../blog.html" data-reveal>AFyV Informa</a>
-      <h1 class="article-head__title" id="t" data-reveal style="--i:1;margin-top:2rem">Interdicción por demencia y nombramiento de curador</h1>
-      <div class="byline" data-reveal style="--i:2">
+  <header class="article-head page-hero" data-intro style="padding-bottom:clamp(6rem,12vw,10rem)">
+    <div class="hero__gl" data-gl></div>
+    <div class="wrap--narrow hero__inner" style="padding:0">
+      <a class="paren" href="../blog.html" data-reveal>AFyV Informa</a>
+      <h1 class="article-head__title" id="t" data-split>Interdicción por demencia y nombramiento de curador</h1>
+      <div class="byline" data-reveal="2">
         <img src="../assets/img/autor-matias.webp" alt="" width="80" height="80">
         <span><strong>Matías Araos</strong> · 2 jun · 2 min de lectura</span>
       </div>
     </div>
   </header>
-  <figure class="article-cover wrap--narrow" data-reveal>
-    <img src="../assets/img/post-interdiccion.webp" alt="Portada del artículo Interdicción por demencia y nombramiento de curador" width="960" height="540" fetchpriority="high">
-  </figure>
-  <div class="wrap--narrow prose">
-    <p>¿Tienes un familiar con <strong>discapacidad mental severa</strong> que ya no puede administrar sus bienes ni tomar decisiones por sí mismo? La Ley contempla un procedimiento especial, rápido y accesible, para que un familiar cercano asuma legalmente su cuidado y protección patrimonial. Se llama <strong>interdicción definitiva por demencia</strong>, y puedes solicitarla tú.</p>
+  <div class="light">
+    <figure class="article-cover wrap--narrow" style="transform:translateY(calc(-1 * clamp(4rem,10vw,8rem)));margin-bottom:calc(-1 * clamp(4rem,10vw,8rem))">
+      <img src="../assets/img/post-interdiccion.webp" alt="Portada del artículo Interdicción por demencia y nombramiento de curador" width="960" height="540" fetchpriority="high">
+    </figure>
+    <div class="article-body section" style="padding-top:clamp(3rem,6vw,5rem)">
+      <div class="wrap--narrow prose"><p>¿Tienes un familiar con <strong>discapacidad mental severa</strong> que ya no puede administrar sus bienes ni tomar decisiones por sí mismo? La Ley contempla un procedimiento especial, rápido y accesible, para que un familiar cercano asuma legalmente su cuidado y protección patrimonial. Se llama <strong>interdicción definitiva por demencia</strong>, y puedes solicitarla tú.</p>
 <h2 class="caps">¿QUÉ ES LA INTERDICCIÓN POR DEMENCIA?</h2>
 <p>Es una declaración judicial que reconoce que una persona <strong>no puede administrar sus bienes ni ejercer sus derechos</strong> por causa de una discapacidad mental. No es un trámite en contra del familiar: es una herramienta de <strong>protección</strong> que le otorga un representante legal — llamado <strong>curador </strong>— para velar por sus intereses.</p>
 <h2 class="caps">¿QUÉ DICE LA LEY N° 18.600?</h2>
@@ -71,104 +75,101 @@
 <h2 class="caps">¿CÓMO PODEMOS AYUDARTE?</h2>
 <p>Si tienes un familiar con discapacidad mental severa bajo tu cuidado, <strong>no esperes más.</strong> En AFyV Legal analizamos tu caso, verificamos que cuentes con los documentos necesarios y gestionamos la solicitud ante el tribunal competente para que puedas asumir cuanto antes la representación legal de quien más quieres.</p>
 <p>El presente artículo tiene únicamente fines informativos y de carácter general, por lo que no constituye asesoría legal, tributaria, financiera ni de inversión, ni sustituye el análisis particular de cada caso. La información aquí contenida puede estar sujeta a cambios normativos o interpretativos, por lo que debe ser siempre verificada y contrastada con la legislación vigente y con asesoría profesional especializada antes de adoptar cualquier decisión.</p>
-  </div>
-  <div class="wrap--narrow article-foot">
-    <a class="link-arrow" href="../blog.html">Volver a AFyV Informa</a>
-    <a class="btn" href="#contacto">¡Contáctanos! <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
-  </div>
-</article>
-<section class="section" aria-labelledby="mas-title">
-  <div class="wrap">
-    <div class="section-head"><h2 class="h2" id="mas-title">Más publicaciones</h2></div>
-    <div class="posts posts--3"><article class="post-card" data-reveal style="--i:0">
+</div>
+      <div class="wrap--narrow article-foot">
+        <a class="paren" href="../blog.html">Volver a AFyV Informa</a>
+        <a class="btn btn--dark" href="#contacto" data-magnetic >¡Contáctanos!<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+      </div>
+    </div>
+    <section class="section" style="padding-top:0" aria-labelledby="mas-title">
+      <div class="wrap">
+        <div class="section-head"><span class="label">Sigue leyendo</span><h2 class="title-sm" id="mas-title">Más publicaciones</h2></div>
+        <div class="posts posts--3"><article class="post-card" data-reveal>
   <div class="post-card__media"><img src="../assets/img/post-estacionamientos.webp" alt="" width="960" height="540" loading="lazy" decoding="async"></div>
   <div class="post-card__meta"><span>Bianca Carrasco</span><span>25 jun</span><span>7 min de lectura</span></div>
   <h3 class="post-card__title"><a href="../blog/compraventa-de-estacionamientos-en-chile.html">Compraventa de Estacionamientos en Chile</a></h3>
   <p class="post-card__excerpt">En Chile, un estacionamiento puede ser objeto de una compraventa de manera autónoma o vinculado a otra unidad (como un departamento), dependiendo de cómo se estipule su venta en el respectivo reglamento de copropiedad. Comprender su naturaleza jurídica es el punto de partida de cualquier operación, porque define quién puede vender, qué se transfiere y qué formalidades deben cumplirse.</p>
-</article><article class="post-card" data-reveal style="--i:1">
+</article><article class="post-card" data-reveal>
   <div class="post-card__media"><img src="../assets/img/post-simulacion.webp" alt="" width="960" height="540" loading="lazy" decoding="async"></div>
   <div class="post-card__meta"><span>Matías Araos</span><span>10 jun</span><span>5 min de lectura</span></div>
   <h3 class="post-card__title"><a href="../blog/simulacion-de-contratos.html">Simulación de contratos</a></h3>
   <p class="post-card__excerpt">Imagina que alguien, enfrentando una demanda millonaria, decide &quot;vender&quot; su casa a un familiar de confianza. El precio se paga en efectivo, el contrato se firma ante notario y la propiedad se inscribe a nombre del comprador. Todo parece impecable. Pero detrás de esa escritura no existe una compraventa real: no hubo precio verdadero, no hubo intención de transferir el dominio y el objetivo único fue poner ese bien fuera del alcance de los acreedores. Eso es la simulación, y nuestro ordenamiento, aunque no la consagra bajo ese nombre en un artículo específico, prevé una respuesta.</p>
-</article><article class="post-card" data-reveal style="--i:2">
+</article><article class="post-card" data-reveal>
   <div class="post-card__media"><img src="../assets/img/post-liquidacion.webp" alt="" width="960" height="540" loading="lazy" decoding="async"></div>
   <div class="post-card__meta"><span>Matías Araos</span><span>4 jun</span><span>3 min de lectura</span></div>
   <h3 class="post-card__title"><a href="../blog/sobre-la-liquidacion-simplificada.html">Sobre la Liquidación Simplificada</a></h3>
   <p class="post-card__excerpt">Cuando las deudas superan la capacidad real de pago y no se vislumbra una salida a corto plazo, la ley chilena ofrece un mecanismo para afrontar esa situación: el procedimiento concursal de liquidación simplificada, regulado por la Ley N° 20.720.</p>
 </article></div>
+      </div>
+    </section>
+  </div>
+</article>
+<section class="contact" id="contacto" aria-labelledby="contacto-title">
+  <div class="wrap">
+    <span class="label" data-reveal>Contacto</span>
+    <h2 class="contact__title" id="contacto-title" data-split style="margin-top:1.5rem">¡Contáctanos!</h2>
+    <div class="contact__grid">
+      <div>
+        <ul class="contact__details" data-reveal="1">
+          <li><span class="mono">Oficina</span><p>Santiago, Chile.</p></li>
+          <li><span class="mono">Correo</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a></li>
+          <li><span class="mono">Teléfono</span><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a></li>
+        </ul>
+        <div class="social" data-reveal="2">
+          <a href="https://www.instagram.com/afyvlegal/" rel="noopener" aria-label="Instagram de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/56981714111" rel="noopener" aria-label="WhatsApp de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.1 8.1c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.4 1.8 2.4 2.3.2.1.4.1.5 0l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4 0 .5-.2 1.1-.6 1.4-.5.4-1.2.6-2 .4a8.2 8.2 0 0 1-5.2-4.6c-.4-1-.3-1.9.2-2.5Z" fill="currentColor"/></svg></a>
+          <a href="https://www.linkedin.com/company/afyvlegal" rel="noopener" aria-label="LinkedIn de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 9h3v10.5h-3zM6 4.2a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM10 9h2.9v1.5c.4-.8 1.5-1.7 3.1-1.7 3.2 0 3.8 2.1 3.8 4.8v5.9h-3v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8v5.3h-3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <form class="form" data-contact-form novalidate action="mailto:contacto@afyvlegal.com" method="post" enctype="text/plain" data-reveal="1">
+        <div class="form__row">
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="given-name" required aria-describedby="f-nombre-err" placeholder="Ej.: Camila…">
+            <p class="field__error" id="f-nombre-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-apellido">Apellido</label>
+            <input id="f-apellido" name="apellido" type="text" autocomplete="family-name" aria-describedby="f-apellido-err" placeholder="Ej.: Rojas…">
+            <p class="field__error" id="f-apellido-err" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-correo">Correo</label>
+          <input id="f-correo" name="correo" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="f-correo-err" placeholder="nombre@dominio.cl…">
+          <p class="field__error" id="f-correo-err" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" autocomplete="off" required aria-describedby="f-mensaje-err" placeholder="Cuéntanos brevemente tu caso…"></textarea>
+          <p class="field__error" id="f-mensaje-err" aria-live="polite"></p>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--mint" type="submit" data-magnetic>Enviar<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></button>
+          <p class="form__status" data-form-status aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 </main>
-<section class="contact on-ink" id="contacto" aria-labelledby="contacto-title">
-  <div class="wrap contact__grid">
-    <div>
-      <h2 class="contact__title" id="contacto-title" data-reveal>¡Contáctanos!</h2>
-      <ul class="contact__details" data-reveal style="--i:2">
-        <li><span>Oficina</span><p>Santiago, Chile.</p></li>
-        <li><span>Correo</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a></li>
-        <li><span>Teléfono</span><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a></li>
-      </ul>
-      <div class="social" data-reveal style="--i:3;margin-top:2rem">
-        <a href="https://www.instagram.com/afyvlegal/" rel="noopener" aria-label="Instagram de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg></a>
-        <a href="https://wa.me/56981714111" rel="noopener" aria-label="WhatsApp de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.1 8.1c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.4 1.8 2.4 2.3.2.1.4.1.5 0l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4 0 .5-.2 1.1-.6 1.4-.5.4-1.2.6-2 .4a8.2 8.2 0 0 1-5.2-4.6c-.4-1-.3-1.9.2-2.5Z" fill="currentColor"/></svg></a>
-        <a href="https://www.linkedin.com/company/afyvlegal" rel="noopener" aria-label="LinkedIn de AFyV Legal"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 9h3v10.5h-3zM6 4.2a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM10 9h2.9v1.5c.4-.8 1.5-1.7 3.1-1.7 3.2 0 3.8 2.1 3.8 4.8v5.9h-3v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8v5.3h-3z" fill="currentColor"/></svg></a>
-      </div>
-    </div>
-    <form class="form" data-contact-form novalidate action="mailto:contacto@afyvlegal.com" method="post" enctype="text/plain">
-      <div class="form__row">
-        <div class="field">
-          <label for="f-nombre">Nombre</label>
-          <input id="f-nombre" name="nombre" type="text" autocomplete="given-name" required aria-describedby="f-nombre-err" placeholder="Ej.: Camila…">
-          <p class="field__error" id="f-nombre-err" aria-live="polite"></p>
-        </div>
-        <div class="field">
-          <label for="f-apellido">Apellido</label>
-          <input id="f-apellido" name="apellido" type="text" autocomplete="family-name" aria-describedby="f-apellido-err" placeholder="Ej.: Rojas…">
-          <p class="field__error" id="f-apellido-err" aria-live="polite"></p>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-correo">Correo</label>
-        <input id="f-correo" name="correo" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="f-correo-err" placeholder="nombre@dominio.cl…">
-        <p class="field__error" id="f-correo-err" aria-live="polite"></p>
-      </div>
-      <div class="field">
-        <label for="f-mensaje">Mensaje</label>
-        <textarea id="f-mensaje" name="mensaje" autocomplete="off" required aria-describedby="f-mensaje-err" placeholder="Cuéntanos brevemente tu caso…"></textarea>
-        <p class="field__error" id="f-mensaje-err" aria-live="polite"></p>
-      </div>
-      <div class="form__actions">
-        <button class="btn btn--light" type="submit">Enviar <svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
-        <p class="form__status" data-form-status aria-live="polite"></p>
-      </div>
-    </form>
-  </div>
-</section>
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <div class="site-footer__grid">
-      <div class="site-footer__meta">
-        <p style="margin:0">El Derecho cerca de ti.</p>
-        <p style="margin:0">Santiago, Chile.</p>
-        <a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a>
-        <a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <ul class="site-footer__nav">
-        <li><a href="../index.html">Inicio</a></li><li><a href="../servicios.html">Servicios</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../equipo.html">Equipo</a></li>
-      </ul>
-      <ul class="site-footer__nav">
-        <li><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a></li>
-        <li><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a></li>
-        <li><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-    <div class="site-footer__legal">
-      <span>© 2026 AFyV Legal</span>
-      <a href="../terminos-y-condiciones.html">Términos y Condiciones</a>
-      <a href="../politica-de-privacidad.html">Política de Privacidad</a>
+      <div class="footer__col"><span class="mono">Navegación</span><a href="../index.html">Inicio</a><a href="../servicios.html">Servicios</a><a href="../blog.html">Blog</a><a href="../equipo.html">Equipo</a></div>
+      <div class="footer__col"><span class="mono">Redes</span><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></div>
+      <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a><span style="color:var(--text-soft)">Santiago, Chile.</span></div>
     </div>
   </div>
-  <p class="site-footer__mark wrap" aria-hidden="true">AFyV</p>
+  <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
+  <div class="wrap footer__legal mono">
+    <span>© 2026 AFyV Legal</span>
+    <nav aria-label="Avisos legales"><a href="../terminos-y-condiciones.html">Términos y Condiciones</a><a href="../politica-de-privacidad.html">Política de Privacidad</a></nav>
+  </div>
 </footer>
 </body>
 </html>

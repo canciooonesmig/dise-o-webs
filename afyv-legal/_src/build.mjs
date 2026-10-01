@@ -28,13 +28,10 @@ const NAV = [
 ];
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const chars = (word) => [...word].map((c, i) => `<span class="wordmark__char" style="--i:${i}">${esc(c)}</span>`).join('');
-const spread = (word) => [...word].map((c, i) => `<span style="--i:${i}">${c === ' ' ? '&nbsp;' : esc(c)}</span>`).join('');
-const cascadeDown = (word) => [...word].map((_, i) => `<li style="--i:${i}">${esc(word.slice(i))}</li>`).join('');
-const cascadeUp = (word) => [...word].map((_, i) => `<li style="--i:${i}">${esc(word.slice(0, i + 1))}</li>`).join('');
 
 const ICON = {
-  arrow: '<svg class="btn__arrow" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>',
+  arrow: '<svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>',
+  diag: '<svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>',
   instagram: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>',
   whatsapp: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.1 8.1c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.4 1.8 2.4 2.3.2.1.4.1.5 0l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4 0 .5-.2 1.1-.6 1.4-.5.4-1.2.6-2 .4a8.2 8.2 0 0 1-5.2-4.6c-.4-1-.3-1.9.2-2.5Z" fill="currentColor"/></svg>',
   linkedin: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 9h3v10.5h-3zM6 4.2a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM10 9h2.9v1.5c.4-.8 1.5-1.7 3.1-1.7 3.2 0 3.8 2.1 3.8 4.8v5.9h-3v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8v5.3h-3z" fill="currentColor"/></svg>',
@@ -109,111 +106,107 @@ function prose(html) {
     .replace(/<a href="(https?:)?\/\/(www\.)?afyvlegal\.com\/?">/g, '<a href="index.html">');
 }
 
-function header(active, depth, hasContact = true) {
+/* ───────────── Partials ───────────── */
+
+const btn = (href, label, cls = '', attrs = '') => `<a class="btn ${cls}" href="${href}" data-magnetic ${attrs}>${label}<span class="btn__icon">${ICON.arrow}</span></a>`;
+const num = (i) => String(i + 1).padStart(2, '0');
+
+function nav(active, depth, hasContact) {
   const p = '../'.repeat(depth);
   const contactHref = hasContact ? '#contacto' : `${p}index.html#contacto`;
   const links = NAV.map((n) => `<li><a class="nav__link" href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
-  const mlinks = NAV.map((n) => `<li><a href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
+  const sheetLinks = NAV.map((n, i) => `<li><a href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}><span>${num(i)}</span>${n.label}</a></li>`).join('');
   return `<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="topbar" aria-hidden="true"></div>
-<header class="site-header">
-  <div class="site-header__inner">
-    <a class="brand" href="${p}index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav class="nav" aria-label="Principal">
-      <ul class="nav__list">${links}</ul>
-      <a class="btn btn--sm" href="${contactHref}">Contáctanos</a>
-    </nav>
-    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">
-      <span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span>
-    </button>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="${p}index.html" aria-label="AFyV Legal, inicio">AFyV</a>
+    <nav aria-label="Principal"><ul class="nav__pill">${links}</ul></nav>
+    <div class="nav__cta">${btn(contactHref, 'Contáctanos', 'btn--mint')}</div>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
-<div class="mobile-menu" id="mobile-menu">
-  <nav aria-label="Principal (móvil)"><ul class="mobile-menu__list">${mlinks}</ul></nav>
-  <a class="btn" href="${contactHref}">Contáctanos</a>
+<div class="sheet" id="sheet">
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list">${sheetLinks}</ul></nav>
+  <div class="sheet__foot">${btn(contactHref, 'Contáctanos', 'btn--mint')}<span class="mono">${SITE.city}</span></div>
 </div>`;
 }
 
 function contact({ title = '¡Contáctanos!', lede = '' } = {}) {
-  return `<section class="contact on-ink" id="contacto" aria-labelledby="contacto-title">
-  <div class="wrap contact__grid">
-    <div>
-      <h2 class="contact__title" id="contacto-title" data-reveal>${title}</h2>
-      ${lede ? `<p class="lede" data-reveal style="--i:1">${lede}</p>` : ''}
-      <ul class="contact__details" data-reveal style="--i:2">
-        <li><span>Oficina</span><p>${SITE.city}</p></li>
-        <li><span>Correo</span><a href="mailto:${SITE.email}">${SITE.email}</a></li>
-        <li><span>Teléfono</span><a href="${SITE.whatsapp}" rel="noopener">${SITE.phone.replace(/ /g, '&nbsp;')}</a></li>
-      </ul>
-      <div class="social" data-reveal style="--i:3;margin-top:2rem">
-        <a href="${SITE.instagram}" rel="noopener" aria-label="Instagram de AFyV Legal">${ICON.instagram}</a>
-        <a href="${SITE.whatsapp}" rel="noopener" aria-label="WhatsApp de AFyV Legal">${ICON.whatsapp}</a>
-        <a href="${SITE.linkedin}" rel="noopener" aria-label="LinkedIn de AFyV Legal">${ICON.linkedin}</a>
+  return `<section class="contact" id="contacto" aria-labelledby="contacto-title">
+  <div class="wrap">
+    <span class="label" data-reveal>Contacto</span>
+    <h2 class="contact__title" id="contacto-title" data-split style="margin-top:1.5rem">${title}</h2>
+    <div class="contact__grid">
+      <div>
+        ${lede ? `<p class="lede" data-reveal style="margin-bottom:2.5rem">${lede}</p>` : ''}
+        <ul class="contact__details" data-reveal="1">
+          <li><span class="mono">Oficina</span><p>${SITE.city}</p></li>
+          <li><span class="mono">Correo</span><a href="mailto:${SITE.email}">${SITE.email}</a></li>
+          <li><span class="mono">Teléfono</span><a href="${SITE.whatsapp}" rel="noopener">${SITE.phone.replace(/ /g, '&nbsp;')}</a></li>
+        </ul>
+        <div class="social" data-reveal="2">
+          <a href="${SITE.instagram}" rel="noopener" aria-label="Instagram de AFyV Legal">${ICON.instagram}</a>
+          <a href="${SITE.whatsapp}" rel="noopener" aria-label="WhatsApp de AFyV Legal">${ICON.whatsapp}</a>
+          <a href="${SITE.linkedin}" rel="noopener" aria-label="LinkedIn de AFyV Legal">${ICON.linkedin}</a>
+        </div>
       </div>
+      <form class="form" data-contact-form novalidate action="mailto:${SITE.email}" method="post" enctype="text/plain" data-reveal="1">
+        <div class="form__row">
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="given-name" required aria-describedby="f-nombre-err" placeholder="Ej.: Camila…">
+            <p class="field__error" id="f-nombre-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-apellido">Apellido</label>
+            <input id="f-apellido" name="apellido" type="text" autocomplete="family-name" aria-describedby="f-apellido-err" placeholder="Ej.: Rojas…">
+            <p class="field__error" id="f-apellido-err" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-correo">Correo</label>
+          <input id="f-correo" name="correo" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="f-correo-err" placeholder="nombre@dominio.cl…">
+          <p class="field__error" id="f-correo-err" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" autocomplete="off" required aria-describedby="f-mensaje-err" placeholder="Cuéntanos brevemente tu caso…"></textarea>
+          <p class="field__error" id="f-mensaje-err" aria-live="polite"></p>
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--mint" type="submit" data-magnetic>Enviar<span class="btn__icon">${ICON.arrow}</span></button>
+          <p class="form__status" data-form-status aria-live="polite"></p>
+        </div>
+      </form>
     </div>
-    <form class="form" data-contact-form novalidate action="mailto:${SITE.email}" method="post" enctype="text/plain">
-      <div class="form__row">
-        <div class="field">
-          <label for="f-nombre">Nombre</label>
-          <input id="f-nombre" name="nombre" type="text" autocomplete="given-name" required aria-describedby="f-nombre-err" placeholder="Ej.: Camila…">
-          <p class="field__error" id="f-nombre-err" aria-live="polite"></p>
-        </div>
-        <div class="field">
-          <label for="f-apellido">Apellido</label>
-          <input id="f-apellido" name="apellido" type="text" autocomplete="family-name" aria-describedby="f-apellido-err" placeholder="Ej.: Rojas…">
-          <p class="field__error" id="f-apellido-err" aria-live="polite"></p>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-correo">Correo</label>
-        <input id="f-correo" name="correo" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="f-correo-err" placeholder="nombre@dominio.cl…">
-        <p class="field__error" id="f-correo-err" aria-live="polite"></p>
-      </div>
-      <div class="field">
-        <label for="f-mensaje">Mensaje</label>
-        <textarea id="f-mensaje" name="mensaje" autocomplete="off" required aria-describedby="f-mensaje-err" placeholder="Cuéntanos brevemente tu caso…"></textarea>
-        <p class="field__error" id="f-mensaje-err" aria-live="polite"></p>
-      </div>
-      <div class="form__actions">
-        <button class="btn btn--light" type="submit">Enviar ${ICON.arrow}</button>
-        <p class="form__status" data-form-status aria-live="polite"></p>
-      </div>
-    </form>
   </div>
 </section>`;
 }
 
 function footer(depth) {
   const p = '../'.repeat(depth);
-  return `<footer class="site-footer">
+  return `<footer class="footer">
   <div class="wrap">
-    <div class="site-footer__grid">
-      <div class="site-footer__meta">
-        <p style="margin:0">El Derecho cerca de ti.</p>
-        <p style="margin:0">${SITE.city}</p>
-        <a href="mailto:${SITE.email}">${SITE.email}</a>
-        <a href="${SITE.whatsapp}" rel="noopener">${SITE.phone.replace(/ /g, '&nbsp;')}</a>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <ul class="site-footer__nav">
-        ${NAV.slice(0, 4).map((n) => `<li><a href="${p}${n.href}">${n.label}</a></li>`).join('')}
-      </ul>
-      <ul class="site-footer__nav">
-        <li><a href="${SITE.instagram}" rel="noopener">Instagram</a></li>
-        <li><a href="${SITE.whatsapp}" rel="noopener">WhatsApp</a></li>
-        <li><a href="${SITE.linkedin}" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-    <div class="site-footer__legal">
-      <span>© ${new Date().getFullYear()} AFyV Legal</span>
-      <a href="${p}terminos-y-condiciones.html">Términos y Condiciones</a>
-      <a href="${p}politica-de-privacidad.html">Política de Privacidad</a>
+      <div class="footer__col"><span class="mono">Navegación</span>${NAV.slice(0, 4).map((n) => `<a href="${p}${n.href}">${n.label}</a>`).join('')}</div>
+      <div class="footer__col"><span class="mono">Redes</span><a href="${SITE.instagram}" rel="noopener">Instagram</a><a href="${SITE.whatsapp}" rel="noopener">WhatsApp</a><a href="${SITE.linkedin}" rel="noopener">LinkedIn</a></div>
+      <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:${SITE.email}">${SITE.email}</a><a href="${SITE.whatsapp}" rel="noopener">${SITE.phone.replace(/ /g, '&nbsp;')}</a><span style="color:var(--text-soft)">${SITE.city}</span></div>
     </div>
   </div>
-  <p class="site-footer__mark wrap" aria-hidden="true">AFyV</p>
+  <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
+  <div class="wrap footer__legal mono">
+    <span>© ${new Date().getFullYear()} AFyV Legal</span>
+    <nav aria-label="Avisos legales"><a href="${p}terminos-y-condiciones.html">Términos y Condiciones</a><a href="${p}politica-de-privacidad.html">Política de Privacidad</a></nav>
+  </div>
 </footer>`;
 }
 
-function page({ file, title, description, active, depth = 0, body, heroMark = false, contactOpts, ogImage }) {
+function page({ file, title, description, active, depth = 0, body, contactOpts, ogImage, progress = false }) {
   const p = '../'.repeat(depth);
   const canonical = `${SITE.url}/${file.replace(/index\.html$/, '')}`;
   const html = `<!doctype html>
@@ -224,7 +217,7 @@ function page({ file, title, description, active, depth = 0, body, heroMark = fa
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
-<meta name="theme-color" content="#f6f2e8">
+<meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
@@ -236,15 +229,21 @@ ${ogImage ? `<meta property="og:image" content="${SITE.url}/assets/img/${ogImage
 <link rel="preload" href="${p}assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${p}assets/fonts.css">
 <link rel="stylesheet" href="${p}assets/styles.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('is-loading');setTimeout(function(){d.classList.remove('is-loading')},4000)}})(document.documentElement)</script>
+<script src="${p}assets/vendor/gsap.min.js" defer></script>
+<script src="${p}assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="${p}assets/vendor/SplitText.min.js" defer></script>
+<script src="${p}assets/vendor/lenis.min.js" defer></script>
+<script src="${p}assets/gl.js" defer></script>
 <script src="${p}assets/main.js" defer></script>
 </head>
 <body>
-${header(active, depth, contactOpts !== false)}
+${progress ? '<div class="progress" aria-hidden="true"><span></span></div>' : ''}
+${nav(active, depth, contactOpts !== false)}
 <main id="contenido" tabindex="-1">
 ${body}
-</main>
 ${contactOpts === false ? '' : contact(contactOpts)}
+</main>
 ${footer(depth)}
 </body>
 </html>
@@ -254,9 +253,20 @@ ${footer(depth)}
   return file;
 }
 
-const postCard = (post, depth = 0, i = 0) => {
+const pageHero = ({ label, h1, lede = '', labelHref }) => `<section class="page-hero" data-intro aria-labelledby="t">
+  <div class="hero__gl" data-gl></div>
+  <div class="wrap page-hero__grid hero__inner" style="padding:0">
+    <div>
+      <span class="label" data-reveal>${labelHref ? `<a href="${labelHref}" style="text-decoration:none">${label}</a>` : label}</span>
+      <h1 class="display" id="t" data-split>${h1}</h1>
+    </div>
+    ${lede ? `<p class="lede" data-reveal="2">${lede}</p>` : ''}
+  </div>
+</section>`;
+
+const postCard = (post, depth = 0) => {
   const p = '../'.repeat(depth);
-  return `<article class="post-card" data-reveal style="--i:${i}">
+  return `<article class="post-card" data-reveal>
   <div class="post-card__media"><img src="${p}assets/img/${post.file}.webp" alt="" width="960" height="540" loading="lazy" decoding="async"></div>
   <div class="post-card__meta"><span>${post.author}</span><span>${post.date}</span><span>${post.read}</span></div>
   <h3 class="post-card__title"><a href="${p}blog/${post.slug}.html">${esc(post.title)}</a></h3>
@@ -264,13 +274,42 @@ const postCard = (post, depth = 0, i = 0) => {
 </article>`;
 };
 
-const portrait = (m, depth = 0, hidden = false) => {
-  const p = '../'.repeat(depth);
-  return `<a class="portrait" href="${p}equipo.html#${m.slug}"${hidden ? ' tabindex="-1"' : ''}>
-  <div class="portrait__media"><img src="${p}assets/img/${m.img}" alt="${hidden ? '' : `Retrato de ${m.name}`}" width="600" height="860" loading="lazy" decoding="async"></div>
-  <p class="portrait__name">${m.name}</p>
-  <p class="portrait__role">${m.area}</p>
+const member = (m, i) => `<a class="member" href="equipo.html#${m.slug}">
+  <div class="member__media"><span class="member__tag mono">( ${num(i)} )</span><img src="assets/img/${m.img}" alt="Retrato de ${m.name}" width="600" height="860" loading="lazy" decoding="async"></div>
+  <p class="member__name">${m.name}</p>
+  <p class="member__role">${m.area}</p>
 </a>`;
+
+/* Generative line art for the service cards (600×600 viewBox) */
+const iso = (cx, cy, w, h, d) => [
+  `M${cx} ${cy - h} L${cx + w} ${cy} L${cx} ${cy + h} L${cx - w} ${cy} Z`,
+  `M${cx - w} ${cy} L${cx - w} ${cy + d} L${cx} ${cy + h + d} L${cx + w} ${cy + d} L${cx + w} ${cy}`,
+  `M${cx} ${cy + h} L${cx} ${cy + h + d}`,
+];
+const ART = {
+  empresa: (() => {
+    const boxes = [[300, 380, 200, 100, 70], [300, 290, 150, 75, 60], [300, 215, 100, 50, 50]];
+    const paths = boxes.flatMap((b) => iso(...b)).map((d) => `<path class="art-line draw" d="${d}"/>`).join('');
+    const dots = boxes.map(([cx, cy, , h]) => `<circle class="art-glow" cx="${cx}" cy="${cy - h}" r="4"/>`).join('');
+    const grid = Array.from({ length: 9 }, (_, i) => `<path class="art-line" style="opacity:.14" d="M${60 + i * 60} 80 V520"/>`).join('');
+    return `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.75)" aria-hidden="true">${grid}${paths}${dots}</svg>`;
+  })(),
+  contrato: (() => {
+    const lines = [0, 1, 2, 3, 4, 5, 6].map((i) => `<path class="art-line draw" d="M215 ${190 + i * 30} H${[370, 390, 340, 385, 360, 300, 380][i]}"/>`).join('');
+    return `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:#0a1a12" aria-hidden="true">
+      <path class="art-line draw" d="M190 110 H372 L410 148 V490 H190 Z"/><path class="art-line draw" d="M372 110 V148 H410"/>
+      ${lines}
+      <path class="art-line draw" style="stroke-width:1.6" d="M215 440 C240 395 255 470 285 425 S330 400 350 432 S392 452 410 410 S440 400 452 412"/>
+      <circle class="art-line draw" cx="365" cy="190" r="26"/><circle class="art-line draw" cx="365" cy="190" r="18"/>
+      <circle class="art-glow" cx="452" cy="412" r="5"/></svg>`;
+  })(),
+  red: (() => {
+    const rings = [90, 160, 230].map((r) => `<circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="${r}"/>`).join('');
+    const nodes = (r, n, off) => Array.from({ length: n }, (_, i) => { const a = off + (i / n) * Math.PI * 2; return `<circle class="art-glow" cx="${(300 + r * Math.cos(a)).toFixed(1)}" cy="${(300 + r * Math.sin(a)).toFixed(1)}" r="${r > 200 ? 3.5 : 5}"/>`; }).join('');
+    return `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.7)" aria-hidden="true">${rings}
+      <g class="orbit">${nodes(160, 3, 0.4)}</g><g class="orbit orbit--rev">${nodes(230, 5, 1.1)}</g><g class="orbit">${nodes(90, 2, 2)}</g>
+      <circle class="art-glow" cx="300" cy="300" r="9"/></svg>`;
+  })(),
 };
 
 /* ───────────── Pages ───────────── */
@@ -285,107 +324,122 @@ built.push(page({
   active: 'inicio',
   ogImage: 'logo.webp',
   body: `
-<section class="hero" aria-labelledby="hero-title">
-  <div class="wrap">
-    <p class="wordmark" data-hero-mark aria-hidden="true">${chars('AFyV')}</p>
-    <div class="hero__body">
-      <span class="eyebrow" style="--i:0">Bienvenidos a AFyV</span>
-      <h1 class="display hero__title" id="hero-title" style="--i:1">El Derecho cerca de ti</h1>
-      <div class="hero__actions" style="--i:2">
-        <a class="btn" href="servicios.html">Leer más ${ICON.arrow}</a>
-        <a class="link-arrow" href="#contacto">¡Contáctanos!</a>
+<section class="hero" data-intro aria-labelledby="hero-title">
+  <div class="hero__gl" data-gl></div>
+  <div class="wrap hero__inner">
+    <div class="hero__top">
+      <span class="label" data-reveal>Bienvenidos a AFyV</span>
+      <span class="mono" data-reveal="1" style="color:var(--text-dim)">Santiago, Chile — 33°27′S 70°40′O</span>
+    </div>
+    <h1 class="display hero__title" id="hero-title" data-split>El Derecho <span class="hl">cerca</span> de&nbsp;ti</h1>
+    <div class="hero__row">
+      <p class="lede" data-reveal="2" style="margin:0">En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos.</p>
+      <div class="hero__actions" data-reveal="3">
+        ${btn('servicios.html', 'Leer más')}
+        <a class="paren" href="#contacto">¡Contáctanos!</a>
       </div>
+    </div>
+  </div>
+  <div class="hero__foot" data-reveal="4">
+    <div class="wrap">
+      <p class="ticker" style="margin:0">${[...AREAS, 'Creación de Empresas', 'Contratos'].map((a) => `<span>${a}</span>`).join('')}</p>
+      <span class="scroll-cue mono" aria-hidden="true"><span class="scroll-cue__bar"></span>Desliza</span>
     </div>
   </div>
 </section>
 
-<div class="marquee" aria-label="Áreas de práctica">
-  <div class="marquee__track">
-    ${[0, 1].map((k) => `<div class="marquee__group"${k ? ' aria-hidden="true"' : ''}>${[...AREAS, 'Creación de Empresas', 'Contratos', 'Empresas'].map((a) => `<span class="marquee__item">${a}</span>`).join('')}</div>`).join('')}
+<section class="manifesto" aria-labelledby="nosotros-title">
+  <div class="wrap manifesto__grid">
+    <div><span class="label" data-reveal>( 01 ) <span id="nosotros-title">Sobre Nosotros</span></span></div>
+    <div>
+      <p class="manifesto__text" data-words>En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos. Nuestro propósito es reducir la incertidumbre, fortalecer la toma de decisiones y ofrecer un apoyo confiable en cada etapa de tus decisiones. Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.</p>
+      <div data-reveal>${btn('equipo.html', 'Conoce Más', 'btn--ghost')}</div>
+    </div>
   </div>
+</section>
+
+<div class="light">
+  <section class="section" aria-labelledby="areas-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label" data-reveal>( 02 ) Nuestros Servicios</span>
+          <h2 class="title" id="areas-title" data-split style="margin-top:1.5rem">Áreas del Derecho</h2>
+        </div>
+        <p class="lede" data-reveal="1">Somos especialistas en:</p>
+      </div>
+      <ol class="areas">
+        ${AREAS.map((a, i) => `<li><a class="area" href="servicios.html"><span class="area__num">( ${num(i)} )</span><span class="area__name">${a}</span><span class="area__arrow" aria-hidden="true">${ICON.diag}</span></a></li>`).join('')}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Servicios destacados">
+    <div class="wrap stack">
+      <article class="stack-card stack-card--green" style="--n:0">
+        <div class="stack-card__body">
+          <span class="label">( 01 ) Servicio</span>
+          <div>
+            <h3 class="stack-card__title">Creación de Empresas</h3>
+            <p class="stack-card__text">Trabajamos en la creación de tu empresa, en su modificación o su migración al régimen propuesto por la Ley N°&nbsp;20.659</p>
+          </div>
+          <a class="paren" href="constituye-tu-empresa.html">Conoce Más</a>
+        </div>
+        <div class="stack-card__art">${ART.empresa}</div>
+      </article>
+      <article class="stack-card stack-card--paper" style="--n:1">
+        <div class="stack-card__body">
+          <span class="label">( 02 ) Servicio</span>
+          <div>
+            <h3 class="stack-card__title">Contratos</h3>
+            <p class="stack-card__text">Te acompañamos en la negociación de tus contratos comerciales, y nos encargamos de su análisis y redacción</p>
+          </div>
+          <a class="paren" href="servicios.html">Conoce Más</a>
+        </div>
+        <div class="stack-card__art">${ART.contrato}</div>
+      </article>
+      <article class="stack-card stack-card--ink" style="--n:2">
+        <div class="stack-card__body">
+          <span class="label">( 03 ) Servicio</span>
+          <div>
+            <h3 class="stack-card__title">Empresas</h3>
+            <p class="stack-card__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p>
+          </div>
+          <a class="paren" href="servicios-empresas.html">Conoce Más</a>
+        </div>
+        <div class="stack-card__art">${ART.red}</div>
+      </article>
+    </div>
+  </section>
 </div>
 
-<section class="statement on-dark" aria-labelledby="nosotros-title">
-  <ul class="cascade cascade--tr" aria-hidden="true">${cascadeDown('DERECHO')}</ul>
-  <ul class="cascade cascade--bl" aria-hidden="true">${cascadeUp('CERCA')}</ul>
-  <div class="wrap statement__body">
-    <h2 class="h2 statement__title" id="nosotros-title" data-reveal>Sobre Nosotros</h2>
-    <p class="statement__text" data-reveal style="--i:1">En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos. Nuestro propósito es reducir la incertidumbre, fortalecer la toma de decisiones y ofrecer un apoyo confiable en cada etapa de tus decisiones. Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.</p>
-    <a class="btn btn--light" href="equipo.html" data-reveal style="--i:2">Conoce Más ${ICON.arrow}</a>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="areas-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
+<section class="hscroll section" data-hscroll aria-labelledby="equipo-title" style="padding-block:clamp(5rem,10vw,8rem)">
+  <div class="hscroll__track">
+    <div class="hscroll__intro">
       <div>
-        <span class="eyebrow" data-reveal>Nuestros Servicios</span>
-        <h2 class="h2" id="areas-title" data-reveal style="--i:1">Áreas del Derecho</h2>
+        <span class="label" data-reveal>( 03 ) Conoce más Acerca de Nosotros</span>
+        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Y nuestro compromiso por llevar el Derecho <span class="hl">cerca</span> de ti</h2>
       </div>
-      <p class="lede" data-reveal style="--i:2">Somos especialistas en:</p>
+      <div data-reveal>${btn('equipo.html', 'Sobre Nosotros', 'btn--ghost')}</div>
     </div>
-    <ol class="areas">
-      ${AREAS.map((a, i) => `<li class="areas__item" data-reveal style="--i:${i}"><span class="areas__num">${String(i + 1).padStart(2, '0')}</span><span class="areas__name">${a}</span></li>`).join('')}
-    </ol>
+    ${TEAM.map(member).join('')}
   </div>
 </section>
 
-<section class="section section--tight" aria-label="Servicios destacados" style="padding-top:0">
-  <div class="wrap">
-    <div class="cards-3">
-      <article class="feature feature--ink">
-        <p class="feature__spread" aria-hidden="true">${spread('Empresa')}</p>
-        <h3 class="feature__title">Creación de Empresas</h3>
-        <p class="feature__text">Trabajamos en la creación de tu empresa, en su modificación o su migración al régimen propuesto por la Ley N°&nbsp;20.659</p>
-        <a class="feature__link" href="constituye-tu-empresa.html" aria-label="Creación de Empresas: por qué constituir tu empresa"></a>
-        <span class="feature__cta" aria-hidden="true">Conoce Más ${ICON.arrow}</span>
-      </article>
-      <article class="feature feature--green">
-        <p class="feature__spread" aria-hidden="true">${spread('Contratos')}</p>
-        <h3 class="feature__title">Contratos</h3>
-        <p class="feature__text">Te acompañamos en la negociación de tus contratos comerciales, y nos encargamos de su análisis y redacción</p>
-        <a class="feature__link" href="servicios.html" aria-label="Contratos: ver servicios"></a>
-        <span class="feature__cta" aria-hidden="true">Conoce Más ${ICON.arrow}</span>
-      </article>
-      <article class="feature feature--graphite">
-        <p class="feature__spread" aria-hidden="true">${spread('Pymes')}</p>
-        <h3 class="feature__title">Empresas</h3>
-        <p class="feature__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p>
-        <a class="feature__link" href="servicios-empresas.html" aria-label="Empresas: conoce más"></a>
-        <span class="feature__cta" aria-hidden="true">Conoce Más ${ICON.arrow}</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section--paper-2" aria-labelledby="equipo-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow" data-reveal>Conoce más Acerca de Nosotros</span>
-        <h2 class="h2" id="equipo-title" data-reveal style="--i:1">Y nuestro compromiso por llevar el Derecho cerca de ti</h2>
+<div class="light">
+  <section class="section" aria-labelledby="informa-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label" data-reveal>( 04 ) Blog</span>
+          <h2 class="title" id="informa-title" data-split style="margin-top:1.5rem">AFyV Informa</h2>
+        </div>
+        <a class="paren" href="blog.html" data-reveal="1">Ver todas las publicaciones</a>
       </div>
-      <a class="btn" href="equipo.html" data-reveal style="--i:2">Sobre Nosotros ${ICON.arrow}</a>
+      <div class="posts posts--3">${POSTS.slice(0, 3).map((p) => postCard(p)).join('')}</div>
     </div>
-  </div>
-  <div class="team-rail">
-    <div class="team-rail__track">
-      ${[0, 1].map((k) => `<div class="team-rail__group"${k ? ' aria-hidden="true"' : ''}>${TEAM.map((m) => portrait(m, 0, !!k)).join('')}<div style="display:contents" aria-hidden="true">${TEAM.map((m) => portrait(m, 0, true)).join('')}</div></div>`).join('')}
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="informa-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <h2 class="h2" id="informa-title" data-reveal>AFyV Informa</h2>
-      <a class="link-arrow" href="blog.html" data-reveal style="--i:1">Ver todas las publicaciones</a>
-    </div>
-    <div class="posts posts--3">
-      ${POSTS.slice(0, 3).map((post, i) => postCard(post, 0, i)).join('')}
-    </div>
-  </div>
-</section>`,
+  </section>
+</div>`,
 }));
 
 // Servicios
@@ -396,199 +450,116 @@ built.push(page({
   active: 'servicios',
   contactOpts: { title: 'Contacto', lede: 'Contáctanos para saber más sobre nuestros servicios' },
   body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <h1 class="display" id="t" data-reveal>Nuestros Servicios</h1>
-    <p class="lede" data-reveal style="--i:1">Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.</p>
+${pageHero({ label: 'Servicios', h1: 'Nuestros <span class="hl">Servicios</span>', lede: 'Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.' })}
+<div class="light">
+  <section class="section" aria-label="Servicios">
+    <div class="wrap svc">
+      <article class="svc__item" data-reveal>
+        <span class="svc__num">( 01 )</span>
+        <h2 class="svc__title">Servicios para Empresas</h2>
+        <div><p class="svc__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p><a class="paren" href="servicios-empresas.html">Conoce Más</a></div>
+      </article>
+      <article class="svc__item" data-reveal>
+        <span class="svc__num">( 02 )</span>
+        <h2 class="svc__title">Personas</h2>
+        <p class="svc__text">Brindamos orientación jurídica a personas en materias de contratos, deudas, arrendamientos, responsabilidad civil, conflictos entre particulares, posesiones efectivas y planificación testamentaria, abordando cada situación con un enfoque humano.</p>
+      </article>
+      <article class="svc__item" data-reveal>
+        <span class="svc__num">( 03 )</span>
+        <h2 class="svc__title">Laboral</h2>
+        <p class="svc__text">Guiamos a trabajadores y empleadores en la gestión de relaciones de trabajo y en la resolución de conflictos derivados del vínculo laboral. Asesoramos en la revisión de contratos de trabajo, término de la relación laboral, cumplimiento de obligaciones legales y análisis de situaciones complejas.</p>
+      </article>
+      <article class="svc__item" data-reveal>
+        <span class="svc__num">( 04 )</span>
+        <h2 class="svc__title">Derecho Público</h2>
+        <p class="svc__text">Otorgamos apoyo técnico y gestión estratégica en materias de derecho público y penal. Asistimos a nuestros clientes mediante la tramitación ágil de procedimientos ante órganos de la Administración del Estado, el monitoreo continuo de carpetas investigativas y la redacción de solicitudes o escritos de tramitación.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<section class="band" aria-labelledby="pymes-title">
+  <div class="wrap band__body">
+    <span class="label" data-reveal>Planes</span>
+    <h2 class="title band__title" id="pymes-title" data-split>Descubre nuestros planes para <span class="hl">pymes</span></h2>
+    <p class="lede" data-reveal="1">En AFyV Legal ofrecemos planes que se adaptan a las necesidades y realidad de cada empresa.</p>
+    <div data-reveal="2">${btn('servicios-empresas.html', 'Haz click para conocer nuestros planes', 'btn--mint')}</div>
   </div>
 </section>
 
-<section class="section" aria-label="Servicios">
-  <div class="wrap service-list">
-    <article class="service" data-reveal>
-      <span class="service__num">01</span>
-      <h2 class="service__title">Servicios para Empresas</h2>
-      <div>
-        <p class="service__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p>
-        <a class="link-arrow" href="servicios-empresas.html">Conoce Más</a>
+<section class="method" aria-labelledby="metodo-title">
+  <div class="wrap method__stage">
+    <div class="method__fig" aria-hidden="true">
+      <div class="method__plates">
+        ${['01 Contratación', '02 Trabajo', '03 Entrega'].map((l, i) => `<div class="plate${i === 0 ? ' is-active' : ''}" style="transform:translateZ(${(1 - i) * 60}px)"><div class="plate__grid"></div><span class="plate__label mono">${l}</span></div>`).join('')}
       </div>
-    </article>
-    <article class="service" data-reveal>
-      <span class="service__num">02</span>
-      <h2 class="service__title">Personas</h2>
-      <p class="service__text">Brindamos orientación jurídica a personas en materias de contratos, deudas, arrendamientos, responsabilidad civil, conflictos entre particulares, posesiones efectivas y planificación testamentaria, abordando cada situación con un enfoque humano.</p>
-    </article>
-    <article class="service" data-reveal>
-      <span class="service__num">03</span>
-      <h2 class="service__title">Laboral</h2>
-      <p class="service__text">Guiamos a trabajadores y empleadores en la gestión de relaciones de trabajo y en la resolución de conflictos derivados del vínculo laboral. Asesoramos en la revisión de contratos de trabajo, término de la relación laboral, cumplimiento de obligaciones legales y análisis de situaciones complejas.</p>
-    </article>
-    <article class="service" data-reveal>
-      <span class="service__num">04</span>
-      <h2 class="service__title">Derecho Público</h2>
-      <p class="service__text">Otorgamos apoyo técnico y gestión estratégica en materias de derecho público y penal. Asistimos a nuestros clientes mediante la tramitación ágil de procedimientos ante órganos de la Administración del Estado, el monitoreo continuo de carpetas investigativas y la redacción de solicitudes o escritos de tramitación.</p>
-    </article>
-  </div>
-</section>
-
-<section class="statement on-graphite" aria-labelledby="pymes-title">
-  <ul class="cascade cascade--tr" aria-hidden="true">${cascadeDown('PYMES')}</ul>
-  <ul class="cascade cascade--bl" aria-hidden="true">${cascadeUp('PLANES')}</ul>
-  <div class="wrap statement__body">
-    <h2 class="h2 statement__title" id="pymes-title" data-reveal>Descubre nuestros planes para pymes</h2>
-    <p class="statement__text" data-reveal style="--i:1">En AFyV Legal ofrecemos planes que se adaptan a las necesidades y realidad de cada empresa.</p>
-    <a class="btn" href="servicios-empresas.html" data-reveal style="--i:2">Haz click para conocer nuestros planes ${ICON.arrow}</a>
-  </div>
-</section>
-
-<section class="section on-dark method" aria-labelledby="metodo-title" data-method>
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="h2" id="metodo-title" data-reveal style="--i:1">Nuestro Método de Trabajo</h2>
     </div>
-    <div class="method__grid">
-      <div class="method__figure" aria-hidden="true">
-        <svg class="method__svg" viewBox="0 0 480 380" data-step="0" role="presentation">
-          <g class="plate plate--3" style="transform-origin:240px 260px">
-            <path class="plate__face" d="M240 190 L440 290 L240 390 L40 290 Z" transform="translate(0,-40)"/>
-            <text class="plate__label" x="452" y="254">03 ENTREGA</text>
-          </g>
-          <g class="plate plate--2" style="transform-origin:240px 190px">
-            <path class="plate__face" d="M240 120 L440 220 L240 320 L40 220 Z" transform="translate(0,-40)"/>
-            <text class="plate__label" x="452" y="184">02 TRABAJO</text>
-          </g>
-          <g class="plate plate--1" style="transform-origin:240px 120px">
-            <path class="plate__face" d="M240 50 L440 150 L240 250 L40 150 Z" transform="translate(0,-40)"/>
-            <text class="plate__label" x="452" y="114">01 CONTRATACIÓN</text>
-          </g>
-        </svg>
+    <div>
+      <span class="label">Cómo avanzamos</span>
+      <h2 class="title-sm" id="metodo-title" style="margin:1.5rem 0 2.5rem">Nuestro Método de Trabajo</h2>
+      <div class="method__progress" aria-hidden="true"><span></span></div>
+      <div class="method__steps">
+        <div class="method__step"><div class="method__step-num">01</div><h3 class="method__step-title">Etapa Inicial: Contratación</h3><p>Podemos agendar una reunión para explicarte los pasos y la estrategia a seguir según tus necesidades</p></div>
+        <div class="method__step"><div class="method__step-num">02</div><h3 class="method__step-title">Etapa Intermedia: Trabajo</h3><p>Trabajamos minuciosamente en tu requerimiento y te informamos cada día acerca de su avance</p></div>
+        <div class="method__step"><div class="method__step-num">03</div><h3 class="method__step-title">Entrega</h3><p>Podemos agendar una reunión para presentarte nuestro trabajo. En esta etapa, resolvemos tus dudas y te orientamos acerca de los pasos a seguir</p></div>
       </div>
-      <ol class="method__steps">
-        <li class="method__step" tabindex="0">
-          <span class="method__step-kicker">Etapa 01</span>
-          <h3 class="method__step-title">Etapa Inicial: Contratación</h3>
-          <p>Podemos agendar una reunión para explicarte los pasos y la estrategia a seguir según tus necesidades</p>
-        </li>
-        <li class="method__step" tabindex="0">
-          <span class="method__step-kicker">Etapa 02</span>
-          <h3 class="method__step-title">Etapa Intermedia: Trabajo</h3>
-          <p>Trabajamos minuciosamente en tu requerimiento y te informamos cada día acerca de su avance</p>
-        </li>
-        <li class="method__step" tabindex="0">
-          <span class="method__step-kicker">Etapa 03</span>
-          <h3 class="method__step-title">Entrega</h3>
-          <p>Podemos agendar una reunión para presentarte nuestro trabajo. En esta etapa, resolvemos tus dudas y te orientamos acerca de los pasos a seguir</p>
-        </li>
-      </ol>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="opiniones-title">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="h2" id="opiniones-title" data-reveal>Opiniones</h2>
+<div class="light">
+  <section class="section" aria-labelledby="opiniones-title">
+    <div class="wrap">
+      <div class="section-head"><span class="label" data-reveal>Clientes</span><h2 class="title" id="opiniones-title" data-split style="margin-top:1.5rem">Opiniones</h2></div>
+      <div class="quotes">
+        <figure class="quote" data-reveal><span class="quote__mark" aria-hidden="true">“</span><blockquote><p style="margin:0">AFyV me ayudó a resolver con éxito una notificación errónea de embargo por parte de la Tesorería General de la República. Totalmente recomendados.</p></blockquote><figcaption><div><strong>Iván</strong><span>Santiago</span></div></figcaption></figure>
+        <figure class="quote" data-reveal="1"><span class="quote__mark" aria-hidden="true">“</span><blockquote><p style="margin:0">AFyV constituyó nuestra sociedad y nos han apoyado en nuestras juntas de accionistas, colaborando desde una perspectiva estratégica. Los recomiendo mucho.</p></blockquote><figcaption><div><strong>Luis Peralta</strong><span>Fundador de Jolu SpA</span></div></figcaption></figure>
+      </div>
     </div>
-    <div class="quotes">
-      <figure class="quote" data-reveal>
-        <blockquote><p style="margin:0">“AFyV me ayudó a resolver con éxito una notificación errónea de embargo por parte de la Tesorería General de la República. Totalmente recomendados.”</p></blockquote>
-        <figcaption><strong>Iván</strong>Santiago</figcaption>
-      </figure>
-      <figure class="quote" data-reveal style="--i:1">
-        <blockquote><p style="margin:0">“AFyV constituyó nuestra sociedad y nos han apoyado en nuestras juntas de accionistas, colaborando desde una perspectiva estratégica. Los recomiendo mucho.”</p></blockquote>
-        <figcaption><strong>Luis Peralta</strong>Fundador de Jolu SpA</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>`,
+  </section>
+</div>`,
 }));
 
 // Servicios para empresas
+const plans = [
+  { title: 'Plan Constituye tu Empresa', body: ['Al constituir una empresa, se crea una persona jurídica distinta de sus socios. Esto permite separar el patrimonio personal del empresarial, limitando la responsabilidad a los aportes realizados a la sociedad. De esta forma, podrás desarrollar tu actividad con mayor seguridad y reducir riesgos innecesarios para tu patrimonio personal.', 'Muchos emprendimientos comienzan como una simple idea, pero solo aquellos que se formalizan están verdaderamente preparados para crecer, atraer oportunidades y proyectarse a largo plazo.'], pull: 'Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio.', links: [['constituye-tu-empresa.html', 'Click para conocer las razones por las cuales debes constituir formalmente tu empresa']] },
+  { title: 'Plan Registra tu Marca', body: ['Muchos emprendedores invierten tiempo, recursos y esfuerzo en posicionar un nombre en el mercado, sin considerar que, si no se encuentra registrado, cualquier tercero podría utilizarlo o incluso obtener derechos exclusivos sobre él.'], pull: 'Registrar una marca es una decisión estratégica para proteger y fortalecer tu negocio.', links: [['registra-tu-marca.html', 'Click para conocer las razones por las cuales debes registrar tu marca']] },
+  { title: 'Plan Inicio Seguro', body: ['Este plan incluye nuestro servicio de constitución formal de tu empresa, entre otras, junto con la presentación de la solicitud de registro de tu marca ante INAPI. De esta manera, no solo comienzas tu negocio cumpliendo con todas las formalidades legales, sino que también proteges desde el primer momento el activo más importante de tu empresa: su identidad.', 'Emprender sin una estructura jurídica adecuada o sin proteger tu marca puede significar riesgos innecesarios, conflictos futuros e incluso la pérdida del nombre que tanto esfuerzo te costó construir. Con este plan, te acompañamos en cada etapa para que puedas enfocarte en hacer crecer tu negocio con la tranquilidad de contar con un respaldo legal sólido, proyectando tu empresa de forma segura, profesional y preparada para el futuro.'], links: [['constituye-tu-empresa.html', 'Sobre los tipos de sociedades'], ['registra-tu-marca.html', 'Sobre los registros de marca']] },
+];
 built.push(page({
   file: 'servicios-empresas.html',
   title: 'Servicios para Empresas — AFyV Legal',
   description: 'Plan Constituye tu Empresa, Plan Registra tu Marca y Plan Inicio Seguro: constituye tu empresa y solicita el registro de tu marca por una tarifa única.',
   active: 'servicios',
   body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <h1 class="display" id="t" data-reveal>Servicios para Empresas</h1>
-    <p class="lede" data-reveal style="--i:2">En AFyV Legal ofrecemos planes que se adaptan a las necesidades y realidad de cada empresa.</p>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0" aria-label="Planes">
-  <div class="wrap">
-    <article class="plan" data-reveal>
-      <div>
-        <span class="plan__kicker">Plan 01</span>
-        <h2 class="plan__title">Plan Constituye tu Empresa</h2>
-      </div>
-      <div class="plan__body">
-        <p>Al constituir una empresa, se crea una persona jurídica distinta de sus socios. Esto permite separar el patrimonio personal del empresarial, limitando la responsabilidad a los aportes realizados a la sociedad. De esta forma, podrás desarrollar tu actividad con mayor seguridad y reducir riesgos innecesarios para tu patrimonio personal.</p>
-        <p>Muchos emprendimientos comienzan como una simple idea, pero solo aquellos que se formalizan están verdaderamente preparados para crecer, atraer oportunidades y proyectarse a largo plazo.</p>
-        <p class="plan__pull">Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio.</p>
-        <div class="plan__links"><a class="link-arrow" href="constituye-tu-empresa.html">Click para conocer las razones por las cuales debes constituir formalmente tu empresa</a></div>
-      </div>
-    </article>
-
-    <article class="plan" data-reveal>
-      <div>
-        <span class="plan__kicker">Plan 02</span>
-        <h2 class="plan__title">Plan Registra tu Marca</h2>
-      </div>
-      <div class="plan__body">
-        <p>Muchos emprendedores invierten tiempo, recursos y esfuerzo en posicionar un nombre en el mercado, sin considerar que, si no se encuentra registrado, cualquier tercero podría utilizarlo o incluso obtener derechos exclusivos sobre él.</p>
-        <p class="plan__pull">Registrar una marca es una decisión estratégica para proteger y fortalecer tu negocio.</p>
-        <div class="plan__links"><a class="link-arrow" href="registra-tu-marca.html">Click para conocer las razones por las cuales debes registrar tu marca</a></div>
-      </div>
-    </article>
-
-    <article class="plan" data-reveal>
-      <div>
-        <span class="plan__kicker">Plan 03</span>
-        <h2 class="plan__title">Plan Inicio Seguro</h2>
-      </div>
-      <div class="plan__body">
-        <p>Este plan incluye nuestro servicio de constitución formal de tu empresa, entre otras, junto con la presentación de la solicitud de registro de tu marca ante INAPI. De esta manera, no solo comienzas tu negocio cumpliendo con todas las formalidades legales, sino que también proteges desde el primer momento el activo más importante de tu empresa: su identidad.</p>
-        <p>Emprender sin una estructura jurídica adecuada o sin proteger tu marca puede significar riesgos innecesarios, conflictos futuros e incluso la pérdida del nombre que tanto esfuerzo te costó construir. Con este plan, te acompañamos en cada etapa para que puedas enfocarte en hacer crecer tu negocio con la tranquilidad de contar con un respaldo legal sólido, proyectando tu empresa de forma segura, profesional y preparada para el futuro.</p>
-        <div class="plan__links">
-          <a class="link-arrow" href="constituye-tu-empresa.html">Sobre los tipos de sociedades</a>
-          <a class="link-arrow" href="registra-tu-marca.html">Sobre los registros de marca</a>
+${pageHero({ label: 'Servicios', labelHref: 'servicios.html', h1: 'Servicios para <span class="hl">Empresas</span>', lede: 'En AFyV Legal ofrecemos planes que se adaptan a las necesidades y realidad de cada empresa.' })}
+<div class="light">
+  <section class="section" aria-label="Planes">
+    <div class="wrap">
+      ${plans.map((pl, i) => `<article class="plan">
+        <div class="plan__head"><span class="label" data-reveal>( ${num(i)} ) Plan</span><h2 class="plan__title" data-split>${pl.title}</h2></div>
+        <div class="plan__body" data-reveal="1">
+          ${pl.body.map((b) => `<p>${b}</p>`).join('')}
+          ${pl.pull ? `<p class="plan__pull">${pl.pull}</p>` : ''}
+          <div class="plan__links">${pl.links.map(([h, l]) => `<a class="paren" href="${h}">${l}</a>`).join('')}</div>
         </div>
-      </div>
-    </article>
+      </article>`).join('')}
+    </div>
+  </section>
+</div>
+<section class="band" aria-labelledby="inicio-seguro-title">
+  <div class="wrap band__body">
+    <span class="label" data-reveal>Plan Inicio Seguro</span>
+    <h2 class="title band__title" id="inicio-seguro-title" data-split>Constituye tu empresa y solicita el registro de tu marca por una <span class="hl">tarifa única</span></h2>
+    <p class="lede" data-reveal="1">Asesoría Integral a un valor conveniente con el Plan Inicio Seguro</p>
+    <div data-reveal="2">${btn('#contacto', '¡Contáctanos!', 'btn--mint')}</div>
   </div>
 </section>
-
-<section class="statement on-dark" aria-labelledby="inicio-seguro-title">
-  <ul class="cascade cascade--tr" aria-hidden="true">${cascadeDown('SEGURO')}</ul>
-  <ul class="cascade cascade--bl" aria-hidden="true">${cascadeUp('INICIO')}</ul>
-  <div class="wrap statement__body">
-    <span class="eyebrow" data-reveal>Plan Inicio Seguro</span>
-    <h2 class="h2 statement__title" id="inicio-seguro-title" data-reveal style="--i:1">Constituye tu empresa y solicita el registro de tu marca por una tarifa única</h2>
-    <p class="statement__text" data-reveal style="--i:2">Asesoría Integral a un valor conveniente con el Plan Inicio Seguro</p>
-    <a class="btn btn--light" href="#contacto" data-reveal style="--i:3">¡Contáctanos! ${ICON.arrow}</a>
-  </div>
-</section>
-
-<section class="section" aria-label="Qué incluye el Plan Inicio Seguro">
+<section class="section" style="padding-top:0;background:var(--deep)" aria-label="Qué incluye el Plan Inicio Seguro">
   <div class="wrap cards-3">
-    <article class="feature feature--ink">
-      <p class="feature__spread" aria-hidden="true">${spread('Empresa')}</p>
-      <h3 class="feature__title">Constituye tu empresa</h3>
-      <p class="feature__text">Constituir formalmente una empresa te permite desarrollar tu actividad de manera segura y profesional, separar tu patrimonio personal del empresarial, acceder a nuevas oportunidades comerciales y generar mayor confianza frente a clientes, proveedores e inversionistas.</p>
-    </article>
-    <article class="feature feature--green">
-      <p class="feature__spread" aria-hidden="true">${spread('Marca')}</p>
-      <h3 class="feature__title">Registra tu marca</h3>
-      <p class="feature__text">Tu marca es uno de los activos más valiosos de tu negocio. Registrarla te otorga el derecho exclusivo a utilizarla, evita que terceros la copien o registren antes que tú y fortalece la identidad y reputación de tu empresa en el mercado.</p>
-    </article>
-    <article class="feature feature--graphite">
-      <p class="feature__spread" aria-hidden="true">${spread('Plan')}</p>
-      <h3 class="feature__title">Beneficios de nuestro plan</h3>
-      <p class="feature__text">Nuestro plan te permite iniciar tu negocio con una estructura jurídica adecuada y con tu marca protegida desde el primer día. Ahorras tiempo, evitas errores y cuentas con asesoría legal integral para emprender con seguridad, tranquilidad y visión de crecimiento.</p>
-    </article>
+    <article class="tile" data-reveal><span class="label">( 01 )</span><div><h3 class="tile__title">Constituye tu empresa</h3><p>Constituir formalmente una empresa te permite desarrollar tu actividad de manera segura y profesional, separar tu patrimonio personal del empresarial, acceder a nuevas oportunidades comerciales y generar mayor confianza frente a clientes, proveedores e inversionistas.</p></div></article>
+    <article class="tile" data-reveal="1"><span class="label">( 02 )</span><div><h3 class="tile__title">Registra tu marca</h3><p>Tu marca es uno de los activos más valiosos de tu negocio. Registrarla te otorga el derecho exclusivo a utilizarla, evita que terceros la copien o registren antes que tú y fortalece la identidad y reputación de tu empresa en el mercado.</p></div></article>
+    <article class="tile" data-reveal="2"><span class="label">( 03 )</span><div><h3 class="tile__title">Beneficios de nuestro plan</h3><p>Nuestro plan te permite iniciar tu negocio con una estructura jurídica adecuada y con tu marca protegida desde el primer día. Ahorras tiempo, evitas errores y cuentas con asesoría legal integral para emprender con seguridad, tranquilidad y visión de crecimiento.</p></div></article>
   </div>
 </section>`,
 }));
@@ -598,30 +569,24 @@ function reasonsPage({ file, title, description, h1, intro, reasons, closing }) 
   return page({
     file, title, description, active: 'servicios',
     body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <div>
-      <span class="eyebrow" data-reveal><a href="servicios-empresas.html" style="text-decoration:none">Servicios para Empresas</a></span>
-      <h1 class="display" id="t" data-reveal style="--i:1">${h1}</h1>
+${pageHero({ label: 'Servicios para Empresas', labelHref: 'servicios-empresas.html', h1, lede: intro })}
+<div class="light">
+  <section class="section" aria-label="Razones">
+    <div class="wrap reasons" data-reasons>
+      <div class="reasons__counter" aria-hidden="true">
+        <div class="reasons__num"><div class="reasons__num-roll">${reasons.map((_, i) => `<span>${num(i)}</span>`).join('')}</div></div>
+        <p class="mono" style="margin-top:1.5rem;color:var(--ink-dim)">de ${num(reasons.length - 1)} razones</p>
+      </div>
+      <ol class="reasons__list">
+        ${reasons.map(([t, txt], i) => `<li class="reason" data-reveal><span class="reason__idx mono">( ${num(i)} )</span><h2 class="reason__title">${t}</h2><p class="reason__text">${txt}</p></li>`).join('')}
+      </ol>
     </div>
-    <p class="lede" data-reveal style="--i:2">${intro}</p>
-  </div>
-</section>
-<section class="section" style="padding-top:0" aria-label="Razones">
-  <div class="wrap">
-    <ol class="reasons">
-      ${reasons.map(([t, txt], i) => `<li class="reason" data-reveal>
-        <span class="reason__num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
-        <h2 class="reason__title">${t}</h2>
-        <p class="reason__text">${txt}</p>
-      </li>`).join('')}
-    </ol>
-  </div>
-</section>
-<section class="closing on-dark" aria-label="Conclusión">
-  <div class="wrap">
-    <p class="closing__text" data-reveal>${closing}</p>
-    <a class="btn btn--light" href="#contacto" data-reveal style="--i:1">¡Contáctanos! ${ICON.arrow}</a>
+  </section>
+</div>
+<section class="band" aria-label="Conclusión">
+  <div class="wrap band__body">
+    <p class="title band__title" data-split style="margin:0">${closing}</p>
+    <div data-reveal="1">${btn('#contacto', '¡Contáctanos!', 'btn--mint')}</div>
   </div>
 </section>`,
   });
@@ -631,7 +596,7 @@ built.push(reasonsPage({
   file: 'constituye-tu-empresa.html',
   title: '¿Por qué constituir tu Empresa? — AFyV Legal',
   description: 'Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio. Cinco razones para formalizar tu emprendimiento.',
-  h1: '¿Por qué constituir tu Empresa?',
+  h1: '¿Por qué constituir tu <span class="hl">Empresa</span>?',
   intro: 'Muchos emprendimientos comienzan como una simple idea, pero solo aquellos que se formalizan están verdaderamente preparados para crecer, atraer oportunidades y proyectarse a largo plazo. Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio.',
   reasons: [
     ['Separación de Patrimonios', 'Al constituir una empresa, se crea una persona jurídica distinta de sus socios. Esto permite separar el patrimonio personal del empresarial, limitando la responsabilidad a los aportes realizados a la sociedad. De esta forma, podrás desarrollar tu actividad con mayor seguridad y reducir riesgos innecesarios para tu patrimonio personal.'],
@@ -640,14 +605,14 @@ built.push(reasonsPage({
     ['Genera confianza', 'Clientes, proveedores y empresas prefieren relacionarse con negocios formales. Operar a través de una sociedad transmite seriedad, estabilidad y profesionalismo, fortaleciendo tu imagen comercial y aumentando tus posibilidades de generar nuevas oportunidades de negocio.'],
     ['Profesionaliza la operación de tu empresa', 'La formalización permite emitir documentos tributarios, contratar trabajadores, acceder a servicios bancarios empresariales y separar adecuadamente las finanzas personales de las de la empresa. Todo ello contribuye a una gestión más eficiente y ordenada.'],
   ],
-  closing: 'Formalizar tu negocio es invertir en su futuro. Porque las grandes empresas no solo nacen de buenas ideas: se construyen sobre bases legales sólidas.',
+  closing: 'Formalizar tu negocio es invertir en su futuro. Porque las grandes empresas no solo nacen de buenas ideas: se construyen sobre <span class="hl">bases legales sólidas</span>.',
 }));
 
 built.push(reasonsPage({
   file: 'registra-tu-marca.html',
   title: 'Por qué registrar tu marca — AFyV Legal',
   description: 'Tu marca es uno de los activos más valiosos de tu negocio. Cinco razones para registrarla y protegerla desde el inicio.',
-  h1: 'Por qué registrar tu marca',
+  h1: 'Por qué registrar tu <span class="hl">marca</span>',
   intro: 'Tu marca es uno de los activos más valiosos de tu negocio. Registrarla te permite proteger su identidad, diferenciarte de la competencia y construir una base sólida para crecer con seguridad.',
   reasons: [
     ['Tu marca es uno de los activos más valiosos de tu negocio', 'Muchos emprendedores invierten tiempo, recursos y esfuerzo en posicionar un nombre en el mercado, sin considerar que, si no se encuentra registrado, cualquier tercero podría utilizarlo o incluso obtener derechos exclusivos sobre él. Registrar una marca es una decisión estratégica para proteger y fortalecer tu negocio.'],
@@ -656,7 +621,7 @@ built.push(reasonsPage({
     ['Protege el valor de tu marca', 'Una marca registrada constituye un activo intangible que forma parte del patrimonio de la empresa. A medida que tu negocio crece, la marca adquiere valor comercial, pudiendo incluso ser licenciada, cedida o incorporada como un activo relevante para atraer inversionistas o concretar alianzas estratégicas.'],
     ['Competitividad', 'Las empresas más exitosas del mundo tienen algo en común: protegen sus marcas desde el inicio. Registrar tu marca hoy significa asegurar la identidad de tu negocio para el futuro y construir una ventaja competitiva que perdure en el tiempo.'],
   ],
-  closing: 'Porque una gran marca no solo se crea: también se protege.',
+  closing: 'Porque una gran marca no solo se crea: también se <span class="hl">protege</span>.',
 }));
 
 // Equipo
@@ -667,26 +632,23 @@ built.push(page({
   active: 'equipo',
   ogImage: 'logo.webp',
   body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <h1 class="display" id="t" data-reveal>Nuestro Equipo</h1>
-    <p class="lede" data-reveal style="--i:1">Somos un equipo altamente capacitado, dedicados a ofrecer respuestas ágiles y efectivas. Nos destacamos por nuestra visión práctica y contingente del derecho, abordando cada desafío legal con el compromiso de entregar soluciones reales y a la medida. Entendemos que cada cliente es único, por lo que trabajamos de manera colaborativa, combinando cercanía y rigor técnico para brindar tranquilidad y seguridad jurídica frente a un entorno en permanente cambio.</p>
-  </div>
-</section>
-<section class="section" style="padding-top:0" aria-label="Integrantes">
-  <div class="wrap">
-    ${TEAM.map((m) => `<article class="profile" id="${m.slug}" aria-labelledby="${m.slug}-name">
-      <div class="profile__media" data-reveal><div class="portrait"><div class="portrait__media"><img src="assets/img/${m.img}" alt="Retrato de ${m.name}" width="600" height="860" loading="lazy" decoding="async"></div></div></div>
-      <div data-reveal style="--i:1">
-        <h2 class="profile__name" id="${m.slug}-name">${m.name}</h2>
-        <p class="profile__area">${m.area}</p>
-        <div class="profile__bio">${m.bio.map((b) => `<p>${b}</p>`).join('')}</div>
-        <p class="profile__exp-title">Experiencia</p>
-        <ul class="profile__exp">${m.exp.map((e) => `<li>${e}</li>`).join('')}</ul>
-      </div>
-    </article>`).join('')}
-  </div>
-</section>`,
+${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">Equipo</span>', lede: 'Somos un equipo altamente capacitado, dedicados a ofrecer respuestas ágiles y efectivas. Nos destacamos por nuestra visión práctica y contingente del derecho, abordando cada desafío legal con el compromiso de entregar soluciones reales y a la medida. Entendemos que cada cliente es único, por lo que trabajamos de manera colaborativa, combinando cercanía y rigor técnico para brindar tranquilidad y seguridad jurídica frente a un entorno en permanente cambio.' })}
+<div class="light">
+  <section class="section" aria-label="Integrantes">
+    <div class="wrap">
+      ${TEAM.map((m, i) => `<article class="profile" id="${m.slug}" aria-labelledby="${m.slug}-name">
+        <div class="profile__media" data-reveal><div class="member__media"><span class="member__tag mono">( ${num(i)} )</span><img src="assets/img/${m.img}" alt="Retrato de ${m.name}" width="600" height="860" loading="lazy" decoding="async"></div></div>
+        <div>
+          <h2 class="profile__name" id="${m.slug}-name" data-split>${m.name}</h2>
+          <p class="profile__area" data-reveal>${m.area}</p>
+          <div class="profile__bio" data-reveal="1">${m.bio.map((b) => `<p>${b}</p>`).join('')}</div>
+          <p class="label" data-reveal="2" style="margin-top:2.5rem">Experiencia</p>
+          <ul class="profile__exp" data-reveal="2" style="margin-top:1rem">${m.exp.map((e) => `<li>${e}</li>`).join('')}</ul>
+        </div>
+      </article>`).join('')}
+    </div>
+  </section>
+</div>`,
 }));
 
 // Blog
@@ -696,19 +658,12 @@ built.push(page({
   description: 'Artículos de AFyV Legal sobre derecho civil, arrendamientos, contratos, filiación, liquidación simplificada y más.',
   active: 'blog',
   body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <div>
-      <span class="eyebrow" data-reveal>Blog</span>
-      <h1 class="display" id="t" data-reveal style="--i:1">AFyV Informa</h1>
-    </div>
-  </div>
-</section>
-<section class="section" aria-label="Publicaciones">
-  <div class="wrap posts posts--3">
-    ${POSTS.map((post, i) => postCard(post, 0, i % 3)).join('')}
-  </div>
-</section>`,
+${pageHero({ label: 'Blog', h1: 'AFyV <span class="hl">Informa</span>' })}
+<div class="light">
+  <section class="section" aria-label="Publicaciones">
+    <div class="wrap posts posts--3">${POSTS.map((p) => postCard(p)).join('')}</div>
+  </section>
+</div>`,
 }));
 
 // Posts
@@ -717,39 +672,43 @@ POSTS.forEach((post, idx) => {
   built.push(page({
     file: `blog/${post.slug}.html`,
     depth: 1,
+    progress: true,
     title: `${post.title} — AFyV Informa`,
     description: post.excerpt.slice(0, 155),
     active: 'blog',
     ogImage: `${post.file}.webp`,
     body: `
 <article aria-labelledby="t">
-  <header class="article-head">
-    <div class="wrap--narrow">
-      <a class="link-arrow" href="../blog.html" data-reveal>AFyV Informa</a>
-      <h1 class="article-head__title" id="t" data-reveal style="--i:1;margin-top:2rem">${esc(post.title)}</h1>
-      <div class="byline" data-reveal style="--i:2">
+  <header class="article-head page-hero" data-intro style="padding-bottom:clamp(6rem,12vw,10rem)">
+    <div class="hero__gl" data-gl></div>
+    <div class="wrap--narrow hero__inner" style="padding:0">
+      <a class="paren" href="../blog.html" data-reveal>AFyV Informa</a>
+      <h1 class="article-head__title" id="t" data-split>${esc(post.title)}</h1>
+      <div class="byline" data-reveal="2">
         <img src="../assets/img/${post.avatar}" alt="" width="80" height="80">
         <span><strong>${post.author}</strong> · ${post.date} · ${post.read}</span>
       </div>
     </div>
   </header>
-  <figure class="article-cover wrap--narrow" data-reveal>
-    <img src="../assets/img/${post.file}.webp" alt="Portada del artículo ${esc(post.title)}" width="960" height="540" fetchpriority="high">
-  </figure>
-  <div class="wrap--narrow prose">
-    ${prose(post.html)}
+  <div class="light">
+    <figure class="article-cover wrap--narrow" style="transform:translateY(calc(-1 * clamp(4rem,10vw,8rem)));margin-bottom:calc(-1 * clamp(4rem,10vw,8rem))">
+      <img src="../assets/img/${post.file}.webp" alt="Portada del artículo ${esc(post.title)}" width="960" height="540" fetchpriority="high">
+    </figure>
+    <div class="article-body section" style="padding-top:clamp(3rem,6vw,5rem)">
+      <div class="wrap--narrow prose">${prose(post.html)}</div>
+      <div class="wrap--narrow article-foot">
+        <a class="paren" href="../blog.html">Volver a AFyV Informa</a>
+        ${btn('#contacto', '¡Contáctanos!', 'btn--dark')}
+      </div>
+    </div>
+    <section class="section" style="padding-top:0" aria-labelledby="mas-title">
+      <div class="wrap">
+        <div class="section-head"><span class="label">Sigue leyendo</span><h2 class="title-sm" id="mas-title">Más publicaciones</h2></div>
+        <div class="posts posts--3">${more.map((p) => postCard(p, 1)).join('')}</div>
+      </div>
+    </section>
   </div>
-  <div class="wrap--narrow article-foot">
-    <a class="link-arrow" href="../blog.html">Volver a AFyV Informa</a>
-    <a class="btn" href="#contacto">¡Contáctanos! ${ICON.arrow}</a>
-  </div>
-</article>
-<section class="section" aria-labelledby="mas-title">
-  <div class="wrap">
-    <div class="section-head"><h2 class="h2" id="mas-title">Más publicaciones</h2></div>
-    <div class="posts posts--3">${more.map((p, i) => postCard(p, 1, i)).join('')}</div>
-  </div>
-</section>`,
+</article>`,
   }));
 });
 
@@ -758,6 +717,7 @@ for (const [file, title, src, desc] of [
   ['terminos-y-condiciones.html', 'Términos y Condiciones', 'terminos', 'Términos y Condiciones de acceso, uso y consulta del sitio web de AFyV Legal.'],
   ['politica-de-privacidad.html', 'Política de Privacidad', 'privacidad', 'Política de tratamiento de datos personales de AFyV Legal.'],
 ]) {
+  const other = file.startsWith('terminos') ? ['politica-de-privacidad.html', 'Ver Política de Privacidad'] : ['terminos-y-condiciones.html', 'Ver Términos y Condiciones'];
   built.push(page({
     file,
     title: `${title} — AFyV Legal`,
@@ -765,20 +725,12 @@ for (const [file, title, src, desc] of [
     active: 'legal',
     contactOpts: false,
     body: `
-<section class="page-hero" aria-labelledby="t">
-  <div class="wrap page-hero__grid">
-    <div>
-      <span class="eyebrow">Avisos Legales</span>
-      <h1 class="display" id="t">${title}</h1>
-    </div>
-    <p class="lede"><a class="link-arrow" href="${file.startsWith('terminos') ? 'politica-de-privacidad.html">Ver Política de Privacidad' : 'terminos-y-condiciones.html">Ver Términos y Condiciones'}</a></p>
-  </div>
-</section>
-<section class="section">
-  <div class="wrap--narrow prose prose--legal">
-    ${prose(read(`content/${src}.html`))}
-  </div>
-</section>`,
+${pageHero({ label: 'Avisos Legales', h1: title, lede: `<a class="paren" href="${other[0]}">${other[1]}</a>` })}
+<div class="light">
+  <section class="section">
+    <div class="wrap--narrow prose prose--legal">${prose(read(`content/${src}.html`))}</div>
+  </section>
+</div>`,
   }));
 }
 
