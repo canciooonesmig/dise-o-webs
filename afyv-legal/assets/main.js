@@ -180,15 +180,69 @@
     window.addEventListener('pageshow', (e) => { if (e.persisted) gsap.set(curtain, { clipPath: 'inset(100% 0% 0% 0%)' }); });
   }
 
+  /* ───── Tarifario: filter by line and toggle VAT ───── */
+  const grid = $('[data-svc-grid]');
+  if (grid) {
+    if (hasGsap && window.Flip) gsap.registerPlugin(Flip);
+    const cards = $$('.svc-card', grid);
+    const buttons = $$('[data-filter]');
+    const status = $('[data-tarifa-status]');
+    const applyFilter = (key, animate = true) => {
+      const state = animate && !reduce && window.Flip ? Flip.getState(cards) : null;
+      buttons.forEach((b) => { const on = b.dataset.filter === key; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', String(on)); });
+      let shown = 0;
+      cards.forEach((c) => { const show = key === 'all' || c.dataset.line === key; c.hidden = !show; if (show) shown += 1; });
+      if (status) status.textContent = `${shown} servicios`;
+      if (state) Flip.from(state, { duration: 0.6, ease: 'expo.out', scale: true, absolute: true, onEnter: (els) => gsap.fromTo(els, { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5 }), onLeave: (els) => gsap.to(els, { opacity: 0, scale: 0.94, duration: 0.3 }) });
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => applyFilter(b.dataset.filter)));
+    const syncHash = (animate) => {
+      const key = location.hash.slice(1);
+      if (buttons.some((b) => b.dataset.filter === key)) applyFilter(key, animate);
+    };
+    syncHash(false);
+    window.addEventListener('hashchange', () => syncHash(true));
+
+    const iva = $('.iva');
+    const nf = new Intl.NumberFormat('es-CL');
+    $$('[data-iva]').forEach((b) => b.addEventListener('click', () => {
+      const mode = b.dataset.iva;
+      iva.dataset.mode = mode;
+      $$('[data-iva]').forEach((o) => { const on = o === b; o.classList.toggle('is-on', on); o.setAttribute('aria-pressed', String(on)); });
+      $$('.price__num').forEach((n) => {
+        const to = Number(mode === 'gross' ? n.dataset.gross : n.dataset.net);
+        if (hasGsap && !reduce) {
+          const from = Number(n.textContent.replace(/\D/g, '')) || 0;
+          const o = { v: from };
+          gsap.to(o, { v: to, duration: 0.7, ease: 'power3.out', onUpdate: () => { n.textContent = `$${nf.format(Math.round(o.v))}`; } });
+        } else n.textContent = `$${nf.format(to)}`;
+      });
+      if (status) status.textContent = mode === 'gross' ? 'Precios con IVA' : 'Precios sin IVA';
+    }));
+  }
+
+  /* Final (static) state of the illustrative scenes: used without GSAP or with reduced motion */
+  const finalState = () => {
+    $$('.doc').forEach((d) => { d.dataset.state = '2'; d.classList.add('is-verified', 'is-signed'); });
+    $$('.doc__line').forEach((l) => l.classList.add(l.classList.contains('doc__line--bad') ? 'is-struck' : 'is-ok'));
+    $$('.doc__check, .checklist li').forEach((c) => c.classList.add('is-on'));
+    $$('.review__step').forEach((s, i, a) => s.classList.toggle('is-active', i === a.length - 1));
+    $$('.limit').forEach((l) => l.classList.add('is-locked'));
+    $$('.clause').forEach((c) => c.classList.add('is-signed'));
+    $$('[data-consent-box]').forEach((b) => b.classList.add('is-on'));
+  };
+
   /* ───── Scroll choreography ───── */
   if (!hasGsap || reduce) {
     $$('.method').forEach((m) => m.classList.add('no-pin'));
+    finalState();
     lift();
     return;
   }
 
   gsap.registerPlugin(ScrollTrigger);
   if (window.SplitText) gsap.registerPlugin(SplitText);
+  ['ScrambleTextPlugin', 'DrawSVGPlugin', 'Flip'].forEach((n) => { if (window[n]) gsap.registerPlugin(window[n]); });
   const ease = 'expo.out';
 
   const ready = document.fonts ? document.fonts.ready : Promise.resolve();
@@ -213,7 +267,7 @@
             paused: inHero,
             scrollTrigger: inHero ? undefined : { trigger: el, start: 'top 88%', once: true },
           });
-          if (inHero) intro.add(tween.play(), 0.1);
+          if (inHero) intro.add(tween.play(), el.closest('.hero--v3') ? 0.75 : 0.1);
           return tween;
         },
       });
@@ -236,7 +290,7 @@
     });
 
     // Manifesto words light up with scroll
-    $$('[data-words]').forEach((el) => {
+    $$('[data-words], [data-words-light]').forEach((el) => {
       if (!window.SplitText) return;
       SplitText.create(el, {
         type: 'words',
@@ -254,7 +308,7 @@
       const next = cards[i + 1];
       if (next) {
         gsap.matchMedia().add('(min-width: 60em)', () => {
-          gsap.to(card, { scale: 0.92, filter: 'brightness(0.55)', ease: 'none', scrollTrigger: { trigger: next, start: 'top bottom', end: 'top 15%', scrub: true } });
+          gsap.to(card, { scale: 0.95, filter: 'brightness(0.82)', ease: 'none', scrollTrigger: { trigger: next, start: 'top bottom', end: 'top 15%', scrub: true } });
         });
       }
       const paths = $$('.draw', card);
@@ -358,6 +412,143 @@
     // Reading progress
     const bar = $('.progress span');
     if (bar) gsap.to(bar, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: '.article-body', start: 'top 30%', end: 'bottom bottom', scrub: true } });
+
+    /* ── AFyV 2.0 choreography ── */
+    const scramble = (el, opts = {}) => {
+      const text = el.dataset.text || el.textContent;
+      el.dataset.text = text;
+      if (!window.ScrambleTextPlugin) return gsap.from(el, { autoAlpha: 0, duration: 0.6, ...opts });
+      return gsap.fromTo(el, { scrambleText: { text: ' ' } }, { scrambleText: { text, chars: '01§·/ABCDEFGHIJKLMNOPQRSTUVWXYZ', speed: 0.6, revealDelay: 0.15 }, duration: 1.1, ease: 'none', ...opts });
+    };
+    const draw = (path) => {
+      const len = path.getTotalLength();
+      path.style.strokeDasharray = len;
+      path.style.strokeDashoffset = len;
+      return len;
+    };
+
+    // Hero: the machine types, the lawyer signs
+    $$('[data-type-intro]').forEach((el) => { intro.add(scramble(el, { paused: true }).play(), 0); });
+    $$('[data-sign-intro]').forEach((wrap) => {
+      const path = $('.sign__path', wrap);
+      const sealEl = $('.seal', wrap);
+      if (path) { const len = draw(path); intro.to(path, { strokeDashoffset: 0, duration: 1.6, ease: 'power2.inOut' }, 1.3); }
+      intro.from($('.mono', wrap), { autoAlpha: 0, duration: 0.6 }, 1.6);
+      if (sealEl) intro.from(sealEl, { scale: 1.8, rotate: -40, autoAlpha: 0, duration: 0.6, ease: 'back.out(2.2)' }, 2.6);
+    });
+
+    // Mono labels decode when they enter
+    $$('[data-scramble]').forEach((el) => {
+      if (el.closest('[data-intro]')) { intro.add(scramble(el, { paused: true }).play(), 0.3); return; }
+      ScrollTrigger.create({ trigger: el, start: 'top 92%', once: true, onEnter: () => scramble(el) });
+    });
+    $$('[data-type]').forEach((el) => {
+      ScrollTrigger.create({ trigger: el, start: 'top 85%', once: true, onEnter: () => scramble(el, { duration: 1.4 }) });
+    });
+
+    // Clauses get stamped as they appear
+    $$('.clause').forEach((c, i) => {
+      ScrollTrigger.create({ trigger: c, start: 'top 72%', once: true, onEnter: () => setTimeout(() => c.classList.add('is-signed'), 250) });
+    });
+
+    // Limits lock
+    $$('.limit').forEach((l, i) => {
+      ScrollTrigger.create({ trigger: l, start: 'top 85%', once: true, onEnter: () => setTimeout(() => l.classList.add('is-locked'), 200 + (i % 5) * 120) });
+    });
+
+    // Mini flow: the line draws and the stages light up in order
+    $$('[data-flow-mini]').forEach((f) => {
+      const path = $('.flowmini__line path', f);
+      const tl = gsap.timeline({ scrollTrigger: { trigger: f, start: 'top 80%', once: true } });
+      if (path) { draw(path); tl.to(path, { strokeDashoffset: 0, duration: 1.8, ease: 'power2.inOut' }, 0); }
+      tl.from($$('.flowmini__node', f), { y: 20, autoAlpha: 0, duration: 0.7, ease, stagger: 0.12 }, 0.1)
+        .from($$('.flowmini__dot', f), { scale: 0.3, duration: 0.6, ease: 'back.out(2.5)', stagger: 0.12 }, 0.1)
+        .from($$('.flowmini__notes p', f), { autoAlpha: 0, x: -12, duration: 0.6, stagger: 0.15 }, 1.2);
+    });
+
+    // Review scene: everything is a pure function of progress, so scrubbing works both ways
+    $$('[data-review]').forEach((sec) => {
+      const doc = $('.doc', sec);
+      const lines = $$('.doc__line', sec);
+      const good = lines.filter((l) => !l.classList.contains('doc__line--bad'));
+      const bad = $('.doc__line--bad', sec);
+      const checks = $$('.doc__check', sec);
+      const steps = $$('.review__step', sec);
+      const sig = $('.doc__sign .sign__path', sec);
+      const sigLen = sig ? draw(sig) : 0;
+      const seg = (p, a, b) => Math.min(1, Math.max(0, (p - a) / (b - a)));
+      const render = (p) => {
+        lines.forEach((l, i) => { const r = seg(p, 0.02 + i * 0.07, 0.09 + i * 0.07); l.style.opacity = String(0.15 + 0.85 * r); l.style.transform = `translateY(${(1 - r) * 8}px)`; });
+        const state = p < 0.36 ? 0 : p < 0.8 ? 1 : 2;
+        doc.dataset.state = String(state);
+        steps.forEach((s, i) => s.classList.toggle('is-active', i === state));
+        doc.classList.toggle('is-verified', p >= 0.4);
+        good.forEach((l, i) => l.classList.toggle('is-ok', p >= 0.44 + i * 0.07));
+        if (bad) bad.classList.toggle('is-struck', p >= 0.5);
+        checks.forEach((c, i) => c.classList.toggle('is-on', p >= 0.46 + i * 0.065));
+        if (sig) sig.style.strokeDashoffset = String(sigLen * (1 - seg(p, 0.8, 0.94)));
+        doc.classList.toggle('is-signed', p >= 0.95);
+      };
+      render(0);
+      const m = gsap.matchMedia();
+      m.add('(min-width: 60em)', () => {
+        ScrollTrigger.create({ trigger: sec, start: 'top top', end: '+=230%', pin: true, scrub: true, onUpdate: (st) => render(st.progress) });
+      });
+      m.add('(max-width: 59.99em)', () => {
+        const o = { p: 0 };
+        const t = gsap.to(o, { p: 1, duration: 5, ease: 'none', paused: true, onUpdate: () => render(o.p) });
+        ScrollTrigger.create({ trigger: doc, start: 'top 75%', once: true, onEnter: () => t.play() });
+      });
+    });
+
+    // IA page: the nine stages, pinned and driven by scroll on desktop
+    $$('[data-flow]').forEach((sec) => {
+      const cards = $$('.flow__card', sec);
+      const nodes = $$('.flow__node', sec);
+      const fill = $('.flow__fill', sec);
+      const m = gsap.matchMedia();
+      m.add('(min-width: 60em)', () => {
+        gsap.set(cards.slice(1), { autoAlpha: 0, y: 30 });
+        let current = 0;
+        const show = (i) => {
+          if (i === current) return;
+          gsap.to(cards[current], { autoAlpha: 0, y: i > current ? -30 : 30, duration: 0.35, ease: 'power2.in', overwrite: true });
+          gsap.fromTo(cards[i], { autoAlpha: 0, y: i > current ? 30 : -30 }, { autoAlpha: 1, y: 0, duration: 0.5, ease, overwrite: true });
+          current = i;
+        };
+        ScrollTrigger.create({
+          trigger: sec, start: 'top top', end: `+=${cards.length * 55}%`, pin: true, scrub: true,
+          onUpdate: (st) => {
+            const i = Math.min(cards.length - 1, Math.floor(st.progress * cards.length));
+            show(i);
+            gsap.set(fill, { scaleX: st.progress });
+            nodes.forEach((n, k) => { n.classList.toggle('is-active', k === i); n.classList.toggle('is-done', k < i); });
+          },
+        });
+        return () => gsap.set(cards, { clearProps: 'all' });
+      });
+    });
+
+    // Verification checklist ticks with scroll
+    $$('[data-checklist]').forEach((list) => {
+      const items = $$('li', list);
+      ScrollTrigger.create({ trigger: list, start: 'top 70%', end: 'bottom 55%', scrub: true, onUpdate: (st) => items.forEach((it, i) => it.classList.toggle('is-on', st.progress >= (i + 0.5) / items.length)) });
+    });
+
+    // Consent: the AI box gets ticked
+    $$('[data-consent-box]').forEach((b) => {
+      ScrollTrigger.create({ trigger: b, start: 'top 70%', once: true, onEnter: () => setTimeout(() => b.classList.add('is-on'), 600) });
+    });
+
+    // Vault files slide apart
+    $$('.vault__fig').forEach((v) => {
+      gsap.from($$('.vault__file', v), { y: (i) => -(i * 60), rotateX: 50, autoAlpha: 0, duration: 1.2, ease, stagger: 0.15, scrollTrigger: { trigger: v, start: 'top 80%', once: true } });
+    });
+
+    // Lists inside the versus columns
+    $$('.versus__col').forEach((col) => {
+      gsap.from($$('li', col), { x: col.matches(':last-child') ? 20 : -20, autoAlpha: 0, duration: 0.8, ease, stagger: 0.08, scrollTrigger: { trigger: col, start: 'top 80%', once: true } });
+    });
 
     ScrollTrigger.refresh();
     lift().then(() => intro.play());

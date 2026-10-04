@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Servicios — AFyV Legal</title>
-<meta name="description" content="Asesoría jurídica en ámbitos civiles, comerciales y de derecho público: servicios para empresas, personas, laboral y derecho público.">
+<title>Servicios y precios — AFyV Legal</title>
+<meta name="description" content="Tarifario de AFyV Legal: marcas, corporativo pyme, litigios y suscripción Abogado de tu Pyme. Precio fijo conocido antes de empezar y plazos en horas hábiles.">
 <link rel="canonical" href="https://www.afyvlegal.com/servicios.html">
 <meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
-<meta property="og:title" content="Servicios — AFyV Legal">
-<meta property="og:description" content="Asesoría jurídica en ámbitos civiles, comerciales y de derecho público: servicios para empresas, personas, laboral y derecho público.">
+<meta property="og:title" content="Servicios y precios — AFyV Legal">
+<meta property="og:description" content="Tarifario de AFyV Legal: marcas, corporativo pyme, litigios y suscripción Abogado de tu Pyme. Precio fijo conocido antes de empezar y plazos en horas hábiles.">
 <link rel="icon" href="assets/img/logo.webp" type="image/webp">
 <link rel="preload" href="assets/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -21,23 +21,26 @@
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/ScrambleTextPlugin.min.js" defer></script>
+<script src="assets/vendor/DrawSVGPlugin.min.js" defer></script>
+<script src="assets/vendor/Flip.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
 <script src="assets/gl.js" defer></script>
 <script src="assets/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">La IA prepara · un abogado firma</span></div>
 <header class="nav">
   <div class="nav__inner">
     <a class="nav__brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html" aria-current="page">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html">Avisos Legales</a></li></ul></nav>
+    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="servicios.html" aria-current="page">Servicios y precios</a></li><li><a class="nav__link" href="ia-responsable.html">IA responsable</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="blog.html">Blog</a></li></ul></nav>
     <div class="nav__cta"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
     <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
 <div class="sheet" id="sheet">
-  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html"><span>01</span>Inicio</a></li><li><a href="servicios.html" aria-current="page"><span>02</span>Servicios</a></li><li><a href="blog.html"><span>03</span>Blog</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="terminos-y-condiciones.html"><span>05</span>Avisos Legales</a></li></ul></nav>
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html"><span>01</span>Inicio</a></li><li><a href="servicios.html" aria-current="page"><span>02</span>Servicios y precios</a></li><li><a href="ia-responsable.html"><span>03</span>IA responsable</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="blog.html"><span>05</span>Blog</a></li></ul></nav>
   <div class="sheet__foot"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><span class="mono">Santiago, Chile.</span></div>
 </div>
 <main id="contenido" tabindex="-1">
@@ -45,63 +48,328 @@
   <div class="hero__gl" data-gl></div>
   <div class="wrap page-hero__grid hero__inner" style="padding:0">
     <div>
-      <span class="label" data-reveal>Servicios</span>
-      <h1 class="display" id="t" data-split>Nuestros <span class="hl">Servicios</span></h1>
+      <span class="label" data-reveal>Servicios y precios</span>
+      <h1 class="display" id="t" data-split>Precio fijo, <span class="hl">conocido antes</span> de empezar</h1>
     </div>
-    <p class="lede" data-reveal="2">Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.</p>
+    <p class="lede" data-reveal="2">Cuatro líneas para pymes y emprendedores. Cada servicio tiene una ficha de alcance y un abogado del estudio revisa y firma cada entrega.</p>
   </div>
 </section>
 <div class="light">
-  <section class="section" aria-label="Servicios">
-    <div class="wrap svc">
-      <article class="svc__item" data-reveal>
-        <span class="svc__num">( 01 )</span>
-        <h2 class="svc__title">Servicios para Empresas</h2>
-        <div><p class="svc__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p><a class="paren" href="servicios-empresas.html">Conoce Más</a></div>
-      </article>
-      <article class="svc__item" data-reveal>
-        <span class="svc__num">( 02 )</span>
-        <h2 class="svc__title">Personas</h2>
-        <p class="svc__text">Brindamos orientación jurídica a personas en materias de contratos, deudas, arrendamientos, responsabilidad civil, conflictos entre particulares, posesiones efectivas y planificación testamentaria, abordando cada situación con un enfoque humano.</p>
-      </article>
-      <article class="svc__item" data-reveal>
-        <span class="svc__num">( 03 )</span>
-        <h2 class="svc__title">Laboral</h2>
-        <p class="svc__text">Guiamos a trabajadores y empleadores en la gestión de relaciones de trabajo y en la resolución de conflictos derivados del vínculo laboral. Asesoramos en la revisión de contratos de trabajo, término de la relación laboral, cumplimiento de obligaciones legales y análisis de situaciones complejas.</p>
-      </article>
-      <article class="svc__item" data-reveal>
-        <span class="svc__num">( 04 )</span>
-        <h2 class="svc__title">Derecho Público</h2>
-        <p class="svc__text">Otorgamos apoyo técnico y gestión estratégica en materias de derecho público y penal. Asistimos a nuestros clientes mediante la tramitación ágil de procedimientos ante órganos de la Administración del Estado, el monitoreo continuo de carpetas investigativas y la redacción de solicitudes o escritos de tramitación.</p>
-      </article>
+  <section class="section" aria-label="Tarifario">
+    <div class="wrap">
+      <div class="tarifa-bar" data-reveal>
+        <div class="filters" role="group" aria-label="Filtrar por línea">
+          <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="marcas" aria-pressed="false">Marcas</button><button type="button" class="filter" data-filter="corporativo" aria-pressed="false">Corporativo pyme</button><button type="button" class="filter" data-filter="litigios" aria-pressed="false">Litigios y cobranza</button>
+        </div>
+        <div class="iva" role="group" aria-label="Mostrar precios">
+          <button type="button" class="iva__opt is-on" data-iva="net" aria-pressed="true">Sin IVA</button>
+          <button type="button" class="iva__opt" data-iva="gross" aria-pressed="false">Con IVA</button>
+          <span class="iva__knob" aria-hidden="true"></span>
+        </div>
+      </div>
+      <p class="sr-status visually-hidden" aria-live="polite" data-tarifa-status></p>
+      <span id="marcas" class="anchor"></span><span id="corporativo" class="anchor"></span><span id="litigios" class="anchor"></span>
+      <div class="svc-grid" data-svc-grid><article class="svc-card is-featured" data-line="marcas" data-flip-id="Diagnóstico de marca">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Marcas</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Diagnóstico de marca</h3>
+  <span class="price"><span class="price__num" data-net="29990" data-gross="35688">$29.990</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Búsqueda de anterioridades en INAPI revisada por un abogado e informe de riesgo bajo, medio o alto, con clases recomendadas.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>24 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Búsqueda de marcas idénticas, fonéticamente y conceptualmente similares, y clases conexas</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Informe escrito: qué se buscó, en qué clases, en qué fecha y con qué límites</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Calificación del riesgo y recomendación de clases</span></li></ul>
+      <p class="ficha__nota">Se descuenta si contratas el registro. Nunca calificamos una marca de "registrable".</p>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="marcas" data-flip-id="Marca protegida (1 clase)">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Marcas</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Marca protegida (1 clase)</h3>
+  <span class="price"><span class="price__num" data-net="100000" data-gross="119000">$100.000</span></span>
+  <div class="svc-card__tags"><span class="tag">+ tasas oficiales</span></div>
+  <p class="svc-card__d">Solicitud de registro de marca ante INAPI y seguimiento hasta su resolución.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Presentación en 48 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Solicitud ante INAPI</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Seguimiento del trámite</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Respuesta a observaciones de forma</span></li></ul>
+      <p class="ficha__nota">Tasas INAPI aparte: 3 UTM por clase (1 al presentar y 2 al aceptarse el registro) más publicación en el Diario Oficial.</p>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="marcas" data-flip-id="Vigilancia de marca">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Marcas</span>
+    <span class="mono svc-card__modo">Mensual</span>
+  </div>
+  <h3 class="svc-card__t">Vigilancia de marca</h3>
+  <span class="price"><span class="price__num" data-net="10000" data-gross="11900">$10.000</span><span class="price__post">al mes</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Alertas de solicitudes similares y aviso de renovaciones.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Reporte mensual</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Reporte mensual de solicitudes similares</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cada alerta la evalúa un abogado</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="corporativo" data-flip-id="Empresa lista (RES)">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Corporativo pyme</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Empresa lista (RES)</h3>
+  <span class="price"><span class="price__num" data-net="119000" data-gross="141610">$119.000</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Constitución en el Registro de Empresas y Sociedades con estatutos a medida.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>72 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Estatutos</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Constitución en el RES</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Inicio de actividades</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card is-featured" data-line="corporativo" data-flip-id="Pack Empresa + Marca">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Corporativo pyme</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Pack Empresa + Marca</h3>
+  <span class="price"><span class="price__num" data-net="189000" data-gross="224910">$189.000</span></span>
+  <div class="svc-card__tags"><span class="tag">+ tasas oficiales</span></div>
+  <p class="svc-card__d">Constitución de la empresa y registro de su marca en una clase.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>72 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Empresa lista (RES)</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Marca protegida (1 clase)</span></li></ul>
+      <p class="ficha__nota">Tasas INAPI aparte.</p>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="corporativo" data-flip-id="Pacto de socios">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Corporativo pyme</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Pacto de socios</h3>
+  <span class="price"><span class="price__num" data-net="100000" data-gross="119000">$100.000</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Pacto de accionistas coherente con los estatutos, con reglas de mayorías, salida y resolución de conflictos explicadas.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>5 días hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Redacción</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Dos rondas de ajustes</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Doble revisión de abogados</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="corporativo" data-flip-id="Contrato comercial: revisión">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Corporativo pyme</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Contrato comercial: revisión</h3>
+  <span class="price"><span class="price__num" data-net="85000" data-gross="101150">$85.000</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Revisión de un contrato comercial con comentarios y propuesta de cambios.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>24 a 48 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Informe</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Versión con cambios marcados</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="corporativo" data-flip-id="Contrato comercial: redacción">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Corporativo pyme</span>
+    <span class="mono svc-card__modo">Desde</span>
+  </div>
+  <h3 class="svc-card__t">Contrato comercial: redacción</h3>
+  <span class="price"><span class="price__pre">desde</span><span class="price__num" data-net="100000" data-gross="119000">$100.000</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Redacción de un contrato comercial a medida.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>24 a 48 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Borrador</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Una ronda de ajustes</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="litigios" data-flip-id="Carta de cobro y negociación">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Litigios y cobranza</span>
+    <span class="mono svc-card__modo">Precio fijo</span>
+  </div>
+  <h3 class="svc-card__t">Carta de cobro y negociación</h3>
+  <span class="price"><span class="price__num" data-net="39000" data-gross="46410">$39.000</span></span>
+  <div class="svc-card__tags"></div>
+  <p class="svc-card__d">Carta de abogado dirigida al deudor, revisada en monto, intereses, título y tono antes de enviarse.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>24 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Carta de cobro</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="litigios" data-flip-id="Cobranza judicial">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Litigios y cobranza</span>
+    <span class="mono svc-card__modo">Fijo + % de éxito</span>
+  </div>
+  <h3 class="svc-card__t">Cobranza judicial</h3>
+  <span class="price"><span class="price__num" data-net="300000" data-gross="357000">$300.000</span></span>
+  <div class="svc-card__tags"><span class="tag">+ tasas oficiales</span><span class="tag">+ 10% de lo recuperado</span></div>
+  <p class="svc-card__d">Demanda ejecutiva o monitoria según el título, con tramitación hasta sentencia.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Presentación en 5 días hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Demanda</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tramitación hasta sentencia</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Revisión y firma de un socio patrocinante</span></li></ul>
+      <p class="ficha__nota">Más 10% de lo recuperado. La base de cálculo y el momento de pago se pactan por escrito antes de iniciar.</p>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="litigios" data-flip-id="Precario (Ley Devuélveme mi Casa) o cobro de rentas">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Litigios y cobranza</span>
+    <span class="mono svc-card__modo">Desde</span>
+  </div>
+  <h3 class="svc-card__t">Precario (Ley Devuélveme mi Casa) o cobro de rentas</h3>
+  <span class="price"><span class="price__pre">desde</span><span class="price__num" data-net="300000" data-gross="357000">$300.000</span></span>
+  <div class="svc-card__tags"><span class="tag">+ tasas oficiales</span></div>
+  <p class="svc-card__d">Procedimiento monitorio. Si la causa pasa a juicio sumario, $200.000 adicionales.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Plan de causa en 72 horas hábiles desde que recibimos la información completa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plan de causa</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cotización fija por etapa</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article><article class="svc-card" data-line="litigios" data-flip-id="Civil en general">
+  <div class="svc-card__top">
+    <span class="mono svc-card__line">Litigios y cobranza</span>
+    <span class="mono svc-card__modo">Por etapa</span>
+  </div>
+  <h3 class="svc-card__t">Civil en general</h3>
+  <span class="price"><span class="price__quote">Cotización por etapa</span></span>
+  <div class="svc-card__tags"><span class="tag">+ tasas oficiales</span></div>
+  <p class="svc-card__d">Juicios sumarios, ordinarios y otros procedimientos civiles.</p>
+  <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Según la causa</span></p>
+  <details class="ficha">
+    <summary><span>Ficha de alcance</span><span class="ficha__plus" aria-hidden="true"></span></summary>
+    <div class="ficha__body">
+      <p class="mono">Incluye</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cotización fija por etapa antes de iniciar</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Riesgos, costos y alternativas informados por escrito</span></li></ul>
+      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia"><strong>Opción sin IA:</strong> precio y plazo informados antes de contratar.</p>
+    </div>
+  </details>
+</article></div>
+      <p class="figref mono" style="margin-top:2rem">Precios en pesos chilenos. IVA 19%. Las tasas oficiales (INAPI, notaría, Diario Oficial) se cobran aparte cuando se indica. Tarifario vigente desde el 4 de octubre de 2026.</p>
+    </div>
+  </section>
+  <section class="section" id="suscripcion" aria-labelledby="sus-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label" data-reveal>Suscripción</span>
+          <h2 class="title" id="sus-title" data-split style="margin-top:1.5rem">Abogado de tu <span class="hl">Pyme</span></h2>
+        </div>
+        <p class="lede" data-reveal="1">Respuesta en 24 horas hábiles. Cada plan define por escrito qué incluye y qué no.</p>
+      </div>
+      <div class="plans">
+        <article class="plan-card" data-reveal="0">
+          <p class="mono">Plan</p>
+          <h3 class="plan-card__t">Esencial</h3>
+          <span class="price"><span class="price__num" data-net="49000" data-gross="58310">$49.000</span><span class="price__post">al mes</span></span>
+          <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Consultas por chat: hasta 3 por día hábil</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 revisiones de contrato al mes</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vigilancia de 1 marca</span></li></ul>
+          <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Respuesta en 24 horas hábiles</span></p>
+        </article><article class="plan-card is-featured" data-reveal="1">
+          <p class="mono">Plan</p>
+          <h3 class="plan-card__t">Pyme</h3>
+          <span class="price"><span class="price__num" data-net="119000" data-gross="141610">$119.000</span><span class="price__post">al mes</span></span>
+          <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Todo lo de Esencial</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>5 contratos al mes</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Actas y juntas</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>15% de descuento en marcas y litigios</span></li></ul>
+          <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Respuesta en 24 horas hábiles</span></p>
+        </article><article class="plan-card" data-reveal="2">
+          <p class="mono">Plan</p>
+          <h3 class="plan-card__t">Crecimiento</h3>
+          <span class="price"><span class="price__num" data-net="249000" data-gross="296310">$249.000</span><span class="price__post">al mes</span></span>
+          <ul><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Todo lo de Pyme</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Hasta 10 contratos simples al mes</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Abogado asignado</span></li><li><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Reunión mensual</span></li></ul>
+          <p class="svc-card__plazo"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Respuesta en 24 horas hábiles</span></p>
+        </article>
+      </div>
+      <div class="plans-rules doc-paper" data-reveal>
+        <dl><div><dt>Consulta</dt><dd>Una pregunta sobre un solo tema que se responde por escrito, sin redactar documentos ni revisar más de 5 páginas. Lo que exceda se cotiza aparte.</dd></div><div><dt>Contrato simple</dt><dd>Contrato basado en un modelo de la biblioteca del estudio, de hasta 10 páginas, entre dos partes, sin negociación con la contraparte y con una ronda de ajustes. Por ejemplo: NDA, prestación de servicios, arriendo comercial simple, compraventa de bienes muebles o mandato.</dd></div><div><dt>Sin acumulación</dt><dd>Las consultas y documentos no usados no pasan al mes siguiente.</dd></div>
+          <div><dt>Excluido de todos los planes</dt><dd>Escritos judiciales, oposiciones ante INAPI, contratos con negociación, due diligence y asuntos laborales.</dd></div>
+          <div><dt>Baja</dt><dd>Te das de baja por el mismo medio en que contrataste, sin barreras, con efecto al fin del período pagado.</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 </div>
-<section class="band" aria-labelledby="pymes-title">
-  <div class="wrap band__body">
-    <span class="label" data-reveal>Planes</span>
-    <h2 class="title band__title" id="pymes-title" data-split>Descubre nuestros planes para <span class="hl">pymes</span></h2>
-    <p class="lede" data-reveal="1">En AFyV Legal ofrecemos planes que se adaptan a las necesidades y realidad de cada empresa.</p>
-    <div data-reveal="2"><a class="btn btn--mint" href="servicios-empresas.html" data-magnetic >Haz click para conocer nuestros planes<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+<section class="section" aria-labelledby="como-title">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="label" data-reveal>Cómo es un encargo</span>
+        <h2 class="title-sm" id="como-title" data-split style="margin-top:1.5rem">De tu consulta a la entrega firmada</h2>
+      </div>
+      <a class="paren" href="ia-responsable.html" data-reveal="1">Ver el método completo</a>
+    </div>
+    <div class="flowmini" data-flow-mini>
+    <svg class="flowmini__line" viewBox="0 0 900 20" preserveAspectRatio="none" aria-hidden="true"><path d="M10 10H890"/></svg>
+    <ol class="flowmini__nodes">
+      <li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">1</span><span class="flowmini__t">Ingreso</span><span class="flowmini__s">El bot se identifica</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">2</span><span class="flowmini__t">Conflictos</span><span class="flowmini__s">Si hay conflicto, no se acepta</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">3</span><span class="flowmini__t">Cotización</span><span class="flowmini__s">Precio y alcance</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">4</span><span class="flowmini__t">Contratación</span><span class="flowmini__s">Consentimiento sobre IA</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">5</span><span class="flowmini__t">Apertura</span><span class="flowmini__s">Ficha aislada</span></li><li class="flowmini__node is-ai"><span class="flowmini__dot" aria-hidden="true">6</span><span class="flowmini__t">Borrador IA</span><span class="flowmini__s">Sistemas aprobados</span></li><li class="flowmini__node is-key"><span class="flowmini__dot" aria-hidden="true">7</span><span class="flowmini__t">Verificación</span><span class="flowmini__s">Checklist y registro</span></li><li class="flowmini__node is-key"><span class="flowmini__dot" aria-hidden="true">8</span><span class="flowmini__t">Firma y entrega</span><span class="flowmini__s">Lectura completa</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">9</span><span class="flowmini__t">Cierre</span><span class="flowmini__s">Archivo y borrado de IA</span></li>
+    </ol>
+    <div class="flowmini__notes">
+      <p><span class="flowmini__arrow" aria-hidden="true">↷</span> Cliente sin IA: salta el borrador, nunca la verificación.</p>
+      <p><span class="flowmini__arrow" aria-hidden="true">↺</span> Falla un ítem del checklist: vuelve al borrador.</p>
+    </div>
+    <p class="figref mono">Flujo del encargo · reglamento interno, art. 22</p>
   </div>
-</section>
-<section class="method" aria-labelledby="metodo-title">
-  <div class="wrap method__stage">
-    <div class="method__fig" aria-hidden="true">
-      <div class="method__plates">
-        <div class="plate is-active" style="transform:translateZ(60px)"><div class="plate__grid"></div><span class="plate__label mono">01 Contratación</span></div><div class="plate" style="transform:translateZ(0px)"><div class="plate__grid"></div><span class="plate__label mono">02 Trabajo</span></div><div class="plate" style="transform:translateZ(-60px)"><div class="plate__grid"></div><span class="plate__label mono">03 Entrega</span></div>
-      </div>
-    </div>
-    <div>
-      <span class="label">Cómo avanzamos</span>
-      <h2 class="title-sm" id="metodo-title" style="margin:1.5rem 0 2.5rem">Nuestro Método de Trabajo</h2>
-      <div class="method__progress" aria-hidden="true"><span></span></div>
-      <div class="method__steps">
-        <div class="method__step"><div class="method__step-num">01</div><h3 class="method__step-title">Etapa Inicial: Contratación</h3><p>Podemos agendar una reunión para explicarte los pasos y la estrategia a seguir según tus necesidades</p></div>
-        <div class="method__step"><div class="method__step-num">02</div><h3 class="method__step-title">Etapa Intermedia: Trabajo</h3><p>Trabajamos minuciosamente en tu requerimiento y te informamos cada día acerca de su avance</p></div>
-        <div class="method__step"><div class="method__step-num">03</div><h3 class="method__step-title">Entrega</h3><p>Podemos agendar una reunión para presentarte nuestro trabajo. En esta etapa, resolvemos tus dudas y te orientamos acerca de los pasos a seguir</p></div>
-      </div>
-    </div>
+    <div style="margin-top:3rem"><aside class="aviso-ia" aria-label="Aviso de uso de IA">
+  <span class="aviso-ia__tag mono">Aviso de IA</span>
+  <p>Usamos inteligencia artificial para preparar borradores más rápido. Un abogado del estudio revisa, corrige y firma cada entrega, y verifica toda cita en fuentes oficiales. Tu información no se usa para entrenar modelos. Si prefieres que tu caso se atienda sin IA, te informamos el precio y el plazo antes de contratar.</p>
+  <a class="paren" href="ia-responsable.html">Ver detalle</a>
+</aside></div>
   </div>
 </section>
 <div class="light">
@@ -118,10 +386,10 @@
 <section class="contact" id="contacto" aria-labelledby="contacto-title">
   <div class="wrap">
     <span class="label" data-reveal>Contacto</span>
-    <h2 class="contact__title" id="contacto-title" data-split style="margin-top:1.5rem">Contacto</h2>
+    <h2 class="contact__title" id="contacto-title" data-split style="margin-top:1.5rem">Cotiza tu encargo</h2>
     <div class="contact__grid">
       <div>
-        <p class="lede" data-reveal style="margin-bottom:2.5rem">Contáctanos para saber más sobre nuestros servicios</p>
+        <p class="lede" data-reveal style="margin-bottom:2.5rem">Cuéntanos qué necesitas y te enviamos una cotización con precio fijo y alcance cerrado.</p>
         <ul class="contact__details" data-reveal="1">
           <li><span class="mono">Oficina</span><p>Santiago, Chile.</p></li>
           <li><span class="mono">Correo</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a></li>
@@ -169,18 +437,29 @@
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__col">
-        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <p class="title-sm" style="margin:0 0 1rem">La IA prepara;<br>un abogado verifica, decide, firma y responde.</p>
         <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="blog.html">Blog</a><a href="equipo.html">Equipo</a></div>
+      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios y precios</a><a href="ia-responsable.html">IA responsable</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a></div>
       <div class="footer__col"><span class="mono">Redes</span><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></div>
       <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a><span style="color:var(--text-soft)">Santiago, Chile.</span></div>
+    </div>
+    <div class="footer__notes">
+      <span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-footer" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+    <circle cx="60" cy="60" r="57" class="seal__ring"/><circle cx="60" cy="60" r="35" class="seal__ring"/>
+    <g class="seal__text"><text><textPath href="#seal-footer" textLength="286">AFyV LEGAL · ABOGADOS · SANTIAGO DE CHILE · </textPath></text></g>
+    <text x="60" y="66" text-anchor="middle" class="seal__mark">AFyV</text></svg></span>
+      <div>
+        <p><strong>Aviso legal.</strong> La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
+        <p><strong>Privacidad.</strong> Este sitio no usa cookies ni herramientas que identifiquen a sus visitantes.</p>
+        <p><strong>Identificación.</strong> <span class="pending" title="Dato pendiente: debe definirse antes de publicar">Razón social<em>por confirmar</em></span> · RUT <span class="pending" title="Dato pendiente: debe definirse antes de publicar">RUT<em>por confirmar</em></span> · Abogados habilitados: Matías Araos, Rosario Soto, Alberto Vargas, Gabriel Freulon.</p>
+      </div>
     </div>
   </div>
   <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
   <div class="wrap footer__legal mono">
     <span>© 2026 AFyV Legal</span>
-    <nav aria-label="Avisos legales"><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
+    <nav aria-label="Avisos legales"><a href="ia-responsable.html">Uso de IA</a><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
   </div>
 </footer>
 </body>

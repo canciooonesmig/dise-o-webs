@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AFyV Legal — El Derecho cerca de ti</title>
-<meta name="description" content="En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos. Asesoría en derecho civil, laboral, público y empresas. Santiago, Chile.">
+<title>AFyV Legal — Estudio de abogados para pymes, con IA declarada</title>
+<meta name="description" content="Marcas, corporativo pyme, litigios y suscripción para pymes en Chile. Precio fijo conocido antes de empezar. La IA prepara; un abogado verifica, decide, firma y responde.">
 <link rel="canonical" href="https://www.afyvlegal.com/">
 <meta name="theme-color" content="#04110b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
-<meta property="og:title" content="AFyV Legal — El Derecho cerca de ti">
-<meta property="og:description" content="En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos. Asesoría en derecho civil, laboral, público y empresas. Santiago, Chile.">
+<meta property="og:title" content="AFyV Legal — Estudio de abogados para pymes, con IA declarada">
+<meta property="og:description" content="Marcas, corporativo pyme, litigios y suscripción para pymes en Chile. Precio fijo conocido antes de empezar. La IA prepara; un abogado verifica, decide, firma y responde.">
 <meta property="og:image" content="https://www.afyvlegal.com/assets/img/logo.webp">
 <link rel="icon" href="assets/img/logo.webp" type="image/webp">
 <link rel="preload" href="assets/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,31 +22,34 @@
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/ScrambleTextPlugin.min.js" defer></script>
+<script src="assets/vendor/DrawSVGPlugin.min.js" defer></script>
+<script src="assets/vendor/Flip.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
 <script src="assets/gl.js" defer></script>
 <script src="assets/main.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">El Derecho cerca de ti</span></div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">La IA prepara · un abogado firma</span></div>
 <header class="nav">
   <div class="nav__inner">
     <a class="nav__brand" href="index.html" aria-label="AFyV Legal, inicio">AFyV</a>
-    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html" aria-current="page">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="terminos-y-condiciones.html">Avisos Legales</a></li></ul></nav>
+    <nav aria-label="Principal"><ul class="nav__pill"><li><a class="nav__link" href="index.html" aria-current="page">Inicio</a></li><li><a class="nav__link" href="servicios.html">Servicios y precios</a></li><li><a class="nav__link" href="ia-responsable.html">IA responsable</a></li><li><a class="nav__link" href="equipo.html">Equipo</a></li><li><a class="nav__link" href="blog.html">Blog</a></li></ul></nav>
     <div class="nav__cta"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
     <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="sheet"><span data-menu-label>Menú</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
   </div>
 </header>
 <div class="sheet" id="sheet">
-  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html" aria-current="page"><span>01</span>Inicio</a></li><li><a href="servicios.html"><span>02</span>Servicios</a></li><li><a href="blog.html"><span>03</span>Blog</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="terminos-y-condiciones.html"><span>05</span>Avisos Legales</a></li></ul></nav>
+  <nav aria-label="Principal (móvil)"><ul class="sheet__list"><li><a href="index.html" aria-current="page"><span>01</span>Inicio</a></li><li><a href="servicios.html"><span>02</span>Servicios y precios</a></li><li><a href="ia-responsable.html"><span>03</span>IA responsable</a></li><li><a href="equipo.html"><span>04</span>Equipo</a></li><li><a href="blog.html"><span>05</span>Blog</a></li></ul></nav>
   <div class="sheet__foot"><a class="btn btn--mint" href="#contacto" data-magnetic >Contáctanos<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a><span class="mono">Santiago, Chile.</span></div>
 </div>
 <main id="contenido" tabindex="-1">
-<section class="hero" data-intro aria-labelledby="hero-title">
+<section class="hero hero--v3" data-intro aria-labelledby="hero-title">
   <div class="hero__gl" data-gl></div>
   <div class="wrap hero__inner">
     <div class="hero__top">
-      <span class="label" data-reveal>Bienvenidos a AFyV</span>
+      <span class="label" data-reveal>Estudio de abogados para pymes</span>
       <span class="hero__place" data-reveal="1"><span class="flag-cl" role="img" aria-label="Bandera de Chile">
   <svg viewBox="0 0 30 20" aria-hidden="true" focusable="false">
     <defs>
@@ -67,95 +70,242 @@
   </svg>
 </span><span class="mono">Santiago, Chile — 33°27′S 70°40′O</span></span>
     </div>
-    <h1 class="display hero__title" id="hero-title" data-split>El Derecho <span class="hl">cerca</span> de&nbsp;ti</h1>
+    <h1 class="hero__title" id="hero-title">
+      <span class="hero__machine mono" data-type-intro>La IA prepara.</span>
+      <span class="hero__human" data-split>Un abogado verifica, decide, <span class="hl">firma</span> y&nbsp;responde.</span>
+    </h1>
     <div class="hero__row">
-      <p class="lede" data-reveal="2" style="margin:0">En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos.</p>
+      <div class="hero__sign" data-sign-intro aria-hidden="true"><svg class="sign" viewBox="0 0 320 110" aria-hidden="true"><path class="sign__path" d="M10 78c18-30 34-58 46-58 10 0-6 52-2 60 6 10 24-44 34-44 8 0 2 34 10 34 10 0 18-30 28-30 8 0 0 26 8 26 14 0 22-40 36-40 10 0-4 30 6 30 12 0 20-22 34-22 12 0 6 18 16 18 18 0 36-16 60-18M40 96c60-6 140-10 250-8"/></svg><span class="mono">Firma del abogado responsable</span><span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-hero" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+    <circle cx="60" cy="60" r="57" class="seal__ring"/><circle cx="60" cy="60" r="35" class="seal__ring"/>
+    <g class="seal__text"><text><textPath href="#seal-hero" textLength="286">REVISADO Y FIRMADO · AFyV LEGAL · </textPath></text></g>
+    <text x="60" y="66" text-anchor="middle" class="seal__mark">AFyV</text></svg></span></div>
       <div class="hero__actions" data-reveal="3">
-        <a class="btn " href="servicios.html" data-magnetic >Leer más<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
-        <a class="paren" href="#contacto">¡Contáctanos!</a>
+        <a class="btn " href="servicios.html" data-magnetic >Servicios y precios<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+        <a class="paren" href="ia-responsable.html">Cómo usamos la IA</a>
       </div>
     </div>
   </div>
-  <div class="hero__foot" data-reveal="4">
-    <div class="wrap">
-      <p class="ticker" style="margin:0"><span>Derecho Civil</span><span>Derecho Laboral</span><span>Derecho Público</span><span>Prescripción de Deudas</span><span>Creación de Empresas</span><span>Contratos</span></p>
-      <span class="scroll-cue mono" aria-hidden="true"><span class="scroll-cue__bar"></span>Desliza</span>
-    </div>
-  </div>
 </section>
-<section class="manifesto" aria-labelledby="nosotros-title">
+<div class="aviso-band">
+  <div class="wrap"><aside class="aviso-ia" aria-label="Aviso de uso de IA">
+  <span class="aviso-ia__tag mono">Aviso de IA</span>
+  <p>Usamos inteligencia artificial para preparar borradores más rápido. Un abogado del estudio revisa, corrige y firma cada entrega, y verifica toda cita en fuentes oficiales. Tu información no se usa para entrenar modelos. Si prefieres que tu caso se atienda sin IA, te informamos el precio y el plazo antes de contratar.</p>
+  <a class="paren" href="ia-responsable.html">Ver detalle</a>
+</aside></div>
+</div>
+<section class="manifesto" aria-labelledby="enfoque-title">
   <div class="wrap manifesto__grid">
-    <div><span class="label" data-reveal>( 01 ) <span id="nosotros-title">Sobre Nosotros</span></span></div>
+    <div><span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título I</span><span aria-hidden="true">·</span> <span id="enfoque-title">Nuevo enfoque</span></span></div>
     <div>
-      <p class="manifesto__text" data-words>En AFyV acompañamos a personas y emprendedores en la resolución de asuntos jurídicos cotidianos y estratégicos. Nuestro propósito es reducir la incertidumbre, fortalecer la toma de decisiones y ofrecer un apoyo confiable en cada etapa de tus decisiones. Prestamos asesoría jurídica en ámbitos civiles, comerciales y de derecho público, basada en un análisis detallado de cada situación y en propuestas claras que permitan avanzar con seguridad.</p>
-      <div data-reveal><a class="btn btn--ghost" href="equipo.html" data-magnetic >Conoce Más<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+      <p class="manifesto__text" data-words>Somos un estudio de abogados que usa IA, no una herramienta de IA. Acompañamos a pymes y emprendedores en marcas, corporativo, litigios y asesoría mensual, con precio fijo conocido antes de empezar, plazos medidos y un abogado del estudio que revisa, corrige y firma cada entrega preparada con IA.</p>
+      <div data-reveal><a class="btn btn--ghost" href="ia-responsable.html" data-magnetic >Nuestro uso de la IA<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
     </div>
   </div>
 </section>
 <div class="light">
-  <section class="section" aria-labelledby="areas-title">
+  <section class="section clauses-sec" aria-labelledby="promesas-title">
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          <span class="label" data-reveal>( 02 ) Nuestros Servicios</span>
-          <h2 class="title" id="areas-title" data-split style="margin-top:1.5rem">Áreas del Derecho</h2>
+          <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título II</span><span aria-hidden="true">·</span> Lo que puedes exigirnos</span>
+          <h2 class="title" id="promesas-title" data-split style="margin-top:1.5rem">Cinco compromisos <span class="hl">por escrito</span></h2>
         </div>
-        <p class="lede" data-reveal="1">Somos especialistas en:</p>
+        <p class="lede" data-reveal="1">Lo que publicamos pasa a ser una obligación del estudio contigo.</p>
       </div>
-      <ol class="areas">
-        <li><a class="area" href="servicios.html"><span class="area__num">( 01 )</span><span class="area__name">Derecho Civil</span><span class="area__arrow" aria-hidden="true"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a></li><li><a class="area" href="servicios.html"><span class="area__num">( 02 )</span><span class="area__name">Derecho Laboral</span><span class="area__arrow" aria-hidden="true"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a></li><li><a class="area" href="servicios.html"><span class="area__num">( 03 )</span><span class="area__name">Derecho Público</span><span class="area__arrow" aria-hidden="true"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a></li><li><a class="area" href="servicios.html"><span class="area__num">( 04 )</span><span class="area__name">Prescripción de Deudas</span><span class="area__arrow" aria-hidden="true"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M3 11 11 3M5 3h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a></li>
+      <ol class="clauses doc-paper">
+        <li class="clause" data-reveal>
+          <span class="clause__n">§ 1</span>
+          <div><h3 class="clause__t">Un abogado revisa y firma cada entrega</h3><p>Lectura completa, checklist de verificación y firma del abogado responsable. Doble revisión en escritos judiciales, oposiciones y pactos de socios.</p></div>
+          <span class="clause__ref mono">Arts. 23 a 25</span>
+          <span class="clause__stamp" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </li><li class="clause" data-reveal>
+          <span class="clause__n">§ 2</span>
+          <div><h3 class="clause__t">Precio fijo conocido antes de empezar</h3><p>Cada servicio tiene una ficha de alcance. Nada fuera de alcance se cobra sin tu aceptación escrita.</p></div>
+          <span class="clause__ref mono">Arts. 28 y 46</span>
+          <span class="clause__stamp" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </li><li class="clause" data-reveal>
+          <span class="clause__n">§ 3</span>
+          <div><h3 class="clause__t">Plazos en horas hábiles</h3><p>Contados desde que recibimos la información completa, y controlados cada mes.</p></div>
+          <span class="clause__ref mono">Arts. 54 y 62</span>
+          <span class="clause__stamp" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </li><li class="clause" data-reveal>
+          <span class="clause__n">§ 4</span>
+          <div><h3 class="clause__t">Tu información no se usa para entrenar IA</h3><p>Solo herramientas con contrato empresarial que lo prohíbe, y una ficha aislada por cliente.</p></div>
+          <span class="clause__ref mono">Arts. 14, 15 y 18</span>
+          <span class="clause__stamp" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </li><li class="clause" data-reveal>
+          <span class="clause__n">§ 5</span>
+          <div><h3 class="clause__t">Puedes pedir el servicio sin IA</h3><p>Te informamos el precio y el plazo antes de contratar. El consentimiento sobre IA es expreso y se da con una casilla propia.</p></div>
+          <span class="clause__ref mono">Arts. 29, 44 y 45</span>
+          <span class="clause__stamp" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </li>
       </ol>
+      <p class="figref mono" style="margin-top:1.5rem">Reglamento interno y método de trabajo AFyV, título IX y art. 54</p>
     </div>
   </section>
-  <section class="section" style="padding-top:0" aria-label="Servicios destacados">
-    <div class="wrap stack">
-      <article class="stack-card stack-card--green" style="--n:0">
-        <div class="stack-card__body">
-          <span class="label">( 01 ) Servicio</span>
-          <div>
-            <h3 class="stack-card__title">Creación de Empresas</h3>
-            <p class="stack-card__text">Trabajamos en la creación de tu empresa, en su modificación o su migración al régimen propuesto por la Ley N°&nbsp;20.659</p>
-          </div>
-          <a class="paren" href="constituye-tu-empresa.html">Conoce Más</a>
+</div>
+<section class="review" data-review aria-labelledby="review-title">
+  <div class="wrap review__stage">
+    <div class="review__copy">
+      <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título III</span><span aria-hidden="true">·</span> Del borrador a la firma</span>
+      <h2 class="title-sm" id="review-title" style="margin:1.5rem 0 2rem">Así participa la IA en un encargo, y así la controla un abogado.</h2>
+      <ol class="review__steps">
+        <li class="review__step is-active"><span class="mono">Etapa 6</span><strong>La IA prepara el borrador</strong><span>Solo dentro de la ficha del cliente y con sistemas autorizados.</span></li>
+        <li class="review__step"><span class="mono">Etapa 7</span><strong>El abogado verifica</strong><span>Cada cita en su fuente oficial. Lo que no se puede verificar se elimina.</span></li>
+        <li class="review__step"><span class="mono">Etapa 8</span><strong>El abogado firma y responde</strong><span>Lectura completa del documento final y firma.</span></li>
+      </ol>
+      <p class="figref mono">Ejemplo ilustrativo · reglamento interno, arts. 13, 22 y 23</p>
+    </div>
+    <div class="review__doc" aria-hidden="true">
+      <div class="doc">
+        <div class="doc__bar">
+          <span class="doc__state"><span class="doc__state-i" data-state="0">Borrador IA</span><span class="doc__state-i" data-state="1">En verificación</span><span class="doc__state-i" data-state="2">Entregable firmado</span></span>
+          <span class="mono doc__meta">Ficha aislada del cliente</span>
         </div>
-        <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.75)" aria-hidden="true"><path class="art-line" style="opacity:.14" d="M60 80 V520"/><path class="art-line" style="opacity:.14" d="M120 80 V520"/><path class="art-line" style="opacity:.14" d="M180 80 V520"/><path class="art-line" style="opacity:.14" d="M240 80 V520"/><path class="art-line" style="opacity:.14" d="M300 80 V520"/><path class="art-line" style="opacity:.14" d="M360 80 V520"/><path class="art-line" style="opacity:.14" d="M420 80 V520"/><path class="art-line" style="opacity:.14" d="M480 80 V520"/><path class="art-line" style="opacity:.14" d="M540 80 V520"/><path class="art-line draw" d="M300 280 L500 380 L300 480 L100 380 Z"/><path class="art-line draw" d="M100 380 L100 450 L300 550 L500 450 L500 380"/><path class="art-line draw" d="M300 480 L300 550"/><path class="art-line draw" d="M300 215 L450 290 L300 365 L150 290 Z"/><path class="art-line draw" d="M150 290 L150 350 L300 425 L450 350 L450 290"/><path class="art-line draw" d="M300 365 L300 425"/><path class="art-line draw" d="M300 165 L400 215 L300 265 L200 215 Z"/><path class="art-line draw" d="M200 215 L200 265 L300 315 L400 265 L400 215"/><path class="art-line draw" d="M300 265 L300 315"/><circle class="art-glow" cx="300" cy="280" r="4"/><circle class="art-glow" cx="300" cy="215" r="4"/><circle class="art-glow" cx="300" cy="165" r="4"/></svg></div>
-      </article>
-      <article class="stack-card stack-card--paper" style="--n:1">
-        <div class="stack-card__body">
-          <span class="label">( 02 ) Servicio</span>
-          <div>
-            <h3 class="stack-card__title">Contratos</h3>
-            <p class="stack-card__text">Te acompañamos en la negociación de tus contratos comerciales, y nos encargamos de su análisis y redacción</p>
+        <div class="doc__body">
+          <p class="doc__h">Contrato de prestación de servicios</p>
+          <p class="doc__line"><strong>Primero. Objeto.</strong> <span class="doc__type">El prestador realizará los servicios descritos en el Anexo 1, con la calidad y diligencia propias de su oficio.</span><span class="doc__ok"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p><p class="doc__line"><strong>Segundo. Precio.</strong> <span class="doc__type">El precio total es de $[monto], pagadero en dos cuotas contra la emisión de la boleta respectiva.</span><span class="doc__ok"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p><p class="doc__line"><strong>Tercero. Plazo.</strong> <span class="doc__type">El contrato rige desde su firma y dura doce meses, renovable por acuerdo escrito de las partes.</span><span class="doc__ok"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p>
+          <p class="doc__line doc__line--bad"><strong>Cuarto.</strong> <span class="doc__type">Según el fallo Rol 0000-2025, esta cláusula se entiende siempre válida.</span><span class="doc__flag">Cita no verificable en fuente oficial: se elimina</span></p>
+          <div class="doc__checks">
+            <span class="doc__check"><span class="doc__box"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Datos, partes y montos cotejados</span><span class="doc__check"><span class="doc__box"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Normas abiertas en LeyChile</span><span class="doc__check"><span class="doc__box"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Fallos verificados en fuente oficial</span><span class="doc__check"><span class="doc__box"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Sin información de otro cliente</span><span class="doc__check"><span class="doc__box"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Registro de revisión completo</span>
           </div>
-          <a class="paren" href="servicios.html">Conoce Más</a>
-        </div>
-        <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:#0a1a12" aria-hidden="true">
-      <path class="art-line draw" d="M190 110 H372 L410 148 V490 H190 Z"/><path class="art-line draw" d="M372 110 V148 H410"/>
-      <path class="art-line draw" d="M215 190 H370"/><path class="art-line draw" d="M215 220 H390"/><path class="art-line draw" d="M215 250 H340"/><path class="art-line draw" d="M215 280 H385"/><path class="art-line draw" d="M215 310 H360"/><path class="art-line draw" d="M215 340 H300"/><path class="art-line draw" d="M215 370 H380"/>
-      <path class="art-line draw" style="stroke-width:1.6" d="M215 440 C240 395 255 470 285 425 S330 400 350 432 S392 452 410 410 S440 400 452 412"/>
-      <circle class="art-line draw" cx="365" cy="190" r="26"/><circle class="art-line draw" cx="365" cy="190" r="18"/>
-      <circle class="art-glow" cx="452" cy="412" r="5"/></svg></div>
-      </article>
-      <article class="stack-card stack-card--ink" style="--n:2">
-        <div class="stack-card__body">
-          <span class="label">( 03 ) Servicio</span>
-          <div>
-            <h3 class="stack-card__title">Empresas</h3>
-            <p class="stack-card__text">Prestamos apoyo a emprendedores y pequeños negocios mediante la constitución de sociedades, la celebración de juntas de accionistas, el registro de marcas y la revisión y redacción de contratos necesarios para su adecuada operación.</p>
+          <div class="doc__sign">
+            <div><span class="mono">Abogado responsable</span><svg class="sign" viewBox="0 0 320 110" aria-hidden="true"><path class="sign__path" d="M10 78c18-30 34-58 46-58 10 0-6 52-2 60 6 10 24-44 34-44 8 0 2 34 10 34 10 0 18-30 28-30 8 0 0 26 8 26 14 0 22-40 36-40 10 0-4 30 6 30 12 0 20-22 34-22 12 0 6 18 16 18 18 0 36-16 60-18M40 96c60-6 140-10 250-8"/></svg></div>
+            <span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-doc" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+    <circle cx="60" cy="60" r="57" class="seal__ring"/><circle cx="60" cy="60" r="35" class="seal__ring"/>
+    <g class="seal__text"><text><textPath href="#seal-doc" textLength="286">REVISADO Y FIRMADO · AFyV LEGAL · </textPath></text></g>
+    <text x="60" y="66" text-anchor="middle" class="seal__mark">AFyV</text></svg></span>
           </div>
-          <a class="paren" href="servicios-empresas.html">Conoce Más</a>
         </div>
-        <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.7)" aria-hidden="true"><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="90"/><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="160"/><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="230"/>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="light">
+  <section class="section" aria-labelledby="lineas-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título IV</span><span aria-hidden="true">·</span> Servicios y precios</span>
+          <h2 class="title" id="lineas-title" data-split style="margin-top:1.5rem">Cuatro líneas, <span class="hl">precio fijo</span></h2>
+        </div>
+        <p class="lede" data-reveal="1">Precios sin IVA. Las tasas oficiales se cobran aparte cuando se indica.</p>
+      </div>
+      <div class="stack">
+        <article class="stack-card stack-card--green" style="--n:0" id="linea-marcas">
+          <div class="stack-card__body">
+            <span class="label">( 01 ) Línea</span>
+            <div>
+              <h3 class="stack-card__title">Marcas</h3>
+              <p class="stack-card__text">Te decimos el riesgo antes de que pagues las tasas.</p>
+              <ul class="svc-mini"><li><span>Diagnóstico de marca</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="29990" data-gross="35688">$29.990</span></span></li><li><span>Marca protegida (1 clase)</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="100000" data-gross="119000">$100.000</span></span></li><li><span>Vigilancia de marca</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="10000" data-gross="11900">$10.000</span><span class="price__post">al mes</span></span></li></ul>
+            </div>
+            <a class="paren" href="servicios.html#marcas">Ver alcance y plazos</a>
+          </div>
+          <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.8)" aria-hidden="true">
+    <circle class="art-line draw" cx="270" cy="270" r="150"/><circle class="art-line draw" cx="270" cy="270" r="118" style="opacity:.5"/>
+    <path class="art-line draw" style="stroke-width:2" d="M226 340V200h52c30 0 48 16 48 40s-18 40-48 40h-52M286 280l44 60"/>
+    <path class="art-line draw" style="stroke-width:2" d="M376 376l120 120"/><circle class="art-glow" cx="496" cy="496" r="6"/>
+    <path class="art-line" style="opacity:.18" d="M80 120H140"/><path class="art-line" style="opacity:.18" d="M80 194H140"/><path class="art-line" style="opacity:.18" d="M80 268H140"/><path class="art-line" style="opacity:.18" d="M80 342H140"/><path class="art-line" style="opacity:.18" d="M80 416H140"/><path class="art-line" style="opacity:.18" d="M80 490H140"/>
+  </svg></div>
+        </article><article class="stack-card stack-card--paper" style="--n:1" id="linea-corporativo">
+          <div class="stack-card__body">
+            <span class="label">( 02 ) Línea</span>
+            <div>
+              <h3 class="stack-card__title">Corporativo pyme</h3>
+              <p class="stack-card__text">Tu empresa constituida, ordenada y con contratos revisados.</p>
+              <ul class="svc-mini"><li><span>Empresa lista (RES)</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="119000" data-gross="141610">$119.000</span></span></li><li><span>Pack Empresa + Marca</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="189000" data-gross="224910">$189.000</span></span></li><li><span>Pacto de socios</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="100000" data-gross="119000">$100.000</span></span></li><li><span>Contrato comercial: revisión</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="85000" data-gross="101150">$85.000</span></span></li></ul>
+            </div>
+            <a class="paren" href="servicios.html#corporativo">Ver alcance y plazos</a>
+          </div>
+          <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.75)" aria-hidden="true"><path class="art-line" style="opacity:.14" d="M60 80 V520"/><path class="art-line" style="opacity:.14" d="M120 80 V520"/><path class="art-line" style="opacity:.14" d="M180 80 V520"/><path class="art-line" style="opacity:.14" d="M240 80 V520"/><path class="art-line" style="opacity:.14" d="M300 80 V520"/><path class="art-line" style="opacity:.14" d="M360 80 V520"/><path class="art-line" style="opacity:.14" d="M420 80 V520"/><path class="art-line" style="opacity:.14" d="M480 80 V520"/><path class="art-line" style="opacity:.14" d="M540 80 V520"/><path class="art-line draw" d="M300 280 L500 380 L300 480 L100 380 Z"/><path class="art-line draw" d="M100 380 L100 450 L300 550 L500 450 L500 380"/><path class="art-line draw" d="M300 480 L300 550"/><path class="art-line draw" d="M300 215 L450 290 L300 365 L150 290 Z"/><path class="art-line draw" d="M150 290 L150 350 L300 425 L450 350 L450 290"/><path class="art-line draw" d="M300 365 L300 425"/><path class="art-line draw" d="M300 165 L400 215 L300 265 L200 215 Z"/><path class="art-line draw" d="M200 215 L200 265 L300 315 L400 265 L400 215"/><path class="art-line draw" d="M300 265 L300 315"/><circle class="art-glow" cx="300" cy="280" r="4"/><circle class="art-glow" cx="300" cy="215" r="4"/><circle class="art-glow" cx="300" cy="165" r="4"/></svg></div>
+        </article><article class="stack-card stack-card--paper2" style="--n:2" id="linea-litigios">
+          <div class="stack-card__body">
+            <span class="label">( 03 ) Línea</span>
+            <div>
+              <h3 class="stack-card__title">Litigios y cobranza</h3>
+              <p class="stack-card__text">Cobrar lo que te deben, con un plan de causa claro.</p>
+              <ul class="svc-mini"><li><span>Carta de cobro y negociación</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="39000" data-gross="46410">$39.000</span></span></li><li><span>Cobranza judicial</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="300000" data-gross="357000">$300.000</span></span></li><li><span>Precario (Ley Devuélveme mi Casa) o cobro de rentas</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__pre">desde</span><span class="price__num" data-net="300000" data-gross="357000">$300.000</span></span></li><li><span>Civil en general</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__quote">Cotización por etapa</span></span></li></ul>
+            </div>
+            <a class="paren" href="servicios.html#litigios">Ver alcance y plazos</a>
+          </div>
+          <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:#0a1a12" aria-hidden="true">
+    <path class="art-line draw" d="M300 120V470M220 470H380M300 120l-150 40M300 120l150 40"/>
+    <path class="art-line draw" d="M150 160l-60 140h120zM450 160l-60 140h120z"/>
+    <path class="art-line draw" d="M90 300c0 30 120 30 120 0M390 300c0 30 120 30 120 0"/>
+    <circle class="art-line draw" cx="300" cy="110" r="14"/><circle class="art-glow" cx="300" cy="110" r="5"/>
+  </svg></div>
+        </article><article class="stack-card stack-card--ink" style="--n:3" id="linea-suscripcion">
+          <div class="stack-card__body">
+            <span class="label">( 04 ) Línea</span>
+            <div>
+              <h3 class="stack-card__title">Abogado de tu Pyme</h3>
+              <p class="stack-card__text">Asesoría mensual con alcance definido por escrito.</p>
+              <ul class="svc-mini"><li><span>Plan Esencial</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="49000" data-gross="58310">$49.000</span><span class="price__post">al mes</span></span></li><li><span>Plan Pyme</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="119000" data-gross="141610">$119.000</span><span class="price__post">al mes</span></span></li><li><span>Plan Crecimiento</span><span class="dots" aria-hidden="true"></span><span class="price price--sm"><span class="price__num" data-net="249000" data-gross="296310">$249.000</span><span class="price__post">al mes</span></span></li></ul>
+            </div>
+            <a class="paren" href="servicios.html#suscripcion">Ver alcance y plazos</a>
+          </div>
+          <div class="stack-card__art"><svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.7)" aria-hidden="true"><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="90"/><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="160"/><circle class="art-line draw" style="opacity:.6" cx="300" cy="300" r="230"/>
       <g class="orbit"><circle class="art-glow" cx="447.4" cy="362.3" r="5"/><circle class="art-glow" cx="172.4" cy="396.5" r="5"/><circle class="art-glow" cx="280.3" cy="141.2" r="5"/></g><g class="orbit orbit--rev"><circle class="art-glow" cx="404.3" cy="505.0" r="3.5"/><circle class="art-glow" cx="137.3" cy="462.6" r="3.5"/><circle class="art-glow" cx="95.1" cy="195.5" r="3.5"/><circle class="art-glow" cx="336.1" cy="72.8" r="3.5"/><circle class="art-glow" cx="527.2" cy="264.1" r="3.5"/></g><g class="orbit"><circle class="art-glow" cx="262.5" cy="381.8" r="5"/><circle class="art-glow" cx="337.5" cy="218.2" r="5"/></g>
       <circle class="art-glow" cx="300" cy="300" r="9"/></svg></div>
-      </article>
+        </article>
+      </div>
     </div>
   </section>
+</div>
+<section class="section ia-home" aria-labelledby="ia-title">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título V</span><span aria-hidden="true">·</span> IA responsable</span>
+        <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">Nueve etapas. <span class="hl">Ninguna se salta.</span></h2>
+      </div>
+      <p class="lede" data-reveal="1">Todo encargo recorre el mismo flujo y cada etapa deja constancia. Si no está registrado, no se hizo.</p>
+    </div>
+    <div class="flowmini" data-flow-mini>
+    <svg class="flowmini__line" viewBox="0 0 900 20" preserveAspectRatio="none" aria-hidden="true"><path d="M10 10H890"/></svg>
+    <ol class="flowmini__nodes">
+      <li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">1</span><span class="flowmini__t">Ingreso</span><span class="flowmini__s">El bot se identifica</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">2</span><span class="flowmini__t">Conflictos</span><span class="flowmini__s">Si hay conflicto, no se acepta</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">3</span><span class="flowmini__t">Cotización</span><span class="flowmini__s">Precio y alcance</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">4</span><span class="flowmini__t">Contratación</span><span class="flowmini__s">Consentimiento sobre IA</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">5</span><span class="flowmini__t">Apertura</span><span class="flowmini__s">Ficha aislada</span></li><li class="flowmini__node is-ai"><span class="flowmini__dot" aria-hidden="true">6</span><span class="flowmini__t">Borrador IA</span><span class="flowmini__s">Sistemas aprobados</span></li><li class="flowmini__node is-key"><span class="flowmini__dot" aria-hidden="true">7</span><span class="flowmini__t">Verificación</span><span class="flowmini__s">Checklist y registro</span></li><li class="flowmini__node is-key"><span class="flowmini__dot" aria-hidden="true">8</span><span class="flowmini__t">Firma y entrega</span><span class="flowmini__s">Lectura completa</span></li><li class="flowmini__node"><span class="flowmini__dot" aria-hidden="true">9</span><span class="flowmini__t">Cierre</span><span class="flowmini__s">Archivo y borrado de IA</span></li>
+    </ol>
+    <div class="flowmini__notes">
+      <p><span class="flowmini__arrow" aria-hidden="true">↷</span> Cliente sin IA: salta el borrador, nunca la verificación.</p>
+      <p><span class="flowmini__arrow" aria-hidden="true">↺</span> Falla un ítem del checklist: vuelve al borrador.</p>
+    </div>
+    <p class="figref mono">Flujo del encargo · reglamento interno, art. 22</p>
+  </div>
+    <div class="section-head" style="margin:clamp(4rem,8vw,6rem) 0 2.5rem">
+      <h3 class="title-sm" data-split>Cinco límites que no admiten excepción, <span class="hl">ni siquiera con tu autorización</span></h3>
+    </div>
+    <div class="limits"><article class="limit" data-reveal="0">
+  <div class="limit__head"><span class="limit__lock"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="lock__shackle" d="M7.5 11V8a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="16" r="1.4" fill="currentColor"/></svg></span><span class="mono">Art. 12</span></div>
+  <h3 class="limit__t">Nada se entrega sin revisión</h3>
+  <p>Ningún borrador de IA sale del estudio sin registro de revisión completo y firma del abogado responsable.</p>
+</article><article class="limit" data-reveal="1">
+  <div class="limit__head"><span class="limit__lock"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="lock__shackle" d="M7.5 11V8a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="16" r="1.4" fill="currentColor"/></svg></span><span class="mono">Art. 13</span></div>
+  <h3 class="limit__t">Nada se cita sin verificar</h3>
+  <p>Ninguna norma, fallo o doctrina se cita sin leerla en su fuente oficial. Lo que no se puede verificar se elimina.</p>
+</article><article class="limit" data-reveal="2">
+  <div class="limit__head"><span class="limit__lock"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="lock__shackle" d="M7.5 11V8a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="16" r="1.4" fill="currentColor"/></svg></span><span class="mono">Art. 14</span></div>
+  <h3 class="limit__t">Solo sistemas autorizados</h3>
+  <p>Ninguna información de clientes entra en cuentas personales, gratuitas o no autorizadas.</p>
+</article><article class="limit" data-reveal="0">
+  <div class="limit__head"><span class="limit__lock"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="lock__shackle" d="M7.5 11V8a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="16" r="1.4" fill="currentColor"/></svg></span><span class="mono">Art. 15</span></div>
+  <h3 class="limit__t">Nunca se mezclan clientes</h3>
+  <p>No se usa información de un cliente en el encargo de otro, ni se activa memoria compartida.</p>
+</article><article class="limit" data-reveal="1">
+  <div class="limit__head"><span class="limit__lock"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="lock__shackle" d="M7.5 11V8a4.5 4.5 0 0 1 9 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="16" r="1.4" fill="currentColor"/></svg></span><span class="mono">Art. 16</span></div>
+  <h3 class="limit__t">Siempre decide una persona</h3>
+  <p>Ninguna decisión con efectos jurídicos la toma la IA sola, y ningún bot simula ser una persona.</p>
+</article></div>
+    <div style="margin-top:3rem" data-reveal><a class="btn btn--mint" href="ia-responsable.html" data-magnetic >Ver todo el método<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+  </div>
+</section>
+<div class="light">
   <section class="section cifras" id="cifras" aria-labelledby="cifras-title">
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          <span class="label" data-reveal>( 03 ) Chile en cifras <span class="flag-cl flag-cl--sm" role="img" aria-label="Bandera de Chile">
+          <span class="label" data-reveal>Título VI · Chile en cifras <span class="flag-cl flag-cl--sm" role="img" aria-label="Bandera de Chile">
   <svg viewBox="0 0 30 20" aria-hidden="true" focusable="false">
     <defs>
       <clipPath id="flag-clip-2"><rect width="30" height="20" rx="2.2"/></clipPath>
@@ -303,10 +453,10 @@
   <div class="hscroll__track">
     <div class="hscroll__intro">
       <div>
-        <span class="label" data-reveal>( 04 ) Conoce más Acerca de Nosotros</span>
-        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Y nuestro compromiso por llevar el Derecho <span class="hl">cerca</span> de ti</h2>
+        <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título VII</span><span aria-hidden="true">·</span> Equipo</span>
+        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Abogados que <span class="hl">firman</span> lo que entregan</h2>
       </div>
-      <div data-reveal><a class="btn btn--ghost" href="equipo.html" data-magnetic >Sobre Nosotros<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
+      <div data-reveal><a class="btn btn--ghost" href="equipo.html" data-magnetic >Conoce al equipo<span class="btn__icon"><svg viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a></div>
     </div>
     <a class="member" href="equipo.html#matias-araos">
   <div class="member__media"><span class="member__tag mono">( 01 )</span><img src="assets/img/matias.webp" alt="Retrato de Matías Araos" width="600" height="860" loading="lazy" decoding="async"></div>
@@ -332,7 +482,7 @@
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          <span class="label" data-reveal>( 05 ) Blog</span>
+          <span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título VIII</span><span aria-hidden="true">·</span> Blog</span>
           <h2 class="title" id="informa-title" data-split style="margin-top:1.5rem">AFyV Informa</h2>
         </div>
         <a class="paren" href="blog.html" data-reveal="1">Ver todas las publicaciones</a>
@@ -409,18 +559,29 @@
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__col">
-        <p class="title-sm" style="margin:0 0 1rem">El Derecho <span class="hl">cerca</span> de ti.</p>
+        <p class="title-sm" style="margin:0 0 1rem">La IA prepara;<br>un abogado verifica, decide, firma y responde.</p>
         <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
-      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="blog.html">Blog</a><a href="equipo.html">Equipo</a></div>
+      <div class="footer__col"><span class="mono">Navegación</span><a href="index.html">Inicio</a><a href="servicios.html">Servicios y precios</a><a href="ia-responsable.html">IA responsable</a><a href="equipo.html">Equipo</a><a href="blog.html">Blog</a></div>
       <div class="footer__col"><span class="mono">Redes</span><a href="https://www.instagram.com/afyvlegal/" rel="noopener">Instagram</a><a href="https://wa.me/56981714111" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/afyvlegal" rel="noopener">LinkedIn</a></div>
       <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:contacto@afyvlegal.com">contacto@afyvlegal.com</a><a href="https://wa.me/56981714111" rel="noopener">+56&nbsp;9&nbsp;8171&nbsp;4111</a><span style="color:var(--text-soft)">Santiago, Chile.</span></div>
+    </div>
+    <div class="footer__notes">
+      <span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-footer" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
+    <circle cx="60" cy="60" r="57" class="seal__ring"/><circle cx="60" cy="60" r="35" class="seal__ring"/>
+    <g class="seal__text"><text><textPath href="#seal-footer" textLength="286">AFyV LEGAL · ABOGADOS · SANTIAGO DE CHILE · </textPath></text></g>
+    <text x="60" y="66" text-anchor="middle" class="seal__mark">AFyV</text></svg></span>
+      <div>
+        <p><strong>Aviso legal.</strong> La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
+        <p><strong>Privacidad.</strong> Este sitio no usa cookies ni herramientas que identifiquen a sus visitantes.</p>
+        <p><strong>Identificación.</strong> <span class="pending" title="Dato pendiente: debe definirse antes de publicar">Razón social<em>por confirmar</em></span> · RUT <span class="pending" title="Dato pendiente: debe definirse antes de publicar">RUT<em>por confirmar</em></span> · Abogados habilitados: Matías Araos, Rosario Soto, Alberto Vargas, Gabriel Freulon.</p>
+      </div>
     </div>
   </div>
   <p class="footer__mark" aria-hidden="true"><span>A</span><span>F</span><span>y</span><span>V</span></p>
   <div class="wrap footer__legal mono">
     <span>© 2026 AFyV Legal</span>
-    <nav aria-label="Avisos legales"><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
+    <nav aria-label="Avisos legales"><a href="ia-responsable.html">Uso de IA</a><a href="terminos-y-condiciones.html">Términos y Condiciones</a><a href="politica-de-privacidad.html">Política de Privacidad</a></nav>
   </div>
 </footer>
 </body>
