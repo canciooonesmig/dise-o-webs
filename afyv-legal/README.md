@@ -1,6 +1,6 @@
 # AFyV Legal — sitio AFyV 2.0
 
-Rediseño de [afyvlegal.com](https://www.afyvlegal.com) con el mismo contenido sustantivo. La dirección visual toma ideas de [Crosby](https://crosby.ai), [Partech](https://partechpartners.com), [Peerscale](https://www.peerscale.com) y [AngelList](https://www.angellist.com) sin copiar ninguno: base verde casi negra con haces de luz y grano, tipografía serif editorial a gran escala, paneles claros que se deslizan sobre el fondo oscuro, y un único acento menta.
+Rediseño de [afyvlegal.com](https://www.afyvlegal.com) con el mismo contenido sustantivo. La versión 5 usa una paleta clara: papel cálido con tinta verde, curvas de nivel en WebGL y bloques en verde bosque para las escenas destacadas. La dirección visual toma ideas de Crosby, Milledollars, Cominvi y Jesper Landberg sin copiar ninguno.
 
 ## Ver el sitio
 
@@ -13,40 +13,29 @@ cd afyv-legal && python3 -m http.server 8000
 
 También funciona abriendo `afyv-legal/index.html` directamente en el navegador.
 
-## Estructura (AFyV 2.0)
+## Estructura
 
-El sitio sigue el plan ejecutivo, el reglamento interno y el tarifario del 4 de octubre de 2026. El mensaje central es la regla de oro del reglamento: **la IA prepara; un abogado verifica, decide, firma y responde.**
+El sitio sigue el plan ejecutivo, el reglamento y el tarifario del 4 de octubre de 2026. El mensaje central es: **la IA prepara; nuestro equipo analiza, decide, firma y responde.** Cada sección explica cómo la IA aporta valor (rapidez, precio fijo, rigor) sin reemplazar el criterio del equipo.
 
 | Página | Archivo | Contenido |
 |---|---|---|
-| Inicio | `index.html` | Regla de oro, aviso de IA, nuevo enfoque, cinco compromisos (art. 54), escena "del borrador a la firma", cuatro líneas con precios, flujo de nueve etapas, cinco límites absolutos, Chile en cifras, equipo y blog |
-| Servicios y precios | `servicios.html` | Tarifario con filtro por línea, precios con y sin IVA, ficha de alcance por servicio, suscripción Abogado de tu Pyme con definiciones, flujo del encargo y opiniones |
-| IA responsable | `ia-responsable.html` | Quién hace qué, flujo pinneado de nueve etapas, límites absolutos, protocolo de verificación, protección de datos, consentimiento y opción sin IA, errores y control, principios y marco normativo |
-| Razones | `constituye-tu-empresa.html`, `registra-tu-marca.html` | Se mantienen y enlazan a los servicios correspondientes |
-| Equipo, Blog, artículos, Términos, Privacidad | igual que antes | |
+| Inicio | `index.html` | Portada, cómo usamos la IA y sus virtudes, cinco compromisos, escena "del borrador a la firma" (la IA prepara, el equipo analiza y decide, verificamos, firmamos), cuatro líneas con precios, flujo de seis etapas, Chile en cifras, equipo y contacto |
+| Servicios y precios | `servicios.html` | Tarifario con filtro por línea, precios con y sin IVA, ficha de alcance, suscripción Abogado de tu Pyme, flujo del encargo y opiniones |
+| IA responsable | `ia-responsable.html` | Quién hace qué, flujo de seis etapas, cinco reglas, lo que revisamos antes de firmar, secreto profesional y requisitos de seguridad para el uso de IA, consentimiento y opción sin IA, compromiso de calidad, principios y marco normativo (incluido el art. 2129 del Código Civil) |
+| Razones | `constituye-tu-empresa.html`, `registra-tu-marca.html` | Enlazan a los servicios correspondientes |
+| Equipo, Términos, Privacidad | `equipo.html`, etc. | |
 
-`servicios-empresas.html` redirige a `servicios.html#corporativo`.
+`servicios-empresas.html` redirige a `servicios.html#corporativo`. El blog se retiró en la versión 5.
 
-**Lo que el sitio ya no dice** (art. 53): las áreas de derecho laboral, público y prescripción de deudas se retiraron de la oferta, y no se usan frases como "compra resultados", "premium", "garantizamos el registro", "100 % seguro" ni comparaciones con otros estudios. No se menciona seguro hasta tenerlo (art. 50).
-
-## Datos pendientes antes de publicar
-
-En `_src/data.mjs`, el objeto `PENDIENTES` reúne lo que los socios deben definir. Mientras esté vacío, el sitio muestra una marca amarilla "por confirmar":
-
-- `proveedorIA`: proveedor y plan de IA (decisión 3; arts. 17 y 18)
-- `razonSocial` y `rut`: identificación del estudio (art. 43)
-- `sinIA`: precio y plazo del servicio sin IA (decisión 8; arts. 29 y 45)
-- `retencionIA`: plazo de borrado de la memoria de IA (decisión 4; art. 41)
-
-Otros puntos del plan que afectan al sitio: los plazos publicados solo deben mantenerse si se miden y cumplen (art. 54); la política de privacidad debe agregar la sección de IA antes del 1 de diciembre de 2026 (Ley 21.719); los testimonios requieren autorización escrita del cliente (art. 55).
+**Criterios de redacción:** AFyV Legal se presenta como "el estudio" o "AFyV Legal". El sitio no nombra al proveedor de IA (se informa en la cláusula de uso de IA de la carta de encargo), no expone el protocolo interno ni deja textos pendientes por completar.
 
 ## Editar contenido
 
 Las páginas se generan con un script; no edites los `.html` de la raíz a mano.
 
-- Servicios, precios, planes, flujo, límites, principios y datos pendientes: `_src/data.mjs`
-- Textos de páginas, equipo y metadatos de artículos: `_src/build.mjs`
-- Cuerpo de artículos y textos legales: `_src/content/*.html`
+- Servicios, precios, planes, flujo, límites, principios y requisitos de seguridad: `_src/data.mjs`
+- Textos de páginas y equipo: `_src/build.mjs`
+- Textos legales: `_src/content/*.html`
 - Estilos: `assets/styles.css` · Animaciones: `assets/main.js`
 
 Después de editar:
@@ -57,14 +46,14 @@ node afyv-legal/_src/build.mjs
 
 ## Animaciones
 
-- **Portada en WebGL** (`assets/gl.js`): curvas de nivel iluminadas por un haz de luz que sigue al cursor.
-- **Portada:** "La IA prepara." se escribe como texto de máquina; la frase del abogado sube línea a línea; una firma se dibuja y un sello se estampa.
-- **Compromisos:** cada cláusula se "firma" con un timbre al aparecer.
-- **Del borrador a la firma** (escena fija en pantalla al hacer scroll): un contrato pasa de borrador IA a verificación (se tachan citas no verificables, se marcan casillas) y a firma con sello.
-- **Flujo de nueve etapas:** la línea se dibuja y las etapas se encienden en orden; en la página de IA, el flujo queda fijo y avanza etapa por etapa con el scroll.
-- **Límites absolutos:** los candados se cierran al aparecer.
+- **Portada en WebGL** (`assets/gl.js`): curvas de nivel claras iluminadas por un haz que sigue al cursor; el marco de la portada se dibuja al cargar.
+- **Portada:** "La IA prepara." se escribe como texto de máquina; la frase del equipo sube línea a línea; una firma se dibuja y un sello se estampa.
+- **Cinta de valores** que se desplaza y se inclina según la velocidad del scroll.
+- **Virtudes y líneas de servicio:** íconos que se dibujan e inclinación 3D al pasar el cursor.
+- **Del borrador a la firma** (escena fija al hacer scroll): el borrador de la IA pasa a análisis (nota del equipo y cláusula nueva), a verificación (se retira una cita no verificable, se marcan casillas) y a entrega firmada con sello.
+- **Flujo de seis etapas:** una onda se dibuja con el scroll y los nodos aparecen en orden; en la página de IA, el flujo queda fijo y avanza etapa por etapa.
 - **Tarifario:** filtro por línea con transición animada y conversión animada de precios con y sin IVA.
-- Además: protocolo de verificación que se marca con el scroll, fichas de clientes que se separan, consentimiento que se marca, etiquetas que se "decodifican", tarjetas apiladas, galería horizontal del equipo, scroll suave y cortina entre páginas.
+- Además: lista de revisión que se marca con el scroll, consentimiento que se marca, galería horizontal del equipo, scroll suave y cortina entre páginas.
 
 Con `prefers-reduced-motion` todo se muestra en su estado final, sin movimiento.
 
@@ -79,5 +68,5 @@ La portada muestra además una bandera de Chile junto a "Santiago, Chile", con p
 - **Formulario de contacto:** abre el programa de correo del visitante con el mensaje dirigido a contacto@afyvlegal.com. Para recibir los mensajes sin que el visitante use su correo, se puede conectar a un servicio de formularios (Formspree, Netlify Forms, etc.).
 - **Fuentes:** Newsreader, Geist y Geist Mono (licencia SIL Open Font), alojadas localmente en `assets/fonts/`.
 - **Librerías** (en `assets/vendor/`, sin CDN): GSAP 3.15 con ScrollTrigger, SplitText, ScrambleText, DrawSVG y Flip (licencia estándar gratuita de GSAP, apta para uso comercial) y Lenis 1.3 (MIT).
-- **Imágenes:** logo, retratos y portadas de los artículos provienen del sitio actual.
-- **Ajustes de texto respecto al original:** se corrigieron "Contratatación" → "Contratación" y "situaciones situaciones" → "situaciones"; se quitó del Plan Registra tu Marca un párrafo que repetía el del Plan Constituye tu Empresa; los títulos de artículos escritos en mayúsculas se muestran en tipo oración.
+- **Imágenes:** logo y retratos provienen del sitio actual.
+- **Ajustes de texto respecto al original:** se corrigieron "Contratatación" → "Contratación" y "situaciones situaciones" → "situaciones"; se quitó del Plan Registra tu Marca un párrafo que repetía el del Plan Constituye tu Empresa.

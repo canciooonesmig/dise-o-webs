@@ -25,7 +25,6 @@ const NAV = [
   { href: 'servicios.html', label: 'Servicios y precios', key: 'servicios' },
   { href: 'ia-responsable.html', label: 'IA responsable', key: 'ia' },
   { href: 'equipo.html', label: 'Equipo', key: 'equipo' },
-  { href: 'blog.html', label: 'Blog', key: 'blog' },
 ];
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -57,6 +56,7 @@ const TEAM = [
     slug: 'rosario-soto',
     name: 'Rosario Soto',
     area: 'Derecho Público',
+    titulo: 'Abogada',
     img: 'rosario.webp',
     bio: ['Rosario cuenta con experiencia en derecho corporativo, inmobiliario, civil, laboral y concursal. Destaca por su enfoque innovador respaldado por sus conocimientos en Legal <em>Design Thinking</em>, lo que le permite automatizar procesos y simplificar el lenguaje jurídico para los clientes. Con experiencia previa como Subgerente Legal y líder de equipos, aporta un análisis legal estratégico, gran capacidad de gestión de crisis y un fuerte compromiso con el cumplimiento normativo.'],
     exp: ['Legal Broker', 'Lexy', 'Curaduría Ad Litem', 'G&amp;M Asesorías'],
@@ -74,23 +74,10 @@ const TEAM = [
     name: 'Gabriel Freulon',
     area: 'Derecho Civil y Derecho Laboral',
     img: 'gabriel.webp',
-    bio: ['Gabriel ha orientado su ejercicio hacia el Derecho Civil y Laboral. Destacando por un enfoque práctico y riguroso en la resolución de asuntos legales.'],
+    bio: ['Gabriel se ha especializado en Derecho Civil y Laboral, con un enfoque práctico y riguroso en la resolución de asuntos jurídicos.'],
     exp: ['AFyV Legal'],
   },
 ];
-
-const POSTS = [
-  { slug: 'compraventa-de-estacionamientos-en-chile', file: 'post-estacionamientos', title: 'Compraventa de Estacionamientos en Chile', author: 'Bianca Carrasco', avatar: 'autor-bianca.webp', date: '25 jun', read: '7 min de lectura' },
-  { slug: 'simulacion-de-contratos', file: 'post-simulacion', title: 'Simulación de contratos', author: 'Matías Araos', avatar: 'autor-matias.webp', date: '10 jun', read: '5 min de lectura' },
-  { slug: 'sobre-la-liquidacion-simplificada', file: 'post-liquidacion', title: 'Sobre la Liquidación Simplificada', author: 'Matías Araos', avatar: 'autor-matias.webp', date: '4 jun', read: '3 min de lectura' },
-  { slug: 'arriendas-tu-propiedad-tu-inquilino-no-paga', file: 'post-arriendo', title: 'Arriendas tu propiedad: ¿tu inquilino no paga?', author: 'Matías Araos', avatar: 'autor-matias.webp', date: '3 jun', read: '2 min de lectura' },
-  { slug: 'interdiccion-por-demencia-y-nombramiento-de-curador', file: 'post-interdiccion', title: 'Interdicción por demencia y nombramiento de curador', author: 'Matías Araos', avatar: 'autor-matias.webp', date: '2 jun', read: '2 min de lectura' },
-  { slug: 'filiacion-tu-derecho-a-la-identidad-familiar', file: 'post-filiacion', title: 'Filiación: tu derecho a la identidad familiar', author: 'Matías Araos', avatar: 'autor-matias.webp', date: '2 jun', read: '4 min de lectura' },
-].map((p) => {
-  const raw = read(`content/${p.file}.html`);
-  const first = (raw.match(/<p>([\s\S]*?)<\/p>/) || [, ''])[1].replace(/<[^>]+>/g, '').trim();
-  return { ...p, html: raw, excerpt: first };
-});
 
 /* ───────────── Layout ───────────── */
 
@@ -120,7 +107,7 @@ function nav(active, depth, hasContact) {
   const links = NAV.map((n) => `<li><a class="nav__link" href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
   const sheetLinks = NAV.map((n, i) => `<li><a href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}><span>${num(i)}</span>${n.label}</a></li>`).join('');
   return `<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">La IA prepara · un abogado firma</span></div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">La IA prepara · el equipo decide</span></div>
 <header class="nav">
   <div class="nav__inner">
     <a class="nav__brand" href="${p}index.html" aria-label="AFyV Legal, inicio">AFyV</a>
@@ -136,7 +123,7 @@ function nav(active, depth, hasContact) {
 }
 
 function contact({ title = '¡Contáctanos!', lede = '' } = {}) {
-  return `<section class="contact" id="contacto" aria-labelledby="contacto-title">
+  return `<section class="contact ink" id="contacto" aria-labelledby="contacto-title">
   <div class="wrap">
     <span class="label" data-reveal>Contacto</span>
     <h2 class="contact__title" id="contacto-title" data-split style="margin-top:1.5rem">${title}</h2>
@@ -193,7 +180,7 @@ function footer(depth) {
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__col">
-        <p class="title-sm" style="margin:0 0 1rem">${D.REGLA_DE_ORO.replace('; ', ';<br>')}</p>
+        <p class="title-sm" style="margin:0 0 1rem">${D.REGLA.ia}<br>${D.REGLA.equipo}</p>
         <span class="footer__clock" data-clock>Santiago, Chile</span>
       </div>
       <div class="footer__col"><span class="mono">Navegación</span>${NAV.map((n) => `<a href="${p}${n.href}">${n.label}</a>`).join('')}</div>
@@ -205,7 +192,6 @@ function footer(depth) {
       <div>
         <p><strong>Aviso legal.</strong> La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
         <p><strong>Privacidad.</strong> Este sitio no usa cookies ni herramientas que identifiquen a sus visitantes.</p>
-        <p><strong>Identificación.</strong> ${D.PENDIENTES.razonSocial || pend('Razón social')} · RUT ${D.PENDIENTES.rut || pend('RUT')} · Abogados habilitados: ${TEAM.map((m) => m.name).join(', ')}.</p>
       </div>
     </div>
   </div>
@@ -221,7 +207,7 @@ function footer(depth) {
 const pend = (label) => `<span class="pending" title="Dato pendiente: debe definirse antes de publicar">${label}<em>por confirmar</em></span>`;
 
 /* Rotating notarial seal */
-function seal(id, text = 'AFyV LEGAL · ABOGADOS · SANTIAGO DE CHILE · ') {
+function seal(id, text = 'AFyV LEGAL · SANTIAGO DE CHILE · ') {
   return `<span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-${id}" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs>
     <circle cx="60" cy="60" r="57" class="seal__ring"/><circle cx="60" cy="60" r="35" class="seal__ring"/>
     <g class="seal__text"><text><textPath href="#seal-${id}" textLength="286">${text}</textPath></text></g>
@@ -229,9 +215,9 @@ function seal(id, text = 'AFyV LEGAL · ABOGADOS · SANTIAGO DE CHILE · ') {
 }
 
 /* AI notice (texto 5.2 de la due diligence) */
-const avisoIA = (p = '') => `<aside class="aviso-ia" aria-label="Aviso de uso de IA">
-  <span class="aviso-ia__tag mono">Aviso de IA</span>
-  <p>Usamos inteligencia artificial${D.PENDIENTES.proveedorIA ? ` (${D.PENDIENTES.proveedorIA})` : ''} para preparar borradores más rápido. Un abogado del estudio revisa, corrige y firma cada entrega, y verifica toda cita en fuentes oficiales. Tu información no se usa para entrenar modelos. Si prefieres que tu caso se atienda sin IA, te informamos el precio y el plazo antes de contratar.</p>
+const avisoIA = (p = '', ctx = '') => `<aside class="aviso-ia" aria-label="Cómo usamos la IA">
+  <span class="aviso-ia__tag mono">Cómo usamos la IA</span>
+  <p>${ctx || D.AVISO_IA}</p>
   <a class="paren" href="${p}ia-responsable.html">Ver detalle</a>
 </aside>`;
 
@@ -285,7 +271,7 @@ ${footer(depth)}
   return file;
 }
 
-const pageHero = ({ label, h1, lede = '', labelHref }) => `<section class="page-hero" data-intro aria-labelledby="t">
+const pageHero = ({ label, h1, lede = '', labelHref }) => `<section class="page-hero ink" data-intro aria-labelledby="t">
   <div class="hero__gl" data-gl></div>
   <div class="wrap page-hero__grid hero__inner" style="padding:0">
     <div>
@@ -296,20 +282,10 @@ const pageHero = ({ label, h1, lede = '', labelHref }) => `<section class="page-
   </div>
 </section>`;
 
-const postCard = (post, depth = 0) => {
-  const p = '../'.repeat(depth);
-  return `<article class="post-card" data-reveal>
-  <div class="post-card__media"><img src="${p}assets/img/${post.file}.webp" alt="" width="960" height="540" loading="lazy" decoding="async"></div>
-  <div class="post-card__meta"><span>${post.author}</span><span>${post.date}</span><span>${post.read}</span></div>
-  <h3 class="post-card__title"><a href="${p}blog/${post.slug}.html">${esc(post.title)}</a></h3>
-  <p class="post-card__excerpt">${esc(post.excerpt)}</p>
-</article>`;
-};
-
 const member = (m, i) => `<a class="member" href="equipo.html#${m.slug}">
   <div class="member__media"><span class="member__tag mono">( ${num(i)} )</span><img src="assets/img/${m.img}" alt="Retrato de ${m.name}" width="600" height="860" loading="lazy" decoding="async"></div>
   <p class="member__name">${m.name}</p>
-  <p class="member__role">${m.area}</p>
+  <p class="member__role">${m.titulo ? `${m.titulo} · ` : ''}${m.area}</p>
 </a>`;
 
 /* Generative line art for the service cards (600×600 viewBox) */
@@ -432,7 +408,7 @@ function cifras(label = '( 03 ) Chile en cifras') {
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          <span class="label" data-reveal>${label} ${FLAG_CL.replace('class="flag-cl"', 'class="flag-cl flag-cl--sm"').replace(/flag-clip|flag-shade/g, (m) => `${m}-2`)}</span>
+          <span class="label${label.startsWith('Título') ? ' label--titulo' : ''}" data-reveal>${label.startsWith('Título') ? label.replace(/^(Título \S+) · (.*)$/, '<span class="label__t">$1</span><span aria-hidden="true">·</span> $2') : label} ${FLAG_CL.replace('class="flag-cl"', 'class="flag-cl flag-cl--sm"').replace(/flag-clip|flag-shade/g, (m) => `${m}-2`)}</span>
           <h2 class="title" id="cifras-title" data-split style="margin-top:1.5rem">Emprender en Chile, <span class="hl">en cifras</span></h2>
         </div>
         <p class="lede" data-reveal="1">Cifras oficiales sobre la creación de empresas y las solicitudes de marcas en Chile.</p>
@@ -478,92 +454,120 @@ function cifras(label = '( 03 ) Chile en cifras') {
 }
 
 
-/* ───────────── AFyV 2.0 partials ───────────── */
+
+/* ───────────── AFyV partials ───────────── */
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
-const titulo = (n, text, extra = '') => `<span class="label label--titulo" data-reveal><span class="label__t" data-scramble>Título ${ROMAN[n - 1]}</span><span aria-hidden="true">·</span> ${text}${extra}</span>`;
+const titulo = (n, text) => `<span class="label label--titulo" data-reveal><span class="label__t">Título ${ROMAN[n - 1]}</span><span aria-hidden="true">·</span> ${text}</span>`;
 const clp = (n) => `$${fmt(n)}`;
 const conIVA = (n) => Math.round(n * 1.19);
 const priceNum = (n) => `<span class="price__num" data-net="${n}" data-gross="${conIVA(n)}">${clp(n)}</span>`;
+const iaNote = (text) => `<p class="ia-note" data-reveal><span class="ia-note__dot" aria-hidden="true"></span><span class="ia-note__k mono">Con IA</span><span>${text}</span></p>`;
 
 function priceOf(sv, small = false) {
   if (sv.cotizacion) return `<span class="price${small ? ' price--sm' : ''}"><span class="price__quote">Cotización por etapa</span></span>`;
   return `<span class="price${small ? ' price--sm' : ''}">${sv.desde ? '<span class="price__pre">desde</span>' : ''}${priceNum(sv.precio)}${sv.mensual ? '<span class="price__post">al mes</span>' : ''}</span>`;
 }
 const badges = (sv) => [sv.tasas ? '<span class="tag">+ tasas oficiales</span>' : '', sv.exito ? '<span class="tag">+ 10% de lo recuperado</span>' : ''].join('');
-const sinIA = () => D.PENDIENTES.sinIA || 'precio y plazo informados antes de contratar';
 
 const SIGNATURE = '<svg class="sign" viewBox="0 0 320 110" aria-hidden="true"><path class="sign__path" d="M10 78c18-30 34-58 46-58 10 0-6 52-2 60 6 10 24-44 34-44 8 0 2 34 10 34 10 0 18-30 28-30 8 0 0 26 8 26 14 0 22-40 36-40 10 0-4 30 6 30 12 0 20-22 34-22 12 0 6 18 16 18 18 0 36-16 60-18M40 96c60-6 140-10 250-8"/></svg>';
 
+const GLYPH = {
+  Rapidez: '<svg viewBox="0 0 48 48" aria-hidden="true"><circle class="g" cx="24" cy="26" r="16"/><path class="g" d="M24 26l7-9M20 6h8M24 6v4"/></svg>',
+  Precio: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M8 24 24 8h16v16L24 40z"/><circle class="g" cx="32" cy="16" r="3"/></svg>',
+  Rigor: '<svg viewBox="0 0 48 48" aria-hidden="true"><circle class="g" cx="21" cy="21" r="12"/><path class="g" d="M30 30l10 10M15 21h12M21 15v12"/></svg>',
+  Criterio: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M24 8v32M14 40h20M24 10l-14 4M24 10l14 4M10 14 5 26h10zM38 14l-5 12h10z"/></svg>',
+  shield: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M24 5 9 11v12c0 10 6.5 17 15 20 8.5-3 15-10 15-20V11z"/><path class="g" d="M17 24l5 5 9-10"/></svg>',
+  folder: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M6 14h13l4 4h19v20H6z"/><rect class="g" x="19" y="24" width="10" height="9" rx="1.5"/><path class="g" d="M21 24v-3a3 3 0 0 1 6 0v3"/></svg>',
+  nodata: '<svg viewBox="0 0 48 48" aria-hidden="true"><ellipse class="g" cx="24" cy="12" rx="13" ry="5"/><path class="g" d="M11 12v22c0 3 6 5 13 5s13-2 13-5V12M11 23c0 3 6 5 13 5s13-2 13-5"/><path class="g" d="M6 42 42 6"/></svg>',
+  filter: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M7 9h34L28 25v12l-8 4V25z"/></svg>',
+  erase: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="g" d="M10 14h28M19 14V9h10v5M14 14l2 26h16l2-26M21 21v12M27 21v12"/></svg>',
+};
+
 const ART2 = {
-  marca: `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:rgba(158,240,192,.8)" aria-hidden="true">
+  marca: `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
     <circle class="art-line draw" cx="270" cy="270" r="150"/><circle class="art-line draw" cx="270" cy="270" r="118" style="opacity:.5"/>
     <path class="art-line draw" style="stroke-width:2" d="M226 340V200h52c30 0 48 16 48 40s-18 40-48 40h-52M286 280l44 60"/>
     <path class="art-line draw" style="stroke-width:2" d="M376 376l120 120"/><circle class="art-glow" cx="496" cy="496" r="6"/>
-    ${Array.from({ length: 6 }, (_, i) => `<path class="art-line" style="opacity:.18" d="M80 ${120 + i * 74}H140"/>`).join('')}
   </svg>`,
-  balanza: `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" style="color:#0a1a12" aria-hidden="true">
+  balanza: `<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
     <path class="art-line draw" d="M300 120V470M220 470H380M300 120l-150 40M300 120l150 40"/>
     <path class="art-line draw" d="M150 160l-60 140h120zM450 160l-60 140h120z"/>
     <path class="art-line draw" d="M90 300c0 30 120 30 120 0M390 300c0 30 120 30 120 0"/>
     <circle class="art-line draw" cx="300" cy="110" r="14"/><circle class="art-glow" cx="300" cy="110" r="5"/>
   </svg>`,
 };
+const lineArt = { marcas: ART2.marca, corporativo: ART.empresa.replace(/style="color:[^"]*"/, ''), litigios: ART2.balanza, suscripcion: ART.red.replace(/style="color:[^"]*"/, '') };
 
-function flowMini() {
-  return `<div class="flowmini" data-flow-mini>
-    <svg class="flowmini__line" viewBox="0 0 900 20" preserveAspectRatio="none" aria-hidden="true"><path d="M10 10H890"/></svg>
-    <ol class="flowmini__nodes">
-      ${D.FLUJO.map((f) => `<li class="flowmini__node${f.key ? ' is-key' : ''}${f.ai ? ' is-ai' : ''}"><span class="flowmini__dot" aria-hidden="true">${f.n}</span><span class="flowmini__t">${f.t}</span><span class="flowmini__s">${f.s}</span></li>`).join('')}
-    </ol>
-    <div class="flowmini__notes">
-      <p><span class="flowmini__arrow" aria-hidden="true">↷</span> Cliente sin IA: salta el borrador, nunca la verificación.</p>
-      <p><span class="flowmini__arrow" aria-hidden="true">↺</span> Falla un ítem del checklist: vuelve al borrador.</p>
+/* Organic flow: a wave connects the stages; the team conducts, the AI assists */
+function flowOrganic() {
+  const n = D.FLUJO.length;
+  const pts = D.FLUJO.map((_, i) => [((i + 0.5) / n) * 1000, i % 2 ? 118 : 42]);
+  let d = `M0 80 C ${pts[0][0] * 0.5} 80, ${pts[0][0] * 0.5} ${pts[0][1]}, ${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 1; i < n; i++) { const [x0, y0] = pts[i - 1]; const [x1, y1] = pts[i]; const mx = (x0 + x1) / 2; d += ` C ${mx} ${y0}, ${mx} ${y1}, ${x1} ${y1}`; }
+  d += ` C ${pts[n - 1][0] + 40} ${pts[n - 1][1]}, ${960} 80, 1000 80`;
+  return `<div class="flowo" data-flowo>
+    <div class="flowo__wave" aria-hidden="true">
+      <svg viewBox="0 0 1000 160" preserveAspectRatio="none"><path class="flowo__ghost" d="${d}"/><path class="flowo__path" d="${d}"/></svg>
+      ${pts.map(([x, y], i) => `<span class="flowo__node${D.FLUJO[i].ai ? ' is-ai' : ''}${D.FLUJO[i].key ? ' is-key' : ''}" style="left:${x / 10}%;top:${(y / 160) * 100}%"><span>${i + 1}</span></span>`).join('')}
     </div>
-    <p class="figref mono">Flujo del encargo · reglamento interno, art. 22</p>
+    <ol class="flowo__steps">
+      ${D.FLUJO.map((f) => `<li class="flowo__step">
+        <span class="flowo__num mono" aria-hidden="true">${String(f.n).padStart(2, '0')}</span>
+        <h3 class="flowo__t">${f.t}</h3>
+        <span class="flowo__who${f.ai ? ' is-ai' : ''}">${f.who}</span>
+        <p>${f.d}</p>
+      </li>`).join('')}
+    </ol>
   </div>`;
 }
 
 const limitCard = (l, i) => `<article class="limit" data-reveal="${i % 3}">
-  <div class="limit__head"><span class="limit__lock">${ICON.lock}</span><span class="mono">Art. ${l.art}</span></div>
+  <div class="limit__head"><span class="limit__lock">${ICON.lock}</span><span class="mono">${String(i + 1).padStart(2, '0')}</span></div>
   <h3 class="limit__t">${l.t}</h3>
   <p>${l.d}</p>
 </article>`;
 
 const DOC_LINES = [
   ['Primero. Objeto.', 'El prestador realizará los servicios descritos en el Anexo 1, con la calidad y diligencia propias de su oficio.'],
-  ['Segundo. Precio.', 'El precio total es de $[monto], pagadero en dos cuotas contra la emisión de la boleta respectiva.'],
+  ['Segundo. Precio.', 'El precio total es de $1.200.000, pagadero en dos cuotas contra la emisión de la boleta respectiva.'],
   ['Tercero. Plazo.', 'El contrato rige desde su firma y dura doce meses, renovable por acuerdo escrito de las partes.'],
 ];
 
-function reviewScene() {
-  return `<section class="review" data-review aria-labelledby="review-title">
+const REVIEW_STEPS = [
+  ['La IA prepara el borrador', 'Ordena los antecedentes y propone una primera versión.', 'IA'],
+  ['El equipo analiza y decide', 'Valora los argumentos, ajusta la estrategia y agrega lo que falta.', 'Equipo'],
+  ['Verificamos cada fuente', 'Lo que no se puede comprobar en su origen oficial, no se usa.', 'Equipo'],
+  ['Firmamos y entregamos', 'Con lectura completa y una explicación clara para ti.', 'Equipo'],
+];
+
+function reviewScene(n) {
+  return `<section class="review dark" data-review aria-labelledby="review-title">
   <div class="wrap review__stage">
     <div class="review__copy">
-      ${titulo(3, 'Del borrador a la firma')}
-      <h2 class="title-sm" id="review-title" style="margin:1.5rem 0 2rem">Así participa la IA en un encargo, y así la controla un abogado.</h2>
+      ${titulo(n, 'Del borrador a la firma')}
+      <h2 class="title-sm" id="review-title" style="margin:1.5rem 0 2rem">Así participa la IA en un encargo, y así lo conduce AFyV&nbsp;Legal.</h2>
       <ol class="review__steps">
-        <li class="review__step is-active"><span class="mono">Etapa 6</span><strong>La IA prepara el borrador</strong><span>Solo dentro de la ficha del cliente y con sistemas autorizados.</span></li>
-        <li class="review__step"><span class="mono">Etapa 7</span><strong>El abogado verifica</strong><span>Cada cita en su fuente oficial. Lo que no se puede verificar se elimina.</span></li>
-        <li class="review__step"><span class="mono">Etapa 8</span><strong>El abogado firma y responde</strong><span>Lectura completa del documento final y firma.</span></li>
+        ${REVIEW_STEPS.map(([t, d, who], i) => `<li class="review__step${i === 0 ? ' is-active' : ''}"><span class="mono">${String(i + 1).padStart(2, '0')} · ${who}</span><strong>${t}</strong><span>${d}</span></li>`).join('')}
       </ol>
-      <p class="figref mono">Ejemplo ilustrativo · reglamento interno, arts. 13, 22 y 23</p>
     </div>
     <div class="review__doc" aria-hidden="true">
-      <div class="doc">
+      <div class="doc" data-state="0">
         <div class="doc__bar">
-          <span class="doc__state"><span class="doc__state-i" data-state="0">Borrador IA</span><span class="doc__state-i" data-state="1">En verificación</span><span class="doc__state-i" data-state="2">Entregable firmado</span></span>
-          <span class="mono doc__meta">Ficha aislada del cliente</span>
+          <span class="doc__state"><span class="doc__state-i" data-state="0">Borrador IA</span><span class="doc__state-i" data-state="1">En análisis</span><span class="doc__state-i" data-state="2">En verificación</span><span class="doc__state-i" data-state="3">Entregable firmado</span></span>
+          <span class="mono doc__meta">Expediente reservado</span>
         </div>
         <div class="doc__body">
           <p class="doc__h">Contrato de prestación de servicios</p>
           ${DOC_LINES.map(([h, t]) => `<p class="doc__line"><strong>${h}</strong> <span class="doc__type">${t}</span><span class="doc__ok">${ICON.check}</span></p>`).join('')}
-          <p class="doc__line doc__line--bad"><strong>Cuarto.</strong> <span class="doc__type">Según el fallo Rol 0000-2025, esta cláusula se entiende siempre válida.</span><span class="doc__flag">Cita no verificable en fuente oficial: se elimina</span></p>
+          <p class="doc__line doc__line--bad"><strong>Cuarto.</strong> <span class="doc__type">Según el fallo Rol 0000-2025, esta cláusula se entiende siempre válida.</span><span class="doc__flag">Fuente no verificable: se retira</span></p>
+          <div class="doc__added"><div><p class="doc__line doc__line--new"><strong>Cuarto. Término anticipado.</strong> <span>Cualquiera de las partes podrá poner término al contrato con aviso escrito de treinta días.</span></p></div></div>
+          <span class="doc__note"><span class="mono">Nota del equipo</span>Agregar término anticipado: protege al cliente si el servicio no cumple.</span>
           <div class="doc__checks">
-            ${['Datos, partes y montos cotejados', 'Normas abiertas en LeyChile', 'Fallos verificados en fuente oficial', 'Sin información de otro cliente', 'Registro de revisión completo'].map((c) => `<span class="doc__check"><span class="doc__box">${ICON.check}</span>${c}</span>`).join('')}
+            ${['Hechos y antecedentes', 'Normativa vigente', 'Fuentes verificadas', 'Estrategia y riesgos', 'Confidencialidad'].map((c) => `<span class="doc__check"><span class="doc__box">${ICON.check}</span>${c}</span>`).join('')}
           </div>
           <div class="doc__sign">
-            <div><span class="mono">Abogado responsable</span>${SIGNATURE}</div>
+            <div><span class="mono">Responsable del encargo</span>${SIGNATURE}</div>
             ${seal('doc', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}
           </div>
         </div>
@@ -578,76 +582,89 @@ const svcRow = (sv) => `<li><span>${sv.nombre}</span><span class="dots" aria-hid
 /* ───────────── Pages ───────────── */
 
 const built = [];
-const lineArt = { marcas: ART2.marca, corporativo: ART.empresa, litigios: ART2.balanza, suscripcion: ART.red };
-const lineTone = { marcas: 'green', corporativo: 'paper', litigios: 'paper2', suscripcion: 'ink' };
 
 // Inicio
 built.push(page({
   file: 'index.html',
-  title: 'AFyV Legal — Estudio de abogados para pymes, con IA declarada',
-  description: 'Marcas, corporativo pyme, litigios y suscripción para pymes en Chile. Precio fijo conocido antes de empezar. La IA prepara; un abogado verifica, decide, firma y responde.',
+  title: 'AFyV Legal — Estudio para pymes, con IA responsable',
+  description: 'Marcas, corporativo pyme, litigios y asesoría mensual para pymes en Chile, con precio fijo conocido antes de empezar. La IA prepara; nuestro equipo analiza, decide, firma y responde.',
   active: 'inicio',
   ogImage: 'logo.webp',
+  contactOpts: { lede: 'Cuéntanos qué necesitas. Te respondemos con una propuesta de precio fijo y alcance claro.' },
   body: `
-<section class="hero hero--v3" data-intro aria-labelledby="hero-title">
+<section class="hero hero--v3 ink" data-intro aria-labelledby="hero-title">
   <div class="hero__gl" data-gl></div>
+  <div class="frame" aria-hidden="true"><span class="frame__l frame__l--t"></span><span class="frame__l frame__l--b"></span><span class="frame__l frame__l--l"></span><span class="frame__l frame__l--r"></span>
+    <span class="frame__c frame__c--tl mono" data-scramble>AFyV Legal</span><span class="frame__c frame__c--tr mono" data-scramble>IA responsable</span>
+    <span class="frame__c frame__c--bl mono" data-scramble>Marcas · Corporativo · Litigios · Suscripción</span><span class="frame__c frame__c--br mono" data-scramble>Precio fijo · Horas hábiles</span>
+  </div>
   <div class="wrap hero__inner">
     <div class="hero__top">
-      <span class="label" data-reveal>Estudio de abogados para pymes</span>
-      <span class="hero__place" data-reveal="1">${FLAG_CL}<span class="mono">Santiago, Chile — 33°27′S 70°40′O</span></span>
+      <span class="label" data-reveal>Estudio para pymes y emprendedores</span>
+      <span class="hero__place" data-reveal="1">${FLAG_CL}<span class="mono">Santiago, Chile</span></span>
     </div>
     <h1 class="hero__title" id="hero-title">
-      <span class="hero__machine mono" data-type-intro>La IA prepara.</span>
-      <span class="hero__human" data-split>Un abogado verifica, decide, <span class="hl">firma</span> y&nbsp;responde.</span>
+      <span class="hero__machine mono" data-type-intro>${D.REGLA.ia}</span>
+      <span class="hero__human" data-split>Nuestro equipo analiza, decide, <span class="hl">firma</span> y&nbsp;responde.</span>
     </h1>
     <div class="hero__row">
-      <div class="hero__sign" data-sign-intro aria-hidden="true">${SIGNATURE}<span class="mono">Firma del abogado responsable</span>${seal('hero', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}</div>
+      <div class="hero__sign" data-sign-intro aria-hidden="true">${SIGNATURE}<span class="mono">Firma del responsable del encargo</span>${seal('hero', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}</div>
       <div class="hero__actions" data-reveal="3">
         ${btn('servicios.html', 'Servicios y precios')}
-        <a class="paren" href="ia-responsable.html">Cómo usamos la IA</a>
+        <a class="paren" href="#ia">Cómo usamos la IA</a>
       </div>
     </div>
   </div>
 </section>
 
-<div class="aviso-band">
-  <div class="wrap">${avisoIA()}</div>
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon__track" data-ribbon>
+    ${[0, 1].map(() => `<div class="ribbon__group">${['Rapidez', 'Precio fijo', 'Rigor', 'Criterio humano', 'Reserva', 'Transparencia'].map((w) => `<span>${w}</span>`).join('')}</div>`).join('')}
+  </div>
 </div>
 
-<section class="manifesto" aria-labelledby="enfoque-title">
-  <div class="wrap manifesto__grid">
-    <div>${titulo(1, '<span id="enfoque-title">Nuevo enfoque</span>')}</div>
-    <div>
-      <p class="manifesto__text" data-words>Somos un estudio de abogados que usa IA, no una herramienta de IA. Acompañamos a pymes y emprendedores en marcas, corporativo, litigios y asesoría mensual, con precio fijo conocido antes de empezar, plazos medidos y un abogado del estudio que revisa, corrige y firma cada entrega preparada con IA.</p>
-      <div data-reveal>${btn('ia-responsable.html', 'Nuestro uso de la IA', 'btn--ghost')}</div>
-    </div>
-  </div>
-</section>
-
 <div class="light">
-  <section class="section clauses-sec" aria-labelledby="promesas-title">
+  <section class="section" id="ia" aria-labelledby="ia-title">
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          ${titulo(2, 'Lo que puedes exigirnos')}
+          ${titulo(1, 'Cómo usamos la IA')}
+          <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">La IA nos da velocidad. <span class="hl">El criterio es nuestro.</span></h2>
+        </div>
+        <p class="lede" data-reveal="1">Usamos inteligencia artificial para preparar y ordenar. Nuestro equipo analiza, decide y responde por cada entrega.</p>
+      </div>
+      <div class="virtues">
+        ${D.VIRTUDES.map((v, i) => `<article class="virtue" data-tilt data-reveal="${i}">
+          <div class="virtue__top"><span class="virtue__glyph">${GLYPH[v.k]}</span><span class="mono">${String(i + 1).padStart(2, '0')} · ${v.k}</span></div>
+          <h3 class="virtue__t">${v.t}</h3>
+          <p>${v.d}</p>
+        </article>`).join('')}
+      </div>
+      <div style="margin-top:clamp(1.5rem,3vw,2.5rem)" data-reveal>${avisoIA()}</div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="promesas-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          ${titulo(2, 'Lo que puedes esperar')}
           <h2 class="title" id="promesas-title" data-split style="margin-top:1.5rem">Cinco compromisos <span class="hl">por escrito</span></h2>
         </div>
-        <p class="lede" data-reveal="1">Lo que publicamos pasa a ser una obligación del estudio contigo.</p>
+        ${iaNote('La IA acorta los tiempos; estos compromisos no cambian.')}
       </div>
       <ol class="clauses doc-paper">
         ${D.PROMESAS.map((pr, i) => `<li class="clause" data-reveal>
           <span class="clause__n">§ ${i + 1}</span>
           <div><h3 class="clause__t">${pr.t}</h3><p>${pr.d}</p></div>
-          <span class="clause__ref mono">${pr.ref}</span>
           <span class="clause__stamp" aria-hidden="true">${ICON.check}</span>
         </li>`).join('')}
       </ol>
-      <p class="figref mono" style="margin-top:1.5rem">Reglamento interno y método de trabajo AFyV, título IX y art. 54</p>
     </div>
   </section>
 </div>
 
-${reviewScene()}
+${reviewScene(3)}
 
 <div class="light">
   <section class="section" aria-labelledby="lineas-title">
@@ -657,82 +674,59 @@ ${reviewScene()}
           ${titulo(4, 'Servicios y precios')}
           <h2 class="title" id="lineas-title" data-split style="margin-top:1.5rem">Cuatro líneas, <span class="hl">precio fijo</span></h2>
         </div>
-        <p class="lede" data-reveal="1">Precios sin IVA. Las tasas oficiales se cobran aparte cuando se indica.</p>
+        <p class="lede" data-reveal="1">Precios sin IVA, conocidos antes de empezar. Las tasas oficiales se cobran aparte cuando corresponde.</p>
       </div>
-      <div class="stack">
+      <div class="lines">
         ${D.LINEAS.map((ln, i) => {
           const items = ln.id === 'suscripcion' ? D.PLANES.map((pl) => ({ nombre: `Plan ${pl.nombre}`, precio: pl.precio, mensual: true })) : D.SERVICIOS.filter((s) => s.linea === ln.id);
-          return `<article class="stack-card stack-card--${lineTone[ln.id]}" style="--n:${i}" id="linea-${ln.id}">
-          <div class="stack-card__body">
-            <span class="label">( ${num(i)} ) Línea</span>
-            <div>
-              <h3 class="stack-card__title">${ln.nombre}</h3>
-              <p class="stack-card__text">${ln.bajada}</p>
-              <ul class="svc-mini">${items.slice(0, 4).map(svcRow).join('')}</ul>
-            </div>
-            <a class="paren" href="servicios.html#${ln.id}">Ver alcance y plazos</a>
-          </div>
-          <div class="stack-card__art">${lineArt[ln.id]}</div>
-        </article>`;
+          return `<article class="line-card" data-tilt data-reveal="${i % 2}">
+            <a class="line-card__link" href="servicios.html#${ln.id}" aria-label="${ln.nombre}: ver alcance y plazos"></a>
+            <div class="line-card__art">${lineArt[ln.id]}</div>
+            <div class="line-card__head"><span class="mono">${String(i + 1).padStart(2, '0')}</span><span class="line-card__arrow" aria-hidden="true">${ICON.diag}</span></div>
+            <h3 class="line-card__t">${ln.nombre}</h3>
+            <p class="line-card__d">${ln.bajada}</p>
+            <ul class="svc-mini">${items.slice(0, 4).map(svcRow).join('')}</ul>
+            <p class="line-card__ia"><span class="ia-note__dot" aria-hidden="true"></span>${ln.ia}</p>
+          </article>`;
         }).join('')}
       </div>
     </div>
   </section>
-</div>
 
-<section class="section ia-home" aria-labelledby="ia-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div>
-        ${titulo(5, 'IA responsable')}
-        <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">Nueve etapas. <span class="hl">Ninguna se salta.</span></h2>
+  <section class="section" style="padding-top:0" aria-labelledby="flujo-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          ${titulo(5, 'Cómo trabajamos')}
+          <h2 class="title" id="flujo-title" data-split style="margin-top:1.5rem">El equipo conduce. <span class="hl">La IA acompaña.</span></h2>
+        </div>
+        <p class="lede" data-reveal="1">Seis pasos, de tu primera consulta a la entrega firmada.</p>
       </div>
-      <p class="lede" data-reveal="1">Todo encargo recorre el mismo flujo y cada etapa deja constancia. Si no está registrado, no se hizo.</p>
+      ${flowOrganic()}
     </div>
-    ${flowMini()}
-    <div class="section-head" style="margin:clamp(4rem,8vw,6rem) 0 2.5rem">
-      <h3 class="title-sm" data-split>Cinco límites que no admiten excepción, <span class="hl">ni siquiera con tu autorización</span></h3>
-    </div>
-    <div class="limits">${D.LIMITES.map(limitCard).join('')}</div>
-    <div style="margin-top:3rem" data-reveal>${btn('ia-responsable.html', 'Ver todo el método', 'btn--mint')}</div>
-  </div>
-</section>
+  </section>
 
-<div class="light">
   ${cifras('Título VI · Chile en cifras')}
+  <div class="wrap" style="margin-top:calc(-1 * clamp(3rem,7vw,6rem));padding-bottom:clamp(4rem,8vw,7rem)">${iaNote('Más empresas y marcas cada año: la IA nos permite atender más encargos sin bajar el estándar.')}</div>
 </div>
 
-<section class="hscroll section" data-hscroll aria-labelledby="equipo-title" style="padding-block:clamp(5rem,10vw,8rem)">
+<section class="hscroll section dark" data-hscroll aria-labelledby="equipo-title" style="padding-block:clamp(5rem,10vw,8rem)">
   <div class="hscroll__track">
     <div class="hscroll__intro">
       <div>
         ${titulo(7, 'Equipo')}
-        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Abogados que <span class="hl">firman</span> lo que entregan</h2>
+        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Un equipo que <span class="hl">firma</span> lo que entrega</h2>
+        ${iaNote('Trabajamos con IA todos los días, y respondemos por cada resultado.')}
       </div>
       <div data-reveal>${btn('equipo.html', 'Conoce al equipo', 'btn--ghost')}</div>
     </div>
     ${TEAM.map(member).join('')}
   </div>
-</section>
-
-<div class="light">
-  <section class="section" aria-labelledby="informa-title">
-    <div class="wrap">
-      <div class="section-head section-head--split">
-        <div>
-          ${titulo(8, 'Blog')}
-          <h2 class="title" id="informa-title" data-split style="margin-top:1.5rem">AFyV Informa</h2>
-        </div>
-        <a class="paren" href="blog.html" data-reveal="1">Ver todas las publicaciones</a>
-      </div>
-      <div class="posts posts--3">${POSTS.slice(0, 3).map((p) => postCard(p)).join('')}</div>
-    </div>
-  </section>
-</div>`,
+</section>`,
 }));
 
 // Servicios y precios
-const svcCard = (sv) => `<article class="svc-card${sv.destacado ? ' is-featured' : ''}" data-line="${sv.linea}" data-flip-id="${sv.nombre}">
+const svcCard = (sv) => `<article class="svc-card${sv.destacado ? ' is-featured' : ''}" data-line="${sv.linea}">
   <div class="svc-card__top">
     <span class="mono svc-card__line">${D.LINEAS.find((l) => l.id === sv.linea).nombre}</span>
     <span class="mono svc-card__modo">${sv.modo}</span>
@@ -748,8 +742,8 @@ const svcCard = (sv) => `<article class="svc-card${sv.destacado ? ' is-featured'
       <p class="mono">Incluye</p>
       <ul>${sv.incluye.map((x) => `<li>${ICON.check}<span>${x}</span></li>`).join('')}</ul>
       ${sv.nota ? `<p class="ficha__nota">${sv.nota}</p>` : ''}
-      <p class="ficha__nota">Lo que no está en esta ficha está fuera de alcance: si aparece, te informamos el precio por escrito y solo se hace con tu aceptación.</p>
-      <p class="ficha__sinia"><strong>Opción sin IA:</strong> ${sinIA()}.</p>
+      <p class="ficha__nota">Si aparece trabajo fuera de este alcance, te lo cotizamos antes y solo se hace con tu aceptación.</p>
+      <p class="ficha__sinia">${D.SIN_IA}</p>
     </div>
   </details>
 </article>`;
@@ -757,14 +751,15 @@ const svcCard = (sv) => `<article class="svc-card${sv.destacado ? ' is-featured'
 built.push(page({
   file: 'servicios.html',
   title: 'Servicios y precios — AFyV Legal',
-  description: 'Tarifario de AFyV Legal: marcas, corporativo pyme, litigios y suscripción Abogado de tu Pyme. Precio fijo conocido antes de empezar y plazos en horas hábiles.',
+  description: 'Marcas, corporativo pyme, litigios y suscripción Abogado de tu Pyme. Precio fijo conocido antes de empezar y plazos en horas hábiles.',
   active: 'servicios',
-  contactOpts: { title: 'Cotiza tu encargo', lede: 'Cuéntanos qué necesitas y te enviamos una cotización con precio fijo y alcance cerrado.' },
+  contactOpts: { title: 'Cotiza tu encargo', lede: 'Cuéntanos qué necesitas y te enviamos un precio fijo con alcance claro.' },
   body: `
-${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">conocido antes</span> de empezar', lede: 'Cuatro líneas para pymes y emprendedores. Cada servicio tiene una ficha de alcance y un abogado del estudio revisa y firma cada entrega.' })}
+${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">conocido antes</span> de empezar', lede: 'Cuatro líneas para pymes y emprendedores. Cada servicio tiene un alcance definido, y nuestro equipo revisa y firma cada entrega.' })}
 <div class="light">
   <section class="section" aria-label="Tarifario">
     <div class="wrap">
+      <div style="margin-bottom:clamp(1.5rem,3vw,2.5rem)" data-reveal>${avisoIA('', 'La IA prepara los borradores y agiliza las búsquedas; por eso podemos publicar precios fijos y plazos en horas hábiles. Nuestro equipo revisa, corrige y firma cada entrega. ' + D.SIN_IA)}</div>
       <div class="tarifa-bar" data-reveal>
         <div class="filters" role="group" aria-label="Filtrar por línea">
           <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Todos</button>
@@ -776,10 +771,10 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
           <span class="iva__knob" aria-hidden="true"></span>
         </div>
       </div>
-      <p class="sr-status visually-hidden" aria-live="polite" data-tarifa-status></p>
+      <p class="visually-hidden" aria-live="polite" data-tarifa-status></p>
       ${D.LINEAS.filter((l) => l.id !== 'suscripcion').map((l) => `<span id="${l.id}" class="anchor"></span>`).join('')}
       <div class="svc-grid" data-svc-grid>${D.SERVICIOS.map(svcCard).join('')}</div>
-      <p class="figref mono" style="margin-top:2rem">Precios en pesos chilenos. IVA 19%. Las tasas oficiales (INAPI, notaría, Diario Oficial) se cobran aparte cuando se indica. Tarifario vigente desde el 4 de octubre de 2026.</p>
+      <p class="figref mono" style="margin-top:2rem">Precios en pesos chilenos. IVA 19%. Las tasas oficiales (INAPI, notaría, Diario Oficial) se cobran aparte cuando se indica.</p>
     </div>
   </section>
 
@@ -790,10 +785,10 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
           <span class="label" data-reveal>Suscripción</span>
           <h2 class="title" id="sus-title" data-split style="margin-top:1.5rem">Abogado de tu <span class="hl">Pyme</span></h2>
         </div>
-        <p class="lede" data-reveal="1">${D.PLANES_REGLAS.respuesta}. Cada plan define por escrito qué incluye y qué no.</p>
+        <p class="lede" data-reveal="1">${D.PLANES_REGLAS.respuesta}. Cada plan define por escrito qué incluye.</p>
       </div>
       <div class="plans">
-        ${D.PLANES.map((pl, i) => `<article class="plan-card${pl.destacado ? ' is-featured' : ''}" data-reveal="${i}">
+        ${D.PLANES.map((pl, i) => `<article class="plan-card${pl.destacado ? ' is-featured' : ''}" data-tilt data-reveal="${i}">
           <p class="mono">Plan</p>
           <h3 class="plan-card__t">${pl.nombre}</h3>
           <span class="price">${priceNum(pl.precio)}<span class="price__post">al mes</span></span>
@@ -803,30 +798,27 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
       </div>
       <div class="plans-rules doc-paper" data-reveal>
         <dl>${D.PLANES_REGLAS.definiciones.map(([t, d]) => `<div><dt>${t}</dt><dd>${d}</dd></div>`).join('')}
-          <div><dt>Excluido de todos los planes</dt><dd>${D.PLANES_REGLAS.excluido}</dd></div>
+          <div><dt>No incluido en los planes</dt><dd>${D.PLANES_REGLAS.excluido}</dd></div>
           <div><dt>Baja</dt><dd>${D.PLANES_REGLAS.baja}</dd></div>
         </dl>
       </div>
     </div>
   </section>
-</div>
 
-<section class="section" aria-labelledby="como-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="label" data-reveal>Cómo es un encargo</span>
-        <h2 class="title-sm" id="como-title" data-split style="margin-top:1.5rem">De tu consulta a la entrega firmada</h2>
+  <section class="section" style="padding-top:0" aria-labelledby="como-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="label" data-reveal>Cómo trabajamos</span>
+          <h2 class="title-sm" id="como-title" data-split style="margin-top:1.5rem">De tu consulta a la entrega firmada</h2>
+        </div>
+        <a class="paren" href="ia-responsable.html" data-reveal="1">IA responsable</a>
       </div>
-      <a class="paren" href="ia-responsable.html" data-reveal="1">Ver el método completo</a>
+      ${flowOrganic()}
     </div>
-    ${flowMini()}
-    <div style="margin-top:3rem">${avisoIA()}</div>
-  </div>
-</section>
+  </section>
 
-<div class="light">
-  <section class="section" aria-labelledby="opiniones-title">
+  <section class="section" style="padding-top:0" aria-labelledby="opiniones-title">
     <div class="wrap">
       <div class="section-head"><span class="label" data-reveal>Clientes</span><h2 class="title" id="opiniones-title" data-split style="margin-top:1.5rem">Opiniones</h2></div>
       <div class="quotes">
@@ -841,17 +833,16 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
 // IA responsable
 built.push(page({
   file: 'ia-responsable.html',
-  title: 'Uso responsable de la IA — AFyV Legal',
-  description: 'Cómo usa AFyV Legal la inteligencia artificial: la IA prepara; un abogado verifica, decide, firma y responde. Flujo de nueve etapas, cinco límites absolutos, protección de datos y opción sin IA.',
+  title: 'IA responsable — AFyV Legal',
+  description: 'Cómo usa AFyV Legal la inteligencia artificial: la IA prepara; nuestro equipo analiza, decide, firma y responde. Seguridad de la información, consentimiento y opción sin IA.',
   active: 'ia',
   body: `
-${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl">IA</span>', lede: 'La IA comete errores. Por eso ningún borrador sale sin revisión de un abogado, y el estudio responde por lo que entrega.' })}
+${pageHero({ label: 'Transparencia', h1: 'IA <span class="hl">responsable</span>', lede: 'La IA nos permite trabajar más rápido y con precio fijo. El criterio, las decisiones y la responsabilidad son siempre de nuestro equipo.' })}
 
 <section class="golden" aria-label="Regla de oro">
   <div class="wrap">
-    <span class="label" data-reveal>Regla de oro</span>
-    <p class="golden__text"><span class="golden__ai mono" data-type>La IA prepara;</span> <span data-words-light>un abogado verifica, decide, firma y responde.</span></p>
-    <p class="figref mono" data-reveal>Reglamento interno, art. 5: el trabajo con IA se rige por el mismo estándar de diligencia que el trabajo sin ella.</p>
+    <span class="label" data-reveal>Nuestra regla</span>
+    <p class="golden__text"><span class="golden__ai mono" data-type>${D.REGLA.ia}</span> <span data-words-light>${D.REGLA.equipo}</span></p>
   </div>
 </section>
 
@@ -860,34 +851,32 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
     <div class="wrap">
       <div class="section-head">
         ${titulo(1, 'Quién hace qué')}
-        <h2 class="title" id="roles-title" data-split style="margin-top:1.5rem">La máquina asiste. <span class="hl">La persona responde.</span></h2>
+        <h2 class="title" id="roles-title" data-split style="margin-top:1.5rem">La IA asiste. <span class="hl">El equipo decide.</span></h2>
       </div>
       <div class="versus">
         <div class="versus__col" data-reveal>
           <p class="versus__k mono"><span class="versus__dot versus__dot--ai"></span>Lo que hace la IA</p>
           <ul>${D.USOS_IA.map((x) => `<li>${x}</li>`).join('')}</ul>
-          <p class="figref mono">Usos permitidos · art. 10</p>
         </div>
         <div class="versus__divider" aria-hidden="true"><span></span></div>
         <div class="versus__col" data-reveal="1">
-          <p class="versus__k mono"><span class="versus__dot"></span>Lo que hace el abogado</p>
-          <ul>${D.USOS_ABOGADO.map((x) => `<li>${x}</li>`).join('')}</ul>
-          <p class="figref mono">Arts. 7, 23, 24 y 27</p>
+          <p class="versus__k mono"><span class="versus__dot"></span>Lo que hace nuestro equipo</p>
+          <ul>${D.USOS_EQUIPO.map((x) => `<li>${x}</li>`).join('')}</ul>
         </div>
       </div>
     </div>
   </section>
 </div>
 
-<section class="flow" data-flow aria-labelledby="flow-title">
+<section class="flow dark" data-flow aria-labelledby="flow-title">
   <div class="wrap flow__stage">
     <div class="flow__head">
-      ${titulo(2, 'El flujo del encargo')}
-      <h2 class="title-sm" id="flow-title" style="margin-top:1.5rem">Nueve etapas, dos desvíos y una constancia por cada paso</h2>
+      ${titulo(2, 'Cómo trabajamos')}
+      <h2 class="title-sm" id="flow-title" style="margin-top:1.5rem">Seis pasos. El equipo conduce cada uno.</h2>
     </div>
     <div class="flow__track" aria-hidden="true">
       <div class="flow__rail"><span class="flow__fill"></span></div>
-      ${D.FLUJO.map((f) => `<span class="flow__node${f.key ? ' is-key' : ''}${f.ai ? ' is-ai' : ''}" style="--x:${((f.n - 1) / 8) * 100}%"><span>${f.n}</span></span>`).join('')}
+      ${D.FLUJO.map((f, i) => `<span class="flow__node${f.key ? ' is-key' : ''}${f.ai ? ' is-ai' : ''}" style="--x:${(i / (D.FLUJO.length - 1)) * 100}%"><span>${f.n}</span></span>`).join('')}
     </div>
     <ol class="flow__cards">
       ${D.FLUJO.map((f) => `<li class="flow__card${f.key ? ' is-key' : ''}">
@@ -895,15 +884,10 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
         <div>
           <p class="mono flow__who">${f.who}</p>
           <h3 class="flow__t">${f.t}</h3>
-          <p class="flow__s">${f.s}</p>
           <p>${f.d}</p>
         </div>
       </li>`).join('')}
     </ol>
-    <div class="flow__notes">
-      <p><span aria-hidden="true">↷</span> El cliente que pide servicio sin IA salta el borrador, pero no la verificación.</p>
-      <p><span aria-hidden="true">↺</span> Si falla un ítem del checklist, el encargo vuelve al borrador.</p>
-    </div>
   </div>
 </section>
 
@@ -912,62 +896,48 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
     <div class="wrap">
       <div class="section-head section-head--split">
         <div>
-          ${titulo(3, 'Límites absolutos')}
-          <h2 class="title" id="limites-title" data-split style="margin-top:1.5rem">Cinco reglas <span class="hl">sin excepción</span></h2>
+          ${titulo(3, 'Sin excepciones')}
+          <h2 class="title" id="limites-title" data-split style="margin-top:1.5rem">Cinco reglas <span class="hl">que no cambian</span></h2>
         </div>
-        <p class="lede" data-reveal="1">No admiten excepción, ni con autorización del socio de cumplimiento ni del cliente. Su incumplimiento suspende de inmediato el acceso a los sistemas de IA.</p>
+        <p class="lede" data-reveal="1">Valen para cada encargo, con o sin IA.</p>
       </div>
       <div class="limits limits--light">${D.LIMITES.map(limitCard).join('')}</div>
-      <p class="figref mono" style="margin-top:1.5rem">Reglamento interno, arts. 9, 12 a 16 y 65</p>
     </div>
   </section>
 
   <section class="section" aria-labelledby="check-title" style="padding-top:0">
     <div class="wrap check-grid">
       <div>
-        ${titulo(4, 'Protocolo de verificación')}
-        <h2 class="title-sm" id="check-title" data-split style="margin:1.5rem 0 1.5rem">Lo que el abogado revisa antes de firmar</h2>
-        <p class="lede" data-reveal>Además, el abogado que firma lee el entregable completo en su versión final. Demandas, contestaciones, recursos, oposiciones ante INAPI y pactos de socios pasan por un segundo abogado.</p>
-        <p class="figref mono" data-reveal>Arts. 23, 24 y 25</p>
+        ${titulo(4, 'Antes de cada entrega')}
+        <h2 class="title-sm" id="check-title" data-split style="margin:1.5rem 0 1.5rem">Lo que revisamos antes de firmar</h2>
+        <p class="lede" data-reveal>Cada entrega se lee completa en su versión final. Los escritos judiciales, las oposiciones y los pactos de socios pasan además por una segunda revisión.</p>
       </div>
-      <ol class="checklist doc-paper" data-checklist>
-        ${D.CHECKLIST.map((c, i) => `<li><span class="checklist__box">${ICON.check}</span><span class="mono checklist__n">${num(i)}</span><span>${c}</span></li>`).join('')}
+      <ol class="checklist checklist--rich doc-paper" data-checklist>
+        ${D.CHECKLIST.map(([t, d], i) => `<li><span class="checklist__box">${ICON.check}</span><span class="mono checklist__n">${num(i)}</span><span><strong>${t}</strong><em>${d}</em></span></li>`).join('')}
       </ol>
     </div>
   </section>
-</div>
 
-<section class="section" aria-labelledby="datos-title">
-  <div class="wrap">
-    <div class="section-head section-head--split">
-      <div>
-        ${titulo(5, 'Tu información')}
-        <h2 class="title" id="datos-title" data-split style="margin-top:1.5rem">Secreto profesional <span class="hl">primero</span></h2>
+  <section class="section" aria-labelledby="datos-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="secret">
+        <div class="secret__head">
+          ${titulo(5, 'Tu información')}
+          <h2 class="title" id="datos-title" data-split style="margin-top:1.5rem">Secreto profesional <span class="hl">primero</span></h2>
+          <p class="lede" data-reveal="1">Tu información es reservada. Así la protegemos cuando trabajamos con IA.</p>
+        </div>
+        <div class="secret__grid">
+          ${D.RESGUARDOS.map((r, i) => `<article class="secret__card" data-reveal="${i}"><span class="secret__icon">${GLYPH[['folder', 'nodata', 'filter', 'erase'][i]]}</span><h3>${r.t}</h3><p>${r.d}</p></article>`).join('')}
+        </div>
       </div>
-      <p class="lede" data-reveal="1">A la IA se entrega solo la información necesaria para la tarea y, cuando se puede, se reemplazan nombres, RUT y montos por marcadores.</p>
-    </div>
-    <div class="vault">
-      <div class="vault__fig" aria-hidden="true">
-        ${['A', 'B', 'C'].map((c, i) => `<div class="vault__file" style="--i:${i}"><span class="mono">Ficha cliente ${c}</span><span class="vault__wall"></span></div>`).join('')}
-        <p class="mono vault__cap">Una ficha aislada por cliente · sin memoria compartida</p>
-      </div>
-      <div class="vault__facts">
-        <article data-reveal><h3>Ficha aislada</h3><p>Cada cliente tiene su propio espacio (carpeta, proyecto y memoria de IA). Se abre solo después del chequeo de conflictos y el acceso es por necesidad.</p></article>
-        <article data-reveal="1"><h3>Borrado al cierre</h3><p>Al cerrar el encargo se borra la memoria e historial de IA de la ficha${D.PENDIENTES.retencionIA ? ` dentro de ${D.PENDIENTES.retencionIA}` : ''}. El expediente se conserva el plazo que informamos en la carta de encargo.</p></article>
-        <article data-reveal="2"><h3>Proveedor de IA</h3><p>${D.PENDIENTES.proveedorIA ? `Usamos ${D.PENDIENTES.proveedorIA}.` : `Proveedor: ${pend('Proveedor de IA')}.`} Si cambia el proveedor o el uso, te avisamos con anticipación.</p></article>
-        <article data-reveal="3"><h3>Sin decisiones automatizadas</h3><p>Ninguna decisión que produzca efectos jurídicos o te afecte significativamente se basa solo en el tratamiento automatizado de tus datos: siempre decide un abogado.</p></article>
+      <div class="rules doc-paper" data-reveal>
+        <div class="rules__head"><span class="secret__icon">${GLYPH.shield}</span><h3 class="title-sm">Requisitos de seguridad para el uso de IA</h3></div>
+        <ol class="rules__list">${D.SEGURIDAD_IA.map((x, i) => `<li><span class="rules__n">${i + 1}</span><p>${x}</p></li>`).join('')}</ol>
       </div>
     </div>
-    <details class="reqs" data-reveal>
-      <summary><span>Diez requisitos que exigimos por contrato a un proveedor de IA</span><span class="ficha__plus" aria-hidden="true"></span></summary>
-      <ol>${D.PROVEEDOR.map((x) => `<li>${x}</li>`).join('')}</ol>
-      <p class="figref mono">Art. 18 · ningún sistema que procese información de clientes se autoriza sin un contrato que lo asegure</p>
-    </details>
-  </div>
-</section>
+  </section>
 
-<div class="light">
-  <section class="section" aria-labelledby="decides-title">
+  <section class="section" aria-labelledby="decides-title" style="padding-top:0">
     <div class="wrap">
       <div class="section-head">
         ${titulo(6, 'Tú decides')}
@@ -975,40 +945,33 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
       </div>
       <div class="consent">
         <div class="consent__mock doc-paper" data-reveal aria-hidden="true">
-          <p class="mono">Carta de encargo · antes del pago</p>
+          <p class="mono">Carta de encargo</p>
           <label class="consent__row"><span class="consent__box"></span>Acepto la carta de encargo</label>
           <label class="consent__row consent__row--ia"><span class="consent__box" data-consent-box>${ICON.check}</span>Leí y acepto la cláusula de uso de IA</label>
-          <p class="consent__alt">o <u>prefiero que mi caso se atienda sin IA</u></p>
-          <p class="mono consent__log">Se registra versión, fecha, hora e IP</p>
+          <p class="consent__alt">o <u>prefiero que mi encargo se trabaje sin IA</u></p>
         </div>
         <div class="consent__facts">
-          <p data-reveal><strong>Antes de contratar</strong> sabes qué sistema se usa, qué riesgos tiene y que puedes optar por un servicio sin IA.</p>
-          <p data-reveal="1"><strong>Casilla propia</strong>, no premarcada y separada de la aceptación general de la carta de encargo.</p>
-          <p data-reveal="2"><strong>Puedes revocar</strong> tu consentimiento sobre IA en cualquier momento para trabajos futuros; te informamos el nuevo precio y plazo antes de continuar.</p>
-          <p data-reveal="3"><strong>Servicio sin IA:</strong> tu encargo se trabaja sin ningún sistema de IA generativa, al ${sinIA()}.</p>
-          <p data-reveal="4"><strong>Asistentes automatizados:</strong> si te atiende un bot, se presenta como tal en su primer mensaje, te ofrece hablar con una persona y no da opiniones jurídicas.</p>
-          <p class="figref mono" data-reveal>Arts. 29, 43 a 45 y 57</p>
+          <p data-reveal><strong>Antes de contratar</strong> sabes cómo usamos la IA y qué herramienta empleamos: lo detalla la cláusula de uso de IA.</p>
+          <p data-reveal="1"><strong>Aceptación separada</strong> de la carta de encargo, con una casilla propia que no viene marcada.</p>
+          <p data-reveal="2"><strong>Puedes cambiar de opinión</strong> para trabajos futuros en cualquier momento; te informamos el nuevo precio y plazo antes de seguir.</p>
+          <p data-reveal="3"><strong>Servicio sin IA:</strong> tu encargo se trabaja sin herramientas de IA generativa, con precio y plazo informados antes de contratar.</p>
         </div>
       </div>
     </div>
   </section>
 </div>
 
-<section class="section" aria-labelledby="errores-title">
+<section class="section dark" aria-labelledby="calidad-title">
   <div class="wrap">
     <div class="section-head section-head--split">
       <div>
-        ${titulo(7, 'Si algo sale mal')}
-        <h2 class="title" id="errores-title" data-split style="margin-top:1.5rem">Un error del estudio <span class="hl">se corrige sin costo</span></h2>
+        ${titulo(7, 'Compromiso de calidad')}
+        <h2 class="title" id="calidad-title" data-split style="margin-top:1.5rem">Respondemos por <span class="hl">cada entrega</span></h2>
       </div>
-      <p class="lede" data-reveal="1">Si hay un error en un entregable ya enviado, se corrige el mismo día hábil y te lo informamos por escrito. Tus reclamos los revisa un socio distinto del abogado responsable.</p>
+      <p class="lede" data-reveal="1">Revisamos nuestro trabajo de forma periódica. Si una entrega requiere un ajuste, lo hacemos sin costo y te lo informamos por escrito. Cualquier inquietud la atiende un socio del estudio.</p>
     </div>
-    <div class="control">
-      <h3 class="title-sm" data-reveal style="margin-bottom:2rem">Cómo nos controlamos</h3>
-      <ol class="control__list">
-        ${D.CONTROL.map(([f, c, r], i) => `<li class="control__item" data-reveal="${i % 3}"><span class="control__f mono">${f}</span><span class="control__c">${c}</span><span class="control__r">${r}</span></li>`).join('')}
-      </ol>
-      <p class="figref mono">Arts. 58 a 62 · reportar un error propio nunca es causa de sanción interna; ocultarlo sí</p>
+    <div class="quality">
+      ${[['Revisión completa', 'Cada entrega se lee entera antes de firmarse.'], ['Segunda revisión', 'Escritos judiciales, oposiciones y pactos pasan por dos personas.'], ['Controles periódicos', 'Revisamos muestras de nuestro trabajo y actualizamos nuestras prácticas.'], ['Ajustes sin costo', 'Si algo debe corregirse, lo corregimos sin cargo.']].map(([t, d], i) => `<article class="quality__item" data-reveal="${i}"><span class="mono">${String(i + 1).padStart(2, '0')}</span><h3>${t}</h3><p>${d}</p></article>`).join('')}
     </div>
   </div>
 </section>
@@ -1018,7 +981,7 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
     <div class="wrap">
       <div class="section-head">
         ${titulo(8, 'Principios')}
-        <h2 class="title" id="principios-title" data-split style="margin-top:1.5rem">Siete principios rectores</h2>
+        <h2 class="title" id="principios-title" data-split style="margin-top:1.5rem">Cinco principios</h2>
       </div>
       <ol class="principles">
         ${D.PRINCIPIOS.map(([t, d], i) => `<li class="principle" data-reveal="${i % 3}"><span class="principle__n">${ROMAN[i]}</span><div><h3>${t}</h3><p>${d}</p></div></li>`).join('')}
@@ -1026,7 +989,7 @@ ${pageHero({ label: 'Transparencia', h1: 'Uso responsable de la <span class="hl"
       <div class="marco">
         <h3 class="title-sm" data-reveal>Marco que respeta nuestro método</h3>
         <dl>${D.MARCO.map(([t, d]) => `<div data-reveal><dt>${t}</dt><dd>${d}</dd></div>`).join('')}</dl>
-        <p class="figref mono" data-reveal>Anexo del reglamento interno. La información de este sitio no es asesoría legal; la relación con el estudio se rige por la carta de encargo.</p>
+        <p class="figref mono" data-reveal>La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
       </div>
     </div>
   </section>
@@ -1072,18 +1035,18 @@ ${pageHero({ label: 'Servicios y precios', labelHref: 'servicios.html', h1, lede
 
 built.push(reasonsPage({
   file: 'constituye-tu-empresa.html',
-  title: '¿Por qué constituir tu Empresa? — AFyV Legal',
-  description: 'Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio. Cinco razones para formalizar tu emprendimiento.',
-  h1: '¿Por qué constituir tu <span class="hl">Empresa</span>?',
-  intro: 'Muchos emprendimientos comienzan como una simple idea, pero solo aquellos que se formalizan están verdaderamente preparados para crecer, atraer oportunidades y proyectarse a largo plazo. Constituir una empresa es una decisión estratégica que puede marcar el futuro de tu negocio.',
+  title: '¿Por qué constituir tu empresa? — AFyV Legal',
+  description: 'Constituir una empresa es una decisión estratégica para el futuro de tu negocio. Cinco razones para formalizar tu emprendimiento.',
+  h1: '¿Por qué constituir tu <span class="hl">empresa</span>?',
+  intro: 'Muchos emprendimientos nacen como una idea, pero solo los que se formalizan están preparados para crecer, atraer oportunidades y proyectarse en el tiempo.',
   reasons: [
-    ['Separación de Patrimonios', 'Al constituir una empresa, se crea una persona jurídica distinta de sus socios. Esto permite separar el patrimonio personal del empresarial, limitando la responsabilidad a los aportes realizados a la sociedad. De esta forma, podrás desarrollar tu actividad con mayor seguridad y reducir riesgos innecesarios para tu patrimonio personal.'],
-    ['Accede a oportunidades de Financiamiento', 'Una empresa formal abre la puerta a créditos bancarios, fondos concursables, subsidios estatales y programas de apoyo al emprendimiento. Además, una estructura empresarial sólida genera confianza y puede facilitar la incorporación de socios estratégicos o inversionistas interesados en impulsar el crecimiento de tu proyecto.'],
-    ['Construye una empresa a tu medida', 'Cada negocio tiene necesidades distintas. La elección correcta del tipo societario permite definir cómo se administrará la empresa, cómo se distribuirán las utilidades y cuáles serán las reglas que regirán la relación entre los socios, entregando flexibilidad y seguridad para el desarrollo del negocio.'],
-    ['Genera confianza', 'Clientes, proveedores y empresas prefieren relacionarse con negocios formales. Operar a través de una sociedad transmite seriedad, estabilidad y profesionalismo, fortaleciendo tu imagen comercial y aumentando tus posibilidades de generar nuevas oportunidades de negocio.'],
-    ['Profesionaliza la operación de tu empresa', 'La formalización permite emitir documentos tributarios, contratar trabajadores, acceder a servicios bancarios empresariales y separar adecuadamente las finanzas personales de las de la empresa. Todo ello contribuye a una gestión más eficiente y ordenada.'],
+    ['Separación de patrimonios', 'La empresa es una persona jurídica distinta de sus socios. Tu patrimonio personal queda separado del empresarial y la responsabilidad se limita a los aportes, con menos riesgos para ti.'],
+    ['Acceso a financiamiento', 'Una empresa formal abre la puerta a créditos, fondos concursables, subsidios y programas de apoyo, y facilita sumar socios o inversionistas.'],
+    ['Una empresa a tu medida', 'Elegir bien el tipo societario define cómo se administra la empresa, cómo se reparten las utilidades y qué reglas rigen entre los socios.'],
+    ['Confianza', 'Clientes y proveedores prefieren trabajar con negocios formales. Una sociedad transmite seriedad y estabilidad, y abre nuevas oportunidades.'],
+    ['Una operación profesional', 'Podrás emitir documentos tributarios, contratar trabajadores, acceder a servicios bancarios para empresas y ordenar tus finanzas.'],
   ],
-  closing: 'Formalizar tu negocio es invertir en su futuro. Porque las grandes empresas no solo nacen de buenas ideas: se construyen sobre <span class="hl">bases legales sólidas</span>.',
+  closing: 'Formalizar tu negocio es invertir en su futuro: las grandes empresas se construyen sobre <span class="hl">bases legales sólidas</span>.',
   cta: ['servicios.html#corporativo', 'Ver Empresa lista y Pack Empresa + Marca'],
 }));
 
@@ -1092,27 +1055,27 @@ built.push(reasonsPage({
   title: 'Por qué registrar tu marca — AFyV Legal',
   description: 'Tu marca es uno de los activos más valiosos de tu negocio. Cinco razones para registrarla y protegerla desde el inicio.',
   h1: 'Por qué registrar tu <span class="hl">marca</span>',
-  intro: 'Tu marca es uno de los activos más valiosos de tu negocio. Registrarla te permite proteger su identidad, diferenciarte de la competencia y construir una base sólida para crecer con seguridad.',
+  intro: 'Tu marca es uno de los activos más valiosos de tu negocio. Registrarla protege su identidad, te diferencia de la competencia y te da una base sólida para crecer.',
   reasons: [
-    ['Tu marca es uno de los activos más valiosos de tu negocio', 'Muchos emprendedores invierten tiempo, recursos y esfuerzo en posicionar un nombre en el mercado, sin considerar que, si no se encuentra registrado, cualquier tercero podría utilizarlo o incluso obtener derechos exclusivos sobre él. Registrar una marca es una decisión estratégica para proteger y fortalecer tu negocio.'],
-    ['Asegura la exclusividad sobre tu marca', 'El registro de marca otorga el derecho exclusivo de utilizar un nombre, logo o signo distintivo respecto de determinados productos o servicios. Esto te permite diferenciarte de la competencia y evitar que terceros utilicen una identidad similar que pueda generar confusión en el mercado.'],
-    ['Protege la inversión realizada en posicionar tu marca', 'Posicionar una marca requiere tiempo, dedicación y recursos. Registrar tu marca significa proteger todo ese esfuerzo y reducir el riesgo de tener que cambiar de nombre, imagen corporativa o estrategia comercial debido a conflictos con terceros.'],
-    ['Protege el valor de tu marca', 'Una marca registrada constituye un activo intangible que forma parte del patrimonio de la empresa. A medida que tu negocio crece, la marca adquiere valor comercial, pudiendo incluso ser licenciada, cedida o incorporada como un activo relevante para atraer inversionistas o concretar alianzas estratégicas.'],
-    ['Competitividad', 'Las empresas más exitosas del mundo tienen algo en común: protegen sus marcas desde el inicio. Registrar tu marca hoy significa asegurar la identidad de tu negocio para el futuro y construir una ventaja competitiva que perdure en el tiempo.'],
+    ['Un activo valioso', 'Si tu marca no está registrada, un tercero podría usarla o incluso obtener derechos exclusivos sobre ella. Registrarla protege y fortalece tu negocio.'],
+    ['Exclusividad', 'El registro te da el derecho exclusivo de usar un nombre, logo o signo para tus productos o servicios, y evita confusiones en el mercado.'],
+    ['Tu inversión protegida', 'Posicionar una marca exige tiempo y recursos. Registrarla evita tener que cambiar de nombre o de imagen por conflictos con terceros.'],
+    ['Valor que crece', 'Una marca registrada es un activo de la empresa: puede licenciarse, cederse o aportarse para atraer inversionistas y alianzas.'],
+    ['Competitividad', 'Las empresas más exitosas protegen sus marcas desde el inicio. Registrar la tuya hoy es una ventaja que perdura.'],
   ],
-  closing: 'Porque una gran marca no solo se crea: también se <span class="hl">protege</span>.',
+  closing: 'Una gran marca no solo se crea: también se <span class="hl">protege</span>.',
   cta: ['servicios.html#marcas', 'Ver Diagnóstico de marca y Marca protegida'],
 }));
 
 // Equipo
 built.push(page({
   file: 'equipo.html',
-  title: 'Nuestro Equipo — AFyV Legal',
-  description: 'Abogados habilitados que revisan, corrigen y firman cada entrega. Un equipo con visión práctica y contingente del derecho.',
+  title: 'Equipo — AFyV Legal',
+  description: 'El equipo de AFyV Legal: visión práctica del derecho, cercanía y rigor técnico. Revisamos y firmamos cada entrega.',
   active: 'equipo',
   ogImage: 'logo.webp',
   body: `
-${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">Equipo</span>', lede: 'Somos un equipo altamente capacitado, dedicados a ofrecer respuestas ágiles y efectivas. Nos destacamos por nuestra visión práctica y contingente del derecho, abordando cada desafío legal con el compromiso de entregar soluciones reales y a la medida. Entendemos que cada cliente es único, por lo que trabajamos de manera colaborativa, combinando cercanía y rigor técnico para brindar tranquilidad y seguridad jurídica frente a un entorno en permanente cambio.' })}
+${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">equipo</span>', lede: 'Un equipo con visión práctica del derecho, que combina cercanía y rigor técnico para entregar soluciones a la medida. Trabajamos con IA y respondemos por cada resultado.' })}
 <div class="light">
   <section class="section" aria-label="Integrantes">
     <div class="wrap">
@@ -1120,7 +1083,7 @@ ${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">Equipo</span>', lede
         <div class="profile__media" data-reveal><div class="member__media"><span class="member__tag mono">( ${num(i)} )</span><img src="assets/img/${m.img}" alt="Retrato de ${m.name}" width="600" height="860" loading="lazy" decoding="async"></div></div>
         <div>
           <h2 class="profile__name" id="${m.slug}-name" data-split>${m.name}</h2>
-          <p class="profile__area" data-reveal>${m.area}</p>
+          <p class="profile__area" data-reveal>${m.titulo ? `${m.titulo} · ` : ''}${m.area}</p>
           <div class="profile__bio" data-reveal="1">${m.bio.map((b) => `<p>${b}</p>`).join('')}</div>
           <p class="label" data-reveal="2" style="margin-top:2.5rem">Experiencia</p>
           <ul class="profile__exp" data-reveal="2" style="margin-top:1rem">${m.exp.map((e) => `<li>${e}</li>`).join('')}</ul>
@@ -1131,73 +1094,12 @@ ${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">Equipo</span>', lede
 </div>`,
 }));
 
-// Blog
-built.push(page({
-  file: 'blog.html',
-  title: 'AFyV Informa — Blog de AFyV Legal',
-  description: 'Artículos de AFyV Legal sobre derecho civil, arrendamientos, contratos, filiación, liquidación simplificada y más.',
-  active: 'blog',
-  body: `
-${pageHero({ label: 'Blog', h1: 'AFyV <span class="hl">Informa</span>' })}
-<div class="light">
-  <section class="section" aria-label="Publicaciones">
-    <div class="wrap posts posts--3">${POSTS.map((p) => postCard(p)).join('')}</div>
-  </section>
-</div>`,
-}));
-
-// Posts
-POSTS.forEach((post, idx) => {
-  const more = POSTS.filter((_, i) => i !== idx).slice(0, 3);
-  built.push(page({
-    file: `blog/${post.slug}.html`,
-    depth: 1,
-    progress: true,
-    title: `${post.title} — AFyV Informa`,
-    description: post.excerpt.slice(0, 155),
-    active: 'blog',
-    ogImage: `${post.file}.webp`,
-    body: `
-<article aria-labelledby="t">
-  <header class="article-head page-hero" data-intro style="padding-bottom:clamp(6rem,12vw,10rem)">
-    <div class="hero__gl" data-gl></div>
-    <div class="wrap--narrow hero__inner" style="padding:0">
-      <a class="paren" href="../blog.html" data-reveal>AFyV Informa</a>
-      <h1 class="article-head__title" id="t" data-split>${esc(post.title)}</h1>
-      <div class="byline" data-reveal="2">
-        <img src="../assets/img/${post.avatar}" alt="" width="80" height="80">
-        <span><strong>${post.author}</strong> · ${post.date} · ${post.read}</span>
-      </div>
-    </div>
-  </header>
-  <div class="light">
-    <figure class="article-cover wrap--narrow" style="transform:translateY(calc(-1 * clamp(4rem,10vw,8rem)));margin-bottom:calc(-1 * clamp(4rem,10vw,8rem))">
-      <img src="../assets/img/${post.file}.webp" alt="Portada del artículo ${esc(post.title)}" width="960" height="540" fetchpriority="high">
-    </figure>
-    <div class="article-body section" style="padding-top:clamp(3rem,6vw,5rem)">
-      <div class="wrap--narrow prose">${prose(post.html)}</div>
-      <div class="wrap--narrow article-foot">
-        <a class="paren" href="../blog.html">Volver a AFyV Informa</a>
-        ${btn('#contacto', '¡Contáctanos!', 'btn--dark')}
-      </div>
-    </div>
-    <section class="section" style="padding-top:0" aria-labelledby="mas-title">
-      <div class="wrap">
-        <div class="section-head"><span class="label">Sigue leyendo</span><h2 class="title-sm" id="mas-title">Más publicaciones</h2></div>
-        <div class="posts posts--3">${more.map((p) => postCard(p, 1)).join('')}</div>
-      </div>
-    </section>
-  </div>
-</article>`,
-  }));
-});
-
 // Legal
 for (const [file, title, src, desc] of [
   ['terminos-y-condiciones.html', 'Términos y Condiciones', 'terminos', 'Términos y Condiciones de acceso, uso y consulta del sitio web de AFyV Legal.'],
   ['politica-de-privacidad.html', 'Política de Privacidad', 'privacidad', 'Política de tratamiento de datos personales de AFyV Legal.'],
 ]) {
-  const other = file.startsWith('terminos') ? ['politica-de-privacidad.html', 'Ver Política de Privacidad'] : ['terminos-y-condiciones.html', 'Ver Términos y Condiciones'];
+  const other = file.startsWith('terminos') ? ['politica-de-privacidad.html', 'Política de Privacidad'] : ['terminos-y-condiciones.html', 'Términos y Condiciones'];
   built.push(page({
     file,
     title: `${title} — AFyV Legal`,
@@ -1205,7 +1107,7 @@ for (const [file, title, src, desc] of [
     active: 'legal',
     contactOpts: false,
     body: `
-${pageHero({ label: 'Avisos Legales', h1: title, lede: `<a class="paren" href="${other[0]}">${other[1]}</a> <a class="paren" href="ia-responsable.html">Uso de IA</a>` })}
+${pageHero({ label: 'Avisos legales', h1: title, lede: `<a class="paren" href="${other[0]}">${other[1]}</a> <a class="paren" href="ia-responsable.html">IA responsable</a>` })}
 <div class="light">
   <section class="section">
     <div class="wrap--narrow prose prose--legal">${prose(read(`content/${src}.html`))}</div>

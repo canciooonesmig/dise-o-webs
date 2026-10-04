@@ -145,6 +145,23 @@
     }));
   }
 
+  /* ───── Gentle 3D tilt on cards (fine pointers) ───── */
+  if (finePointer && !reduce) {
+    $$('[data-tilt]').forEach((card) => {
+      let raf = 0;
+      card.addEventListener('pointermove', (e) => {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          const r = card.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width - 0.5;
+          const y = (e.clientY - r.top) / r.height - 0.5;
+          card.style.transform = `rotateX(${(-y * 4).toFixed(2)}deg) rotateY(${(x * 5).toFixed(2)}deg) translateZ(0)`;
+        });
+      });
+      card.addEventListener('pointerleave', () => { cancelAnimationFrame(raf); card.style.transition = 'transform 600ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 400ms ease'; card.style.transform = ''; setTimeout(() => { card.style.transition = ''; }, 600); });
+    });
+  }
+
   /* ───── Page curtain ───── */
   const curtain = $('.curtain');
   const count = $('[data-count]');
@@ -223,7 +240,7 @@
 
   /* Final (static) state of the illustrative scenes: used without GSAP or with reduced motion */
   const finalState = () => {
-    $$('.doc').forEach((d) => { d.dataset.state = '2'; d.classList.add('is-verified', 'is-signed'); });
+    $$('.doc').forEach((d) => { d.dataset.state = '3'; d.classList.add('is-verified', 'is-signed', 'is-noted', 'is-added'); });
     $$('.doc__line').forEach((l) => l.classList.add(l.classList.contains('doc__line--bad') ? 'is-struck' : 'is-ok'));
     $$('.doc__check, .checklist li').forEach((c) => c.classList.add('is-on'));
     $$('.review__step').forEach((s, i, a) => s.classList.toggle('is-active', i === a.length - 1));
@@ -352,7 +369,7 @@
         gsap.to(track, {
           x: () => -dist(),
           ease: 'none',
-          scrollTrigger: { trigger: sec, start: 'top top', end: () => `+=${dist()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true },
+          scrollTrigger: { trigger: sec, start: 'top top', end: () => `+=${dist()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true, refreshPriority: -1 },
         });
       });
     });
@@ -470,7 +487,7 @@
     $$('[data-review]').forEach((sec) => {
       const doc = $('.doc', sec);
       const lines = $$('.doc__line', sec);
-      const good = lines.filter((l) => !l.classList.contains('doc__line--bad'));
+      const good = lines.filter((l) => !l.classList.contains('doc__line--bad') && !l.classList.contains('doc__line--new'));
       const bad = $('.doc__line--bad', sec);
       const checks = $$('.doc__check', sec);
       const steps = $$('.review__step', sec);
@@ -478,25 +495,27 @@
       const sigLen = sig ? draw(sig) : 0;
       const seg = (p, a, b) => Math.min(1, Math.max(0, (p - a) / (b - a)));
       const render = (p) => {
-        lines.forEach((l, i) => { const r = seg(p, 0.02 + i * 0.07, 0.09 + i * 0.07); l.style.opacity = String(0.15 + 0.85 * r); l.style.transform = `translateY(${(1 - r) * 8}px)`; });
-        const state = p < 0.36 ? 0 : p < 0.8 ? 1 : 2;
+        lines.forEach((l, i) => { if (l.classList.contains('doc__line--new')) return; const r = seg(p, 0.02 + i * 0.05, 0.08 + i * 0.05); l.style.opacity = String(0.15 + 0.85 * r); l.style.transform = `translateY(${(1 - r) * 8}px)`; });
+        const state = p < 0.24 ? 0 : p < 0.5 ? 1 : p < 0.78 ? 2 : 3;
         doc.dataset.state = String(state);
         steps.forEach((s, i) => s.classList.toggle('is-active', i === state));
-        doc.classList.toggle('is-verified', p >= 0.4);
-        good.forEach((l, i) => l.classList.toggle('is-ok', p >= 0.44 + i * 0.07));
-        if (bad) bad.classList.toggle('is-struck', p >= 0.5);
-        checks.forEach((c, i) => c.classList.toggle('is-on', p >= 0.46 + i * 0.065));
-        if (sig) sig.style.strokeDashoffset = String(sigLen * (1 - seg(p, 0.8, 0.94)));
+        doc.classList.toggle('is-noted', p >= 0.28 && p < 0.62);
+        doc.classList.toggle('is-added', p >= 0.36);
+        doc.classList.toggle('is-verified', p >= 0.5);
+        good.forEach((l, i) => l.classList.toggle('is-ok', p >= 0.54 + i * 0.05));
+        if (bad) bad.classList.toggle('is-struck', p >= 0.58);
+        checks.forEach((c, i) => c.classList.toggle('is-on', p >= 0.55 + i * 0.045));
+        if (sig) sig.style.strokeDashoffset = String(sigLen * (1 - seg(p, 0.8, 0.93)));
         doc.classList.toggle('is-signed', p >= 0.95);
       };
       render(0);
       const m = gsap.matchMedia();
       m.add('(min-width: 60em)', () => {
-        ScrollTrigger.create({ trigger: sec, start: 'top top', end: '+=230%', pin: true, scrub: true, onUpdate: (st) => render(st.progress) });
+        ScrollTrigger.create({ trigger: sec, start: 'top top', end: '+=280%', pin: true, scrub: 0.4, onUpdate: (st) => render(st.progress) });
       });
       m.add('(max-width: 59.99em)', () => {
         const o = { p: 0 };
-        const t = gsap.to(o, { p: 1, duration: 5, ease: 'none', paused: true, onUpdate: () => render(o.p) });
+        const t = gsap.to(o, { p: 1, duration: 6, ease: 'none', paused: true, onUpdate: () => render(o.p) });
         ScrollTrigger.create({ trigger: doc, start: 'top 75%', once: true, onEnter: () => t.play() });
       });
     });
@@ -550,6 +569,55 @@
       gsap.from($$('li', col), { x: col.matches(':last-child') ? 20 : -20, autoAlpha: 0, duration: 0.8, ease, stagger: 0.08, scrollTrigger: { trigger: col, start: 'top 80%', once: true } });
     });
 
+    // Hero frame: hairlines draw in, corners decode
+    $$('.frame').forEach((f) => {
+      intro.fromTo($$('.frame__l--t, .frame__l--b', f), { scaleX: 0 }, { scaleX: 1, duration: 1.6, ease: 'expo.inOut' }, 0)
+        .fromTo($$('.frame__l--l, .frame__l--r', f), { scaleY: 0 }, { scaleY: 1, duration: 1.6, ease: 'expo.inOut' }, 0.15);
+    });
+
+    // Ribbon: constant drift that speeds up and leans with scroll velocity
+    $$('[data-ribbon]').forEach((track) => {
+      const loop = gsap.to(track, { xPercent: -50, duration: 38, ease: 'none', repeat: -1 });
+      let boost = gsap.quickTo(loop, 'timeScale', { duration: 0.6, ease: 'power3.out' });
+      let skew = gsap.quickTo(track, 'skewX', { duration: 0.5, ease: 'power3.out' });
+      ScrollTrigger.create({ trigger: track, start: 'top bottom', end: 'bottom top', onUpdate: (st) => {
+        const v = st.getVelocity() / 600;
+        boost(1 + Math.min(4, Math.abs(v)) * Math.sign(v || 1));
+        skew(Math.max(-6, Math.min(6, -v * 1.2)));
+        clearTimeout(track._t); track._t = setTimeout(() => { boost(1); skew(0); }, 140);
+      } });
+    });
+
+    // Line art and glyphs draw themselves when their card appears
+    $$('.virtue, .line-card, .secret__card, .rules').forEach((card) => {
+      const paths = $$('.g, .draw', card).filter((p) => p.getTotalLength);
+      if (!paths.length) return;
+      paths.forEach((p) => draw(p));
+      gsap.to(paths, { strokeDashoffset: 0, duration: 1.8, ease: 'power2.inOut', stagger: 0.06, scrollTrigger: { trigger: card, start: 'top 85%', once: true } });
+    });
+
+    // Organic flow: the wave draws with scroll and each stage lights up as it is reached
+    $$('[data-flowo]').forEach((f) => {
+      const path = $('.flowo__path', f);
+      const nodes = $$('.flowo__node', f);
+      const steps = $$('.flowo__step', f);
+      gsap.from(steps, { y: 24, autoAlpha: 0, duration: 1, ease, stagger: 0.1, scrollTrigger: { trigger: f, start: 'top 80%', once: true } });
+      if (!path || !path.getTotalLength) return;
+      const len = draw(path);
+      gsap.set(nodes, { scale: 0.4, autoAlpha: 0 });
+      ScrollTrigger.create({
+        trigger: f, start: 'top 80%', end: 'bottom 55%', scrub: 0.6,
+        onUpdate: (st) => {
+          path.style.strokeDashoffset = String(len * (1 - st.progress));
+          nodes.forEach((nd, i) => {
+            const on = st.progress >= (i + 0.3) / nodes.length;
+            if (nd._on !== on) { nd._on = on; gsap.to(nd, { scale: on ? 1 : 0.4, autoAlpha: on ? 1 : 0, duration: 0.5, ease: on ? 'back.out(2.2)' : 'power2.in' }); }
+          });
+        },
+      });
+    });
+
+    ScrollTrigger.sort();
     ScrollTrigger.refresh();
     lift().then(() => intro.play());
   });

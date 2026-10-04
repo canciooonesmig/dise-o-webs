@@ -58,21 +58,20 @@ void main(){
   float distM = abs(fract(vm - 0.5) - 0.5);
   float major = 1.0 - smoothstep(0.0, fwidth(vm) * 1.6, distM);
 
-  vec3 base = vec3(0.016, 0.067, 0.043);
-  vec3 deep = vec3(0.035, 0.16, 0.10);
-  vec3 mint = vec3(0.62, 0.94, 0.75);
+  // Light theme: warm paper, green ink lines, a soft green halo that follows the pointer
+  vec3 base = vec3(0.957, 0.949, 0.918);
+  vec3 halo = vec3(0.886, 0.937, 0.890);
+  vec3 ink  = vec3(0.137, 0.420, 0.290);
 
-  float light = clamp(beam * 0.9 + pool * 0.35, 0.0, 1.0);
-  vec3 col = base;
-  col = mix(col, deep, smoothstep(0.0, 1.0, light) * 0.85 + 0.1 * (1.0 - uv.y));
-  col += mint * lines * (0.035 + light * 0.32);
-  col += mint * major * (0.05 + light * 0.45);
-  col += mint * pow(beam, 3.0) * 0.06;
+  float light = clamp(beam * 0.85 + pool * 0.55, 0.0, 1.0);
+  vec3 col = mix(base, halo, smoothstep(0.0, 1.0, light) * 0.9);
+  col = mix(col, ink, lines * (0.07 + light * 0.20));
+  col = mix(col, ink, major * (0.10 + light * 0.30));
 
-  // Vignette, scroll fade and grain
-  col *= 1.0 - 0.45 * length((uv - 0.5) * vec2(1.1, 1.3));
+  // Soft edge fade, scroll fade and fine grain
+  col = mix(col, base, 0.35 * smoothstep(0.35, 0.95, length((uv - 0.5) * vec2(1.1, 1.3))));
   col = mix(base, col, uFade);
-  col += (hash(gl_FragCoord.xy + fract(uTime) * 100.0) - 0.5) * 0.045;
+  col += (hash(gl_FragCoord.xy + fract(uTime) * 100.0) - 0.5) * 0.018;
 
   gl_FragColor = vec4(col, 1.0);
 }`;
