@@ -188,7 +188,6 @@ function footer(depth) {
       <div class="footer__col"><span class="mono">Contacto</span><a href="mailto:${SITE.email}">${SITE.email}</a><a href="${SITE.whatsapp}" rel="noopener">${SITE.phone.replace(/ /g, '&nbsp;')}</a><span style="color:var(--text-soft)">${SITE.city}</span></div>
     </div>
     <div class="footer__notes">
-      ${seal('footer')}
       <div>
         <p><strong>Aviso legal.</strong> La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
         <p><strong>Privacidad.</strong> Este sitio no usa cookies ni herramientas que identifiquen a sus visitantes.</p>
@@ -345,23 +344,11 @@ const FLAG_CL = (() => {
     const a = -Math.PI / 2 + (i * Math.PI) / 5;
     return `${(5 + r * Math.cos(a)).toFixed(3)},${(5 + r * Math.sin(a)).toFixed(3)}`;
   }).join(' ');
-  return `<span class="flag-cl" role="img" aria-label="Bandera de Chile">
-  <svg viewBox="0 0 30 20" aria-hidden="true" focusable="false">
-    <defs>
-      <clipPath id="flag-clip"><rect width="30" height="20" rx="2.2"/></clipPath>
-      <linearGradient id="flag-shade" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/>
-      </linearGradient>
-    </defs>
-    <g clip-path="url(#flag-clip)">
-      <rect width="30" height="10" fill="#ffffff"/>
-      <rect y="10" width="30" height="10" fill="#d52b1e"/>
-      <rect width="10" height="10" fill="#0039a6"/>
-      <polygon points="${pts}" fill="#ffffff"/>
-      <rect width="30" height="20" fill="url(#flag-shade)"/>
-      <rect class="flag-cl__sheen" x="-14" y="-4" width="8" height="28" fill="#fff" opacity=".35" transform="rotate(20 0 0)"/>
-    </g>
-    <rect x=".25" y=".25" width="29.5" height="19.5" rx="2" fill="none" stroke="rgba(255,255,255,.35)" stroke-width=".5"/>
+  return `<span class="flag-cl flag-cl--line" role="img" aria-label="Bandera de Chile">
+  <svg viewBox="-0.5 -0.5 31 21" aria-hidden="true" focusable="false">
+    <rect class="fl" width="30" height="20" rx="1.6" pathLength="1"/>
+    <path class="fl" d="M0 10H30M10 0V10" pathLength="1"/>
+    <polygon class="fl" points="${pts}" pathLength="1"/>
   </svg>
 </span>`;
 })();
@@ -465,7 +452,7 @@ const priceNum = (n) => `<span class="price__num" data-net="${n}" data-gross="${
 const iaNote = (text) => `<p class="ia-note" data-reveal><span class="ia-note__dot" aria-hidden="true"></span><span class="ia-note__k mono">Con IA</span><span>${text}</span></p>`;
 
 function priceOf(sv, small = false) {
-  if (sv.cotizacion) return `<span class="price${small ? ' price--sm' : ''}"><span class="price__quote">Cotización por etapa</span></span>`;
+  if (sv.cotizacion) return `<span class="price${small ? ' price--sm' : ''}"><span class="price__quote">${sv.cotizacion === true ? 'Cotización por etapa' : sv.cotizacion}</span></span>`;
   return `<span class="price${small ? ' price--sm' : ''}">${sv.desde ? '<span class="price__pre">desde</span>' : ''}${priceNum(sv.precio)}${sv.mensual ? '<span class="price__post">al mes</span>' : ''}</span>`;
 }
 const badges = (sv) => [sv.tasas ? '<span class="tag">+ tasas oficiales</span>' : '', sv.exito ? '<span class="tag">+ 10% de lo recuperado</span>' : ''].join('');
@@ -568,7 +555,6 @@ function reviewScene(n) {
           </div>
           <div class="doc__sign">
             <div><span class="mono">Responsable del encargo</span>${SIGNATURE}</div>
-            ${seal('doc', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}
           </div>
         </div>
       </div>
@@ -601,11 +587,11 @@ built.push(page({
       <span class="hero__place" data-reveal="1">${FLAG_CL}</span>
     </div>
     <h1 class="hero__title" id="hero-title">
-      <span class="hero__human" data-split>Lo legal de tu empresa, <span class="hl hero__hl">claro<svg class="hero__ul" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 60 4, 120 15, 180 8 S 260 5, 297 9"/></svg></span> y&nbsp;a&nbsp;tiempo.</span>
+      <span class="hero__human" data-split>El derecho <span class="hl hero__hl">cerca<svg class="hero__ul" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 60 4, 120 15, 180 8 S 260 5, 297 9"/></svg></span> de&nbsp;ti.</span>
     </h1>
     <p class="hero__lede" data-reveal="2">Somos AFyV Legal, un estudio que acompaña a pymes y emprendedores en marcas, sociedades, contratos y cobranza, con precio fijo conocido antes de empezar.</p>
     <div class="hero__row">
-      <div class="hero__sign" data-sign-intro aria-hidden="true">${SIGNATURE}<span class="mono">Firma del responsable del encargo</span>${seal('hero', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}</div>
+
       <div class="hero__actions" data-reveal="3">
         ${btn('servicios.html', 'Servicios y precios')}
         <a class="paren" href="#contacto">Contáctanos</a>
@@ -653,7 +639,6 @@ built.push(page({
           ${titulo(2, 'Lo que puedes esperar')}
           <h2 class="title" id="promesas-title" data-split style="margin-top:1.5rem">Cinco compromisos <span class="hl">por escrito</span></h2>
         </div>
-        ${iaNote('La IA acorta los tiempos; estos compromisos no cambian.')}
       </div>
       <div class="clauses-paper doc-paper" data-clauses>
         <span class="clauses__rail" aria-hidden="true"><span></span></span>
@@ -691,7 +676,7 @@ ${reviewScene(3)}
             <div class="line-card__head"><span class="mono">${String(i + 1).padStart(2, '0')}</span><span class="line-card__arrow" aria-hidden="true">${ICON.diag}</span></div>
             <h3 class="line-card__t">${ln.nombre}</h3>
             <p class="line-card__d">${ln.bajada}</p>
-            <ul class="svc-mini">${items.slice(0, 4).map(svcRow).join('')}</ul>
+            <ul class="svc-mini">${items.slice(0, 6).map(svcRow).join('')}</ul>
             <p class="line-card__ia"><span class="ia-note__dot" aria-hidden="true"></span>${ln.ia}</p>
           </article>`;
         }).join('')}

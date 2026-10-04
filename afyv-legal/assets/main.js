@@ -466,6 +466,9 @@
       ScrollTrigger.create({ trigger: el, start: 'top 85%', once: true, onEnter: () => scramble(el, { duration: 1.4 }) });
     });
 
+    // Hero: the flag is drawn line by line
+    $$('[data-intro] .flag-cl--line').forEach((f) => { f.querySelectorAll('.fl').forEach((l) => { l.style.strokeDashoffset = '1'; }); intro.call(() => { f.querySelectorAll('.fl').forEach((l) => { l.style.strokeDashoffset = ''; }); f.classList.add('is-drawing'); }, null, 0.35); });
+
     // Hero: the key word gets underlined by hand
     $$('.hero__ul path').forEach((p) => { intro.to(p, { strokeDashoffset: 0, duration: 1.1, ease: 'power2.inOut' }, 1.15); });
 
