@@ -107,7 +107,7 @@ function nav(active, depth, hasContact) {
   const links = NAV.map((n) => `<li><a class="nav__link" href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
   const sheetLinks = NAV.map((n, i) => `<li><a href="${p}${n.href}"${n.key === active ? ' aria-current="page"' : ''}><span>${num(i)}</span>${n.label}</a></li>`).join('');
   return `<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">La IA prepara · el equipo decide</span></div>
+<div class="curtain" aria-hidden="true"><span class="curtain__mark">AFyV</span><span class="curtain__count mono" data-count></span><span class="curtain__tag mono">Estudio para pymes y emprendedores</span></div>
 <header class="nav">
   <div class="nav__inner">
     <a class="nav__brand" href="${p}index.html" aria-label="AFyV Legal, inicio">AFyV</a>
@@ -592,26 +592,23 @@ built.push(page({
   ogImage: 'logo.webp',
   contactOpts: { lede: 'Cuéntanos qué necesitas. Te respondemos con una propuesta de precio fijo y alcance claro.' },
   body: `
-<section class="hero hero--v3 ink" data-intro aria-labelledby="hero-title">
+<section class="hero hero--v3 hero--v6 ink" data-intro aria-labelledby="hero-title">
   <div class="hero__gl" data-gl></div>
-  <div class="frame" aria-hidden="true"><span class="frame__l frame__l--t"></span><span class="frame__l frame__l--b"></span><span class="frame__l frame__l--l"></span><span class="frame__l frame__l--r"></span>
-    <span class="frame__c frame__c--tl mono" data-scramble>AFyV Legal</span><span class="frame__c frame__c--tr mono" data-scramble>IA responsable</span>
-    <span class="frame__c frame__c--bl mono" data-scramble>Marcas · Corporativo · Litigios · Suscripción</span><span class="frame__c frame__c--br mono" data-scramble>Precio fijo · Horas hábiles</span>
-  </div>
+  <div class="frame" aria-hidden="true"><span class="frame__l frame__l--t"></span><span class="frame__l frame__l--b"></span><span class="frame__l frame__l--l"></span><span class="frame__l frame__l--r"></span></div>
   <div class="wrap hero__inner">
     <div class="hero__top">
       <span class="label" data-reveal>Estudio para pymes y emprendedores</span>
-      <span class="hero__place" data-reveal="1">${FLAG_CL}<span class="mono">Santiago, Chile</span></span>
+      <span class="hero__place" data-reveal="1">${FLAG_CL}</span>
     </div>
     <h1 class="hero__title" id="hero-title">
-      <span class="hero__machine mono" data-type-intro>${D.REGLA.ia}</span>
-      <span class="hero__human" data-split>Nuestro equipo analiza, decide, <span class="hl">firma</span> y&nbsp;responde.</span>
+      <span class="hero__human" data-split>Lo legal de tu empresa, <span class="hl hero__hl">claro<svg class="hero__ul" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 60 4, 120 15, 180 8 S 260 5, 297 9"/></svg></span> y&nbsp;a&nbsp;tiempo.</span>
     </h1>
+    <p class="hero__lede" data-reveal="2">Somos AFyV Legal, un estudio que acompaña a pymes y emprendedores en marcas, sociedades, contratos y cobranza, con precio fijo conocido antes de empezar.</p>
     <div class="hero__row">
       <div class="hero__sign" data-sign-intro aria-hidden="true">${SIGNATURE}<span class="mono">Firma del responsable del encargo</span>${seal('hero', 'REVISADO Y FIRMADO · AFyV LEGAL · ')}</div>
       <div class="hero__actions" data-reveal="3">
         ${btn('servicios.html', 'Servicios y precios')}
-        <a class="paren" href="#ia">Cómo usamos la IA</a>
+        <a class="paren" href="#contacto">Contáctanos</a>
       </div>
     </div>
   </div>
@@ -619,7 +616,7 @@ built.push(page({
 
 <div class="ribbon" aria-hidden="true">
   <div class="ribbon__track" data-ribbon>
-    ${[0, 1].map(() => `<div class="ribbon__group">${['Rapidez', 'Precio fijo', 'Rigor', 'Criterio humano', 'Reserva', 'Transparencia'].map((w) => `<span>${w}</span>`).join('')}</div>`).join('')}
+    ${[0, 1].map(() => `<div class="ribbon__group">${['Ágil', 'Preciso', 'Riguroso', 'Expedito', 'Impecable', 'Oportuno', 'Exacto', 'Minucioso'].map((w) => `<span>${w}</span>`).join('')}</div>`).join('')}
   </div>
 </div>
 
@@ -629,7 +626,7 @@ built.push(page({
       <div class="section-head section-head--split">
         <div>
           ${titulo(1, 'Cómo usamos la IA')}
-          <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">La IA nos da velocidad. <span class="hl">El criterio es nuestro.</span></h2>
+          <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">Nuestro criterio. <span class="hl">La velocidad de la IA.</span></h2>
         </div>
         <p class="lede" data-reveal="1">Usamos inteligencia artificial para preparar y ordenar. Nuestro equipo analiza, decide y responde por cada entrega.</p>
       </div>
@@ -640,7 +637,12 @@ built.push(page({
           <p>${v.d}</p>
         </article>`).join('')}
       </div>
-      <div style="margin-top:clamp(1.5rem,3vw,2.5rem)" data-reveal>${avisoIA()}</div>
+      <a class="ia-cta" href="ia-responsable.html" data-reveal>
+        <span class="ia-cta__glow" aria-hidden="true"></span>
+        <span class="ia-cta__k mono"><span class="ia-note__dot" aria-hidden="true"></span>IA responsable</span>
+        <span class="ia-cta__t">Cómo protegemos tu información y por qué cada entrega pasa por nuestro equipo antes de llegar a ti.</span>
+        <span class="ia-cta__go">Conoce nuestra política <span class="btn__icon" aria-hidden="true">${ICON.arrow}</span></span>
+      </a>
     </div>
   </section>
 
@@ -653,13 +655,17 @@ built.push(page({
         </div>
         ${iaNote('La IA acorta los tiempos; estos compromisos no cambian.')}
       </div>
-      <ol class="clauses doc-paper">
-        ${D.PROMESAS.map((pr, i) => `<li class="clause" data-reveal>
-          <span class="clause__n">§ ${i + 1}</span>
-          <div><h3 class="clause__t">${pr.t}</h3><p>${pr.d}</p></div>
-          <span class="clause__stamp" aria-hidden="true">${ICON.check}</span>
-        </li>`).join('')}
-      </ol>
+      <div class="clauses-paper doc-paper" data-clauses>
+        <span class="clauses__rail" aria-hidden="true"><span></span></span>
+        <p class="clauses__meta mono" aria-hidden="true">Firmados <b data-signed-count>0</b> / ${D.PROMESAS.length}</p>
+        <ol class="clauses">
+          ${D.PROMESAS.map((pr, i) => `<li class="clause" style="--i:${i}">
+            <span class="clause__n">§ ${i + 1}</span>
+            <div><h3 class="clause__t"><span class="clause__tw">${pr.t}<svg class="clause__ul" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 9 C 50 3, 110 13, 170 7 S 255 4, 298 8"/></svg></span></h3><p>${pr.d}</p></div>
+            <span class="clause__stamp" aria-hidden="true">${ICON.check}</span>
+          </li>`).join('')}
+        </ol>
+      </div>
     </div>
   </section>
 </div>
@@ -706,17 +712,13 @@ ${reviewScene(3)}
     </div>
   </section>
 
-  ${cifras('Título VI · Chile en cifras')}
-  <div class="wrap" style="margin-top:calc(-1 * clamp(3rem,7vw,6rem));padding-bottom:clamp(4rem,8vw,7rem)">${iaNote('Más empresas y marcas cada año: la IA nos permite atender más encargos sin bajar el estándar.')}</div>
 </div>
 
 <section class="hscroll section dark" data-hscroll aria-labelledby="equipo-title" style="padding-block:clamp(5rem,10vw,8rem)">
   <div class="hscroll__track">
     <div class="hscroll__intro">
       <div>
-        ${titulo(7, 'Equipo')}
-        <h2 class="title-sm" id="equipo-title" data-split style="margin-top:1.5rem">Un equipo que <span class="hl">firma</span> lo que entrega</h2>
-        ${iaNote('Trabajamos con IA todos los días, y respondemos por cada resultado.')}
+        <h2 class="team-word" id="equipo-title" data-letters>Equipo</h2>
       </div>
       <div data-reveal>${btn('equipo.html', 'Conoce al equipo', 'btn--ghost')}</div>
     </div>

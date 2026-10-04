@@ -246,6 +246,9 @@
     $$('.review__step').forEach((s, i, a) => s.classList.toggle('is-active', i === a.length - 1));
     $$('.limit').forEach((l) => l.classList.add('is-locked'));
     $$('.clause').forEach((c) => c.classList.add('is-signed'));
+    $$('[data-signed-count]').forEach((b) => { b.textContent = String($$('.clause', b.closest('[data-clauses]')).length); });
+    $$('.clauses__rail span').forEach((r) => { r.style.transform = 'scaleY(1)'; });
+    $$('.hero__ul path').forEach((p) => { p.style.strokeDashoffset = '0'; });
     $$('[data-consent-box]').forEach((b) => b.classList.add('is-on'));
   };
 
@@ -463,9 +466,45 @@
       ScrollTrigger.create({ trigger: el, start: 'top 85%', once: true, onEnter: () => scramble(el, { duration: 1.4 }) });
     });
 
-    // Clauses get stamped as they appear
-    $$('.clause').forEach((c, i) => {
-      ScrollTrigger.create({ trigger: c, start: 'top 72%', once: true, onEnter: () => setTimeout(() => c.classList.add('is-signed'), 250) });
+    // Hero: the key word gets underlined by hand
+    $$('.hero__ul path').forEach((p) => { intro.to(p, { strokeDashoffset: 0, duration: 1.1, ease: 'power2.inOut' }, 1.15); });
+
+    // Clauses: a margin rail follows the reader; each clause is underlined and stamped, and the counter ticks
+    $$('[data-clauses]').forEach((paper) => {
+      const rail = $('.clauses__rail span', paper);
+      const count = $('[data-signed-count]', paper);
+      let signed = 0;
+      if (rail) gsap.to(rail, { scaleY: 1, ease: 'none', scrollTrigger: { trigger: paper, start: 'top 75%', end: 'bottom 65%', scrub: 0.5 } });
+      $$('.clause', paper).forEach((c) => {
+        gsap.from($$('.clause__n, .clause__t, p', c), { y: 22, autoAlpha: 0, duration: 0.9, ease, stagger: 0.08, scrollTrigger: { trigger: c, start: 'top 88%', once: true } });
+        ScrollTrigger.create({ trigger: c, start: 'top 70%', once: true, onEnter: () => {
+          c.classList.add('is-signed');
+          setTimeout(() => {
+            signed += 1;
+            if (!count) return;
+            count.textContent = String(signed);
+            gsap.fromTo(count, { yPercent: -60, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 0.45, ease: 'back.out(2)' });
+          }, 800);
+        } });
+      });
+    });
+
+    // IA access card: a soft light follows the pointer
+    $$('.ia-cta').forEach((card) => {
+      if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      card.addEventListener('pointermove', (e) => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        card.style.setProperty('--my', `${e.clientY - r.top}px`);
+      });
+    });
+
+    // Team: the word rises letter by letter
+    $$('[data-letters]').forEach((el) => {
+      const text = el.textContent;
+      el.setAttribute('aria-label', text);
+      el.innerHTML = [...text].map((ch) => `<span class="ch" aria-hidden="true">${ch}</span>`).join('');
+      gsap.from($$('.ch', el), { yPercent: 110, rotate: 6, ease: 'power3.out', stagger: 0.06, duration: 1.1, scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
     });
 
     // Limits lock
