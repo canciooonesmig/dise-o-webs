@@ -1788,3 +1788,6 @@ body::after { opacity: 0.045; mix-blend-mode: multiply; }
 .nav__brand { mix-blend-mode: normal; color: var(--forest); padding: 0.5rem 0.95rem; border-radius: 999px; background: rgba(250, 248, 242, 0.72); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px rgba(10, 26, 18, 0.1), 0 8px 30px -14px rgba(10, 26, 18, 0.25); font-size: 1.5rem; transition: color 300ms ease; }
 @media (hover: hover) and (pointer: fine) { .nav__brand:hover { color: var(--forest-deep); } }
 @media (max-width: 40em) { .virtue { min-height: 0; } .virtue__t { margin-top: 0.75rem; } }
+.hero__ul path, .clause__ul path { vector-effect: none; }
+.clause__ul path { stroke-width: 2.4; }
+.hero__ul path { stroke-width: 3.2; }
