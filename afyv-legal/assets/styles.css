@@ -1803,3 +1803,7 @@ body::after { opacity: 0.045; mix-blend-mode: multiply; }
 @keyframes flag-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 .hero--v6 .hero__place { color: var(--forest); }
 @media (prefers-reduced-motion: reduce) { .flag-cl--line.is-drawing .fl { animation: none; } }
+.line-card__art { width: min(46%, 16rem); }
+.hero--v6 .hero__human { font-size: clamp(3rem, 8.2vw, 7.5rem); }
+@media (orientation: portrait) and (min-width: 40em) { .hero--v6 { align-content: center; grid-template-rows: auto; } .hero--v6 .hero__inner { padding-block: 8rem 4rem; } }
+@media (max-width: 30em) { .hero--v6 .hero__top { gap: 0.75rem; } .hero--v6 .hero__top .label { font-size: 0.62rem; letter-spacing: 0.06em; } .hero--v6 .flag-cl--line { width: 2.2rem; } }

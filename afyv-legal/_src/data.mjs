@@ -44,7 +44,7 @@ export const LIMITES = [
 ];
 
 // Qué hace la IA y qué hace el equipo
-export const USOS_IA = ['Ordena y resume documentos', 'Prepara primeros borradores', 'Propone cláusulas desde modelos aprobados', 'Asiste búsquedas, incluida la de marcas', 'Revisa coherencia, ortografía y numeración'];
+export const USOS_IA = ['Ordena y resume documentos', 'Prepara primeros borradores', 'Propone cláusulas desde modelos aprobados', 'Asiste en las búsquedas, incluida la de marcas', 'Revisa coherencia, ortografía y numeración'];
 export const USOS_EQUIPO = ['Valora los argumentos y define la estrategia', 'Decide qué entra y qué no en cada documento', 'Verifica cada fuente y cada dato', 'Firma y responde por la entrega', 'Te explica el resultado, sus riesgos y alternativas'];
 
 // Cómo trabajamos un encargo: el equipo conduce, la IA asiste
@@ -75,7 +75,7 @@ export const SEGURIDAD_IA = [
   'Cuando la herramienta lo permite, usamos el modo temporal o equivalente y no conservamos conversaciones más allá de lo necesario.',
   'Anonimizamos los datos personales y antecedentes identificatorios del cliente siempre que es posible.',
   'No introducimos en herramientas de IA datos especialmente sensibles, secretos empresariales, credenciales, información financiera no pública ni antecedentes cuya divulgación pueda afectar al cliente, salvo autorización expresa y uso de una herramienta con garantías adecuadas.',
-  'Todo contenido generado por IA es revisado y validado por un abogado antes de usarse o comunicarse como parte del servicio.',
+  'Todo contenido generado por IA es revisado y validado por nuestro equipo antes de usarse o comunicarse como parte del servicio.',
 ];
 
 // Pilares de protección de la información
@@ -86,12 +86,12 @@ export const RESGUARDOS = [
   { t: 'Borrado al cierre', d: 'Al terminar el encargo eliminamos el historial de IA asociado.' },
 ];
 
-// Marco que respeta nuestro método
+// Marco normativo que respetamos
 export const MARCO = [
-  ['Código Civil, art. 2129', 'El mandatario remunerado responde de su diligencia con el mayor rigor. Con IA, el estándar es el mismo que sin ella.'],
+  ['Código Civil, art. 2129', 'El mandatario responde hasta de la culpa leve, y más estrictamente si es remunerado. Con IA, el estándar es el mismo que sin ella.'],
   ['Código de Ética Profesional', 'Confidencialidad, información clara al cliente y publicidad veraz.'],
   ['Guía del Colegio de Abogados sobre IA', 'Responsabilidad personal, consentimiento informado y verificación de las fuentes.'],
-  ['Ley 19.628, reformada por la Ley 21.719', 'Protección de datos personales y derecho a no ser objeto de decisiones automatizadas.'],
+  ['Leyes 19.628 y 21.719', 'Protección de datos personales. La Ley 21.719, que rige desde diciembre de 2026, agrega el derecho a no ser objeto de decisiones automatizadas.'],
 ];
 
 // Tarifario del 4 de octubre de 2026 (servicios activos)
@@ -108,12 +108,12 @@ export const SERVICIOS = [
   { linea: 'marcas', nombre: 'Diagnóstico de marca', precio: 29990, modo: 'Precio fijo', plazo: `24 horas hábiles ${H}`, desc: 'Búsqueda de marcas similares en INAPI e informe de riesgo bajo, medio o alto, con las clases recomendadas.', incluye: ['Búsqueda de marcas idénticas y similares, y de clases relacionadas', 'Informe escrito con lo buscado, las clases y sus límites', 'Calificación del riesgo y recomendación de clases'], nota: 'Se descuenta si luego contratas el registro.', destacado: true },
   { linea: 'marcas', nombre: 'Marca protegida (1 clase)', precio: 100000, tasas: true, modo: 'Precio fijo', plazo: `Presentación en 48 horas hábiles ${H}`, desc: 'Solicitud de registro ante INAPI y seguimiento hasta su resolución.', incluye: ['Solicitud ante INAPI', 'Seguimiento del trámite', 'Respuesta a observaciones de forma'], nota: 'Tasas INAPI aparte: 3 UTM por clase (1 al presentar y 2 al registrarse) más la publicación en el Diario Oficial.' },
   { linea: 'marcas', nombre: 'Vigilancia de marca', precio: 10000, mensual: true, modo: 'Mensual', plazo: 'Reporte mensual', desc: 'Alertas de solicitudes similares a tu marca y aviso de renovaciones.', incluye: ['Reporte mensual de solicitudes similares', 'Evaluación de cada alerta por el equipo'] },
-  { linea: 'marcas', nombre: 'Defensa ante observaciones de fondo', cotizacion: 'Cotización previa', modo: 'Precio fijo', plazo: 'Dentro del plazo legal de respuesta', desc: 'Respuesta a las observaciones de fondo de INAPI, con los argumentos y antecedentes que sostienen tu solicitud.', incluye: ['Análisis de la resolución y de las marcas citadas', 'Escrito de respuesta con argumentos y antecedentes', 'Seguimiento hasta la resolución'] },
-  { linea: 'marcas', nombre: 'Oposiciones', cotizacion: 'Cotización previa', modo: 'Precio fijo', plazo: 'Dentro de los plazos legales', desc: 'Te oponemos a una solicitud que afecta tu marca, o defendemos la tuya cuando un tercero se opone.', incluye: ['Evaluación de fundamentos y riesgos', 'Escrito de oposición o de contestación', 'Prueba y seguimiento hasta la sentencia'] },
-  { linea: 'marcas', nombre: 'Apelación ante el TDPI', cotizacion: 'Cotización previa', modo: 'Precio fijo', plazo: 'Dentro del plazo legal para apelar', desc: 'Recurso ante el Tribunal de Propiedad Industrial contra las resoluciones de INAPI que afectan tu marca.', incluye: ['Análisis de la resolución apelada', 'Escrito de apelación con sus fundamentos', 'Seguimiento hasta el fallo'] },
+  { linea: 'marcas', nombre: 'Defensa ante observaciones de fondo', cotizacion: 'A cotizar', modo: 'Cotización previa', plazo: 'Dentro del plazo legal de respuesta', desc: 'Respuesta a las observaciones de fondo de INAPI, con los argumentos y antecedentes que sostienen tu solicitud.', incluye: ['Análisis de la resolución y de las marcas citadas', 'Escrito de respuesta con argumentos y antecedentes', 'Seguimiento hasta la resolución'] },
+  { linea: 'marcas', nombre: 'Oposiciones', cotizacion: 'A cotizar', modo: 'Cotización previa', plazo: 'Dentro de los plazos legales', desc: 'Presentamos tu oposición a una solicitud que afecta tu marca, o defendemos la tuya cuando un tercero se opone.', incluye: ['Evaluación de fundamentos y riesgos', 'Escrito de oposición o de contestación', 'Prueba y seguimiento hasta la sentencia'] },
+  { linea: 'marcas', nombre: 'Apelación ante el TDPI', cotizacion: 'A cotizar', modo: 'Cotización previa', plazo: 'Dentro del plazo legal para apelar', desc: 'Recurso ante el Tribunal de Propiedad Industrial contra las resoluciones de INAPI que afectan tu marca.', incluye: ['Análisis de la resolución apelada', 'Escrito de apelación con sus fundamentos', 'Seguimiento hasta el fallo'] },
   { linea: 'corporativo', nombre: 'Empresa lista (RES)', precio: 119000, modo: 'Precio fijo', plazo: `72 horas hábiles ${H}`, desc: 'Constitución en el Registro de Empresas y Sociedades, con estatutos a tu medida.', incluye: ['Estatutos', 'Constitución en el RES', 'Inicio de actividades'] },
   { linea: 'corporativo', nombre: 'Pack Empresa + Marca', precio: 189000, tasas: true, modo: 'Precio fijo', plazo: `72 horas hábiles ${H}`, desc: 'Constitución de tu empresa y registro de su marca en una clase.', incluye: ['Empresa lista (RES)', 'Marca protegida (1 clase)'], nota: 'Tasas INAPI aparte.', destacado: true },
-  { linea: 'corporativo', nombre: 'Pacto de socios', precio: 100000, modo: 'Precio fijo', plazo: `5 días hábiles ${H}`, desc: 'Pacto de accionistas coherente con tus estatutos, con reglas claras de mayorías, salida y resolución de conflictos.', incluye: ['Redacción', 'Dos rondas de ajustes', 'Doble revisión'] },
+  { linea: 'corporativo', nombre: 'Pacto de socios', precio: 100000, modo: 'Precio fijo', plazo: `5 días hábiles ${H}`, desc: 'Pacto de socios o accionistas coherente con tus estatutos, con reglas claras de mayorías, salida y resolución de conflictos.', incluye: ['Redacción', 'Dos rondas de ajustes', 'Doble revisión'] },
   { linea: 'corporativo', nombre: 'Contrato comercial: revisión', precio: 85000, modo: 'Precio fijo', plazo: `24 a 48 horas hábiles ${H}`, desc: 'Revisión de un contrato comercial, con comentarios y propuesta de cambios.', incluye: ['Informe', 'Versión con cambios marcados'] },
   { linea: 'corporativo', nombre: 'Contrato comercial: redacción', precio: 100000, desde: true, modo: 'Desde', plazo: `24 a 48 horas hábiles ${H}`, desc: 'Redacción de un contrato comercial a medida.', incluye: ['Borrador', 'Una ronda de ajustes'] },
   { linea: 'litigios', nombre: 'Carta de cobro y negociación', precio: 39000, modo: 'Precio fijo', plazo: `24 horas hábiles ${H}`, desc: 'Carta dirigida al deudor, revisada en monto, intereses y tono antes de enviarse.', incluye: ['Carta de cobro'] },
@@ -124,7 +124,7 @@ export const SERVICIOS = [
 
 export const PLANES = [
   { nombre: 'Esencial', precio: 49000, items: ['Hasta 3 consultas por chat cada día hábil', '3 revisiones de contrato al mes', 'Vigilancia de 1 marca'] },
-  { nombre: 'Pyme', precio: 119000, destacado: true, items: ['Todo lo de Esencial', '5 contratos al mes', 'Actas y juntas', '15% de descuento en marcas y litigios'] },
+  { nombre: 'Pyme', precio: 119000, destacado: true, items: ['Todo lo de Esencial', 'Hasta 5 contratos simples al mes', 'Actas y juntas', '15% de descuento en marcas y litigios'] },
   { nombre: 'Crecimiento', precio: 249000, items: ['Todo lo de Pyme', 'Hasta 10 contratos simples al mes', 'Responsable asignado', 'Reunión mensual'] },
 ];
 export const PLANES_REGLAS = {

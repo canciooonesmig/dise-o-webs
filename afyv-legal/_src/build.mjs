@@ -58,8 +58,8 @@ const TEAM = [
     area: 'Derecho Público',
     titulo: 'Abogada',
     img: 'rosario.webp',
-    bio: ['Rosario cuenta con experiencia en derecho corporativo, inmobiliario, civil, laboral y concursal. Destaca por su enfoque innovador respaldado por sus conocimientos en Legal <em>Design Thinking</em>, lo que le permite automatizar procesos y simplificar el lenguaje jurídico para los clientes. Con experiencia previa como Subgerente Legal y líder de equipos, aporta un análisis legal estratégico, gran capacidad de gestión de crisis y un fuerte compromiso con el cumplimiento normativo.'],
-    exp: ['Legal Broker', 'Lexy', 'Curaduría Ad Litem', 'G&amp;M Asesorías'],
+    bio: ['Rosario cuenta con experiencia en derecho corporativo, inmobiliario, civil, laboral y concursal. Destaca por su enfoque innovador respaldado por sus conocimientos en Legal <em>Design Thinking</em>, lo que le permite automatizar procesos y simplificar el lenguaje jurídico para los clientes. Con experiencia previa como subgerenta legal y líder de equipos, aporta un análisis legal estratégico, gran capacidad de gestión de crisis y un fuerte compromiso con el cumplimiento normativo.'],
+    exp: ['AFyV Legal', 'Legal Broker', 'Lexy', 'Curaduría <em>ad litem</em>', 'G&amp;M Asesorías'],
   },
   {
     slug: 'alberto-vargas',
@@ -74,7 +74,7 @@ const TEAM = [
     name: 'Gabriel Freulon',
     area: 'Derecho Civil y Derecho Laboral',
     img: 'gabriel.webp',
-    bio: ['Gabriel se ha especializado en Derecho Civil y Laboral, con un enfoque práctico y riguroso en la resolución de asuntos jurídicos.'],
+    bio: ['Gabriel se ha especializado en derecho civil y laboral, con un enfoque práctico y riguroso en la resolución de asuntos jurídicos.'],
     exp: ['AFyV Legal'],
   },
 ];
@@ -547,7 +547,7 @@ function reviewScene(n) {
         <div class="doc__body">
           <p class="doc__h">Contrato de prestación de servicios</p>
           ${DOC_LINES.map(([h, t]) => `<p class="doc__line"><strong>${h}</strong> <span class="doc__type">${t}</span><span class="doc__ok">${ICON.check}</span></p>`).join('')}
-          <p class="doc__line doc__line--bad"><strong>Cuarto.</strong> <span class="doc__type">Según el fallo Rol 0000-2025, esta cláusula se entiende siempre válida.</span><span class="doc__flag">Fuente no verificable: se retira</span></p>
+          <p class="doc__line doc__line--bad"><strong>Cuarto.</strong> <span class="doc__type">Según el fallo Rol 4.512-2025, esta cláusula se entiende siempre válida.</span><span class="doc__flag">Fuente no verificable: se retira</span></p>
           <div class="doc__added"><div><p class="doc__line doc__line--new"><strong>Cuarto. Término anticipado.</strong> <span>Cualquiera de las partes podrá poner término al contrato con aviso escrito de treinta días.</span></p></div></div>
           <span class="doc__note"><span class="mono">Nota del equipo</span>Agregar término anticipado: protege al cliente si el servicio no cumple.</span>
           <div class="doc__checks">
@@ -761,7 +761,7 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
       <p class="visually-hidden" aria-live="polite" data-tarifa-status></p>
       ${D.LINEAS.filter((l) => l.id !== 'suscripcion').map((l) => `<span id="${l.id}" class="anchor"></span>`).join('')}
       <div class="svc-grid" data-svc-grid>${D.SERVICIOS.map(svcCard).join('')}</div>
-      <p class="figref mono" style="margin-top:2rem">Precios en pesos chilenos. IVA 19%. Las tasas oficiales (INAPI, notaría, Diario Oficial) se cobran aparte cuando se indica.</p>
+      <p class="figref mono" style="margin-top:2rem">Precios en pesos chilenos. IVA 19%. Las tasas oficiales (INAPI, notaría, Diario Oficial) se cobran aparte cuando corresponde.</p>
     </div>
   </section>
 
@@ -810,7 +810,7 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
       <div class="section-head"><span class="label" data-reveal>Clientes</span><h2 class="title" id="opiniones-title" data-split style="margin-top:1.5rem">Opiniones</h2></div>
       <div class="quotes">
         <figure class="quote" data-reveal><span class="quote__mark" aria-hidden="true">“</span><blockquote><p style="margin:0">AFyV me ayudó a resolver con éxito una notificación errónea de embargo por parte de la Tesorería General de la República. Totalmente recomendados.</p></blockquote><figcaption><div><strong>Iván</strong><span>Santiago</span></div></figcaption></figure>
-        <figure class="quote" data-reveal="1"><span class="quote__mark" aria-hidden="true">“</span><blockquote><p style="margin:0">AFyV constituyó nuestra sociedad y nos han apoyado en nuestras juntas de accionistas, colaborando desde una perspectiva estratégica. Los recomiendo mucho.</p></blockquote><figcaption><div><strong>Luis Peralta</strong><span>Fundador de Jolu SpA</span></div></figcaption></figure>
+        <figure class="quote" data-reveal="1"><span class="quote__mark" aria-hidden="true">“</span><blockquote><p style="margin:0">AFyV constituyó nuestra sociedad y nos ha apoyado en nuestras juntas de accionistas, colaborando desde una perspectiva estratégica. Lo recomiendo mucho.</p></blockquote><figcaption><div><strong>Luis Peralta</strong><span>Fundador de Jolu SpA</span></div></figcaption></figure>
       </div>
     </div>
   </section>
@@ -974,7 +974,7 @@ ${pageHero({ label: 'Transparencia', h1: 'IA <span class="hl">responsable</span>
         ${D.PRINCIPIOS.map(([t, d], i) => `<li class="principle" data-reveal="${i % 3}"><span class="principle__n">${ROMAN[i]}</span><div><h3>${t}</h3><p>${d}</p></div></li>`).join('')}
       </ol>
       <div class="marco">
-        <h3 class="title-sm" data-reveal>Marco que respeta nuestro método</h3>
+        <h3 class="title-sm" data-reveal>Marco normativo que respetamos</h3>
         <dl>${D.MARCO.map(([t, d]) => `<div data-reveal><dt>${t}</dt><dd>${d}</dd></div>`).join('')}</dl>
         <p class="figref mono" data-reveal>La información de este sitio no es asesoría legal. La relación con el estudio se rige por la carta de encargo.</p>
       </div>
@@ -1027,7 +1027,7 @@ built.push(reasonsPage({
   h1: '¿Por qué constituir tu <span class="hl">empresa</span>?',
   intro: 'Muchos emprendimientos nacen como una idea, pero solo los que se formalizan están preparados para crecer, atraer oportunidades y proyectarse en el tiempo.',
   reasons: [
-    ['Separación de patrimonios', 'La empresa es una persona jurídica distinta de sus socios. Tu patrimonio personal queda separado del empresarial y la responsabilidad se limita a los aportes, con menos riesgos para ti.'],
+    ['Separación de patrimonios', 'La empresa es una persona jurídica distinta de sus socios. Tu patrimonio personal queda separado del empresarial y, en sociedades como la SpA o la EIRL, la responsabilidad se limita a los aportes, con menos riesgos para ti.'],
     ['Acceso a financiamiento', 'Una empresa formal abre la puerta a créditos, fondos concursables, subsidios y programas de apoyo, y facilita sumar socios o inversionistas.'],
     ['Una empresa a tu medida', 'Elegir bien el tipo societario define cómo se administra la empresa, cómo se reparten las utilidades y qué reglas rigen entre los socios.'],
     ['Confianza', 'Clientes y proveedores prefieren trabajar con negocios formales. Una sociedad transmite seriedad y estabilidad, y abre nuevas oportunidades.'],
@@ -1039,9 +1039,9 @@ built.push(reasonsPage({
 
 built.push(reasonsPage({
   file: 'registra-tu-marca.html',
-  title: 'Por qué registrar tu marca — AFyV Legal',
+  title: '¿Por qué registrar tu marca? — AFyV Legal',
   description: 'Tu marca es uno de los activos más valiosos de tu negocio. Cinco razones para registrarla y protegerla desde el inicio.',
-  h1: 'Por qué registrar tu <span class="hl">marca</span>',
+  h1: '¿Por qué registrar tu <span class="hl">marca</span>?',
   intro: 'Tu marca es uno de los activos más valiosos de tu negocio. Registrarla protege su identidad, te diferencia de la competencia y te da una base sólida para crecer.',
   reasons: [
     ['Un activo valioso', 'Si tu marca no está registrada, un tercero podría usarla o incluso obtener derechos exclusivos sobre ella. Registrarla protege y fortalece tu negocio.'],
