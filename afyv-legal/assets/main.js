@@ -261,6 +261,7 @@
   }
 
   gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true });
   if (window.SplitText) gsap.registerPlugin(SplitText);
   ['ScrambleTextPlugin', 'DrawSVGPlugin', 'Flip'].forEach((n) => { if (window[n]) gsap.registerPlugin(window[n]); });
   const ease = 'expo.out';

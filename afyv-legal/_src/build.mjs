@@ -1147,7 +1147,7 @@ ${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">equipo</span>', lede
           <p class="profile__area" data-reveal>${m.titulo ? `${m.titulo} · ` : ''}${m.area}</p>
           <div class="profile__bio" data-reveal="1">${m.bio.map((b) => `<p>${b}</p>`).join('')}</div>
           <p class="label" data-reveal="2" style="margin-top:2.5rem">Experiencia</p>
-          <ul class="profile__exp" data-reveal="2" style="margin-top:1rem">${m.exp.map((e) => `<li>${e}</li>`).join('')}</ul>
+          <ul class="profile__exp" data-reveal="2" style="margin-top:1rem">${m.exp.map((e) => `<li><span>${e}</span></li>`).join('')}</ul>
         </div>
       </article>`).join('')}
     </div>
@@ -1176,6 +1176,41 @@ ${pageHero({ label: 'Avisos legales', h1: title, lede: `<a class="paren" href="$
 </div>`,
   }));
 }
+
+// Redirects from the previous site's addresses, so old links and search results keep working
+const OLD_POSTS = ['recupera-tu-propiedad-el-juicio-de-precario', 'infracción-por-ruidos-molestos-has-sido-multado-por-ruidos-molestos', 'levantamiento-de-capital-sin-riesgos-la-oferta-privada', 'sucesión-testada', 'posesión-efectiva-aspectos-relevantes', 'contrato-de-promesa-guía-práctica', 'simulación-de-contratos', 'multas-migratorias-por-ingreso-por-paso-no-habilitado-en-chile', 'hablemos-de-la-ley-karin-infórmate-sobre-el-acoso-laboral', 'letras-de-cambio-y-pagarés-garantiza-tus-pagos', 'prescripción-de-deudas', 'interdicción-por-demencia-y-nombramiento-de-curador', 'compraventa-de-estacionamientos-en-chile', 'filiación-tu-derecho-a-la-identidad-familiar', 'arriendas-tu-propiedad-tu-inquilino-no-paga', 'derecho-del-consumidor-qué-puedes-hacer-si-tus-derechos-son-afectados-catálogo-normativo-reclamo', 'indemnización-por-años-de-servicio', 'merger-and-acquisitions-m-a-fusiones-y-adquisiciones', 'despido-por-necesidades-de-la-empresa-estudia-tus-posibilidades', 'tipos-de-empresas-qué-es-mejor-para-tu-emprendimiento', 'el-contrato-de-arrendamiento-y-sus-cláusulas-infórmate-sobre-sus-complejidades', 'sobre-la-liquidación-simplificada'];
+const OLD_URLS = {
+  servicios: 'servicios.html',
+  'sevicios-empresas': 'servicios.html#corporativo',
+  'servicios-empresas': 'servicios.html#corporativo',
+  'inquiry-services-page': 'servicios.html',
+  'constituye-tu-empresa': 'constituye-tu-empresa.html',
+  registratumarca: 'registra-tu-marca.html',
+  'registra-tu-marca': 'registra-tu-marca.html',
+  equipo: 'equipo.html',
+  afyv: 'equipo.html',
+  'políticadeprivacidad': 'politica-de-privacidad.html',
+  'politica-de-privacidad': 'politica-de-privacidad.html',
+  'copia-de-términos-y-condiciones': 'terminos-y-condiciones.html',
+  'terminos-y-condiciones': 'terminos-y-condiciones.html',
+  'ia-responsable': 'ia-responsable.html',
+  blog: 'index.html',
+  ...Object.fromEntries(OLD_POSTS.map((slug) => [`post/${slug}`, 'index.html'])),
+};
+for (const [from, to] of Object.entries(OLD_URLS)) {
+  const depthUp = '/';
+  const target = `${SITE.url}/${to.replace(/^index\.html$/, '')}`;
+  mkdirSync(join(OUT, from), { recursive: true });
+  writeFileSync(join(OUT, from, 'index.html'), `<!doctype html>
+<html lang="es-CL"><head><meta charset="utf-8"><title>AFyV Legal</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="${target}">
+<meta http-equiv="refresh" content="0; url=${depthUp}${to}">
+<script>location.replace(${JSON.stringify(depthUp + to)})</script>
+</head><body><p><a href="${depthUp}${to}">Ir a AFyV Legal</a></p></body></html>
+`);
+}
+built.push(`${Object.keys(OLD_URLS).length} redirecciones desde direcciones antiguas`);
 
 // robots.txt and sitemap.xml
 const today = new Date().toISOString().slice(0, 10);

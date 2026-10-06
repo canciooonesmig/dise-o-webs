@@ -1807,3 +1807,20 @@ body::after { opacity: 0.045; mix-blend-mode: multiply; }
 .hero--v6 .hero__human { font-size: clamp(3rem, 8.2vw, 7.5rem); }
 @media (orientation: portrait) and (min-width: 40em) { .hero--v6 { align-content: center; grid-template-rows: auto; } .hero--v6 .hero__inner { padding-block: 8rem 4rem; } }
 @media (max-width: 30em) { .hero--v6 .hero__top { gap: 0.75rem; } .hero--v6 .hero__top .label { font-size: 0.62rem; letter-spacing: 0.06em; } .hero--v6 .flag-cl--line { width: 2.2rem; } }
+
+/* ===== Móvil: áreas táctiles, galería y detalles ===== */
+@media (pointer: coarse) {
+  .footer__col { gap: 0; }
+  .footer__col a { display: inline-flex; align-items: center; min-height: 44px; }
+  .footer__legal nav { gap: 0.25rem 1.25rem; }
+  .footer__legal a, .page-hero .paren, .reasons a, .prose a.paren { display: inline-flex; align-items: center; min-height: 44px; }
+  .contact__details a { display: inline-flex; align-items: center; min-height: 44px; }
+  a, button, summary, label { touch-action: manipulation; }
+}
+@media (max-width: 59.99em) {
+  .hscroll { overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .hscroll::-webkit-scrollbar { display: none; }
+  .hscroll .member, .hscroll__intro { scroll-snap-align: start; }
+  .hscroll__track { padding-right: var(--gutter); }
+}
+@media (max-width: 60em) { .doc.is-added .doc__note { opacity: 1; } }
