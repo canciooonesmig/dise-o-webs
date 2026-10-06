@@ -220,9 +220,49 @@ const avisoIA = (p = '', ctx = '') => `<aside class="aviso-ia" aria-label="Cómo
   <a class="paren" href="${p}ia-responsable.html">Ver detalle</a>
 </aside>`;
 
-function page({ file, title, description, active, depth = 0, body, contactOpts, ogImage, progress = false }) {
+// Structured data shared by every page
+const ORG_ID = `${SITE.url}/#estudio`;
+const ORG = {
+  '@type': 'LegalService',
+  '@id': ORG_ID,
+  name: 'AFyV Legal',
+  url: `${SITE.url}/`,
+  logo: `${SITE.url}/assets/img/logo.webp`,
+  image: `${SITE.url}/assets/img/og.jpg`,
+  description: 'Estudio para pymes y emprendedores en Chile: registro y defensa de marcas, constitución de empresas, contratos, cobranza y asesoría mensual con precio fijo.',
+  email: SITE.email,
+  telephone: SITE.phone.replace(/ /g, ''),
+  priceRange: '$$',
+  currenciesAccepted: 'CLP',
+  address: { '@type': 'PostalAddress', addressLocality: 'Santiago', addressRegion: 'Región Metropolitana', addressCountry: 'CL' },
+  areaServed: { '@type': 'Country', name: 'Chile' },
+  knowsLanguage: 'es',
+  sameAs: [SITE.instagram, SITE.linkedin],
+};
+const PAGE_NAMES = { 'servicios.html': 'Servicios y precios', 'ia-responsable.html': 'IA responsable', 'equipo.html': 'Equipo', 'constituye-tu-empresa.html': 'Constituye tu empresa', 'registra-tu-marca.html': 'Registra tu marca', 'terminos-y-condiciones.html': 'Términos y Condiciones', 'politica-de-privacidad.html': 'Política de Privacidad' };
+const SITEMAP = [];
+
+function page({ file, title, description, active, depth = 0, body, contactOpts, ogImage, progress = false, schema = [], noindex = false }) {
   const p = '../'.repeat(depth);
   const canonical = `${SITE.url}/${file.replace(/index\.html$/, '')}`;
+  if (!noindex) SITEMAP.push({ loc: canonical, priority: file === 'index.html' ? '1.0' : /terminos|privacidad/.test(file) ? '0.3' : '0.8' });
+  const graph = [ORG, {
+    '@type': 'WebPage',
+    '@id': `${canonical}#pagina`,
+    url: canonical,
+    name: title,
+    description,
+    inLanguage: 'es-CL',
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE.url}/#sitio`, name: 'AFyV Legal', url: `${SITE.url}/`, inLanguage: 'es-CL', publisher: { '@id': ORG_ID } },
+    about: { '@id': ORG_ID },
+  }];
+  if (file !== 'index.html') graph.push({ '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE.url}/` },
+    { '@type': 'ListItem', position: 2, name: PAGE_NAMES[file] || title, item: canonical },
+  ] });
+  graph.push(...schema);
+  const ld = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c');
+  const og = ogImage || 'og.jpg';
   const html = `<!doctype html>
 <html lang="es-CL">
 <head>
@@ -230,15 +270,29 @@ function page({ file, title, description, active, depth = 0, body, contactOpts, 
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'}">
 <link rel="canonical" href="${canonical}">
-<meta name="theme-color" content="#04110b">
+<meta name="theme-color" content="#f2efe6">
+<meta name="author" content="AFyV Legal">
+<meta name="geo.region" content="CL-RM">
+<meta name="geo.placename" content="Santiago">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="AFyV Legal">
+<meta property="og:url" content="${canonical}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-${ogImage ? `<meta property="og:image" content="${SITE.url}/assets/img/${ogImage}">` : ''}
+<meta property="og:image" content="${SITE.url}/assets/img/${og}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AFyV Legal: el derecho cerca de ti">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="${SITE.url}/assets/img/${og}">
 <link rel="icon" href="${p}assets/img/logo.webp" type="image/webp">
+<link rel="apple-touch-icon" href="${p}assets/img/apple-touch-icon.png">
+<script type="application/ld+json">${ld}</script>
 <link rel="preload" href="${p}assets/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${p}assets/fonts/geist-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${p}assets/fonts.css">
@@ -572,8 +626,8 @@ const built = [];
 // Inicio
 built.push(page({
   file: 'index.html',
-  title: 'AFyV Legal — Estudio para pymes, con IA responsable',
-  description: 'Marcas, corporativo pyme, litigios y asesoría mensual para pymes en Chile, con precio fijo conocido antes de empezar. La IA prepara; nuestro equipo analiza, decide, firma y responde.',
+  title: 'AFyV Legal | Estudio para pymes y emprendedores en Chile',
+  description: 'Registro de marcas, constitución de empresas, contratos y cobranza para pymes en Santiago y todo Chile, con precio fijo antes de empezar y plazos en horas hábiles.',
   active: 'inicio',
   ogImage: 'logo.webp',
   contactOpts: { lede: 'Cuéntanos qué necesitas. Te respondemos con una propuesta de precio fijo y alcance claro.' },
@@ -737,9 +791,28 @@ const svcCard = (sv) => `<article class="svc-card${sv.destacado ? ' is-featured'
 
 built.push(page({
   file: 'servicios.html',
-  title: 'Servicios y precios — AFyV Legal',
-  description: 'Marcas, corporativo pyme, litigios y suscripción Abogado de tu Pyme. Precio fijo conocido antes de empezar y plazos en horas hábiles.',
+  title: 'Servicios y precios: marcas, empresas y cobranza | AFyV Legal',
+  description: 'Tarifas con IVA y sin IVA: registro y defensa de marcas ante INAPI, constitución de empresas, pactos de accionistas, contratos, cobranza y asesoría mensual.',
   active: 'servicios',
+  schema: [{
+    '@type': 'OfferCatalog',
+    '@id': `${SITE.url}/servicios.html#tarifario`,
+    name: 'Servicios y precios de AFyV Legal',
+    itemListElement: [
+      ...D.SERVICIOS.map((sv) => ({
+        '@type': 'Offer',
+        category: D.LINEAS.find((l) => l.id === sv.linea).nombre,
+        itemOffered: { '@type': 'Service', name: sv.nombre, description: sv.desc, provider: { '@id': ORG_ID }, areaServed: 'CL' },
+        ...(sv.cotizacion ? {} : { priceSpecification: { '@type': sv.mensual ? 'UnitPriceSpecification' : 'PriceSpecification', price: sv.precio, priceCurrency: 'CLP', valueAddedTaxIncluded: false, ...(sv.desde ? { minPrice: sv.precio } : {}), ...(sv.mensual ? { unitText: 'mes' } : {}) } }),
+      })),
+      ...D.PLANES.map((pl) => ({
+        '@type': 'Offer',
+        category: 'Abogado de tu Pyme',
+        itemOffered: { '@type': 'Service', name: `Plan ${pl.nombre}`, provider: { '@id': ORG_ID }, areaServed: 'CL' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: pl.precio, priceCurrency: 'CLP', valueAddedTaxIncluded: false, unitText: 'mes' },
+      })),
+    ],
+  }],
   contactOpts: { title: 'Cotiza tu encargo', lede: 'Cuéntanos qué necesitas y te enviamos un precio fijo con alcance claro.' },
   body: `
 ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">conocido antes</span> de empezar', lede: 'Cuatro líneas para pymes y emprendedores. Cada servicio tiene un alcance definido, y nuestro equipo revisa y firma cada entrega.' })}
@@ -820,8 +893,8 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
 // IA responsable
 built.push(page({
   file: 'ia-responsable.html',
-  title: 'IA responsable — AFyV Legal',
-  description: 'Cómo usa AFyV Legal la inteligencia artificial: la IA prepara; nuestro equipo analiza, decide, firma y responde. Seguridad de la información, consentimiento y opción sin IA.',
+  title: 'IA responsable: cómo usamos la IA | AFyV Legal',
+  description: 'La IA prepara; nuestro equipo analiza, decide, firma y responde. Conoce cómo protegemos tu información, el consentimiento previo y la opción de trabajar sin IA.',
   active: 'ia',
   body: `
 ${pageHero({ label: 'Transparencia', h1: 'IA <span class="hl">responsable</span>', lede: 'La IA nos permite trabajar más rápido y con precio fijo. El criterio, las decisiones y la responsabilidad son siempre de nuestro equipo.' })}
@@ -897,7 +970,7 @@ ${pageHero({ label: 'Transparencia', h1: 'IA <span class="hl">responsable</span>
       <div>
         ${titulo(4, 'Antes de cada entrega')}
         <h2 class="title-sm" id="check-title" data-split style="margin:1.5rem 0 1.5rem">Lo que revisamos antes de firmar</h2>
-        <p class="lede" data-reveal>Cada entrega se lee completa en su versión final. Los escritos judiciales, las oposiciones y los pactos de socios pasan además por una segunda revisión.</p>
+        <p class="lede" data-reveal>Cada entrega se lee completa en su versión final. Los escritos judiciales, las oposiciones y los pactos de accionistas pasan además por una segunda revisión.</p>
       </div>
       <ol class="checklist checklist--rich doc-paper" data-checklist>
         ${D.CHECKLIST.map(([t, d], i) => `<li><span class="checklist__box">${ICON.check}</span><span class="mono checklist__n">${num(i)}</span><span><strong>${t}</strong><em>${d}</em></span></li>`).join('')}
@@ -1022,8 +1095,8 @@ ${pageHero({ label: 'Servicios y precios', labelHref: 'servicios.html', h1, lede
 
 built.push(reasonsPage({
   file: 'constituye-tu-empresa.html',
-  title: '¿Por qué constituir tu empresa? — AFyV Legal',
-  description: 'Constituir una empresa es una decisión estratégica para el futuro de tu negocio. Cinco razones para formalizar tu emprendimiento.',
+  title: '¿Por qué constituir tu empresa en Chile? | AFyV Legal',
+  description: 'Cinco razones para formalizar tu emprendimiento: patrimonio separado, financiamiento y confianza de clientes. Constituimos tu empresa a precio fijo.',
   h1: '¿Por qué constituir tu <span class="hl">empresa</span>?',
   intro: 'Muchos emprendimientos nacen como una idea, pero solo los que se formalizan están preparados para crecer, atraer oportunidades y proyectarse en el tiempo.',
   reasons: [
@@ -1039,8 +1112,8 @@ built.push(reasonsPage({
 
 built.push(reasonsPage({
   file: 'registra-tu-marca.html',
-  title: '¿Por qué registrar tu marca? — AFyV Legal',
-  description: 'Tu marca es uno de los activos más valiosos de tu negocio. Cinco razones para registrarla y protegerla desde el inicio.',
+  title: '¿Por qué registrar tu marca en INAPI? | AFyV Legal',
+  description: 'Cinco razones para registrar tu marca en Chile y protegerla desde el inicio. Diagnóstico de riesgo, solicitud ante INAPI y defensa a precio fijo.',
   h1: '¿Por qué registrar tu <span class="hl">marca</span>?',
   intro: 'Tu marca es uno de los activos más valiosos de tu negocio. Registrarla protege su identidad, te diferencia de la competencia y te da una base sólida para crecer.',
   reasons: [
@@ -1057,9 +1130,10 @@ built.push(reasonsPage({
 // Equipo
 built.push(page({
   file: 'equipo.html',
-  title: 'Equipo — AFyV Legal',
-  description: 'El equipo de AFyV Legal: visión práctica del derecho, cercanía y rigor técnico. Revisamos y firmamos cada entrega.',
+  title: 'Equipo: quiénes somos | AFyV Legal',
+  description: 'Conoce al equipo de AFyV Legal: visión práctica del derecho, cercanía y rigor técnico al servicio de pymes y emprendedores en Chile.',
   active: 'equipo',
+  schema: TEAM.map((m) => ({ '@type': 'Person', name: m.name, ...(m.titulo ? { jobTitle: m.titulo } : {}), image: `${SITE.url}/assets/img/${m.img}`, worksFor: { '@id': ORG_ID }, knowsAbout: m.area })),
   ogImage: 'logo.webp',
   body: `
 ${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">equipo</span>', lede: 'Un equipo con visión práctica del derecho, que combina cercanía y rigor técnico para entregar soluciones a la medida. Trabajamos con IA y respondemos por cada resultado.' })}
@@ -1083,13 +1157,13 @@ ${pageHero({ label: 'Equipo', h1: 'Nuestro <span class="hl">equipo</span>', lede
 
 // Legal
 for (const [file, title, src, desc] of [
-  ['terminos-y-condiciones.html', 'Términos y Condiciones', 'terminos', 'Términos y Condiciones de acceso, uso y consulta del sitio web de AFyV Legal.'],
-  ['politica-de-privacidad.html', 'Política de Privacidad', 'privacidad', 'Política de tratamiento de datos personales de AFyV Legal.'],
+  ['terminos-y-condiciones.html', 'Términos y Condiciones', 'terminos', 'Términos y Condiciones de acceso, uso y consulta del sitio web de AFyV Legal, estudio para pymes y emprendedores en Chile.'],
+  ['politica-de-privacidad.html', 'Política de Privacidad', 'privacidad', 'Cómo trata AFyV Legal tus datos personales: qué datos recopilamos, para qué los usamos, cuánto tiempo los guardamos y cómo ejercer tus derechos.'],
 ]) {
   const other = file.startsWith('terminos') ? ['politica-de-privacidad.html', 'Política de Privacidad'] : ['terminos-y-condiciones.html', 'Términos y Condiciones'];
   built.push(page({
     file,
-    title: `${title} — AFyV Legal`,
+    title: `${title} | AFyV Legal`,
     description: desc,
     active: 'legal',
     contactOpts: false,
@@ -1102,5 +1176,20 @@ ${pageHero({ label: 'Avisos legales', h1: title, lede: `<a class="paren" href="$
 </div>`,
   }));
 }
+
+// robots.txt and sitemap.xml
+const today = new Date().toISOString().slice(0, 10);
+writeFileSync(join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${SITEMAP.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${today}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
+</urlset>
+`);
+writeFileSync(join(OUT, 'robots.txt'), `User-agent: *
+Allow: /
+Disallow: /servicios-empresas.html
+
+Sitemap: ${SITE.url}/sitemap.xml
+`);
+built.push('sitemap.xml', 'robots.txt');
 
 console.log(`Built ${built.length} pages:\n  ${built.join('\n  ')}`);
