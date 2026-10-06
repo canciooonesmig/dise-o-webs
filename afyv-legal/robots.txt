@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /servicios-empresas.html
 
-Sitemap: https://www.afyvlegal.com/sitemap.xml
+Sitemap: https://www.afyvlegal.com/mapa-del-sitio.xml

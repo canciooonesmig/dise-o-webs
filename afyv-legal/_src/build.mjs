@@ -1179,7 +1179,7 @@ ${pageHero({ label: 'Avisos legales', h1: title, lede: `<a class="paren" href="$
 
 // robots.txt and sitemap.xml
 const today = new Date().toISOString().slice(0, 10);
-writeFileSync(join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+writeFileSync(join(OUT, 'mapa-del-sitio.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${SITEMAP.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${today}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
 </urlset>
@@ -1188,8 +1188,8 @@ writeFileSync(join(OUT, 'robots.txt'), `User-agent: *
 Allow: /
 Disallow: /servicios-empresas.html
 
-Sitemap: ${SITE.url}/sitemap.xml
+Sitemap: ${SITE.url}/mapa-del-sitio.xml
 `);
-built.push('sitemap.xml', 'robots.txt');
+built.push('mapa-del-sitio.xml', 'robots.txt');
 
 console.log(`Built ${built.length} pages:\n  ${built.join('\n  ')}`);
