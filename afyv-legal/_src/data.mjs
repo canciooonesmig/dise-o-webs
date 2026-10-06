@@ -2,17 +2,17 @@
 // Criterios de redacción: AFyV Legal se nombra como "el estudio" o "AFyV Legal"; no se nombra al
 // proveedor de IA (se informa en la cláusula de uso de IA); no se exponen procedimientos internos.
 
-export const REGLA = { ia: 'La IA prepara.', equipo: 'Nuestro equipo analiza, decide, firma y responde.' };
+export const REGLA = { ia: 'Usamos la tecnología', equipo: 'para llevar el Derecho cerca de ti.' };
 export const REGLA_DE_ORO = `${REGLA.ia} ${REGLA.equipo}`;
 
 // Aviso breve de IA (sitio y contratación)
-export const AVISO_IA = 'Usamos inteligencia artificial para preparar borradores con más rapidez. Nuestro equipo revisa, corrige y firma cada entrega, y verifica cada fuente en su origen oficial. Tu información no se usa para entrenar modelos. Si prefieres que tu encargo se trabaje sin IA, te informamos precio y plazo antes de contratar.';
+export const AVISO_IA = 'Usamos inteligencia artificial para ordenar antecedentes, investigar y buscar jurisprudencia con más rapidez, y para preparar borradores de contratos y documentos. Nuestro equipo revisa, corrige y firma cada entrega, y verifica cada fuente en su origen oficial. Tu información no se usa para entrenar modelos. Si prefieres que tu encargo se trabaje sin IA, te informamos precio y plazo antes de contratar.';
 
 // Virtudes de la IA en el estudio
 export const VIRTUDES = [
-  { k: 'Rapidez', t: 'Respuestas en horas, no en semanas', d: 'La IA ordena antecedentes y prepara el primer borrador. El equipo dedica su tiempo a analizar y decidir.' },
+  { k: 'Rapidez', t: 'Respuestas en horas, no en semanas', d: 'La IA ordena antecedentes, investiga y busca jurisprudencia. El equipo dedica su tiempo a analizar y decidir.' },
   { k: 'Precio', t: 'Precio fijo y conocido', d: 'Menos horas en tareas mecánicas permiten publicar precios claros antes de empezar.' },
-  { k: 'Rigor', t: 'Más tiempo para lo que importa', d: 'Con el borrador resuelto, el análisis, la estrategia y la revisión ganan profundidad.' },
+  { k: 'Rigor', t: 'Más tiempo para lo que importa', d: 'Con la investigación resuelta, el análisis, la estrategia y la revisión ganan profundidad.' },
   { k: 'Criterio', t: 'Decisiones siempre humanas', d: 'La IA sugiere; el equipo valora los argumentos, define la estrategia y firma.' },
 ];
 
@@ -44,7 +44,7 @@ export const LIMITES = [
 ];
 
 // Qué hace la IA y qué hace el equipo
-export const USOS_IA = ['Ordena y resume documentos', 'Prepara primeros borradores', 'Propone cláusulas desde modelos aprobados', 'Asiste en las búsquedas, incluida la de marcas', 'Revisa coherencia, ortografía y numeración'];
+export const USOS_IA = ['Ordena y resume documentos', 'Prepara primeros borradores de contratos y documentos', 'Propone cláusulas desde modelos aprobados', 'Investiga y busca jurisprudencia y antecedentes, incluida la búsqueda de marcas', 'Revisa coherencia, ortografía y numeración'];
 export const USOS_EQUIPO = ['Valora los argumentos y define la estrategia', 'Decide qué entra y qué no en cada documento', 'Verifica cada fuente y cada dato', 'Firma y responde por la entrega', 'Te explica el resultado, sus riesgos y alternativas'];
 
 // Cómo trabajamos un encargo: el equipo conduce, la IA asiste
@@ -52,7 +52,7 @@ export const FLUJO = [
   { n: 1, t: 'Escuchamos', d: 'Conversamos contigo para entender qué necesitas y qué está en juego.', who: 'Equipo' },
   { n: 2, t: 'Proponemos', d: 'Te enviamos un precio fijo con un alcance claro, antes de empezar.', who: 'Equipo' },
   { n: 3, t: 'Acordamos', d: 'Firmas la carta de encargo y eliges si trabajamos con o sin IA.', who: 'Tú y el equipo' },
-  { n: 4, t: 'Preparamos', d: 'La IA agiliza la búsqueda de antecedentes y el primer borrador, guiada por el equipo.', who: 'Equipo + IA', ai: true },
+  { n: 4, t: 'Preparamos', d: 'La IA ordena antecedentes, investiga y busca jurisprudencia, guiada por el equipo; en contratos y documentos, propone un primer borrador.', who: 'Equipo + IA', ai: true },
   { n: 5, t: 'Analizamos y decidimos', d: 'El equipo valora argumentos, riesgos y alternativas, y define la estrategia.', who: 'Equipo', key: true },
   { n: 6, t: 'Verificamos y entregamos', d: 'Contrastamos cada fuente, firmamos y te explicamos el resultado.', who: 'Equipo', key: true },
 ];
@@ -98,8 +98,8 @@ export const MARCO = [
 export const LINEAS = [
   { id: 'marcas', nombre: 'Marcas', bajada: 'Te decimos el riesgo antes de que pagues las tasas.', ia: 'La IA amplía la búsqueda de marcas similares; el equipo califica el riesgo.' },
   { id: 'corporativo', nombre: 'Corporativo pyme', bajada: 'Tu empresa constituida, ordenada y con contratos claros.', ia: 'Borradores en horas a partir de modelos revisados por el equipo.' },
-  { id: 'litigios', nombre: 'Litigios y cobranza', bajada: 'Cobrar lo que te deben, con un plan claro.', ia: 'La IA ordena los antecedentes; la estrategia la define el equipo.' },
-  { id: 'suscripcion', nombre: 'Abogado de tu Pyme', bajada: 'Asesoría mensual con alcance definido.', ia: 'Respuestas ágiles, siempre revisadas antes de enviarse.' },
+  { id: 'litigios', nombre: 'Litigios y cobranza', bajada: 'Cobrar lo que te deben, con un plan claro.', ia: 'La IA ordena antecedentes y busca jurisprudencia; la estrategia y los escritos son del equipo.' },
+  { id: 'suscripcion', nombre: 'Abogado de tu Pyme', bajada: 'Asesoría mensual con alcance definido.', ia: 'La IA agiliza la investigación; cada respuesta la revisa el equipo antes de enviarse.' },
 ];
 
 const H = 'desde que recibimos la información completa';

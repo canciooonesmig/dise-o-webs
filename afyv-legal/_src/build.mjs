@@ -643,7 +643,7 @@ built.push(page({
     <h1 class="hero__title" id="hero-title">
       <span class="hero__human" data-split>El derecho <span class="hl hero__hl">cerca<svg class="hero__ul" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 60 4, 120 15, 180 8 S 260 5, 297 9"/></svg></span> de&nbsp;ti.</span>
     </h1>
-    <p class="hero__lede" data-reveal="2">Somos AFyV Legal, un estudio que acompaña a pymes y emprendedores en marcas, sociedades, contratos y cobranza, con precio fijo conocido antes de empezar.</p>
+    <p class="hero__lede" data-reveal="2">Somos AFyV Legal, un estudio que acompaña a pymes y emprendedores. Usamos la tecnología para llevar el Derecho cerca de ti.</p>
     <div class="hero__row">
 
       <div class="hero__actions" data-reveal="3">
@@ -668,7 +668,7 @@ built.push(page({
           ${titulo(1, 'Cómo usamos la IA')}
           <h2 class="title" id="ia-title" data-split style="margin-top:1.5rem">Nuestro criterio. <span class="hl">La velocidad de la IA.</span></h2>
         </div>
-        <p class="lede" data-reveal="1">Usamos inteligencia artificial para preparar y ordenar. Nuestro equipo analiza, decide y responde por cada entrega.</p>
+        <p class="lede" data-reveal="1">Usamos inteligencia artificial para ordenar antecedentes, investigar y buscar jurisprudencia. Nuestro equipo analiza, decide y responde por cada entrega.</p>
       </div>
       <div class="virtues">
         ${D.VIRTUDES.map((v, i) => `<article class="virtue" data-tilt data-reveal="${i}">
@@ -815,11 +815,11 @@ built.push(page({
   }],
   contactOpts: { title: 'Cotiza tu encargo', lede: 'Cuéntanos qué necesitas y te enviamos un precio fijo con alcance claro.' },
   body: `
-${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">conocido antes</span> de empezar', lede: 'Cuatro líneas para pymes y emprendedores. Cada servicio tiene un alcance definido, y nuestro equipo revisa y firma cada entrega.' })}
+${pageHero({ label: 'Servicios y precios', h1: 'Nuestros <span class="hl">servicios</span>', lede: 'Buscamos establecer un alto estándar de trabajo, respaldado por nuestra experiencia y criterio profesional.' })}
 <div class="light">
   <section class="section" aria-label="Tarifario">
     <div class="wrap">
-      <div style="margin-bottom:clamp(1.5rem,3vw,2.5rem)" data-reveal>${avisoIA('', 'La IA prepara los borradores y agiliza las búsquedas; por eso podemos publicar precios fijos y plazos en horas hábiles. Nuestro equipo revisa, corrige y firma cada entrega. ' + D.SIN_IA)}</div>
+      <div style="margin-bottom:clamp(1.5rem,3vw,2.5rem)" data-reveal>${avisoIA('', 'La IA ordena antecedentes, investiga y busca jurisprudencia, y en contratos y documentos prepara un primer borrador; por eso podemos publicar precios fijos y plazos en horas hábiles. Nuestro equipo revisa, corrige y firma cada entrega. ' + D.SIN_IA)}</div>
       <div class="tarifa-bar" data-reveal>
         <div class="filters" role="group" aria-label="Filtrar por línea">
           <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">Todos</button>
@@ -894,14 +894,14 @@ ${pageHero({ label: 'Servicios y precios', h1: 'Precio fijo, <span class="hl">co
 built.push(page({
   file: 'ia-responsable.html',
   title: 'IA responsable: cómo usamos la IA | AFyV Legal',
-  description: 'La IA prepara; nuestro equipo analiza, decide, firma y responde. Conoce cómo protegemos tu información, el consentimiento previo y la opción de trabajar sin IA.',
+  description: 'Usamos la tecnología para llevar el Derecho cerca de ti. Conoce cómo protegemos tu información, el consentimiento previo y la opción de trabajar sin IA.',
   active: 'ia',
   body: `
 ${pageHero({ label: 'Transparencia', h1: 'IA <span class="hl">responsable</span>', lede: 'La IA nos permite trabajar más rápido y con precio fijo. El criterio, las decisiones y la responsabilidad son siempre de nuestro equipo.' })}
 
-<section class="golden" aria-label="Regla de oro">
+<section class="golden" aria-label="Nuestro propósito">
   <div class="wrap">
-    <span class="label" data-reveal>Nuestra regla</span>
+    <span class="label" data-reveal>Nuestro propósito</span>
     <p class="golden__text"><span class="golden__ai mono" data-type>${D.REGLA.ia}</span> <span data-words-light>${D.REGLA.equipo}</span></p>
   </div>
 </section>
