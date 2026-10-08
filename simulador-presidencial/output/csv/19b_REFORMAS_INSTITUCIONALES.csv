@@ -1,0 +1,41 @@
+reform_id,country_id,date,institution,reform_type,description,certainty,source_ids,verification_status
+IR001,FRA,1958-10-04,Constitución,nueva_constitucion,V República: fortalecimiento del Ejecutivo (De Gaulle).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR002,FRA,1962-10-28,Presidencia,eleccion_directa,Referéndum: elección directa del presidente.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR003,FRA,2000-09-24,Presidencia,duracion_mandato,Quinquenato (de 7 a 5 años).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR004,ESP,1978-12-06,Constitución,transicion_democratica,Referéndum constitucional tras la dictadura franquista.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR005,DEU,1949-05-23,Constitución,nueva_constitucion,Ley Fundamental de Bonn.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR006,DEU,2009-08-01,Finanzas públicas,regla_fiscal,"Freno de deuda (Schuldenbremse): déficit estructural federal máx. 0,35% del PIB.",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR007,DEU,2025-03-21,Finanzas públicas,regla_fiscal,Reforma del freno de deuda: exclusión parcial del gasto de defensa y fondo de infraestructura de 500.000 M EUR.,Media,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR008,USA,1951-02-27,Presidencia,limite_mandatos,Enmienda XXII: máximo dos mandatos.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR009,USA,1973-11-07,Poderes de guerra,control_legislativo,War Powers Resolution.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR010,USA,1978-10-25,Inteligencia,control_judicial,Foreign Intelligence Surveillance Act (FISA).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR011,USA,2004-12-17,Inteligencia,reorganizacion,IRTPA: creación del Director de Inteligencia Nacional.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR012,CHL,1980-09-11,Constitución,nueva_constitucion,Constitución aprobada en plebiscito bajo dictadura.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR013,CHL,1988-10-05,Presidencia,plebiscito_transicion,Plebiscito: triunfo del 'No' a la continuidad de Pinochet.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR014,CHL,2022-09-04,Constitución,plebiscito_rechazado,"Rechazo (61,9%) de la propuesta de la Convención Constitucional.",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR015,CHL,2023-12-17,Constitución,plebiscito_rechazado,"Rechazo (55,8%) de la segunda propuesta constitucional.",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR016,ARG,1994-08-22,Constitución,reforma,"Reforma: reelección inmediata, balotaje, jefe de Gabinete, autonomía de CABA.",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR017,BRA,1988-10-05,Constitución,nueva_constitucion,'Constitución Ciudadana' tras el régimen militar.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR018,BRA,1997-06-04,Presidencia,reeleccion,Enmienda constitucional 16: reelección presidencial.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR019,COL,1991-07-04,Constitución,nueva_constitucion,"Constitución de 1991 (Corte Constitucional, tutela).",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR020,VEN,1999-12-15,Constitución,nueva_constitucion,Constitución bolivariana aprobada en referéndum.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR021,VEN,2009-02-15,Presidencia,reeleccion_indefinida,Enmienda que permite la reelección indefinida.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR022,RUS,1993-12-12,Constitución,nueva_constitucion,Constitución tras la crisis constitucional de 1993 (ataque al Parlamento).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR023,RUS,2020-07-01,Constitución,reforma_continuismo,Votación que permite a Putin dos mandatos más (hasta 2036).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR024,CHN,2018-03-11,Presidencia,eliminacion_limite,Eliminación del límite de dos mandatos para el presidente.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR025,TUR,2017-04-16,Constitución,cambio_sistema_gobierno,"Referéndum (51,4%) que instaura el sistema presidencial (vigente desde 2018).",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR026,GBR,1998-11-19,Organización territorial,devolucion,"Scotland Act 1998, Government of Wales Act, Northern Ireland Act.",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR027,GBR,1997-05-06,Banco central,independencia,Independencia operativa del Banco de Inglaterra (formalizada en 1998).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR028,IND,1975-06-25,Ejecutivo,emergencia,Declaración de Emergencia por Indira Gandhi (hasta 1977).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR029,JPN,1947-05-03,Constitución,nueva_constitucion,Constitución de posguerra (art. 9: renuncia a la guerra).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR030,JPN,2015-09-19,Defensa,reinterpretacion,Leyes de seguridad que permiten la autodefensa colectiva limitada.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR031,KOR,1987-10-29,Constitución,transicion_democratica,Constitución de la VI República (elección directa).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR032,ZAF,1996-12-10,Constitución,nueva_constitucion,Constitución posapartheid.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR033,POL,1989-04-07,Sistema político,transicion_pactada,Acuerdos de la Mesa Redonda.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR034,HUN,2011-04-25,Constitución,nueva_constitucion,Ley Fundamental aprobada por la mayoría de dos tercios de Fidesz.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR035,ISR,2023-07-24,Poder judicial,reforma_judicial,Ley que limita la doctrina de razonabilidad; anulada por el Tribunal Supremo el 01-01-2024.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR036,MEX,2024-09-15,Poder judicial,reforma_judicial,Elección popular de jueces y ministros (primera elección judicial 01-06-2025).,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR037,KOR,2024-12-03,Ejecutivo,ley_marcial,"Declaración de ley marcial por Yoon Suk-yeol, revocada por la Asamblea en horas; destitución confirmada por el Tribunal Constitucional (04-04-2025).",Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR038,EUU,1999-01-01,Banco central,union_monetaria,Inicio del euro y del BCE como autoridad monetaria.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR039,IRN,1989-07-28,Constitución,reforma,Supresión del cargo de Primer Ministro; fortalecimiento del Líder Supremo.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IR040,EGY,2019-04-23,Presidencia,extension_mandato,Enmiendas que amplían el mandato a 6 años y permiten a Sisi gobernar hasta 2030.,Alta,SRC_CONSTITUTE;SRC_ACADEMIC_HIST,CONOC_EXPERTO

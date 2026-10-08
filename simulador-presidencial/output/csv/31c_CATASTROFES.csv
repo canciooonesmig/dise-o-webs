@@ -1,0 +1,26 @@
+disaster_id,country_ids,date,disaster_type,name,deaths_low,deaths_high,economic_loss_usd_bn,loss_basis,notes,certainty,source_ids,verification_status
+DS001,CHN,1976-07-28,terremoto,Terremoto de Tangshan,242000,655000,,,Cifra oficial 242.000; estimaciones superiores,Media,SRC_EMDAT,CONOC_EXPERTO
+DS002,BGD,1970-11-12,ciclon,Ciclón Bhola,300000,500000,,,Contribuyó a la crisis política que llevó a la independencia,Media,SRC_EMDAT,CONOC_EXPERTO
+DS003,IDN;LKA;IND;THA,2004-12-26,tsunami,Terremoto y tsunami del océano Índico,227000,230000,,,Aceh: acuerdo de paz (2005) tras el desastre,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS004,HTI,2010-01-12,terremoto,Terremoto de Haití,100000,316000,8.0,corrientes,Cifras muy disputadas,Baja,SRC_EMDAT,CONOC_EXPERTO
+DS005,JPN,2011-03-11,terremoto_tsunami,Gran terremoto del Este de Japón,18000,20000,235.0,corrientes (Banco Mundial),Desastre más costoso registrado,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS006,USA,2005-08-29,huracan,Huracán Katrina,1300,1850,125.0,corrientes,,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS007,MMR,2008-05-02,ciclon,Ciclón Nargis,84500,138000,,,Junta militar restringió ayuda internacional,Media,SRC_EMDAT,CONOC_EXPERTO
+DS008,CHN,2008-05-12,terremoto,Terremoto de Sichuan,69000,88000,,,,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS009,PAK,2005-10-08,terremoto,Terremoto de Cachemira,73000,87000,,,,Media,SRC_EMDAT,CONOC_EXPERTO
+DS010,PAK,2022-06,inundacion,Inundaciones de Pakistán 2022,1700,1750,30.0,corrientes (evaluación PDNA),~33 M de afectados,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS011,TUR;SYR,2023-02-06,terremoto,Terremotos de Turquía y Siria,55000,62000,100.0,corrientes (estim.),,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS012,ETH,1983,hambruna_sequia,Hambruna etíope 1983-1985,300000,1200000,,,"Factor político (guerra civil, reasentamientos)",Baja,SRC_EMDAT,CONOC_EXPERTO
+DS013,PRK,1994,hambruna,Hambruna norcoreana ('Ardua Marcha'),240000,3500000,,,Cifras extremadamente inciertas,Baja,SRC_EMDAT,CONOC_EXPERTO
+DS014,SOM,2011,hambruna_sequia,Hambruna de Somalia 2011,250000,260000,,,Estimación FAO/FEWS NET,Media,SRC_EMDAT,CONOC_EXPERTO
+DS015,NPL,2015-04-25,terremoto,Terremoto de Nepal,8900,9000,7.0,corrientes,,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS016,USA;PRI,2017-09-20,huracan,Huracán María,2975,4645,90.0,corrientes,Estimaciones de exceso de mortalidad,Media,SRC_EMDAT,CONOC_EXPERTO
+DS017,MOZ;ZWE;MWI,2019-03-14,ciclon,Ciclón Idai,1300,1600,2.0,corrientes,,Media,SRC_EMDAT,CONOC_EXPERTO
+DS018,LBY,2023-09-10,inundacion_rotura_presas,Inundación de Derna,4300,11300,,,Cifras divergentes entre fuentes,Baja,SRC_EMDAT,CONOC_EXPERTO
+DS019,RUS,2010-07,ola_calor_incendios,Ola de calor rusa de 2010,55000,56000,15.0,corrientes,Prohibición de exportaciones de trigo,Media,SRC_EMDAT,CONOC_EXPERTO
+DS020,EUU,2003-08,ola_calor,Ola de calor europea de 2003,70000,70000,,,,Media,SRC_EMDAT,CONOC_EXPERTO
+DS021,USA,2025-01-07,incendios,Incendios de Los Ángeles 2025,30,31,,,Pérdidas aseguradas muy elevadas (cifras no verificadas),Media,SRC_EMDAT,CONOC_EXPERTO
+DS022,BRA,2024-05,inundacion,Inundaciones de Rio Grande do Sul,180,185,,,,Media,SRC_EMDAT,CONOC_EXPERTO
+DS023,ESP,2024-10-29,inundacion,DANA de Valencia,220,230,,,,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS024,MAR,2023-09-08,terremoto,Terremoto de Marruecos,2900,3000,,,,Alta,SRC_EMDAT,CONOC_EXPERTO
+DS025,AFG,2022-06-22,terremoto,Terremoto de Paktika,1000,1150,,,,Media,SRC_EMDAT,CONOC_EXPERTO

@@ -1,0 +1,23 @@
+inventory_id,country_id,category,item_definition,value_low,value_high,ref_date,status_note,verification_status,certainty,source_ids
+INV001,USA,portaaviones,Portaaviones de propulsión nuclear en servicio (clases Nimitz y Ford),11.0,11.0,2025,Exigencia legal de mantener 11,CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV002,CHN,portaaviones,"Portaaviones (Liaoning, Shandong, Fujian)",2.0,3.0,2025,Fujian en pruebas/entrada en servicio en 2025,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV003,GBR,portaaviones,Portaaviones clase Queen Elizabeth,2.0,2.0,2025,,CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV004,FRA,portaaviones,Portaaviones nuclear Charles de Gaulle,1.0,1.0,2025,Sucesor (PANG) previsto ~2038,CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV005,IND,portaaviones,"INS Vikramaditya, INS Vikrant",2.0,2.0,2025,,CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV006,RUS,portaaviones,Almirante Kuznetsov,0.0,1.0,2025,En reparación prolongada desde 2017; disponibilidad operativa nula o muy baja,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV007,ITA,portaaviones,Portaaviones ligero Cavour (F-35B),1.0,2.0,2025,Garibaldi en proceso de baja,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV008,USA,SSBN,Submarinos de misiles balísticos (clase Ohio),14.0,14.0,2025,Sustitución por clase Columbia (primer buque ~2028-2030),CONOC_EXPERTO,Alta,SRC_IISS_MB;SRC_FAS_NUC
+INV009,RUS,SSBN,"Submarinos de misiles balísticos (Borei/Borei-A, Delta IV)",10.0,13.0,2025,,CONOC_EXPERTO,Media,SRC_IISS_MB;SRC_FAS_NUC
+INV010,CHN,SSBN,Submarinos de misiles balísticos (Tipo 094/094A),6.0,6.0,2025,,CONOC_EXPERTO,Media,SRC_IISS_MB;SRC_FAS_NUC
+INV011,GBR,SSBN,Clase Vanguard,4.0,4.0,2025,Sustitución por clase Dreadnought (2030s),CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV012,FRA,SSBN,Clase Triomphant,4.0,4.0,2025,,CONOC_EXPERTO,Alta,SRC_IISS_MB
+INV013,IND,SSBN,Clase Arihant,2.0,3.0,2025,INS Arighaat en servicio en 2024,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV014,USA,bombarderos_estrategicos,"B-52H, B-1B, B-2A (B-21 en producción)",140.0,160.0,2025,,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV015,RUS,bombarderos_estrategicos,"Tu-95MS, Tu-160, Tu-22M3",100.0,130.0,2025,"Pérdidas por ataques ucranianos con drones (Operación 'Telaraña', 01-06-2025) no cuantificadas con precisión",CONOC_EXPERTO,Baja,SRC_IISS_MB
+INV016,USA,aviones_combate_5a_gen,F-22 + F-35 (todas las ramas),500.0,800.0,2025,,CONOC_EXPERTO,Baja,SRC_IISS_MB
+INV017,CHN,aviones_combate_5a_gen,J-20,200.0,300.0,2025,Estimaciones abiertas muy divergentes,CONOC_EXPERTO,Baja,SRC_IISS_MB
+INV018,RUS,carros_combate_activos,Carros de combate en unidades activas,,,2025,Pérdidas masivas en Ucrania (miles documentadas visualmente por Oryx); stock depende de reactivación desde almacenes,CONOC_EXPERTO,Baja,SRC_IISS_MB
+INV019,USA,bases_extranjeras,Instalaciones militares en el extranjero,700.0,800.0,2021,Cifras según la definición de 'base' (estudios académicos),CONOC_EXPERTO,Baja,SRC_IISS_MB
+INV020,RUS,bases_extranjeras,"Bases y despliegues permanentes fuera del territorio (Armenia, Bielorrusia, Tayikistán, Kirguistán, Transnistria, Abjasia, Osetia del Sur; Siria hasta 2024-2025)",8.0,12.0,2025,Futuro de Tartús y Hmeimim incierto tras la caída de Assad,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV021,CHN,bases_extranjeras,Base de apoyo en Yibuti (desde 2017); base de Ream (Camboya) con presencia reportada,1.0,2.0,2025,,CONOC_EXPERTO,Media,SRC_IISS_MB
+INV022,USA,satelites_militares,"Constelaciones de alerta temprana, navegación (GPS), comunicaciones e inteligencia",,,2025,Recuento no verificado; ver UCS Satellite Database,CONOC_EXPERTO,Baja,SRC_IISS_MB

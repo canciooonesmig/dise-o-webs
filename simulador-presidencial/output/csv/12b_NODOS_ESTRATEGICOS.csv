@@ -1,0 +1,33 @@
+node_id,name,node_type,country_ids,lat,lon,strategic_function,metric,metric_value,metric_unit,metric_year,metric_source,certainty,notes,verification_status,source_ids
+NODE001,Estrecho de Ormuz,estrecho,IRN;OMN,26.57,56.25,"Salida del Golfo Pérsico: petróleo y GNL de Arabia Saudí, EAU, Kuwait, Irak, Irán y Catar",flujo_petroleo,18.5,millones b/d,2016.0,SRC_EIA_CHOKE,Media,Cifra 2016 de EIA (edición 2017) obtenida por buscador; ~1/5 del consumo mundial de líquidos según EIA. Valor de 2023 no verificado.,VERIF_SESION,SRC_EIA_CHOKE
+NODE002,Estrecho de Malaca,estrecho,MYS;IDN;SGP,2.5,101.5,"Ruta principal Índico-Pacífico; suministro energético de China, Japón y Corea",flujo_petroleo,23.7,millones b/d,2023.0,SRC_EIA_CHOKE,Media,Cifra 2023 atribuida a EIA vía resumen de Statista (búsqueda web).,VERIF_SESION,SRC_EIA_CHOKE
+NODE003,Canal de Suez y oleoducto SUMED,canal,EGY,30.58,32.27,Conexión Mediterráneo-Mar Rojo,flujo_petroleo,5.5,millones b/d,2016.0,SRC_EIA_CHOKE,Media,Flujos reducidos desde finales de 2023 por ataques hutíes en el Mar Rojo.,VERIF_SESION,SRC_EIA_CHOKE
+NODE004,Bab el-Mandeb,estrecho,YEM;DJI;ERI,12.58,43.33,Mar Rojo-Golfo de Adén,,,,,SRC_EIA_CHOKE,Media,Ataques hutíes 2023-2024 desviaron tráfico por el Cabo de Buena Esperanza.,VERIF_SESION,SRC_EIA_CHOKE
+NODE005,Bósforo y Dardanelos (Estrechos Turcos),estrecho,TUR,41.12,29.07,Salida del Mar Negro; régimen de la Convención de Montreux (1936),,,,,SRC_EIA_CHOKE,Alta,Turquía cerró el paso a buques de guerra beligerantes en 2022 invocando Montreux.,VERIF_SESION,SRC_EIA_CHOKE
+NODE006,Canal de Panamá,canal,PAN,9.08,-79.68,Conexión Atlántico-Pacífico,,,,,SRC_EIA_CHOKE,Alta,Sequía 2023-2024 restringió tránsitos.,VERIF_SESION,SRC_EIA_CHOKE
+NODE007,Estrecho de Taiwán,estrecho,CHN;TWN,24.5,119.5,Ruta comercial clave de Asia Oriental,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE008,Estrecho de Gibraltar,estrecho,ESP;MAR;GBR,35.97,-5.5,Mediterráneo-Atlántico,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE009,Paso GIUK (Groenlandia-Islandia-Reino Unido),paso_maritimo,GRL;ISL;GBR,63.0,-15.0,Acceso de la Flota del Norte rusa al Atlántico; vigilancia antisubmarina OTAN,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE010,Brecha de Suwałki,corredor_terrestre,POL;LTU,54.1,23.1,"Única conexión terrestre de los bálticos con Polonia, entre Bielorrusia y Kaliningrado",,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE011,Estrecho de Lombok y Sunda,estrecho,IDN,-8.5,115.7,Rutas alternativas a Malaca,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE012,Cabo de Buena Esperanza,ruta_alternativa,ZAF,-34.36,18.47,Ruta alternativa a Suez,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE013,Corredor de Wakhan,corredor_terrestre,AFG,37.0,73.5,Conexión Afganistán-China,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE014,Corredor de Siliguri ('cuello de pollo'),corredor_terrestre,IND,26.7,88.4,Conecta el noreste de India con el resto del país,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE015,Ruta Marítima del Norte,ruta_maritima,RUS,75.0,100.0,"Ruta ártica Europa-Asia, estacional",,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE016,Puerto de Shanghái,puerto,CHN,31.23,121.47,Mayor puerto de contenedores del mundo,,,,,,Alta,Volumen TEU no verificado en sesión; ver WDI is_shp_good_tu por país.,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE017,Puerto de Singapur,puerto,SGP,1.26,103.84,Hub de trasbordo global,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE018,Puerto de Róterdam,puerto,NLD,51.95,4.14,Mayor puerto de Europa,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE019,Oleoducto Druzhba,oleoducto,RUS;BLR;UKR;POL;HUN;SVK;CZE;DEU,52.0,30.0,Suministro de crudo ruso a Europa Central,,,,,,Alta,"Exentos parcialmente del embargo UE de 2022 (Hungría, Eslovaquia).",CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE020,Gasoductos Nord Stream 1 y 2,gasoducto,RUS;DEU,55.0,15.0,Gas ruso a Alemania por el Báltico,,,,,,Alta,Dañados por explosiones el 26-09-2022; autoría objeto de investigaciones judiciales.,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE021,Oleoducto Este-Oeste saudí (Petroline),oleoducto,SAU,25.0,45.0,Bypass parcial de Ormuz hacia Yanbu (Mar Rojo),,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE022,Gasoducto Power of Siberia,gasoducto,RUS;CHN,52.0,127.0,Gas ruso a China (operativo desde dic. 2019),,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE023,TSMC Hsinchu / Tainan (fabs avanzadas),industria_critica,TWN,24.78,120.99,Producción de la mayoría de chips lógicos de vanguardia del mundo,,,,,,Alta,Cuota exacta no verificada en sesión.,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE024,Cable submarino y nodos de Internet del Mar Rojo/Egipto,infraestructura_digital,EGY,31.2,29.9,Gran parte del tráfico de datos Europa-Asia transita por Egipto,,,,,,Media,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE025,Presa de las Tres Gargantas,energia_hidroelectrica,CHN,30.82,111.0,"Mayor central hidroeléctrica del mundo por capacidad (22,5 GW)",capacidad,22.5,GW,2012.0,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE026,Gran Presa del Renacimiento Etíope (GERD),energia_hidroelectrica,ETH,11.21,35.09,Control del Nilo Azul; disputa con Egipto y Sudán,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE027,Central nuclear de Zaporiyia,energia_nuclear,UKR,47.51,34.59,Mayor central nuclear de Europa (6 reactores); ocupada por Rusia desde marzo de 2022,,,,,SRC_IAEA_PRIS,Alta,,CONOC_EXPERTO,SRC_IAEA_PRIS
+NODE028,Base Naval de Sebastopol,base_militar,UKR;RUS,44.6,33.53,Flota del Mar Negro rusa (Crimea ocupada por Rusia desde 2014; territorio ucraniano según la ONU),,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE029,Diego García,base_militar,GBR;USA,-7.31,72.42,Base aeronaval en el Índico,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE030,Guam,base_militar,USA,13.44,144.79,Proyección de poder en el Pacífico occidental,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE031,Yibuti (bases extranjeras),base_militar,DJI,11.59,43.15,"Bases de EE.UU., Francia, China, Japón e Italia",,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST
+NODE032,Ramstein,base_militar,DEU,49.44,7.6,Principal base aérea de EE.UU. en Europa,,,,,,Alta,,CONOC_EXPERTO,SRC_ACADEMIC_HIST

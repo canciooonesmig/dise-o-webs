@@ -1,0 +1,1651 @@
+record_id,scenario_id,country_id,parameter_id,value,basis_data_year,basis_values,valid_for_date,value_class,status
+PV000001,SC1946,USA,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000002,SC1946,USA,PAR02,0.36398837,1946.0,CINC=0.36398837,1946-01-01,C_parametro_simulacion,calculado
+PV000003,SC1946,USA,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000004,SC1946,USA,PAR04,democracia_electoral,1946.0,RoW=2.0,1946-01-01,C_parametro_simulacion,calculado
+PV000005,SC1946,USA,PAR05,bajo,1946.0,golpes/intentos 10 años previos=no; RoW=2.0,1946-01-01,C_parametro_simulacion,calculado
+PV000006,SC1946,USA,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000007,SC1946,USA,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000008,SC1946,USA,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000009,SC1946,USA,PAR09,0.062,1946.0,v2x_corr=0.062,1946-01-01,C_parametro_simulacion,calculado
+PV000010,SC1946,USA,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000011,SC1946,RUS,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000012,SC1946,RUS,PAR02,0.12254112,1946.0,CINC=0.12254112,1946-01-01,C_parametro_simulacion,calculado
+PV000013,SC1946,RUS,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000014,SC1946,RUS,PAR04,autocracia_cerrada,1946.0,RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000015,SC1946,RUS,PAR05,medio,1946.0,golpes/intentos 10 años previos=no; RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000016,SC1946,RUS,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000017,SC1946,RUS,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000018,SC1946,RUS,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000019,SC1946,RUS,PAR09,0.209,1946.0,v2x_corr=0.209,1946-01-01,C_parametro_simulacion,calculado
+PV000020,SC1946,RUS,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000021,SC1946,GBR,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000022,SC1946,GBR,PAR02,0.11617274,1946.0,CINC=0.11617274,1946-01-01,C_parametro_simulacion,calculado
+PV000023,SC1946,GBR,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000024,SC1946,GBR,PAR04,democracia_liberal,1946.0,RoW=3.0,1946-01-01,C_parametro_simulacion,calculado
+PV000025,SC1946,GBR,PAR05,bajo,1946.0,golpes/intentos 10 años previos=no; RoW=3.0,1946-01-01,C_parametro_simulacion,calculado
+PV000026,SC1946,GBR,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000027,SC1946,GBR,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000028,SC1946,GBR,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000029,SC1946,GBR,PAR09,0.017,1946.0,v2x_corr=0.017,1946-01-01,C_parametro_simulacion,calculado
+PV000030,SC1946,GBR,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000031,SC1946,FRA,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000032,SC1946,FRA,PAR02,0.031308327,1946.0,CINC=0.031308327,1946-01-01,C_parametro_simulacion,calculado
+PV000033,SC1946,FRA,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000034,SC1946,FRA,PAR04,autocracia_cerrada,1946.0,RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000035,SC1946,FRA,PAR05,medio,1946.0,golpes/intentos 10 años previos=no; RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000036,SC1946,FRA,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000037,SC1946,FRA,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000038,SC1946,FRA,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000039,SC1946,FRA,PAR09,0.051,1946.0,v2x_corr=0.051,1946-01-01,C_parametro_simulacion,calculado
+PV000040,SC1946,FRA,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000041,SC1946,CHN,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000042,SC1946,CHN,PAR02,0.13271055,1946.0,CINC=0.13271055,1946-01-01,C_parametro_simulacion,calculado
+PV000043,SC1946,CHN,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000044,SC1946,CHN,PAR04,autocracia_cerrada,1946.0,RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000045,SC1946,CHN,PAR05,medio,1946.0,golpes/intentos 10 años previos=no; RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000046,SC1946,CHN,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000047,SC1946,CHN,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000048,SC1946,CHN,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000049,SC1946,CHN,PAR09,0.813,1946.0,v2x_corr=0.813,1946-01-01,C_parametro_simulacion,calculado
+PV000050,SC1946,CHN,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000051,SC1946,DEU,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000052,SC1946,DEU,PAR02,0.079876572,1945.0,CINC=0.079876572,1946-01-01,C_parametro_simulacion,calculado
+PV000053,SC1946,DEU,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000054,SC1946,DEU,PAR04,,,RoW=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000055,SC1946,DEU,PAR05,,,golpes/intentos 10 años previos=no; RoW=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000056,SC1946,DEU,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000057,SC1946,DEU,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000058,SC1946,DEU,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000059,SC1946,DEU,PAR09,,,v2x_corr=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000060,SC1946,DEU,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000061,SC1946,JPN,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000062,SC1946,JPN,PAR02,0.052876092,1945.0,CINC=0.052876092,1946-01-01,C_parametro_simulacion,calculado
+PV000063,SC1946,JPN,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000064,SC1946,JPN,PAR04,autocracia_cerrada,1946.0,RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000065,SC1946,JPN,PAR05,medio,1946.0,golpes/intentos 10 años previos=no; RoW=0.0,1946-01-01,C_parametro_simulacion,calculado
+PV000066,SC1946,JPN,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000067,SC1946,JPN,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000068,SC1946,JPN,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000069,SC1946,JPN,PAR09,0.155,1946.0,v2x_corr=0.155,1946-01-01,C_parametro_simulacion,calculado
+PV000070,SC1946,JPN,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000071,SC1946,IND,PAR01,,,PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000072,SC1946,IND,PAR02,,,CINC=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000073,SC1946,IND,PAR03,,,milex%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000074,SC1946,IND,PAR04,autocracia_electoral,1946.0,RoW=1.0,1946-01-01,C_parametro_simulacion,calculado
+PV000075,SC1946,IND,PAR05,medio,1946.0,golpes/intentos 10 años previos=no; RoW=1.0,1946-01-01,C_parametro_simulacion,calculado
+PV000076,SC1946,IND,PAR06,,,imp_netas%=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000077,SC1946,IND,PAR07,,,rentas%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000078,SC1946,IND,PAR08,,,deuda%PIB=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000079,SC1946,IND,PAR09,0.031,1946.0,v2x_corr=0.031,1946-01-01,C_parametro_simulacion,calculado
+PV000080,SC1946,IND,PAR10,,,inflacion=None,1946-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000081,SC1950,KOR,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000082,SC1950,KOR,PAR02,0.0047363089,1950.0,CINC=0.0047363089,1950-06-25,C_parametro_simulacion,calculado
+PV000083,SC1950,KOR,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000084,SC1950,KOR,PAR04,autocracia_electoral,1950.0,RoW=1.0,1950-06-25,C_parametro_simulacion,calculado
+PV000085,SC1950,KOR,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=1.0,1950-06-25,C_parametro_simulacion,calculado
+PV000086,SC1950,KOR,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000087,SC1950,KOR,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000088,SC1950,KOR,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000089,SC1950,KOR,PAR09,0.623,1950.0,v2x_corr=0.623,1950-06-25,C_parametro_simulacion,calculado
+PV000090,SC1950,KOR,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000091,SC1950,PRK,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000092,SC1950,PRK,PAR02,0.0026701791,1950.0,CINC=0.0026701791,1950-06-25,C_parametro_simulacion,calculado
+PV000093,SC1950,PRK,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000094,SC1950,PRK,PAR04,autocracia_cerrada,1950.0,RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000095,SC1950,PRK,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000096,SC1950,PRK,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000097,SC1950,PRK,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000098,SC1950,PRK,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000099,SC1950,PRK,PAR09,0.638,1950.0,v2x_corr=0.638,1950-06-25,C_parametro_simulacion,calculado
+PV000100,SC1950,PRK,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000101,SC1950,CHN,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000102,SC1950,CHN,PAR02,0.11849532,1950.0,CINC=0.11849532,1950-06-25,C_parametro_simulacion,calculado
+PV000103,SC1950,CHN,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000104,SC1950,CHN,PAR04,autocracia_cerrada,1950.0,RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000105,SC1950,CHN,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000106,SC1950,CHN,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000107,SC1950,CHN,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000108,SC1950,CHN,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000109,SC1950,CHN,PAR09,0.304,1950.0,v2x_corr=0.304,1950-06-25,C_parametro_simulacion,calculado
+PV000110,SC1950,CHN,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000111,SC1950,USA,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000112,SC1950,USA,PAR02,0.28444302,1950.0,CINC=0.28444302,1950-06-25,C_parametro_simulacion,calculado
+PV000113,SC1950,USA,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000114,SC1950,USA,PAR04,democracia_electoral,1950.0,RoW=2.0,1950-06-25,C_parametro_simulacion,calculado
+PV000115,SC1950,USA,PAR05,bajo,1950.0,golpes/intentos 10 años previos=no; RoW=2.0,1950-06-25,C_parametro_simulacion,calculado
+PV000116,SC1950,USA,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000117,SC1950,USA,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000118,SC1950,USA,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000119,SC1950,USA,PAR09,0.06,1950.0,v2x_corr=0.06,1950-06-25,C_parametro_simulacion,calculado
+PV000120,SC1950,USA,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000121,SC1950,RUS,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000122,SC1950,RUS,PAR02,0.18059845,1950.0,CINC=0.18059845,1950-06-25,C_parametro_simulacion,calculado
+PV000123,SC1950,RUS,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000124,SC1950,RUS,PAR04,autocracia_cerrada,1950.0,RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000125,SC1950,RUS,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000126,SC1950,RUS,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000127,SC1950,RUS,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000128,SC1950,RUS,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000129,SC1950,RUS,PAR09,0.209,1950.0,v2x_corr=0.209,1950-06-25,C_parametro_simulacion,calculado
+PV000130,SC1950,RUS,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000131,SC1950,JPN,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000132,SC1950,JPN,PAR02,,,CINC=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000133,SC1950,JPN,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000134,SC1950,JPN,PAR04,autocracia_cerrada,1950.0,RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000135,SC1950,JPN,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000136,SC1950,JPN,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000137,SC1950,JPN,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000138,SC1950,JPN,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000139,SC1950,JPN,PAR09,0.141,1950.0,v2x_corr=0.141,1950-06-25,C_parametro_simulacion,calculado
+PV000140,SC1950,JPN,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000141,SC1950,TWN,PAR01,,,PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000142,SC1950,TWN,PAR02,0.0047816648,1950.0,CINC=0.0047816648,1950-06-25,C_parametro_simulacion,calculado
+PV000143,SC1950,TWN,PAR03,,,milex%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000144,SC1950,TWN,PAR04,autocracia_cerrada,1950.0,RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000145,SC1950,TWN,PAR05,medio,1950.0,golpes/intentos 10 años previos=no; RoW=0.0,1950-06-25,C_parametro_simulacion,calculado
+PV000146,SC1950,TWN,PAR06,,,imp_netas%=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000147,SC1950,TWN,PAR07,,,rentas%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000148,SC1950,TWN,PAR08,,,deuda%PIB=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000149,SC1950,TWN,PAR09,0.632,1950.0,v2x_corr=0.632,1950-06-25,C_parametro_simulacion,calculado
+PV000150,SC1950,TWN,PAR10,,,inflacion=None,1950-06-25,C_parametro_simulacion,pendiente_sin_datos
+PV000151,SC1956,EGY,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000152,SC1956,EGY,PAR02,0.0052114734,1956.0,CINC=0.0052114734,1956-10-23,C_parametro_simulacion,calculado
+PV000153,SC1956,EGY,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000154,SC1956,EGY,PAR04,autocracia_cerrada,1956.0,RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000155,SC1956,EGY,PAR05,alto,1956.0,golpes/intentos 10 años previos=sí; RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000156,SC1956,EGY,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000157,SC1956,EGY,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000158,SC1956,EGY,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000159,SC1956,EGY,PAR09,0.531,1956.0,v2x_corr=0.531,1956-10-23,C_parametro_simulacion,calculado
+PV000160,SC1956,EGY,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000161,SC1956,GBR,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000162,SC1956,GBR,PAR02,0.049223699,1956.0,CINC=0.049223699,1956-10-23,C_parametro_simulacion,calculado
+PV000163,SC1956,GBR,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000164,SC1956,GBR,PAR04,democracia_liberal,1956.0,RoW=3.0,1956-10-23,C_parametro_simulacion,calculado
+PV000165,SC1956,GBR,PAR05,bajo,1956.0,golpes/intentos 10 años previos=no; RoW=3.0,1956-10-23,C_parametro_simulacion,calculado
+PV000166,SC1956,GBR,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000167,SC1956,GBR,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000168,SC1956,GBR,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000169,SC1956,GBR,PAR09,0.017,1956.0,v2x_corr=0.017,1956-10-23,C_parametro_simulacion,calculado
+PV000170,SC1956,GBR,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000171,SC1956,FRA,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000172,SC1956,FRA,PAR02,0.032562353,1956.0,CINC=0.032562353,1956-10-23,C_parametro_simulacion,calculado
+PV000173,SC1956,FRA,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000174,SC1956,FRA,PAR04,democracia_liberal,1956.0,RoW=3.0,1956-10-23,C_parametro_simulacion,calculado
+PV000175,SC1956,FRA,PAR05,bajo,1956.0,golpes/intentos 10 años previos=no; RoW=3.0,1956-10-23,C_parametro_simulacion,calculado
+PV000176,SC1956,FRA,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000177,SC1956,FRA,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000178,SC1956,FRA,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000179,SC1956,FRA,PAR09,0.084,1956.0,v2x_corr=0.084,1956-10-23,C_parametro_simulacion,calculado
+PV000180,SC1956,FRA,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000181,SC1956,ISR,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000182,SC1956,ISR,PAR02,0.0011855757,1956.0,CINC=0.0011855757,1956-10-23,C_parametro_simulacion,calculado
+PV000183,SC1956,ISR,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000184,SC1956,ISR,PAR04,democracia_electoral,1956.0,RoW=2.0,1956-10-23,C_parametro_simulacion,calculado
+PV000185,SC1956,ISR,PAR05,bajo,1956.0,golpes/intentos 10 años previos=no; RoW=2.0,1956-10-23,C_parametro_simulacion,calculado
+PV000186,SC1956,ISR,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000187,SC1956,ISR,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000188,SC1956,ISR,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000189,SC1956,ISR,PAR09,0.158,1956.0,v2x_corr=0.158,1956-10-23,C_parametro_simulacion,calculado
+PV000190,SC1956,ISR,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000191,SC1956,HUN,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000192,SC1956,HUN,PAR02,0.0050237193,1956.0,CINC=0.0050237193,1956-10-23,C_parametro_simulacion,calculado
+PV000193,SC1956,HUN,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000194,SC1956,HUN,PAR04,autocracia_cerrada,1956.0,RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000195,SC1956,HUN,PAR05,medio,1956.0,golpes/intentos 10 años previos=no; RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000196,SC1956,HUN,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000197,SC1956,HUN,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000198,SC1956,HUN,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000199,SC1956,HUN,PAR09,0.378,1956.0,v2x_corr=0.378,1956-10-23,C_parametro_simulacion,calculado
+PV000200,SC1956,HUN,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000201,SC1956,RUS,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000202,SC1956,RUS,PAR02,0.17019655,1956.0,CINC=0.17019655,1956-10-23,C_parametro_simulacion,calculado
+PV000203,SC1956,RUS,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000204,SC1956,RUS,PAR04,autocracia_cerrada,1956.0,RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000205,SC1956,RUS,PAR05,medio,1956.0,golpes/intentos 10 años previos=no; RoW=0.0,1956-10-23,C_parametro_simulacion,calculado
+PV000206,SC1956,RUS,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000207,SC1956,RUS,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000208,SC1956,RUS,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000209,SC1956,RUS,PAR09,0.231,1956.0,v2x_corr=0.231,1956-10-23,C_parametro_simulacion,calculado
+PV000210,SC1956,RUS,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000211,SC1956,USA,PAR01,,,PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000212,SC1956,USA,PAR02,0.2606138,1956.0,CINC=0.2606138,1956-10-23,C_parametro_simulacion,calculado
+PV000213,SC1956,USA,PAR03,,,milex%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000214,SC1956,USA,PAR04,democracia_electoral,1956.0,RoW=2.0,1956-10-23,C_parametro_simulacion,calculado
+PV000215,SC1956,USA,PAR05,bajo,1956.0,golpes/intentos 10 años previos=no; RoW=2.0,1956-10-23,C_parametro_simulacion,calculado
+PV000216,SC1956,USA,PAR06,,,imp_netas%=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000217,SC1956,USA,PAR07,,,rentas%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000218,SC1956,USA,PAR08,,,deuda%PIB=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000219,SC1956,USA,PAR09,0.06,1956.0,v2x_corr=0.06,1956-10-23,C_parametro_simulacion,calculado
+PV000220,SC1956,USA,PAR10,,,inflacion=None,1956-10-23,C_parametro_simulacion,pendiente_sin_datos
+PV000221,SC1960,COD,PAR01,0.00264,1960.0,PIB=3359404117.64706,1960-01-01,C_parametro_simulacion,calculado
+PV000222,SC1960,COD,PAR02,0.0013257691,1960.0,CINC=0.0013257691,1960-01-01,C_parametro_simulacion,calculado
+PV000223,SC1960,COD,PAR03,,,milex%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000224,SC1960,COD,PAR04,autocracia_electoral,1960.0,RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000225,SC1960,COD,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000226,SC1960,COD,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000227,SC1960,COD,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000228,SC1960,COD,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000229,SC1960,COD,PAR09,0.488,1960.0,v2x_corr=0.488,1960-01-01,C_parametro_simulacion,calculado
+PV000230,SC1960,COD,PAR10,,,inflacion=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000231,SC1960,NGA,PAR01,0.00329,1960.0,PIB=4196174501.5302,1960-01-01,C_parametro_simulacion,calculado
+PV000232,SC1960,NGA,PAR02,0.0041064196,1960.0,CINC=0.0041064196,1960-01-01,C_parametro_simulacion,calculado
+PV000233,SC1960,NGA,PAR03,bajo,1960.0,milex%PIB=0.69583,1960-01-01,C_parametro_simulacion,calculado
+PV000234,SC1960,NGA,PAR04,autocracia_cerrada,1960.0,RoW=0.0,1960-01-01,C_parametro_simulacion,calculado
+PV000235,SC1960,NGA,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=0.0,1960-01-01,C_parametro_simulacion,calculado
+PV000236,SC1960,NGA,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000237,SC1960,NGA,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000238,SC1960,NGA,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000239,SC1960,NGA,PAR09,0.839,1960.0,v2x_corr=0.839,1960-01-01,C_parametro_simulacion,calculado
+PV000240,SC1960,NGA,PAR10,moderada,1960.0,inflacion=5.44433,1960-01-01,C_parametro_simulacion,calculado
+PV000241,SC1960,GHA,PAR01,0.00096,1960.0,PIB=1217230094.97205,1960-01-01,C_parametro_simulacion,calculado
+PV000242,SC1960,GHA,PAR02,0.00064218417,1960.0,CINC=0.00064218417,1960-01-01,C_parametro_simulacion,calculado
+PV000243,SC1960,GHA,PAR03,medio,1960.0,milex%PIB=1.70666,1960-01-01,C_parametro_simulacion,calculado
+PV000244,SC1960,GHA,PAR04,autocracia_electoral,1960.0,RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000245,SC1960,GHA,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000246,SC1960,GHA,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000247,SC1960,GHA,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000248,SC1960,GHA,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000249,SC1960,GHA,PAR09,0.351,1960.0,v2x_corr=0.351,1960-01-01,C_parametro_simulacion,calculado
+PV000250,SC1960,GHA,PAR10,,,inflacion=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000251,SC1960,SEN,PAR01,0.00079,1960.0,PIB=1003692370.46869,1960-01-01,C_parametro_simulacion,calculado
+PV000252,SC1960,SEN,PAR02,0.00034318995,1960.0,CINC=0.00034318995,1960-01-01,C_parametro_simulacion,calculado
+PV000253,SC1960,SEN,PAR03,,,milex%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000254,SC1960,SEN,PAR04,autocracia_electoral,1960.0,RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000255,SC1960,SEN,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000256,SC1960,SEN,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000257,SC1960,SEN,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000258,SC1960,SEN,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000259,SC1960,SEN,PAR09,0.393,1960.0,v2x_corr=0.393,1960-01-01,C_parametro_simulacion,calculado
+PV000260,SC1960,SEN,PAR10,,,inflacion=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000261,SC1960,CIV,PAR01,0.00043,1960.0,PIB=546203559.34436,1960-01-01,C_parametro_simulacion,calculado
+PV000262,SC1960,CIV,PAR02,0.00028626857,1960.0,CINC=0.00028626857,1960-01-01,C_parametro_simulacion,calculado
+PV000263,SC1960,CIV,PAR03,,,milex%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000264,SC1960,CIV,PAR04,autocracia_electoral,1960.0,RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000265,SC1960,CIV,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000266,SC1960,CIV,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000267,SC1960,CIV,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000268,SC1960,CIV,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000269,SC1960,CIV,PAR09,0.721,1960.0,v2x_corr=0.721,1960-01-01,C_parametro_simulacion,calculado
+PV000270,SC1960,CIV,PAR10,,,inflacion=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000271,SC1960,FRA,PAR01,0.04863,1960.0,PIB=61959085885.34274,1960-01-01,C_parametro_simulacion,calculado
+PV000272,SC1960,FRA,PAR02,0.032849308,1960.0,CINC=0.032849308,1960-01-01,C_parametro_simulacion,calculado
+PV000273,SC1960,FRA,PAR03,alto,1960.0,milex%PIB=5.42849,1960-01-01,C_parametro_simulacion,calculado
+PV000274,SC1960,FRA,PAR04,democracia_liberal,1960.0,RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000275,SC1960,FRA,PAR05,bajo,1960.0,golpes/intentos 10 años previos=no; RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000276,SC1960,FRA,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000277,SC1960,FRA,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000278,SC1960,FRA,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000279,SC1960,FRA,PAR09,0.059,1960.0,v2x_corr=0.059,1960-01-01,C_parametro_simulacion,calculado
+PV000280,SC1960,FRA,PAR10,baja,1960.0,inflacion=4.13994,1960-01-01,C_parametro_simulacion,calculado
+PV000281,SC1960,GBR,PAR01,0.05748,1960.0,PIB=73233967692.10281,1960-01-01,C_parametro_simulacion,calculado
+PV000282,SC1960,GBR,PAR02,0.042334341,1960.0,CINC=0.042334341,1960-01-01,C_parametro_simulacion,calculado
+PV000283,SC1960,GBR,PAR03,muy_alto,1960.0,milex%PIB=7.09249,1960-01-01,C_parametro_simulacion,calculado
+PV000284,SC1960,GBR,PAR04,democracia_liberal,1960.0,RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000285,SC1960,GBR,PAR05,bajo,1960.0,golpes/intentos 10 años previos=no; RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000286,SC1960,GBR,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000287,SC1960,GBR,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000288,SC1960,GBR,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000289,SC1960,GBR,PAR09,0.017,1960.0,v2x_corr=0.017,1960-01-01,C_parametro_simulacion,calculado
+PV000290,SC1960,GBR,PAR10,baja,1960.0,inflacion=1.00358,1960-01-01,C_parametro_simulacion,calculado
+PV000291,SC1960,BEL,PAR01,0.00927,1960.0,PIB=11810619368.38736,1960-01-01,C_parametro_simulacion,calculado
+PV000292,SC1960,BEL,PAR02,0.0072474219,1960.0,CINC=0.0072474219,1960-01-01,C_parametro_simulacion,calculado
+PV000293,SC1960,BEL,PAR03,alto,1960.0,milex%PIB=3.39735,1960-01-01,C_parametro_simulacion,calculado
+PV000294,SC1960,BEL,PAR04,democracia_liberal,1960.0,RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000295,SC1960,BEL,PAR05,bajo,1960.0,golpes/intentos 10 años previos=no; RoW=3.0,1960-01-01,C_parametro_simulacion,calculado
+PV000296,SC1960,BEL,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000297,SC1960,BEL,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000298,SC1960,BEL,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000299,SC1960,BEL,PAR09,0.042,1960.0,v2x_corr=0.042,1960-01-01,C_parametro_simulacion,calculado
+PV000300,SC1960,BEL,PAR10,baja,1960.0,inflacion=0.29947,1960-01-01,C_parametro_simulacion,calculado
+PV000301,SC1960,ZAF,PAR01,0.00687,1960.0,PIB=8748596500.5614,1960-01-01,C_parametro_simulacion,calculado
+PV000302,SC1960,ZAF,PAR02,0.0046756975,1960.0,CINC=0.0046756975,1960-01-01,C_parametro_simulacion,calculado
+PV000303,SC1960,ZAF,PAR03,bajo,1960.0,milex%PIB=0.95098,1960-01-01,C_parametro_simulacion,calculado
+PV000304,SC1960,ZAF,PAR04,autocracia_electoral,1960.0,RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000305,SC1960,ZAF,PAR05,medio,1960.0,golpes/intentos 10 años previos=no; RoW=1.0,1960-01-01,C_parametro_simulacion,calculado
+PV000306,SC1960,ZAF,PAR06,,,imp_netas%=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000307,SC1960,ZAF,PAR07,,,rentas%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000308,SC1960,ZAF,PAR08,,,deuda%PIB=None,1960-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000309,SC1960,ZAF,PAR09,0.428,1960.0,v2x_corr=0.428,1960-01-01,C_parametro_simulacion,calculado
+PV000310,SC1960,ZAF,PAR10,baja,1960.0,inflacion=1.28888,1960-01-01,C_parametro_simulacion,calculado
+PV000311,SC1962,USA,PAR01,0.41832,1962.0,PIB=603639413793.103,1962-10-16,C_parametro_simulacion,calculado
+PV000312,SC1962,USA,PAR02,0.20991142,1962.0,CINC=0.20991142,1962-10-16,C_parametro_simulacion,calculado
+PV000313,SC1962,USA,PAR03,muy_alto,1962.0,milex%PIB=9.33167,1962-10-16,C_parametro_simulacion,calculado
+PV000314,SC1962,USA,PAR04,democracia_electoral,1962.0,RoW=2.0,1962-10-16,C_parametro_simulacion,calculado
+PV000315,SC1962,USA,PAR05,bajo,1962.0,golpes/intentos 10 años previos=no; RoW=2.0,1962-10-16,C_parametro_simulacion,calculado
+PV000316,SC1962,USA,PAR06,,,imp_netas%=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000317,SC1962,USA,PAR07,,,rentas%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000318,SC1962,USA,PAR08,,,deuda%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000319,SC1962,USA,PAR09,0.06,1962.0,v2x_corr=0.06,1962-10-16,C_parametro_simulacion,calculado
+PV000320,SC1962,USA,PAR10,baja,1962.0,inflacion=1.19877,1962-10-16,C_parametro_simulacion,calculado
+PV000321,SC1962,CUB,PAR01,,,PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000322,SC1962,CUB,PAR02,0.0036521628,1962.0,CINC=0.0036521628,1962-10-16,C_parametro_simulacion,calculado
+PV000323,SC1962,CUB,PAR03,,,milex%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000324,SC1962,CUB,PAR04,autocracia_cerrada,1962.0,RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000325,SC1962,CUB,PAR05,alto,1962.0,golpes/intentos 10 años previos=sí; RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000326,SC1962,CUB,PAR06,,,imp_netas%=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000327,SC1962,CUB,PAR07,,,rentas%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000328,SC1962,CUB,PAR08,,,deuda%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000329,SC1962,CUB,PAR09,0.492,1962.0,v2x_corr=0.492,1962-10-16,C_parametro_simulacion,calculado
+PV000330,SC1962,CUB,PAR10,,,inflacion=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000331,SC1962,RUS,PAR01,,,PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000332,SC1962,RUS,PAR02,0.1763372,1962.0,CINC=0.1763372,1962-10-16,C_parametro_simulacion,calculado
+PV000333,SC1962,RUS,PAR03,,,milex%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000334,SC1962,RUS,PAR04,autocracia_cerrada,1962.0,RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000335,SC1962,RUS,PAR05,medio,1962.0,golpes/intentos 10 años previos=no; RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000336,SC1962,RUS,PAR06,,,imp_netas%=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000337,SC1962,RUS,PAR07,,,rentas%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000338,SC1962,RUS,PAR08,,,deuda%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000339,SC1962,RUS,PAR09,0.263,1962.0,v2x_corr=0.263,1962-10-16,C_parametro_simulacion,calculado
+PV000340,SC1962,RUS,PAR10,,,inflacion=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000341,SC1962,TUR,PAR01,0.00618,1962.0,PIB=8922222222.22222,1962-10-16,C_parametro_simulacion,calculado
+PV000342,SC1962,TUR,PAR02,0.0071319034,1962.0,CINC=0.0071319034,1962-10-16,C_parametro_simulacion,calculado
+PV000343,SC1962,TUR,PAR03,alto,1962.0,milex%PIB=3.71108,1962-10-16,C_parametro_simulacion,calculado
+PV000344,SC1962,TUR,PAR04,autocracia_cerrada,1962.0,RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000345,SC1962,TUR,PAR05,alto,1962.0,golpes/intentos 10 años previos=sí; RoW=0.0,1962-10-16,C_parametro_simulacion,calculado
+PV000346,SC1962,TUR,PAR06,,,imp_netas%=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000347,SC1962,TUR,PAR07,,,rentas%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000348,SC1962,TUR,PAR08,,,deuda%PIB=None,1962-10-16,C_parametro_simulacion,pendiente_sin_datos
+PV000349,SC1962,TUR,PAR09,0.365,1962.0,v2x_corr=0.365,1962-10-16,C_parametro_simulacion,calculado
+PV000350,SC1962,TUR,PAR10,baja,1962.0,inflacion=3.88832,1962-10-16,C_parametro_simulacion,calculado
+PV000351,SC1973,EGY,PAR01,0.00229,1973.0,PIB=10098534613.44113,1973-10-06,C_parametro_simulacion,calculado
+PV000352,SC1973,EGY,PAR02,0.008649677,1973.0,CINC=0.008649677,1973-10-06,C_parametro_simulacion,calculado
+PV000353,SC1973,EGY,PAR03,muy_alto,1973.0,milex%PIB=13.51351,1973-10-06,C_parametro_simulacion,calculado
+PV000354,SC1973,EGY,PAR04,autocracia_cerrada,1973.0,RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000355,SC1973,EGY,PAR05,medio,1973.0,golpes/intentos 10 años previos=no; RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000356,SC1973,EGY,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000357,SC1973,EGY,PAR07,baja,1973.0,rentas%PIB=1.78737,1973-10-06,C_parametro_simulacion,calculado
+PV000358,SC1973,EGY,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000359,SC1973,EGY,PAR09,0.627,1973.0,v2x_corr=0.627,1973-10-06,C_parametro_simulacion,calculado
+PV000360,SC1973,EGY,PAR10,moderada,1973.0,inflacion=5.11218,1973-10-06,C_parametro_simulacion,calculado
+PV000361,SC1973,SYR,PAR01,0.00073,1973.0,PIB=3239487516.42576,1973-10-06,C_parametro_simulacion,calculado
+PV000362,SC1973,SYR,PAR02,0.0018107152,1973.0,CINC=0.0018107152,1973-10-06,C_parametro_simulacion,calculado
+PV000363,SC1973,SYR,PAR03,muy_alto,1973.0,milex%PIB=15.06947,1973-10-06,C_parametro_simulacion,calculado
+PV000364,SC1973,SYR,PAR04,autocracia_electoral,1973.0,RoW=1.0,1973-10-06,C_parametro_simulacion,calculado
+PV000365,SC1973,SYR,PAR05,alto,1973.0,golpes/intentos 10 años previos=sí; RoW=1.0,1973-10-06,C_parametro_simulacion,calculado
+PV000366,SC1973,SYR,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000367,SC1973,SYR,PAR07,baja,1973.0,rentas%PIB=3.51397,1973-10-06,C_parametro_simulacion,calculado
+PV000368,SC1973,SYR,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000369,SC1973,SYR,PAR09,0.787,1973.0,v2x_corr=0.787,1973-10-06,C_parametro_simulacion,calculado
+PV000370,SC1973,SYR,PAR10,alta,1973.0,inflacion=20.35967,1973-10-06,C_parametro_simulacion,calculado
+PV000371,SC1973,ISR,PAR01,0.00269,1973.0,PIB=11902574258.9313,1973-10-06,C_parametro_simulacion,calculado
+PV000372,SC1973,ISR,PAR02,0.0032918791,1973.0,CINC=0.0032918791,1973-10-06,C_parametro_simulacion,calculado
+PV000373,SC1973,ISR,PAR03,muy_alto,1973.0,milex%PIB=27.85609,1973-10-06,C_parametro_simulacion,calculado
+PV000374,SC1973,ISR,PAR04,democracia_liberal,1973.0,RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000375,SC1973,ISR,PAR05,bajo,1973.0,golpes/intentos 10 años previos=no; RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000376,SC1973,ISR,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000377,SC1973,ISR,PAR07,,,rentas%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000378,SC1973,ISR,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000379,SC1973,ISR,PAR09,0.146,1973.0,v2x_corr=0.146,1973-10-06,C_parametro_simulacion,calculado
+PV000380,SC1973,ISR,PAR10,alta,1973.0,inflacion=20.03238,1973-10-06,C_parametro_simulacion,calculado
+PV000381,SC1973,SAU,PAR01,0.00338,1973.0,PIB=14947435499.32296,1973-10-06,C_parametro_simulacion,calculado
+PV000382,SC1973,SAU,PAR02,0.0027639668,1973.0,CINC=0.0027639668,1973-10-06,C_parametro_simulacion,calculado
+PV000383,SC1973,SAU,PAR03,muy_alto,1973.0,milex%PIB=10.84045,1973-10-06,C_parametro_simulacion,calculado
+PV000384,SC1973,SAU,PAR04,autocracia_cerrada,1973.0,RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000385,SC1973,SAU,PAR05,medio,1973.0,golpes/intentos 10 años previos=no; RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000386,SC1973,SAU,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000387,SC1973,SAU,PAR07,alta,1973.0,rentas%PIB=43.27143,1973-10-06,C_parametro_simulacion,calculado
+PV000388,SC1973,SAU,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000389,SC1973,SAU,PAR09,0.433,1973.0,v2x_corr=0.433,1973-10-06,C_parametro_simulacion,calculado
+PV000390,SC1973,SAU,PAR10,alta,1973.0,inflacion=16.51376,1973-10-06,C_parametro_simulacion,calculado
+PV000391,SC1973,USA,PAR01,0.32264,1973.0,PIB=1425376000000.0,1973-10-06,C_parametro_simulacion,calculado
+PV000392,SC1973,USA,PAR02,0.15881944,1973.0,CINC=0.15881944,1973-10-06,C_parametro_simulacion,calculado
+PV000393,SC1973,USA,PAR03,alto,1973.0,milex%PIB=5.89387,1973-10-06,C_parametro_simulacion,calculado
+PV000394,SC1973,USA,PAR04,democracia_liberal,1973.0,RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000395,SC1973,USA,PAR05,bajo,1973.0,golpes/intentos 10 años previos=no; RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000396,SC1973,USA,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000397,SC1973,USA,PAR07,baja,1973.0,rentas%PIB=0.91133,1973-10-06,C_parametro_simulacion,calculado
+PV000398,SC1973,USA,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000399,SC1973,USA,PAR09,0.073,1973.0,v2x_corr=0.073,1973-10-06,C_parametro_simulacion,calculado
+PV000400,SC1973,USA,PAR10,moderada,1973.0,inflacion=6.17776,1973-10-06,C_parametro_simulacion,calculado
+PV000401,SC1973,RUS,PAR01,,,PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000402,SC1973,RUS,PAR02,0.16740984,1973.0,CINC=0.16740984,1973-10-06,C_parametro_simulacion,calculado
+PV000403,SC1973,RUS,PAR03,,,milex%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000404,SC1973,RUS,PAR04,autocracia_cerrada,1973.0,RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000405,SC1973,RUS,PAR05,medio,1973.0,golpes/intentos 10 años previos=no; RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000406,SC1973,RUS,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000407,SC1973,RUS,PAR07,,,rentas%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000408,SC1973,RUS,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000409,SC1973,RUS,PAR09,0.333,1973.0,v2x_corr=0.333,1973-10-06,C_parametro_simulacion,calculado
+PV000410,SC1973,RUS,PAR10,,,inflacion=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000411,SC1973,IRN,PAR01,0.00613,1973.0,PIB=27081698249.50829,1973-10-06,C_parametro_simulacion,calculado
+PV000412,SC1973,IRN,PAR02,0.0069415788,1973.0,CINC=0.0069415788,1973-10-06,C_parametro_simulacion,calculado
+PV000413,SC1973,IRN,PAR03,medio,1973.0,milex%PIB=1.86471,1973-10-06,C_parametro_simulacion,calculado
+PV000414,SC1973,IRN,PAR04,autocracia_cerrada,1973.0,RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000415,SC1973,IRN,PAR05,medio,1973.0,golpes/intentos 10 años previos=no; RoW=0.0,1973-10-06,C_parametro_simulacion,calculado
+PV000416,SC1973,IRN,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000417,SC1973,IRN,PAR07,alta,1973.0,rentas%PIB=19.2995,1973-10-06,C_parametro_simulacion,calculado
+PV000418,SC1973,IRN,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000419,SC1973,IRN,PAR09,0.399,1973.0,v2x_corr=0.399,1973-10-06,C_parametro_simulacion,calculado
+PV000420,SC1973,IRN,PAR10,moderada,1973.0,inflacion=9.81949,1973-10-06,C_parametro_simulacion,calculado
+PV000421,SC1973,JPN,PAR01,0.09993,1973.0,PIB=441460582535.9208,1973-10-06,C_parametro_simulacion,calculado
+PV000422,SC1973,JPN,PAR02,0.058746405,1973.0,CINC=0.058746405,1973-10-06,C_parametro_simulacion,calculado
+PV000423,SC1973,JPN,PAR03,bajo,1973.0,milex%PIB=0.81501,1973-10-06,C_parametro_simulacion,calculado
+PV000424,SC1973,JPN,PAR04,democracia_liberal,1973.0,RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000425,SC1973,JPN,PAR05,bajo,1973.0,golpes/intentos 10 años previos=no; RoW=3.0,1973-10-06,C_parametro_simulacion,calculado
+PV000426,SC1973,JPN,PAR06,,,imp_netas%=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000427,SC1973,JPN,PAR07,baja,1973.0,rentas%PIB=0.21932,1973-10-06,C_parametro_simulacion,calculado
+PV000428,SC1973,JPN,PAR08,,,deuda%PIB=None,1973-10-06,C_parametro_simulacion,pendiente_sin_datos
+PV000429,SC1973,JPN,PAR09,0.115,1973.0,v2x_corr=0.115,1973-10-06,C_parametro_simulacion,calculado
+PV000430,SC1973,JPN,PAR10,moderada,1973.0,inflacion=11.60862,1973-10-06,C_parametro_simulacion,calculado
+PV000431,SC1979,IRN,PAR01,0.00945,1979.0,PIB=90391877325.92848,1979-01-01,C_parametro_simulacion,calculado
+PV000432,SC1979,IRN,PAR02,0.0094860792,1979.0,CINC=0.0094860792,1979-01-01,C_parametro_simulacion,calculado
+PV000433,SC1979,IRN,PAR03,alto,1979.0,milex%PIB=5.79725,1979-01-01,C_parametro_simulacion,calculado
+PV000434,SC1979,IRN,PAR04,autocracia_cerrada,1979.0,RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000435,SC1979,IRN,PAR05,medio,1979.0,golpes/intentos 10 años previos=no; RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000436,SC1979,IRN,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000437,SC1979,IRN,PAR07,alta,1979.0,rentas%PIB=36.96249,1979-01-01,C_parametro_simulacion,calculado
+PV000438,SC1979,IRN,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000439,SC1979,IRN,PAR09,0.538,1979.0,v2x_corr=0.538,1979-01-01,C_parametro_simulacion,calculado
+PV000440,SC1979,IRN,PAR10,moderada,1979.0,inflacion=10.48724,1979-01-01,C_parametro_simulacion,calculado
+PV000441,SC1979,AFG,PAR01,,,PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000442,SC1979,AFG,PAR02,0.0014461984,1979.0,CINC=0.0014461984,1979-01-01,C_parametro_simulacion,calculado
+PV000443,SC1979,AFG,PAR03,medio,1977.0,milex%PIB=2.01147,1979-01-01,C_parametro_simulacion,calculado
+PV000444,SC1979,AFG,PAR04,autocracia_cerrada,1979.0,RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000445,SC1979,AFG,PAR05,alto,1979.0,golpes/intentos 10 años previos=sí; RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000446,SC1979,AFG,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000447,SC1979,AFG,PAR07,baja,1979.0,rentas%PIB=2.44138,1979-01-01,C_parametro_simulacion,calculado
+PV000448,SC1979,AFG,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000449,SC1979,AFG,PAR09,0.561,1979.0,v2x_corr=0.561,1979-01-01,C_parametro_simulacion,calculado
+PV000450,SC1979,AFG,PAR10,,,inflacion=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000451,SC1979,RUS,PAR01,,,PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000452,SC1979,RUS,PAR02,0.16732568,1979.0,CINC=0.16732568,1979-01-01,C_parametro_simulacion,calculado
+PV000453,SC1979,RUS,PAR03,,,milex%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000454,SC1979,RUS,PAR04,autocracia_cerrada,1979.0,RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000455,SC1979,RUS,PAR05,medio,1979.0,golpes/intentos 10 años previos=no; RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000456,SC1979,RUS,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000457,SC1979,RUS,PAR07,,,rentas%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000458,SC1979,RUS,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000459,SC1979,RUS,PAR09,0.333,1979.0,v2x_corr=0.333,1979-01-01,C_parametro_simulacion,calculado
+PV000460,SC1979,RUS,PAR10,,,inflacion=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000461,SC1979,USA,PAR01,0.27472,1979.0,PIB=2627333000000.0,1979-01-01,C_parametro_simulacion,calculado
+PV000462,SC1979,USA,PAR02,0.13721652,1979.0,CINC=0.13721652,1979-01-01,C_parametro_simulacion,calculado
+PV000463,SC1979,USA,PAR03,alto,1979.0,milex%PIB=4.95199,1979-01-01,C_parametro_simulacion,calculado
+PV000464,SC1979,USA,PAR04,democracia_liberal,1979.0,RoW=3.0,1979-01-01,C_parametro_simulacion,calculado
+PV000465,SC1979,USA,PAR05,bajo,1979.0,golpes/intentos 10 años previos=no; RoW=3.0,1979-01-01,C_parametro_simulacion,calculado
+PV000466,SC1979,USA,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000467,SC1979,USA,PAR07,media,1979.0,rentas%PIB=5.04457,1979-01-01,C_parametro_simulacion,calculado
+PV000468,SC1979,USA,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000469,SC1979,USA,PAR09,0.054,1979.0,v2x_corr=0.054,1979-01-01,C_parametro_simulacion,calculado
+PV000470,SC1979,USA,PAR10,moderada,1979.0,inflacion=11.25447,1979-01-01,C_parametro_simulacion,calculado
+PV000471,SC1979,CHN,PAR01,0.01867,1979.0,PIB=178573913043.47827,1979-01-01,C_parametro_simulacion,calculado
+PV000472,SC1979,CHN,PAR02,0.11984932,1979.0,CINC=0.11984932,1979-01-01,C_parametro_simulacion,calculado
+PV000473,SC1979,CHN,PAR03,,,milex%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000474,SC1979,CHN,PAR04,autocracia_cerrada,1979.0,RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000475,SC1979,CHN,PAR05,medio,1979.0,golpes/intentos 10 años previos=no; RoW=0.0,1979-01-01,C_parametro_simulacion,calculado
+PV000476,SC1979,CHN,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000477,SC1979,CHN,PAR07,alta,1979.0,rentas%PIB=17.09992,1979-01-01,C_parametro_simulacion,calculado
+PV000478,SC1979,CHN,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000479,SC1979,CHN,PAR09,0.322,1979.0,v2x_corr=0.322,1979-01-01,C_parametro_simulacion,calculado
+PV000480,SC1979,CHN,PAR10,,,inflacion=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000481,SC1979,GBR,PAR01,0.0459,1979.0,PIB=438994070309.19104,1979-01-01,C_parametro_simulacion,calculado
+PV000482,SC1979,GBR,PAR02,0.02672611,1979.0,CINC=0.02672611,1979-01-01,C_parametro_simulacion,calculado
+PV000483,SC1979,GBR,PAR03,alto,1979.0,milex%PIB=4.67976,1979-01-01,C_parametro_simulacion,calculado
+PV000484,SC1979,GBR,PAR04,democracia_liberal,1979.0,RoW=3.0,1979-01-01,C_parametro_simulacion,calculado
+PV000485,SC1979,GBR,PAR05,bajo,1979.0,golpes/intentos 10 años previos=no; RoW=3.0,1979-01-01,C_parametro_simulacion,calculado
+PV000486,SC1979,GBR,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000487,SC1979,GBR,PAR07,baja,1979.0,rentas%PIB=2.59136,1979-01-01,C_parametro_simulacion,calculado
+PV000488,SC1979,GBR,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000489,SC1979,GBR,PAR09,0.027,1979.0,v2x_corr=0.027,1979-01-01,C_parametro_simulacion,calculado
+PV000490,SC1979,GBR,PAR10,moderada,1979.0,inflacion=13.42128,1979-01-01,C_parametro_simulacion,calculado
+PV000491,SC1979,NIC,PAR01,0.00016,1979.0,PIB=1567599981.69806,1979-01-01,C_parametro_simulacion,calculado
+PV000492,SC1979,NIC,PAR02,0.00029345992,1979.0,CINC=0.00029345992,1979-01-01,C_parametro_simulacion,calculado
+PV000493,SC1979,NIC,PAR03,alto,1979.0,milex%PIB=3.10479,1979-01-01,C_parametro_simulacion,calculado
+PV000494,SC1979,NIC,PAR04,autocracia_electoral,1979.0,RoW=1.0,1979-01-01,C_parametro_simulacion,calculado
+PV000495,SC1979,NIC,PAR05,medio,1979.0,golpes/intentos 10 años previos=no; RoW=1.0,1979-01-01,C_parametro_simulacion,calculado
+PV000496,SC1979,NIC,PAR06,,,imp_netas%=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000497,SC1979,NIC,PAR07,media,1979.0,rentas%PIB=5.46822,1979-01-01,C_parametro_simulacion,calculado
+PV000498,SC1979,NIC,PAR08,,,deuda%PIB=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000499,SC1979,NIC,PAR09,0.846,1979.0,v2x_corr=0.846,1979-01-01,C_parametro_simulacion,calculado
+PV000500,SC1979,NIC,PAR10,,,inflacion=None,1979-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV000501,SC1982,ARG,PAR01,0.00762,1982.0,PIB=84307486836.72401,1982-04-02,C_parametro_simulacion,calculado
+PV000502,SC1982,ARG,PAR02,0.006810192,1982.0,CINC=0.006810192,1982-04-02,C_parametro_simulacion,calculado
+PV000503,SC1982,ARG,PAR03,medio,1982.0,milex%PIB=2.70456,1982-04-02,C_parametro_simulacion,calculado
+PV000504,SC1982,ARG,PAR04,autocracia_cerrada,1982.0,RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000505,SC1982,ARG,PAR05,alto,1982.0,golpes/intentos 10 años previos=sí; RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000506,SC1982,ARG,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000507,SC1982,ARG,PAR07,baja,1982.0,rentas%PIB=2.91716,1982-04-02,C_parametro_simulacion,calculado
+PV000508,SC1982,ARG,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000509,SC1982,ARG,PAR09,0.518,1982.0,v2x_corr=0.518,1982-04-02,C_parametro_simulacion,calculado
+PV000510,SC1982,ARG,PAR10,,,inflacion=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000511,SC1982,GBR,PAR01,0.04657,1982.0,PIB=515048916841.3696,1982-04-02,C_parametro_simulacion,calculado
+PV000512,SC1982,GBR,PAR02,0.023727924,1982.0,CINC=0.023727924,1982-04-02,C_parametro_simulacion,calculado
+PV000513,SC1982,GBR,PAR03,alto,1982.0,milex%PIB=5.38133,1982-04-02,C_parametro_simulacion,calculado
+PV000514,SC1982,GBR,PAR04,democracia_liberal,1982.0,RoW=3.0,1982-04-02,C_parametro_simulacion,calculado
+PV000515,SC1982,GBR,PAR05,bajo,1982.0,golpes/intentos 10 años previos=no; RoW=3.0,1982-04-02,C_parametro_simulacion,calculado
+PV000516,SC1982,GBR,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000517,SC1982,GBR,PAR07,baja,1982.0,rentas%PIB=2.14381,1982-04-02,C_parametro_simulacion,calculado
+PV000518,SC1982,GBR,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000519,SC1982,GBR,PAR09,0.03,1982.0,v2x_corr=0.03,1982-04-02,C_parametro_simulacion,calculado
+PV000520,SC1982,GBR,PAR10,moderada,1982.0,inflacion=8.59886,1982-04-02,C_parametro_simulacion,calculado
+PV000521,SC1982,MEX,PAR01,0.01669,1982.0,PIB=184602611609.51736,1982-04-02,C_parametro_simulacion,calculado
+PV000522,SC1982,MEX,PAR02,0.012619074,1982.0,CINC=0.012619074,1982-04-02,C_parametro_simulacion,calculado
+PV000523,SC1982,MEX,PAR03,bajo,1982.0,milex%PIB=0.49542,1982-04-02,C_parametro_simulacion,calculado
+PV000524,SC1982,MEX,PAR04,autocracia_electoral,1982.0,RoW=1.0,1982-04-02,C_parametro_simulacion,calculado
+PV000525,SC1982,MEX,PAR05,medio,1982.0,golpes/intentos 10 años previos=no; RoW=1.0,1982-04-02,C_parametro_simulacion,calculado
+PV000526,SC1982,MEX,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000527,SC1982,MEX,PAR07,media,1982.0,rentas%PIB=8.40546,1982-04-02,C_parametro_simulacion,calculado
+PV000528,SC1982,MEX,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000529,SC1982,MEX,PAR09,0.782,1982.0,v2x_corr=0.782,1982-04-02,C_parametro_simulacion,calculado
+PV000530,SC1982,MEX,PAR10,muy_alta,1982.0,inflacion=58.91342,1982-04-02,C_parametro_simulacion,calculado
+PV000531,SC1982,BRA,PAR01,0.02453,1982.0,PIB=271314113768.41696,1982-04-02,C_parametro_simulacion,calculado
+PV000532,SC1982,BRA,PAR02,0.022859195,1982.0,CINC=0.022859195,1982-04-02,C_parametro_simulacion,calculado
+PV000533,SC1982,BRA,PAR03,bajo,1982.0,milex%PIB=1.30353,1982-04-02,C_parametro_simulacion,calculado
+PV000534,SC1982,BRA,PAR04,autocracia_cerrada,1982.0,RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000535,SC1982,BRA,PAR05,medio,1982.0,golpes/intentos 10 años previos=no; RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000536,SC1982,BRA,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000537,SC1982,BRA,PAR07,baja,1982.0,rentas%PIB=2.68176,1982-04-02,C_parametro_simulacion,calculado
+PV000538,SC1982,BRA,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000539,SC1982,BRA,PAR09,0.696,1982.0,v2x_corr=0.696,1982-04-02,C_parametro_simulacion,calculado
+PV000540,SC1982,BRA,PAR10,muy_alta,1982.0,inflacion=100.54336,1982-04-02,C_parametro_simulacion,calculado
+PV000541,SC1982,CHL,PAR01,0.00178,1982.0,PIB=19710229067.28645,1982-04-02,C_parametro_simulacion,calculado
+PV000542,SC1982,CHL,PAR02,0.0027473569,1982.0,CINC=0.0027473569,1982-04-02,C_parametro_simulacion,calculado
+PV000543,SC1982,CHL,PAR03,muy_alto,1982.0,milex%PIB=8.87727,1982-04-02,C_parametro_simulacion,calculado
+PV000544,SC1982,CHL,PAR04,autocracia_cerrada,1982.0,RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000545,SC1982,CHL,PAR05,alto,1982.0,golpes/intentos 10 años previos=sí; RoW=0.0,1982-04-02,C_parametro_simulacion,calculado
+PV000546,SC1982,CHL,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000547,SC1982,CHL,PAR07,media,1982.0,rentas%PIB=6.6294,1982-04-02,C_parametro_simulacion,calculado
+PV000548,SC1982,CHL,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000549,SC1982,CHL,PAR09,0.283,1982.0,v2x_corr=0.283,1982-04-02,C_parametro_simulacion,calculado
+PV000550,SC1982,CHL,PAR10,moderada,1982.0,inflacion=9.94103,1982-04-02,C_parametro_simulacion,calculado
+PV000551,SC1982,USA,PAR01,0.30233,1982.0,PIB=3343789000000.0,1982-04-02,C_parametro_simulacion,calculado
+PV000552,SC1982,USA,PAR02,0.12958947,1982.0,CINC=0.12958947,1982-04-02,C_parametro_simulacion,calculado
+PV000553,SC1982,USA,PAR03,muy_alto,1982.0,milex%PIB=6.81406,1982-04-02,C_parametro_simulacion,calculado
+PV000554,SC1982,USA,PAR04,democracia_liberal,1982.0,RoW=3.0,1982-04-02,C_parametro_simulacion,calculado
+PV000555,SC1982,USA,PAR05,bajo,1982.0,golpes/intentos 10 años previos=no; RoW=3.0,1982-04-02,C_parametro_simulacion,calculado
+PV000556,SC1982,USA,PAR06,,,imp_netas%=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000557,SC1982,USA,PAR07,baja,1982.0,rentas%PIB=2.39193,1982-04-02,C_parametro_simulacion,calculado
+PV000558,SC1982,USA,PAR08,,,deuda%PIB=None,1982-04-02,C_parametro_simulacion,pendiente_sin_datos
+PV000559,SC1982,USA,PAR09,0.078,1982.0,v2x_corr=0.078,1982-04-02,C_parametro_simulacion,calculado
+PV000560,SC1982,USA,PAR10,moderada,1982.0,inflacion=6.13143,1982-04-02,C_parametro_simulacion,calculado
+PV000561,SC1989,DEU,PAR01,0.07044,1989.0,PIB=1404092925205.4507,1989-11-09,C_parametro_simulacion,calculado
+PV000562,SC1989,DEU,PAR02,0.027101478,1989.0,CINC=0.027101478,1989-11-09,C_parametro_simulacion,calculado
+PV000563,SC1989,DEU,PAR03,medio,1989.0,milex%PIB=2.5207,1989-11-09,C_parametro_simulacion,calculado
+PV000564,SC1989,DEU,PAR04,democracia_liberal,1989.0,RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000565,SC1989,DEU,PAR05,bajo,1989.0,golpes/intentos 10 años previos=no; RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000566,SC1989,DEU,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000567,SC1989,DEU,PAR07,baja,1989.0,rentas%PIB=0.17431,1989-11-09,C_parametro_simulacion,calculado
+PV000568,SC1989,DEU,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000569,SC1989,DEU,PAR09,0.011,1989.0,v2x_corr=0.011,1989-11-09,C_parametro_simulacion,calculado
+PV000570,SC1989,DEU,PAR10,baja,1989.0,inflacion=2.78057,1989-11-09,C_parametro_simulacion,calculado
+PV000571,SC1989,DDR,PAR01,,,PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000572,SC1989,DDR,PAR02,0.0096714227,1989.0,CINC=0.0096714227,1989-11-09,C_parametro_simulacion,calculado
+PV000573,SC1989,DDR,PAR03,,,milex%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000574,SC1989,DDR,PAR04,autocracia_cerrada,1989.0,RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000575,SC1989,DDR,PAR05,medio,1989.0,golpes/intentos 10 años previos=no; RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000576,SC1989,DDR,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000577,SC1989,DDR,PAR07,,,rentas%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000578,SC1989,DDR,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000579,SC1989,DDR,PAR09,0.198,1989.0,v2x_corr=0.198,1989-11-09,C_parametro_simulacion,calculado
+PV000580,SC1989,DDR,PAR10,,,inflacion=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000581,SC1989,POL,PAR01,,,PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000582,SC1989,POL,PAR02,0.011798322,1989.0,CINC=0.011798322,1989-11-09,C_parametro_simulacion,calculado
+PV000583,SC1989,POL,PAR03,medio,1989.0,milex%PIB=1.81712,1989-11-09,C_parametro_simulacion,calculado
+PV000584,SC1989,POL,PAR04,autocracia_electoral,1989.0,RoW=1.0,1989-11-09,C_parametro_simulacion,calculado
+PV000585,SC1989,POL,PAR05,medio,1989.0,golpes/intentos 10 años previos=no; RoW=1.0,1989-11-09,C_parametro_simulacion,calculado
+PV000586,SC1989,POL,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000587,SC1989,POL,PAR07,,,rentas%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000588,SC1989,POL,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000589,SC1989,POL,PAR09,0.204,1989.0,v2x_corr=0.204,1989-11-09,C_parametro_simulacion,calculado
+PV000590,SC1989,POL,PAR10,muy_alta,1989.0,inflacion=244.55093,1989-11-09,C_parametro_simulacion,calculado
+PV000591,SC1989,HUN,PAR01,0.00153,1989.0,PIB=30422508937.56702,1989-11-09,C_parametro_simulacion,calculado
+PV000592,SC1989,HUN,PAR02,0.0030641141,1989.0,CINC=0.0030641141,1989-11-09,C_parametro_simulacion,calculado
+PV000593,SC1989,HUN,PAR03,medio,1989.0,milex%PIB=2.78616,1989-11-09,C_parametro_simulacion,calculado
+PV000594,SC1989,HUN,PAR04,autocracia_electoral,1989.0,RoW=1.0,1989-11-09,C_parametro_simulacion,calculado
+PV000595,SC1989,HUN,PAR05,medio,1989.0,golpes/intentos 10 años previos=no; RoW=1.0,1989-11-09,C_parametro_simulacion,calculado
+PV000596,SC1989,HUN,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000597,SC1989,HUN,PAR07,,,rentas%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000598,SC1989,HUN,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000599,SC1989,HUN,PAR09,0.448,1989.0,v2x_corr=0.448,1989-11-09,C_parametro_simulacion,calculado
+PV000600,SC1989,HUN,PAR10,alta,1989.0,inflacion=17.14915,1989-11-09,C_parametro_simulacion,calculado
+PV000601,SC1989,CZE,PAR01,,,PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000602,SC1989,CZE,PAR02,0.0077113053,1989.0,CINC=0.0077113053,1989-11-09,C_parametro_simulacion,calculado
+PV000603,SC1989,CZE,PAR03,,,milex%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000604,SC1989,CZE,PAR04,autocracia_cerrada,1989.0,RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000605,SC1989,CZE,PAR05,medio,1989.0,golpes/intentos 10 años previos=no; RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000606,SC1989,CZE,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000607,SC1989,CZE,PAR07,,,rentas%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000608,SC1989,CZE,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000609,SC1989,CZE,PAR09,0.535,1989.0,v2x_corr=0.535,1989-11-09,C_parametro_simulacion,calculado
+PV000610,SC1989,CZE,PAR10,,,inflacion=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000611,SC1989,RUS,PAR01,0.02542,1989.0,PIB=506631299734.748,1989-11-09,C_parametro_simulacion,calculado
+PV000612,SC1989,RUS,PAR02,0.13682038,1989.0,CINC=0.13682038,1989-11-09,C_parametro_simulacion,calculado
+PV000613,SC1989,RUS,PAR03,,,milex%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000614,SC1989,RUS,PAR04,autocracia_cerrada,1989.0,RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000615,SC1989,RUS,PAR05,medio,1989.0,golpes/intentos 10 años previos=no; RoW=0.0,1989-11-09,C_parametro_simulacion,calculado
+PV000616,SC1989,RUS,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000617,SC1989,RUS,PAR07,media,1989.0,rentas%PIB=9.38146,1989-11-09,C_parametro_simulacion,calculado
+PV000618,SC1989,RUS,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000619,SC1989,RUS,PAR09,0.409,1989.0,v2x_corr=0.409,1989-11-09,C_parametro_simulacion,calculado
+PV000620,SC1989,RUS,PAR10,,,inflacion=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000621,SC1989,USA,PAR01,0.28303,1989.0,PIB=5641580000000.0,1989-11-09,C_parametro_simulacion,calculado
+PV000622,SC1989,USA,PAR02,0.1482387,1989.0,CINC=0.1482387,1989-11-09,C_parametro_simulacion,calculado
+PV000623,SC1989,USA,PAR03,alto,1989.0,milex%PIB=5.87121,1989-11-09,C_parametro_simulacion,calculado
+PV000624,SC1989,USA,PAR04,democracia_liberal,1989.0,RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000625,SC1989,USA,PAR05,bajo,1989.0,golpes/intentos 10 años previos=no; RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000626,SC1989,USA,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000627,SC1989,USA,PAR07,baja,1989.0,rentas%PIB=1.07194,1989-11-09,C_parametro_simulacion,calculado
+PV000628,SC1989,USA,PAR08,amplio,1989.0,deuda%PIB=39.1284,1989-11-09,C_parametro_simulacion,calculado
+PV000629,SC1989,USA,PAR09,0.071,1989.0,v2x_corr=0.071,1989-11-09,C_parametro_simulacion,calculado
+PV000630,SC1989,USA,PAR10,baja,1989.0,inflacion=4.827,1989-11-09,C_parametro_simulacion,calculado
+PV000631,SC1989,FRA,PAR01,0.05101,1989.0,PIB=1016742237302.0768,1989-11-09,C_parametro_simulacion,calculado
+PV000632,SC1989,FRA,PAR02,0.019117827,1989.0,CINC=0.019117827,1989-11-09,C_parametro_simulacion,calculado
+PV000633,SC1989,FRA,PAR03,medio,1989.0,milex%PIB=2.91783,1989-11-09,C_parametro_simulacion,calculado
+PV000634,SC1989,FRA,PAR04,democracia_liberal,1989.0,RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000635,SC1989,FRA,PAR05,bajo,1989.0,golpes/intentos 10 años previos=no; RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000636,SC1989,FRA,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000637,SC1989,FRA,PAR07,baja,1989.0,rentas%PIB=0.12192,1989-11-09,C_parametro_simulacion,calculado
+PV000638,SC1989,FRA,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000639,SC1989,FRA,PAR09,0.059,1989.0,v2x_corr=0.059,1989-11-09,C_parametro_simulacion,calculado
+PV000640,SC1989,FRA,PAR10,baja,1989.0,inflacion=3.4983,1989-11-09,C_parametro_simulacion,calculado
+PV000641,SC1989,GBR,PAR01,0.0465,1989.0,PIB=926884816753.9268,1989-11-09,C_parametro_simulacion,calculado
+PV000642,SC1989,GBR,PAR02,0.025360333,1989.0,CINC=0.025360333,1989-11-09,C_parametro_simulacion,calculado
+PV000643,SC1989,GBR,PAR03,alto,1989.0,milex%PIB=4.04095,1989-11-09,C_parametro_simulacion,calculado
+PV000644,SC1989,GBR,PAR04,democracia_liberal,1989.0,RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000645,SC1989,GBR,PAR05,bajo,1989.0,golpes/intentos 10 años previos=no; RoW=3.0,1989-11-09,C_parametro_simulacion,calculado
+PV000646,SC1989,GBR,PAR06,,,imp_netas%=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000647,SC1989,GBR,PAR07,baja,1989.0,rentas%PIB=0.82395,1989-11-09,C_parametro_simulacion,calculado
+PV000648,SC1989,GBR,PAR08,,,deuda%PIB=None,1989-11-09,C_parametro_simulacion,pendiente_sin_datos
+PV000649,SC1989,GBR,PAR09,0.03,1989.0,v2x_corr=0.03,1989-11-09,C_parametro_simulacion,calculado
+PV000650,SC1989,GBR,PAR10,moderada,1989.0,inflacion=5.76025,1989-11-09,C_parametro_simulacion,calculado
+PV000651,SC1991,RUS,PAR01,0.02191,1991.0,PIB=517962962962.96295,1991-12-26,C_parametro_simulacion,calculado
+PV000652,SC1991,RUS,PAR02,0.10323294,1991.0,CINC=0.10323294,1991-12-26,C_parametro_simulacion,calculado
+PV000653,SC1991,RUS,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000654,SC1991,RUS,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000655,SC1991,RUS,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000656,SC1991,RUS,PAR06,exportador_neto,1991.0,imp_netas%=-39.71503,1991-12-26,C_parametro_simulacion,calculado
+PV000657,SC1991,RUS,PAR07,media,1991.0,rentas%PIB=6.26609,1991-12-26,C_parametro_simulacion,calculado
+PV000658,SC1991,RUS,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000659,SC1991,RUS,PAR09,0.54,1991.0,v2x_corr=0.54,1991-12-26,C_parametro_simulacion,calculado
+PV000660,SC1991,RUS,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000661,SC1991,UKR,PAR01,0.00327,1991.0,PIB=77350733982.44579,1991-12-26,C_parametro_simulacion,calculado
+PV000662,SC1991,UKR,PAR02,0.023163656,1991.0,CINC=0.023163656,1991-12-26,C_parametro_simulacion,calculado
+PV000663,SC1991,UKR,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000664,SC1991,UKR,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000665,SC1991,UKR,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000666,SC1991,UKR,PAR06,media,1991.0,imp_netas%=53.69813,1991-12-26,C_parametro_simulacion,calculado
+PV000667,SC1991,UKR,PAR07,baja,1991.0,rentas%PIB=2.52691,1991-12-26,C_parametro_simulacion,calculado
+PV000668,SC1991,UKR,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000669,SC1991,UKR,PAR09,0.427,1991.0,v2x_corr=0.427,1991-12-26,C_parametro_simulacion,calculado
+PV000670,SC1991,UKR,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000671,SC1991,BLR,PAR01,0.00078,1991.0,PIB=18404907975.46012,1991-12-26,C_parametro_simulacion,calculado
+PV000672,SC1991,BLR,PAR02,0.0022595255,1991.0,CINC=0.0022595255,1991-12-26,C_parametro_simulacion,calculado
+PV000673,SC1991,BLR,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000674,SC1991,BLR,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000675,SC1991,BLR,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000676,SC1991,BLR,PAR06,alta,1991.0,imp_netas%=90.3009,1991-12-26,C_parametro_simulacion,calculado
+PV000677,SC1991,BLR,PAR07,baja,1991.0,rentas%PIB=0.69962,1991-12-26,C_parametro_simulacion,calculado
+PV000678,SC1991,BLR,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000679,SC1991,BLR,PAR09,0.419,1991.0,v2x_corr=0.419,1991-12-26,C_parametro_simulacion,calculado
+PV000680,SC1991,BLR,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000681,SC1991,KAZ,PAR01,0.00105,1991.0,PIB=24923076923.07692,1991-12-26,C_parametro_simulacion,calculado
+PV000682,SC1991,KAZ,PAR02,0.0051778965,1991.0,CINC=0.0051778965,1991-12-26,C_parametro_simulacion,calculado
+PV000683,SC1991,KAZ,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000684,SC1991,KAZ,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000685,SC1991,KAZ,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000686,SC1991,KAZ,PAR06,exportador_neto,1991.0,imp_netas%=-21.47302,1991-12-26,C_parametro_simulacion,calculado
+PV000687,SC1991,KAZ,PAR07,media,1991.0,rentas%PIB=9.809,1991-12-26,C_parametro_simulacion,calculado
+PV000688,SC1991,KAZ,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000689,SC1991,KAZ,PAR09,0.682,1991.0,v2x_corr=0.682,1991-12-26,C_parametro_simulacion,calculado
+PV000690,SC1991,KAZ,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000691,SC1991,GEO,PAR01,0.00027,1991.0,PIB=6324503311.25828,1991-12-26,C_parametro_simulacion,calculado
+PV000692,SC1991,GEO,PAR02,0.0010947644,1991.0,CINC=0.0010947644,1991-12-26,C_parametro_simulacion,calculado
+PV000693,SC1991,GEO,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000694,SC1991,GEO,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000695,SC1991,GEO,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000696,SC1991,GEO,PAR06,alta,1991.0,imp_netas%=87.54243,1991-12-26,C_parametro_simulacion,calculado
+PV000697,SC1991,GEO,PAR07,baja,1991.0,rentas%PIB=0.34956,1991-12-26,C_parametro_simulacion,calculado
+PV000698,SC1991,GEO,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000699,SC1991,GEO,PAR09,0.748,1991.0,v2x_corr=0.748,1991-12-26,C_parametro_simulacion,calculado
+PV000700,SC1991,GEO,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000701,SC1991,ARM,PAR01,9e-05,1991.0,PIB=2069870129.87013,1991-12-26,C_parametro_simulacion,calculado
+PV000702,SC1991,ARM,PAR02,0.00047907117,1991.0,CINC=0.00047907117,1991-12-26,C_parametro_simulacion,calculado
+PV000703,SC1991,ARM,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000704,SC1991,ARM,PAR04,democracia_electoral,1991.0,RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000705,SC1991,ARM,PAR05,bajo,1991.0,golpes/intentos 10 años previos=no; RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000706,SC1991,ARM,PAR06,alta,1990.0,imp_netas%=100.6559,1991-12-26,C_parametro_simulacion,calculado
+PV000707,SC1991,ARM,PAR07,baja,1991.0,rentas%PIB=0.0,1991-12-26,C_parametro_simulacion,calculado
+PV000708,SC1991,ARM,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000709,SC1991,ARM,PAR09,0.398,1991.0,v2x_corr=0.398,1991-12-26,C_parametro_simulacion,calculado
+PV000710,SC1991,ARM,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000711,SC1991,AZE,PAR01,0.00023,1991.0,PIB=5344000000.0,1991-12-26,C_parametro_simulacion,calculado
+PV000712,SC1991,AZE,PAR02,0.00089291018,1991.0,CINC=0.00089291018,1991-12-26,C_parametro_simulacion,calculado
+PV000713,SC1991,AZE,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000714,SC1991,AZE,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000715,SC1991,AZE,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000716,SC1991,AZE,PAR06,baja,1991.0,imp_netas%=16.27331,1991-12-26,C_parametro_simulacion,calculado
+PV000717,SC1991,AZE,PAR07,media,1991.0,rentas%PIB=8.68334,1991-12-26,C_parametro_simulacion,calculado
+PV000718,SC1991,AZE,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000719,SC1991,AZE,PAR09,0.656,1991.0,v2x_corr=0.656,1991-12-26,C_parametro_simulacion,calculado
+PV000720,SC1991,AZE,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000721,SC1991,MDA,PAR01,0.00013,1991.0,PIB=3094565870.64237,1991-12-26,C_parametro_simulacion,calculado
+PV000722,SC1991,MDA,PAR02,0.0009099188,1991.0,CINC=0.0009099188,1991-12-26,C_parametro_simulacion,calculado
+PV000723,SC1991,MDA,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000724,SC1991,MDA,PAR04,autocracia_electoral,1991.0,RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000725,SC1991,MDA,PAR05,medio,1991.0,golpes/intentos 10 años previos=no; RoW=1.0,1991-12-26,C_parametro_simulacion,calculado
+PV000726,SC1991,MDA,PAR06,alta,1991.0,imp_netas%=99.40026,1991-12-26,C_parametro_simulacion,calculado
+PV000727,SC1991,MDA,PAR07,,,rentas%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000728,SC1991,MDA,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000729,SC1991,MDA,PAR09,0.649,1991.0,v2x_corr=0.649,1991-12-26,C_parametro_simulacion,calculado
+PV000730,SC1991,MDA,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000731,SC1991,EST,PAR01,,,PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000732,SC1991,EST,PAR02,0.0002573774,1991.0,CINC=0.0002573774,1991-12-26,C_parametro_simulacion,calculado
+PV000733,SC1991,EST,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000734,SC1991,EST,PAR04,democracia_electoral,1991.0,RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000735,SC1991,EST,PAR05,bajo,1991.0,golpes/intentos 10 años previos=no; RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000736,SC1991,EST,PAR06,media,1991.0,imp_netas%=40.12335,1991-12-26,C_parametro_simulacion,calculado
+PV000737,SC1991,EST,PAR07,,,rentas%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000738,SC1991,EST,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000739,SC1991,EST,PAR09,0.171,1991.0,v2x_corr=0.171,1991-12-26,C_parametro_simulacion,calculado
+PV000740,SC1991,EST,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000741,SC1991,LVA,PAR01,,,PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000742,SC1991,LVA,PAR02,0.00064415071,1991.0,CINC=0.00064415071,1991-12-26,C_parametro_simulacion,calculado
+PV000743,SC1991,LVA,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000744,SC1991,LVA,PAR04,democracia_electoral,1991.0,RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000745,SC1991,LVA,PAR05,bajo,1991.0,golpes/intentos 10 años previos=no; RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000746,SC1991,LVA,PAR06,alta,1991.0,imp_netas%=88.04295,1991-12-26,C_parametro_simulacion,calculado
+PV000747,SC1991,LVA,PAR07,,,rentas%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000748,SC1991,LVA,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000749,SC1991,LVA,PAR09,0.364,1991.0,v2x_corr=0.364,1991-12-26,C_parametro_simulacion,calculado
+PV000750,SC1991,LVA,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000751,SC1991,LTU,PAR01,,,PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000752,SC1991,LTU,PAR02,0.00066821562,1991.0,CINC=0.00066821562,1991-12-26,C_parametro_simulacion,calculado
+PV000753,SC1991,LTU,PAR03,,,milex%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000754,SC1991,LTU,PAR04,democracia_electoral,1991.0,RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000755,SC1991,LTU,PAR05,bajo,1991.0,golpes/intentos 10 años previos=no; RoW=2.0,1991-12-26,C_parametro_simulacion,calculado
+PV000756,SC1991,LTU,PAR06,alta,1991.0,imp_netas%=72.0409,1991-12-26,C_parametro_simulacion,calculado
+PV000757,SC1991,LTU,PAR07,,,rentas%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000758,SC1991,LTU,PAR08,,,deuda%PIB=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000759,SC1991,LTU,PAR09,0.131,1991.0,v2x_corr=0.131,1991-12-26,C_parametro_simulacion,calculado
+PV000760,SC1991,LTU,PAR10,,,inflacion=None,1991-12-26,C_parametro_simulacion,pendiente_sin_datos
+PV000761,SC1997,THA,PAR01,0.00477,1997.0,PIB=150180456565.72845,1997-07-02,C_parametro_simulacion,calculado
+PV000762,SC1997,THA,PAR02,0.0073628207,1997.0,CINC=0.0073628207,1997-07-02,C_parametro_simulacion,calculado
+PV000763,SC1997,THA,PAR03,medio,1997.0,milex%PIB=2.17392,1997-07-02,C_parametro_simulacion,calculado
+PV000764,SC1997,THA,PAR04,autocracia_electoral,1997.0,RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000765,SC1997,THA,PAR05,alto,1997.0,golpes/intentos 10 años previos=sí; RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000766,SC1997,THA,PAR06,media,1997.0,imp_netas%=48.58511,1997-07-02,C_parametro_simulacion,calculado
+PV000767,SC1997,THA,PAR07,baja,1997.0,rentas%PIB=1.11949,1997-07-02,C_parametro_simulacion,calculado
+PV000768,SC1997,THA,PAR08,amplio,1997.0,deuda%PIB=4.64152,1997-07-02,C_parametro_simulacion,calculado
+PV000769,SC1997,THA,PAR09,0.694,1997.0,v2x_corr=0.694,1997-07-02,C_parametro_simulacion,calculado
+PV000770,SC1997,THA,PAR10,moderada,1997.0,inflacion=5.6258,1997-07-02,C_parametro_simulacion,calculado
+PV000771,SC1997,IDN,PAR01,0.00685,1997.0,PIB=215748998609.635,1997-07-02,C_parametro_simulacion,calculado
+PV000772,SC1997,IDN,PAR02,0.016941244,1997.0,CINC=0.016941244,1997-07-02,C_parametro_simulacion,calculado
+PV000773,SC1997,IDN,PAR03,bajo,1997.0,milex%PIB=1.49774,1997-07-02,C_parametro_simulacion,calculado
+PV000774,SC1997,IDN,PAR04,autocracia_electoral,1997.0,RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000775,SC1997,IDN,PAR05,medio,1997.0,golpes/intentos 10 años previos=no; RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000776,SC1997,IDN,PAR06,exportador_neto,1997.0,imp_netas%=-70.58739,1997-07-02,C_parametro_simulacion,calculado
+PV000777,SC1997,IDN,PAR07,media,1997.0,rentas%PIB=5.99702,1997-07-02,C_parametro_simulacion,calculado
+PV000778,SC1997,IDN,PAR08,moderado,1997.0,deuda%PIB=72.48532,1997-07-02,C_parametro_simulacion,calculado
+PV000779,SC1997,IDN,PAR09,0.94,1997.0,v2x_corr=0.94,1997-07-02,C_parametro_simulacion,calculado
+PV000780,SC1997,IDN,PAR10,moderada,1997.0,inflacion=6.22615,1997-07-02,C_parametro_simulacion,calculado
+PV000781,SC1997,KOR,PAR01,0.01872,1997.0,PIB=589202526424.141,1997-07-02,C_parametro_simulacion,calculado
+PV000782,SC1997,KOR,PAR02,0.024610644,1997.0,CINC=0.024610644,1997-07-02,C_parametro_simulacion,calculado
+PV000783,SC1997,KOR,PAR03,medio,1997.0,milex%PIB=2.66339,1997-07-02,C_parametro_simulacion,calculado
+PV000784,SC1997,KOR,PAR04,democracia_liberal,1997.0,RoW=3.0,1997-07-02,C_parametro_simulacion,calculado
+PV000785,SC1997,KOR,PAR05,bajo,1997.0,golpes/intentos 10 años previos=no; RoW=3.0,1997-07-02,C_parametro_simulacion,calculado
+PV000786,SC1997,KOR,PAR06,alta,1997.0,imp_netas%=93.38628,1997-07-02,C_parametro_simulacion,calculado
+PV000787,SC1997,KOR,PAR07,baja,1997.0,rentas%PIB=0.02519,1997-07-02,C_parametro_simulacion,calculado
+PV000788,SC1997,KOR,PAR08,amplio,1997.0,deuda%PIB=8.39337,1997-07-02,C_parametro_simulacion,calculado
+PV000789,SC1997,KOR,PAR09,0.29,1997.0,v2x_corr=0.29,1997-07-02,C_parametro_simulacion,calculado
+PV000790,SC1997,KOR,PAR10,baja,1997.0,inflacion=4.43893,1997-07-02,C_parametro_simulacion,calculado
+PV000791,SC1997,MYS,PAR01,0.00318,1997.0,PIB=100005323301.86668,1997-07-02,C_parametro_simulacion,calculado
+PV000792,SC1997,MYS,PAR02,0.0038678853,1997.0,CINC=0.0038678853,1997-07-02,C_parametro_simulacion,calculado
+PV000793,SC1997,MYS,PAR03,medio,1997.0,milex%PIB=2.08556,1997-07-02,C_parametro_simulacion,calculado
+PV000794,SC1997,MYS,PAR04,autocracia_electoral,1997.0,RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000795,SC1997,MYS,PAR05,medio,1997.0,golpes/intentos 10 años previos=no; RoW=1.0,1997-07-02,C_parametro_simulacion,calculado
+PV000796,SC1997,MYS,PAR06,exportador_neto,1997.0,imp_netas%=-64.15105,1997-07-02,C_parametro_simulacion,calculado
+PV000797,SC1997,MYS,PAR07,media,1997.0,rentas%PIB=11.07998,1997-07-02,C_parametro_simulacion,calculado
+PV000798,SC1997,MYS,PAR08,moderado,1995.0,deuda%PIB=41.0697,1997-07-02,C_parametro_simulacion,calculado
+PV000799,SC1997,MYS,PAR09,0.557,1997.0,v2x_corr=0.557,1997-07-02,C_parametro_simulacion,calculado
+PV000800,SC1997,MYS,PAR10,baja,1997.0,inflacion=2.66251,1997-07-02,C_parametro_simulacion,calculado
+PV000801,SC1997,PHL,PAR01,0.00299,1997.0,PIB=94106317565.08456,1997-07-02,C_parametro_simulacion,calculado
+PV000802,SC1997,PHL,PAR02,0.0056345598,1997.0,CINC=0.0056345598,1997-07-02,C_parametro_simulacion,calculado
+PV000803,SC1997,PHL,PAR03,medio,1997.0,milex%PIB=1.91446,1997-07-02,C_parametro_simulacion,calculado
+PV000804,SC1997,PHL,PAR04,democracia_electoral,1997.0,RoW=2.0,1997-07-02,C_parametro_simulacion,calculado
+PV000805,SC1997,PHL,PAR05,alto,1997.0,golpes/intentos 10 años previos=sí; RoW=2.0,1997-07-02,C_parametro_simulacion,calculado
+PV000806,SC1997,PHL,PAR06,media,1997.0,imp_netas%=57.99496,1997-07-02,C_parametro_simulacion,calculado
+PV000807,SC1997,PHL,PAR07,baja,1997.0,rentas%PIB=0.61787,1997-07-02,C_parametro_simulacion,calculado
+PV000808,SC1997,PHL,PAR08,moderado,1997.0,deuda%PIB=48.69785,1997-07-02,C_parametro_simulacion,calculado
+PV000809,SC1997,PHL,PAR09,0.707,1997.0,v2x_corr=0.707,1997-07-02,C_parametro_simulacion,calculado
+PV000810,SC1997,PHL,PAR10,moderada,1997.0,inflacion=5.59026,1997-07-02,C_parametro_simulacion,calculado
+PV000811,SC1997,JPN,PAR01,0.1427,1997.0,PIB=4492448605638.937,1997-07-02,C_parametro_simulacion,calculado
+PV000812,SC1997,JPN,PAR02,0.051101021,1997.0,CINC=0.051101021,1997-07-02,C_parametro_simulacion,calculado
+PV000813,SC1997,JPN,PAR03,bajo,1997.0,milex%PIB=0.90452,1997-07-02,C_parametro_simulacion,calculado
+PV000814,SC1997,JPN,PAR04,democracia_liberal,1997.0,RoW=3.0,1997-07-02,C_parametro_simulacion,calculado
+PV000815,SC1997,JPN,PAR05,bajo,1997.0,golpes/intentos 10 años previos=no; RoW=3.0,1997-07-02,C_parametro_simulacion,calculado
+PV000816,SC1997,JPN,PAR06,alta,1997.0,imp_netas%=81.7835,1997-07-02,C_parametro_simulacion,calculado
+PV000817,SC1997,JPN,PAR07,baja,1997.0,rentas%PIB=0.01767,1997-07-02,C_parametro_simulacion,calculado
+PV000818,SC1997,JPN,PAR08,,,deuda%PIB=None,1997-07-02,C_parametro_simulacion,pendiente_sin_datos
+PV000819,SC1997,JPN,PAR09,0.111,1997.0,v2x_corr=0.111,1997-07-02,C_parametro_simulacion,calculado
+PV000820,SC1997,JPN,PAR10,baja,1997.0,inflacion=1.7478,1997-07-02,C_parametro_simulacion,calculado
+PV000821,SC1997,CHN,PAR01,0.03074,1997.0,PIB=967753570434.6672,1997-07-02,C_parametro_simulacion,calculado
+PV000822,SC1997,CHN,PAR02,0.14914578,1997.0,CINC=0.14914578,1997-07-02,C_parametro_simulacion,calculado
+PV000823,SC1997,CHN,PAR03,medio,1997.0,milex%PIB=1.63265,1997-07-02,C_parametro_simulacion,calculado
+PV000824,SC1997,CHN,PAR04,autocracia_cerrada,1997.0,RoW=0.0,1997-07-02,C_parametro_simulacion,calculado
+PV000825,SC1997,CHN,PAR05,medio,1997.0,golpes/intentos 10 años previos=no; RoW=0.0,1997-07-02,C_parametro_simulacion,calculado
+PV000826,SC1997,CHN,PAR06,baja,1997.0,imp_netas%=0.64974,1997-07-02,C_parametro_simulacion,calculado
+PV000827,SC1997,CHN,PAR07,baja,1997.0,rentas%PIB=2.39156,1997-07-02,C_parametro_simulacion,calculado
+PV000828,SC1997,CHN,PAR08,,,deuda%PIB=None,1997-07-02,C_parametro_simulacion,pendiente_sin_datos
+PV000829,SC1997,CHN,PAR09,0.574,1997.0,v2x_corr=0.574,1997-07-02,C_parametro_simulacion,calculado
+PV000830,SC1997,CHN,PAR10,baja,1997.0,inflacion=2.78647,1997-07-02,C_parametro_simulacion,calculado
+PV000831,SC1997,HKG,PAR01,0.00563,1997.0,PIB=177353174849.7142,1997-07-02,C_parametro_simulacion,calculado
+PV000832,SC1997,HKG,PAR02,,,CINC=None,1997-07-02,C_parametro_simulacion,pendiente_sin_datos
+PV000833,SC1997,HKG,PAR03,,,milex%PIB=None,1997-07-02,C_parametro_simulacion,pendiente_sin_datos
+PV000834,SC1997,HKG,PAR04,autocracia_cerrada,1997.0,RoW=0.0,1997-07-02,C_parametro_simulacion,calculado
+PV000835,SC1997,HKG,PAR05,medio,1997.0,golpes/intentos 10 años previos=no; RoW=0.0,1997-07-02,C_parametro_simulacion,calculado
+PV000836,SC1997,HKG,PAR06,alta,1997.0,imp_netas%=150.52393,1997-07-02,C_parametro_simulacion,calculado
+PV000837,SC1997,HKG,PAR07,baja,1997.0,rentas%PIB=0.00116,1997-07-02,C_parametro_simulacion,calculado
+PV000838,SC1997,HKG,PAR08,,,deuda%PIB=None,1997-07-02,C_parametro_simulacion,pendiente_sin_datos
+PV000839,SC1997,HKG,PAR09,0.06,1997.0,v2x_corr=0.06,1997-07-02,C_parametro_simulacion,calculado
+PV000840,SC1997,HKG,PAR10,moderada,1997.0,inflacion=5.77664,1997-07-02,C_parametro_simulacion,calculado
+PV000841,SC2001,USA,PAR01,0.31783,2001.0,PIB=10581929774000.0,2001-09-11,C_parametro_simulacion,calculado
+PV000842,SC2001,USA,PAR02,0.14165567,2001.0,CINC=0.14165567,2001-09-11,C_parametro_simulacion,calculado
+PV000843,SC2001,USA,PAR03,alto,2001.0,milex%PIB=3.12381,2001-09-11,C_parametro_simulacion,calculado
+PV000844,SC2001,USA,PAR04,democracia_liberal,2001.0,RoW=3.0,2001-09-11,C_parametro_simulacion,calculado
+PV000845,SC2001,USA,PAR05,bajo,2001.0,golpes/intentos 10 años previos=no; RoW=3.0,2001-09-11,C_parametro_simulacion,calculado
+PV000846,SC2001,USA,PAR06,baja,2001.0,imp_netas%=28.91597,2001-09-11,C_parametro_simulacion,calculado
+PV000847,SC2001,USA,PAR07,baja,2001.0,rentas%PIB=0.91568,2001-09-11,C_parametro_simulacion,calculado
+PV000848,SC2001,USA,PAR08,moderado,2001.0,deuda%PIB=52.6289,2001-09-11,C_parametro_simulacion,calculado
+PV000849,SC2001,USA,PAR09,0.055,2001.0,v2x_corr=0.055,2001-09-11,C_parametro_simulacion,calculado
+PV000850,SC2001,USA,PAR10,baja,2001.0,inflacion=2.82617,2001-09-11,C_parametro_simulacion,calculado
+PV000851,SC2001,AFG,PAR01,8e-05,2001.0,PIB=2813571753.87253,2001-09-11,C_parametro_simulacion,calculado
+PV000852,SC2001,AFG,PAR02,0.0012150643,2001.0,CINC=0.0012150643,2001-09-11,C_parametro_simulacion,calculado
+PV000853,SC2001,AFG,PAR03,,,milex%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000854,SC2001,AFG,PAR04,autocracia_cerrada,2001.0,RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000855,SC2001,AFG,PAR05,alto,2001.0,golpes/intentos 10 años previos=sí; RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000856,SC2001,AFG,PAR06,,,imp_netas%=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000857,SC2001,AFG,PAR07,,,rentas%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000858,SC2001,AFG,PAR08,,,deuda%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000859,SC2001,AFG,PAR09,0.802,2001.0,v2x_corr=0.802,2001-09-11,C_parametro_simulacion,calculado
+PV000860,SC2001,AFG,PAR10,,,inflacion=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000861,SC2001,PAK,PAR01,0.00292,2001.0,PIB=97145618479.9038,2001-09-11,C_parametro_simulacion,calculado
+PV000862,SC2001,PAK,PAR02,0.013324504,2001.0,CINC=0.013324504,2001-09-11,C_parametro_simulacion,calculado
+PV000863,SC2001,PAK,PAR03,alto,2001.0,milex%PIB=3.87893,2001-09-11,C_parametro_simulacion,calculado
+PV000864,SC2001,PAK,PAR04,autocracia_cerrada,2001.0,RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000865,SC2001,PAK,PAR05,alto,2001.0,golpes/intentos 10 años previos=sí; RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000866,SC2001,PAK,PAR06,baja,2001.0,imp_netas%=25.15559,2001-09-11,C_parametro_simulacion,calculado
+PV000867,SC2001,PAK,PAR07,baja,2001.0,rentas%PIB=1.856,2001-09-11,C_parametro_simulacion,calculado
+PV000868,SC2001,PAK,PAR08,moderado,2000.0,deuda%PIB=55.03242,2001-09-11,C_parametro_simulacion,calculado
+PV000869,SC2001,PAK,PAR09,0.752,2001.0,v2x_corr=0.752,2001-09-11,C_parametro_simulacion,calculado
+PV000870,SC2001,PAK,PAR10,baja,2001.0,inflacion=3.14826,2001-09-11,C_parametro_simulacion,calculado
+PV000871,SC2001,IRQ,PAR01,0.00109,2001.0,PIB=36176430128.80573,2001-09-11,C_parametro_simulacion,calculado
+PV000872,SC2001,IRQ,PAR02,0.0064073396,2001.0,CINC=0.0064073396,2001-09-11,C_parametro_simulacion,calculado
+PV000873,SC2001,IRQ,PAR03,,,milex%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000874,SC2001,IRQ,PAR04,autocracia_cerrada,2001.0,RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000875,SC2001,IRQ,PAR05,alto,2001.0,golpes/intentos 10 años previos=sí; RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000876,SC2001,IRQ,PAR06,exportador_neto,2001.0,imp_netas%=-344.92069,2001-09-11,C_parametro_simulacion,calculado
+PV000877,SC2001,IRQ,PAR07,alta,2001.0,rentas%PIB=49.5653,2001-09-11,C_parametro_simulacion,calculado
+PV000878,SC2001,IRQ,PAR08,,,deuda%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000879,SC2001,IRQ,PAR09,0.889,2001.0,v2x_corr=0.889,2001-09-11,C_parametro_simulacion,calculado
+PV000880,SC2001,IRQ,PAR10,alta,2001.0,inflacion=16.37408,2001-09-11,C_parametro_simulacion,calculado
+PV000881,SC2001,SAU,PAR01,0.00553,2001.0,PIB=184137600000.0,2001-09-11,C_parametro_simulacion,calculado
+PV000882,SC2001,SAU,PAR02,0.011729033,2001.0,CINC=0.011729033,2001-09-11,C_parametro_simulacion,calculado
+PV000883,SC2001,SAU,PAR03,muy_alto,2001.0,milex%PIB=11.419,2001-09-11,C_parametro_simulacion,calculado
+PV000884,SC2001,SAU,PAR04,autocracia_cerrada,2001.0,RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000885,SC2001,SAU,PAR05,medio,2001.0,golpes/intentos 10 años previos=no; RoW=0.0,2001-09-11,C_parametro_simulacion,calculado
+PV000886,SC2001,SAU,PAR06,exportador_neto,2001.0,imp_netas%=-325.78323,2001-09-11,C_parametro_simulacion,calculado
+PV000887,SC2001,SAU,PAR07,alta,2001.0,rentas%PIB=34.59686,2001-09-11,C_parametro_simulacion,calculado
+PV000888,SC2001,SAU,PAR08,,,deuda%PIB=None,2001-09-11,C_parametro_simulacion,pendiente_sin_datos
+PV000889,SC2001,SAU,PAR09,0.47,2001.0,v2x_corr=0.47,2001-09-11,C_parametro_simulacion,calculado
+PV000890,SC2001,SAU,PAR10,baja,2001.0,inflacion=-1.12095,2001-09-11,C_parametro_simulacion,calculado
+PV000891,SC2001,GBR,PAR01,0.04974,2001.0,PIB=1656171009068.6628,2001-09-11,C_parametro_simulacion,calculado
+PV000892,SC2001,GBR,PAR02,0.021338435,2001.0,CINC=0.021338435,2001-09-11,C_parametro_simulacion,calculado
+PV000893,SC2001,GBR,PAR03,medio,2001.0,milex%PIB=2.41112,2001-09-11,C_parametro_simulacion,calculado
+PV000894,SC2001,GBR,PAR04,democracia_liberal,2001.0,RoW=3.0,2001-09-11,C_parametro_simulacion,calculado
+PV000895,SC2001,GBR,PAR05,bajo,2001.0,golpes/intentos 10 años previos=no; RoW=3.0,2001-09-11,C_parametro_simulacion,calculado
+PV000896,SC2001,GBR,PAR06,exportador_neto,2001.0,imp_netas%=-10.11106,2001-09-11,C_parametro_simulacion,calculado
+PV000897,SC2001,GBR,PAR07,baja,2001.0,rentas%PIB=0.937,2001-09-11,C_parametro_simulacion,calculado
+PV000898,SC2001,GBR,PAR08,estrecho,2001.0,deuda%PIB=84.04178,2001-09-11,C_parametro_simulacion,calculado
+PV000899,SC2001,GBR,PAR09,0.04,2001.0,v2x_corr=0.04,2001-09-11,C_parametro_simulacion,calculado
+PV000900,SC2001,GBR,PAR10,baja,2001.0,inflacion=1.53235,2001-09-11,C_parametro_simulacion,calculado
+PV000901,SC2003,IRQ,PAR01,0.00056,2003.0,PIB=21921569478.81626,2003-03-20,C_parametro_simulacion,calculado
+PV000902,SC2003,IRQ,PAR02,0.0066378908,2003.0,CINC=0.0066378908,2003-03-20,C_parametro_simulacion,calculado
+PV000903,SC2003,IRQ,PAR03,,,milex%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000904,SC2003,IRQ,PAR04,autocracia_cerrada,2003.0,RoW=0.0,2003-03-20,C_parametro_simulacion,calculado
+PV000905,SC2003,IRQ,PAR05,alto,2003.0,golpes/intentos 10 años previos=sí; RoW=0.0,2003-03-20,C_parametro_simulacion,calculado
+PV000906,SC2003,IRQ,PAR06,exportador_neto,2003.0,imp_netas%=-215.42366,2003-03-20,C_parametro_simulacion,calculado
+PV000907,SC2003,IRQ,PAR07,alta,2003.0,rentas%PIB=53.29809,2003-03-20,C_parametro_simulacion,calculado
+PV000908,SC2003,IRQ,PAR08,,,deuda%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000909,SC2003,IRQ,PAR09,0.799,2003.0,v2x_corr=0.799,2003-03-20,C_parametro_simulacion,calculado
+PV000910,SC2003,IRQ,PAR10,alta,2003.0,inflacion=33.61621,2003-03-20,C_parametro_simulacion,calculado
+PV000911,SC2003,USA,PAR01,0.29508,2003.0,PIB=11456442041000.0,2003-03-20,C_parametro_simulacion,calculado
+PV000912,SC2003,USA,PAR02,0.15206763,2003.0,CINC=0.15206763,2003-03-20,C_parametro_simulacion,calculado
+PV000913,SC2003,USA,PAR03,alto,2003.0,milex%PIB=3.82716,2003-03-20,C_parametro_simulacion,calculado
+PV000914,SC2003,USA,PAR04,democracia_liberal,2003.0,RoW=3.0,2003-03-20,C_parametro_simulacion,calculado
+PV000915,SC2003,USA,PAR05,bajo,2003.0,golpes/intentos 10 años previos=no; RoW=3.0,2003-03-20,C_parametro_simulacion,calculado
+PV000916,SC2003,USA,PAR06,baja,2003.0,imp_netas%=29.26858,2003-03-20,C_parametro_simulacion,calculado
+PV000917,SC2003,USA,PAR07,baja,2003.0,rentas%PIB=1.04592,2003-03-20,C_parametro_simulacion,calculado
+PV000918,SC2003,USA,PAR08,moderado,2003.0,deuda%PIB=56.42928,2003-03-20,C_parametro_simulacion,calculado
+PV000919,SC2003,USA,PAR09,0.055,2003.0,v2x_corr=0.055,2003-03-20,C_parametro_simulacion,calculado
+PV000920,SC2003,USA,PAR10,baja,2003.0,inflacion=2.27009,2003-03-20,C_parametro_simulacion,calculado
+PV000921,SC2003,GBR,PAR01,0.05309,2003.0,PIB=2061227755102.0408,2003-03-20,C_parametro_simulacion,calculado
+PV000922,SC2003,GBR,PAR02,0.019141231,2003.0,CINC=0.019141231,2003-03-20,C_parametro_simulacion,calculado
+PV000923,SC2003,GBR,PAR03,medio,2003.0,milex%PIB=2.55206,2003-03-20,C_parametro_simulacion,calculado
+PV000924,SC2003,GBR,PAR04,democracia_liberal,2003.0,RoW=3.0,2003-03-20,C_parametro_simulacion,calculado
+PV000925,SC2003,GBR,PAR05,bajo,2003.0,golpes/intentos 10 años previos=no; RoW=3.0,2003-03-20,C_parametro_simulacion,calculado
+PV000926,SC2003,GBR,PAR06,exportador_neto,2003.0,imp_netas%=-6.33667,2003-03-20,C_parametro_simulacion,calculado
+PV000927,SC2003,GBR,PAR07,baja,2003.0,rentas%PIB=0.7622,2003-03-20,C_parametro_simulacion,calculado
+PV000928,SC2003,GBR,PAR08,estrecho,2003.0,deuda%PIB=86.40731,2003-03-20,C_parametro_simulacion,calculado
+PV000929,SC2003,GBR,PAR09,0.04,2003.0,v2x_corr=0.04,2003-03-20,C_parametro_simulacion,calculado
+PV000930,SC2003,GBR,PAR10,baja,2003.0,inflacion=1.3765,2003-03-20,C_parametro_simulacion,calculado
+PV000931,SC2003,IRN,PAR01,0.00391,2003.0,PIB=151911222119.48804,2003-03-20,C_parametro_simulacion,calculado
+PV000932,SC2003,IRN,PAR02,0.013265172,2003.0,CINC=0.013265172,2003-03-20,C_parametro_simulacion,calculado
+PV000933,SC2003,IRN,PAR03,medio,2003.0,milex%PIB=2.40504,2003-03-20,C_parametro_simulacion,calculado
+PV000934,SC2003,IRN,PAR04,autocracia_electoral,2003.0,RoW=1.0,2003-03-20,C_parametro_simulacion,calculado
+PV000935,SC2003,IRN,PAR05,medio,2003.0,golpes/intentos 10 años previos=no; RoW=1.0,2003-03-20,C_parametro_simulacion,calculado
+PV000936,SC2003,IRN,PAR06,exportador_neto,2003.0,imp_netas%=-95.8066,2003-03-20,C_parametro_simulacion,calculado
+PV000937,SC2003,IRN,PAR07,alta,2003.0,rentas%PIB=24.18031,2003-03-20,C_parametro_simulacion,calculado
+PV000938,SC2003,IRN,PAR08,,,deuda%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000939,SC2003,IRN,PAR09,0.533,2003.0,v2x_corr=0.533,2003-03-20,C_parametro_simulacion,calculado
+PV000940,SC2003,IRN,PAR10,alta,2003.0,inflacion=16.46801,2003-03-20,C_parametro_simulacion,calculado
+PV000941,SC2003,SYR,PAR01,0.00056,2003.0,PIB=21828144686.03942,2003-03-20,C_parametro_simulacion,calculado
+PV000942,SC2003,SYR,PAR02,0.00436506,2003.0,CINC=0.00436506,2003-03-20,C_parametro_simulacion,calculado
+PV000943,SC2003,SYR,PAR03,muy_alto,2003.0,milex%PIB=6.24832,2003-03-20,C_parametro_simulacion,calculado
+PV000944,SC2003,SYR,PAR04,autocracia_electoral,2003.0,RoW=1.0,2003-03-20,C_parametro_simulacion,calculado
+PV000945,SC2003,SYR,PAR05,medio,2003.0,golpes/intentos 10 años previos=no; RoW=1.0,2003-03-20,C_parametro_simulacion,calculado
+PV000946,SC2003,SYR,PAR06,exportador_neto,2003.0,imp_netas%=-109.60894,2003-03-20,C_parametro_simulacion,calculado
+PV000947,SC2003,SYR,PAR07,media,2003.0,rentas%PIB=5.81032,2003-03-20,C_parametro_simulacion,calculado
+PV000948,SC2003,SYR,PAR08,,,deuda%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000949,SC2003,SYR,PAR09,0.896,2003.0,v2x_corr=0.896,2003-03-20,C_parametro_simulacion,calculado
+PV000950,SC2003,SYR,PAR10,moderada,2003.0,inflacion=5.79683,2003-03-20,C_parametro_simulacion,calculado
+PV000951,SC2003,TUR,PAR01,0.00812,2003.0,PIB=315392899922.37915,2003-03-20,C_parametro_simulacion,calculado
+PV000952,SC2003,TUR,PAR02,0.014530757,2003.0,CINC=0.014530757,2003-03-20,C_parametro_simulacion,calculado
+PV000953,SC2003,TUR,PAR03,alto,2003.0,milex%PIB=3.26703,2003-03-20,C_parametro_simulacion,calculado
+PV000954,SC2003,TUR,PAR04,democracia_electoral,2003.0,RoW=2.0,2003-03-20,C_parametro_simulacion,calculado
+PV000955,SC2003,TUR,PAR05,bajo,2003.0,golpes/intentos 10 años previos=no; RoW=2.0,2003-03-20,C_parametro_simulacion,calculado
+PV000956,SC2003,TUR,PAR06,alta,2003.0,imp_netas%=71.80146,2003-03-20,C_parametro_simulacion,calculado
+PV000957,SC2003,TUR,PAR07,baja,2003.0,rentas%PIB=0.18586,2003-03-20,C_parametro_simulacion,calculado
+PV000958,SC2003,TUR,PAR08,,,deuda%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000959,SC2003,TUR,PAR09,0.517,2003.0,v2x_corr=0.517,2003-03-20,C_parametro_simulacion,calculado
+PV000960,SC2003,TUR,PAR10,alta,2003.0,inflacion=21.60244,2003-03-20,C_parametro_simulacion,calculado
+PV000961,SC2003,SAU,PAR01,0.00556,2003.0,PIB=215807733333.33328,2003-03-20,C_parametro_simulacion,calculado
+PV000962,SC2003,SAU,PAR02,0.010239278,2003.0,CINC=0.010239278,2003-03-20,C_parametro_simulacion,calculado
+PV000963,SC2003,SAU,PAR03,muy_alto,2003.0,milex%PIB=8.68712,2003-03-20,C_parametro_simulacion,calculado
+PV000964,SC2003,SAU,PAR04,autocracia_cerrada,2003.0,RoW=0.0,2003-03-20,C_parametro_simulacion,calculado
+PV000965,SC2003,SAU,PAR05,medio,2003.0,golpes/intentos 10 años previos=no; RoW=0.0,2003-03-20,C_parametro_simulacion,calculado
+PV000966,SC2003,SAU,PAR06,exportador_neto,2003.0,imp_netas%=-304.0569,2003-03-20,C_parametro_simulacion,calculado
+PV000967,SC2003,SAU,PAR07,alta,2003.0,rentas%PIB=38.01761,2003-03-20,C_parametro_simulacion,calculado
+PV000968,SC2003,SAU,PAR08,,,deuda%PIB=None,2003-03-20,C_parametro_simulacion,pendiente_sin_datos
+PV000969,SC2003,SAU,PAR09,0.469,2003.0,v2x_corr=0.469,2003-03-20,C_parametro_simulacion,calculado
+PV000970,SC2003,SAU,PAR10,baja,2003.0,inflacion=0.6122,2003-03-20,C_parametro_simulacion,calculado
+PV000971,SC2008,USA,PAR01,0.2316,2008.0,PIB=14769857911000.0,2008-09-15,C_parametro_simulacion,calculado
+PV000972,SC2008,USA,PAR02,0.14780237,2008.0,CINC=0.14780237,2008-09-15,C_parametro_simulacion,calculado
+PV000973,SC2008,USA,PAR03,alto,2008.0,milex%PIB=4.4466,2008-09-15,C_parametro_simulacion,calculado
+PV000974,SC2008,USA,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000975,SC2008,USA,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000976,SC2008,USA,PAR06,baja,2008.0,imp_netas%=27.91841,2008-09-15,C_parametro_simulacion,calculado
+PV000977,SC2008,USA,PAR07,baja,2008.0,rentas%PIB=1.92914,2008-09-15,C_parametro_simulacion,calculado
+PV000978,SC2008,USA,PAR08,moderado,2008.0,deuda%PIB=63.97194,2008-09-15,C_parametro_simulacion,calculado
+PV000979,SC2008,USA,PAR09,0.055,2008.0,v2x_corr=0.055,2008-09-15,C_parametro_simulacion,calculado
+PV000980,SC2008,USA,PAR10,baja,2008.0,inflacion=3.8391,2008-09-15,C_parametro_simulacion,calculado
+PV000981,SC2008,GBR,PAR01,0.04618,2008.0,PIB=2945251838235.293,2008-09-15,C_parametro_simulacion,calculado
+PV000982,SC2008,GBR,PAR02,0.01742021,2008.0,CINC=0.01742021,2008-09-15,C_parametro_simulacion,calculado
+PV000983,SC2008,GBR,PAR03,medio,2008.0,milex%PIB=2.48715,2008-09-15,C_parametro_simulacion,calculado
+PV000984,SC2008,GBR,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000985,SC2008,GBR,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000986,SC2008,GBR,PAR06,baja,2008.0,imp_netas%=28.1654,2008-09-15,C_parametro_simulacion,calculado
+PV000987,SC2008,GBR,PAR07,baja,2008.0,rentas%PIB=1.3366,2008-09-15,C_parametro_simulacion,calculado
+PV000988,SC2008,GBR,PAR08,estrecho,2008.0,deuda%PIB=104.84023,2008-09-15,C_parametro_simulacion,calculado
+PV000989,SC2008,GBR,PAR09,0.04,2008.0,v2x_corr=0.04,2008-09-15,C_parametro_simulacion,calculado
+PV000990,SC2008,GBR,PAR10,baja,2008.0,inflacion=3.52141,2008-09-15,C_parametro_simulacion,calculado
+PV000991,SC2008,DEU,PAR01,0.05972,2008.0,PIB=3808197720124.999,2008-09-15,C_parametro_simulacion,calculado
+PV000992,SC2008,DEU,PAR02,0.021034539,2008.0,CINC=0.021034539,2008-09-15,C_parametro_simulacion,calculado
+PV000993,SC2008,DEU,PAR03,bajo,2008.0,milex%PIB=1.18887,2008-09-15,C_parametro_simulacion,calculado
+PV000994,SC2008,DEU,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000995,SC2008,DEU,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV000996,SC2008,DEU,PAR06,alta,2008.0,imp_netas%=62.84655,2008-09-15,C_parametro_simulacion,calculado
+PV000997,SC2008,DEU,PAR07,baja,2008.0,rentas%PIB=0.30597,2008-09-15,C_parametro_simulacion,calculado
+PV000998,SC2008,DEU,PAR08,,,deuda%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV000999,SC2008,DEU,PAR09,0.011,2008.0,v2x_corr=0.011,2008-09-15,C_parametro_simulacion,calculado
+PV001000,SC2008,DEU,PAR10,baja,2008.0,inflacion=2.62838,2008-09-15,C_parametro_simulacion,calculado
+PV001001,SC2008,FRA,PAR01,0.04589,2008.0,PIB=2926802941585.859,2008-09-15,C_parametro_simulacion,calculado
+PV001002,SC2008,FRA,PAR02,0.018203618,2008.0,CINC=0.018203618,2008-09-15,C_parametro_simulacion,calculado
+PV001003,SC2008,FRA,PAR03,medio,2008.0,milex%PIB=1.89935,2008-09-15,C_parametro_simulacion,calculado
+PV001004,SC2008,FRA,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001005,SC2008,FRA,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001006,SC2008,FRA,PAR06,media,2008.0,imp_netas%=52.30052,2008-09-15,C_parametro_simulacion,calculado
+PV001007,SC2008,FRA,PAR07,baja,2008.0,rentas%PIB=0.05398,2008-09-15,C_parametro_simulacion,calculado
+PV001008,SC2008,FRA,PAR08,,,deuda%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001009,SC2008,FRA,PAR09,0.059,2008.0,v2x_corr=0.059,2008-09-15,C_parametro_simulacion,calculado
+PV001010,SC2008,FRA,PAR10,baja,2008.0,inflacion=2.81286,2008-09-15,C_parametro_simulacion,calculado
+PV001011,SC2008,ISL,PAR01,0.00029,2008.0,PIB=18247921360.25988,2008-09-15,C_parametro_simulacion,calculado
+PV001012,SC2008,ISL,PAR02,3.1572927e-05,2008.0,CINC=3.1572927e-05,2008-09-15,C_parametro_simulacion,calculado
+PV001013,SC2008,ISL,PAR03,,,milex%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001014,SC2008,ISL,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001015,SC2008,ISL,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001016,SC2008,ISL,PAR06,,,imp_netas%=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001017,SC2008,ISL,PAR07,baja,2008.0,rentas%PIB=0.0,2008-09-15,C_parametro_simulacion,calculado
+PV001018,SC2008,ISL,PAR08,critico,2008.0,deuda%PIB=128.50632,2008-09-15,C_parametro_simulacion,calculado
+PV001019,SC2008,ISL,PAR09,0.013,2008.0,v2x_corr=0.013,2008-09-15,C_parametro_simulacion,calculado
+PV001020,SC2008,ISL,PAR10,moderada,2008.0,inflacion=12.69439,2008-09-15,C_parametro_simulacion,calculado
+PV001021,SC2008,IRL,PAR01,0.00432,2008.0,PIB=275447471451.06323,2008-09-15,C_parametro_simulacion,calculado
+PV001022,SC2008,IRL,PAR02,0.00062974484,2008.0,CINC=0.00062974484,2008-09-15,C_parametro_simulacion,calculado
+PV001023,SC2008,IRL,PAR03,bajo,2008.0,milex%PIB=0.57699,2008-09-15,C_parametro_simulacion,calculado
+PV001024,SC2008,IRL,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001025,SC2008,IRL,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001026,SC2008,IRL,PAR06,alta,2008.0,imp_netas%=96.51952,2008-09-15,C_parametro_simulacion,calculado
+PV001027,SC2008,IRL,PAR07,baja,2008.0,rentas%PIB=0.03964,2008-09-15,C_parametro_simulacion,calculado
+PV001028,SC2008,IRL,PAR08,,,deuda%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001029,SC2008,IRL,PAR09,0.05,2008.0,v2x_corr=0.05,2008-09-15,C_parametro_simulacion,calculado
+PV001030,SC2008,IRL,PAR10,baja,2008.0,inflacion=4.03569,2008-09-15,C_parametro_simulacion,calculado
+PV001031,SC2008,ESP,PAR01,0.02566,2008.0,PIB=1636115447612.4995,2008-09-15,C_parametro_simulacion,calculado
+PV001032,SC2008,ESP,PAR02,0.010121168,2008.0,CINC=0.010121168,2008-09-15,C_parametro_simulacion,calculado
+PV001033,SC2008,ESP,PAR03,bajo,2008.0,milex%PIB=1.36762,2008-09-15,C_parametro_simulacion,calculado
+PV001034,SC2008,ESP,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001035,SC2008,ESP,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001036,SC2008,ESP,PAR06,alta,2008.0,imp_netas%=88.43353,2008-09-15,C_parametro_simulacion,calculado
+PV001037,SC2008,ESP,PAR07,baja,2008.0,rentas%PIB=0.06518,2008-09-15,C_parametro_simulacion,calculado
+PV001038,SC2008,ESP,PAR08,amplio,2008.0,deuda%PIB=35.70472,2008-09-15,C_parametro_simulacion,calculado
+PV001039,SC2008,ESP,PAR09,0.038,2008.0,v2x_corr=0.038,2008-09-15,C_parametro_simulacion,calculado
+PV001040,SC2008,ESP,PAR10,baja,2008.0,inflacion=4.07534,2008-09-15,C_parametro_simulacion,calculado
+PV001041,SC2008,GRC,PAR01,0.00551,2008.0,PIB=351121399546.4851,2008-09-15,C_parametro_simulacion,calculado
+PV001042,SC2008,GRC,PAR02,0.0039985394,2008.0,CINC=0.0039985394,2008-09-15,C_parametro_simulacion,calculado
+PV001043,SC2008,GRC,PAR03,alto,2008.0,milex%PIB=3.02372,2008-09-15,C_parametro_simulacion,calculado
+PV001044,SC2008,GRC,PAR04,democracia_liberal,2008.0,RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001045,SC2008,GRC,PAR05,bajo,2008.0,golpes/intentos 10 años previos=no; RoW=3.0,2008-09-15,C_parametro_simulacion,calculado
+PV001046,SC2008,GRC,PAR06,alta,2008.0,imp_netas%=82.61112,2008-09-15,C_parametro_simulacion,calculado
+PV001047,SC2008,GRC,PAR07,baja,2008.0,rentas%PIB=0.3472,2008-09-15,C_parametro_simulacion,calculado
+PV001048,SC2008,GRC,PAR08,,,deuda%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001049,SC2008,GRC,PAR09,0.262,2008.0,v2x_corr=0.262,2008-09-15,C_parametro_simulacion,calculado
+PV001050,SC2008,GRC,PAR10,baja,2008.0,inflacion=4.1528,2008-09-15,C_parametro_simulacion,calculado
+PV001051,SC2008,CHN,PAR01,0.07319,2008.0,PIB=4667346414521.947,2008-09-15,C_parametro_simulacion,calculado
+PV001052,SC2008,CHN,PAR02,0.19061875,2008.0,CINC=0.19061875,2008-09-15,C_parametro_simulacion,calculado
+PV001053,SC2008,CHN,PAR03,medio,2008.0,milex%PIB=1.71604,2008-09-15,C_parametro_simulacion,calculado
+PV001054,SC2008,CHN,PAR04,autocracia_cerrada,2008.0,RoW=0.0,2008-09-15,C_parametro_simulacion,calculado
+PV001055,SC2008,CHN,PAR05,medio,2008.0,golpes/intentos 10 años previos=no; RoW=0.0,2008-09-15,C_parametro_simulacion,calculado
+PV001056,SC2008,CHN,PAR06,baja,2008.0,imp_netas%=8.63245,2008-09-15,C_parametro_simulacion,calculado
+PV001057,SC2008,CHN,PAR07,media,2008.0,rentas%PIB=9.64841,2008-09-15,C_parametro_simulacion,calculado
+PV001058,SC2008,CHN,PAR08,,,deuda%PIB=None,2008-09-15,C_parametro_simulacion,pendiente_sin_datos
+PV001059,SC2008,CHN,PAR09,0.548,2008.0,v2x_corr=0.548,2008-09-15,C_parametro_simulacion,calculado
+PV001060,SC2008,CHN,PAR10,moderada,2008.0,inflacion=5.92525,2008-09-15,C_parametro_simulacion,calculado
+PV001061,SC2008,RUS,PAR01,0.02604,2008.0,PIB=1660848058303.1135,2008-09-15,C_parametro_simulacion,calculado
+PV001062,SC2008,RUS,PAR02,0.040871993,2008.0,CINC=0.040871993,2008-09-15,C_parametro_simulacion,calculado
+PV001063,SC2008,RUS,PAR03,alto,2008.0,milex%PIB=3.14949,2008-09-15,C_parametro_simulacion,calculado
+PV001064,SC2008,RUS,PAR04,autocracia_electoral,2008.0,RoW=1.0,2008-09-15,C_parametro_simulacion,calculado
+PV001065,SC2008,RUS,PAR05,medio,2008.0,golpes/intentos 10 años previos=no; RoW=1.0,2008-09-15,C_parametro_simulacion,calculado
+PV001066,SC2008,RUS,PAR06,exportador_neto,2008.0,imp_netas%=-77.95494,2008-09-15,C_parametro_simulacion,calculado
+PV001067,SC2008,RUS,PAR07,alta,2008.0,rentas%PIB=19.10498,2008-09-15,C_parametro_simulacion,calculado
+PV001068,SC2008,RUS,PAR08,amplio,2008.0,deuda%PIB=6.49529,2008-09-15,C_parametro_simulacion,calculado
+PV001069,SC2008,RUS,PAR09,0.731,2008.0,v2x_corr=0.731,2008-09-15,C_parametro_simulacion,calculado
+PV001070,SC2008,RUS,PAR10,moderada,2008.0,inflacion=14.11077,2008-09-15,C_parametro_simulacion,calculado
+PV001071,SC2008,GEO,PAR01,0.0002,2008.0,PIB=12795145130.91028,2008-09-15,C_parametro_simulacion,calculado
+PV001072,SC2008,GEO,PAR02,0.00053539342,2008.0,CINC=0.00053539342,2008-09-15,C_parametro_simulacion,calculado
+PV001073,SC2008,GEO,PAR03,muy_alto,2008.0,milex%PIB=8.52012,2008-09-15,C_parametro_simulacion,calculado
+PV001074,SC2008,GEO,PAR04,autocracia_electoral,2008.0,RoW=1.0,2008-09-15,C_parametro_simulacion,calculado
+PV001075,SC2008,GEO,PAR05,medio,2008.0,golpes/intentos 10 años previos=no; RoW=1.0,2008-09-15,C_parametro_simulacion,calculado
+PV001076,SC2008,GEO,PAR06,alta,2008.0,imp_netas%=65.40149,2008-09-15,C_parametro_simulacion,calculado
+PV001077,SC2008,GEO,PAR07,baja,2008.0,rentas%PIB=0.78297,2008-09-15,C_parametro_simulacion,calculado
+PV001078,SC2008,GEO,PAR08,amplio,2008.0,deuda%PIB=23.47326,2008-09-15,C_parametro_simulacion,calculado
+PV001079,SC2008,GEO,PAR09,0.107,2008.0,v2x_corr=0.107,2008-09-15,C_parametro_simulacion,calculado
+PV001080,SC2008,GEO,PAR10,moderada,2008.0,inflacion=9.99949,2008-09-15,C_parametro_simulacion,calculado
+PV001081,SC2011,TUN,PAR01,0.00065,2011.0,PIB=48123325825.07389,2011-01-25,C_parametro_simulacion,calculado
+PV001082,SC2011,TUN,PAR02,0.00094975426,2011.0,CINC=0.00094975426,2011-01-25,C_parametro_simulacion,calculado
+PV001083,SC2011,TUN,PAR03,bajo,2011.0,milex%PIB=1.48626,2011-01-25,C_parametro_simulacion,calculado
+PV001084,SC2011,TUN,PAR04,autocracia_electoral,2011.0,RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001085,SC2011,TUN,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001086,SC2011,TUN,PAR06,baja,2011.0,imp_netas%=25.56558,2011-01-25,C_parametro_simulacion,calculado
+PV001087,SC2011,TUN,PAR07,media,2011.0,rentas%PIB=6.26002,2011-01-25,C_parametro_simulacion,calculado
+PV001088,SC2011,TUN,PAR08,moderado,2011.0,deuda%PIB=42.48072,2011-01-25,C_parametro_simulacion,calculado
+PV001089,SC2011,TUN,PAR09,0.335,2011.0,v2x_corr=0.335,2011-01-25,C_parametro_simulacion,calculado
+PV001090,SC2011,TUN,PAR10,baja,2011.0,inflacion=3.24003,2011-01-25,C_parametro_simulacion,calculado
+PV001091,SC2011,EGY,PAR01,0.0032,2011.0,PIB=235989672977.6248,2011-01-25,C_parametro_simulacion,calculado
+PV001092,SC2011,EGY,PAR02,0.010138696,2011.0,CINC=0.010138696,2011-01-25,C_parametro_simulacion,calculado
+PV001093,SC2011,EGY,PAR03,medio,2011.0,milex%PIB=1.83703,2011-01-25,C_parametro_simulacion,calculado
+PV001094,SC2011,EGY,PAR04,autocracia_electoral,2011.0,RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001095,SC2011,EGY,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001096,SC2011,EGY,PAR06,exportador_neto,2011.0,imp_netas%=-9.09168,2011-01-25,C_parametro_simulacion,calculado
+PV001097,SC2011,EGY,PAR07,media,2011.0,rentas%PIB=12.33884,2011-01-25,C_parametro_simulacion,calculado
+PV001098,SC2011,EGY,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001099,SC2011,EGY,PAR09,0.622,2011.0,v2x_corr=0.622,2011-01-25,C_parametro_simulacion,calculado
+PV001100,SC2011,EGY,PAR10,moderada,2011.0,inflacion=10.06493,2011-01-25,C_parametro_simulacion,calculado
+PV001101,SC2011,LBY,PAR01,0.00065,2011.0,PIB=48169263294.10074,2011-01-25,C_parametro_simulacion,calculado
+PV001102,SC2011,LBY,PAR02,0.0014074179,2011.0,CINC=0.0014074179,2011-01-25,C_parametro_simulacion,calculado
+PV001103,SC2011,LBY,PAR03,bajo,2008.0,milex%PIB=1.48985,2011-01-25,C_parametro_simulacion,calculado
+PV001104,SC2011,LBY,PAR04,autocracia_cerrada,2011.0,RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001105,SC2011,LBY,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001106,SC2011,LBY,PAR06,exportador_neto,2011.0,imp_netas%=-95.19392,2011-01-25,C_parametro_simulacion,calculado
+PV001107,SC2011,LBY,PAR07,alta,2011.0,rentas%PIB=37.56173,2011-01-25,C_parametro_simulacion,calculado
+PV001108,SC2011,LBY,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001109,SC2011,LBY,PAR09,0.836,2011.0,v2x_corr=0.836,2011-01-25,C_parametro_simulacion,calculado
+PV001110,SC2011,LBY,PAR10,alta,2011.0,inflacion=15.51848,2011-01-25,C_parametro_simulacion,calculado
+PV001111,SC2011,SYR,PAR01,0.00092,2011.0,PIB=67539428159.44737,2011-01-25,C_parametro_simulacion,calculado
+PV001112,SC2011,SYR,PAR02,0.0049415436,2011.0,CINC=0.0049415436,2011-01-25,C_parametro_simulacion,calculado
+PV001113,SC2011,SYR,PAR03,alto,2010.0,milex%PIB=4.05614,2011-01-25,C_parametro_simulacion,calculado
+PV001114,SC2011,SYR,PAR04,autocracia_electoral,2011.0,RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001115,SC2011,SYR,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001116,SC2011,SYR,PAR06,exportador_neto,2011.0,imp_netas%=-13.98662,2011-01-25,C_parametro_simulacion,calculado
+PV001117,SC2011,SYR,PAR07,alta,2011.0,rentas%PIB=20.35361,2011-01-25,C_parametro_simulacion,calculado
+PV001118,SC2011,SYR,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001119,SC2011,SYR,PAR09,0.891,2011.0,v2x_corr=0.891,2011-01-25,C_parametro_simulacion,calculado
+PV001120,SC2011,SYR,PAR10,baja,2011.0,inflacion=4.75316,2011-01-25,C_parametro_simulacion,calculado
+PV001121,SC2011,YEM,PAR01,0.00044,2011.0,PIB=32726417878.39101,2011-01-25,C_parametro_simulacion,calculado
+PV001122,SC2011,YEM,PAR02,0.0016840298,2011.0,CINC=0.0016840298,2011-01-25,C_parametro_simulacion,calculado
+PV001123,SC2011,YEM,PAR03,alto,2011.0,milex%PIB=4.92646,2011-01-25,C_parametro_simulacion,calculado
+PV001124,SC2011,YEM,PAR04,autocracia_electoral,2011.0,RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001125,SC2011,YEM,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001126,SC2011,YEM,PAR06,exportador_neto,2011.0,imp_netas%=-174.85327,2011-01-25,C_parametro_simulacion,calculado
+PV001127,SC2011,YEM,PAR07,alta,2011.0,rentas%PIB=25.93958,2011-01-25,C_parametro_simulacion,calculado
+PV001128,SC2011,YEM,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001129,SC2011,YEM,PAR09,0.889,2011.0,v2x_corr=0.889,2011-01-25,C_parametro_simulacion,calculado
+PV001130,SC2011,YEM,PAR10,alta,2011.0,inflacion=19.54356,2011-01-25,C_parametro_simulacion,calculado
+PV001131,SC2011,BHR,PAR01,0.00041,2011.0,PIB=29914680851.06383,2011-01-25,C_parametro_simulacion,calculado
+PV001132,SC2011,BHR,PAR02,0.00052871142,2011.0,CINC=0.00052871142,2011-01-25,C_parametro_simulacion,calculado
+PV001133,SC2011,BHR,PAR03,alto,2011.0,milex%PIB=3.5915,2011-01-25,C_parametro_simulacion,calculado
+PV001134,SC2011,BHR,PAR04,autocracia_cerrada,2011.0,RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001135,SC2011,BHR,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001136,SC2011,BHR,PAR06,exportador_neto,2011.0,imp_netas%=-58.31469,2011-01-25,C_parametro_simulacion,calculado
+PV001137,SC2011,BHR,PAR07,alta,2011.0,rentas%PIB=26.99494,2011-01-25,C_parametro_simulacion,calculado
+PV001138,SC2011,BHR,PAR08,amplio,2011.0,deuda%PIB=34.56893,2011-01-25,C_parametro_simulacion,calculado
+PV001139,SC2011,BHR,PAR09,0.507,2011.0,v2x_corr=0.507,2011-01-25,C_parametro_simulacion,calculado
+PV001140,SC2011,BHR,PAR10,baja,2011.0,inflacion=-0.40004,2011-01-25,C_parametro_simulacion,calculado
+PV001141,SC2011,SAU,PAR01,0.00924,2011.0,PIB=680660800000.0,2011-01-25,C_parametro_simulacion,calculado
+PV001142,SC2011,SAU,PAR02,0.012790886,2011.0,CINC=0.012790886,2011-01-25,C_parametro_simulacion,calculado
+PV001143,SC2011,SAU,PAR03,muy_alto,2011.0,milex%PIB=7.1724,2011-01-25,C_parametro_simulacion,calculado
+PV001144,SC2011,SAU,PAR04,autocracia_cerrada,2011.0,RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001145,SC2011,SAU,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=0.0,2011-01-25,C_parametro_simulacion,calculado
+PV001146,SC2011,SAU,PAR06,exportador_neto,2011.0,imp_netas%=-194.47915,2011-01-25,C_parametro_simulacion,calculado
+PV001147,SC2011,SAU,PAR07,alta,2011.0,rentas%PIB=50.20364,2011-01-25,C_parametro_simulacion,calculado
+PV001148,SC2011,SAU,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001149,SC2011,SAU,PAR09,0.469,2011.0,v2x_corr=0.469,2011-01-25,C_parametro_simulacion,calculado
+PV001150,SC2011,SAU,PAR10,moderada,2011.0,inflacion=5.82622,2011-01-25,C_parametro_simulacion,calculado
+PV001151,SC2011,IRN,PAR01,0.00854,2011.0,PIB=629082257472.3682,2011-01-25,C_parametro_simulacion,calculado
+PV001152,SC2011,IRN,PAR02,0.01483774,2011.0,CINC=0.01483774,2011-01-25,C_parametro_simulacion,calculado
+PV001153,SC2011,IRN,PAR03,medio,2011.0,milex%PIB=2.38163,2011-01-25,C_parametro_simulacion,calculado
+PV001154,SC2011,IRN,PAR04,autocracia_electoral,2011.0,RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001155,SC2011,IRN,PAR05,medio,2011.0,golpes/intentos 10 años previos=no; RoW=1.0,2011-01-25,C_parametro_simulacion,calculado
+PV001156,SC2011,IRN,PAR06,exportador_neto,2011.0,imp_netas%=-64.58069,2011-01-25,C_parametro_simulacion,calculado
+PV001157,SC2011,IRN,PAR07,alta,2011.0,rentas%PIB=25.34615,2011-01-25,C_parametro_simulacion,calculado
+PV001158,SC2011,IRN,PAR08,,,deuda%PIB=None,2011-01-25,C_parametro_simulacion,pendiente_sin_datos
+PV001159,SC2011,IRN,PAR09,0.736,2011.0,v2x_corr=0.736,2011-01-25,C_parametro_simulacion,calculado
+PV001160,SC2011,IRN,PAR10,alta,2011.0,inflacion=26.29339,2011-01-25,C_parametro_simulacion,calculado
+PV001161,SC2011,TUR,PAR01,0.01145,2011.0,PIB=844192507380.795,2011-01-25,C_parametro_simulacion,calculado
+PV001162,SC2011,TUR,PAR02,0.015084193,2011.0,CINC=0.015084193,2011-01-25,C_parametro_simulacion,calculado
+PV001163,SC2011,TUR,PAR03,medio,2011.0,milex%PIB=2.02751,2011-01-25,C_parametro_simulacion,calculado
+PV001164,SC2011,TUR,PAR04,democracia_electoral,2011.0,RoW=2.0,2011-01-25,C_parametro_simulacion,calculado
+PV001165,SC2011,TUR,PAR05,bajo,2011.0,golpes/intentos 10 años previos=no; RoW=2.0,2011-01-25,C_parametro_simulacion,calculado
+PV001166,SC2011,TUR,PAR06,alta,2011.0,imp_netas%=72.34552,2011-01-25,C_parametro_simulacion,calculado
+PV001167,SC2011,TUR,PAR07,baja,2011.0,rentas%PIB=1.15599,2011-01-25,C_parametro_simulacion,calculado
+PV001168,SC2011,TUR,PAR08,amplio,2011.0,deuda%PIB=39.96934,2011-01-25,C_parametro_simulacion,calculado
+PV001169,SC2011,TUR,PAR09,0.666,2011.0,v2x_corr=0.666,2011-01-25,C_parametro_simulacion,calculado
+PV001170,SC2011,TUR,PAR10,moderada,2011.0,inflacion=6.47188,2011-01-25,C_parametro_simulacion,calculado
+PV001171,SC2014,UKR,PAR01,0.00168,2014.0,PIB=133503871861.72328,2014-03-18,C_parametro_simulacion,calculado
+PV001172,SC2014,UKR,PAR02,0.0071162796,2014.0,CINC=0.0071162796,2014-03-18,C_parametro_simulacion,calculado
+PV001173,SC2014,UKR,PAR03,medio,2014.0,milex%PIB=2.96737,2014-03-18,C_parametro_simulacion,calculado
+PV001174,SC2014,UKR,PAR04,autocracia_electoral,2014.0,RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001175,SC2014,UKR,PAR05,medio,2014.0,golpes/intentos 10 años previos=no; RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001176,SC2014,UKR,PAR06,baja,2014.0,imp_netas%=25.96208,2014-03-18,C_parametro_simulacion,calculado
+PV001177,SC2014,UKR,PAR07,baja,2014.0,rentas%PIB=3.60832,2014-03-18,C_parametro_simulacion,calculado
+PV001178,SC2014,UKR,PAR08,moderado,2014.0,deuda%PIB=63.66532,2014-03-18,C_parametro_simulacion,calculado
+PV001179,SC2014,UKR,PAR09,0.804,2014.0,v2x_corr=0.804,2014-03-18,C_parametro_simulacion,calculado
+PV001180,SC2014,UKR,PAR10,moderada,2014.0,inflacion=12.07186,2014-03-18,C_parametro_simulacion,calculado
+PV001181,SC2014,RUS,PAR01,0.02594,2014.0,PIB=2059241589895.015,2014-03-18,C_parametro_simulacion,calculado
+PV001182,SC2014,RUS,PAR02,0.039199155,2014.0,CINC=0.039199155,2014-03-18,C_parametro_simulacion,calculado
+PV001183,SC2014,RUS,PAR03,alto,2014.0,milex%PIB=4.11299,2014-03-18,C_parametro_simulacion,calculado
+PV001184,SC2014,RUS,PAR04,autocracia_electoral,2014.0,RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001185,SC2014,RUS,PAR05,medio,2014.0,golpes/intentos 10 años previos=no; RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001186,SC2014,RUS,PAR06,exportador_neto,2014.0,imp_netas%=-83.49142,2014-03-18,C_parametro_simulacion,calculado
+PV001187,SC2014,RUS,PAR07,media,2014.0,rentas%PIB=12.4272,2014-03-18,C_parametro_simulacion,calculado
+PV001188,SC2014,RUS,PAR08,amplio,2014.0,deuda%PIB=11.20046,2014-03-18,C_parametro_simulacion,calculado
+PV001189,SC2014,RUS,PAR09,0.712,2014.0,v2x_corr=0.712,2014-03-18,C_parametro_simulacion,calculado
+PV001190,SC2014,RUS,PAR10,moderada,2014.0,inflacion=7.82017,2014-03-18,C_parametro_simulacion,calculado
+PV001191,SC2014,IRQ,PAR01,0.00288,2014.0,PIB=228415656174.95712,2014-03-18,C_parametro_simulacion,calculado
+PV001192,SC2014,IRQ,PAR02,0.0066096932,2014.0,CINC=0.0066096932,2014-03-18,C_parametro_simulacion,calculado
+PV001193,SC2014,IRQ,PAR03,medio,2014.0,milex%PIB=2.95061,2014-03-18,C_parametro_simulacion,calculado
+PV001194,SC2014,IRQ,PAR04,autocracia_electoral,2014.0,RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001195,SC2014,IRQ,PAR05,medio,2014.0,golpes/intentos 10 años previos=no; RoW=1.0,2014-03-18,C_parametro_simulacion,calculado
+PV001196,SC2014,IRQ,PAR06,exportador_neto,2014.0,imp_netas%=-307.6762,2014-03-18,C_parametro_simulacion,calculado
+PV001197,SC2014,IRQ,PAR07,alta,2014.0,rentas%PIB=46.8544,2014-03-18,C_parametro_simulacion,calculado
+PV001198,SC2014,IRQ,PAR08,,,deuda%PIB=None,2014-03-18,C_parametro_simulacion,pendiente_sin_datos
+PV001199,SC2014,IRQ,PAR09,0.862,2014.0,v2x_corr=0.862,2014-03-18,C_parametro_simulacion,calculado
+PV001200,SC2014,IRQ,PAR10,baja,2014.0,inflacion=2.23597,2014-03-18,C_parametro_simulacion,calculado
+PV001201,SC2014,SYR,PAR01,0.00027,2014.0,PIB=21502061465.94976,2014-03-18,C_parametro_simulacion,calculado
+PV001202,SC2014,SYR,PAR02,0.0030688315,2014.0,CINC=0.0030688315,2014-03-18,C_parametro_simulacion,calculado
+PV001203,SC2014,SYR,PAR03,,,milex%PIB=None,2014-03-18,C_parametro_simulacion,pendiente_sin_datos
+PV001204,SC2014,SYR,PAR04,autocracia_cerrada,2014.0,RoW=0.0,2014-03-18,C_parametro_simulacion,calculado
+PV001205,SC2014,SYR,PAR05,medio,2014.0,golpes/intentos 10 años previos=no; RoW=0.0,2014-03-18,C_parametro_simulacion,calculado
+PV001206,SC2014,SYR,PAR06,media,2014.0,imp_netas%=57.92854,2014-03-18,C_parametro_simulacion,calculado
+PV001207,SC2014,SYR,PAR07,media,2014.0,rentas%PIB=5.74137,2014-03-18,C_parametro_simulacion,calculado
+PV001208,SC2014,SYR,PAR08,,,deuda%PIB=None,2014-03-18,C_parametro_simulacion,pendiente_sin_datos
+PV001209,SC2014,SYR,PAR09,0.934,2014.0,v2x_corr=0.934,2014-03-18,C_parametro_simulacion,calculado
+PV001210,SC2014,SYR,PAR10,moderada,2014.0,inflacion=10.92711,2014-03-18,C_parametro_simulacion,calculado
+PV001211,SC2014,USA,PAR01,0.22106,2014.0,PIB=17550680173999.998,2014-03-18,C_parametro_simulacion,calculado
+PV001212,SC2014,USA,PAR02,0.12974022,2014.0,CINC=0.12974022,2014-03-18,C_parametro_simulacion,calculado
+PV001213,SC2014,USA,PAR03,alto,2014.0,milex%PIB=3.67892,2014-03-18,C_parametro_simulacion,calculado
+PV001214,SC2014,USA,PAR04,democracia_liberal,2014.0,RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001215,SC2014,USA,PAR05,bajo,2014.0,golpes/intentos 10 años previos=no; RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001216,SC2014,USA,PAR06,baja,2014.0,imp_netas%=11.6957,2014-03-18,C_parametro_simulacion,calculado
+PV001217,SC2014,USA,PAR07,baja,2014.0,rentas%PIB=0.70315,2014-03-18,C_parametro_simulacion,calculado
+PV001218,SC2014,USA,PAR08,estrecho,2014.0,deuda%PIB=95.94911,2014-03-18,C_parametro_simulacion,calculado
+PV001219,SC2014,USA,PAR09,0.053,2014.0,v2x_corr=0.053,2014-03-18,C_parametro_simulacion,calculado
+PV001220,SC2014,USA,PAR10,baja,2014.0,inflacion=1.62222,2014-03-18,C_parametro_simulacion,calculado
+PV001221,SC2014,DEU,PAR01,0.04994,2014.0,PIB=3964870735760.7705,2014-03-18,C_parametro_simulacion,calculado
+PV001222,SC2014,DEU,PAR02,0.017004119,2014.0,CINC=0.017004119,2014-03-18,C_parametro_simulacion,calculado
+PV001223,SC2014,DEU,PAR03,bajo,2014.0,milex%PIB=1.1277,2014-03-18,C_parametro_simulacion,calculado
+PV001224,SC2014,DEU,PAR04,democracia_liberal,2014.0,RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001225,SC2014,DEU,PAR05,bajo,2014.0,golpes/intentos 10 años previos=no; RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001226,SC2014,DEU,PAR06,alta,2014.0,imp_netas%=64.03524,2014-03-18,C_parametro_simulacion,calculado
+PV001227,SC2014,DEU,PAR07,baja,2014.0,rentas%PIB=0.09736,2014-03-18,C_parametro_simulacion,calculado
+PV001228,SC2014,DEU,PAR08,,,deuda%PIB=None,2014-03-18,C_parametro_simulacion,pendiente_sin_datos
+PV001229,SC2014,DEU,PAR09,0.011,2014.0,v2x_corr=0.011,2014-03-18,C_parametro_simulacion,calculado
+PV001230,SC2014,DEU,PAR10,baja,2014.0,inflacion=0.90679,2014-03-18,C_parametro_simulacion,calculado
+PV001231,SC2014,POL,PAR01,0.00683,2014.0,PIB=542134167178.6268,2014-03-18,C_parametro_simulacion,calculado
+PV001232,SC2014,POL,PAR02,0.0054691266,2014.0,CINC=0.0054691266,2014-03-18,C_parametro_simulacion,calculado
+PV001233,SC2014,POL,PAR03,medio,2014.0,milex%PIB=1.90823,2014-03-18,C_parametro_simulacion,calculado
+PV001234,SC2014,POL,PAR04,democracia_liberal,2014.0,RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001235,SC2014,POL,PAR05,bajo,2014.0,golpes/intentos 10 años previos=no; RoW=3.0,2014-03-18,C_parametro_simulacion,calculado
+PV001236,SC2014,POL,PAR06,baja,2014.0,imp_netas%=29.67858,2014-03-18,C_parametro_simulacion,calculado
+PV001237,SC2014,POL,PAR07,baja,2014.0,rentas%PIB=3.15768,2014-03-18,C_parametro_simulacion,calculado
+PV001238,SC2014,POL,PAR08,,,deuda%PIB=None,2014-03-18,C_parametro_simulacion,pendiente_sin_datos
+PV001239,SC2014,POL,PAR09,0.094,2014.0,v2x_corr=0.094,2014-03-18,C_parametro_simulacion,calculado
+PV001240,SC2014,POL,PAR10,baja,2014.0,inflacion=0.05382,2014-03-18,C_parametro_simulacion,calculado
+PV001241,SC2020,CHN,PAR01,0.17626,2020.0,PIB=14996414166715.092,2020-03-11,C_parametro_simulacion,calculado
+PV001242,SC2020,CHN,PAR02,0.23796764,2020.0,CINC=0.23796764,2020-03-11,C_parametro_simulacion,calculado
+PV001243,SC2020,CHN,PAR03,medio,2020.0,milex%PIB=1.7567,2020-03-11,C_parametro_simulacion,calculado
+PV001244,SC2020,CHN,PAR04,autocracia_cerrada,2020.0,RoW=0.0,2020-03-11,C_parametro_simulacion,calculado
+PV001245,SC2020,CHN,PAR05,medio,2020.0,golpes/intentos 10 años previos=no; RoW=0.0,2020-03-11,C_parametro_simulacion,calculado
+PV001246,SC2020,CHN,PAR06,baja,2020.0,imp_netas%=22.97457,2020-03-11,C_parametro_simulacion,calculado
+PV001247,SC2020,CHN,PAR07,baja,2020.0,rentas%PIB=0.86377,2020-03-11,C_parametro_simulacion,calculado
+PV001248,SC2020,CHN,PAR08,,,deuda%PIB=None,2020-03-11,C_parametro_simulacion,pendiente_sin_datos
+PV001249,SC2020,CHN,PAR09,0.455,2020.0,v2x_corr=0.455,2020-03-11,C_parametro_simulacion,calculado
+PV001250,SC2020,CHN,PAR10,baja,2020.0,inflacion=2.41942,2020-03-11,C_parametro_simulacion,calculado
+PV001251,SC2020,USA,PAR01,0.24754,2020.0,PIB=21060473613000.0,2020-03-11,C_parametro_simulacion,calculado
+PV001252,SC2020,USA,PAR02,0.12438105,2020.0,CINC=0.12438105,2020-03-11,C_parametro_simulacion,calculado
+PV001253,SC2020,USA,PAR03,alto,2020.0,milex%PIB=3.64519,2020-03-11,C_parametro_simulacion,calculado
+PV001254,SC2020,USA,PAR04,democracia_liberal,2020.0,RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001255,SC2020,USA,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001256,SC2020,USA,PAR06,exportador_neto,2020.0,imp_netas%=-3.96551,2020-03-11,C_parametro_simulacion,calculado
+PV001257,SC2020,USA,PAR07,baja,2020.0,rentas%PIB=0.32951,2020-03-11,C_parametro_simulacion,calculado
+PV001258,SC2020,USA,PAR08,critico,2020.0,deuda%PIB=126.37041,2020-03-11,C_parametro_simulacion,calculado
+PV001259,SC2020,USA,PAR09,0.085,2020.0,v2x_corr=0.085,2020-03-11,C_parametro_simulacion,calculado
+PV001260,SC2020,USA,PAR10,baja,2020.0,inflacion=1.23358,2020-03-11,C_parametro_simulacion,calculado
+PV001261,SC2020,ITA,PAR01,0.02242,2020.0,PIB=1907481094079.2273,2020-03-11,C_parametro_simulacion,calculado
+PV001262,SC2020,ITA,PAR02,0.0098374216,2020.0,CINC=0.0098374216,2020-03-11,C_parametro_simulacion,calculado
+PV001263,SC2020,ITA,PAR03,medio,2020.0,milex%PIB=1.72985,2020-03-11,C_parametro_simulacion,calculado
+PV001264,SC2020,ITA,PAR04,democracia_liberal,2020.0,RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001265,SC2020,ITA,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001266,SC2020,ITA,PAR06,alta,2020.0,imp_netas%=76.86952,2020-03-11,C_parametro_simulacion,calculado
+PV001267,SC2020,ITA,PAR07,baja,2020.0,rentas%PIB=0.05597,2020-03-11,C_parametro_simulacion,calculado
+PV001268,SC2020,ITA,PAR08,,,deuda%PIB=None,2020-03-11,C_parametro_simulacion,pendiente_sin_datos
+PV001269,SC2020,ITA,PAR09,0.164,2020.0,v2x_corr=0.164,2020-03-11,C_parametro_simulacion,calculado
+PV001270,SC2020,ITA,PAR10,baja,2020.0,inflacion=-0.13771,2020-03-11,C_parametro_simulacion,calculado
+PV001271,SC2020,ESP,PAR01,0.01516,2020.0,PIB=1289783836971.2097,2020-03-11,C_parametro_simulacion,calculado
+PV001272,SC2020,ESP,PAR02,0.0065355343,2020.0,CINC=0.0065355343,2020-03-11,C_parametro_simulacion,calculado
+PV001273,SC2020,ESP,PAR03,bajo,2020.0,milex%PIB=1.3543,2020-03-11,C_parametro_simulacion,calculado
+PV001274,SC2020,ESP,PAR04,democracia_liberal,2020.0,RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001275,SC2020,ESP,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001276,SC2020,ESP,PAR06,alta,2020.0,imp_netas%=73.47742,2020-03-11,C_parametro_simulacion,calculado
+PV001277,SC2020,ESP,PAR07,baja,2020.0,rentas%PIB=0.03812,2020-03-11,C_parametro_simulacion,calculado
+PV001278,SC2020,ESP,PAR08,critico,2020.0,deuda%PIB=138.95525,2020-03-11,C_parametro_simulacion,calculado
+PV001279,SC2020,ESP,PAR09,0.033,2020.0,v2x_corr=0.033,2020-03-11,C_parametro_simulacion,calculado
+PV001280,SC2020,ESP,PAR10,baja,2020.0,inflacion=-0.32275,2020-03-11,C_parametro_simulacion,calculado
+PV001281,SC2020,GBR,PAR01,0.03202,2020.0,PIB=2724001478304.591,2020-03-11,C_parametro_simulacion,calculado
+PV001282,SC2020,GBR,PAR02,0.012352299,2020.0,CINC=0.012352299,2020-03-11,C_parametro_simulacion,calculado
+PV001283,SC2020,GBR,PAR03,medio,2020.0,milex%PIB=2.16304,2020-03-11,C_parametro_simulacion,calculado
+PV001284,SC2020,GBR,PAR04,democracia_liberal,2020.0,RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001285,SC2020,GBR,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001286,SC2020,GBR,PAR06,baja,2020.0,imp_netas%=28.49944,2020-03-11,C_parametro_simulacion,calculado
+PV001287,SC2020,GBR,PAR07,baja,2020.0,rentas%PIB=0.28398,2020-03-11,C_parametro_simulacion,calculado
+PV001288,SC2020,GBR,PAR08,critico,2020.0,deuda%PIB=194.68283,2020-03-11,C_parametro_simulacion,calculado
+PV001289,SC2020,GBR,PAR09,0.042,2020.0,v2x_corr=0.042,2020-03-11,C_parametro_simulacion,calculado
+PV001290,SC2020,GBR,PAR10,baja,2020.0,inflacion=0.98949,2020-03-11,C_parametro_simulacion,calculado
+PV001291,SC2020,BRA,PAR01,0.01735,2020.0,PIB=1476107292151.9543,2020-03-11,C_parametro_simulacion,calculado
+PV001292,SC2020,BRA,PAR02,0.02038938,2020.0,CINC=0.02038938,2020-03-11,C_parametro_simulacion,calculado
+PV001293,SC2020,BRA,PAR03,bajo,2020.0,milex%PIB=1.32666,2020-03-11,C_parametro_simulacion,calculado
+PV001294,SC2020,BRA,PAR04,democracia_electoral,2020.0,RoW=2.0,2020-03-11,C_parametro_simulacion,calculado
+PV001295,SC2020,BRA,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=2.0,2020-03-11,C_parametro_simulacion,calculado
+PV001296,SC2020,BRA,PAR06,exportador_neto,2020.0,imp_netas%=-11.16774,2020-03-11,C_parametro_simulacion,calculado
+PV001297,SC2020,BRA,PAR07,baja,2020.0,rentas%PIB=3.22988,2020-03-11,C_parametro_simulacion,calculado
+PV001298,SC2020,BRA,PAR08,estrecho,2020.0,deuda%PIB=98.70988,2020-03-11,C_parametro_simulacion,calculado
+PV001299,SC2020,BRA,PAR09,0.537,2020.0,v2x_corr=0.537,2020-03-11,C_parametro_simulacion,calculado
+PV001300,SC2020,BRA,PAR10,baja,2020.0,inflacion=3.21177,2020-03-11,C_parametro_simulacion,calculado
+PV001301,SC2020,IND,PAR01,0.03144,2020.0,PIB=2674851578587.269,2020-03-11,C_parametro_simulacion,calculado
+PV001302,SC2020,IND,PAR02,0.096076407,2020.0,CINC=0.096076407,2020-03-11,C_parametro_simulacion,calculado
+PV001303,SC2020,IND,PAR03,medio,2020.0,milex%PIB=2.80362,2020-03-11,C_parametro_simulacion,calculado
+PV001304,SC2020,IND,PAR04,autocracia_electoral,2020.0,RoW=1.0,2020-03-11,C_parametro_simulacion,calculado
+PV001305,SC2020,IND,PAR05,medio,2020.0,golpes/intentos 10 años previos=no; RoW=1.0,2020-03-11,C_parametro_simulacion,calculado
+PV001306,SC2020,IND,PAR06,media,2020.0,imp_netas%=37.48125,2020-03-11,C_parametro_simulacion,calculado
+PV001307,SC2020,IND,PAR07,baja,2020.0,rentas%PIB=1.78467,2020-03-11,C_parametro_simulacion,calculado
+PV001308,SC2020,IND,PAR08,moderado,2018.0,deuda%PIB=46.5225,2020-03-11,C_parametro_simulacion,calculado
+PV001309,SC2020,IND,PAR09,0.663,2020.0,v2x_corr=0.663,2020-03-11,C_parametro_simulacion,calculado
+PV001310,SC2020,IND,PAR10,moderada,2020.0,inflacion=6.62344,2020-03-11,C_parametro_simulacion,calculado
+PV001311,SC2020,DEU,PAR01,0.04633,2020.0,PIB=3941398957073.941,2020-03-11,C_parametro_simulacion,calculado
+PV001312,SC2020,DEU,PAR02,0.015467655,2020.0,CINC=0.015467655,2020-03-11,C_parametro_simulacion,calculado
+PV001313,SC2020,DEU,PAR03,bajo,2020.0,milex%PIB=1.35599,2020-03-11,C_parametro_simulacion,calculado
+PV001314,SC2020,DEU,PAR04,democracia_liberal,2020.0,RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001315,SC2020,DEU,PAR05,bajo,2020.0,golpes/intentos 10 años previos=no; RoW=3.0,2020-03-11,C_parametro_simulacion,calculado
+PV001316,SC2020,DEU,PAR06,alta,2020.0,imp_netas%=65.3856,2020-03-11,C_parametro_simulacion,calculado
+PV001317,SC2020,DEU,PAR07,baja,2020.0,rentas%PIB=0.07675,2020-03-11,C_parametro_simulacion,calculado
+PV001318,SC2020,DEU,PAR08,,,deuda%PIB=None,2020-03-11,C_parametro_simulacion,pendiente_sin_datos
+PV001319,SC2020,DEU,PAR09,0.016,2020.0,v2x_corr=0.016,2020-03-11,C_parametro_simulacion,calculado
+PV001320,SC2020,DEU,PAR10,baja,2020.0,inflacion=0.14488,2020-03-11,C_parametro_simulacion,calculado
+PV001321,SC2022,UKR,PAR01,0.0016,2022.0,PIB=161989520721.1905,2022-02-24,C_parametro_simulacion,calculado
+PV001322,SC2022,UKR,PAR02,0.0085589373,2022.0,CINC=0.0085589373,2022-02-24,C_parametro_simulacion,calculado
+PV001323,SC2022,UKR,PAR03,muy_alto,2022.0,milex%PIB=25.64241,2022-02-24,C_parametro_simulacion,calculado
+PV001324,SC2022,UKR,PAR04,autocracia_electoral,2022.0,RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001325,SC2022,UKR,PAR05,alto,2022.0,golpes/intentos 10 años previos=sí; RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001326,SC2022,UKR,PAR06,baja,2022.0,imp_netas%=23.36906,2022-02-24,C_parametro_simulacion,calculado
+PV001327,SC2022,UKR,PAR07,media,2021.0,rentas%PIB=7.5129,2022-02-24,C_parametro_simulacion,calculado
+PV001328,SC2022,UKR,PAR08,moderado,2020.0,deuda%PIB=58.71619,2022-02-24,C_parametro_simulacion,calculado
+PV001329,SC2022,UKR,PAR09,0.594,2022.0,v2x_corr=0.594,2022-02-24,C_parametro_simulacion,calculado
+PV001330,SC2022,UKR,PAR10,alta,2022.0,inflacion=20.18364,2022-02-24,C_parametro_simulacion,calculado
+PV001331,SC2022,RUS,PAR01,0.02265,2022.0,PIB=2291612121334.643,2022-02-24,C_parametro_simulacion,calculado
+PV001332,SC2022,RUS,PAR02,0.038196992,2022.0,CINC=0.038196992,2022-02-24,C_parametro_simulacion,calculado
+PV001333,SC2022,RUS,PAR03,alto,2022.0,milex%PIB=4.60729,2022-02-24,C_parametro_simulacion,calculado
+PV001334,SC2022,RUS,PAR04,autocracia_electoral,2022.0,RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001335,SC2022,RUS,PAR05,medio,2022.0,golpes/intentos 10 años previos=no; RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001336,SC2022,RUS,PAR06,exportador_neto,2022.0,imp_netas%=-75.13754,2022-02-24,C_parametro_simulacion,calculado
+PV001337,SC2022,RUS,PAR07,alta,2021.0,rentas%PIB=18.51094,2022-02-24,C_parametro_simulacion,calculado
+PV001338,SC2022,RUS,PAR08,amplio,2022.0,deuda%PIB=19.28848,2022-02-24,C_parametro_simulacion,calculado
+PV001339,SC2022,RUS,PAR09,0.732,2022.0,v2x_corr=0.732,2022-02-24,C_parametro_simulacion,calculado
+PV001340,SC2022,RUS,PAR10,moderada,2022.0,inflacion=13.74368,2022-02-24,C_parametro_simulacion,calculado
+PV001341,SC2022,POL,PAR01,0.00687,2022.0,PIB=695607470875.2761,2022-02-24,C_parametro_simulacion,calculado
+PV001342,SC2022,POL,PAR02,0.0051843021,2022.0,CINC=0.0051843021,2022-02-24,C_parametro_simulacion,calculado
+PV001343,SC2022,POL,PAR03,medio,2022.0,milex%PIB=2.20459,2022-02-24,C_parametro_simulacion,calculado
+PV001344,SC2022,POL,PAR04,democracia_electoral,2022.0,RoW=2.0,2022-02-24,C_parametro_simulacion,calculado
+PV001345,SC2022,POL,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=2.0,2022-02-24,C_parametro_simulacion,calculado
+PV001346,SC2022,POL,PAR06,media,2022.0,imp_netas%=46.84188,2022-02-24,C_parametro_simulacion,calculado
+PV001347,SC2022,POL,PAR07,baja,2021.0,rentas%PIB=1.03024,2022-02-24,C_parametro_simulacion,calculado
+PV001348,SC2022,POL,PAR08,,,deuda%PIB=None,2022-02-24,C_parametro_simulacion,pendiente_sin_datos
+PV001349,SC2022,POL,PAR09,0.139,2022.0,v2x_corr=0.139,2022-02-24,C_parametro_simulacion,calculado
+PV001350,SC2022,POL,PAR10,moderada,2022.0,inflacion=14.42945,2022-02-24,C_parametro_simulacion,calculado
+PV001351,SC2022,DEU,PAR01,0.04152,2022.0,PIB=4201021706478.616,2022-02-24,C_parametro_simulacion,calculado
+PV001352,SC2022,DEU,PAR02,0.015029249,2022.0,CINC=0.015029249,2022-02-24,C_parametro_simulacion,calculado
+PV001353,SC2022,DEU,PAR03,bajo,2022.0,milex%PIB=1.35031,2022-02-24,C_parametro_simulacion,calculado
+PV001354,SC2022,DEU,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001355,SC2022,DEU,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001356,SC2022,DEU,PAR06,alta,2022.0,imp_netas%=71.75341,2022-02-24,C_parametro_simulacion,calculado
+PV001357,SC2022,DEU,PAR07,baja,2021.0,rentas%PIB=0.07708,2022-02-24,C_parametro_simulacion,calculado
+PV001358,SC2022,DEU,PAR08,,,deuda%PIB=None,2022-02-24,C_parametro_simulacion,pendiente_sin_datos
+PV001359,SC2022,DEU,PAR09,0.018,2022.0,v2x_corr=0.018,2022-02-24,C_parametro_simulacion,calculado
+PV001360,SC2022,DEU,PAR10,moderada,2022.0,inflacion=6.87257,2022-02-24,C_parametro_simulacion,calculado
+PV001361,SC2022,FRA,PAR01,0.02762,2022.0,PIB=2794788137066.937,2022-02-24,C_parametro_simulacion,calculado
+PV001362,SC2022,FRA,PAR02,0.010944385,2022.0,CINC=0.010944385,2022-02-24,C_parametro_simulacion,calculado
+PV001363,SC2022,FRA,PAR03,medio,2022.0,milex%PIB=1.95772,2022-02-24,C_parametro_simulacion,calculado
+PV001364,SC2022,FRA,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001365,SC2022,FRA,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001366,SC2022,FRA,PAR06,media,2022.0,imp_netas%=54.32017,2022-02-24,C_parametro_simulacion,calculado
+PV001367,SC2022,FRA,PAR07,baja,2021.0,rentas%PIB=0.03254,2022-02-24,C_parametro_simulacion,calculado
+PV001368,SC2022,FRA,PAR08,,,deuda%PIB=None,2022-02-24,C_parametro_simulacion,pendiente_sin_datos
+PV001369,SC2022,FRA,PAR09,0.045,2022.0,v2x_corr=0.045,2022-02-24,C_parametro_simulacion,calculado
+PV001370,SC2022,FRA,PAR10,moderada,2022.0,inflacion=5.22237,2022-02-24,C_parametro_simulacion,calculado
+PV001371,SC2022,USA,PAR01,0.25305,2022.0,PIB=25604848907611.0,2022-02-24,C_parametro_simulacion,calculado
+PV001372,SC2022,USA,PAR02,0.12356574,2022.0,CINC=0.12356574,2022-02-24,C_parametro_simulacion,calculado
+PV001373,SC2022,USA,PAR03,alto,2022.0,milex%PIB=3.30948,2022-02-24,C_parametro_simulacion,calculado
+PV001374,SC2022,USA,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001375,SC2022,USA,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001376,SC2022,USA,PAR06,exportador_neto,2022.0,imp_netas%=-6.49504,2022-02-24,C_parametro_simulacion,calculado
+PV001377,SC2022,USA,PAR07,baja,2021.0,rentas%PIB=1.27994,2022-02-24,C_parametro_simulacion,calculado
+PV001378,SC2022,USA,PAR08,estrecho,2022.0,deuda%PIB=114.69484,2022-02-24,C_parametro_simulacion,calculado
+PV001379,SC2022,USA,PAR09,0.061,2022.0,v2x_corr=0.061,2022-02-24,C_parametro_simulacion,calculado
+PV001380,SC2022,USA,PAR10,moderada,2022.0,inflacion=8.0028,2022-02-24,C_parametro_simulacion,calculado
+PV001381,SC2022,GBR,PAR01,0.03144,2022.0,PIB=3181244350465.4146,2022-02-24,C_parametro_simulacion,calculado
+PV001382,SC2022,GBR,PAR02,0.012467598,2022.0,CINC=0.012467598,2022-02-24,C_parametro_simulacion,calculado
+PV001383,SC2022,GBR,PAR03,medio,2022.0,milex%PIB=2.05692,2022-02-24,C_parametro_simulacion,calculado
+PV001384,SC2022,GBR,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001385,SC2022,GBR,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001386,SC2022,GBR,PAR06,media,2022.0,imp_netas%=39.17914,2022-02-24,C_parametro_simulacion,calculado
+PV001387,SC2022,GBR,PAR07,baja,2021.0,rentas%PIB=0.58854,2022-02-24,C_parametro_simulacion,calculado
+PV001388,SC2022,GBR,PAR08,critico,2022.0,deuda%PIB=138.2159,2022-02-24,C_parametro_simulacion,calculado
+PV001389,SC2022,GBR,PAR09,0.053,2022.0,v2x_corr=0.053,2022-02-24,C_parametro_simulacion,calculado
+PV001390,SC2022,GBR,PAR10,moderada,2022.0,inflacion=7.92205,2022-02-24,C_parametro_simulacion,calculado
+PV001391,SC2022,BLR,PAR01,0.00073,2022.0,PIB=73775179924.60303,2022-02-24,C_parametro_simulacion,calculado
+PV001392,SC2022,BLR,PAR02,0.0014165612,2022.0,CINC=0.0014165612,2022-02-24,C_parametro_simulacion,calculado
+PV001393,SC2022,BLR,PAR03,medio,2022.0,milex%PIB=1.64869,2022-02-24,C_parametro_simulacion,calculado
+PV001394,SC2022,BLR,PAR04,autocracia_electoral,2022.0,RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001395,SC2022,BLR,PAR05,medio,2022.0,golpes/intentos 10 años previos=no; RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001396,SC2022,BLR,PAR06,alta,2022.0,imp_netas%=77.07995,2022-02-24,C_parametro_simulacion,calculado
+PV001397,SC2022,BLR,PAR07,baja,2021.0,rentas%PIB=1.8633,2022-02-24,C_parametro_simulacion,calculado
+PV001398,SC2022,BLR,PAR08,amplio,2019.0,deuda%PIB=33.2442,2022-02-24,C_parametro_simulacion,calculado
+PV001399,SC2022,BLR,PAR09,0.41,2022.0,v2x_corr=0.41,2022-02-24,C_parametro_simulacion,calculado
+PV001400,SC2022,BLR,PAR10,alta,2022.0,inflacion=15.20968,2022-02-24,C_parametro_simulacion,calculado
+PV001401,SC2022,FIN,PAR01,0.00277,2022.0,PIB=280253099309.3396,2022-02-24,C_parametro_simulacion,calculado
+PV001402,SC2022,FIN,PAR02,0.0013795791,2022.0,CINC=0.0013795791,2022-02-24,C_parametro_simulacion,calculado
+PV001403,SC2022,FIN,PAR03,medio,2022.0,milex%PIB=1.58855,2022-02-24,C_parametro_simulacion,calculado
+PV001404,SC2022,FIN,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001405,SC2022,FIN,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001406,SC2022,FIN,PAR06,media,2022.0,imp_netas%=42.38189,2022-02-24,C_parametro_simulacion,calculado
+PV001407,SC2022,FIN,PAR07,baja,2021.0,rentas%PIB=0.44831,2022-02-24,C_parametro_simulacion,calculado
+PV001408,SC2022,FIN,PAR08,,,deuda%PIB=None,2022-02-24,C_parametro_simulacion,pendiente_sin_datos
+PV001409,SC2022,FIN,PAR09,0.011,2022.0,v2x_corr=0.011,2022-02-24,C_parametro_simulacion,calculado
+PV001410,SC2022,FIN,PAR10,moderada,2022.0,inflacion=7.12351,2022-02-24,C_parametro_simulacion,calculado
+PV001411,SC2022,SWE,PAR01,0.00568,2022.0,PIB=575071237640.9214,2022-02-24,C_parametro_simulacion,calculado
+PV001412,SC2022,SWE,PAR02,0.0019123284,2022.0,CINC=0.0019123284,2022-02-24,C_parametro_simulacion,calculado
+PV001413,SC2022,SWE,PAR03,bajo,2022.0,milex%PIB=1.33148,2022-02-24,C_parametro_simulacion,calculado
+PV001414,SC2022,SWE,PAR04,democracia_liberal,2022.0,RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001415,SC2022,SWE,PAR05,bajo,2022.0,golpes/intentos 10 años previos=no; RoW=3.0,2022-02-24,C_parametro_simulacion,calculado
+PV001416,SC2022,SWE,PAR06,baja,2022.0,imp_netas%=28.69989,2022-02-24,C_parametro_simulacion,calculado
+PV001417,SC2022,SWE,PAR07,baja,2021.0,rentas%PIB=1.20828,2022-02-24,C_parametro_simulacion,calculado
+PV001418,SC2022,SWE,PAR08,,,deuda%PIB=None,2022-02-24,C_parametro_simulacion,pendiente_sin_datos
+PV001419,SC2022,SWE,PAR09,0.009,2022.0,v2x_corr=0.009,2022-02-24,C_parametro_simulacion,calculado
+PV001420,SC2022,SWE,PAR10,moderada,2022.0,inflacion=8.36929,2022-02-24,C_parametro_simulacion,calculado
+PV001421,SC2022,TUR,PAR01,0.00915,2022.0,PIB=926097476913.8176,2022-02-24,C_parametro_simulacion,calculado
+PV001422,SC2022,TUR,PAR02,0.012496565,2022.0,CINC=0.012496565,2022-02-24,C_parametro_simulacion,calculado
+PV001423,SC2022,TUR,PAR03,medio,2022.0,milex%PIB=1.6588,2022-02-24,C_parametro_simulacion,calculado
+PV001424,SC2022,TUR,PAR04,autocracia_electoral,2022.0,RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001425,SC2022,TUR,PAR05,alto,2022.0,golpes/intentos 10 años previos=sí; RoW=1.0,2022-02-24,C_parametro_simulacion,calculado
+PV001426,SC2022,TUR,PAR06,alta,2022.0,imp_netas%=72.70413,2022-02-24,C_parametro_simulacion,calculado
+PV001427,SC2022,TUR,PAR07,baja,2021.0,rentas%PIB=0.82705,2022-02-24,C_parametro_simulacion,calculado
+PV001428,SC2022,TUR,PAR08,amplio,2022.0,deuda%PIB=35.33008,2022-02-24,C_parametro_simulacion,calculado
+PV001429,SC2022,TUR,PAR09,0.843,2022.0,v2x_corr=0.843,2022-02-24,C_parametro_simulacion,calculado
+PV001430,SC2022,TUR,PAR10,muy_alta,2022.0,inflacion=72.30884,2022-02-24,C_parametro_simulacion,calculado
+PV001431,SC2024,USA,PAR01,0.262,2024.0,PIB=28750956130731.2,2024-01-01,C_parametro_simulacion,calculado
+PV001432,SC2024,USA,PAR02,0.12356574,2022.0,CINC=0.12356574,2024-01-01,C_parametro_simulacion,calculado
+PV001433,SC2024,USA,PAR03,alto,2024.0,milex%PIB=3.41922,2024-01-01,C_parametro_simulacion,calculado
+PV001434,SC2024,USA,PAR04,democracia_liberal,2024.0,RoW=3.0,2024-01-01,C_parametro_simulacion,calculado
+PV001435,SC2024,USA,PAR05,bajo,2024.0,golpes/intentos 10 años previos=no; RoW=3.0,2024-01-01,C_parametro_simulacion,calculado
+PV001436,SC2024,USA,PAR06,exportador_neto,2023.0,imp_netas%=-9.00059,2024-01-01,C_parametro_simulacion,calculado
+PV001437,SC2024,USA,PAR07,baja,2021.0,rentas%PIB=1.27994,2024-01-01,C_parametro_simulacion,calculado
+PV001438,SC2024,USA,PAR08,estrecho,2024.0,deuda%PIB=117.97323,2024-01-01,C_parametro_simulacion,calculado
+PV001439,SC2024,USA,PAR09,0.051,2024.0,v2x_corr=0.051,2024-01-01,C_parametro_simulacion,calculado
+PV001440,SC2024,USA,PAR10,baja,2024.0,inflacion=2.94953,2024-01-01,C_parametro_simulacion,calculado
+PV001441,SC2024,IND,PAR01,0.03563,2024.0,PIB=3909891533858.084,2024-01-01,C_parametro_simulacion,calculado
+PV001442,SC2024,IND,PAR02,0.099396847,2022.0,CINC=0.099396847,2024-01-01,C_parametro_simulacion,calculado
+PV001443,SC2024,IND,PAR03,medio,2024.0,milex%PIB=2.2712,2024-01-01,C_parametro_simulacion,calculado
+PV001444,SC2024,IND,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001445,SC2024,IND,PAR05,medio,2024.0,golpes/intentos 10 años previos=no; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001446,SC2024,IND,PAR06,media,2023.0,imp_netas%=36.08718,2024-01-01,C_parametro_simulacion,calculado
+PV001447,SC2024,IND,PAR07,baja,2021.0,rentas%PIB=3.15935,2024-01-01,C_parametro_simulacion,calculado
+PV001448,SC2024,IND,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001449,SC2024,IND,PAR09,0.681,2024.0,v2x_corr=0.681,2024-01-01,C_parametro_simulacion,calculado
+PV001450,SC2024,IND,PAR10,baja,2024.0,inflacion=4.95304,2024-01-01,C_parametro_simulacion,calculado
+PV001451,SC2024,IDN,PAR01,0.01272,2024.0,PIB=1396300098190.9731,2024-01-01,C_parametro_simulacion,calculado
+PV001452,SC2024,IDN,PAR02,0.020859037,2022.0,CINC=0.020859037,2024-01-01,C_parametro_simulacion,calculado
+PV001453,SC2024,IDN,PAR03,bajo,2024.0,milex%PIB=0.77922,2024-01-01,C_parametro_simulacion,calculado
+PV001454,SC2024,IDN,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001455,SC2024,IDN,PAR05,medio,2024.0,golpes/intentos 10 años previos=no; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001456,SC2024,IDN,PAR06,exportador_neto,2023.0,imp_netas%=-89.54882,2024-01-01,C_parametro_simulacion,calculado
+PV001457,SC2024,IDN,PAR07,media,2021.0,rentas%PIB=5.15704,2024-01-01,C_parametro_simulacion,calculado
+PV001458,SC2024,IDN,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001459,SC2024,IDN,PAR09,0.767,2024.0,v2x_corr=0.767,2024-01-01,C_parametro_simulacion,calculado
+PV001460,SC2024,IDN,PAR10,baja,2024.0,inflacion=2.18151,2024-01-01,C_parametro_simulacion,calculado
+PV001461,SC2024,MEX,PAR01,0.01692,2024.0,PIB=1856365616165.9373,2024-01-01,C_parametro_simulacion,calculado
+PV001462,SC2024,MEX,PAR02,0.011388138,2022.0,CINC=0.011388138,2024-01-01,C_parametro_simulacion,calculado
+PV001463,SC2024,MEX,PAR03,bajo,2024.0,milex%PIB=0.89326,2024-01-01,C_parametro_simulacion,calculado
+PV001464,SC2024,MEX,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001465,SC2024,MEX,PAR05,medio,2024.0,golpes/intentos 10 años previos=no; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001466,SC2024,MEX,PAR06,baja,2023.0,imp_netas%=21.58436,2024-01-01,C_parametro_simulacion,calculado
+PV001467,SC2024,MEX,PAR07,baja,2021.0,rentas%PIB=3.64307,2024-01-01,C_parametro_simulacion,calculado
+PV001468,SC2024,MEX,PAR08,moderado,2024.0,deuda%PIB=49.57021,2024-01-01,C_parametro_simulacion,calculado
+PV001469,SC2024,MEX,PAR09,0.581,2024.0,v2x_corr=0.581,2024-01-01,C_parametro_simulacion,calculado
+PV001470,SC2024,MEX,PAR10,baja,2024.0,inflacion=4.72226,2024-01-01,C_parametro_simulacion,calculado
+PV001471,SC2024,TWN,PAR01,,,PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001472,SC2024,TWN,PAR02,0.0060480088,2022.0,CINC=0.0060480088,2024-01-01,C_parametro_simulacion,calculado
+PV001473,SC2024,TWN,PAR03,,,milex%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001474,SC2024,TWN,PAR04,democracia_liberal,2024.0,RoW=3.0,2024-01-01,C_parametro_simulacion,calculado
+PV001475,SC2024,TWN,PAR05,bajo,2024.0,golpes/intentos 10 años previos=no; RoW=3.0,2024-01-01,C_parametro_simulacion,calculado
+PV001476,SC2024,TWN,PAR06,,,imp_netas%=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001477,SC2024,TWN,PAR07,,,rentas%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001478,SC2024,TWN,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001479,SC2024,TWN,PAR09,0.22,2024.0,v2x_corr=0.22,2024-01-01,C_parametro_simulacion,calculado
+PV001480,SC2024,TWN,PAR10,,,inflacion=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001481,SC2024,RUS,PAR01,0.01981,2024.0,PIB=2173835806671.656,2024-01-01,C_parametro_simulacion,calculado
+PV001482,SC2024,RUS,PAR02,0.038196992,2022.0,CINC=0.038196992,2024-01-01,C_parametro_simulacion,calculado
+PV001483,SC2024,RUS,PAR03,muy_alto,2024.0,milex%PIB=7.05234,2024-01-01,C_parametro_simulacion,calculado
+PV001484,SC2024,RUS,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001485,SC2024,RUS,PAR05,medio,2024.0,golpes/intentos 10 años previos=no; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001486,SC2024,RUS,PAR06,exportador_neto,2022.0,imp_netas%=-75.13754,2024-01-01,C_parametro_simulacion,calculado
+PV001487,SC2024,RUS,PAR07,alta,2021.0,rentas%PIB=18.51094,2024-01-01,C_parametro_simulacion,calculado
+PV001488,SC2024,RUS,PAR08,amplio,2024.0,deuda%PIB=17.95375,2024-01-01,C_parametro_simulacion,calculado
+PV001489,SC2024,RUS,PAR09,0.795,2024.0,v2x_corr=0.795,2024-01-01,C_parametro_simulacion,calculado
+PV001490,SC2024,RUS,PAR10,moderada,2024.0,inflacion=8.43486,2024-01-01,C_parametro_simulacion,calculado
+PV001491,SC2024,GBR,PAR01,0.03359,2024.0,PIB=3686033044482.128,2024-01-01,C_parametro_simulacion,calculado
+PV001492,SC2024,GBR,PAR02,0.012467598,2022.0,CINC=0.012467598,2024-01-01,C_parametro_simulacion,calculado
+PV001493,SC2024,GBR,PAR03,medio,2024.0,milex%PIB=2.27862,2024-01-01,C_parametro_simulacion,calculado
+PV001494,SC2024,GBR,PAR04,democracia_electoral,2024.0,RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001495,SC2024,GBR,PAR05,bajo,2024.0,golpes/intentos 10 años previos=no; RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001496,SC2024,GBR,PAR06,media,2023.0,imp_netas%=44.04362,2024-01-01,C_parametro_simulacion,calculado
+PV001497,SC2024,GBR,PAR07,baja,2021.0,rentas%PIB=0.58854,2024-01-01,C_parametro_simulacion,calculado
+PV001498,SC2024,GBR,PAR08,critico,2024.0,deuda%PIB=131.07306,2024-01-01,C_parametro_simulacion,calculado
+PV001499,SC2024,GBR,PAR09,0.043,2024.0,v2x_corr=0.043,2024-01-01,C_parametro_simulacion,calculado
+PV001500,SC2024,GBR,PAR10,baja,2024.0,inflacion=3.27157,2024-01-01,C_parametro_simulacion,calculado
+PV001501,SC2024,ZAF,PAR01,0.00366,2024.0,PIB=401144998373.5852,2024-01-01,C_parametro_simulacion,calculado
+PV001502,SC2024,ZAF,PAR02,0.0054665064,2022.0,CINC=0.0054665064,2024-01-01,C_parametro_simulacion,calculado
+PV001503,SC2024,ZAF,PAR03,bajo,2024.0,milex%PIB=0.70015,2024-01-01,C_parametro_simulacion,calculado
+PV001504,SC2024,ZAF,PAR04,democracia_electoral,2024.0,RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001505,SC2024,ZAF,PAR05,bajo,2024.0,golpes/intentos 10 años previos=no; RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001506,SC2024,ZAF,PAR06,exportador_neto,2023.0,imp_netas%=-12.5073,2024-01-01,C_parametro_simulacion,calculado
+PV001507,SC2024,ZAF,PAR07,media,2021.0,rentas%PIB=7.32858,2024-01-01,C_parametro_simulacion,calculado
+PV001508,SC2024,ZAF,PAR08,moderado,2023.0,deuda%PIB=79.44691,2024-01-01,C_parametro_simulacion,calculado
+PV001509,SC2024,ZAF,PAR09,0.517,2024.0,v2x_corr=0.517,2024-01-01,C_parametro_simulacion,calculado
+PV001510,SC2024,ZAF,PAR10,baja,2024.0,inflacion=4.36115,2024-01-01,C_parametro_simulacion,calculado
+PV001511,SC2024,ISR,PAR01,0.00492,2024.0,PIB=540379921261.68097,2024-01-01,C_parametro_simulacion,calculado
+PV001512,SC2024,ISR,PAR02,0.0037797715,2022.0,CINC=0.0037797715,2024-01-01,C_parametro_simulacion,calculado
+PV001513,SC2024,ISR,PAR03,muy_alto,2024.0,milex%PIB=8.77672,2024-01-01,C_parametro_simulacion,calculado
+PV001514,SC2024,ISR,PAR04,democracia_electoral,2024.0,RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001515,SC2024,ISR,PAR05,bajo,2024.0,golpes/intentos 10 años previos=no; RoW=2.0,2024-01-01,C_parametro_simulacion,calculado
+PV001516,SC2024,ISR,PAR06,baja,2023.0,imp_netas%=13.73424,2024-01-01,C_parametro_simulacion,calculado
+PV001517,SC2024,ISR,PAR07,baja,2021.0,rentas%PIB=0.44142,2024-01-01,C_parametro_simulacion,calculado
+PV001518,SC2024,ISR,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001519,SC2024,ISR,PAR09,0.111,2024.0,v2x_corr=0.111,2024-01-01,C_parametro_simulacion,calculado
+PV001520,SC2024,ISR,PAR10,baja,2024.0,inflacion=3.07481,2024-01-01,C_parametro_simulacion,calculado
+PV001521,SC2024,IRN,PAR01,0.00433,2024.0,PIB=475252089215.4158,2024-01-01,C_parametro_simulacion,calculado
+PV001522,SC2024,IRN,PAR02,0.016357344,2022.0,CINC=0.016357344,2024-01-01,C_parametro_simulacion,calculado
+PV001523,SC2024,IRN,PAR03,medio,2024.0,milex%PIB=2.01043,2024-01-01,C_parametro_simulacion,calculado
+PV001524,SC2024,IRN,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001525,SC2024,IRN,PAR05,medio,2024.0,golpes/intentos 10 años previos=no; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001526,SC2024,IRN,PAR06,exportador_neto,2022.0,imp_netas%=-32.49446,2024-01-01,C_parametro_simulacion,calculado
+PV001527,SC2024,IRN,PAR07,alta,2021.0,rentas%PIB=30.44806,2024-01-01,C_parametro_simulacion,calculado
+PV001528,SC2024,IRN,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001529,SC2024,IRN,PAR09,0.783,2024.0,v2x_corr=0.783,2024-01-01,C_parametro_simulacion,calculado
+PV001530,SC2024,IRN,PAR10,alta,2024.0,inflacion=32.45587,2024-01-01,C_parametro_simulacion,calculado
+PV001531,SC2024,UKR,PAR01,0.00174,2024.0,PIB=190741262414.70465,2024-01-01,C_parametro_simulacion,calculado
+PV001532,SC2024,UKR,PAR02,0.0085589373,2022.0,CINC=0.0085589373,2024-01-01,C_parametro_simulacion,calculado
+PV001533,SC2024,UKR,PAR03,muy_alto,2024.0,milex%PIB=34.48153,2024-01-01,C_parametro_simulacion,calculado
+PV001534,SC2024,UKR,PAR04,autocracia_electoral,2024.0,RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001535,SC2024,UKR,PAR05,alto,2024.0,golpes/intentos 10 años previos=sí; RoW=1.0,2024-01-01,C_parametro_simulacion,calculado
+PV001536,SC2024,UKR,PAR06,baja,2023.0,imp_netas%=23.59258,2024-01-01,C_parametro_simulacion,calculado
+PV001537,SC2024,UKR,PAR07,media,2021.0,rentas%PIB=7.5129,2024-01-01,C_parametro_simulacion,calculado
+PV001538,SC2024,UKR,PAR08,,,deuda%PIB=None,2024-01-01,C_parametro_simulacion,pendiente_sin_datos
+PV001539,SC2024,UKR,PAR09,0.633,2024.0,v2x_corr=0.633,2024-01-01,C_parametro_simulacion,calculado
+PV001540,SC2024,UKR,PAR10,moderada,2024.0,inflacion=6.50198,2024-01-01,C_parametro_simulacion,calculado
+PV001541,SC2025,USA,PAR01,0.262,2024.0,PIB=28750956130731.2,2025-01-20,C_parametro_simulacion,calculado
+PV001542,SC2025,USA,PAR02,0.12356574,2022.0,CINC=0.12356574,2025-01-20,C_parametro_simulacion,calculado
+PV001543,SC2025,USA,PAR03,alto,2024.0,milex%PIB=3.41922,2025-01-20,C_parametro_simulacion,calculado
+PV001544,SC2025,USA,PAR04,democracia_electoral,2025.0,RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001545,SC2025,USA,PAR05,bajo,2025.0,golpes/intentos 10 años previos=no; RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001546,SC2025,USA,PAR06,exportador_neto,2023.0,imp_netas%=-9.00059,2025-01-20,C_parametro_simulacion,calculado
+PV001547,SC2025,USA,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001548,SC2025,USA,PAR08,estrecho,2024.0,deuda%PIB=117.97323,2025-01-20,C_parametro_simulacion,calculado
+PV001549,SC2025,USA,PAR09,0.06,2025.0,v2x_corr=0.06,2025-01-20,C_parametro_simulacion,calculado
+PV001550,SC2025,USA,PAR10,baja,2024.0,inflacion=2.94953,2025-01-20,C_parametro_simulacion,calculado
+PV001551,SC2025,CHN,PAR01,0.17081,2024.0,PIB=18743803170827.164,2025-01-20,C_parametro_simulacion,calculado
+PV001552,SC2025,CHN,PAR02,0.23409663,2022.0,CINC=0.23409663,2025-01-20,C_parametro_simulacion,calculado
+PV001553,SC2025,CHN,PAR03,medio,2024.0,milex%PIB=1.7113,2025-01-20,C_parametro_simulacion,calculado
+PV001554,SC2025,CHN,PAR04,autocracia_cerrada,2025.0,RoW=0.0,2025-01-20,C_parametro_simulacion,calculado
+PV001555,SC2025,CHN,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=0.0,2025-01-20,C_parametro_simulacion,calculado
+PV001556,SC2025,CHN,PAR06,baja,2023.0,imp_netas%=23.96176,2025-01-20,C_parametro_simulacion,calculado
+PV001557,SC2025,CHN,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001558,SC2025,CHN,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001559,SC2025,CHN,PAR09,0.554,2025.0,v2x_corr=0.554,2025-01-20,C_parametro_simulacion,calculado
+PV001560,SC2025,CHN,PAR10,baja,2024.0,inflacion=0.21813,2025-01-20,C_parametro_simulacion,calculado
+PV001561,SC2025,RUS,PAR01,0.01981,2024.0,PIB=2173835806671.656,2025-01-20,C_parametro_simulacion,calculado
+PV001562,SC2025,RUS,PAR02,0.038196992,2022.0,CINC=0.038196992,2025-01-20,C_parametro_simulacion,calculado
+PV001563,SC2025,RUS,PAR03,muy_alto,2024.0,milex%PIB=7.05234,2025-01-20,C_parametro_simulacion,calculado
+PV001564,SC2025,RUS,PAR04,autocracia_electoral,2025.0,RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001565,SC2025,RUS,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001566,SC2025,RUS,PAR06,exportador_neto,2022.0,imp_netas%=-75.13754,2025-01-20,C_parametro_simulacion,calculado
+PV001567,SC2025,RUS,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001568,SC2025,RUS,PAR08,amplio,2024.0,deuda%PIB=17.95375,2025-01-20,C_parametro_simulacion,calculado
+PV001569,SC2025,RUS,PAR09,0.783,2025.0,v2x_corr=0.783,2025-01-20,C_parametro_simulacion,calculado
+PV001570,SC2025,RUS,PAR10,moderada,2024.0,inflacion=8.43486,2025-01-20,C_parametro_simulacion,calculado
+PV001571,SC2025,UKR,PAR01,0.00174,2024.0,PIB=190741262414.70465,2025-01-20,C_parametro_simulacion,calculado
+PV001572,SC2025,UKR,PAR02,0.0085589373,2022.0,CINC=0.0085589373,2025-01-20,C_parametro_simulacion,calculado
+PV001573,SC2025,UKR,PAR03,muy_alto,2024.0,milex%PIB=34.48153,2025-01-20,C_parametro_simulacion,calculado
+PV001574,SC2025,UKR,PAR04,autocracia_electoral,2025.0,RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001575,SC2025,UKR,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001576,SC2025,UKR,PAR06,baja,2023.0,imp_netas%=23.59258,2025-01-20,C_parametro_simulacion,calculado
+PV001577,SC2025,UKR,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001578,SC2025,UKR,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001579,SC2025,UKR,PAR09,0.641,2025.0,v2x_corr=0.641,2025-01-20,C_parametro_simulacion,calculado
+PV001580,SC2025,UKR,PAR10,moderada,2024.0,inflacion=6.50198,2025-01-20,C_parametro_simulacion,calculado
+PV001581,SC2025,EUU,PAR01,,,PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001582,SC2025,EUU,PAR02,,,CINC=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001583,SC2025,EUU,PAR03,,,milex%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001584,SC2025,EUU,PAR04,,,RoW=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001585,SC2025,EUU,PAR05,,,golpes/intentos 10 años previos=no; RoW=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001586,SC2025,EUU,PAR06,,,imp_netas%=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001587,SC2025,EUU,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001588,SC2025,EUU,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001589,SC2025,EUU,PAR09,,,v2x_corr=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001590,SC2025,EUU,PAR10,,,inflacion=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001591,SC2025,IND,PAR01,0.03563,2024.0,PIB=3909891533858.084,2025-01-20,C_parametro_simulacion,calculado
+PV001592,SC2025,IND,PAR02,0.099396847,2022.0,CINC=0.099396847,2025-01-20,C_parametro_simulacion,calculado
+PV001593,SC2025,IND,PAR03,medio,2024.0,milex%PIB=2.2712,2025-01-20,C_parametro_simulacion,calculado
+PV001594,SC2025,IND,PAR04,autocracia_electoral,2025.0,RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001595,SC2025,IND,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001596,SC2025,IND,PAR06,media,2023.0,imp_netas%=36.08718,2025-01-20,C_parametro_simulacion,calculado
+PV001597,SC2025,IND,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001598,SC2025,IND,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001599,SC2025,IND,PAR09,0.684,2025.0,v2x_corr=0.684,2025-01-20,C_parametro_simulacion,calculado
+PV001600,SC2025,IND,PAR10,baja,2024.0,inflacion=4.95304,2025-01-20,C_parametro_simulacion,calculado
+PV001601,SC2025,ISR,PAR01,0.00492,2024.0,PIB=540379921261.68097,2025-01-20,C_parametro_simulacion,calculado
+PV001602,SC2025,ISR,PAR02,0.0037797715,2022.0,CINC=0.0037797715,2025-01-20,C_parametro_simulacion,calculado
+PV001603,SC2025,ISR,PAR03,muy_alto,2024.0,milex%PIB=8.77672,2025-01-20,C_parametro_simulacion,calculado
+PV001604,SC2025,ISR,PAR04,democracia_electoral,2025.0,RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001605,SC2025,ISR,PAR05,bajo,2025.0,golpes/intentos 10 años previos=no; RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001606,SC2025,ISR,PAR06,baja,2023.0,imp_netas%=13.73424,2025-01-20,C_parametro_simulacion,calculado
+PV001607,SC2025,ISR,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001608,SC2025,ISR,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001609,SC2025,ISR,PAR09,0.107,2025.0,v2x_corr=0.107,2025-01-20,C_parametro_simulacion,calculado
+PV001610,SC2025,ISR,PAR10,baja,2024.0,inflacion=3.07481,2025-01-20,C_parametro_simulacion,calculado
+PV001611,SC2025,IRN,PAR01,0.00433,2024.0,PIB=475252089215.4158,2025-01-20,C_parametro_simulacion,calculado
+PV001612,SC2025,IRN,PAR02,0.016357344,2022.0,CINC=0.016357344,2025-01-20,C_parametro_simulacion,calculado
+PV001613,SC2025,IRN,PAR03,medio,2024.0,milex%PIB=2.01043,2025-01-20,C_parametro_simulacion,calculado
+PV001614,SC2025,IRN,PAR04,autocracia_electoral,2025.0,RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001615,SC2025,IRN,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001616,SC2025,IRN,PAR06,exportador_neto,2022.0,imp_netas%=-32.49446,2025-01-20,C_parametro_simulacion,calculado
+PV001617,SC2025,IRN,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001618,SC2025,IRN,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001619,SC2025,IRN,PAR09,0.768,2025.0,v2x_corr=0.768,2025-01-20,C_parametro_simulacion,calculado
+PV001620,SC2025,IRN,PAR10,alta,2024.0,inflacion=32.45587,2025-01-20,C_parametro_simulacion,calculado
+PV001621,SC2025,SYR,PAR01,0.00023,2022.0,PIB=23622827079.50465,2025-01-20,C_parametro_simulacion,calculado
+PV001622,SC2025,SYR,PAR02,0.0029084845,2022.0,CINC=0.0029084845,2025-01-20,C_parametro_simulacion,calculado
+PV001623,SC2025,SYR,PAR03,,,milex%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001624,SC2025,SYR,PAR04,autocracia_cerrada,2025.0,RoW=0.0,2025-01-20,C_parametro_simulacion,calculado
+PV001625,SC2025,SYR,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=0.0,2025-01-20,C_parametro_simulacion,calculado
+PV001626,SC2025,SYR,PAR06,alta,2022.0,imp_netas%=61.2715,2025-01-20,C_parametro_simulacion,calculado
+PV001627,SC2025,SYR,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001628,SC2025,SYR,PAR08,,,deuda%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001629,SC2025,SYR,PAR09,0.619,2025.0,v2x_corr=0.619,2025-01-20,C_parametro_simulacion,calculado
+PV001630,SC2025,SYR,PAR10,,,inflacion=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001631,SC2025,BRA,PAR01,0.01992,2024.0,PIB=2185821648943.8604,2025-01-20,C_parametro_simulacion,calculado
+PV001632,SC2025,BRA,PAR02,0.020074407,2022.0,CINC=0.020074407,2025-01-20,C_parametro_simulacion,calculado
+PV001633,SC2025,BRA,PAR03,bajo,2024.0,milex%PIB=0.97277,2025-01-20,C_parametro_simulacion,calculado
+PV001634,SC2025,BRA,PAR04,democracia_electoral,2025.0,RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001635,SC2025,BRA,PAR05,bajo,2025.0,golpes/intentos 10 años previos=no; RoW=2.0,2025-01-20,C_parametro_simulacion,calculado
+PV001636,SC2025,BRA,PAR06,exportador_neto,2023.0,imp_netas%=-13.6809,2025-01-20,C_parametro_simulacion,calculado
+PV001637,SC2025,BRA,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001638,SC2025,BRA,PAR08,estrecho,2024.0,deuda%PIB=81.85544,2025-01-20,C_parametro_simulacion,calculado
+PV001639,SC2025,BRA,PAR09,0.423,2025.0,v2x_corr=0.423,2025-01-20,C_parametro_simulacion,calculado
+PV001640,SC2025,BRA,PAR10,baja,2024.0,inflacion=4.36746,2025-01-20,C_parametro_simulacion,calculado
+PV001641,SC2025,MEX,PAR01,0.01692,2024.0,PIB=1856365616165.9373,2025-01-20,C_parametro_simulacion,calculado
+PV001642,SC2025,MEX,PAR02,0.011388138,2022.0,CINC=0.011388138,2025-01-20,C_parametro_simulacion,calculado
+PV001643,SC2025,MEX,PAR03,bajo,2024.0,milex%PIB=0.89326,2025-01-20,C_parametro_simulacion,calculado
+PV001644,SC2025,MEX,PAR04,autocracia_electoral,2025.0,RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001645,SC2025,MEX,PAR05,medio,2025.0,golpes/intentos 10 años previos=no; RoW=1.0,2025-01-20,C_parametro_simulacion,calculado
+PV001646,SC2025,MEX,PAR06,baja,2023.0,imp_netas%=21.58436,2025-01-20,C_parametro_simulacion,calculado
+PV001647,SC2025,MEX,PAR07,,,rentas%PIB=None,2025-01-20,C_parametro_simulacion,pendiente_sin_datos
+PV001648,SC2025,MEX,PAR08,moderado,2024.0,deuda%PIB=49.57021,2025-01-20,C_parametro_simulacion,calculado
+PV001649,SC2025,MEX,PAR09,0.574,2025.0,v2x_corr=0.574,2025-01-20,C_parametro_simulacion,calculado
+PV001650,SC2025,MEX,PAR10,baja,2024.0,inflacion=4.72226,2025-01-20,C_parametro_simulacion,calculado

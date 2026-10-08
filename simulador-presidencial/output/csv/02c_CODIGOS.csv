@@ -1,0 +1,15 @@
+code,applies_to,meaning
+Alta,confidence/certainty,"Dato de fuente primaria o estadística oficial sólida con definición clara, o hecho histórico no controvertido"
+Media,confidence/certainty,"Estimación razonablemente respaldada, reconstrucción con limitaciones, o dato compilado sin contraste en sesión"
+Baja,confidence/certainty,"Información incompleta, indirecta, controvertida o con fuentes muy divergentes"
+VERIF_SESION,verification_status,Contrastado en la sesión de construcción mediante búsqueda web
+CONOC_EXPERTO,verification_status,Compilado de historiografía de referencia; no contrastado línea a línea en la sesión
+DATASET,verification_status,Extraído de un conjunto de datos descargado
+dato_oficial_compilado,observation_type,Estadística oficial compilada por organismo internacional (clase A)
+estimacion_modelada / estimacion_demografica_ONU_WPP,observation_type,Estimación o proyección de modelo (clase B)
+indice_latente_expertos / estimacion_latente_expertos,observation_type,Índice V-Dem de modelo de medición con expertos (clase B)
+indice_volumen_TIV,observation_type,Índice de volumen SIPRI (no monetario)
+C_parametro_simulacion,value_class,Parámetro creado para el motor del juego (clase C)
+RoW 0-3,v2x_regime,0 autocracia cerrada; 1 autocracia electoral; 2 democracia electoral; 3 democracia liberal
+1/2,intensity_level (UCDP),1 = 25-999 muertes en batalla en el año; 2 = ≥1.000
+1-5,contigüidad COW,1 terrestre; 2 ≤12 millas de mar; 3 ≤24; 4 ≤150; 5 ≤400

@@ -1,0 +1,9 @@
+step,topic,instruction
+1,Formato,Cada hoja es una tabla de Excel (T_<hoja>) con cabecera en la fila 1. Los CSV UTF-8 en output/csv/ tienen el mismo contenido y nombre que las hojas.
+2,Claves,Usar 03_ESTADOS.country_id como clave de país en todas las tablas. Las claves primarias y foráneas de cada tabla están en output/schema/schema.json y en 01_INDICE.
+3,Paneles,"Las hojas con (country_id, year) son paneles anchos: cada columna es un indicador definido en 02b_INDICADORES (unidad, moneda, base de precios, tipo de observación, fuente)."
+4,Formato largo,"output/csv/observaciones_largo.csv.gz contiene todas las observaciones WDI con los campos record_id, country_id, indicator_id, year, period_start, period_end, value, unit, currency, price_basis, geographic_scope, observation_type, source_id, source_reference, confidence_level, methodology_notes, last_verified."
+5,SQL,Ejemplo: CREATE TABLE estados (...); COPY estados FROM '03_ESTADOS.csv' CSV HEADER; en SQLite: .mode csv / .import 03_ESTADOS.csv estados. Ver scripts/30_export_sqlite.py para una carga automática.
+6,JSON,"pandas: pd.read_csv(f).to_json(orient='records', force_ascii=False). Listas dentro de celdas usan ';' como separador (p.ej. participant_ids)."
+7,Clases de valor,"Clase A = observado (observation_type dato_*), clase B = estimación (estimacion_*, indice_*), clase C = parámetro de simulación (35_*). No mezclar C con A/B en análisis históricos."
+8,Vacíos,Celda vacía = sin dato. Nunca se imputó cero. Los ceros presentes provienen de la fuente.

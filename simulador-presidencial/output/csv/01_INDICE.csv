@@ -1,0 +1,86 @@
+sheet,description,category,coverage_status,n_rows,n_columns,years,n_countries,primary_key,foreign_keys,csv_file
+00_LEEME,"Propósito, alcance, metodología, instrucciones y limitaciones",metadatos,completo,13,2,,,,,csv/00_LEEME.csv
+01_INDICE,Índice de hojas,metadatos,completo,0,0,,,,,csv/01_INDICE.csv
+02_DICCIONARIO,Diccionario de columnas de todas las hojas,metadatos,completo,1095,7,,,,,csv/02_DICCIONARIO.csv
+02b_INDICADORES,"Catálogo de indicadores: definición, unidad, moneda, base de precios, tipo de observación y fuente",metadatos,completo,340,16,,,,,csv/02b_INDICADORES.csv
+02c_CODIGOS,Códigos y categorías controladas,metadatos,completo,14,3,,,,,csv/02c_CODIGOS.csv
+36_CALIDAD_DATOS,"Cobertura por indicador, ceros y problemas",metadatos,completo,329,9,,,,,csv/36_CALIDAD_DATOS.csv
+36b_PROBLEMAS,Problemas de calidad detectados,metadatos,completo,13,5,,,,,csv/36b_PROBLEMAS.csv
+36c_VERIFICACION_MUESTRAL,Contrastes realizados contra fuentes durante la construcción,metadatos,completo,10,9,,,,,csv/36c_VERIFICACION_MUESTRAL.csv
+37_FUENTES,Registro maestro de fuentes,metadatos,completo,85,16,,,,,csv/37_FUENTES.csv
+38_CITAS_DATOS,Correspondencia dato/columna/registro → fuente,metadatos,completo,16084,7,,,,,csv/38_CITAS_DATOS.csv
+39_PENDIENTES,Investigación pendiente,metadatos,completo,14,6,,,,,csv/39_PENDIENTES.csv
+40_IMPORTACION,Guía de importación a bases de datos/JSON,metadatos,completo,8,3,,,,,csv/40_IMPORTACION.csv
+03_ESTADOS,"Catálogo maestro de Estados y entidades políticas con identificadores, vigencias y geografía básica",entidades,completo (actuales) / parcial (históricos),286,45,,286,country_id,,csv/03_ESTADOS.csv
+03b_IDS_EXTERNOS,"Correspondencia de identificadores (COW, Gleditsch-Ward, V-Dem, ISO) con periodos de vigencia",entidades,completo,910,10,,282,record_id,country_id->03_ESTADOS.country_id;source_id->37_FUENTES.source_id,csv/03b_IDS_EXTERNOS.csv
+04_CAMBIOS_TERRITORIALES,Cambios de fronteras y soberanía (curados) y periodos de independencia según el sistema interestatal COW,eventos_territoriales,parcial,304,12,,,change_id,,csv/04_CAMBIOS_TERRITORIALES.csv
+04b_INDEPENDENCIAS,Historia colonial e independencia (ICOW Colonial History),eventos_territoriales,completo (hasta 2002),217,14,,212,record_id,country_id->03_ESTADOS.country_id,csv/04b_INDEPENDENCIAS.csv
+04c_DISPUTAS_TERRITORIALES,Disputas territoriales y de soberanía vigentes o latentes (2025),relaciones,parcial,25,12,,,dispute_id,,csv/04c_DISPUTAS_TERRITORIALES.csv
+05_DEMOGRAFIA,Panel país-año (WDI) – 05_DEMOGRAFIA,serie_estadistica,parcial (según disponibilidad WDI),14190,16,1960-2025,215,country_id;year,country_id->03_ESTADOS.country_id,csv/05_DEMOGRAFIA.csv
+06_INDICADORES_SOCIALES,Panel país-año (WDI) – 06_INDICADORES_SOCIALES,serie_estadistica,parcial (según disponibilidad WDI),12131,25,1960-2025,215,country_id;year,country_id->03_ESTADOS.country_id,csv/06_INDICADORES_SOCIALES.csv
+06b_FRACCIONALIZACION,Fraccionalización étnica y religiosa por país-año,serie_estadistica,completo (1945-2013),11316,7,1945-2013,164,country_id;year,country_id->03_ESTADOS.country_id,csv/06b_FRACCIONALIZACION.csv
+07_MACROECONOMIA,Panel país-año (WDI) – 07_MACROECONOMIA,serie_estadistica,parcial (según disponibilidad WDI),11723,24,1960-2024,212,country_id;year,country_id->03_ESTADOS.country_id,csv/07_MACROECONOMIA.csv
+07b_PIB_POBLACION_HIST,"Series históricas largas modeladas (PIB, PIB pc y población de Fariss et al. vía V-Dem; inflación, comercio, rentas petroleras, urbanización, educación)",serie_estadistica,completo (V-Dem v16),26720,15,1789-2025,193,country_id;year,country_id->03_ESTADOS.country_id,csv/07b_PIB_POBLACION_HIST.csv
+08_FINANZAS_PUBLICAS,Panel país-año (WDI) – 08_FINANZAS_PUBLICAS,serie_estadistica,parcial (según disponibilidad WDI),4791,14,1970-2024,164,country_id;year,country_id->03_ESTADOS.country_id,csv/08_FINANZAS_PUBLICAS.csv
+09_MONEDA_MERCADOS,Panel país-año (WDI) – 09_MONEDA_MERCADOS,serie_estadistica,parcial (según disponibilidad WDI),12612,13,1960-2025,214,country_id;year,country_id->03_ESTADOS.country_id,csv/09_MONEDA_MERCADOS.csv
+10_COMERCIO,Panel país-año (WDI) – 10_COMERCIO,serie_estadistica,parcial (según disponibilidad WDI),11523,25,1960-2024,210,country_id;year,country_id->03_ESTADOS.country_id,csv/10_COMERCIO.csv
+10b_COMERCIO_HIST_COW,Comercio total histórico (COW Trade 1870-2014),serie_estadistica,completo (1870-2014),14375,4,1870-2014,200,country_id;year,country_id->03_ESTADOS.country_id,csv/10b_COMERCIO_HIST_COW.csv
+11_RECURSOS_ENERGIA,Panel país-año (WDI) – 11_RECURSOS_ENERGIA,serie_estadistica,parcial (según disponibilidad WDI),13484,28,1961-2024,215,country_id;year,country_id->03_ESTADOS.country_id,csv/11_RECURSOS_ENERGIA.csv
+11b_ENERGIA_OWID,"Producción, consumo y matriz eléctrica (OWID energy-data)",serie_estadistica,completo (según OWID),17145,22,1900-2025,218,country_id;year,country_id->03_ESTADOS.country_id,csv/11b_ENERGIA_OWID.csv
+11c_RESERVAS_ENERGETICAS,"Reservas probadas de petróleo y gas (10 principales, fin de 2020)",dato_curado,parcial,20,10,,14,reserve_id,,csv/11c_RESERVAS_ENERGETICAS.csv
+11d_MINERALES_CRITICOS,Concentración de minerales y productos críticos (rangos aproximados),dato_curado,parcial,15,11,,,mineral_id,,csv/11d_MINERALES_CRITICOS.csv
+12_INFRAESTRUCTURA,Panel país-año (WDI) – 12_INFRAESTRUCTURA,serie_estadistica,parcial (según disponibilidad WDI),9381,11,1970-2024,211,country_id;year,country_id->03_ESTADOS.country_id,csv/12_INFRAESTRUCTURA.csv
+12b_NODOS_ESTRATEGICOS,"Estrechos, corredores, puertos, oleoductos, bases e infraestructura crítica",dato_curado,parcial,32,16,,,node_id,,csv/12b_NODOS_ESTRATEGICOS.csv
+13_DEFENSA_PRESUPUESTOS,Panel país-año (WDI) – 13_DEFENSA_PRESUPUESTOS,serie_estadistica,parcial (según disponibilidad WDI),8832,8,1960-2024,175,country_id;year,country_id->03_ESTADOS.country_id,csv/13_DEFENSA_PRESUPUESTOS.csv
+13b_CAPACIDADES_HIST_COW,"Capacidades materiales históricas (COW NMC 1816-2016), amenaza territorial latente y OIG",serie_estadistica,completo (1816-2016),17119,13,1816-2022,212,country_id;year,country_id->03_ESTADOS.country_id,csv/13b_CAPACIDADES_HIST_COW.csv
+13c_SERVICIO_MILITAR,Régimen de servicio militar (situación 2025),dato_curado,parcial,46,8,,46,country_id,country_id->03_ESTADOS.country_id,csv/13c_SERVICIO_MILITAR.csv
+14_DEFENSA_INVENTARIOS,"Estatus y arsenales nucleares (inventario total de ojivas, SIPRI enero 2024 y enero 2025) y programas abandonados",dato_curado,completo (Estados nucleares),21,11,,21,country_id,country_id->03_ESTADOS.country_id,csv/14_DEFENSA_INVENTARIOS.csv
+14b_INVENTARIOS_ESTRATEGICOS,Inventarios estratégicos seleccionados como rangos (no sustituye a The Military Balance),dato_curado,parcial,22,11,,7,inventory_id,country_id->03_ESTADOS.country_id,csv/14b_INVENTARIOS_ESTRATEGICOS.csv
+15_DEFENSA_INDUSTRIA,Principales empresas de la industria de defensa,dato_curado,parcial,40,11,,22,company_id,,csv/15_DEFENSA_INDUSTRIA.csv
+15b_PROGRAMAS_DEFENSA,Programas de adquisición y compromisos de gasto,dato_curado,parcial,14,10,,,program_id,,csv/15b_PROGRAMAS_DEFENSA.csv
+15c_COMERCIO_ARMAS,Panel país-año (WDI) – 15c_COMERCIO_ARMAS,serie_estadistica,parcial (según disponibilidad WDI),7067,4,1960-2024,188,country_id;year,country_id->03_ESTADOS.country_id,csv/15c_COMERCIO_ARMAS.csv
+16_CONFLICTOS,"Registro curado de guerras, conflictos y crisis 1945-2025 con estimaciones alternativas de víctimas",eventos_conflicto,parcial (73 conflictos principales),73,25,,,conflict_id,,csv/16_CONFLICTOS.csv
+16b_UCDP_CONFLICTOS,Conflictos armados estatales UCDP/PRIO 1946-2024 (nivel conflicto),eventos_conflicto,completo (1946-2024),303,19,,,conflict_id,,csv/16b_UCDP_CONFLICTOS.csv
+16c_COW_GUERRAS_INTER,"Guerras interestatales COW 1823-2003 (nivel guerra, participantes y muertes en batalla por Estado)",eventos_conflicto,completo (COW v4),95,13,,,war_id,,csv/16c_COW_GUERRAS_INTER.csv
+16d_COW_GUERRAS_INTRA,Guerras intraestatales COW 1818-2007 (nivel guerra),eventos_conflicto,completo (COW v4),306,14,,88,war_id,,csv/16d_COW_GUERRAS_INTRA.csv
+16e_GOLPES_ESTADO,Golpes e intentos de golpe 1950-~2015 (Powell & Thyne),eventos_conflicto,completo hasta ~2015 (ver e_pt_coup en V-Dem para años posteriores),473,7,1950-2015,96,coup_id,country_id->03_ESTADOS.country_id,csv/16e_GOLPES_ESTADO.csv
+16f_DISPUTAS_MILITARIZADAS,Disputas interestatales militarizadas 1816-2010 (GML MID),eventos_conflicto,completo (1816-2010),2174,16,,,mid_id,,csv/16f_DISPUTAS_MILITARIZADAS.csv
+17_CONFLICTOS_EVENTOS,Cronología de operaciones y acontecimientos bélicos clave,eventos_conflicto,parcial,50,11,,,event_id,conflict_id->16_CONFLICTOS.conflict_id,csv/17_CONFLICTOS_EVENTOS.csv
+17b_UCDP_CONFLICTO_ANIO,Conflictos UCDP por año y episodio (una fila por conflicto-año-episodio; un conflicto puede tener varias filas por año si hubo varios episodios),serie_conflicto,completo (1946-2024),5652,10,1946-2024,,record_id,conflict_id->16b_UCDP_CONFLICTOS.conflict_id,csv/17b_UCDP_CONFLICTO_ANIO.csv
+18_INTELIGENCIA,"Organismos de inteligencia, contrainteligencia y seguridad",dato_curado,parcial (52 organismos),52,16,,33,agency_id,country_id->03_ESTADOS.country_id,csv/18_INTELIGENCIA.csv
+18b_INTELIGENCIA_CASOS,"Operaciones, casos de espionaje, ciberoperaciones y fallos documentados con nivel de certeza",dato_curado,parcial,52,14,,,case_id,,csv/18b_INTELIGENCIA_CASOS.csv
+19_INSTITUCIONES,"Perfil institucional vigente (2025): forma de Estado y gobierno, constitución, legislativo, sistema electoral, banco central",dato_curado,parcial (66 países),69,21,,69,country_id,country_id->03_ESTADOS.country_id,csv/19_INSTITUCIONES.csv
+19b_REFORMAS_INSTITUCIONALES,Reformas constitucionales e institucionales clave,eventos_institucionales,parcial,40,9,,24,reform_id,country_id->03_ESTADOS.country_id,csv/19b_REFORMAS_INSTITUCIONALES.csv
+19c_REGIMEN_PANEL_VDEM,"Panel país-año de régimen político, instituciones y libertades (V-Dem v16, 1900-2025)",serie_estadistica,completo (V-Dem v16),19857,83,1900-2025,183,country_id;year,country_id->03_ESTADOS.country_id,csv/19c_REGIMEN_PANEL_VDEM.csv
+19d_PERIODOS_REGIMEN,Periodos de régimen (democracia/autocracia y tipo autocrático) 1946-2010 con forma de terminación (GWF),eventos_institucionales,completo (1946-2010),486,11,,153,regime_period_id,country_id->03_ESTADOS.country_id,csv/19d_PERIODOS_REGIMEN.csv
+20_GOBIERNOS,"Periodos de gobierno de líderes efectivos: Archigos (1875-2015, entrada/salida) y REIGN (1950-2021, tipo de gobierno mensual agregado en periodos)",eventos_institucionales,completo hasta 2021; 2022-2025 en 20b,5953,16,,204,spell_id,country_id->03_ESTADOS.country_id;person_id->21_ACTORES.person_id,csv/20_GOBIERNOS.csv
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,"Nombres y títulos de jefes de Estado y de Gobierno por país-año (V-Dem v16, 1900-2025)",serie_institucional,completo (1900-2025),19857,8,1900-2025,183,country_id;year,country_id->03_ESTADOS.country_id,csv/20b_JEFES_ESTADO_GOBIERNO_ANUAL.csv
+21_ACTORES,Personas: líderes efectivos (Archigos 1875-2015 y REIGN 1950-2021) con atributos biográficos LEAD,entidades,parcial (solo líderes ejecutivos; ministros y mandos pendientes),3338,15,,204,person_id,country_id->03_ESTADOS.country_id,csv/21_ACTORES.csv
+21b_RELACIONES_ACTORES,"Relaciones históricas entre actores (sucesión, parentesco, alianza, rivalidad, ruptura)",relaciones,parcial,35,10,,,relation_id,,csv/21b_RELACIONES_ACTORES.csv
+22_PARTIDOS,"Catálogo de partidos políticos (V-Party, partidos con >5% en alguna elección, 1900-2019)",entidades,parcial (sin datos post-2019),3467,11,,178,party_id,country_id->03_ESTADOS.country_id,csv/22_PARTIDOS.csv
+22b_PARTIDOS_ELECCIONES,Resultados e ideología de partidos por elección (V-Party),serie_electoral,parcial (1900-2019),11898,17,1900-2019,178,record_id,party_id->22_PARTIDOS.party_id;country_id->03_ESTADOS.country_id,csv/22b_PARTIDOS_ELECCIONES.csv
+23_ELECCIONES,Elecciones nacionales 1945-2012 (NELDA) con indicadores de competencia y calidad (respuestas sí/no/no aplica),eventos_electorales,completo (1945-2012),2974,65,1945-2011,160,electionid,country_id->03_ESTADOS.country_id,csv/23_ELECCIONES.csv
+23b_RESULTADOS_RECIENTES,"Resultados electorales oficiales recientes seleccionados (2020-2025), separados de estimaciones de la oposición",eventos_electorales,parcial,64,18,,26,result_id,country_id->03_ESTADOS.country_id,csv/23b_RESULTADOS_RECIENTES.csv
+23c_ELECCIONES_VDEM,"Años electorales (V-Dem): tipo de elección, participación, alternancia y calidad",serie_electoral,completo (1900-2025),4056,13,1900-2025,180,country_id;year,country_id->03_ESTADOS.country_id,csv/23c_ELECCIONES_VDEM.csv
+24_DIPLOMACIA,"Tratados y acuerdos internacionales clave (alianzas, control de armas, comercio, paz)",dato_curado,parcial (60 tratados),60,13,,,treaty_id,,csv/24_DIPLOMACIA.csv
+24b_ORGANIZACIONES,Organizaciones internacionales y foros,entidades,parcial,20,7,,,org_id,,csv/24b_ORGANIZACIONES.csv
+24c_MEMBRESIAS,Pertenencia de Estados a organizaciones con fechas de entrada y salida,relaciones,parcial,218,9,,97,membership_id,org_id->24b_ORGANIZACIONES.org_id;country_id->03_ESTADOS.country_id,csv/24c_MEMBRESIAS.csv
+24d_SANCIONES,Regímenes de sanciones y embargos,dato_curado,parcial,20,14,,,sanction_id,,csv/24d_SANCIONES.csv
+25_RELACIONES_ESTADOS,"Relaciones bilaterales con vigencia temporal: contigüidad, alianzas (ATOP), rivalidades y carreras armamentistas",relaciones,completo para las fuentes incluidas; relaciones diplomáticas formales pendientes,12547,9,,,relationship_id,actor_a_id->03_ESTADOS.country_id;actor_b_id->03_ESTADOS.country_id,csv/25_RELACIONES_ESTADOS.csv
+26_HISTORIA,Cronología de acontecimientos históricos (antecedentes pre-1945 y 1945-2025),eventos_historicos,parcial,96,14,,,event_id,,csv/26_HISTORIA.csv
+26b_CRISIS_ECONOMICAS,"Crisis económicas: hiperinflaciones, defaults, crisis bancarias y cambiarias, shocks",eventos_economicos,parcial,40,11,,34,crisis_id,country_id->03_ESTADOS.country_id,csv/26b_CRISIS_ECONOMICAS.csv
+26c_CAMBIOS_MONETARIOS,"Cambios de moneda, redenominaciones y regímenes cambiarios",eventos_economicos,parcial,30,10,,22,change_id,country_id->03_ESTADOS.country_id,csv/26c_CAMBIOS_MONETARIOS.csv
+27_TECNOLOGIA,Panel país-año (WDI) – 27_TECNOLOGIA,serie_estadistica,parcial (según disponibilidad WDI),7706,11,1960-2024,209,country_id;year,country_id->03_ESTADOS.country_id,csv/27_TECNOLOGIA.csv
+28_SEGURIDAD_INTERIOR,Panel país-año (WDI) – 28_SEGURIDAD_INTERIOR,serie_estadistica,parcial (según disponibilidad WDI),5214,6,1989-2024,212,country_id;year,country_id->03_ESTADOS.country_id,csv/28_SEGURIDAD_INTERIOR.csv
+28b_REPRESION_VIOLENCIA,"Violencia política, represión y control territorial (V-Dem)",serie_estadistica,completo (V-Dem v16),19857,13,1900-2025,183,country_id;year,country_id->03_ESTADOS.country_id,csv/28b_REPRESION_VIOLENCIA.csv
+29_ADMIN_PUBLICA,Capacidad estatal y calidad administrativa (V-Dem y WGI vía V-Dem),serie_estadistica,completo (V-Dem v16),19857,11,1900-2025,183,country_id;year,country_id->03_ESTADOS.country_id,csv/29_ADMIN_PUBLICA.csv
+30_EMPRESAS,"Empresas estratégicas (energía, minería, tecnología, banca, transporte) con historia de propiedad",dato_curado,parcial,56,12,,31,company_id,country_id->03_ESTADOS.country_id,csv/30_EMPRESAS.csv
+31_MEDIOAMBIENTE,Panel país-año (WDI) – 31_MEDIOAMBIENTE,serie_estadistica,parcial (según disponibilidad WDI),11438,8,1970-2024,214,country_id;year,country_id->03_ESTADOS.country_id,csv/31_MEDIOAMBIENTE.csv
+31b_EMISIONES_OWID,Emisiones de CO2 y GEI (OWID co2-data),serie_estadistica,completo (según OWID),38556,12,1750-2024,215,country_id;year,country_id->03_ESTADOS.country_id,csv/31b_EMISIONES_OWID.csv
+31c_CATASTROFES,Catástrofes naturales y humanitarias mayores con rangos de víctimas,eventos_historicos,parcial,25,13,,,disaster_id,,csv/31c_CATASTROFES.csv
+32_INDICADORES_COMPARADOS,Indicadores clave comparables en años de referencia (formato largo; solo valores observados en el año exacto),serie_derivada,completo para los indicadores seleccionados,22349,8,,222,record_id,country_id->03_ESTADOS.country_id,csv/32_INDICADORES_COMPARADOS.csv
+33_EVENTOS_CAUSALES,"Relaciones causales documentadas entre variables/acontecimientos, con condiciones y contraejemplos",modelo_causal,parcial (30 relaciones),30,14,,,causal_id,,csv/33_EVENTOS_CAUSALES.csv
+34_ESCENARIOS,Escenarios históricos de inicio de partida,escenarios,parcial (20 escenarios),20,18,,,scenario_id,,csv/34_ESCENARIOS.csv
+34b_ESCENARIOS_PAISES,"Instantáneas cuantitativas por escenario y país (último dato ≤ año del escenario, máximo 3 años de antigüedad; nunca datos posteriores)",escenarios,completo según disponibilidad,3465,10,,64,record_id,scenario_id->34_ESCENARIOS.scenario_id;country_id->03_ESTADOS.country_id,csv/34b_ESCENARIOS_PAISES.csv
+35_PARAMETROS_JUEGO,Definición de parámetros de simulación derivados (clase C: NO son estadísticas oficiales),parametros_modelados,parcial (10 parámetros),10,10,,,parameter_id,,csv/35_PARAMETROS_JUEGO.csv
+35b_PARAMETROS_VALORES,"Valores de parámetros por escenario y país, con año del dato base (clase C)",parametros_modelados,completo según disponibilidad,1650,10,,64,record_id,parameter_id->35_PARAMETROS_JUEGO.parameter_id;scenario_id->34_ESCENARIOS.scenario_id;country_id->03_ESTADOS.country_id,csv/35b_PARAMETROS_VALORES.csv

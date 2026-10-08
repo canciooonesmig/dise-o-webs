@@ -1,0 +1,911 @@
+record_id,country_id,scheme,code,code_label,abbrev,valid_from,valid_to,source_id,note
+EXT00001,USA,COW_ccode,2,United States of America,USA,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00002,CAN,COW_ccode,20,Canada,CAN,1920-01-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00003,BHS,COW_ccode,31,Bahamas,BHM,1973-07-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00004,CUB,COW_ccode,40,Cuba,CUB,1902-05-20,1906-09-25,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00005,CUB,COW_ccode,40,Cuba,CUB,1909-01-23,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00006,HTI,COW_ccode,41,Haiti,HAI,1859-01-01,1915-07-28,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00007,HTI,COW_ccode,41,Haiti,HAI,1934-08-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00008,DOM,COW_ccode,42,Dominican Republic,DOM,1894-01-01,1916-11-29,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00009,DOM,COW_ccode,42,Dominican Republic,DOM,1924-09-29,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00010,JAM,COW_ccode,51,Jamaica,JAM,1962-08-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00011,TTO,COW_ccode,52,Trinidad and Tobago,TRI,1962-08-31,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00012,BRB,COW_ccode,53,Barbados,BAR,1966-11-30,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00013,DMA,COW_ccode,54,Dominica,DMA,1978-11-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00014,GRD,COW_ccode,55,Grenada,GRN,1974-02-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00015,LCA,COW_ccode,56,St. Lucia,SLU,1979-02-22,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00016,VCT,COW_ccode,57,St. Vincent and the Grenadines,SVG,1979-10-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00017,ATG,COW_ccode,58,Antigua & Barbuda,AAB,1981-11-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00018,KNA,COW_ccode,60,St. Kitts and Nevis,SKN,1983-09-19,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00019,MEX,COW_ccode,70,Mexico,MEX,1831-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00020,BLZ,COW_ccode,80,Belize,BLZ,1981-09-21,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00021,GTM,COW_ccode,90,Guatemala,GUA,1868-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00022,HND,COW_ccode,91,Honduras,HON,1899-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00023,SLV,COW_ccode,92,El Salvador,SAL,1875-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00024,NIC,COW_ccode,93,Nicaragua,NIC,1900-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00025,CRI,COW_ccode,94,Costa Rica,COS,1920-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00026,PAN,COW_ccode,95,Panama,PAN,1903-11-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00027,COL,COW_ccode,100,Colombia,COL,1831-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00028,VEN,COW_ccode,101,Venezuela,VEN,1841-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00029,GUY,COW_ccode,110,Guyana,GUY,1966-05-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00030,SUR,COW_ccode,115,Suriname,SUR,1975-11-25,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00031,ECU,COW_ccode,130,Ecuador,ECU,1854-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00032,PER,COW_ccode,135,Peru,PER,1839-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00033,BRA,COW_ccode,140,Brazil,BRA,1822-09-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00034,BOL,COW_ccode,145,Bolivia,BOL,1848-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00035,PRY,COW_ccode,150,Paraguay,PAR,1846-01-01,1870-06-20,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00036,PRY,COW_ccode,150,Paraguay,PAR,1876-06-22,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00037,CHL,COW_ccode,155,Chile,CHL,1839-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00038,ARG,COW_ccode,160,Argentina,ARG,1841-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00039,URY,COW_ccode,165,Uruguay,URU,1882-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00040,GBR,COW_ccode,200,United Kingdom,UKG,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00041,IRL,COW_ccode,205,Ireland,IRE,1922-12-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00042,NLD,COW_ccode,210,Netherlands,NTH,1816-01-01,1940-07-14,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00043,NLD,COW_ccode,210,Netherlands,NTH,1945-06-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00044,BEL,COW_ccode,211,Belgium,BEL,1830-12-20,1940-05-28,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00045,BEL,COW_ccode,211,Belgium,BEL,1945-06-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00046,LUX,COW_ccode,212,Luxembourg,LUX,1920-11-15,1940-05-10,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00047,LUX,COW_ccode,212,Luxembourg,LUX,1944-09-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00048,FRA,COW_ccode,220,France,FRN,1816-01-01,1942-11-11,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00049,FRA,COW_ccode,220,France,FRN,1944-08-25,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00050,MCO,COW_ccode,221,Monaco,MNC,1993-05-28,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00051,LIE,COW_ccode,223,Liechtenstein,LIE,1990-09-18,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00052,CHE,COW_ccode,225,Switzerland,SWZ,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00053,ESP,COW_ccode,230,Spain,SPN,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00054,AND,COW_ccode,232,Andorra,AND,1993-07-28,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00055,PRT,COW_ccode,235,Portugal,POR,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00056,HVR,COW_ccode,240,Hanover,HAN,1837-06-20,1866-07-26,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00057,BVR,COW_ccode,245,Bavaria,BAV,1816-01-01,1871-01-18,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00058,DEU,COW_ccode,255,Germany,GMY,1816-01-01,1945-05-08,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00059,DEU,COW_ccode,255,Germany,GMY,1990-10-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00060,DEU,COW_ccode,260,German Federal Republic,GFR,1955-05-05,1990-10-02,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00061,DDR,COW_ccode,265,German Democratic Republic,GDR,1954-03-25,1990-10-02,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00062,BDN,COW_ccode,267,Baden,BAD,1816-01-01,1871-01-18,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00063,SXN,COW_ccode,269,Saxony,SAX,1816-01-01,1867-04-17,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00064,WRG,COW_ccode,271,Wuerttemburg,WRT,1816-01-01,1871-01-18,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00065,HKS,COW_ccode,273,Hesse Electoral,HSE,1816-01-01,1866-07-26,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00066,HDM,COW_ccode,275,Hesse Grand Ducal,HSG,1816-01-01,1867-04-17,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00067,MCL,COW_ccode,280,Mecklenburg Schwerin,MEC,1843-01-01,1867-04-17,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00068,POL,COW_ccode,290,Poland,POL,1918-11-03,1939-09-27,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00069,POL,COW_ccode,290,Poland,POL,1945-06-28,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00070,AUT,COW_ccode,300,Austria-Hungary,AUH,1816-01-01,1918-11-12,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00071,AUT,COW_ccode,305,Austria,AUS,1919-09-10,1938-03-13,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00072,AUT,COW_ccode,305,Austria,AUS,1955-07-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00073,HUN,COW_ccode,310,Hungary,HUN,1918-11-16,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00074,CZE,COW_ccode,315,Czechoslovakia,CZE,1918-10-28,1939-03-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00075,CZE,COW_ccode,315,Czechoslovakia,CZE,1945-05-10,1992-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00076,CZE,COW_ccode,316,Czech Republic,CZR,1993-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00077,SVK,COW_ccode,317,Slovakia,SLO,1993-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00078,ITA,COW_ccode,325,Italy,ITA,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00079,PPS,COW_ccode,327,Papal States,PAP,1816-01-01,1860-11-05,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00080,TWS,COW_ccode,329,Two Sicilies,SIC,1816-01-01,1861-02-13,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00081,SMR,COW_ccode,331,San Marino,SNM,1992-03-02,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00082,MDN,COW_ccode,332,Modena,MOD,1842-01-01,1860-03-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00083,PRM,COW_ccode,335,Parma,PMA,1851-01-01,1860-03-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00084,TSC,COW_ccode,337,Tuscany,TUS,1816-01-01,1860-03-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00085,MLT,COW_ccode,338,Malta,MLT,1964-09-21,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00086,ALB,COW_ccode,339,Albania,ALB,1914-01-01,1939-04-07,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00087,ALB,COW_ccode,339,Albania,ALB,1944-11-17,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00088,MNE,COW_ccode,341,Montenegro,MNG,2006-06-12,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00089,MKD,COW_ccode,343,Macedonia,MAC,1993-04-08,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00090,HRV,COW_ccode,344,Croatia,CRO,1992-01-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00091,SRB,COW_ccode,345,Yugoslavia,YUG,1878-07-13,1941-04-20,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00092,SRB,COW_ccode,345,Yugoslavia,YUG,1944-10-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00093,BIH,COW_ccode,346,Bosnia and Herzegovina,BOS,1992-04-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00094,XKX,COW_ccode,347,Kosovo,KOS,2008-02-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00095,SVN,COW_ccode,349,Slovenia,SLV,1992-01-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00096,GRC,COW_ccode,350,Greece,GRC,1828-01-01,1941-04-23,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00097,GRC,COW_ccode,350,Greece,GRC,1944-10-13,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00098,CYP,COW_ccode,352,Cyprus,CYP,1960-08-16,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00099,BGR,COW_ccode,355,Bulgaria,BUL,1908-10-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00100,MDA,COW_ccode,359,Moldova,MLD,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00101,ROU,COW_ccode,360,Romania,ROM,1878-07-13,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00102,RUS,COW_ccode,365,Russia,RUS,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00103,EST,COW_ccode,366,Estonia,EST,1918-02-24,1940-06-16,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00104,EST,COW_ccode,366,Estonia,EST,1991-09-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00105,LVA,COW_ccode,367,Latvia,LAT,1918-11-18,1940-06-16,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00106,LVA,COW_ccode,367,Latvia,LAT,1991-09-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00107,LTU,COW_ccode,368,Lithuania,LIT,1918-02-16,1940-06-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00108,LTU,COW_ccode,368,Lithuania,LIT,1991-09-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00109,UKR,COW_ccode,369,Ukraine,UKR,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00110,BLR,COW_ccode,370,Belarus,BLR,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00111,ARM,COW_ccode,371,Armenia,ARM,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00112,GEO,COW_ccode,372,Georgia,GRG,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00113,AZE,COW_ccode,373,Azerbaijan,AZE,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00114,FIN,COW_ccode,375,Finland,FIN,1917-12-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00115,SWE,COW_ccode,380,Sweden,SWD,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00116,NOR,COW_ccode,385,Norway,NOR,1905-06-07,1940-04-30,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00117,NOR,COW_ccode,385,Norway,NOR,1945-05-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00118,DNK,COW_ccode,390,Denmark,DEN,1816-01-01,1940-04-09,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00119,DNK,COW_ccode,390,Denmark,DEN,1945-05-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00120,ISL,COW_ccode,395,Iceland,ICE,1944-06-17,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00121,CPV,COW_ccode,402,Cape Verde,CAP,1975-07-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00122,STP,COW_ccode,403,Sao Tome and Principe,STP,1975-07-12,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00123,GNB,COW_ccode,404,Guinea-Bissau,GNB,1974-09-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00124,GNQ,COW_ccode,411,Equatorial Guinea,EQG,1968-10-12,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00125,GMB,COW_ccode,420,Gambia,GAM,1965-02-18,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00126,MLI,COW_ccode,432,Mali,MLI,1960-06-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00127,SEN,COW_ccode,433,Senegal,SEN,1960-08-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00128,BEN,COW_ccode,434,Benin,BEN,1960-08-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00129,MRT,COW_ccode,435,Mauritania,MAA,1960-11-28,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00130,NER,COW_ccode,436,Niger,NIR,1960-10-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00131,CIV,COW_ccode,437,Ivory Coast,CDI,1960-08-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00132,GIN,COW_ccode,438,Guinea,GUI,1958-10-02,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00133,BFA,COW_ccode,439,Burkina Faso,BFO,1960-08-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00134,LBR,COW_ccode,450,Liberia,LBR,1920-06-30,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00135,SLE,COW_ccode,451,Sierra Leone,SIE,1961-04-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00136,GHA,COW_ccode,452,Ghana,GHA,1957-03-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00137,TGO,COW_ccode,461,Togo,TOG,1960-04-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00138,CMR,COW_ccode,471,Cameroon,CAO,1960-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00139,NGA,COW_ccode,475,Nigeria,NIG,1960-10-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00140,GAB,COW_ccode,481,Gabon,GAB,1960-08-17,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00141,CAF,COW_ccode,482,Central African Republic,CEN,1960-08-13,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00142,TCD,COW_ccode,483,Chad,CHA,1960-08-11,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00143,COG,COW_ccode,484,Congo,CON,1960-08-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00144,COD,COW_ccode,490,Democratic Republic of the Congo,DRC,1960-06-30,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00145,UGA,COW_ccode,500,Uganda,UGA,1962-10-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00146,KEN,COW_ccode,501,Kenya,KEN,1963-12-12,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00147,TZA,COW_ccode,510,Tanzania,TAZ,1961-12-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00148,ZZB,COW_ccode,511,Zanzibar,ZAN,1963-12-19,1964-04-26,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00149,BDI,COW_ccode,516,Burundi,BUI,1962-07-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00150,RWA,COW_ccode,517,Rwanda,RWA,1962-07-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00151,SOM,COW_ccode,520,Somalia,SOM,1960-07-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00152,DJI,COW_ccode,522,Djibouti,DJI,1977-06-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00153,ETH,COW_ccode,530,Ethiopia,ETH,1898-01-01,1936-05-05,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00154,ETH,COW_ccode,530,Ethiopia,ETH,1941-05-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00155,ERI,COW_ccode,531,Eritrea,ERI,1993-05-24,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00156,AGO,COW_ccode,540,Angola,ANG,1975-11-11,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00157,MOZ,COW_ccode,541,Mozambique,MZM,1975-06-25,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00158,ZMB,COW_ccode,551,Zambia,ZAM,1964-10-24,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00159,ZWE,COW_ccode,552,Zimbabwe,ZIM,1965-11-11,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00160,MWI,COW_ccode,553,Malawi,MAW,1964-07-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00161,ZAF,COW_ccode,560,South Africa,SAF,1920-01-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00162,NAM,COW_ccode,565,Namibia,NAM,1990-03-21,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00163,LSO,COW_ccode,570,Lesotho,LES,1966-10-04,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00164,BWA,COW_ccode,571,Botswana,BOT,1966-09-30,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00165,SWZ,COW_ccode,572,Swaziland,SWA,1968-09-06,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00166,MDG,COW_ccode,580,Madagascar,MAG,1960-06-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00167,COM,COW_ccode,581,Comoros,COM,1975-12-31,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00168,MUS,COW_ccode,590,Mauritius,MAS,1968-03-12,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00169,SYC,COW_ccode,591,Seychelles,SEY,1976-06-29,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00170,MAR,COW_ccode,600,Morocco,MOR,1847-01-01,1912-03-30,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00171,MAR,COW_ccode,600,Morocco,MOR,1956-03-02,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00172,DZA,COW_ccode,615,Algeria,ALG,1962-07-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00173,TUN,COW_ccode,616,Tunisia,TUN,1825-01-01,1881-05-12,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00174,TUN,COW_ccode,616,Tunisia,TUN,1956-03-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00175,LBY,COW_ccode,620,Libya,LIB,1951-12-24,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00176,SDN,COW_ccode,625,Sudan,SUD,1956-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00177,SSD,COW_ccode,626,South Sudan,SSD,2011-07-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00178,IRN,COW_ccode,630,Iran,IRN,1855-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00179,TUR,COW_ccode,640,Turkey,TUR,1816-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00180,IRQ,COW_ccode,645,Iraq,IRQ,1932-10-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00181,EGY,COW_ccode,651,Egypt,EGY,1855-01-01,1882-09-15,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00182,EGY,COW_ccode,651,Egypt,EGY,1937-05-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00183,SYR,COW_ccode,652,Syria,SYR,1946-04-17,1958-02-01,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00184,SYR,COW_ccode,652,Syria,SYR,1961-09-29,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00185,LBN,COW_ccode,660,Lebanon,LEB,1946-03-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00186,JOR,COW_ccode,663,Jordan,JOR,1946-03-22,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00187,ISR,COW_ccode,666,Israel,ISR,1948-05-14,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00188,SAU,COW_ccode,670,Saudi Arabia,SAU,1927-05-20,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00189,YEM,COW_ccode,678,Yemen Arab Republic,YAR,1926-09-02,1990-05-21,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00190,YEM,COW_ccode,679,Yemen,YEM,1990-05-22,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00191,YMD,COW_ccode,680,Yemen People's Republic,YPR,1967-11-30,1990-05-21,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00192,KWT,COW_ccode,690,Kuwait,KUW,1961-06-19,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00193,BHR,COW_ccode,692,Bahrain,BAH,1971-08-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00194,QAT,COW_ccode,694,Qatar,QAT,1971-09-03,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00195,ARE,COW_ccode,696,United Arab Emirates,UAE,1971-12-02,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00196,OMN,COW_ccode,698,Oman,OMA,1971-10-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00197,AFG,COW_ccode,700,Afghanistan,AFG,1919-08-08,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00198,TKM,COW_ccode,701,Turkmenistan,TKM,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00199,TJK,COW_ccode,702,Tajikistan,TAJ,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00200,KGZ,COW_ccode,703,Kyrgyzstan,KYR,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00201,UZB,COW_ccode,704,Uzbekistan,UZB,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00202,KAZ,COW_ccode,705,Kazakhstan,KZK,1991-12-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00203,CHN,COW_ccode,710,China,CHN,1860-10-25,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00204,MNG,COW_ccode,712,Mongolia,MON,1921-03-13,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00205,TWN,COW_ccode,713,Taiwan,TAW,1949-12-08,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00206,KOR,COW_ccode,730,Korea,KOR,1887-01-01,1905-11-17,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00207,PRK,COW_ccode,731,North Korea,PRK,1948-09-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00208,KOR,COW_ccode,732,South Korea,ROK,1949-06-29,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00209,JPN,COW_ccode,740,Japan,JPN,1860-01-01,1945-08-14,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00210,JPN,COW_ccode,740,Japan,JPN,1952-04-28,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00211,IND,COW_ccode,750,India,IND,1947-08-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00212,BTN,COW_ccode,760,Bhutan,BHU,1971-09-21,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00213,PAK,COW_ccode,770,Pakistan,PAK,1947-08-14,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00214,BGD,COW_ccode,771,Bangladesh,BNG,1971-12-16,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00215,MMR,COW_ccode,775,Myanmar,MYA,1948-01-04,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00216,LKA,COW_ccode,780,Sri Lanka,SRI,1948-02-04,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00217,MDV,COW_ccode,781,Maldives,MAD,1965-07-26,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00218,NPL,COW_ccode,790,Nepal,NEP,1920-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00219,THA,COW_ccode,800,Thailand,THI,1887-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00220,KHM,COW_ccode,811,Cambodia,CAM,1953-11-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00221,LAO,COW_ccode,812,Laos,LAO,1953-10-23,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00222,VNM,COW_ccode,816,Vietnam,DRV,1954-07-21,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00223,VDR,COW_ccode,817,Republic of Vietnam,RVN,1954-06-04,1975-04-30,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00224,MYS,COW_ccode,820,Malaysia,MAL,1957-08-31,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00225,SGP,COW_ccode,830,Singapore,SIN,1965-08-09,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00226,BRN,COW_ccode,835,Brunei,BRU,1984-01-01,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00227,PHL,COW_ccode,840,Philippines,PHI,1946-07-04,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00228,IDN,COW_ccode,850,Indonesia,INS,1949-12-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00229,TLS,COW_ccode,860,East Timor,ETM,2002-09-27,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00230,AUS,COW_ccode,900,Australia,AUL,1920-01-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00231,PNG,COW_ccode,910,Papua New Guinea,PNG,1975-09-16,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00232,NZL,COW_ccode,920,New Zealand,NEW,1920-01-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00233,VUT,COW_ccode,935,Vanuatu,VAN,1981-09-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00234,SLB,COW_ccode,940,Solomon Islands,SOL,1978-07-07,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00235,KIR,COW_ccode,946,Kiribati,KIR,1999-09-14,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00236,TUV,COW_ccode,947,Tuvalu,TUV,2000-09-05,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00237,FJI,COW_ccode,950,Fiji,FIJ,1970-10-10,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00238,TON,COW_ccode,955,Tonga,TON,1999-09-14,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00239,NRU,COW_ccode,970,Nauru,NAU,1999-09-14,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00240,MHL,COW_ccode,983,Marshall Islands,MSI,1991-09-17,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00241,PLW,COW_ccode,986,Palau,PAL,1994-12-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00242,FSM,COW_ccode,987,Federated States of Micronesia,FSM,1991-09-17,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00243,WSM,COW_ccode,990,Samoa,WSM,1976-12-15,2016-12-31,SRC_COW_STATES,COW 2016: fin=2016-12-31 indica que seguía vigente al cierre de la serie
+EXT00244,USA,GW_code,2,United States of America,USA,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00245,CAN,GW_code,20,Canada,CAN,1867-07-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00246,BHS,GW_code,31,Bahamas,BHM,1973-07-10,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00247,CUB,GW_code,40,Cuba,CUB,1902-05-20,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00248,HTI,GW_code,41,Haiti,HAI,1816-01-01,1915-07-04,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00249,HTI,GW_code,41,Haiti,HAI,1934-08-15,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00250,DOM,GW_code,42,Dominican Republic,DOM,1844-02-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00251,JAM,GW_code,51,Jamaica,JAM,1962-08-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00252,TTO,GW_code,52,Trinidad and Tobago,TRI,1962-08-31,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00253,BRB,GW_code,53,Barbados,BAR,1966-11-30,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00254,MEX,GW_code,70,Mexico,MEX,1821-07-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00255,BLZ,GW_code,80,Belize,BLZ,1981-09-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00256,H_UPC,GW_code,89,United Provinces of Central America,UPC,1823-07-01,1839-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00257,GTM,GW_code,90,Guatemala,GUA,1840-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00258,HND,GW_code,91,Honduras,HON,1840-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00259,SLV,GW_code,92,El Salvador,SAL,1840-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00260,NIC,GW_code,93,Nicaragua,NIC,1840-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00261,CRI,GW_code,94,Costa Rica,COS,1840-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00262,PAN,GW_code,95,Panama,PAN,1903-11-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00263,H_GCL,GW_code,99,Great Colombia,GCL,1821-08-30,1830-09-22,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00264,COL,GW_code,100,Colombia,COL,1830-09-23,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00265,VEN,GW_code,101,Venezuela,VEN,1829-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00266,GUY,GW_code,110,Guyana,GUY,1966-05-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00267,SUR,GW_code,115,Surinam,SUR,1975-11-25,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00268,ECU,GW_code,130,Ecuador,ECU,1830-05-13,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00269,PER,GW_code,135,Peru,PER,1824-12-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00270,BRA,GW_code,140,Brazil,BRA,1822-09-07,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00271,BOL,GW_code,145,Bolivia,BOL,1825-08-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00272,PRY,GW_code,150,Paraguay,PAR,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00273,CHL,GW_code,155,Chile,CHL,1818-04-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00274,ARG,GW_code,160,Argentina,ARG,1816-07-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00275,URY,GW_code,165,Uruguay,URU,1830-05-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00276,GBR,GW_code,200,United Kingdom,UKG,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00277,IRL,GW_code,205,Ireland,IRE,1921-12-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00278,NLD,GW_code,210,Netherlands,NTH,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00279,BEL,GW_code,211,Belgium,BEL,1830-10-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00280,LUX,GW_code,212,Luxembourg,LUX,1867-05-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00281,FRA,GW_code,220,France,FRN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00282,CHE,GW_code,225,Switzerland,SWZ,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00283,ESP,GW_code,230,Spain,SPN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00284,PRT,GW_code,235,Portugal,POR,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00285,HVR,GW_code,240,Hanover,HAN,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00286,BVR,GW_code,245,Bavaria,BAV,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00287,DEU,GW_code,255,Germany (Prussia),GMY,1816-01-01,1945-05-07,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00288,DEU,GW_code,260,German Federal Republic,GFR,1949-09-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00289,DDR,GW_code,265,German Democratic Republic,GDR,1949-10-05,1990-10-02,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00290,BDN,GW_code,267,Baden,BAD,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00291,SXN,GW_code,269,Saxony,SAX,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00292,WRG,GW_code,271,Wuerttemberg,WRT,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00293,HKS,GW_code,273,Hesse-Kassel (Electoral),HSE,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00294,HDM,GW_code,275,Hesse-Darmstadt (Ducal),HSD,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00295,MCL,GW_code,280,Mecklenburg-Schwerin,MEC,1816-01-01,1871-01-17,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00296,POL,GW_code,290,Poland,POL,1918-11-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00297,AUT,GW_code,300,Austria-Hungary,AUH,1816-01-01,1918-11-13,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00298,AUT,GW_code,305,Austria,AUS,1918-11-14,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00299,HUN,GW_code,310,Hungary,HUN,1918-11-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00300,CZE,GW_code,315,Czechoslovakia,CZE,1918-11-11,1992-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00301,CZE,GW_code,316,Czech Republic,CZR,1993-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00302,SVK,GW_code,317,Slovakia,SLO,1993-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00303,ITA,GW_code,325,Italy/Sardinia,ITA,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00304,PPS,GW_code,327,Papal States,PAP,1816-01-01,1870-09-22,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00305,TWS,GW_code,329,Two Sicilies,SIC,1816-01-01,1861-03-16,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00306,MDN,GW_code,332,Modena,MOD,1816-01-01,1861-03-16,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00307,PRM,GW_code,335,Parma,PMA,1816-01-01,1861-03-16,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00308,TSC,GW_code,337,Tuscany,TUS,1816-01-01,1861-03-16,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00309,MLT,GW_code,338,Malta,MLT,1964-09-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00310,ALB,GW_code,339,Albania,ALB,1913-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00311,MNE,GW_code,341,Montenegro,MNG,1868-01-01,1915-07-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00312,MNE,GW_code,341,Montenegro,MNG,2006-06-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00313,MKD,GW_code,343,Macedonia (Former Yugoslav Republic of),MAC,1991-11-20,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00314,HRV,GW_code,344,Croatia,CRO,1992-04-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00315,SRB,GW_code,340,Serbia,SER,1878-07-13,1915-10-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00316,SRB,GW_code,340,Serbia,SER,2006-06-05,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00317,SRB,GW_code,345,Yugoslavia,YUG,1918-12-01,2006-06-04,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00318,BIH,GW_code,346,Bosnia-Herzegovina,BOS,1992-04-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00319,XKX,GW_code,347,Kosovo,KOS,2008-02-17,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00320,SVN,GW_code,349,Slovenia,SLV,1992-04-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00321,GRC,GW_code,350,Greece,GRC,1828-04-25,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00322,CYP,GW_code,352,Cyprus,CYP,1960-08-16,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00323,BGR,GW_code,355,Bulgaria,BUL,1878-03-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00324,MDA,GW_code,359,Moldova,MLD,1991-08-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00325,ROU,GW_code,360,Rumania,RUM,1878-07-13,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00326,RUS,GW_code,365,Russia (Soviet Union),RUS,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00327,EST,GW_code,366,Estonia,EST,1918-11-11,1940-06-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00328,EST,GW_code,366,Estonia,EST,1991-09-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00329,LVA,GW_code,367,Latvia,LAT,1918-11-11,1940-06-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00330,LVA,GW_code,367,Latvia,LAT,1991-09-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00331,LTU,GW_code,368,Lithuania,LIT,1918-02-16,1940-06-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00332,LTU,GW_code,368,Lithuania,LIT,1991-09-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00333,UKR,GW_code,369,Ukraine,UKR,1991-12-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00334,BLR,GW_code,370,Belarus (Byelorussia),BLR,1991-08-25,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00335,ARM,GW_code,371,Armenia,ARM,1991-12-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00336,GEO,GW_code,372,Georgia,GRG,1991-12-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00337,AZE,GW_code,373,Azerbaijan,AZE,1991-12-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00338,FIN,GW_code,375,Finland,FIN,1917-12-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00339,SWE,GW_code,380,Sweden,SWD,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00340,NOR,GW_code,385,Norway,NOR,1905-08-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00341,DNK,GW_code,390,Denmark,DEN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00342,ISL,GW_code,395,Iceland,ICE,1944-06-17,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00343,CPV,GW_code,402,Cape Verde,CAP,1975-07-05,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00344,GNB,GW_code,404,Guinea-Bissau,GNB,1974-09-10,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00345,GNQ,GW_code,411,Equatorial Guinea,EQG,1968-10-12,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00346,GMB,GW_code,420,Gambia,GAM,1965-02-18,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00347,MLI,GW_code,432,Mali,MLI,1960-09-22,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00348,SEN,GW_code,433,Senegal,SEN,1960-04-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00349,BEN,GW_code,434,Benin,BEN,1960-08-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00350,MRT,GW_code,435,Mauritania,MAA,1960-11-28,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00351,NER,GW_code,436,Niger,NIR,1960-08-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00352,CIV,GW_code,437,Cote D'Ivoire,CDI,1960-08-07,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00353,GIN,GW_code,438,Guinea,GUI,1958-10-02,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00354,BFA,GW_code,439,Burkina Faso (Upper Volta),BFO,1960-08-05,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00355,LBR,GW_code,450,Liberia,LBR,1847-07-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00356,SLE,GW_code,451,Sierra Leone,SIE,1961-04-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00357,GHA,GW_code,452,Ghana,GHA,1957-03-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00358,TGO,GW_code,461,Togo,TOG,1960-04-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00359,CMR,GW_code,471,Cameroon,CAO,1960-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00360,NGA,GW_code,475,Nigeria,NIG,1960-10-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00361,GAB,GW_code,481,Gabon,GAB,1960-08-17,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00362,CAF,GW_code,482,Central African Republic,CEN,1960-08-13,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00363,TCD,GW_code,483,Chad,CHA,1960-08-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00364,COG,GW_code,484,Congo,CON,1960-08-15,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00365,COD,GW_code,490,"Congo, Democratic Republic of (Zaire)",DRC,1960-06-30,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00366,UGA,GW_code,500,Uganda,UGA,1962-10-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00367,KEN,GW_code,501,Kenya,KEN,1963-12-12,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00368,TZA,GW_code,510,Tanzania/Tanganyika,TAZ,1961-12-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00369,ZZB,GW_code,511,Zanzibar,ZAN,1963-12-19,1964-04-26,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00370,BDI,GW_code,516,Burundi,BUI,1962-07-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00371,RWA,GW_code,517,Rwanda,RWA,1962-01-07,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00372,SOM,GW_code,520,Somalia,SOM,1960-07-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00373,DJI,GW_code,522,Djibouti,DJI,1977-06-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00374,ETH,GW_code,530,Ethiopia,ETH,1855-02-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00375,ERI,GW_code,531,Eritrea,ERI,1993-05-24,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00376,AGO,GW_code,540,Angola,ANG,1975-11-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00377,MOZ,GW_code,541,Mozambique,MZM,1975-06-25,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00378,ZMB,GW_code,551,Zambia,ZAM,1964-10-24,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00379,ZWE,GW_code,552,Zimbabwe (Rhodesia),ZIM,1965-11-11,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00380,MWI,GW_code,553,Malawi,MAW,1964-07-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00381,ZAF,GW_code,560,South Africa,SAF,1910-05-31,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00382,H_TRA,GW_code,563,Transvaal,TRA,1852-01-01,1910-05-30,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00383,H_OFS,GW_code,564,Orange Free State,OFS,1854-03-28,1910-05-30,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00384,NAM,GW_code,565,Namibia,NAM,1990-03-21,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00385,LSO,GW_code,570,Lesotho,LES,1966-10-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00386,BWA,GW_code,571,Botswana,BOT,1966-09-30,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00387,SWZ,GW_code,572,Swaziland,SWA,1968-09-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00388,MDG,GW_code,580,Madagascar (Malagasy),MAG,1816-01-01,1896-08-05,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00389,MDG,GW_code,580,Madagascar,MAG,1960-06-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00390,COM,GW_code,581,Comoros,COM,1975-07-06,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00391,MUS,GW_code,590,Mauritius,MAS,1968-03-12,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00392,MAR,GW_code,600,Morocco,MOR,1816-01-01,1904-01-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00393,MAR,GW_code,600,Morocco,MOR,1956-03-02,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00394,DZA,GW_code,615,Algeria,ALG,1816-01-01,1830-07-05,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00395,DZA,GW_code,615,Algeria,ALG,1962-07-05,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00396,TUN,GW_code,616,Tunisia,TUN,1816-01-01,1881-05-12,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00397,TUN,GW_code,616,Tunisia,TUN,1956-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00398,LBY,GW_code,620,Libya,LIB,1816-01-01,1834-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00399,LBY,GW_code,620,Libya,LIB,1951-12-24,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00400,SDN,GW_code,625,Sudan,SUD,1956-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00401,SSD,GW_code,626,South Sudan,SSD,2011-07-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00402,IRN,GW_code,630,Iran (Persia),IRN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00403,TUR,GW_code,640,Turkey (Ottoman Empire),TUR,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00404,IRQ,GW_code,645,Iraq,IRQ,1932-10-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00405,EGY,GW_code,651,Egypt,EGY,1827-01-01,1855-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00406,EGY,GW_code,651,Egypt,EGY,1922-02-28,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00407,SYR,GW_code,652,Syria,SYR,1946-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00408,LBN,GW_code,660,Lebanon,LEB,1944-11-22,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00409,JOR,GW_code,663,Jordan,JOR,1946-05-25,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00410,ISR,GW_code,666,Israel,ISR,1948-05-14,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00411,SAU,GW_code,670,Saudi Arabia,SAU,1932-09-23,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00412,YEM,GW_code,678,Yemen (Arab Republic of Yemen),YEM,1918-10-30,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00413,YMD,GW_code,680,"Yemen, People's Republic of",YPR,1967-11-30,1990-05-21,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00414,KWT,GW_code,690,Kuwait,KUW,1961-06-19,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00415,BHR,GW_code,692,Bahrain,BAH,1971-08-15,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00416,QAT,GW_code,694,Qatar,QAT,1971-09-03,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00417,ARE,GW_code,696,United Arab Emirates,UAE,1971-12-02,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00418,OMN,GW_code,698,Oman,OMA,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00419,AFG,GW_code,700,Afghanistan,AFG,1816-01-01,1888-12-30,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00420,AFG,GW_code,700,Afghanistan,AFG,1919-05-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00421,TKM,GW_code,701,Turkmenistan,TKM,1991-10-27,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00422,TJK,GW_code,702,Tajikistan,TAJ,1991-09-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00423,KGZ,GW_code,703,Kyrgyz Republic,KYR,1991-08-31,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00424,UZB,GW_code,704,Uzbekistan,UZB,1991-08-31,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00425,KAZ,GW_code,705,Kazakhstan,KZK,1991-12-16,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00426,CHN,GW_code,710,China,CHN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00427,TBT,GW_code,711,Tibet,TBT,1913-01-01,1950-10-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00428,MNG,GW_code,712,Mongolia,MON,1921-03-13,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00429,TWN,GW_code,713,Taiwan,TAW,1949-12-08,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00430,KOR,GW_code,730,Korea,KOR,1816-01-01,1910-08-22,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00431,PRK,GW_code,731,"Korea, People's Republic of",PRK,1948-09-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00432,KOR,GW_code,732,"Korea, Republic of",ROK,1948-08-15,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00433,JPN,GW_code,740,Japan,JPN,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00434,IND,GW_code,750,India,IND,1947-08-15,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00435,BTN,GW_code,760,Bhutan,BHU,1949-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00436,PAK,GW_code,770,Pakistan,PAK,1947-08-14,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00437,BGD,GW_code,771,Bangladesh,BNG,1971-12-16,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00438,MMR,GW_code,775,Myanmar (Burma),MYA,1816-01-01,1885-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00439,MMR,GW_code,775,Myanmar (Burma),MYA,1948-01-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00440,LKA,GW_code,780,Sri Lanka (Ceylon),SRI,1948-02-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00441,MDV,GW_code,781,Maldives,MAD,1965-05-26,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00442,NPL,GW_code,790,Nepal,NEP,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00443,THA,GW_code,800,Thailand,THI,1816-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00444,KHM,GW_code,811,Cambodia (Kampuchea),CAM,1953-11-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00445,LAO,GW_code,812,Laos,LAO,1954-05-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00446,H_ANNAM,GW_code,815,Vietnam (Annam/Cochin China/Tonkin),VNM,1816-01-01,1893-01-01,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00447,VNM,GW_code,816,"Vietnam, Democratic Republic of",DRV,1954-05-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00448,VDR,GW_code,817,"Vietnam, Republic of",RVN,1954-05-01,1975-04-30,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00449,MYS,GW_code,820,Malaysia,MAL,1957-08-31,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00450,SGP,GW_code,830,Singapore,SIN,1965-08-09,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00451,BRN,GW_code,835,Brunei,BRU,1984-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00452,PHL,GW_code,840,Philippines,PHI,1946-07-04,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00453,IDN,GW_code,850,Indonesia,INS,1945-08-17,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00454,TLS,GW_code,860,East Timor,ETM,2002-05-20,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00455,AUS,GW_code,900,Australia,AUL,1901-01-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00456,PNG,GW_code,910,Papua New Guinea,PNG,1975-09-16,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00457,NZL,GW_code,920,New Zealand,NEW,1907-09-01,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00458,SLB,GW_code,940,Solomon Islands,SOL,1978-07-07,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00459,FJI,GW_code,950,Fiji,FJI,1970-10-10,2017-12-31,SRC_GW_STATES,Gleditsch-Ward: fin=2017-12-31 indica vigencia al cierre de la serie
+EXT00460,AFG,VDEM_country_text_id,AFG,Afghanistan,36,1789,2025,SRC_VDEM,
+EXT00461,AGO,VDEM_country_text_id,AGO,Angola,104,1900,2025,SRC_VDEM,
+EXT00462,ALB,VDEM_country_text_id,ALB,Albania,12,1912,2025,SRC_VDEM,
+EXT00463,ARE,VDEM_country_text_id,ARE,United Arab Emirates,207,1971,2025,SRC_VDEM,
+EXT00464,ARG,VDEM_country_text_id,ARG,Argentina,37,1789,2025,SRC_VDEM,
+EXT00465,ARM,VDEM_country_text_id,ARM,Armenia,105,1990,2025,SRC_VDEM,
+EXT00466,AUS,VDEM_country_text_id,AUS,Australia,67,1789,2025,SRC_VDEM,
+EXT00467,AUT,VDEM_country_text_id,AUT,Austria,144,1789,2025,SRC_VDEM,
+EXT00468,AZE,VDEM_country_text_id,AZE,Azerbaijan,106,1990,2025,SRC_VDEM,
+EXT00469,BDI,VDEM_country_text_id,BDI,Burundi,69,1916,2025,SRC_VDEM,
+EXT00470,BDN,VDEM_country_text_id,BDN,Baden,349,1789,1871,SRC_VDEM,
+EXT00471,BEL,VDEM_country_text_id,BEL,Belgium,148,1789,2025,SRC_VDEM,
+EXT00472,BEN,VDEM_country_text_id,BEN,Benin,52,1900,2025,SRC_VDEM,
+EXT00473,BFA,VDEM_country_text_id,BFA,Burkina Faso,54,1919,2025,SRC_VDEM,
+EXT00474,BGD,VDEM_country_text_id,BGD,Bangladesh,24,1971,2025,SRC_VDEM,
+EXT00475,BGR,VDEM_country_text_id,BGR,Bulgaria,152,1878,2025,SRC_VDEM,
+EXT00476,BHR,VDEM_country_text_id,BHR,Bahrain,146,1900,2025,SRC_VDEM,
+EXT00477,BIH,VDEM_country_text_id,BIH,Bosnia and Herzegovina,150,1992,2025,SRC_VDEM,
+EXT00478,BLR,VDEM_country_text_id,BLR,Belarus,107,1990,2025,SRC_VDEM,
+EXT00479,BOL,VDEM_country_text_id,BOL,Bolivia,25,1825,2025,SRC_VDEM,
+EXT00480,BRA,VDEM_country_text_id,BRA,Brazil,19,1789,2025,SRC_VDEM,
+EXT00481,BRB,VDEM_country_text_id,BRB,Barbados,147,1900,2025,SRC_VDEM,
+EXT00482,BRW,VDEM_country_text_id,BRW,Brunswick,363,1789,1867,SRC_VDEM,
+EXT00483,BTN,VDEM_country_text_id,BTN,Bhutan,53,1900,2025,SRC_VDEM,
+EXT00484,BVR,VDEM_country_text_id,BVR,Bavaria,350,1789,1871,SRC_VDEM,
+EXT00485,BWA,VDEM_country_text_id,BWA,Botswana,68,1900,2025,SRC_VDEM,
+EXT00486,CAF,VDEM_country_text_id,CAF,Central African Republic,71,1920,2025,SRC_VDEM,
+EXT00487,CAN,VDEM_country_text_id,CAN,Canada,66,1841,2025,SRC_VDEM,
+EXT00488,CHE,VDEM_country_text_id,CHE,Switzerland,6,1798,2025,SRC_VDEM,
+EXT00489,CHL,VDEM_country_text_id,CHL,Chile,72,1789,2025,SRC_VDEM,
+EXT00490,CHN,VDEM_country_text_id,CHN,China,110,1789,2025,SRC_VDEM,
+EXT00491,CIV,VDEM_country_text_id,CIV,Ivory Coast,64,1900,2025,SRC_VDEM,
+EXT00492,CMR,VDEM_country_text_id,CMR,Cameroon,108,1961,2025,SRC_VDEM,
+EXT00493,COD,VDEM_country_text_id,COD,Democratic Republic of the Congo,111,1900,2025,SRC_VDEM,
+EXT00494,COG,VDEM_country_text_id,COG,Republic of the Congo,112,1903,2025,SRC_VDEM,
+EXT00495,COL,VDEM_country_text_id,COL,Colombia,15,1789,2025,SRC_VDEM,
+EXT00496,COM,VDEM_country_text_id,COM,Comoros,153,1900,2025,SRC_VDEM,
+EXT00497,CPV,VDEM_country_text_id,CPV,Cape Verde,70,1900,2025,SRC_VDEM,
+EXT00498,CRI,VDEM_country_text_id,CRI,Costa Rica,73,1838,2025,SRC_VDEM,
+EXT00499,CUB,VDEM_country_text_id,CUB,Cuba,155,1789,2025,SRC_VDEM,
+EXT00500,CYP,VDEM_country_text_id,CYP,Cyprus,156,1900,2025,SRC_VDEM,
+EXT00501,CZE,VDEM_country_text_id,CZE,Czechia,157,1918,2025,SRC_VDEM,
+EXT00502,DDR,VDEM_country_text_id,DDR,German Democratic Republic,137,1949,1990,SRC_VDEM,
+EXT00503,DEU,VDEM_country_text_id,DEU,Germany,77,1789,2025,SRC_VDEM,
+EXT00504,DJI,VDEM_country_text_id,DJI,Djibouti,113,1900,2025,SRC_VDEM,
+EXT00505,DNK,VDEM_country_text_id,DNK,Denmark,158,1789,2025,SRC_VDEM,
+EXT00506,DOM,VDEM_country_text_id,DOM,Dominican Republic,114,1789,2025,SRC_VDEM,
+EXT00507,DZA,VDEM_country_text_id,DZA,Algeria,103,1900,2025,SRC_VDEM,
+EXT00508,ECU,VDEM_country_text_id,ECU,Ecuador,75,1830,2025,SRC_VDEM,
+EXT00509,EGY,VDEM_country_text_id,EGY,Egypt,13,1789,2025,SRC_VDEM,
+EXT00510,ERI,VDEM_country_text_id,ERI,Eritrea,115,1900,2025,SRC_VDEM,
+EXT00511,ESP,VDEM_country_text_id,ESP,Spain,96,1789,2025,SRC_VDEM,
+EXT00512,EST,VDEM_country_text_id,EST,Estonia,161,1918,2025,SRC_VDEM,
+EXT00513,ETH,VDEM_country_text_id,ETH,Ethiopia,38,1789,2025,SRC_VDEM,
+EXT00514,FIN,VDEM_country_text_id,FIN,Finland,163,1809,2025,SRC_VDEM,
+EXT00515,FJI,VDEM_country_text_id,FJI,Fiji,162,1900,2025,SRC_VDEM,
+EXT00516,FRA,VDEM_country_text_id,FRA,France,76,1789,2025,SRC_VDEM,
+EXT00517,GAB,VDEM_country_text_id,GAB,Gabon,116,1910,2025,SRC_VDEM,
+EXT00518,GBR,VDEM_country_text_id,GBR,United Kingdom,101,1789,2025,SRC_VDEM,
+EXT00519,GEO,VDEM_country_text_id,GEO,Georgia,118,1990,2025,SRC_VDEM,
+EXT00520,GHA,VDEM_country_text_id,GHA,Ghana,7,1902,2025,SRC_VDEM,
+EXT00521,GIN,VDEM_country_text_id,GIN,Guinea,63,1900,2025,SRC_VDEM,
+EXT00522,GMB,VDEM_country_text_id,GMB,The Gambia,117,1900,2025,SRC_VDEM,
+EXT00523,GNB,VDEM_country_text_id,GNB,Guinea-Bissau,119,1900,2025,SRC_VDEM,
+EXT00524,GNQ,VDEM_country_text_id,GNQ,Equatorial Guinea,160,1900,2025,SRC_VDEM,
+EXT00525,GRC,VDEM_country_text_id,GRC,Greece,164,1822,2025,SRC_VDEM,
+EXT00526,GTM,VDEM_country_text_id,GTM,Guatemala,78,1789,2025,SRC_VDEM,
+EXT00527,GUY,VDEM_country_text_id,GUY,Guyana,166,1900,2025,SRC_VDEM,
+EXT00528,HDM,VDEM_country_text_id,HDM,Hesse-Darmstadt,359,1789,1871,SRC_VDEM,
+EXT00529,HKG,VDEM_country_text_id,HKG,Hong Kong,167,1900,2025,SRC_VDEM,
+EXT00530,HKS,VDEM_country_text_id,HKS,Hesse-Kassel,358,1789,1866,SRC_VDEM,
+EXT00531,HND,VDEM_country_text_id,HND,Honduras,27,1838,2025,SRC_VDEM,
+EXT00532,HRG,VDEM_country_text_id,HRG,Hamburg,362,1789,1867,SRC_VDEM,
+EXT00533,HRV,VDEM_country_text_id,HRV,Croatia,154,1941,2025,SRC_VDEM,
+EXT00534,HTI,VDEM_country_text_id,HTI,Haiti,26,1789,2025,SRC_VDEM,
+EXT00535,HUN,VDEM_country_text_id,HUN,Hungary,210,1789,2025,SRC_VDEM,
+EXT00536,HVR,VDEM_country_text_id,HVR,Hanover,357,1789,1866,SRC_VDEM,
+EXT00537,IDN,VDEM_country_text_id,IDN,Indonesia,56,1800,2025,SRC_VDEM,
+EXT00538,IND,VDEM_country_text_id,IND,India,39,1789,2025,SRC_VDEM,
+EXT00539,IRL,VDEM_country_text_id,IRL,Ireland,81,1919,2025,SRC_VDEM,
+EXT00540,IRN,VDEM_country_text_id,IRN,Iran,79,1789,2025,SRC_VDEM,
+EXT00541,IRQ,VDEM_country_text_id,IRQ,Iraq,80,1920,2025,SRC_VDEM,
+EXT00542,ISL,VDEM_country_text_id,ISL,Iceland,168,1900,2025,SRC_VDEM,
+EXT00543,ISR,VDEM_country_text_id,ISR,Israel,169,1948,2025,SRC_VDEM,
+EXT00544,ITA,VDEM_country_text_id,ITA,Italy,82,1861,2025,SRC_VDEM,
+EXT00545,JAM,VDEM_country_text_id,JAM,Jamaica,120,1900,2025,SRC_VDEM,
+EXT00546,JOR,VDEM_country_text_id,JOR,Jordan,83,1922,2025,SRC_VDEM,
+EXT00547,JPN,VDEM_country_text_id,JPN,Japan,9,1789,2025,SRC_VDEM,
+EXT00548,KAZ,VDEM_country_text_id,KAZ,Kazakhstan,121,1990,2025,SRC_VDEM,
+EXT00549,KEN,VDEM_country_text_id,KEN,Kenya,40,1900,2025,SRC_VDEM,
+EXT00550,KGZ,VDEM_country_text_id,KGZ,Kyrgyzstan,122,1990,2025,SRC_VDEM,
+EXT00551,KHM,VDEM_country_text_id,KHM,Cambodia,55,1900,2025,SRC_VDEM,
+EXT00552,KOR,VDEM_country_text_id,KOR,South Korea,42,1789,2025,SRC_VDEM,
+EXT00553,KWT,VDEM_country_text_id,KWT,Kuwait,171,1789,2025,SRC_VDEM,
+EXT00554,LAO,VDEM_country_text_id,LAO,Laos,123,1900,2025,SRC_VDEM,
+EXT00555,LBN,VDEM_country_text_id,LBN,Lebanon,44,1918,2025,SRC_VDEM,
+EXT00556,LBR,VDEM_country_text_id,LBR,Liberia,86,1821,2025,SRC_VDEM,
+EXT00557,LBY,VDEM_country_text_id,LBY,Libya,124,1789,2025,SRC_VDEM,
+EXT00558,LKA,VDEM_country_text_id,LKA,Sri Lanka,131,1900,2025,SRC_VDEM,
+EXT00559,LSO,VDEM_country_text_id,LSO,Lesotho,85,1900,2025,SRC_VDEM,
+EXT00560,LTU,VDEM_country_text_id,LTU,Lithuania,173,1918,2025,SRC_VDEM,
+EXT00561,LUX,VDEM_country_text_id,LUX,Luxembourg,174,1815,2025,SRC_VDEM,
+EXT00562,LVA,VDEM_country_text_id,LVA,Latvia,84,1920,2025,SRC_VDEM,
+EXT00563,MAR,VDEM_country_text_id,MAR,Morocco,90,1789,2025,SRC_VDEM,
+EXT00564,MCL,VDEM_country_text_id,MCL,Mecklenburg Schwerin,360,1789,1867,SRC_VDEM,
+EXT00565,MDA,VDEM_country_text_id,MDA,Moldova,126,1990,2025,SRC_VDEM,
+EXT00566,MDG,VDEM_country_text_id,MDG,Madagascar,125,1817,2025,SRC_VDEM,
+EXT00567,MDN,VDEM_country_text_id,MDN,Modena,351,1789,1859,SRC_VDEM,
+EXT00568,MDV,VDEM_country_text_id,MDV,Maldives,88,1900,2025,SRC_VDEM,
+EXT00569,MEX,VDEM_country_text_id,MEX,Mexico,3,1789,2025,SRC_VDEM,
+EXT00570,MKD,VDEM_country_text_id,MKD,North Macedonia,176,1991,2025,SRC_VDEM,
+EXT00571,MLI,VDEM_country_text_id,MLI,Mali,28,1900,2025,SRC_VDEM,
+EXT00572,MLT,VDEM_country_text_id,MLT,Malta,178,1900,2025,SRC_VDEM,
+EXT00573,MMR,VDEM_country_text_id,MMR,Burma/Myanmar,10,1789,2025,SRC_VDEM,
+EXT00574,MNE,VDEM_country_text_id,MNE,Montenegro,183,1789,2025,SRC_VDEM,
+EXT00575,MNG,VDEM_country_text_id,MNG,Mongolia,89,1911,2025,SRC_VDEM,
+EXT00576,MOZ,VDEM_country_text_id,MOZ,Mozambique,57,1900,2025,SRC_VDEM,
+EXT00577,MRT,VDEM_country_text_id,MRT,Mauritania,65,1904,2025,SRC_VDEM,
+EXT00578,MUS,VDEM_country_text_id,MUS,Mauritius,180,1900,2025,SRC_VDEM,
+EXT00579,MWI,VDEM_country_text_id,MWI,Malawi,87,1900,2025,SRC_VDEM,
+EXT00580,MYS,VDEM_country_text_id,MYS,Malaysia,177,1900,2025,SRC_VDEM,
+EXT00581,NAM,VDEM_country_text_id,NAM,Namibia,127,1900,2025,SRC_VDEM,
+EXT00582,NER,VDEM_country_text_id,NER,Niger,60,1922,2025,SRC_VDEM,
+EXT00583,NGA,VDEM_country_text_id,NGA,Nigeria,45,1914,2025,SRC_VDEM,
+EXT00584,NIC,VDEM_country_text_id,NIC,Nicaragua,59,1838,2025,SRC_VDEM,
+EXT00585,NLD,VDEM_country_text_id,NLD,Netherlands,91,1789,2025,SRC_VDEM,
+EXT00586,NOR,VDEM_country_text_id,NOR,Norway,186,1789,2025,SRC_VDEM,
+EXT00587,NPL,VDEM_country_text_id,NPL,Nepal,58,1789,2025,SRC_VDEM,
+EXT00588,NSS,VDEM_country_text_id,NSS,Nassau,366,1806,1866,SRC_VDEM,
+EXT00589,NZL,VDEM_country_text_id,NZL,New Zealand,185,1841,2025,SRC_VDEM,
+EXT00590,OLD,VDEM_country_text_id,OLD,Oldenburg,364,1789,1867,SRC_VDEM,
+EXT00591,OMN,VDEM_country_text_id,OMN,Oman,187,1789,2025,SRC_VDEM,
+EXT00592,PAK,VDEM_country_text_id,PAK,Pakistan,29,1947,2025,SRC_VDEM,
+EXT00593,PAN,VDEM_country_text_id,PAN,Panama,92,1903,2025,SRC_VDEM,
+EXT00594,PER,VDEM_country_text_id,PER,Peru,30,1789,2025,SRC_VDEM,
+EXT00595,PHL,VDEM_country_text_id,PHL,Philippines,46,1900,2025,SRC_VDEM,
+EXT00596,PNG,VDEM_country_text_id,PNG,Papua New Guinea,93,1900,2025,SRC_VDEM,
+EXT00597,POL,VDEM_country_text_id,POL,Poland,17,1789,2025,SRC_VDEM,
+EXT00598,PPS,VDEM_country_text_id,PPS,Papal States,361,1789,1870,SRC_VDEM,
+EXT00599,PRK,VDEM_country_text_id,PRK,North Korea,41,1945,2025,SRC_VDEM,
+EXT00600,PRM,VDEM_country_text_id,PRM,Parma,352,1789,1859,SRC_VDEM,
+EXT00601,PRT,VDEM_country_text_id,PRT,Portugal,21,1789,2025,SRC_VDEM,
+EXT00602,PRY,VDEM_country_text_id,PRY,Paraguay,189,1811,2025,SRC_VDEM,
+EXT00603,PSB,VDEM_country_text_id,PSB,Palestine/British Mandate,209,1918,1948,SRC_VDEM,
+EXT00604,PSE,VDEM_country_text_id,PSE,Palestine/West Bank,128,1948,2025,SRC_VDEM,
+EXT00605,PSG,VDEM_country_text_id,PSG,Palestine/Gaza,138,1948,2025,SRC_VDEM,
+EXT00606,QAT,VDEM_country_text_id,QAT,Qatar,94,1900,2025,SRC_VDEM,
+EXT00607,ROU,VDEM_country_text_id,ROU,Romania,190,1789,2025,SRC_VDEM,
+EXT00608,RUS,VDEM_country_text_id,RUS,Russia,11,1789,2025,SRC_VDEM,
+EXT00609,RWA,VDEM_country_text_id,RWA,Rwanda,129,1916,2025,SRC_VDEM,
+EXT00610,SAU,VDEM_country_text_id,SAU,Saudi Arabia,197,1789,2025,SRC_VDEM,
+EXT00611,SAX,VDEM_country_text_id,SAX,Saxe-Weimar-Eisenach,365,1809,1867,SRC_VDEM,
+EXT00612,SDN,VDEM_country_text_id,SDN,Sudan,33,1900,2025,SRC_VDEM,
+EXT00613,SEN,VDEM_country_text_id,SEN,Senegal,31,1904,2025,SRC_VDEM,
+EXT00614,SGP,VDEM_country_text_id,SGP,Singapore,200,1867,2025,SRC_VDEM,
+EXT00615,SLB,VDEM_country_text_id,SLB,Solomon Islands,203,1900,2025,SRC_VDEM,
+EXT00616,SLE,VDEM_country_text_id,SLE,Sierra Leone,95,1900,2025,SRC_VDEM,
+EXT00617,SLV,VDEM_country_text_id,SLV,El Salvador,22,1838,2025,SRC_VDEM,
+EXT00618,SML,VDEM_country_text_id,SML,Somaliland,139,1900,2025,SRC_VDEM,
+EXT00619,SOM,VDEM_country_text_id,SOM,Somalia,130,1900,2025,SRC_VDEM,
+EXT00620,SPD,VDEM_country_text_id,SPD,Piedmont-Sardinia,373,1789,1861,SRC_VDEM,
+EXT00621,SRB,VDEM_country_text_id,SRB,Serbia,198,1804,2025,SRC_VDEM,
+EXT00622,SSD,VDEM_country_text_id,SSD,South Sudan,32,2011,2025,SRC_VDEM,
+EXT00623,STP,VDEM_country_text_id,STP,Sao Tome and Principe,196,1900,2025,SRC_VDEM,
+EXT00624,SUR,VDEM_country_text_id,SUR,Suriname,4,1900,2025,SRC_VDEM,
+EXT00625,SVK,VDEM_country_text_id,SVK,Slovakia,201,1939,2025,SRC_VDEM,
+EXT00626,SVN,VDEM_country_text_id,SVN,Slovenia,202,1989,2025,SRC_VDEM,
+EXT00627,SWE,VDEM_country_text_id,SWE,Sweden,5,1789,2025,SRC_VDEM,
+EXT00628,SWZ,VDEM_country_text_id,SWZ,Eswatini,132,1900,2025,SRC_VDEM,
+EXT00629,SXN,VDEM_country_text_id,SXN,Saxony,353,1789,1867,SRC_VDEM,
+EXT00630,SYC,VDEM_country_text_id,SYC,Seychelles,199,1903,2025,SRC_VDEM,
+EXT00631,SYR,VDEM_country_text_id,SYR,Syria,97,1918,2025,SRC_VDEM,
+EXT00632,TCD,VDEM_country_text_id,TCD,Chad,109,1920,2025,SRC_VDEM,
+EXT00633,TGO,VDEM_country_text_id,TGO,Togo,134,1916,2025,SRC_VDEM,
+EXT00634,THA,VDEM_country_text_id,THA,Thailand,49,1789,2025,SRC_VDEM,
+EXT00635,TJK,VDEM_country_text_id,TJK,Tajikistan,133,1990,2025,SRC_VDEM,
+EXT00636,TKM,VDEM_country_text_id,TKM,Turkmenistan,136,1990,2025,SRC_VDEM,
+EXT00637,TLS,VDEM_country_text_id,TLS,Timor-Leste,74,1900,2025,SRC_VDEM,
+EXT00638,TSC,VDEM_country_text_id,TSC,Tuscany,354,1789,1861,SRC_VDEM,
+EXT00639,TTO,VDEM_country_text_id,TTO,Trinidad and Tobago,135,1900,2025,SRC_VDEM,
+EXT00640,TUN,VDEM_country_text_id,TUN,Tunisia,98,1789,2025,SRC_VDEM,
+EXT00641,TUR,VDEM_country_text_id,TUR,Türkiye,99,1789,2025,SRC_VDEM,
+EXT00642,TWN,VDEM_country_text_id,TWN,Taiwan,48,1900,2025,SRC_VDEM,
+EXT00643,TWS,VDEM_country_text_id,TWS,Two Sicilies,356,1789,1860,SRC_VDEM,
+EXT00644,TZA,VDEM_country_text_id,TZA,Tanzania,47,1914,2025,SRC_VDEM,
+EXT00645,UGA,VDEM_country_text_id,UGA,Uganda,50,1900,2025,SRC_VDEM,
+EXT00646,UKR,VDEM_country_text_id,UKR,Ukraine,100,1990,2025,SRC_VDEM,
+EXT00647,URY,VDEM_country_text_id,URY,Uruguay,102,1825,2025,SRC_VDEM,
+EXT00648,USA,VDEM_country_text_id,USA,United States of America,20,1789,2025,SRC_VDEM,
+EXT00649,UZB,VDEM_country_text_id,UZB,Uzbekistan,140,1789,2025,SRC_VDEM,
+EXT00650,VDR,VDEM_country_text_id,VDR,Republic of Vietnam,35,1802,1975,SRC_VDEM,
+EXT00651,VEN,VDEM_country_text_id,VEN,Venezuela,51,1789,2025,SRC_VDEM,
+EXT00652,VNM,VDEM_country_text_id,VNM,Vietnam,34,1945,2025,SRC_VDEM,
+EXT00653,VUT,VDEM_country_text_id,VUT,Vanuatu,206,1900,2025,SRC_VDEM,
+EXT00654,WRG,VDEM_country_text_id,WRG,Würtemberg,355,1789,1871,SRC_VDEM,
+EXT00655,XKX,VDEM_country_text_id,XKX,Kosovo,43,1999,2025,SRC_VDEM,
+EXT00656,YEM,VDEM_country_text_id,YEM,Yemen,14,1789,2025,SRC_VDEM,
+EXT00657,YMD,VDEM_country_text_id,YMD,South Yemen,23,1900,1990,SRC_VDEM,
+EXT00658,ZAF,VDEM_country_text_id,ZAF,South Africa,8,1900,2025,SRC_VDEM,
+EXT00659,ZMB,VDEM_country_text_id,ZMB,Zambia,61,1911,2025,SRC_VDEM,
+EXT00660,ZWE,VDEM_country_text_id,ZWE,Zimbabwe,62,1900,2025,SRC_VDEM,
+EXT00661,ZZB,VDEM_country_text_id,ZZB,Zanzibar,236,1856,2025,SRC_VDEM,
+EXT00662,ABW,ISO3166_alpha3,ABW,Aruba,AW,,,SRC_MLEDOZE,
+EXT00663,AFG,ISO3166_alpha3,AFG,Afghanistan,AF,,,SRC_MLEDOZE,
+EXT00664,AGO,ISO3166_alpha3,AGO,Angola,AO,,,SRC_MLEDOZE,
+EXT00665,AIA,ISO3166_alpha3,AIA,Anguilla,AI,,,SRC_MLEDOZE,
+EXT00666,ALA,ISO3166_alpha3,ALA,Åland Islands,AX,,,SRC_MLEDOZE,
+EXT00667,ALB,ISO3166_alpha3,ALB,Albania,AL,,,SRC_MLEDOZE,
+EXT00668,AND,ISO3166_alpha3,AND,Andorra,AD,,,SRC_MLEDOZE,
+EXT00669,ARE,ISO3166_alpha3,ARE,United Arab Emirates,AE,,,SRC_MLEDOZE,
+EXT00670,ARG,ISO3166_alpha3,ARG,Argentina,AR,,,SRC_MLEDOZE,
+EXT00671,ARM,ISO3166_alpha3,ARM,Armenia,AM,,,SRC_MLEDOZE,
+EXT00672,ASM,ISO3166_alpha3,ASM,American Samoa,AS,,,SRC_MLEDOZE,
+EXT00673,ATA,ISO3166_alpha3,ATA,Antarctica,AQ,,,SRC_MLEDOZE,
+EXT00674,ATF,ISO3166_alpha3,ATF,French Southern and Antarctic Lands,TF,,,SRC_MLEDOZE,
+EXT00675,ATG,ISO3166_alpha3,ATG,Antigua and Barbuda,AG,,,SRC_MLEDOZE,
+EXT00676,AUS,ISO3166_alpha3,AUS,Australia,AU,,,SRC_MLEDOZE,
+EXT00677,AUT,ISO3166_alpha3,AUT,Austria,AT,,,SRC_MLEDOZE,
+EXT00678,AZE,ISO3166_alpha3,AZE,Azerbaijan,AZ,,,SRC_MLEDOZE,
+EXT00679,BDI,ISO3166_alpha3,BDI,Burundi,BI,,,SRC_MLEDOZE,
+EXT00680,BEL,ISO3166_alpha3,BEL,Belgium,BE,,,SRC_MLEDOZE,
+EXT00681,BEN,ISO3166_alpha3,BEN,Benin,BJ,,,SRC_MLEDOZE,
+EXT00682,BFA,ISO3166_alpha3,BFA,Burkina Faso,BF,,,SRC_MLEDOZE,
+EXT00683,BGD,ISO3166_alpha3,BGD,Bangladesh,BD,,,SRC_MLEDOZE,
+EXT00684,BGR,ISO3166_alpha3,BGR,Bulgaria,BG,,,SRC_MLEDOZE,
+EXT00685,BHR,ISO3166_alpha3,BHR,Bahrain,BH,,,SRC_MLEDOZE,
+EXT00686,BHS,ISO3166_alpha3,BHS,Bahamas,BS,,,SRC_MLEDOZE,
+EXT00687,BIH,ISO3166_alpha3,BIH,Bosnia and Herzegovina,BA,,,SRC_MLEDOZE,
+EXT00688,BLM,ISO3166_alpha3,BLM,Saint Barthélemy,BL,,,SRC_MLEDOZE,
+EXT00689,SHN,ISO3166_alpha3,SHN,"Saint Helena, Ascension and Tristan da Cunha",SH,,,SRC_MLEDOZE,
+EXT00690,BLR,ISO3166_alpha3,BLR,Belarus,BY,,,SRC_MLEDOZE,
+EXT00691,BLZ,ISO3166_alpha3,BLZ,Belize,BZ,,,SRC_MLEDOZE,
+EXT00692,BMU,ISO3166_alpha3,BMU,Bermuda,BM,,,SRC_MLEDOZE,
+EXT00693,BOL,ISO3166_alpha3,BOL,Bolivia,BO,,,SRC_MLEDOZE,
+EXT00694,BES,ISO3166_alpha3,BES,Caribbean Netherlands,BQ,,,SRC_MLEDOZE,
+EXT00695,BRA,ISO3166_alpha3,BRA,Brazil,BR,,,SRC_MLEDOZE,
+EXT00696,BRB,ISO3166_alpha3,BRB,Barbados,BB,,,SRC_MLEDOZE,
+EXT00697,BRN,ISO3166_alpha3,BRN,Brunei,BN,,,SRC_MLEDOZE,
+EXT00698,BTN,ISO3166_alpha3,BTN,Bhutan,BT,,,SRC_MLEDOZE,
+EXT00699,BVT,ISO3166_alpha3,BVT,Bouvet Island,BV,,,SRC_MLEDOZE,
+EXT00700,BWA,ISO3166_alpha3,BWA,Botswana,BW,,,SRC_MLEDOZE,
+EXT00701,CAF,ISO3166_alpha3,CAF,Central African Republic,CF,,,SRC_MLEDOZE,
+EXT00702,CAN,ISO3166_alpha3,CAN,Canada,CA,,,SRC_MLEDOZE,
+EXT00703,CCK,ISO3166_alpha3,CCK,Cocos (Keeling) Islands,CC,,,SRC_MLEDOZE,
+EXT00704,CHE,ISO3166_alpha3,CHE,Switzerland,CH,,,SRC_MLEDOZE,
+EXT00705,CHL,ISO3166_alpha3,CHL,Chile,CL,,,SRC_MLEDOZE,
+EXT00706,CHN,ISO3166_alpha3,CHN,China,CN,,,SRC_MLEDOZE,
+EXT00707,CIV,ISO3166_alpha3,CIV,Ivory Coast,CI,,,SRC_MLEDOZE,
+EXT00708,CMR,ISO3166_alpha3,CMR,Cameroon,CM,,,SRC_MLEDOZE,
+EXT00709,COD,ISO3166_alpha3,COD,DR Congo,CD,,,SRC_MLEDOZE,
+EXT00710,COG,ISO3166_alpha3,COG,Congo,CG,,,SRC_MLEDOZE,
+EXT00711,COK,ISO3166_alpha3,COK,Cook Islands,CK,,,SRC_MLEDOZE,
+EXT00712,COL,ISO3166_alpha3,COL,Colombia,CO,,,SRC_MLEDOZE,
+EXT00713,COM,ISO3166_alpha3,COM,Comoros,KM,,,SRC_MLEDOZE,
+EXT00714,CPV,ISO3166_alpha3,CPV,Cape Verde,CV,,,SRC_MLEDOZE,
+EXT00715,CRI,ISO3166_alpha3,CRI,Costa Rica,CR,,,SRC_MLEDOZE,
+EXT00716,CUB,ISO3166_alpha3,CUB,Cuba,CU,,,SRC_MLEDOZE,
+EXT00717,CUW,ISO3166_alpha3,CUW,Curaçao,CW,,,SRC_MLEDOZE,
+EXT00718,CXR,ISO3166_alpha3,CXR,Christmas Island,CX,,,SRC_MLEDOZE,
+EXT00719,CYM,ISO3166_alpha3,CYM,Cayman Islands,KY,,,SRC_MLEDOZE,
+EXT00720,CYP,ISO3166_alpha3,CYP,Cyprus,CY,,,SRC_MLEDOZE,
+EXT00721,CZE,ISO3166_alpha3,CZE,Czechia,CZ,,,SRC_MLEDOZE,
+EXT00722,DEU,ISO3166_alpha3,DEU,Germany,DE,,,SRC_MLEDOZE,
+EXT00723,DJI,ISO3166_alpha3,DJI,Djibouti,DJ,,,SRC_MLEDOZE,
+EXT00724,DMA,ISO3166_alpha3,DMA,Dominica,DM,,,SRC_MLEDOZE,
+EXT00725,DNK,ISO3166_alpha3,DNK,Denmark,DK,,,SRC_MLEDOZE,
+EXT00726,DOM,ISO3166_alpha3,DOM,Dominican Republic,DO,,,SRC_MLEDOZE,
+EXT00727,DZA,ISO3166_alpha3,DZA,Algeria,DZ,,,SRC_MLEDOZE,
+EXT00728,ECU,ISO3166_alpha3,ECU,Ecuador,EC,,,SRC_MLEDOZE,
+EXT00729,EGY,ISO3166_alpha3,EGY,Egypt,EG,,,SRC_MLEDOZE,
+EXT00730,ERI,ISO3166_alpha3,ERI,Eritrea,ER,,,SRC_MLEDOZE,
+EXT00731,ESH,ISO3166_alpha3,ESH,Western Sahara,EH,,,SRC_MLEDOZE,
+EXT00732,ESP,ISO3166_alpha3,ESP,Spain,ES,,,SRC_MLEDOZE,
+EXT00733,EST,ISO3166_alpha3,EST,Estonia,EE,,,SRC_MLEDOZE,
+EXT00734,ETH,ISO3166_alpha3,ETH,Ethiopia,ET,,,SRC_MLEDOZE,
+EXT00735,FIN,ISO3166_alpha3,FIN,Finland,FI,,,SRC_MLEDOZE,
+EXT00736,FJI,ISO3166_alpha3,FJI,Fiji,FJ,,,SRC_MLEDOZE,
+EXT00737,FLK,ISO3166_alpha3,FLK,Falkland Islands,FK,,,SRC_MLEDOZE,
+EXT00738,FRA,ISO3166_alpha3,FRA,France,FR,,,SRC_MLEDOZE,
+EXT00739,FRO,ISO3166_alpha3,FRO,Faroe Islands,FO,,,SRC_MLEDOZE,
+EXT00740,FSM,ISO3166_alpha3,FSM,Micronesia,FM,,,SRC_MLEDOZE,
+EXT00741,GAB,ISO3166_alpha3,GAB,Gabon,GA,,,SRC_MLEDOZE,
+EXT00742,GBR,ISO3166_alpha3,GBR,United Kingdom,GB,,,SRC_MLEDOZE,
+EXT00743,GEO,ISO3166_alpha3,GEO,Georgia,GE,,,SRC_MLEDOZE,
+EXT00744,GGY,ISO3166_alpha3,GGY,Guernsey,GG,,,SRC_MLEDOZE,
+EXT00745,GHA,ISO3166_alpha3,GHA,Ghana,GH,,,SRC_MLEDOZE,
+EXT00746,GIB,ISO3166_alpha3,GIB,Gibraltar,GI,,,SRC_MLEDOZE,
+EXT00747,GIN,ISO3166_alpha3,GIN,Guinea,GN,,,SRC_MLEDOZE,
+EXT00748,GLP,ISO3166_alpha3,GLP,Guadeloupe,GP,,,SRC_MLEDOZE,
+EXT00749,GMB,ISO3166_alpha3,GMB,Gambia,GM,,,SRC_MLEDOZE,
+EXT00750,GNB,ISO3166_alpha3,GNB,Guinea-Bissau,GW,,,SRC_MLEDOZE,
+EXT00751,GNQ,ISO3166_alpha3,GNQ,Equatorial Guinea,GQ,,,SRC_MLEDOZE,
+EXT00752,GRC,ISO3166_alpha3,GRC,Greece,GR,,,SRC_MLEDOZE,
+EXT00753,GRD,ISO3166_alpha3,GRD,Grenada,GD,,,SRC_MLEDOZE,
+EXT00754,GRL,ISO3166_alpha3,GRL,Greenland,GL,,,SRC_MLEDOZE,
+EXT00755,GTM,ISO3166_alpha3,GTM,Guatemala,GT,,,SRC_MLEDOZE,
+EXT00756,GUF,ISO3166_alpha3,GUF,French Guiana,GF,,,SRC_MLEDOZE,
+EXT00757,GUM,ISO3166_alpha3,GUM,Guam,GU,,,SRC_MLEDOZE,
+EXT00758,GUY,ISO3166_alpha3,GUY,Guyana,GY,,,SRC_MLEDOZE,
+EXT00759,HKG,ISO3166_alpha3,HKG,Hong Kong,HK,,,SRC_MLEDOZE,
+EXT00760,HMD,ISO3166_alpha3,HMD,Heard Island and McDonald Islands,HM,,,SRC_MLEDOZE,
+EXT00761,HND,ISO3166_alpha3,HND,Honduras,HN,,,SRC_MLEDOZE,
+EXT00762,HRV,ISO3166_alpha3,HRV,Croatia,HR,,,SRC_MLEDOZE,
+EXT00763,HTI,ISO3166_alpha3,HTI,Haiti,HT,,,SRC_MLEDOZE,
+EXT00764,HUN,ISO3166_alpha3,HUN,Hungary,HU,,,SRC_MLEDOZE,
+EXT00765,IDN,ISO3166_alpha3,IDN,Indonesia,ID,,,SRC_MLEDOZE,
+EXT00766,IMN,ISO3166_alpha3,IMN,Isle of Man,IM,,,SRC_MLEDOZE,
+EXT00767,IND,ISO3166_alpha3,IND,India,IN,,,SRC_MLEDOZE,
+EXT00768,IOT,ISO3166_alpha3,IOT,British Indian Ocean Territory,IO,,,SRC_MLEDOZE,
+EXT00769,IRL,ISO3166_alpha3,IRL,Ireland,IE,,,SRC_MLEDOZE,
+EXT00770,IRN,ISO3166_alpha3,IRN,Iran,IR,,,SRC_MLEDOZE,
+EXT00771,IRQ,ISO3166_alpha3,IRQ,Iraq,IQ,,,SRC_MLEDOZE,
+EXT00772,ISL,ISO3166_alpha3,ISL,Iceland,IS,,,SRC_MLEDOZE,
+EXT00773,ISR,ISO3166_alpha3,ISR,Israel,IL,,,SRC_MLEDOZE,
+EXT00774,ITA,ISO3166_alpha3,ITA,Italy,IT,,,SRC_MLEDOZE,
+EXT00775,JAM,ISO3166_alpha3,JAM,Jamaica,JM,,,SRC_MLEDOZE,
+EXT00776,JEY,ISO3166_alpha3,JEY,Jersey,JE,,,SRC_MLEDOZE,
+EXT00777,JOR,ISO3166_alpha3,JOR,Jordan,JO,,,SRC_MLEDOZE,
+EXT00778,JPN,ISO3166_alpha3,JPN,Japan,JP,,,SRC_MLEDOZE,
+EXT00779,KAZ,ISO3166_alpha3,KAZ,Kazakhstan,KZ,,,SRC_MLEDOZE,
+EXT00780,KEN,ISO3166_alpha3,KEN,Kenya,KE,,,SRC_MLEDOZE,
+EXT00781,KGZ,ISO3166_alpha3,KGZ,Kyrgyzstan,KG,,,SRC_MLEDOZE,
+EXT00782,KHM,ISO3166_alpha3,KHM,Cambodia,KH,,,SRC_MLEDOZE,
+EXT00783,KIR,ISO3166_alpha3,KIR,Kiribati,KI,,,SRC_MLEDOZE,
+EXT00784,KNA,ISO3166_alpha3,KNA,Saint Kitts and Nevis,KN,,,SRC_MLEDOZE,
+EXT00785,KOR,ISO3166_alpha3,KOR,South Korea,KR,,,SRC_MLEDOZE,
+EXT00786,KWT,ISO3166_alpha3,KWT,Kuwait,KW,,,SRC_MLEDOZE,
+EXT00787,LAO,ISO3166_alpha3,LAO,Laos,LA,,,SRC_MLEDOZE,
+EXT00788,LBN,ISO3166_alpha3,LBN,Lebanon,LB,,,SRC_MLEDOZE,
+EXT00789,LBR,ISO3166_alpha3,LBR,Liberia,LR,,,SRC_MLEDOZE,
+EXT00790,LBY,ISO3166_alpha3,LBY,Libya,LY,,,SRC_MLEDOZE,
+EXT00791,LCA,ISO3166_alpha3,LCA,Saint Lucia,LC,,,SRC_MLEDOZE,
+EXT00792,LIE,ISO3166_alpha3,LIE,Liechtenstein,LI,,,SRC_MLEDOZE,
+EXT00793,LKA,ISO3166_alpha3,LKA,Sri Lanka,LK,,,SRC_MLEDOZE,
+EXT00794,LSO,ISO3166_alpha3,LSO,Lesotho,LS,,,SRC_MLEDOZE,
+EXT00795,LTU,ISO3166_alpha3,LTU,Lithuania,LT,,,SRC_MLEDOZE,
+EXT00796,LUX,ISO3166_alpha3,LUX,Luxembourg,LU,,,SRC_MLEDOZE,
+EXT00797,LVA,ISO3166_alpha3,LVA,Latvia,LV,,,SRC_MLEDOZE,
+EXT00798,MAC,ISO3166_alpha3,MAC,Macau,MO,,,SRC_MLEDOZE,
+EXT00799,MAF,ISO3166_alpha3,MAF,Saint Martin,MF,,,SRC_MLEDOZE,
+EXT00800,MAR,ISO3166_alpha3,MAR,Morocco,MA,,,SRC_MLEDOZE,
+EXT00801,MCO,ISO3166_alpha3,MCO,Monaco,MC,,,SRC_MLEDOZE,
+EXT00802,MDA,ISO3166_alpha3,MDA,Moldova,MD,,,SRC_MLEDOZE,
+EXT00803,MDG,ISO3166_alpha3,MDG,Madagascar,MG,,,SRC_MLEDOZE,
+EXT00804,MDV,ISO3166_alpha3,MDV,Maldives,MV,,,SRC_MLEDOZE,
+EXT00805,MEX,ISO3166_alpha3,MEX,Mexico,MX,,,SRC_MLEDOZE,
+EXT00806,MHL,ISO3166_alpha3,MHL,Marshall Islands,MH,,,SRC_MLEDOZE,
+EXT00807,MKD,ISO3166_alpha3,MKD,North Macedonia,MK,,,SRC_MLEDOZE,
+EXT00808,MLI,ISO3166_alpha3,MLI,Mali,ML,,,SRC_MLEDOZE,
+EXT00809,MLT,ISO3166_alpha3,MLT,Malta,MT,,,SRC_MLEDOZE,
+EXT00810,MMR,ISO3166_alpha3,MMR,Myanmar,MM,,,SRC_MLEDOZE,
+EXT00811,MNE,ISO3166_alpha3,MNE,Montenegro,ME,,,SRC_MLEDOZE,
+EXT00812,MNG,ISO3166_alpha3,MNG,Mongolia,MN,,,SRC_MLEDOZE,
+EXT00813,MNP,ISO3166_alpha3,MNP,Northern Mariana Islands,MP,,,SRC_MLEDOZE,
+EXT00814,MOZ,ISO3166_alpha3,MOZ,Mozambique,MZ,,,SRC_MLEDOZE,
+EXT00815,MRT,ISO3166_alpha3,MRT,Mauritania,MR,,,SRC_MLEDOZE,
+EXT00816,MSR,ISO3166_alpha3,MSR,Montserrat,MS,,,SRC_MLEDOZE,
+EXT00817,MTQ,ISO3166_alpha3,MTQ,Martinique,MQ,,,SRC_MLEDOZE,
+EXT00818,MUS,ISO3166_alpha3,MUS,Mauritius,MU,,,SRC_MLEDOZE,
+EXT00819,MWI,ISO3166_alpha3,MWI,Malawi,MW,,,SRC_MLEDOZE,
+EXT00820,MYS,ISO3166_alpha3,MYS,Malaysia,MY,,,SRC_MLEDOZE,
+EXT00821,MYT,ISO3166_alpha3,MYT,Mayotte,YT,,,SRC_MLEDOZE,
+EXT00822,NAM,ISO3166_alpha3,NAM,Namibia,NA,,,SRC_MLEDOZE,
+EXT00823,NCL,ISO3166_alpha3,NCL,New Caledonia,NC,,,SRC_MLEDOZE,
+EXT00824,NER,ISO3166_alpha3,NER,Niger,NE,,,SRC_MLEDOZE,
+EXT00825,NFK,ISO3166_alpha3,NFK,Norfolk Island,NF,,,SRC_MLEDOZE,
+EXT00826,NGA,ISO3166_alpha3,NGA,Nigeria,NG,,,SRC_MLEDOZE,
+EXT00827,NIC,ISO3166_alpha3,NIC,Nicaragua,NI,,,SRC_MLEDOZE,
+EXT00828,NIU,ISO3166_alpha3,NIU,Niue,NU,,,SRC_MLEDOZE,
+EXT00829,NLD,ISO3166_alpha3,NLD,Netherlands,NL,,,SRC_MLEDOZE,
+EXT00830,NOR,ISO3166_alpha3,NOR,Norway,NO,,,SRC_MLEDOZE,
+EXT00831,NPL,ISO3166_alpha3,NPL,Nepal,NP,,,SRC_MLEDOZE,
+EXT00832,NRU,ISO3166_alpha3,NRU,Nauru,NR,,,SRC_MLEDOZE,
+EXT00833,NZL,ISO3166_alpha3,NZL,New Zealand,NZ,,,SRC_MLEDOZE,
+EXT00834,OMN,ISO3166_alpha3,OMN,Oman,OM,,,SRC_MLEDOZE,
+EXT00835,PAK,ISO3166_alpha3,PAK,Pakistan,PK,,,SRC_MLEDOZE,
+EXT00836,PAN,ISO3166_alpha3,PAN,Panama,PA,,,SRC_MLEDOZE,
+EXT00837,PCN,ISO3166_alpha3,PCN,Pitcairn Islands,PN,,,SRC_MLEDOZE,
+EXT00838,PER,ISO3166_alpha3,PER,Peru,PE,,,SRC_MLEDOZE,
+EXT00839,PHL,ISO3166_alpha3,PHL,Philippines,PH,,,SRC_MLEDOZE,
+EXT00840,PLW,ISO3166_alpha3,PLW,Palau,PW,,,SRC_MLEDOZE,
+EXT00841,PNG,ISO3166_alpha3,PNG,Papua New Guinea,PG,,,SRC_MLEDOZE,
+EXT00842,POL,ISO3166_alpha3,POL,Poland,PL,,,SRC_MLEDOZE,
+EXT00843,PRI,ISO3166_alpha3,PRI,Puerto Rico,PR,,,SRC_MLEDOZE,
+EXT00844,PRK,ISO3166_alpha3,PRK,North Korea,KP,,,SRC_MLEDOZE,
+EXT00845,PRT,ISO3166_alpha3,PRT,Portugal,PT,,,SRC_MLEDOZE,
+EXT00846,PRY,ISO3166_alpha3,PRY,Paraguay,PY,,,SRC_MLEDOZE,
+EXT00847,PSE,ISO3166_alpha3,PSE,Palestine,PS,,,SRC_MLEDOZE,
+EXT00848,PYF,ISO3166_alpha3,PYF,French Polynesia,PF,,,SRC_MLEDOZE,
+EXT00849,QAT,ISO3166_alpha3,QAT,Qatar,QA,,,SRC_MLEDOZE,
+EXT00850,REU,ISO3166_alpha3,REU,Réunion,RE,,,SRC_MLEDOZE,
+EXT00851,ROU,ISO3166_alpha3,ROU,Romania,RO,,,SRC_MLEDOZE,
+EXT00852,RUS,ISO3166_alpha3,RUS,Russia,RU,,,SRC_MLEDOZE,
+EXT00853,RWA,ISO3166_alpha3,RWA,Rwanda,RW,,,SRC_MLEDOZE,
+EXT00854,SAU,ISO3166_alpha3,SAU,Saudi Arabia,SA,,,SRC_MLEDOZE,
+EXT00855,SDN,ISO3166_alpha3,SDN,Sudan,SD,,,SRC_MLEDOZE,
+EXT00856,SEN,ISO3166_alpha3,SEN,Senegal,SN,,,SRC_MLEDOZE,
+EXT00857,SGP,ISO3166_alpha3,SGP,Singapore,SG,,,SRC_MLEDOZE,
+EXT00858,SGS,ISO3166_alpha3,SGS,South Georgia,GS,,,SRC_MLEDOZE,
+EXT00859,SJM,ISO3166_alpha3,SJM,Svalbard and Jan Mayen,SJ,,,SRC_MLEDOZE,
+EXT00860,SLB,ISO3166_alpha3,SLB,Solomon Islands,SB,,,SRC_MLEDOZE,
+EXT00861,SLE,ISO3166_alpha3,SLE,Sierra Leone,SL,,,SRC_MLEDOZE,
+EXT00862,SLV,ISO3166_alpha3,SLV,El Salvador,SV,,,SRC_MLEDOZE,
+EXT00863,SMR,ISO3166_alpha3,SMR,San Marino,SM,,,SRC_MLEDOZE,
+EXT00864,SOM,ISO3166_alpha3,SOM,Somalia,SO,,,SRC_MLEDOZE,
+EXT00865,SPM,ISO3166_alpha3,SPM,Saint Pierre and Miquelon,PM,,,SRC_MLEDOZE,
+EXT00866,SRB,ISO3166_alpha3,SRB,Serbia,RS,,,SRC_MLEDOZE,
+EXT00867,SSD,ISO3166_alpha3,SSD,South Sudan,SS,,,SRC_MLEDOZE,
+EXT00868,STP,ISO3166_alpha3,STP,São Tomé and Príncipe,ST,,,SRC_MLEDOZE,
+EXT00869,SUR,ISO3166_alpha3,SUR,Suriname,SR,,,SRC_MLEDOZE,
+EXT00870,SVK,ISO3166_alpha3,SVK,Slovakia,SK,,,SRC_MLEDOZE,
+EXT00871,SVN,ISO3166_alpha3,SVN,Slovenia,SI,,,SRC_MLEDOZE,
+EXT00872,SWE,ISO3166_alpha3,SWE,Sweden,SE,,,SRC_MLEDOZE,
+EXT00873,SWZ,ISO3166_alpha3,SWZ,Eswatini,SZ,,,SRC_MLEDOZE,
+EXT00874,SXM,ISO3166_alpha3,SXM,Sint Maarten,SX,,,SRC_MLEDOZE,
+EXT00875,SYC,ISO3166_alpha3,SYC,Seychelles,SC,,,SRC_MLEDOZE,
+EXT00876,SYR,ISO3166_alpha3,SYR,Syria,SY,,,SRC_MLEDOZE,
+EXT00877,TCA,ISO3166_alpha3,TCA,Turks and Caicos Islands,TC,,,SRC_MLEDOZE,
+EXT00878,TCD,ISO3166_alpha3,TCD,Chad,TD,,,SRC_MLEDOZE,
+EXT00879,TGO,ISO3166_alpha3,TGO,Togo,TG,,,SRC_MLEDOZE,
+EXT00880,THA,ISO3166_alpha3,THA,Thailand,TH,,,SRC_MLEDOZE,
+EXT00881,TJK,ISO3166_alpha3,TJK,Tajikistan,TJ,,,SRC_MLEDOZE,
+EXT00882,TKL,ISO3166_alpha3,TKL,Tokelau,TK,,,SRC_MLEDOZE,
+EXT00883,TKM,ISO3166_alpha3,TKM,Turkmenistan,TM,,,SRC_MLEDOZE,
+EXT00884,TLS,ISO3166_alpha3,TLS,Timor-Leste,TL,,,SRC_MLEDOZE,
+EXT00885,TON,ISO3166_alpha3,TON,Tonga,TO,,,SRC_MLEDOZE,
+EXT00886,TTO,ISO3166_alpha3,TTO,Trinidad and Tobago,TT,,,SRC_MLEDOZE,
+EXT00887,TUN,ISO3166_alpha3,TUN,Tunisia,TN,,,SRC_MLEDOZE,
+EXT00888,TUR,ISO3166_alpha3,TUR,Türkiye,TR,,,SRC_MLEDOZE,
+EXT00889,TUV,ISO3166_alpha3,TUV,Tuvalu,TV,,,SRC_MLEDOZE,
+EXT00890,TWN,ISO3166_alpha3,TWN,Taiwan,TW,,,SRC_MLEDOZE,
+EXT00891,TZA,ISO3166_alpha3,TZA,Tanzania,TZ,,,SRC_MLEDOZE,
+EXT00892,UGA,ISO3166_alpha3,UGA,Uganda,UG,,,SRC_MLEDOZE,
+EXT00893,UKR,ISO3166_alpha3,UKR,Ukraine,UA,,,SRC_MLEDOZE,
+EXT00894,UMI,ISO3166_alpha3,UMI,United States Minor Outlying Islands,UM,,,SRC_MLEDOZE,
+EXT00895,URY,ISO3166_alpha3,URY,Uruguay,UY,,,SRC_MLEDOZE,
+EXT00896,USA,ISO3166_alpha3,USA,United States,US,,,SRC_MLEDOZE,
+EXT00897,UZB,ISO3166_alpha3,UZB,Uzbekistan,UZ,,,SRC_MLEDOZE,
+EXT00898,VAT,ISO3166_alpha3,VAT,Vatican City,VA,,,SRC_MLEDOZE,
+EXT00899,VCT,ISO3166_alpha3,VCT,Saint Vincent and the Grenadines,VC,,,SRC_MLEDOZE,
+EXT00900,VEN,ISO3166_alpha3,VEN,Venezuela,VE,,,SRC_MLEDOZE,
+EXT00901,VGB,ISO3166_alpha3,VGB,British Virgin Islands,VG,,,SRC_MLEDOZE,
+EXT00902,VIR,ISO3166_alpha3,VIR,United States Virgin Islands,VI,,,SRC_MLEDOZE,
+EXT00903,VNM,ISO3166_alpha3,VNM,Vietnam,VN,,,SRC_MLEDOZE,
+EXT00904,VUT,ISO3166_alpha3,VUT,Vanuatu,VU,,,SRC_MLEDOZE,
+EXT00905,WLF,ISO3166_alpha3,WLF,Wallis and Futuna,WF,,,SRC_MLEDOZE,
+EXT00906,WSM,ISO3166_alpha3,WSM,Samoa,WS,,,SRC_MLEDOZE,
+EXT00907,YEM,ISO3166_alpha3,YEM,Yemen,YE,,,SRC_MLEDOZE,
+EXT00908,ZAF,ISO3166_alpha3,ZAF,South Africa,ZA,,,SRC_MLEDOZE,
+EXT00909,ZMB,ISO3166_alpha3,ZMB,Zambia,ZM,,,SRC_MLEDOZE,
+EXT00910,ZWE,ISO3166_alpha3,ZWE,Zimbabwe,ZW,,,SRC_MLEDOZE,

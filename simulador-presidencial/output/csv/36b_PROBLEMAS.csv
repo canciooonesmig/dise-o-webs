@@ -1,0 +1,14 @@
+issue_id,scope,issue,impact,action
+Q001,Global,"Portales oficiales (Banco Mundial, FMI, SIPRI, UCDP, COW, V-Dem) bloqueados por la política de red del entorno de construcción",Se usaron réplicas públicas en GitHub con hash SHA-256 registrado,Re-descargar desde la fuente oficial al actualizar
+Q002,Tablas curadas,Los registros con verification_status=CONOC_EXPERTO se compilaron a partir de historiografía de referencia sin contraste línea a línea durante la construcción,Posibles errores puntuales en fechas o cifras,Verificar contra las fuentes citadas antes de usos críticos; ver 36c_VERIFICACION_MUESTRAL
+Q003,WDI,Las series se revisan retroactivamente; valores de 2023-2024 son preliminares en muchos países,Cambios en futuras ediciones,"Registrar versión del WDI usada (datapackage 1.1.0, 2026-05)"
+Q004,V-Dem e_miinflat,Interpolación lineal de huecos aplicada por la fuente original,Serie no observada en todos los años,Señalado en 02b_INDICADORES.interpolation
+Q005,UCDP,La versión 1946-2024 descargada no incluye nombres de actores,Conflictos post-2014 sin nombre ni localización textual,Nombres añadidos desde la versión antigua cuando coincide conflict_id
+Q006,COW guerras interestatales,La versión descargada no incluye el nombre de cada guerra,Identificación por número y participantes,Cruzar con 16_CONFLICTOS curado o con el fichero oficial COW
+Q007,Inventarios militares,Sin acceso a The Military Balance (IISS) ni a bases de inventarios,14b solo contiene rangos estratégicos seleccionados,Completar con IISS/SIPRI; ver 39_PENDIENTES
+Q008,Entidades continuadoras,"URSS, Yugoslavia y Checoslovaquia se codifican como continuidad de RUS, SRB y CZE (convención COW/V-Dem)",Series pre-1991/1992 bajo el código del sucesor,Ver 03_ESTADOS.entity_note y 04_CAMBIOS_TERRITORIALES
+Q009,Confianza,La confianza de observaciones económicas WDI se rebaja un nivel en años de autocracia cerrada (V-Dem RoW=0),"Regla documentada, no juicio caso a caso",Ver 00_LEEME §Confianza
+Q010,Fechas,Fechas parciales (AAAA o AAAA-MM) cuando la fuente no da el día,Se almacenan como texto ISO; las columnas con fechas completas se guardan como fecha de Excel,
+Q011,Archigos/REIGN,Dos fuentes independientes de líderes se solapan 1950-2015,Posibles duplicados de periodos con nombres distintos,Columna dataset y archigos_link para distinguir
+Q013,WDI,"~2.900 series país-indicador presentan tramos perfectamente lineales de ≥6 años (sobre todo superficie, uso del suelo, acceso a servicios y estimaciones modeladas)","Probable interpolación o extrapolación realizada por la fuente original, no por esta base",Tratar como estimación; ver validation_report.md
+Q012,Cobertura temporal,Datos estadísticos hasta 2024 (V-Dem hasta 2025); acontecimientos curados hasta mediados de 2025,Acontecimientos de fines de 2025 y 2026 no cubiertos sistemáticamente,Actualizar

@@ -1,0 +1,47 @@
+country_id,conscription_status,since,notes,certainty,ref_date,source_ids,verification_status
+USA,voluntario,1973,Registro obligatorio (Selective Service) para varones,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+GBR,voluntario,1960,"Fin del National Service (últimos llamados 1960, últimos licenciados 1963)",Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+FRA,voluntario,1997,Servicio suspendido (Ley 1997); Servicio Nacional Universal civil,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DEU,voluntario,2011,Suspendido en 2011; ley de nuevo servicio militar (con registro obligatorio) aprobada/en trámite en 2025,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+ESP,voluntario,2001,Suspensión del servicio militar obligatorio,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+ITA,voluntario,2005,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+POL,voluntario,2009,Programas de formación voluntaria ampliados desde 2022,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+NLD,voluntario,1996,Suspendido,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+BEL,voluntario,1994,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+SWE,obligatorio_selectivo,2018,Reactivado tras suspensión (2010); incluye mujeres,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+NOR,obligatorio_selectivo,,Universal para ambos sexos desde 2015,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DNK,obligatorio_selectivo,,Ampliación a mujeres desde 2025-2026,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+FIN,obligatorio,,Reserva en tiempo de guerra ~280.000,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+EST,obligatorio,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+LVA,obligatorio,2023,Reinstaurado,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+LTU,obligatorio,2015,Reinstaurado,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+GRC,obligatorio,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+TUR,obligatorio,,Con opción de pago para reducir el servicio,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CHE,obligatorio,,Ejército de milicia,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AUT,obligatorio,,Referéndum 2013 mantuvo el servicio,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+ISR,obligatorio,,Ambos sexos; controversia sobre exención de ultraortodoxos (fallo del Tribunal Supremo 2024),Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+RUS,obligatorio,,12 meses; movilización parcial en septiembre de 2022,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+UKR,movilizacion_general,2022,Ley marcial; edad de movilización reducida a 25 años (2024),Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+KOR,obligatorio,,18-21 meses,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+PRK,obligatorio,,Servicio muy prolongado (en torno a 10 años para varones; fuentes abiertas),Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+TWN,obligatorio,2024,Restablecido el servicio de 1 año,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CHN,obligatorio_legal_voluntario_en_practica,,Cuotas cubiertas con voluntarios,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+VNM,obligatorio,,,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+SGP,obligatorio,,National Service de 2 años,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+THA,loteria,,,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IRN,obligatorio,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+EGY,obligatorio,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+MAR,obligatorio,2019,Reinstaurado,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DZA,obligatorio,,,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+BRA,obligatorio_legal_voluntario_en_practica,,Alistamiento obligatorio; mayoría de plazas cubiertas con voluntarios,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+ARG,voluntario,1994,Abolido tras el caso Carrasco,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CHL,obligatorio_legal_voluntario_en_practica,2005,Sorteo solo si no se cubren las plazas voluntarias,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+COL,obligatorio,,Con exenciones,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+MEX,obligatorio_nominal,,Servicio Militar Nacional (sorteo),Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+VEN,obligatorio_nominal,,,Baja,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CUB,obligatorio,,,Media,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+IND,voluntario,,Esquema Agnipath (2022) de servicio de 4 años,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+PAK,voluntario,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+JPN,voluntario,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AUS,voluntario,1972,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CAN,voluntario,,,Alta,2025,SRC_IISS_MB;SRC_ACADEMIC_HIST,CONOC_EXPERTO

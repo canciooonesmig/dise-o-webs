@@ -1,0 +1,31 @@
+change_id,country_id,date,old_currency,new_currency,conversion_or_regime,description,certainty,source_ids,verification_status
+CC001,DEU,1948-06-20,Reichsmark,Deutsche Mark,10 RM = 1 DM (general),Reforma monetaria en las zonas occidentales.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC002,EUU,1999-01-01,Monedas nacionales,Euro (escritural),"Tipos irrevocables, p.ej. 1 EUR = 1,95583 DEM = 166,386 ESP = 6,55957 FRF",Billetes y monedas desde el 01-01-2002.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC003,ARG,1970-01-01,Peso moneda nacional,Peso ley 18.188,100:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC004,ARG,1983-06-01,Peso ley,Peso argentino,10.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC005,ARG,1985-06-15,Peso argentino,Austral,1.000:1,Plan Austral.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC006,ARG,1992-01-01,Austral,Peso convertible,"10.000:1; 1 peso = 1 USD (Convertibilidad, 1991-2002)",,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC007,BRA,1994-07-01,Cruzeiro real,Real,2.750 CR$ = 1 R$ (vía URV),Plan Real.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC008,PER,1991-07-01,Inti,Nuevo sol,1.000.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC009,ECU,2000-01-09,Sucre,Dólar estadounidense,25.000 sucres = 1 USD,Dolarización oficial.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC010,SLV,2001-01-01,Colón,Dólar estadounidense,"8,75 colones = 1 USD",Ley de Integración Monetaria.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC011,ZWE,2009-01-29,Dólar zimbabuense,Sistema multimoneda,Abandono de la moneda nacional,"Reintroducción posterior: dólar RTGS (2019), ZiG (2024).",Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC012,VEN,2008-01-01,Bolívar,Bolívar fuerte,1.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC013,VEN,2018-08-20,Bolívar fuerte,Bolívar soberano,100.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC014,VEN,2021-10-01,Bolívar soberano,Bolívar digital,1.000.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC015,TUR,2005-01-01,Lira turca,Nueva lira turca,1.000.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC016,RUS,1998-01-01,Rublo,Rublo redenominado,1.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC017,CHN,1994-01-01,Tipo dual,Unificación cambiaria del renminbi,"Fijación ~8,7 CNY/USD; anclaje 8,28 hasta 2005",Reforma cambiaria; flotación administrada desde 21-07-2005.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC018,GBR,1971-02-15,Libra (£sd),Libra decimal,1 libra = 100 peniques,Decimalización.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC019,GBR,1992-09-16,Libra en el MTC,Libra flotante,Salida del Mecanismo de Tipos de Cambio,'Miércoles Negro'.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC020,ISR,1985-09-04,Shéquel,Nuevo shéquel,1.000:1,Plan de estabilización.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC021,MEX,1993-01-01,Peso,Nuevo peso,1.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC022,POL,1995-01-01,Złoty (PLZ),Złoty (PLN),10.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC023,FRA,1960-01-01,Franco,Nuevo franco,100:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC024,ARG,2002-01-06,Convertibilidad,Flotación del peso,Fin del 1 a 1,Ley de Emergencia Pública.,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC025,EGY,2016-11-03,Libra fija,Libra flotante,Devaluación ~50%,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC026,NGA,2023-06-14,Naira con múltiples tipos,Unificación cambiaria,Devaluación >40%,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC027,ARG,2025-04-14,Cepo cambiario,Bandas de flotación (1.000-1.400 ARS/USD),Levantamiento parcial de controles para personas físicas,,Media,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC028,HRV,2023-01-01,Kuna,Euro,"7,53450 HRK = 1 EUR",,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC029,GHA,2007-07-01,Cedi,Nuevo cedi,10.000:1,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CC030,USA,1973-03,Bretton Woods,Flotación generalizada,Fin del sistema de paridades,,Alta,SRC_IMF_AREAER;SRC_ACADEMIC_HIST,CONOC_EXPERTO

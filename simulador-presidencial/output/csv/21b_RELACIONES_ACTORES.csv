@@ -1,0 +1,36 @@
+relation_id,actor_a,actor_b,relation_type,start,end,description,certainty,source_ids,verification_status
+AR001,Fidel Castro,Raúl Castro,parentesco_sucesion,1959,2016,"Hermanos; Raúl sucedió a Fidel (2006 interino, 2008 formal).",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR002,Kim Il-sung,Kim Jong-il,parentesco_sucesion,1994,1994,Sucesión dinástica padre-hijo.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR003,Kim Jong-il,Kim Jong-un,parentesco_sucesion,2011,2011,Sucesión dinástica padre-hijo.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR004,Hafez al-Assad,Bashar al-Assad,parentesco_sucesion,2000,2000,Sucesión hereditaria en república.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR005,Heydar Aliyev,Ilham Aliyev,parentesco_sucesion,2003,2003,Sucesión hereditaria en república.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR006,Néstor Kirchner,Cristina Fernández de Kirchner,parentesco_sucesion,2007,2007,Cónyuges; sucesión presidencial.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR007,Hugo Chávez,Nicolás Maduro,sucesion_designada,2012-12-08,2013,Chávez designó públicamente a Maduro como sucesor.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR008,Borís Yeltsin,Vladímir Putin,sucesion_designada,1999-08-09,1999-12-31,Yeltsin nombró a Putin primer ministro y le cedió la presidencia interina.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR009,Vladímir Putin,Dmitri Medvédev,tandem_subordinacion,2008,2012,'Tándem': Medvédev presidente y Putin primer ministro.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR010,Lula da Silva,Dilma Rousseff,sucesion_designada,2010,2016,Candidata designada por Lula.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR011,Rafael Correa,Lenín Moreno,sucesion_y_ruptura,2017,2017,Sucesor que rompió con Correa tras asumir.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR012,Evo Morales,Luis Arce,sucesion_y_ruptura,2020,2025,"Arce, exministro de Morales, rompió con él (2021-2024).",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR013,Joseph Stalin,Leon Trotsky,rivalidad_letal,1924,1940,Rivalidad sucesoria; Trotsky asesinado por agente del NKVD en México (1940).,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR014,Mao Zedong,Deng Xiaoping,purga_y_rehabilitacion,1966,1976,Purgado en la Revolución Cultural; luego líder supremo.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR015,Xi Jinping,Bo Xilai,rivalidad_purga,2012,2013,Caída de Bo Xilai antes del ascenso de Xi.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR016,Recep Tayyip Erdoğan,Fethullah Gülen,alianza_y_ruptura,2002,2016,Aliados hasta 2013; Erdoğan atribuyó el golpe de 2016 al movimiento Gülen.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR017,Yevgueni Prigozhin,Vladímir Putin,subordinacion_y_ruptura,2014,2023,Jefe de Wagner; motín de junio 2023 y muerte en accidente aéreo (08-2023).,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR018,Benjamin Netanyahu,Yair Lapid,rivalidad_politica,2013,,Rivalidad parlamentaria.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR019,Donald Trump,Elon Musk,alianza_y_ruptura,2024,2025,Alianza en campaña y en DOGE; ruptura pública en junio 2025.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR020,Abiy Ahmed,Isaias Afwerki,alianza_y_enfriamiento,2018,2023,Paz de 2018; alianza en Tigray; tensiones posteriores.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR021,Mohammed bin Salman,Mohammed bin Nayef,desplazamiento_sucesorio,2017,2017,MBS sustituye a MBN como príncipe heredero.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR022,Ali Jamenei,Ruhollah Jomeini,sucesion,1989,1989,Jamenei sucede a Jomeini como Líder Supremo.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR023,Augusto Pinochet,Salvador Allende,golpe,1973,1973,Pinochet encabezó el golpe contra Allende.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR024,Mikhaíl Gorbachov,Borís Yeltsin,rivalidad,1987,1991,Rivalidad que culminó en la disolución de la URSS.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR025,Gamal Abdel Nasser,Anwar el-Sadat,sucesion_y_reorientacion,1970,1970,Sadat sucedió a Nasser y reorientó Egipto hacia EE.UU.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR026,Juan Domingo Perón,Isabel Martínez de Perón,parentesco_sucesion,1974,1974,Cónyuges; sucesión al morir Perón.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR027,Lee Kuan Yew,Lee Hsien Loong,parentesco_sucesion_diferida,2004,2004,"Padre e hijo, primeros ministros de Singapur.",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR028,Shinzō Abe,Nobusuke Kishi,parentesco_dinastico,,,Nieto del ex primer ministro Kishi.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR029,Indira Gandhi,Jawaharlal Nehru,parentesco_dinastico,,,Hija de Nehru; dinastía Nehru-Gandhi.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR030,Benazir Bhutto,Zulfikar Ali Bhutto,parentesco_dinastico,,,Hija del ex primer ministro ejecutado en 1979.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR031,Volodímir Zelenski,Vladímir Putin,adversarios_guerra,2022,,Líderes en guerra.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR032,Sheikh Hasina,Sheikh Mujibur Rahman,parentesco_dinastico,,,Hija del fundador de Bangladés.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR033,Ferdinand Marcos Jr.,Ferdinand Marcos,parentesco_dinastico,,,Hijo del dictador (1965-1986).,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR034,Ferdinand Marcos Jr.,Sara Duterte,alianza_y_ruptura,2022,2024,Alianza electoral 'UniTeam' rota; Sara Duterte destituida por la Cámara (2025).,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+AR035,Keiko Fujimori,Alberto Fujimori,parentesco_dinastico,,,Hija del expresidente.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO

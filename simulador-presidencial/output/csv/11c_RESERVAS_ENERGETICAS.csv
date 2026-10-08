@@ -1,0 +1,21 @@
+reserve_id,country_id,resource,value,unit,ref_date,definition,verification_status,certainty,source_ids
+RV001,VEN,petroleo,303.8,miles de millones de barriles,2020-12-31,Reservas probadas (incluye crudos extrapesados del Orinoco),CONOC_EXPERTO,Media,SRC_EI_SR
+RV002,SAU,petroleo,297.5,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV003,CAN,petroleo,168.1,miles de millones de barriles,2020-12-31,Incluye arenas bituminosas en desarrollo activo,CONOC_EXPERTO,Media,SRC_EI_SR
+RV004,IRN,petroleo,157.8,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV005,IRQ,petroleo,145.0,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV006,RUS,petroleo,107.8,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV007,KWT,petroleo,101.5,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV008,ARE,petroleo,97.8,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV009,USA,petroleo,68.8,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV010,LBY,petroleo,48.4,miles de millones de barriles,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV011,RUS,gas_natural,37.4,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV012,IRN,gas_natural,32.1,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV013,QAT,gas_natural,24.7,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV014,TKM,gas_natural,13.6,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV015,USA,gas_natural,12.6,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV016,CHN,gas_natural,8.4,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV017,VEN,gas_natural,6.3,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV018,SAU,gas_natural,6.0,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV019,ARE,gas_natural,5.9,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR
+RV020,NGA,gas_natural,5.5,billones de m3,2020-12-31,Reservas probadas,CONOC_EXPERTO,Media,SRC_EI_SR

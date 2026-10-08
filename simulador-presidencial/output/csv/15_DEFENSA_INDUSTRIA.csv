@@ -1,0 +1,41 @@
+company_id,name,country_id,ownership,sector,main_products,founded,notes,certainty,source_ids,verification_status
+DC001,Lockheed Martin,USA,privada_cotizada,aeroespacial_defensa,"F-35, F-16, misiles PAC-3, satélites",1995 (fusión),Mayor empresa de armamento del mundo por ventas según SIPRI Top 100 (varios años),Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC002,RTX (Raytheon Technologies),USA,privada_cotizada,misiles_sensores_motores,"Patriot, AMRAAM, Tomahawk, motores Pratt & Whitney",2020 (fusión),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC003,Northrop Grumman,USA,privada_cotizada,aeroespacial_defensa,"B-21, sistemas espaciales, ICBM Sentinel",1994 (fusión),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC004,General Dynamics,USA,privada_cotizada,terrestre_naval,"Abrams, submarinos (Electric Boat), Gulfstream",1952,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC005,"Boeing (Defense, Space & Security)",USA,privada_cotizada,aeroespacial,"F-15EX, KC-46, AH-64, P-8",1916,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC006,BAE Systems,GBR,privada_cotizada,multidominio,"Typhoon (socio), submarinos Astute/Dreadnought, vehículos Bradley/CV90",1999,Gran presencia en EE.UU.,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC007,Rostec,RUS,estatal,conglomerado_defensa,"Sukhoi, Kalashnikov, Uralvagonzavod, sistemas S-400 (vía Almaz-Antey es otra empresa)",2007,Sancionada,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC008,Almaz-Antey,RUS,estatal,defensa_aerea,S-300/S-400/S-500,2002,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC009,United Shipbuilding Corporation,RUS,estatal,naval,Submarinos y buques de superficie,2007,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC010,AVIC (Aviation Industry Corporation of China),CHN,estatal,aeroespacial,"J-20, J-10, Y-20, drones Wing Loong",2008 (reunificación),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC011,NORINCO (China North Industries Group),CHN,estatal,terrestre,"Carros, artillería, munición",1980,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC012,CSSC (China State Shipbuilding Corporation),CHN,estatal,naval,"Portaaviones, destructores Tipo 055",2019 (fusión),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC013,CASC / CASIC,CHN,estatal,misiles_espacio,"Misiles balísticos y de crucero, lanzadores Long March",1999,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC014,Airbus (Defence and Space),FRA;DEU;ESP,privada_cotizada_con_participacion_estatal,aeroespacial,"A400M, Eurofighter (socio), satélites",2000,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC015,Thales,FRA,mixta (Estado francés ~26%),electronica_defensa,"Radares, sistemas de misiles, comunicaciones",2000 (antigua Thomson-CSF),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC016,Dassault Aviation,FRA,privada (Grupo Dassault) con participación de Airbus,aeroespacial,"Rafale, Falcon",1929,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC017,Naval Group,FRA,estatal_mayoritaria,naval,"Submarinos Barracuda, fragatas FREMM/FDI",1631 (arsenales),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC018,MBDA,FRA;GBR;ITA,"conjunta (Airbus, BAE, Leonardo)",misiles,"Meteor, Storm Shadow/SCALP, Aster",2001,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC019,Leonardo,ITA,mixta (Estado ~30%),aeroespacial_electronica,"Helicópteros AW, electrónica, socio Eurofighter",1948 (Finmeccanica),,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC020,Rheinmetall,DEU,privada_cotizada,terrestre_municion,"Munición de 155 mm, cañón del Leopard 2, Lynx",1889,Expansión fuerte tras 2022,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC021,KNDS (Krauss-Maffei Wegmann + Nexter),DEU;FRA,privada,terrestre,"Leopard 2, CAESAR, Leclerc",2015,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC022,Saab,SWE,privada_cotizada,multidominio,"Gripen, GlobalEye, Carl-Gustaf, NLAW (con Thales)",1937,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC023,Hanwha Aerospace,KOR,privada (chaebol),terrestre_aeroespacial,"K9 Thunder, K239 Chunmoo",1977,Grandes contratos con Polonia (2022),Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC024,Hyundai Rotem,KOR,privada,terrestre,K2 Black Panther,1999,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC025,Korea Aerospace Industries,KOR,privada_cotizada,aeroespacial,"KF-21, FA-50",1999,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC026,Mitsubishi Heavy Industries,JPN,privada_cotizada,multidominio,"Submarinos, misiles, F-2; socio del GCAP",1884,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC027,Hindustan Aeronautics Limited,IND,estatal,aeroespacial,"Tejas, helicópteros, Su-30MKI bajo licencia",1940,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC028,Bharat Electronics,IND,estatal,electronica,"Radares, sistemas de defensa aérea",1954,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC029,Elbit Systems,ISR,privada_cotizada,electronica_drones,"Drones Hermes, artillería, sistemas C4I",1966,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC030,Rafael Advanced Defense Systems,ISR,estatal,misiles_defensa_aerea,"Cúpula de Hierro, David's Sling, Spike",1948,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC031,Israel Aerospace Industries,ISR,estatal,aeroespacial,"Arrow, drones Heron, satélites",1953,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC032,Baykar,TUR,privada_familiar,drones,"Bayraktar TB2, Akıncı, Kızılelma",1984,Papel destacado en Nagorno Karabaj 2020 y Ucrania 2022,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC033,Aselsan,TUR,estatal_mayoritaria (Fundación de las FF.AA.),electronica,"Radares, comunicaciones, defensa aérea",1975,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC034,Embraer (Defesa & Segurança),BRA,privada_cotizada_con_accion_de_oro,aeroespacial,"KC-390, Super Tucano",1969,Privatizada en 1994,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC035,Fabricaciones Militares / FAdeA,ARG,estatal,terrestre_aeronautica,Municiones; aviones de entrenamiento Pampa,1941 / 1927,,Media,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC036,Navantia,ESP,estatal (SEPI),naval,"Fragatas F-110, submarinos S-80",2005,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC037,Indra,ESP,mixta (SEPI ~28%),electronica,"Radares, simulación, socio FCAS",1993,,Alta,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC038,Iran Aircraft Manufacturing / HESA y Shahed Aviation Industries,IRN,estatal_CGRI,drones,"Shahed-136 (exportado a Rusia, producido localmente como Geran-2)",1976,,Media,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC039,Ukroboronprom (UDI),UKR,estatal,conglomerado,"Neptune, blindados, producción de drones",2010,Reorganizado como Ukrainian Defense Industry,Media,SRC_SIPRI_TOP100,CONOC_EXPERTO
+DC040,EDGE Group,ARE,estatal,conglomerado,"Misiles, drones, municiones",2019,,Media,SRC_SIPRI_TOP100,CONOC_EXPERTO

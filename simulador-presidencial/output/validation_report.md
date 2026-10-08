@@ -1,0 +1,182 @@
+# Informe de validación
+
+Libro: `Base_Datos_Historica_Geopolitica_Simulador.xlsx` — 85 hojas
+
+**Errores: 0 · Advertencias: 3 · Comprobaciones superadas: 167**
+
+## Errores
+- (ninguno)
+
+## Advertencias
+- ⚠️ Indicadores con >30% de ceros exactos (revisar codificación de faltantes): 18 ['it_cel_sets_p2', 'ny_gdp_petr_rt_zs', 'ny_gdp_ngas_rt_zs', 'ny_gdp_coal_rt_zs', 'ny_gdp_minr_rt_zs', 'eg_elc_nucl_zs', 'eg_elc_ngas_zs', 'eg_elc_coal_zs', 'e_total_oil_income_pc', 'e_total_fuel_income_pc', 'e_radio_n', 'cow_iron_steel_thousand_tons', 'v2x_regime', 'v2x_regime_amb', 'v2xel_frefair']
+- ⚠️ Los destinos de los enlaces no pudieron comprobarse por HTTP (dominios bloqueados por la política de red); se verificó la forma y, para las réplicas, la descarga efectiva con hash SHA-256
+- ⚠️ Series WDI con tramos perfectamente lineales ≥6 años (posible interpolación en la fuente; esta base no interpola): 2904 p.ej. ['ABW/ag_lnd_agri_zs', 'ABW/ag_lnd_arbl_zs', 'ABW/ag_lnd_frst_k2', 'ABW/ag_lnd_frst_zs', 'ABW/ag_lnd_totl_k2', 'ABW/ag_srf_totl_k2', 'ABW/eg_elc_accs_zs', 'ABW/eg_elc_coal_zs']
+
+## Comprobaciones superadas
+- ✅ Hojas esperadas presentes: 85/85
+- ✅ Hojas obligatorias del encargo presentes: 40/40
+- ✅ Tablas de Excel: 85 para 85 hojas
+- ✅ Hipervínculos en el libro: 114
+- ✅ Filas Excel = filas CSV en todas las hojas
+- ✅ PK única y no nula en 03_ESTADOS (country_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 03b_IDS_EXTERNOS (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 04_CAMBIOS_TERRITORIALES (change_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 04b_INDEPENDENCIAS (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 04c_DISPUTAS_TERRITORIALES (dispute_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 05_DEMOGRAFIA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 06_INDICADORES_SOCIALES (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 06b_FRACCIONALIZACION (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 07_MACROECONOMIA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 07b_PIB_POBLACION_HIST (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 08_FINANZAS_PUBLICAS (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 09_MONEDA_MERCADOS (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 10_COMERCIO (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 10b_COMERCIO_HIST_COW (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 11_RECURSOS_ENERGIA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 11b_ENERGIA_OWID (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 11c_RESERVAS_ENERGETICAS (reserve_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 11d_MINERALES_CRITICOS (mineral_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 12_INFRAESTRUCTURA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 12b_NODOS_ESTRATEGICOS (node_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 13_DEFENSA_PRESUPUESTOS (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 13b_CAPACIDADES_HIST_COW (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 13c_SERVICIO_MILITAR (country_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 14_DEFENSA_INVENTARIOS (country_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 14b_INVENTARIOS_ESTRATEGICOS (inventory_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 15_DEFENSA_INDUSTRIA (company_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 15b_PROGRAMAS_DEFENSA (program_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 15c_COMERCIO_ARMAS (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16_CONFLICTOS (conflict_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16b_UCDP_CONFLICTOS (conflict_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16c_COW_GUERRAS_INTER (war_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16d_COW_GUERRAS_INTRA (war_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16e_GOLPES_ESTADO (coup_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 16f_DISPUTAS_MILITARIZADAS (mid_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 17_CONFLICTOS_EVENTOS (event_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 17b_UCDP_CONFLICTO_ANIO (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 18_INTELIGENCIA (agency_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 18b_INTELIGENCIA_CASOS (case_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 19_INSTITUCIONES (country_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 19b_REFORMAS_INSTITUCIONALES (reform_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 19c_REGIMEN_PANEL_VDEM (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 19d_PERIODOS_REGIMEN (regime_period_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 20_GOBIERNOS (spell_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 20b_JEFES_ESTADO_GOBIERNO_ANUAL (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 21_ACTORES (person_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 21b_RELACIONES_ACTORES (relation_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 22_PARTIDOS (party_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 22b_PARTIDOS_ELECCIONES (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 23_ELECCIONES (electionid): duplicados=0, nulos=0
+- ✅ PK única y no nula en 23b_RESULTADOS_RECIENTES (result_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 23c_ELECCIONES_VDEM (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 24_DIPLOMACIA (treaty_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 24b_ORGANIZACIONES (org_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 24c_MEMBRESIAS (membership_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 24d_SANCIONES (sanction_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 25_RELACIONES_ESTADOS (relationship_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 26_HISTORIA (event_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 26b_CRISIS_ECONOMICAS (crisis_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 26c_CAMBIOS_MONETARIOS (change_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 27_TECNOLOGIA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 28_SEGURIDAD_INTERIOR (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 28b_REPRESION_VIOLENCIA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 29_ADMIN_PUBLICA (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 30_EMPRESAS (company_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 31_MEDIOAMBIENTE (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 31b_EMISIONES_OWID (country_id+year): duplicados=0, nulos=0
+- ✅ PK única y no nula en 31c_CATASTROFES (disaster_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 32_INDICADORES_COMPARADOS (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 33_EVENTOS_CAUSALES (causal_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 34_ESCENARIOS (scenario_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 34b_ESCENARIOS_PAISES (record_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 35_PARAMETROS_JUEGO (parameter_id): duplicados=0, nulos=0
+- ✅ PK única y no nula en 35b_PARAMETROS_VALORES (record_id): duplicados=0, nulos=0
+- ✅ FK 03b_IDS_EXTERNOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 03b_IDS_EXTERNOS.source_id → 37_FUENTES.source_id: 0 valores huérfanos
+- ✅ FK 04b_INDEPENDENCIAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 05_DEMOGRAFIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 06_INDICADORES_SOCIALES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 06b_FRACCIONALIZACION.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 07_MACROECONOMIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 07b_PIB_POBLACION_HIST.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 08_FINANZAS_PUBLICAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 09_MONEDA_MERCADOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 10_COMERCIO.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 10b_COMERCIO_HIST_COW.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 11_RECURSOS_ENERGIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 11b_ENERGIA_OWID.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 12_INFRAESTRUCTURA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 13_DEFENSA_PRESUPUESTOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 13b_CAPACIDADES_HIST_COW.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 13c_SERVICIO_MILITAR.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 14_DEFENSA_INVENTARIOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 14b_INVENTARIOS_ESTRATEGICOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 15c_COMERCIO_ARMAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 16e_GOLPES_ESTADO.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 17_CONFLICTOS_EVENTOS.conflict_id → 16_CONFLICTOS.conflict_id: 0 valores huérfanos
+- ✅ FK 17b_UCDP_CONFLICTO_ANIO.conflict_id → 16b_UCDP_CONFLICTOS.conflict_id: 0 valores huérfanos
+- ✅ FK 18_INTELIGENCIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 19_INSTITUCIONES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 19b_REFORMAS_INSTITUCIONALES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 19c_REGIMEN_PANEL_VDEM.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 19d_PERIODOS_REGIMEN.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 20_GOBIERNOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 20_GOBIERNOS.person_id → 21_ACTORES.person_id: 0 valores huérfanos
+- ✅ FK 20b_JEFES_ESTADO_GOBIERNO_ANUAL.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 21_ACTORES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 22_PARTIDOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 22b_PARTIDOS_ELECCIONES.party_id → 22_PARTIDOS.party_id: 0 valores huérfanos
+- ✅ FK 22b_PARTIDOS_ELECCIONES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 23_ELECCIONES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 23b_RESULTADOS_RECIENTES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 23c_ELECCIONES_VDEM.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 24c_MEMBRESIAS.org_id → 24b_ORGANIZACIONES.org_id: 0 valores huérfanos
+- ✅ FK 24c_MEMBRESIAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 25_RELACIONES_ESTADOS.actor_a_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 25_RELACIONES_ESTADOS.actor_b_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 26b_CRISIS_ECONOMICAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 26c_CAMBIOS_MONETARIOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 27_TECNOLOGIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 28_SEGURIDAD_INTERIOR.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 28b_REPRESION_VIOLENCIA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 29_ADMIN_PUBLICA.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 30_EMPRESAS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 31_MEDIOAMBIENTE.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 31b_EMISIONES_OWID.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 32_INDICADORES_COMPARADOS.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 34b_ESCENARIOS_PAISES.scenario_id → 34_ESCENARIOS.scenario_id: 0 valores huérfanos
+- ✅ FK 34b_ESCENARIOS_PAISES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ FK 35b_PARAMETROS_VALORES.parameter_id → 35_PARAMETROS_JUEGO.parameter_id: 0 valores huérfanos
+- ✅ FK 35b_PARAMETROS_VALORES.scenario_id → 34_ESCENARIOS.scenario_id: 0 valores huérfanos
+- ✅ FK 35b_PARAMETROS_VALORES.country_id → 03_ESTADOS.country_id: 0 valores huérfanos
+- ✅ Listas de ids 04_CAMBIOS_TERRITORIALES.from_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 04_CAMBIOS_TERRITORIALES.to_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 16_CONFLICTOS.participant_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 26_HISTORIA.country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 34_ESCENARIOS.focus_country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 16c_COW_GUERRAS_INTER.side_a_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 16c_COW_GUERRAS_INTER.side_b_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 15b_PROGRAMAS_DEFENSA.country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 12b_NODOS_ESTRATEGICOS.country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 31c_CATASTROFES.country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 11d_MINERALES_CRITICOS.dominant_country_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Listas de ids 04c_DISPUTAS_TERRITORIALES.claimant_ids: 0 tokens no reconocidos como country_id/org_id
+- ✅ Todas las referencias a fuentes existen en 37_FUENTES
+- ✅ Fechas ISO válidas
+- ✅ Fechas de término no anteriores a las de inicio
+- ✅ Sin ceros en población, PIB y esperanza de vida (formato largo): 0 ceros
+- ✅ COW: valores -9 convertidos a vacío (mín. milex = 0.0)
+- ✅ Columnas numéricas de paneles documentadas en 02b_INDICADORES: 350/350
+- ✅ Indicadores no-V-Dem sin unidad declarada: 0
+- ✅ Indicadores monetarios con base de precios declarada (corrientes/constantes/PPA): 21/21
+- ✅ URLs de fuentes bien formadas: 82/82
+- ✅ Rangos de víctimas coherentes (low ≤ high): 73/73; conflictos con rango (low<high): 69
+- ✅ Resultados electorales separados por tipo: {'oficial': 61, 'oficial_impugnado': 2, 'estimacion_oposicion': 1}
+- ✅ Interpolaciones de origen declaradas en 02b_INDICADORES: ['e_miinflat', 'e_pelifeex', 'e_peaveduc']
+- ✅ Instantáneas de escenarios sin datos posteriores a la fecha de inicio: 0 violaciones; datos previos (≤3 años): 273; sin dato: 906
+- ✅ Parámetros de escenario sin datos posteriores: 0 violaciones
+- ✅ Valores clase C solo en hojas 35*: ['35_PARAMETROS_JUEGO', '35b_PARAMETROS_VALORES']
+- ✅ Ningún parámetro de juego aparece en hojas de datos observados
+- ✅ Muestra aleatoria contrastada contra los ficheros fuente descargados: 700/700 coinciden
+- ✅ Contrastes con fuentes externas mediante búsqueda web: 10 (resultados: {'coincide': 4, 'NO verificado': 2, 'coincide (fuente secundaria)': 1, 'coincide; dato de 2016 (no actual)': 1, 'votos coinciden; % redondeados coinciden, decimales no confirmados': 1, 'coincide (cifra corregida a 3.197 tras el contraste)': 1})
+- ✅ Toda tabla de datos tiene fuente por fila o cita en 38_CITAS_DATOS

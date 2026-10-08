@@ -1,0 +1,16 @@
+mineral_id,mineral,stage,dominant_country_ids,share_range_text,ref_period,strategic_use,vulnerability_note,certainty,source_ids,verification_status
+CM001,Tierras raras,extraccion,CHN;USA;MMR;AUS,China ~60-70% de la producción minera mundial,2023-2024,"Imanes permanentes (motores eléctricos, misiles, turbinas)",China ~85-90% del refinado; controles de exportación chinos (2023-2025),Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM002,Tierras raras,refinado_separacion,CHN,~85-90%,2023-2024,,Alto riesgo de concentración,Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM003,Cobalto,extraccion,COD;IDN;RUS;AUS,RDC ~70-75%,2023-2024,"Baterías, superaleaciones",Refinado mayoritariamente en China,Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM004,Litio,extraccion,AUS;CHL;CHN;ARG,Australia ~35-50%; Chile ~20-25%,2023-2024,Baterías,"'Triángulo del litio' (ARG, BOL, CHL) con grandes recursos",Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM005,Níquel,extraccion,IDN;PHL;RUS;NCL,Indonesia ~50-60%,2023-2024,"Acero inoxidable, baterías",Prohibición indonesia de exportar mineral sin procesar (2020),Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM006,Galio,refinado,CHN,~98%,2023,"Semiconductores (GaN, GaAs)",Controles de exportación chinos (agosto 2023) y prohibición a EE.UU. (diciembre 2024),Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM007,Germanio,refinado,CHN;RUS,China ~60-70%,2023,"Fibra óptica, óptica infrarroja",Controles chinos (2023-2024),Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM008,Grafito natural,extraccion,CHN;MOZ;MDG;BRA,China ~75-80%,2023,Ánodos de baterías,Controles chinos (diciembre 2023),Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM009,Cobre,extraccion,CHL;PER;COD;CHN;USA,Chile ~23-25%,2023-2024,Electrificación,,Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM010,Uranio,extraccion,KAZ;CAN;NAM;AUS;UZB,Kazajistán ~40%,2022-2023,Combustible nuclear,Enriquecimiento: Rosatom ~40% de la capacidad mundial,Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM011,Platino y paladio,extraccion,ZAF;RUS;ZWE,Sudáfrica ~70% del platino; Rusia ~40% del paladio,2023,"Catalizadores, electrónica",,Media,SRC_USGS_MCS2025,CONOC_EXPERTO
+CM012,Semiconductores lógicos avanzados (<7 nm),fabricacion,TWN;KOR;USA,Taiwán ~90% (estimaciones sectoriales),2022-2024,"Electrónica, IA, sistemas de armas",Riesgo geopolítico en el Estrecho de Taiwán,Baja,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CM013,Polisilicio solar,fabricacion,CHN,~90-95%,2023,Paneles fotovoltaicos,Concentración en Xinjiang; Ley UFLPA de EE.UU. (2022),Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CM014,Trigo (exportaciones),agricultura,RUS;EUU;CAN;AUS;USA;UKR,Rusia ~20% de las exportaciones mundiales,2022-2024,Seguridad alimentaria,Iniciativa de Granos del Mar Negro (07-2022 a 07-2023),Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CM015,Fertilizantes potásicos,extraccion,CAN;RUS;BLR;CHN,Canadá ~30-35%; Rusia y Bielorrusia ~35-40% conjuntamente,2021-2023,Agricultura,Sanciones a Bielorrusia (2021-2022),Media,SRC_USGS_MCS2025,CONOC_EXPERTO

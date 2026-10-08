@@ -1,0 +1,57 @@
+company_id,name,country_id,sector,ownership_current,founded,ownership_events,strategic_role,certainty,ref_date,source_ids,verification_status
+CO001,Saudi Aramco,SAU,petroleo_gas,"estatal (salida a bolsa parcial ~1,5% en 2019)",1933 (CASOC),Participación estatal gradual 1973-1980; nacionalización total 1980; OPV 2019,Mayor productor de crudo del mundo; capacidad de reserva clave para el mercado,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO002,PDVSA,VEN,petroleo_gas,estatal,1976-01-01,Nacionalización petrolera 1976; despidos masivos tras paro 2002-2003; sanciones EE.UU. 2019,Principal fuente de divisas de Venezuela,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO003,Pemex,MEX,petroleo_gas,estatal,1938-06-07,Expropiación petrolera de Cárdenas (18-03-1938); apertura parcial 2013-2014 revertida en parte,Empresa petrolera más endeudada del mundo (estimaciones de mercado),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO004,Petrobras,BRA,petroleo_gas,mixta (control estatal),1953-10-03,Monopolio hasta 1997; escándalo Lava Jato (2014-),Presal (descubierto 2006),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO005,YPF,ARG,petroleo_gas,mixta (51% estatal desde 2012),1922-06-03,Privatizada 1993 (Repsol 1999); expropiación del 51% (2012); fallo judicial en Nueva York (2023) de ~16.000 M USD contra Argentina,Vaca Muerta,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO006,Gazprom,RUS,gas,estatal_mayoritaria,1989-08,Corporatizada desde el Ministerio de la Industria del Gas soviético,Instrumento de política exterior energética,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO007,Rosneft,RUS,petroleo,estatal_mayoritaria,1993,Adquirió activos de Yukos tras su quiebra (2004-2007),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO008,China National Petroleum Corporation (PetroChina),CHN,petroleo_gas,estatal,1988,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO009,Sinopec,CHN,refino_petroquimica,estatal,1983 (2000 Sinopec Corp),,Mayor refinador de Asia,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO010,National Iranian Oil Company,IRN,petroleo_gas,estatal,1951,Nacionalización de la Anglo-Iranian (1951),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO011,Sonatrach,DZA,petroleo_gas,estatal,1963-12-31,Nacionalización de hidrocarburos (24-02-1971),"Suministro de gas a Europa (Medgaz, Transmed)",Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO012,QatarEnergy,QAT,gas_GNL,estatal,1974,Antes Qatar Petroleum,Uno de los mayores exportadores de GNL,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO013,ADNOC,ARE,petroleo_gas,estatal,1971,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO014,Equinor,NOR,petroleo_gas_renovables,estatal_mayoritaria (67%),1972 (Statoil),OPV 2001,Principal proveedor de gas por gasoducto a Europa desde 2022,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO015,Codelco,CHL,mineria_cobre,estatal,1976-04-01,"Nacionalización del cobre (11-07-1971); Ley Reservada del Cobre (financiación militar, derogada 2019)",Mayor productor de cobre del mundo,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO016,Gécamines,COD,mineria_cobre_cobalto,estatal,1967,Nacionalización de la Union Minière (1967),,Media,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO017,Vale,BRA,mineria_hierro_niquel,privada,1942,Privatizada en 1997; desastres de Mariana (2015) y Brumadinho (2019),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO018,BHP,AUS,mineria,privada_cotizada,1885,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO019,Glencore,CHE,materias_primas_comercio_mineria,privada_cotizada,1974 (Marc Rich + Co),,Gran productor de cobalto (RDC),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO020,TSMC,TWN,semiconductores_fundicion,privada_cotizada (Fondo Nacional de Desarrollo ~6%),1987,,"Fabrica la mayoría de chips lógicos más avanzados del mundo; fábricas en EE.UU., Japón y Alemania",Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO021,Samsung Electronics,KOR,semiconductores_electronica,privada_cotizada (chaebol),1969,,Líder en memoria DRAM/NAND,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO022,ASML,NLD,maquinaria_litografia,privada_cotizada,1984,,Monopolio en litografía EUV; sujeta a controles de exportación a China,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO023,NVIDIA,USA,semiconductores_diseno_IA,privada_cotizada,1993,,GPU para IA; controles de exportación a China (2022-),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO024,Huawei,CHN,telecomunicaciones,privada (propiedad de empleados vía sindicato),1987,Entity List de EE.UU. (2019),5G; debate sobre seguridad en redes occidentales,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO025,SMIC,CHN,semiconductores_fundicion,mixta (fondos estatales relevantes),2000,Entity List (2020),Producción a 7 nm sin EUV,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO026,Intel,USA,semiconductores,privada_cotizada (participación del gobierno de EE.UU. ~10% en 2025),1968,CHIPS Act; conversión de subsidios en participación (2025),,Media,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO027,State Grid Corporation of China,CHN,electricidad,estatal,2002,,Mayor empresa eléctrica del mundo,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO028,ICBC,CHN,banca,estatal,1984,,Mayor banco del mundo por activos (varios años),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO029,JPMorgan Chase,USA,banca,privada_cotizada,2000 (fusión; raíces 1799),"Absorbió Bear Stearns y WaMu (2008), First Republic (2023)",Banco sistémico global,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO030,HSBC,GBR,banca,privada_cotizada,1865,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO031,Toyota,JPN,automocion,privada_cotizada,1937,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO032,Volkswagen,DEU,automocion,privada_cotizada (Baja Sajonia 20% de votos; Porsche SE),1937,Fundada por el régimen nazi; privatización parcial 1960,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO033,BYD,CHN,automocion_baterias,privada_cotizada,1995,,Mayor fabricante de vehículos eléctricos,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO034,CATL,CHN,baterias,privada_cotizada,2011,,Mayor fabricante de baterías de iones de litio,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO035,Tata Group,IND,conglomerado,privada (Tata Sons),1868,Air India reprivatizada al grupo (2022),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO036,Reliance Industries,IND,conglomerado_energia_telecom,privada_cotizada,1966,,Mayor refinería del mundo (Jamnagar),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO037,A.P. Moller-Maersk,DNK,transporte_maritimo,privada_cotizada,1904,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO038,COSCO Shipping,CHN,transporte_maritimo_puertos,estatal,2016 (fusión),,Participaciones en puertos (El Pireo 2016),Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO039,Siemens,DEU,industria_electrica,privada_cotizada,1847,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO040,Hon Hai (Foxconn),TWN,manufactura_electronica,privada_cotizada,1974,,"Ensambla gran parte de los iPhone, mayormente en China",Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO041,Apple,USA,tecnologia,privada_cotizada,1976,,Dependencia de cadena de suministro en China,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO042,Microsoft,USA,tecnologia_nube,privada_cotizada,1975,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO043,Alphabet (Google),USA,tecnologia,privada_cotizada,1998,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO044,Amazon (AWS),USA,comercio_nube,privada_cotizada,1994,,Mayor proveedor de nube pública,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO045,Tencent,CHN,tecnologia,privada_cotizada,1998,,WeChat,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO046,Alibaba,CHN,comercio_tecnologia,privada_cotizada,1999,Salida a bolsa de Ant Group suspendida (2020),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO047,Gazprom Neft / Lukoil,RUS,petroleo,Lukoil privada; Gazprom Neft filial de Gazprom,1991,"Sanciones de EE.UU. a Rosneft y Lukoil (octubre 2025, verificar)",,Baja,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO048,Kazatomprom,KAZ,uranio,estatal_mayoritaria,1997,,Mayor productor de uranio del mundo,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO049,Rosatom,RUS,nuclear,estatal,2007,,Construye la mayoría de reactores exportados; enriquecimiento,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO050,Ørsted,DNK,renovables,"estatal_mayoritaria (50,1%)",2006 (DONG Energy),,Eólica marina,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO051,SQM,CHL,litio,privada_cotizada (acuerdo con Codelco 2024-2030),1968,Privatizada 1983-1988,Litio del Salar de Atacama,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO052,Petronas,MYS,petroleo_gas,estatal,1974,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO053,Pertamina,IDN,petroleo_gas,estatal,1957,Crisis de deuda (1975),,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO054,Nigerian National Petroleum Company,NGA,petroleo_gas,estatal (sociedad anónima desde 2022),1977,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO055,Ecopetrol,COL,petroleo,mixta (88% estatal),1951,,,Alta,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CO056,Turkish Petroleum / BOTAŞ,TUR,petroleo_gas,estatal,1954 / 1974,,TurkStream y TANAP,Media,2025,SRC_FT500_FORTUNE;SRC_ACADEMIC_HIST,CONOC_EXPERTO

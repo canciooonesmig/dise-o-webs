@@ -1,0 +1,15 @@
+program_id,country_ids,name,program_type,start,status,description,certainty,source_ids,verification_status
+DP001,USA;GBR;ITA;NLD;AUS;NOR;DNK;CAN;TUR,Programa F-35 Joint Strike Fighter,avion_combate,2001,en_produccion,Turquía expulsada del programa (2019) por la compra del S-400 ruso.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP002,FRA;DEU;ESP,FCAS/SCAF,avion_combate_6a_gen,2017,en_desarrollo_con_tensiones,Futuro sistema aéreo de combate franco-germano-español.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP003,GBR;ITA;JPN,GCAP (Tempest),avion_combate_6a_gen,2022,en_desarrollo,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP004,AUS;GBR;USA,AUKUS Pilar I,submarino_nuclear,2021,en_desarrollo,Australia adquirirá submarinos Virginia y luego SSN-AUKUS.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP005,USA,Sentinel (LGM-35A),ICBM,2020,en_desarrollo_sobrecostes,Sustituto del Minuteman III; incumplimiento Nunn-McCurdy (2024).,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP006,USA,Golden Dome,defensa_antimisiles,2025,anunciado,Escudo antimisiles anunciado en 2025.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP007,EUU,Iniciativa Europea de Munición / ASAP y SAFE,produccion_municion,2023,en_ejecucion,Producción de munición de 155 mm para Ucrania; préstamos SAFE de 150.000 M EUR (2025).,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP008,POL,Programa de modernización polaco,adquisiciones,2022,en_ejecucion,"Compras de K2, K9, Abrams, HIMARS, Apache; objetivo de gasto en defensa >4% del PIB.",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP009,TUR,TF-X/KAAN,avion_combate_5a_gen,2016,en_desarrollo,Primer vuelo en 2024.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP010,IND,Proyecto 75I y AMCA,submarinos/avion_5a_gen,2010s,en_desarrollo,,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP011,CHN,Modernización de la Armada del EPL,naval,2000s,en_ejecucion,Mayor armada del mundo por número de buques (estimaciones del DoD de EE.UU.).,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP012,DEU,Fondo especial de 100.000 M EUR (Sondervermögen Bundeswehr),financiacion,2022,en_ejecucion,'Zeitenwende'.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP013,ORG_NATO,"Objetivo de gasto 5% del PIB (3,5% defensa básica + 1,5% relacionado) para 2035",compromiso_gasto,2025-06-25,acordado,Cumbre de La Haya; España obtuvo una flexibilidad.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DP014,ORG_NATO,Objetivo de gasto 2% del PIB,compromiso_gasto,2014-09-05,acordado,Cumbre de Gales.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO

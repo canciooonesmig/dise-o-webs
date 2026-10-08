@@ -1,0 +1,51 @@
+event_id,conflict_id,date,event_type,location,actors,description,significance,certainty,source_ids,verification_status
+CE001,CF004,1950-06-25,invasion,Paralelo 38,PRK,El Ejército Popular de Corea cruza el paralelo 38.,Inicio de la guerra,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE002,CF004,1950-09-15,desembarco_anfibio,Incheon,USA;KOR,Desembarco de Incheon (MacArthur).,Revierte la ofensiva norcoreana,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE003,CF004,1950-10-19,intervencion_extranjera,Río Yalu,CHN,Los 'Voluntarios del Pueblo' chinos cruzan el Yalu.,Escalada; retirada de la ONU al sur,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE004,CF004,1953-07-27,armisticio,Panmunjom,ONU;PRK;CHN,Firma del Acuerdo de Armisticio.,Fin de los combates,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE005,CF005,1954-05-07,batalla_decisiva,Dien Bien Phu,Viet Minh;FRA,Caída de la guarnición francesa.,Fin del dominio francés,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE006,CF009,1964-08-07,autorizacion_legislativa,Washington,USA,Resolución del Golfo de Tonkín.,Escalada estadounidense,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE007,CF009,1968-01-30,ofensiva,Vietnam del Sur,VNM;FNL,Ofensiva del Tet.,Fracaso militar norvietnamita pero giro de la opinión pública de EE.UU.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE008,CF009,1973-01-27,acuerdo_paz,París,USA;VNM;VDR,Acuerdos de Paz de París; retirada de EE.UU.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE009,CF009,1975-04-30,caida_capital,Saigón,VNM,Caída de Saigón.,Fin de la guerra,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE010,CF013,1967-06-05,ataque_aereo_preventivo,Egipto,ISR,Operación Foco: destrucción de la fuerza aérea egipcia en tierra.,Supremacía aérea decisiva,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE011,CF016,1973-10-06,ataque_sorpresa,Canal de Suez; Golán,EGY;SYR,Cruce del canal y ataque en el Golán.,Fallo de inteligencia israelí ('la Concepción'),Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE012,CF016,1973-10-17,embargo_energetico,Golfo,OPAEP,Embargo petrolero de la OPAEP a EE.UU. y Países Bajos.,Primer shock petrolero,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE013,CF021,1979-12-27,golpe_intervencion,Kabul,URSS,Operación Storm-333: asalto al palacio Tajbeg y muerte de Amín.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE014,CF021,1989-02-15,retirada,Termez,URSS,Últimas tropas soviéticas salen de Afganistán.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE015,CF022,1988-03-16,ataque_quimico,Halabja,IRQ,Ataque con armas químicas contra la población kurda de Halabja (~5.000 muertos).,Crimen contra la humanidad,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE016,CF023,1982-05-02,hundimiento,Atlántico Sur,GBR;ARG,Hundimiento del crucero ARA General Belgrano (323 muertos).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE017,CF024,1991-01-17,campana_aerea,"Irak, Kuwait",Coalición,Inicio de la Operación Tormenta del Desierto.,Uso masivo de armas de precisión,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE018,CF024,1991-02-24,ofensiva_terrestre,"Kuwait, Irak",Coalición,Ofensiva terrestre de 100 horas.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE019,CF025,1995-07-11,masacre_genocidio,Srebrenica,Ejército de la República Srpska,Asesinato de ~8.000 hombres y niños bosníacos.,Calificado como genocidio por el TPIY y la CIJ,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE020,CF025,1995-11-21,acuerdo_paz,Dayton,BIH;HRV;SRB,Rubrica de los Acuerdos de Dayton (firmados en París el 14-12-1995).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE021,CF030,1999-03-24,campana_aerea,RF Yugoslavia,OTAN,Inicio de la Operación Fuerza Aliada (78 días).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE022,CF033,2001-10-07,campana_aerea,Afganistán,USA;GBR,Inicio de la Operación Libertad Duradera.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE023,CF033,2011-05-02,operacion_especial,Abbottabad,USA,Muerte de Osama bin Laden.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE024,CF033,2021-08-15,caida_capital,Kabul,Talibanes,Los talibanes toman Kabul.,Colapso de la República,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE025,CF034,2003-04-09,caida_capital,Bagdad,USA,Caída de Bagdad.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE026,CF034,2006-02-22,atentado_sectario,Samarra,Al Qaeda en Irak,Atentado contra la mezquita de Al Askari.,Escalada de violencia sectaria,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE027,CF034,2007-01-10,cambio_estrategia,Irak,USA,Anuncio del 'surge' (refuerzo de ~20.000-30.000 soldados).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE028,CF038,2013-08-21,ataque_quimico,Guta,SYR (atribuido por ONU-OPAQ en otros casos),Ataque con sarín en Guta (cientos de muertos).,Acuerdo de eliminación de armas químicas sirias,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE029,CF038,2015-09-30,intervencion_extranjera,Siria,RUS,Inicio de la intervención aérea rusa.,Cambio del equilibrio a favor de Assad,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE030,CF038,2024-12-08,caida_capital,Damasco,HTS y otros,Caída de Damasco y huida de Bashar al-Assad a Rusia.,Fin del régimen baazista,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE031,CF040,2014-06-10,toma_ciudad,Mosul,Estado Islámico,El Estado Islámico toma Mosul.,Proclamación del 'califato' (29-06-2014),Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE032,CF040,2017-07-10,liberacion_ciudad,Mosul,IRQ;Coalición,Liberación de Mosul.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE033,CF043,2022-02-24,invasion,Ucrania,RUS,Invasión a gran escala en varios ejes incluido Kiev.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE034,CF043,2022-04-02,retirada,Óblast de Kiev,RUS,Retirada rusa del norte de Ucrania; descubrimiento de crímenes en Bucha.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE035,CF043,2022-09-06,contraofensiva,Járkov,UKR,Contraofensiva ucraniana en Járkov.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE036,CF043,2022-11-11,retirada,Jersón,RUS,Retirada rusa de la orilla derecha del Dniéper (Jersón).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE037,CF043,2023-05-20,toma_ciudad,Bajmut,RUS (Wagner),Rusia declara la toma de Bajmut.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE038,CF043,2023-06-24,motin,Rostov/Rusia,Grupo Wagner,Motín de Wagner y marcha hacia Moscú (abortada).,Crisis interna rusa; muerte de Prigozhin (23-08-2023),Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE039,CF043,2024-08-06,incursion,Óblast de Kursk,UKR,Incursión ucraniana en Kursk.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE040,CF047,2023-10-07,ataque_masivo,Sur de Israel,Hamás,Ataque de Hamás: ~1.200 muertos y ~250 rehenes.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE041,CF047,2024-04-13,ataque_directo_estatal,Israel,IRN,Primer ataque directo iraní contra Israel con drones y misiles.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE042,CF047,2024-09-27,decapitacion_liderazgo,Beirut,ISR,Muerte de Hasan Nasralá (Hezbolá).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE043,CF049,2025-06-22,ataque_aereo,"Fordo, Natanz, Isfahán",USA,Ataques estadounidenses contra instalaciones nucleares iraníes.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE044,CF010,1962-10-22,bloqueo_naval,Caribe,USA,Kennedy anuncia la 'cuarentena' naval a Cuba.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE045,CF010,1962-10-28,acuerdo,Moscú/Washington,URSS;USA,Jruschov anuncia la retirada de los misiles.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE046,CF023,1982-06-14,rendicion,Puerto Argentino/Stanley,ARG,Rendición argentina.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE047,CF045,2020-11-08,toma_ciudad,Shusha/Shushi,AZE,Azerbaiyán toma Shusha.,Fuerza el alto el fuego,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE048,CF036,2008-08-08,intervencion_militar,Tsjinvali,RUS,Fuerzas rusas entran en Osetia del Sur.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE049,CF050,2016-11-24,acuerdo_paz,Bogotá,COL;FARC-EP,Firma del Acuerdo Final (tras rechazo en plebiscito del 02-10-2016).,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+CE050,CF048,2023-04-15,inicio_combates,Jartum,SAF;RSF,Estallido de combates en Jartum.,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO

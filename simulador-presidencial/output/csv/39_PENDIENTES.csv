@@ -1,0 +1,15 @@
+pending_id,area,scope,description,reason,priority
+PD001,Defensa – inventarios,Todos los países,"Inventarios completos (aeronaves, buques, blindados, artillería, defensa aérea) por año con estado y disponibilidad","Fuentes (IISS Military Balance, Oryx, SIPRI Arms Transfers por sistema) no accesibles o de pago",Alta
+PD002,Comercio bilateral,Todos,"Socios comerciales principales y composición por producto (UN Comtrade, BACI)",UN Comtrade bloqueado,Alta
+PD003,Finanzas públicas FMI,Todos,Balance y deuda del gobierno general (WEO/GFS); rendimientos soberanos; tipos oficiales de bancos centrales,Portales del FMI y BIS bloqueados; WDI solo cubre gobierno central,Alta
+PD004,Elecciones,Post-2012 (NELDA) y post-2019 (V-Party),Resultados completos por candidato/partido y distribución territorial del voto,"Fuentes oficiales nacionales y bases (ParlGov, CLEA) no accesibles",Alta
+PD005,Encuestas y aprobación presidencial,Todos,Series de aprobación (p.ej. Executive Approval Project),No accesible,Media
+PD006,Actores,Todos,"Ministros, altos mandos, diplomáticos (WhoGov) y vínculo de 21b a person_id",No descargado,Media
+PD007,Administración pública,Todos,"Ministerios, agencias, presupuestos y dotación de personal por organismo",Requiere fuentes nacionales,Media
+PD008,Terrorismo,Todos,Incidentes (Global Terrorism Database),No accesible,Media
+PD009,Relaciones diplomáticas,Todos,"Representación diplomática (COW Diplomatic Exchange), votaciones en la AGNU (Voeten)",No descargado,Media
+PD010,Subnacional,Todos,"División administrativa, distribución territorial de población y recursos, ciudades principales",Requiere GADM/ONU-Hábitat,Baja
+PD011,Verificación,Tablas curadas,Contraste línea a línea de registros CONOC_EXPERTO con fuentes primarias,Acceso web limitado durante la construcción,Alta
+PD012,Conflictos,UCDP,Muertes en batalla por conflicto-año (UCDP BRD) y eventos georreferenciados (GED),No accesible,Media
+PD013,Empresas,Global,"Rankings cuantitativos por año (ingresos, activos) y cuotas de mercado",Fuentes comerciales,Baja
+PD014,Escenarios,Pre-1960,Indicadores económicos detallados para escenarios 1946-1959 (WDI empieza en 1960),Usar Maddison Project y fuentes nacionales,Media

@@ -1,0 +1,307 @@
+war_id,warnum,war_name,war_type,country_id,year_start,year_end,side_a,side_b,internationalized,outcome_code,side_a_deaths,side_b_deaths,source_ids
+COWINTRA500,500.0,First Caucasus,local issues,RUS,1818,1822,Russia,"Georgians, Dhagestania, Chechens",0.0,1.0,5000.0,6000.0,SRC_COW_WAR
+COWINTRA502,502.0,First Two Sicilies,central control,TWS,1820,1821,Two Sicilies,Liberals,1.0,1.0,,,SRC_COW_WAR
+COWINTRA503,503.0,Spanish Royalists,central control,ESP,1821,1823,Spain,Royalists,0.0,4.0,,,SRC_COW_WAR
+COWINTRA505,505.0,Sardinian Revolt,central control,ITA,1821,1821,Sardinia,Carbonari,1.0,1.0,,,SRC_COW_WAR
+COWINTRA506,506.0,Greek Independence,local issues,TUR,1821,1828,Ottoman Empire,Greeks,1.0,4.0,6000.0,3000.0,SRC_COW_WAR
+COWINTRA508,508.0,Janissari Revolt,central control,TUR,1826,1826,Ottoman Empire,Janissaries,0.0,1.0,300.0,6000.0,SRC_COW_WAR
+COWINTRA510,510.0,Miguelite War,central control,PRT,1828,1834,Portugal,Constitutionalists,1.0,2.0,12000.0,8000.0,SRC_COW_WAR
+COWINTRA511,511.0,First Murid War,local issues,RUS,1830,1832,Russia,Ghazi Muhammad,0.0,1.0,1000.0,500.0,SRC_COW_WAR
+COWINTRA512,512.0,First Albanian Revolt,local issues,TUR,1830,1831,Ottoman Empire,Albanians,0.0,1.0,5000.0,10000.0,SRC_COW_WAR
+COWINTRA513,513.0,First French Insurrection,central control,FRA,1830,1830,France,Liberals,0.0,2.0,400.0,1800.0,SRC_COW_WAR
+COWINTRA515,515.0,Belgian Independence,local issues,NLD,1830,1830,Netherlands,Belgians,0.0,2.0,500.0,600.0,SRC_COW_WAR
+COWINTRA517,517.0,First Polish,local issues,RUS,1831,1831,Russia,Poles,0.0,1.0,15000.0,20000.0,SRC_COW_WAR
+COWINTRA518,518.0,First Syrian,local issues,TUR,1831,1832,Ottoman Empire,Egyptians & Bashir,0.0,2.0,8000.0,4000.0,SRC_COW_WAR
+COWINTRA520,520.0,First Mexican,central control,MEX,1832,1832,Mexico,Liberals,0.0,2.0,,,SRC_COW_WAR
+COWINTRA522,522.0,First Carlist War,central control,ESP,1834,1840,Spain,Carlists,1.0,1.0,65000.0,60000.0,SRC_COW_WAR
+COWINTRA523,523.0,Second Murid,local issues,RUS,1834,1834,Russia,Shamil,0.0,7.0,,,SRC_COW_WAR
+COWINTRA525,525.0,Cabanos Revolt,local issues,BRA,1835,1837,Brazil,Cabanos,0.0,1.0,,,SRC_COW_WAR
+COWINTRA526,526.0,Farroupilha War,local issues,BRA,1835,1845,Brazil,Farrapos,0.0,1.0,,,SRC_COW_WAR
+COWINTRA527,527.0,Texan,local issues,MEX,1835,1836,Mexico,Texans,0.0,2.0,1500.0,700.0,SRC_COW_WAR
+COWINTRA528,528.0,First Bosnian,local issues,TUR,1836,1837,Ottoman Empire,Bosnians,0.0,1.0,,,SRC_COW_WAR
+COWINTRA530,530.0,Third Murid,local issues,RUS,1836,1852,Russia,Shamil,0.0,1.0,15000.0,,SRC_COW_WAR
+COWINTRA531,531.0,Sabinada Rebellion,local issues,BRA,1837,1838,Brazil,Bahian Sabinada,0.0,1.0,600.0,1200.0,SRC_COW_WAR
+COWINTRA533,533.0,"Second Syrian, Phase 1",local issues,TUR,1839,1839,Ottoman Empire,Egypt,0.0,2.0,2000.0,1000.0,SRC_COW_WAR
+COWINTRA536,536.0,First Colombian,central control,COL,1840,1842,Colombia,Progressives,0.0,2.0,,,SRC_COW_WAR
+COWINTRA537,537.0,"Second Syrian, Phase 2",local issues,TUR,1840,1840,Ottoman Empire,Egypt,1.0,1.0,8000.0,19000.0,SRC_COW_WAR
+COWINTRA538,538.0,"First Argentina War, Phase 2",central control,ARG,1841,1842,Argentina,Unitarios,0.0,1.0,300.0,3000.0,SRC_COW_WAR
+COWINTRA540,540.0,Second Bosnian,local issues,TUR,1841,1841,Ottoman Empire,Bosnians,0.0,1.0,,,SRC_COW_WAR
+COWINTRA541,541.0,Triangular Revolt,central control,MEX,1841,1841,Mexico,Military,0.0,2.0,,,SRC_COW_WAR
+COWINTRA542,542.0,Karbala Revolt,local issues,TUR,1842,1843,Ottoman Empire,Karbala,0.0,1.0,1600.0,3000.0,SRC_COW_WAR
+COWINTRA546,546.0,Second Carlist,central control,ESP,1847,1849,Spain,Carlists,0.0,1.0,3000.0,7000.0,SRC_COW_WAR
+COWINTRA547,547.0,Second Two Sicilies,central control,TWS,1848,1849,Two Sicilies,Liberals,0.0,1.0,1500.0,,SRC_COW_WAR
+COWINTRA548,548.0,First Venezuelan,central control,VEN,1848,1849,Venezuela,Paez led Conservatives,0.0,1.0,1500.0,,SRC_COW_WAR
+COWINTRA550,550.0,Viennese Revolt,central control,AUT,1848,1848,Austria,Viennese,0.0,1.0,249.0,3000.0,SRC_COW_WAR
+COWINTRA551,551.0,Milan Five Day Revolt,local issues,AUT,1848,1848,Austria,Milan,0.0,4.0,600.0,430.0,SRC_COW_WAR
+COWINTRA552,552.0,Second French Insurrection,central control,FRA,1848,1848,France,Radicals,0.0,1.0,1200.0,1600.0,SRC_COW_WAR
+COWINTRA553,553.0,"Mayan Caste War, Phase 2",local issues,MEX,1848,1855,Mexico,Yucatan Maya,0.0,1.0,,,SRC_COW_WAR
+COWINTRA554,554.0,Hungarian,local issues,AUT,1848,1849,Austria,Hungary,1.0,1.0,46000.0,20000.0,SRC_COW_WAR
+COWINTRA555,555.0,First Chilean,central control,CHL,1851,1851,Chile,Liberals,0.0,1.0,1500.0,2500.0,SRC_COW_WAR
+COWINTRA556,556.0,First Turco-Montenegrin,local issues,TUR,1852,1853,Ottoman Empire,Montenegro & Hercegovina,0.0,2.0,,,SRC_COW_WAR
+COWINTRA557,557.0,First Peru,central control,PER,1853,1855,Peru,Liberals,0.0,2.0,,,SRC_COW_WAR
+COWINTRA558,558.0,Puebla War,central control,MEX,1855,1856,Mexico,Puebla,0.0,1.0,600.0,3000.0,SRC_COW_WAR
+COWINTRA560,560.0,Second Peru,central control,PER,1856,1858,Peru,Conservatives,0.0,1.0,,,SRC_COW_WAR
+COWINTRA561,561.0,Mexican Reform,central control,MEX,1858,1861,Mexico,Liberals,0.0,4.0,,,SRC_COW_WAR
+COWINTRA562,562.0,Second Turco-Montenegrin,local issues,TUR,1858,1859,Ottoman Empire,Montenegrins,0.0,2.0,3000.0,1400.0,SRC_COW_WAR
+COWINTRA563,563.0,Second Venezuelan/Federalist,central control,VEN,1859,1863,Venezuela,Liberals,0.0,2.0,15000.0,5000.0,SRC_COW_WAR
+COWINTRA565,565.0,Second Colombian,central control,COL,1860,1861,Colombia,Liberals,0.0,2.0,,,SRC_COW_WAR
+COWINTRA567,567.0,"Taiping Rebellion, Phase 2",central control,CHN,1860,1866,China,Taipings,1.0,1.0,26000.0,85000.0,SRC_COW_WAR
+COWINTRA568,568.0,Second Nien Revolt,local issues,CHN,1860,1868,China,Niens,0.0,1.0,,,SRC_COW_WAR
+COWINTRA570,570.0,Miao Revolt Phase 2,local issues,CHN,1860,1872,China,Miaos,0.0,1.0,,,SRC_COW_WAR
+COWINTRA571,571.0,Panthay Rebellion Phase 2,local issues,CHN,1860,1872,China,Muslims (Hui),0.0,1.0,,,SRC_COW_WAR
+COWINTRA572,572.0,U.S. Civil War,local issues,USA,1861,1865,United States of America,Confederacy,0.0,1.0,360000.0,258000.0,SRC_COW_WAR
+COWINTRA573,573.0,Third Buenos Aires,local issues,ARG,1861,1861,Argentina,Buenos Aires,0.0,2.0,500.0,500.0,SRC_COW_WAR
+COWINTRA575,575.0,Third Turco-Montenegrin,local issues,TUR,1861,1862,Turkey,Montenegro,0.0,3.0,,,SRC_COW_WAR
+COWINTRA576,576.0,Tungan Rebellion,local issues,CHN,1862,1873,China,Muslims  in Sinkiang,0.0,1.0,,,SRC_COW_WAR
+COWINTRA578,578.0,Bolivan Perez Rebellion,central control,BOL,1862,1862,Boliva,Gregorio Perez's followers,0.0,1.0,,,SRC_COW_WAR
+COWINTRA580,580.0,Second Polish,local issues,RUS,1863,1864,Russia,Poles,0.0,1.0,10000.0,6500.0,SRC_COW_WAR
+COWINTRA581,581.0,Second Argentina,central control,ARG,1863,1863,Argentina,Montoneros,0.0,1.0,,,SRC_COW_WAR
+COWINTRA582,582.0,Xinjiang Muslim Revolt,local issues,CHN,1864,1871,China,Muslims,1.0,2.0,,,SRC_COW_WAR
+COWINTRA583,583.0,First  Cretan,local issues,TUR,1866,1867,Ottoman Empire,Cretans,0.0,1.0,,,SRC_COW_WAR
+COWINTRA585,585.0,Yellow Cliff Revolt,local issues,CHN,1866,1866,China,Zhang Jizhong's followers,0.0,1.0,,,SRC_COW_WAR
+COWINTRA586,586.0,Third Argentina,central control,ARG,1866,1867,Argentina,Montoneros,0.0,1.0,,,SRC_COW_WAR
+COWINTRA587,587.0,Queretaro,central control,MEX,1867,1867,Mexico,Liberals,0.0,2.0,1500.0,1000.0,SRC_COW_WAR
+COWINTRA588,588.0,Meiji Restoration,central control,JPN,1868,1868,Japan,Tokugawa,0.0,1.0,,,SRC_COW_WAR
+COWINTRA590,590.0,Third Venezuelan,central control,VEN,1868,1871,Venezuela,Conservatives,0.0,2.0,,,SRC_COW_WAR
+COWINTRA591,591.0,Spanish Liberals,central control,ESP,1868,1868,Spain,Liberals,0.0,2.0,,,SRC_COW_WAR
+COWINTRA592,592.0,Guerre des Cacos,central control,HTI,1869,1869,Haiti,Black peasants,0.0,2.0,,,SRC_COW_WAR
+COWINTRA593,593.0,Fourth Argentina,local issues,ARG,1870,1871,Argentina,Entre Rios Province,0.0,1.0,,,SRC_COW_WAR
+COWINTRA595,595.0,Bolivia-Criollos,central control,BOL,1870,1871,Bolivia,Crillos,0.0,2.0,,,SRC_COW_WAR
+COWINTRA596,596.0,Paris Commune,central control,FRA,1871,1871,France,Communards,0.0,1.0,879.0,25000.0,SRC_COW_WAR
+COWINTRA597,597.0,Third Carlist,central control,ESP,1872,1876,Spain,Carlists,0.0,1.0,7000.0,43000.0,SRC_COW_WAR
+COWINTRA598,598.0,Catonalist Uprising,local issues,ESP,1874,1875,Spain,Rebel cities (cantons),0.0,1.0,,,SRC_COW_WAR
+COWINTRA600,600.0,Fifth Argentina,central control,ARG,1874,1874,Argentina,Mitre led Rebels,0.0,1.0,,,SRC_COW_WAR
+COWINTRA601,601.0,Bosnia & Bulgaria Revolt,local issues,TUR,1875,1876,Ottoman Empire,Bosnia & Bulgaria,0.0,4.0,6000.0,3000.0,SRC_COW_WAR
+COWINTRA602,602.0,Diaz Revolt,central control,MEX,1876,1876,Mexico,Rebels,0.0,2.0,1900.0,,SRC_COW_WAR
+COWINTRA603,603.0,Defeat of Xinjiang Muslims,local issues,CHN,1876,1877,China,Muslims,0.0,1.0,,,SRC_COW_WAR
+COWINTRA605,605.0,Third Colombian,central control,COL,1876,1877,Colombia,Conservatives,0.0,1.0,2100.0,1770.0,SRC_COW_WAR
+COWINTRA607,607.0,Satsuma Rebellion,local issues,JPN,1877,1877,Japan,Satsumas,0.0,1.0,7000.0,10000.0,SRC_COW_WAR
+COWINTRA608,608.0,Argentine Indians,local issues,ARG,1879,1880,Argentina,Indians,0.0,1.0,200.0,1500.0,SRC_COW_WAR
+COWINTRA610,610.0,Fourth Buenos Aires,local issues,ARG,1880,1880,Argentina,Buenos Aires,0.0,1.0,400.0,800.0,SRC_COW_WAR
+COWINTRA611,611.0,Haitian Civil War,central control,HTI,1883,1884,Haiti,Liberals,0.0,1.0,8000.0,100.0,SRC_COW_WAR
+COWINTRA612,612.0,Fourth Colombian,central control,COL,1884,1885,Colombia,Liberals,0.0,1.0,300.0,700.0,SRC_COW_WAR
+COWINTRA613,613.0,Peru's National Problem,local issues,PER,1885,1885,Peru,Indians,0.0,1.0,200.0,2000.0,SRC_COW_WAR
+COWINTRA616,616.0,First Yemen Rebellion,local issues,TUR,1890,1892,Ottoman Empire,Zaidi Imam,0.0,1.0,,,SRC_COW_WAR
+COWINTRA617,617.0,Second Chilean,central control,CHL,1891,1891,Chile,Congressists,0.0,2.0,1000.0,700.0,SRC_COW_WAR
+COWINTRA618,618.0,Zaili-Jinden Revolt,local issues,CHN,1891,1891,China,Zaili & Jindan Sects,0.0,1.0,500.0,10000.0,SRC_COW_WAR
+COWINTRA620,620.0,Brazil Federalists,local issues,BRA,1893,1894,Brazil,Rio Grande do Sul,0.0,1.0,1500.0,,SRC_COW_WAR
+COWINTRA621,621.0,Brazil Naval,central control,BRA,1893,1894,Brazil,Naval Royalists,0.0,1.0,1000.0,,SRC_COW_WAR
+COWINTRA623,623.0,Tonghak Rebellion,central control,KOR,1894,1894,Korea,Tonghak Society,1.0,1.0,,,SRC_COW_WAR
+COWINTRA625,625.0,Third Peru,central control,PER,1894,1895,Peru,Liberals,0.0,2.0,,,SRC_COW_WAR
+COWINTRA626,626.0,Fifth Colombian,central control,COL,1895,1895,Colombia,Liberals,0.0,1.0,400.0,800.0,SRC_COW_WAR
+COWINTRA627,627.0,Ecuador Liberals,central control,ECU,1895,1895,Ecuador,liberal caudillos,0.0,2.0,900.0,100.0,SRC_COW_WAR
+COWINTRA628,628.0,First Gansu Muslim,local issues,CHN,1895,1896,China,Gansu Muslims,0.0,1.0,,,SRC_COW_WAR
+COWINTRA630,630.0,Druze-Turkish,local issues,TUR,1895,1896,Ottoman Empire,Druze,0.0,1.0,,,SRC_COW_WAR
+COWINTRA631,631.0,Second Cretan,local issues,TUR,1896,1897,Ottoman Empire,Cretan Muslims,0.0,4.0,,,SRC_COW_WAR
+COWINTRA632,632.0,Third Brazil-Canudos,local issues,BRA,1896,1897,Brazil,Canudos,0.0,1.0,2200.0,3000.0,SRC_COW_WAR
+COWINTRA633,633.0,Fourth Venezuelan,central control,VEN,1899,1899,Venezuela,Castro Led Rebels,0.0,2.0,1200.0,900.0,SRC_COW_WAR
+COWINTRA635,635.0,Second Yaqui War,local issues,MEX,1899,1900,Mexico,Yaqui Indians,0.0,1.0,100.0,1500.0,SRC_COW_WAR
+COWINTRA636,636.0,Sixth Colombian (War of the 1000 Days),central control,COL,1899,1902,Colombia,Liberals,0.0,1.0,47000.0,53000.0,SRC_COW_WAR
+COWINTRA638,638.0,Fifth Venezuelan,central control,VEN,1901,1903,Venezuela,Matos Led Rebels,0.0,1.0,1000.0,3000.0,SRC_COW_WAR
+COWINTRA640,640.0,Ilinden,local issues,TUR,1903,1903,Ottoman Empire,IMRO Rebels,0.0,1.0,5330.0,1000.0,SRC_COW_WAR
+COWINTRA641,641.0,First Uruguay,central control,URY,1904,1904,Uruguay,Blancos,0.0,1.0,,,SRC_COW_WAR
+COWINTRA642,642.0,Second Yemen Rebellion,local issues,TUR,1904,1906,Ottoman Empire,Imam Yahya's forces,0.0,6.0,30000.0,,SRC_COW_WAR
+COWINTRA643,643.0,Bloody Sunday,central control,RUS,1905,1906,Russia,Workers/Peasants,0.0,1.0,1500.0,,SRC_COW_WAR
+COWINTRA645,645.0,Romanian Peasant Revolt,central control,ROU,1907,1907,Romania,Peasants,0.0,1.0,2000.0,,SRC_COW_WAR
+COWINTRA646,646.0,Overthrow of Abd el-Aziz,central control,MAR,1907,1908,Morocco,Mulai el-Hafid,1.0,2.0,400.0,800.0,SRC_COW_WAR
+COWINTRA647,647.0,Iranian Constitution War,central control,IRN,1908,1909,Iran,Constitutionalists,1.0,2.0,100.0,,SRC_COW_WAR
+COWINTRA648,648.0,Young Turks Counter-coup,central control,TUR,1909,1909,Ottoman Empire,Anti-government troops,0.0,1.0,,,SRC_COW_WAR
+COWINTRA650,650.0,Second Albanian Revolt,local issues,TUR,1910,1912,Ottoman Empire,Albania,0.0,4.0,,,SRC_COW_WAR
+COWINTRA651,651.0,Asir-Yemen Revolt,local issues,TUR,1910,1911,Ottoman Empire,Yemen & Asir Imam Ibn Idris & Sayyid Muhammad,0.0,6.0,7000.0,2000.0,SRC_COW_WAR
+COWINTRA652,652.0,Third Mexican,central control,MEX,1910,1914,Mexico,Liberals & Radicals,0.0,2.0,56250.0,37500.0,SRC_COW_WAR
+COWINTRA656,656.0,Paraguay,central control,PRY,1911,1912,Paraguay,Radicals,0.0,2.0,4000.0,1000.0,SRC_COW_WAR
+COWINTRA657,657.0,First Nationalist,central control,CHN,1911,1911,China,Nat. Rel. Alliance,0.0,2.0,800.0,200.0,SRC_COW_WAR
+COWINTRA658,658.0,Cuban Black Uprising,local issues,CUB,1912,1912,Cuba,Patri do Indepentente,0.0,1.0,50.0,1000.0,SRC_COW_WAR
+COWINTRA670,670.0,Ecuadorian Civil War,local issues,ECU,1912,1914,Ecuador,Esmeraldas province,0.0,1.0,,,SRC_COW_WAR
+COWINTRA671,671.0,Second Nationalist,central control,CHN,1913,1913,China,Republicans,0.0,1.0,,,SRC_COW_WAR
+COWINTRA672,672.0,China Pai Ling (White Wolf),local issues,CHN,1914,1914,China,Pai-Lings,0.0,1.0,,,SRC_COW_WAR
+COWINTRA673,673.0,Fourth Mexican,central control,MEX,1914,1920,Mexico,Conventionists,1.0,1.0,18750.0,12500.0,SRC_COW_WAR
+COWINTRA675,675.0,Southern China Revolt,local issues,CHN,1916,1918,China,Yunnan Rebels,0.0,1.0,,,SRC_COW_WAR
+COWINTRA676,676.0,Russia-Turkestan,local issues,RUS,1916,1917,Russia,Kirghiz & Kazaks,0.0,1.0,350.0,1000.0,SRC_COW_WAR
+COWINTRA677,677.0,Russian Civil War,central control,RUS,1917,1921,USSR,Anti-Bolsheviks,1.0,1.0,475000.0,325000.0,SRC_COW_WAR
+COWINTRA680,680.0,Finnish Civil War,central control,FIN,1918,1918,Finland,Red Guard,1.0,1.0,5300.0,8500.0,SRC_COW_WAR
+COWINTRA683,683.0,Hungary's Red Terror,central control,HUN,1919,1920,Hungary,Anti-Communists,0.0,2.0,1000.0,500.0,SRC_COW_WAR
+COWINTRA686,686.0,Green Rebellion,local issues,RUS,1920,1921,USSR,Peasants in Ta,0.0,1.0,1700.0,5000.0,SRC_COW_WAR
+COWINTRA687,687.0,Gilan Marxists,central control,IRN,1920,1921,Iran,SSRI,1.0,1.0,,,SRC_COW_WAR
+COWINTRA690,690.0,Kronstadt Rebellion,local issues,RUS,1921,1921,USSR,Sailors,0.0,1.0,2000.0,600.0,SRC_COW_WAR
+COWINTRA691,691.0,Bashmachi in Turkestan,local issues,RUS,1921,1923,USSR,Basmachi/Enver Pasha,0.0,1.0,1000.0,2500.0,SRC_COW_WAR
+COWINTRA693,693.0,Agrarian Rising,central control,BGR,1923,1923,Bulgaria,Agrarian League,0.0,1.0,,,SRC_COW_WAR
+COWINTRA695,695.0,De La Huerta Rebellion,central control,MEX,1923,1924,Mexico,Huerta Led Rebels,0.0,1.0,,,SRC_COW_WAR
+COWINTRA696,696.0,Honduran Conservative,central control,HND,1924,1924,Honduras,Conservatives,0.0,2.0,,,SRC_COW_WAR
+COWINTRA697,697.0,First Afghan Anti-Reform,central control,AFG,1924,1925,Afghanistan,Khost rebels (anti-reformists),0.0,1.0,,,SRC_COW_WAR
+COWINTRA700,700.0,Chinese Northern Expedition,central control,CHN,1926,1928,War Lord Gov't.,Guomindang,1.0,2.0,78000.0,48000.0,SRC_COW_WAR
+COWINTRA701,701.0,Cristeros Revolt,central control,MEX,1926,1929,Mexico,Cristeros,0.0,3.0,6000.0,4000.0,SRC_COW_WAR
+COWINTRA702,702.0,Ethiopian Northern Resistance,local issues,ETH,1928,1930,Ethiopia,Northern Resistance,0.0,1.0,,,SRC_COW_WAR
+COWINTRA703,703.0,Second Gansu Muslim,local issues,CHN,1928,1930,China,Gansu Muslims,0.0,1.0,,,SRC_COW_WAR
+COWINTRA705,705.0,Second Afghan Anti-Reform,central control,AFG,1928,1929,Afghanistan,Habibullah (anti-reformists),0.0,1.0,7500.0,7500.0,SRC_COW_WAR
+COWINTRA706,706.0,Intra-Guomindang,central control,CHN,1929,1930,China,War Lords,0.0,1.0,,,SRC_COW_WAR
+COWINTRA707,707.0,Escobar Rebellion,central control,MEX,1929,1929,Mexico,Escobar Led Rebels,0.0,1.0,400.0,1600.0,SRC_COW_WAR
+COWINTRA708,708.0,Ikhwan Revolt,central control,SAU,1929,1930,Saudi Arabia,Ikhwan,0.0,1.0,500.0,5000.0,SRC_COW_WAR
+COWINTRA710,710.0,"Chinese Civil War, Phase 1",central control,CHN,1930,1936,China,Communists,0.0,6.0,200000.0,300000.0,SRC_COW_WAR
+COWINTRA711,711.0,Xinjiang Muslim Revolt,local issues,CHN,1931,1934,China,Central Asian Rebels,1.0,1.0,10000.0,10000.0,SRC_COW_WAR
+COWINTRA712,712.0,Matanza,central control,SLV,1932,1932,El Salvador,Leftists,0.0,1.0,100.0,2500.0,SRC_COW_WAR
+COWINTRA713,713.0,Aprista Revolt,central control,PER,1932,1932,Peru,Aprista Rebels,0.0,1.0,100.0,1000.0,SRC_COW_WAR
+COWINTRA715,715.0,Paulista Rebellion,central control,BRA,1932,1932,Brazil,Paolistas,0.0,1.0,,,SRC_COW_WAR
+COWINTRA716,716.0,Fukien Revolt,central control,CHN,1934,1934,China,19th Route Army,0.0,1.0,,,SRC_COW_WAR
+COWINTRA717,717.0,Spanish Miners,local issues,ESP,1934,1934,Spain,Asturian Miners,0.0,1.0,284.0,1051.0,SRC_COW_WAR
+COWINTRA718,718.0,Spanish Civil War,central control,ESP,1936,1939,Spain,Falange,1.0,2.0,286000.0,174000.0,SRC_COW_WAR
+COWINTRA720,720.0,Greek Civil War,central control,GRC,1944,1949,Greece,Communists,1.0,1.0,17970.0,50000.0,SRC_COW_WAR
+COWINTRA721,721.0,Polish Ukrainians,local issues,POL,1945,1947,Poland,UPA,1.0,1.0,11000.0,8700.0,SRC_COW_WAR
+COWINTRA722,722.0,Ukrainian Partisans,local issues,RUS,1945,1947,USSR,UPA,0.0,1.0,35000.0,,SRC_COW_WAR
+COWINTRA723,723.0,Forest Brethren,local issues,RUS,1945,1951,USSR,Baltic Guerillas,0.0,1.0,14700.0,17700.0,SRC_COW_WAR
+COWINTRA725,725.0,"Chinese Civil War, Phase 2",central control,CHN,1946,1950,China,Communists,0.0,2.0,327600.0,872400.0,SRC_COW_WAR
+COWINTRA726,726.0,Taiwan Revolt,local issues,CHN,1947,1947,China,Taiwanese,0.0,1.0,250.0,1000.0,SRC_COW_WAR
+COWINTRA727,727.0,Paraguay,central control,PRY,1947,1947,Paraguay,Leftists,0.0,1.0,,,SRC_COW_WAR
+COWINTRA728,728.0,Yemeni Imamate,central control,YEM,1948,1948,Yemen,Anti-Imam Coalition,0.0,1.0,,,SRC_COW_WAR
+COWINTRA730,730.0,Costa Rica,central control,CRI,1948,1948,Costa Rica,National Union Party,0.0,2.0,1500.0,500.0,SRC_COW_WAR
+COWINTRA731,731.0,"Seventh Colombian ""La Violencia""",central control,COL,1948,1958,Colombia,Liberals,0.0,1.0,9800.0,20000.0,SRC_COW_WAR
+COWINTRA732,732.0,First Burmese,local issues,MMR,1948,1951,Burma,Karens & Communists,0.0,1.0,,,SRC_COW_WAR
+COWINTRA733,733.0,South Moluccas,local issues,IDN,1950,1950,Indonesia,Moluccans,0.0,1.0,,,SRC_COW_WAR
+COWINTRA735,735.0,Hukbalahap Rebellion,central control,PHL,1950,1954,Philippines,Huks,0.0,1.0,1600.0,9700.0,SRC_COW_WAR
+COWINTRA737,737.0,Bolivia,central control,BOL,1952,1952,Bolivia,Leftists,0.0,2.0,,,SRC_COW_WAR
+COWINTRA738,738.0,Indonesia Darul Islam,central control,IDN,1953,1953,Indonesia,Darul Islam,0.0,1.0,1700.0,1000.0,SRC_COW_WAR
+COWINTRA740,740.0,Argentine Military,central control,ARG,1955,1955,Argentina,Military,0.0,2.0,,,SRC_COW_WAR
+COWINTRA741,741.0,Tibetan Khamba Rebellion,local issues,CHN,1956,1959,China,Khamba Tibetans,0.0,1.0,4000.0,12000.0,SRC_COW_WAR
+COWINTRA742,742.0,Indonesian Leftists,central control,IDN,1956,1962,Indonesia,Leftists,0.0,1.0,3700.0,23500.0,SRC_COW_WAR
+COWINTRA743,743.0,First Lebanese,central control,LBN,1958,1958,Lebanon,National Front,1.0,1.0,1.0,,SRC_COW_WAR
+COWINTRA745,745.0,Cuban Revolution,central control,CUB,1958,1959,Cuba,Castroites,0.0,2.0,2000.0,1000.0,SRC_COW_WAR
+COWINTRA746,746.0,Second Burmese,central control,MMR,1958,1960,Burma,Karens & Communists,0.0,7.0,850.0,2300.0,SRC_COW_WAR
+COWINTRA747,747.0,Iraq-Shammar,central control,IRQ,1959,1959,Iraq,Shammar Tribe & Pro-WesternOfficers,0.0,1.0,,,SRC_COW_WAR
+COWINTRA748,748.0,Vietnam Phase 1,central control,VDR,1960,1965,"Vietnam, Republic of",NLF,1.0,4.0,23300.0,76900.0,SRC_COW_WAR
+COWINTRA750,750.0,First DRC (Zaire),local issues,COD,1960,1963,Zaire,Katanga & Leftists,1.0,1.0,,50.0,SRC_COW_WAR
+COWINTRA751,751.0,First Laotian,central control,LAO,1960,1962,Laos,Pathet Lao,1.0,3.0,4000.0,1000.0,SRC_COW_WAR
+COWINTRA752,752.0,First Iraqi Kurd,local issues,IRQ,1961,1963,Iraq,Kurds,0.0,6.0,500.0,2000.0,SRC_COW_WAR
+COWINTRA753,753.0,Algerian Revolutionaries,central control,DZA,1962,1963,Algeria,ALN,0.0,2.0,800.0,700.0,SRC_COW_WAR
+COWINTRA755,755.0,North Yemen,central control,YEM,1962,1969,Yemen Arab Republic,Royalists,1.0,1.0,10000.0,,SRC_COW_WAR
+COWINTRA756,756.0,Second Laotian Phase 1,central control,LAO,1963,1968,Laos,Pathet Lao,1.0,4.0,11250.0,7250.0,SRC_COW_WAR
+COWINTRA757,757.0,First Ogaden,local issues,ETH,1963,1964,Ethiopia,Ogaden,1.0,1.0,,,SRC_COW_WAR
+COWINTRA758,758.0,First South Sudan,local issues,SDN,1963,1972,Sudan,Anya Nya,0.0,3.0,,,SRC_COW_WAR
+COWINTRA760,760.0,Second DRC (Jeunesse),local issues,COD,1963,1965,Congo,Juenesse warriors,0.0,1.0,,,SRC_COW_WAR
+COWINTRA761,761.0,First Rwanda,central control,RWA,1963,1964,Rwanda,Watusi,0.0,1.0,100.0,900.0,SRC_COW_WAR
+COWINTRA762,762.0,Third DRC (Simba) Rebellion,central control,COD,1964,1965,Congo,Gbenye followers,1.0,1.0,250.0,4000.0,SRC_COW_WAR
+COWINTRA763,763.0,Zanzibar Arab-African,central control,ZZB,1964,1964,Zanzibar,Africans,0.0,2.0,,,SRC_COW_WAR
+COWINTRA765,765.0,Second Iraqi Kurds,local issues,IRQ,1965,1966,Iraq,Kurds,0.0,3.0,500.0,2500.0,SRC_COW_WAR
+COWINTRA766,766.0,Dominican Republic,central control,DOM,1965,1965,Dominican Republic,Leftists,1.0,7.0,2500.0,,SRC_COW_WAR
+COWINTRA767,767.0,First West Papua,local issues,IDN,1965,1969,Indonesia,"OPM, West Papua",0.0,6.0,,,SRC_COW_WAR
+COWINTRA768,768.0,First Uganda,local issues,UGA,1966,1966,Uganda,Buganda Tribe,0.0,1.0,,,SRC_COW_WAR
+COWINTRA770,770.0,First Guatemala,central control,GTM,1966,1968,Guatemala,Leftists,1.0,1.0,200.0,800.0,SRC_COW_WAR
+COWINTRA771,771.0,First Chad (FROLINAT) Rebellion,local issues,TCD,1966,1971,Chad,Frolinat Rebels,1.0,1.0,500.0,3000.0,SRC_COW_WAR
+COWINTRA773,773.0,Third Burmese,local issues,MMR,1967,1980,Burma,Karens & Communists,0.0,7.0,6800.0,22400.0,SRC_COW_WAR
+COWINTRA775,775.0,Biafra,local issues,NGA,1967,1970,Nigeria,Biafrans,0.0,1.0,,,SRC_COW_WAR
+COWINTRA776,776.0,Cultural Revolution Phase 2,central control,CHN,1967,1968,China,Red Guard,0.0,1.0,,,SRC_COW_WAR
+COWINTRA777,777.0,Third Iraqi Kurds,local issues,IRQ,1969,1970,Iraq,Kurds,0.0,3.0,800.0,3200.0,SRC_COW_WAR
+COWINTRA778,778.0,Naxalite Rebellion,local issues,IND,1970,1971,India,Naxalite Marxists,0.0,1.0,100.0,2000.0,SRC_COW_WAR
+COWINTRA780,780.0,Black September,central control,JOR,1970,1970,Jordan,Palestinians,1.0,1.0,750.0,2690.0,SRC_COW_WAR
+COWINTRA781,781.0,Second Guatemala,central control,GTM,1970,1971,Guatemala,Leftists,0.0,1.0,50.0,950.0,SRC_COW_WAR
+COWINTRA782,782.0,Pakistan-Bengal,local issues,PAK,1971,1971,Pakistan,Bengalis,0.0,4.0,2500.0,,SRC_COW_WAR
+COWINTRA783,783.0,First Sri Lanka-JVP,central control,LKA,1971,1971,Sri Lanka,Janatha Vimukthi- JVP,0.0,1.0,53.0,4000.0,SRC_COW_WAR
+COWINTRA785,785.0,Khmer Rouge,central control,KHM,1971,1975,Cambodia,Khmer Rouge,1.0,2.0,45000.0,40000.0,SRC_COW_WAR
+COWINTRA786,786.0,First Philippine-Moro,local issues,PHL,1972,1981,Philippines,MNLF Moros,0.0,1.0,10000.0,20000.0,SRC_COW_WAR
+COWINTRA787,787.0,Communist Insurgency,central control,THA,1972,1973,Thailand,Communists,0.0,6.0,1500.0,700.0,SRC_COW_WAR
+COWINTRA789,789.0,First Burundi,central control,BDI,1972,1972,Burundi,Hutu,0.0,1.0,500.0,1500.0,SRC_COW_WAR
+COWINTRA790,790.0,Philippines-NPA,central control,PHL,1972,1992,Philippines,NPA,0.0,6.0,9000.0,22000.0,SRC_COW_WAR
+COWINTRA791,791.0,Rhodesia,central control,ZWE,1972,1979,Rhodesia,Patriotic Front,0.0,2.0,1000.0,10000.0,SRC_COW_WAR
+COWINTRA792,792.0,Baluchi Separatists,local issues,PAK,1973,1977,Pakistan,Baluchi Rebels,0.0,1.0,3300.0,5300.0,SRC_COW_WAR
+COWINTRA793,793.0,Chilean Coup of 1973,central control,CHL,1973,1973,Chile,Pinochet led military,0.0,2.0,400.0,3000.0,SRC_COW_WAR
+COWINTRA795,795.0,Dhofar Rebellion Phase 2,local issues,OMN,1973,1975,Oman,PFLOAG,1.0,1.0,370.0,2500.0,SRC_COW_WAR
+COWINTRA797,797.0,Fourth Iraqi Kurds,local issues,IRQ,1974,1975,Iraq,Kurds,1.0,1.0,7000.0,13000.0,SRC_COW_WAR
+COWINTRA798,798.0,Eritrean War,local issues,ETH,1975,1978,Ethiopia,Eritrean Peo. Lib.,1.0,1.0,6100.0,6400.0,SRC_COW_WAR
+COWINTRA800,800.0,Argentine Leftists,central control,ARG,1975,1977,Argentina,"Montoneros, ERP",0.0,1.0,250.0,2600.0,SRC_COW_WAR
+COWINTRA802,802.0,Second West Papua,local issues,IDN,1976,1978,Indonesia,"OPR, West Papua",0.0,6.0,100.0,2000.0,SRC_COW_WAR
+COWINTRA803,803.0,Third Laotian,local issues,LAO,1976,1979,Laos,Hmong,1.0,1.0,1000.0,5000.0,SRC_COW_WAR
+COWINTRA804,804.0,Angolan Control,central control,AGO,1976,1991,Angola,UNITA,1.0,3.0,5500.0,800.0,SRC_COW_WAR
+COWINTRA805,805.0,Second Ogaden Phase 1,local issues,ETH,1976,1977,Ethiopia,WSLF,1.0,4.0,9000.0,20000.0,SRC_COW_WAR
+COWINTRA806,806.0,East Timorese War Phase 3,local issues,IDN,1976,1979,Indonesia,Fretilin,0.0,1.0,1800.0,,SRC_COW_WAR
+COWINTRA808,808.0,Second Ogaden Phase 3,local issues,ETH,1978,1980,Ethiopia,"Ogaden, WSLF",1.0,1.0,2000.0,20000.0,SRC_COW_WAR
+COWINTRA809,809.0,Third Guatemala,central control,GTM,1978,1984,Guatemala,The Democratic Front Against Repression (FDCR),0.0,1.0,1250.0,4750.0,SRC_COW_WAR
+COWINTRA810,810.0,Saur Revolution,central control,AFG,1978,1978,Afghanistan,Leftist Military,0.0,2.0,1800.0,1200.0,SRC_COW_WAR
+COWINTRA811,811.0,Fourth DRC (Shaba),central control,COD,1978,1978,DRC,FNLC,1.0,1.0,100.0,900.0,SRC_COW_WAR
+COWINTRA812,812.0,First Afghan Mujahideen Uprising,central control,AFG,1978,1980,Afghanistan,Mujahideen,1.0,4.0,11800.0,21200.0,SRC_COW_WAR
+COWINTRA813,813.0,Overthrow of the Shah,central control,IRN,1978,1979,Iran,Anti-Shah Coalition,0.0,2.0,100.0,1000.0,SRC_COW_WAR
+COWINTRA815,815.0,Sandinista Rebellion,central control,NIC,1978,1979,Nicaragua,Sandinistas,0.0,2.0,1000.0,3000.0,SRC_COW_WAR
+COWINTRA816,816.0,Anti-Khomeini Coalition,central control,IRN,1979,1984,Iran,Anti-Khmoneini Coalition: Fedayeen Kalq & Kurds,0.0,1.0,,,SRC_COW_WAR
+COWINTRA817,817.0,El Salvador,central control,SLV,1979,1992,El Salvador,Salvadorean Democratic Front,0.0,3.0,,,SRC_COW_WAR
+COWINTRA818,818.0,Mozambique,central control,MOZ,1979,1992,Mozambique,Renamo,1.0,1.0,500.0,,SRC_COW_WAR
+COWINTRA820,820.0,Second Chad (Habre Revolt),local issues,TCD,1980,1984,Chad,FAN,1.0,2.0,3500.0,1500.0,SRC_COW_WAR
+COWINTRA822,822.0,Second Uganda,local issues,UGA,1980,1986,Uganda,National Resistance Army,0.0,2.0,40000.0,6000.0,SRC_COW_WAR
+COWINTRA823,823.0,Nigeria-Muslim,local issues,NGA,1980,1981,Nigeria,Muslim fundamentalists,0.0,1.0,50.0,1000.0,SRC_COW_WAR
+COWINTRA825,825.0,Hama,central control,SYR,1981,1982,Syria,Muslim Brotherhood,0.0,1.0,1000.0,2000.0,SRC_COW_WAR
+COWINTRA826,826.0,Tigrean and Eritrean,local issues,ETH,1982,1991,Ethiopia,Tigray & Eritrea,0.0,2.0,10000.0,65000.0,SRC_COW_WAR
+COWINTRA827,827.0,Shining Path,central control,PER,1982,1992,Peru,Shining Path & TARM,0.0,1.0,4000.0,12000.0,SRC_COW_WAR
+COWINTRA828,828.0,Contra War,central control,NIC,1982,1990,Nicaragua,Contras,0.0,6.0,7000.0,25200.0,SRC_COW_WAR
+COWINTRA831,831.0,Matabeleland,central control,ZWE,1983,1987,Zimbabwe,ZAPU,0.0,1.0,,,SRC_COW_WAR
+COWINTRA832,832.0,Fourth Burmese,local issues,MMR,1983,1988,Burma,Karen & Kachin Rebels,0.0,1.0,2800.0,1200.0,SRC_COW_WAR
+COWINTRA833,833.0,Fourth Lebanese Civil,central control,LBN,1983,1984,Lebanon,Shi'ites & Druze,1.0,2.0,273.0,,SRC_COW_WAR
+COWINTRA835,835.0,First Sri Lanka Tamil,local issues,LKA,1983,2002,Sri Lanka,Tamils,1.0,3.0,8500.0,17000.0,SRC_COW_WAR
+COWINTRA836,836.0,Second South Sudan,central control,SDN,1983,2005,Sudan,SPLA-Garang faction,0.0,3.0,,,SRC_COW_WAR
+COWINTRA837,837.0,Indian Golden Temple,local issues,IND,1984,1984,India,Sikhs,0.0,6.0,,1200.0,SRC_COW_WAR
+COWINTRA838,838.0,First Turkish Kurds,local issues,TUR,1984,1986,Turkey,"Kurds, PKK",0.0,7.0,1500.0,9000.0,SRC_COW_WAR
+COWINTRA840,840.0,Fifth Iraqi  Kurds,local issues,IRQ,1985,1988,Iraq,Kurds,1.0,1.0,,,SRC_COW_WAR
+COWINTRA842,842.0,South Yemen,central control,YMD,1986,1986,Yemen People's Republic,Leftist Factions,0.0,2.0,4200.0,8800.0,SRC_COW_WAR
+COWINTRA843,843.0,Holy Spirit Movement,central control,UGA,1986,1987,Uganda,HSMF,0.0,1.0,2000.0,5000.0,SRC_COW_WAR
+COWINTRA845,845.0,Second Sri Lanka-JVP,central control,LKA,1987,1989,Sri Lanka,JVP,0.0,1.0,,,SRC_COW_WAR
+COWINTRA847,847.0,Fifth Burmese,central control,MMR,1988,1988,Burma,Pro-democracy,0.0,1.0,,,SRC_COW_WAR
+COWINTRA848,848.0,First Somalia,central control,SOM,1988,1991,Somalia,rebel clans,0.0,2.0,,,SRC_COW_WAR
+COWINTRA850,850.0,Fifth Lebanese,central control,LBN,1989,1990,Lebanon,militias,1.0,2.0,,2500.0,SRC_COW_WAR
+COWINTRA851,851.0,Second Afghan Mujahideen Uprising,central control,AFG,1989,2001,Afghanistan,Mujahadin,0.0,4.0,,,SRC_COW_WAR
+COWINTRA852,852.0,Third Chad (Deby Coup),central control,TCD,1989,1990,Chad,Deby's MPS,0.0,2.0,3000.0,800.0,SRC_COW_WAR
+COWINTRA853,853.0,First Aceh,local issues,IDN,1989,1991,Indonesia,GAM,0.0,1.0,,,SRC_COW_WAR
+COWINTRA854,854.0,Bougainville Secession,local issues,PNG,1989,1992,Papua New Guinea,BRA,0.0,7.0,,,SRC_COW_WAR
+COWINTRA856,856.0,Eighth Colombia,local issues,COL,1989,2007,Colombia,FARC & Drug Lords,0.0,5.0,10480.0,17681.0,SRC_COW_WAR
+COWINTRA857,857.0,First Cambodian Civil War,central control,KHM,1989,1991,Cambodia,Khmer Rouge & KPNFL,0.0,3.0,,,SRC_COW_WAR
+COWINTRA858,858.0,Romania,central control,ROU,1989,1989,Romania,Anti-Ceaucescu Rebels,0.0,2.0,300.0,700.0,SRC_COW_WAR
+COWINTRA860,860.0,First Liberia,central control,LBR,1989,1990,Liberia,NPFL,1.0,7.0,0.0,,SRC_COW_WAR
+COWINTRA861,861.0,Kashmir Insurgents,local issues,IND,1990,2005,India,Kashmiri Guerillas,0.0,7.0,6000.0,21700.0,SRC_COW_WAR
+COWINTRA862,862.0,Shiite and Kurdish,local issues,IRQ,1991,1991,Iraq,Shiites & Kurds,0.0,1.0,,,SRC_COW_WAR
+COWINTRA863,863.0,First Sierra Leone,central control,SLE,1991,1996,Sierra Leone,RUF,0.0,1.0,,,SRC_COW_WAR
+COWINTRA864,864.0,Croatian Independence,local issues,SRB,1991,1992,Yugoslavia/Serbia,Croatia,0.0,2.0,,,SRC_COW_WAR
+COWINTRA865,865.0,Second Turkish Kurds,local issues,TUR,1991,1999,Turkey,"Kurds, PKK",0.0,6.0,3500.0,13000.0,SRC_COW_WAR
+COWINTRA870,870.0,Second Somalia,central control,SOM,1991,1997,Somalia,Aideed Faction,1.0,3.0,44.0,,SRC_COW_WAR
+COWINTRA871,871.0,Georgia,central control,GEO,1991,1992,Georgia,Reform,0.0,2.0,,,SRC_COW_WAR
+COWINTRA872,872.0,Nagorno-Karabakh,local issues,AZE,1991,1993,Azerbaijan,Nagorno-Karabakh,1.0,4.0,7000.0,3000.0,SRC_COW_WAR
+COWINTRA873,873.0,Dniestrian Independence,local issues,MDA,1991,1992,Moldova,Dniestria,0.0,3.0,,,SRC_COW_WAR
+COWINTRA875,875.0,Algerian Islamic Front,central control,DZA,1992,1999,Algeria,Islamic Front,0.0,3.0,,,SRC_COW_WAR
+COWINTRA876,876.0,Tajikistan,central control,TJK,1992,1997,Tadzhikistan,United Tajik Opposition,1.0,3.0,,,SRC_COW_WAR
+COWINTRA877,877.0,Bosnian-Serb Rebellion,local issues,BIH,1992,1995,Bosnia,Bosnian Serbs,1.0,1.0,27500.0,18543.0,SRC_COW_WAR
+COWINTRA878,878.0,Second Liberia,central control,LBR,1992,1995,Liberia,NPFL & ULIMO,1.0,3.0,,,SRC_COW_WAR
+COWINTRA880,880.0,Angolan War of the Cities,central control,AGO,1992,1994,Angola,UNITA,0.0,3.0,,,SRC_COW_WAR
+COWINTRA881,881.0,Second Cambodia Civil,central control,KHM,1993,1997,Cambodia,Khmer Rouge,0.0,1.0,,,SRC_COW_WAR
+COWINTRA882,882.0,Abkhazia Revolt,local issues,GEO,1993,1994,Georgia,Abkhazia,0.0,2.0,5000.0,3000.0,SRC_COW_WAR
+COWINTRA883,883.0,Second Burundi,central control,BDI,1993,1998,Burundi,Tutsi army,0.0,7.0,,,SRC_COW_WAR
+COWINTRA885,885.0,South Yemeni Secessionist,local issues,YEM,1994,1994,Yemen,South Yemen,0.0,1.0,,,SRC_COW_WAR
+COWINTRA886,886.0,Second Rwanda,central control,RWA,1994,1994,Rwanda,Patriotic Front,0.0,2.0,,,SRC_COW_WAR
+COWINTRA888,888.0,First Chechnya,local issues,RUS,1994,1996,Russia,Chechnya,0.0,2.0,4000.0,6000.0,SRC_COW_WAR
+COWINTRA891,891.0,Croatia-Krajina War,local issues,HRV,1995,1995,Croatia,Krajinia Serbs,0.0,1.0,,,SRC_COW_WAR
+COWINTRA892,892.0,Third Liberia,central control,LBR,1996,1996,Liberia,NPFL,0.0,3.0,,,SRC_COW_WAR
+COWINTRA893,893.0,Sixth Iraqi Kurds,local issues,IRQ,1996,1996,Iraq,PUK,0.0,6.0,,,SRC_COW_WAR
+COWINTRA895,895.0,Fifth DRC,central control,COD,1996,1997,DRC,ADFL,1.0,2.0,,,SRC_COW_WAR
+COWINTRA896,896.0,Third Rwanda,central control,RWA,1997,1998,Rwanda,Hutu rebels,0.0,1.0,300.0,3000.0,SRC_COW_WAR
+COWINTRA897,897.0,First Congo (Brazzaville),central control,COG,1997,1997,Congo,FDU (Cobra militia),1.0,2.0,,,SRC_COW_WAR
+COWINTRA898,898.0,Second Sierra Leone,central control,SLE,1998,2000,Sierra Leone,Kabbah faction,1.0,2.0,,,SRC_COW_WAR
+COWINTRA900,900.0,Kosovo Independence,local issues,SRB,1998,1999,Yugoslavia,KLA,0.0,4.0,400.0,800.0,SRC_COW_WAR
+COWINTRA902,902.0,Guinea-Bissau Military,central control,GNB,1998,1999,Guinea-Bissau,Mane Junta,1.0,2.0,,,SRC_COW_WAR
+COWINTRA905,905.0,Africa's World War,central control,COD,1998,2002,Democratic Republic of Congo,"RCD, MLC, et al",1.0,3.0,,,SRC_COW_WAR
+COWINTRA906,906.0,Fourth Chad (Togoimi Revolt),central control,TCD,1998,2000,Chad,MDD & MDJT,0.0,7.0,,,SRC_COW_WAR
+COWINTRA907,907.0,Third Angolan,central control,AGO,1998,2002,Angola,UNITA,0.0,1.0,,,SRC_COW_WAR
+COWINTRA908,908.0,Second Congo (Brazzaville),central control,COG,1998,1999,Congo (Brazzaville),Ninjas and Cocoye militias,0.0,1.0,,,SRC_COW_WAR
+COWINTRA912,912.0,Second Aceh,local issues,IDN,1999,2002,Indonesia,GAM,0.0,3.0,330.0,3500.0,SRC_COW_WAR
+COWINTRA913,913.0,Oromo Liberation,local issues,ETH,1999,1999,Ethiopia,Oromo Lib. Front,0.0,1.0,200.0,800.0,SRC_COW_WAR
+COWINTRA915,915.0,Second Chechen,local issues,RUS,1999,2003,Russia,Chechnya,0.0,1.0,5000.0,15000.0,SRC_COW_WAR
+COWINTRA916,916.0,Second Philippine-Moro,local issues,PHL,2000,2001,Philippines,MILF,0.0,3.0,,,SRC_COW_WAR
+COWINTRA917,917.0,Guinean,central control,GIN,2000,2001,Guinea,RDFG,0.0,6.0,,,SRC_COW_WAR
+COWINTRA918,918.0,Third Burundi,central control,BDI,2001,2003,Burundi,FNL & FROLINA,0.0,3.0,150.0,3000.0,SRC_COW_WAR
+COWINTRA920,920.0,Fourth Rwanda,central control,RWA,2001,2001,Rwanda,Army for the Liberation of Rwanda,0.0,1.0,,1800.0,SRC_COW_WAR
+COWINTRA921,921.0,First Nepal Maoist Insurgency,central control,NPL,2001,2003,Nepal,CPN,0.0,6.0,680.0,3100.0,SRC_COW_WAR
+COWINTRA922,922.0,Fourth Liberian,central control,LBR,2002,2003,Liberia,LURD & MODEL,0.0,2.0,,,SRC_COW_WAR
+COWINTRA925,925.0,Cote d'Ivoire Military,central control,CIV,2002,2004,Cote d'Ivoire,"MPCI, MPIGO, MJP",1.0,2.0,200.0,2500.0,SRC_COW_WAR
+COWINTRA926,926.0,Third Philippine-Moro,local issues,PHL,2003,2003,Phillippines,MILF & ASG,0.0,7.0,410.0,590.0,SRC_COW_WAR
+COWINTRA927,927.0,Darfur,local issues,SDN,2003,2006,Sudan,SLA & JEM,0.0,6.0,,,SRC_COW_WAR
+COWINTRA930,930.0,Third Aceh,local issues,IDN,2003,2003,Indonesia,GAM,0.0,1.0,150.0,1400.0,SRC_COW_WAR
+COWINTRA931,931.0,Second Nepal Maoists,central control,NPL,2003,2006,Nepal,CPN,0.0,3.0,1260.0,5770.0,SRC_COW_WAR
+COWINTRA932,932.0,Waziristan,local issues,PAK,2004,2006,Pakistan,Waziri tribes,1.0,2.0,1200.0,1800.0,SRC_COW_WAR
+COWINTRA935,935.0,First Yemeni Cleric,central control,YEM,2004,2005,Yemen,Zaidi Muslims,0.0,1.0,900.0,1350.0,SRC_COW_WAR
+COWINTRA936,936.0,Philippine Joint Offensive,local issues,PHL,2005,2006,Phillippines,MILF & NPA,0.0,7.0,723.0,2100.0,SRC_COW_WAR
+COWINTRA937,937.0,Fifth Chad,central control,TCD,2005,2006,Chad,FUDC,0.0,1.0,100.0,1000.0,SRC_COW_WAR
+COWINTRA938,938.0,Third Somalia,central control,SOM,2006,2008,Somalia,SCIC,1.0,1.0,,,SRC_COW_WAR
+COWINTRA940,940.0,Second Sri Lanka Tamil,local issues,LKA,2006,2007,Sri Lanka,LTTE,0.0,5.0,,,SRC_COW_WAR
+COWINTRA941,941.0,Second Yemeni Cleric,central control,YEM,2007,2007,Yemen,Zaidi Muslims,0.0,6.0,1500.0,2000.0,SRC_COW_WAR

@@ -1,0 +1,5718 @@
+{
+ "database": "Base_Datos_Historica_Geopolitica_Simulador",
+ "build_date": "2026-10-08",
+ "tables": [
+  {
+   "name": "00_LEEME",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "section",
+     "dtype": "str"
+    },
+    {
+     "name": "content",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "01_INDICE",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "sheet",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "category",
+     "dtype": "str"
+    },
+    {
+     "name": "coverage_status",
+     "dtype": "str"
+    },
+    {
+     "name": "n_rows",
+     "dtype": "int64"
+    },
+    {
+     "name": "n_columns",
+     "dtype": "int64"
+    },
+    {
+     "name": "years",
+     "dtype": "str"
+    },
+    {
+     "name": "n_countries",
+     "dtype": "object"
+    },
+    {
+     "name": "primary_key",
+     "dtype": "str"
+    },
+    {
+     "name": "foreign_keys",
+     "dtype": "str"
+    },
+    {
+     "name": "csv_file",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "02_DICCIONARIO",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "sheet",
+     "dtype": "str"
+    },
+    {
+     "name": "column",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "dtype",
+     "dtype": "str"
+    },
+    {
+     "name": "is_primary_key",
+     "dtype": "str"
+    },
+    {
+     "name": "foreign_key",
+     "dtype": "str"
+    },
+    {
+     "name": "n_non_empty",
+     "dtype": "int64"
+    }
+   ]
+  },
+  {
+   "name": "02b_INDICADORES",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "indicator_id",
+     "dtype": "str"
+    },
+    {
+     "name": "sheet",
+     "dtype": "str"
+    },
+    {
+     "name": "name_en",
+     "dtype": "str"
+    },
+    {
+     "name": "series_code_original",
+     "dtype": "str"
+    },
+    {
+     "name": "unit",
+     "dtype": "str"
+    },
+    {
+     "name": "currency",
+     "dtype": "str"
+    },
+    {
+     "name": "price_basis",
+     "dtype": "str"
+    },
+    {
+     "name": "observation_type",
+     "dtype": "str"
+    },
+    {
+     "name": "base_confidence",
+     "dtype": "str"
+    },
+    {
+     "name": "source_id",
+     "dtype": "str"
+    },
+    {
+     "name": "original_source_text",
+     "dtype": "str"
+    },
+    {
+     "name": "definition",
+     "dtype": "str"
+    },
+    {
+     "name": "limitations",
+     "dtype": "str"
+    },
+    {
+     "name": "table_format",
+     "dtype": "str"
+    },
+    {
+     "name": "interpolation",
+     "dtype": "str"
+    },
+    {
+     "name": "last_verified",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "02c_CODIGOS",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "code",
+     "dtype": "str"
+    },
+    {
+     "name": "applies_to",
+     "dtype": "str"
+    },
+    {
+     "name": "meaning",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "03_ESTADOS",
+   "primary_key": [
+    "country_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name_es",
+     "dtype": "str"
+    },
+    {
+     "name": "name_official_es",
+     "dtype": "str"
+    },
+    {
+     "name": "name_en",
+     "dtype": "str"
+    },
+    {
+     "name": "entity_type",
+     "dtype": "str"
+    },
+    {
+     "name": "entity_note",
+     "dtype": "str"
+    },
+    {
+     "name": "iso_alpha2",
+     "dtype": "str"
+    },
+    {
+     "name": "iso_alpha3",
+     "dtype": "str"
+    },
+    {
+     "name": "iso_numeric",
+     "dtype": "str"
+    },
+    {
+     "name": "cow_codes",
+     "dtype": "str"
+    },
+    {
+     "name": "gw_codes",
+     "dtype": "str"
+    },
+    {
+     "name": "vdem_id",
+     "dtype": "str"
+    },
+    {
+     "name": "vdem_country_num",
+     "dtype": "float64"
+    },
+    {
+     "name": "un_member",
+     "dtype": "str"
+    },
+    {
+     "name": "cow_first",
+     "dtype": "str"
+    },
+    {
+     "name": "cow_last",
+     "dtype": "str"
+    },
+    {
+     "name": "gw_first",
+     "dtype": "str"
+    },
+    {
+     "name": "gw_last",
+     "dtype": "str"
+    },
+    {
+     "name": "sovereignty_start_curated",
+     "dtype": "str"
+    },
+    {
+     "name": "sovereignty_end_curated",
+     "dtype": "str"
+    },
+    {
+     "name": "colonial_ruler",
+     "dtype": "str"
+    },
+    {
+     "name": "independence_from",
+     "dtype": "str"
+    },
+    {
+     "name": "independence_date_icow",
+     "dtype": "str"
+    },
+    {
+     "name": "independence_violent",
+     "dtype": "float64"
+    },
+    {
+     "name": "independence_type_icow",
+     "dtype": "float64"
+    },
+    {
+     "name": "capital",
+     "dtype": "str"
+    },
+    {
+     "name": "lat",
+     "dtype": "float64"
+    },
+    {
+     "name": "lon",
+     "dtype": "float64"
+    },
+    {
+     "name": "region",
+     "dtype": "str"
+    },
+    {
+     "name": "subregion",
+     "dtype": "str"
+    },
+    {
+     "name": "region_vdem6",
+     "dtype": "str"
+    },
+    {
+     "name": "area_km2",
+     "dtype": "float64"
+    },
+    {
+     "name": "landlocked",
+     "dtype": "str"
+    },
+    {
+     "name": "borders",
+     "dtype": "str"
+    },
+    {
+     "name": "n_land_borders",
+     "dtype": "float64"
+    },
+    {
+     "name": "ruggedness_index",
+     "dtype": "float64"
+    },
+    {
+     "name": "pct_mountainous",
+     "dtype": "float64"
+    },
+    {
+     "name": "currencies",
+     "dtype": "str"
+    },
+    {
+     "name": "languages",
+     "dtype": "str"
+    },
+    {
+     "name": "cow_major_power_periods",
+     "dtype": "str"
+    },
+    {
+     "name": "maoz_regional_power",
+     "dtype": "str"
+    },
+    {
+     "name": "vdem_first_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "vdem_last_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "geo_source",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "03b_IDS_EXTERNOS",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id",
+    "source_id": "37_FUENTES.source_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "scheme",
+     "dtype": "str"
+    },
+    {
+     "name": "code",
+     "dtype": "str"
+    },
+    {
+     "name": "code_label",
+     "dtype": "str"
+    },
+    {
+     "name": "abbrev",
+     "dtype": "str"
+    },
+    {
+     "name": "valid_from",
+     "dtype": "str"
+    },
+    {
+     "name": "valid_to",
+     "dtype": "str"
+    },
+    {
+     "name": "source_id",
+     "dtype": "str"
+    },
+    {
+     "name": "note",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "04_CAMBIOS_TERRITORIALES",
+   "primary_key": [
+    "change_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "change_id",
+     "dtype": "str"
+    },
+    {
+     "name": "date_start",
+     "dtype": "str"
+    },
+    {
+     "name": "date_end",
+     "dtype": "str"
+    },
+    {
+     "name": "territory",
+     "dtype": "str"
+    },
+    {
+     "name": "from_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "to_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "change_type",
+     "dtype": "str"
+    },
+    {
+     "name": "legal_status_note",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "04b_INDEPENDENCIAS",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "category"
+    },
+    {
+     "name": "ColRuler_id",
+     "dtype": "str"
+    },
+    {
+     "name": "IndFrom_id",
+     "dtype": "str"
+    },
+    {
+     "name": "independence_date",
+     "dtype": "str"
+    },
+    {
+     "name": "independence_violent_code",
+     "dtype": "int32"
+    },
+    {
+     "name": "independence_type_code",
+     "dtype": "int32"
+    },
+    {
+     "name": "SecFrom_id",
+     "dtype": "str"
+    },
+    {
+     "name": "secession_date",
+     "dtype": "str"
+    },
+    {
+     "name": "Into_id",
+     "dtype": "str"
+    },
+    {
+     "name": "absorbed_date",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "category"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "04c_DISPUTAS_TERRITORIALES",
+   "primary_key": [
+    "dispute_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "dispute_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "claimant_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "controller",
+     "dtype": "str"
+    },
+    {
+     "name": "dispute_type",
+     "dtype": "str"
+    },
+    {
+     "name": "since",
+     "dtype": "str"
+    },
+    {
+     "name": "status",
+     "dtype": "str"
+    },
+    {
+     "name": "strategic_value",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "05_DEMOGRAFIA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "sp_pop_totl",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_urb_totl_in_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_rur_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "en_pop_dnst",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_dyn_cbrt_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_dyn_cdrt_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_dyn_imrt_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_dyn_le00_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_dyn_tfrt_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sm_pop_netm",
+     "dtype": "int64"
+    },
+    {
+     "name": "sp_pop_0014_to_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_pop_1564_to_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_pop_65up_to_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_pop_dpnd",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "06_INDICADORES_SOCIALES",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "sl_tlf_totl_in",
+     "dtype": "float64"
+    },
+    {
+     "name": "sl_tlf_cact_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sl_uem_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sl_uem_1524_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sl_emp_vuln_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "se_adt_litr_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "se_prm_enrr",
+     "dtype": "float64"
+    },
+    {
+     "name": "se_sec_enrr",
+     "dtype": "float64"
+    },
+    {
+     "name": "se_ter_enrr",
+     "dtype": "float64"
+    },
+    {
+     "name": "se_xpd_totl_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "si_pov_gini",
+     "dtype": "float64"
+    },
+    {
+     "name": "si_pov_dday",
+     "dtype": "float64"
+    },
+    {
+     "name": "si_dst_10th_10",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_xpd_chex_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_med_phys_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_med_beds_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_sta_mmrt",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_accs_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_h2o_smdw_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sh_sta_smss_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "it_net_user_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "it_cel_sets_p2",
+     "dtype": "float64"
+    },
+    {
+     "name": "sn_itk_defc_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "06b_FRACCIONALIZACION",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "creg_ethnic_frac",
+     "dtype": "float64"
+    },
+    {
+     "name": "creg_ethnic_polar",
+     "dtype": "float64"
+    },
+    {
+     "name": "creg_relig_frac",
+     "dtype": "float64"
+    },
+    {
+     "name": "creg_relig_polar",
+     "dtype": "float64"
+    },
+    {
+     "name": "hief_ethnic_frac",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "07_MACROECONOMIA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "ny_gdp_mktp_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_mktp_kd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_mktp_kd_zg",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_pcap_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_pcap_kd_zg",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_pcap_pp_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_pcap_pp_kd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_mktp_pp_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_mktp_pp_kd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gnp_pcap_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "nv_agr_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "nv_ind_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "nv_ind_manf_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "nv_srv_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_gdi_totl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_gdi_ftot_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_con_govt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_con_prvt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gns_ictr_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "fp_cpi_totl_zg",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_defl_kd_zg",
+     "dtype": "float64"
+    },
+    {
+     "name": "sl_gdp_pcap_em_kd",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "07b_PIB_POBLACION_HIST",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "e_gdp",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_gdppc",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_pop",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_miinflat",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_cow_exports",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_cow_imports",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_total_oil_income_pc",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_total_fuel_income_pc",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_total_resources_income_pc",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_miurbani",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_pelifeex",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_peaveduc",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_radio_n",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "08_FINANZAS_PUBLICAS",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "gc_rev_xgrt_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_tax_totl_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_xpn_totl_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_nld_totl_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_dod_totl_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_dod_totl_cn",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_tax_gsrv_rv_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_tax_intt_rv_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_xpn_intp_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_xpn_intp_rv_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_xpn_comp_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "gc_xpn_trft_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "09_MONEDA_MERCADOS",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "pa_nus_fcrf",
+     "dtype": "float64"
+    },
+    {
+     "name": "pa_nus_ppp",
+     "dtype": "float64"
+    },
+    {
+     "name": "fr_inr_lend",
+     "dtype": "float64"
+    },
+    {
+     "name": "fr_inr_dpst",
+     "dtype": "float64"
+    },
+    {
+     "name": "fr_inr_rinr",
+     "dtype": "float64"
+    },
+    {
+     "name": "fi_res_totl_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "fi_res_totl_mo",
+     "dtype": "float64"
+    },
+    {
+     "name": "fm_lbl_bmny_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "fm_lbl_bmny_zg",
+     "dtype": "float64"
+    },
+    {
+     "name": "fs_ast_prvt_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "cm_mkt_lcap_gd_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "10_COMERCIO",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "ne_exp_gnfs_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_imp_gnfs_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_exp_gnfs_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_imp_gnfs_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ne_trd_gnfs_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "bn_cab_xoka_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "bn_cab_xoka_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "bx_klt_dinv_cd_wd",
+     "dtype": "float64"
+    },
+    {
+     "name": "bx_klt_dinv_wd_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "dt_dod_dect_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "dt_dod_dect_gn_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "dt_tds_dect_ex_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "tm_tax_mrch_wm_ar_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_fuel_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_manf_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_food_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_mmtl_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_agri_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tm_val_fuel_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tm_val_food_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "tm_val_manf_zs_un",
+     "dtype": "float64"
+    },
+    {
+     "name": "bx_trf_pwkr_dt_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "dt_oda_odat_gn_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "10b_COMERCIO_HIST_COW",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "cow_imports_musd_current",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_exports_musd_current",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "11_RECURSOS_ENERGIA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "eg_imp_cons_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_use_pcap_kg_oe",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_use_elec_kh_pc",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_totl_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_petr_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_ngas_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_coal_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_minr_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ny_gdp_frst_rt_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_rnew_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_fec_rnew_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_nucl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_hyro_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_ngas_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_coal_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_petr_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_lnd_totl_k2",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_srf_totl_k2",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_lnd_agri_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_lnd_arbl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_lnd_frst_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "er_h2o_intr_pc",
+     "dtype": "float64"
+    },
+    {
+     "name": "er_h2o_fwtl_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "er_h2o_fwst_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_prd_food_xd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_yld_crel_kg",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "11b_ENERGIA_OWID",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "owid_primary_energy_consumption",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_energy_per_capita",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_oil_production",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_gas_production",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_coal_production",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_oil_consumption",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_gas_consumption",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_coal_consumption",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_electricity_generation",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_electricity_demand",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_net_elec_imports",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_nuclear_electricity",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_hydro_electricity",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_solar_electricity",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_wind_electricity",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_fossil_share_elec",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_renewables_share_elec",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_low_carbon_share_elec",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_fossil_share_energy",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_carbon_intensity_elec",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "11c_RESERVAS_ENERGETICAS",
+   "primary_key": [
+    "reserve_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "reserve_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "resource",
+     "dtype": "str"
+    },
+    {
+     "name": "value",
+     "dtype": "float64"
+    },
+    {
+     "name": "unit",
+     "dtype": "str"
+    },
+    {
+     "name": "ref_date",
+     "dtype": "str"
+    },
+    {
+     "name": "definition",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "11d_MINERALES_CRITICOS",
+   "primary_key": [
+    "mineral_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "mineral_id",
+     "dtype": "str"
+    },
+    {
+     "name": "mineral",
+     "dtype": "str"
+    },
+    {
+     "name": "stage",
+     "dtype": "str"
+    },
+    {
+     "name": "dominant_country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "share_range_text",
+     "dtype": "str"
+    },
+    {
+     "name": "ref_period",
+     "dtype": "str"
+    },
+    {
+     "name": "strategic_use",
+     "dtype": "str"
+    },
+    {
+     "name": "vulnerability_note",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "12_INFRAESTRUCTURA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "is_air_psgr",
+     "dtype": "float64"
+    },
+    {
+     "name": "is_air_dprt",
+     "dtype": "float64"
+    },
+    {
+     "name": "is_air_good_mt_k1",
+     "dtype": "float64"
+    },
+    {
+     "name": "is_rrs_totl_km",
+     "dtype": "float64"
+    },
+    {
+     "name": "is_rrs_good_mt_k6",
+     "dtype": "float64"
+    },
+    {
+     "name": "is_shp_good_tu",
+     "dtype": "float64"
+    },
+    {
+     "name": "it_net_bbnd_p2",
+     "dtype": "float64"
+    },
+    {
+     "name": "lp_lpi_ovrl_xq",
+     "dtype": "float64"
+    },
+    {
+     "name": "eg_elc_loss_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "12b_NODOS_ESTRATEGICOS",
+   "primary_key": [
+    "node_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "node_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "node_type",
+     "dtype": "str"
+    },
+    {
+     "name": "country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "lat",
+     "dtype": "float64"
+    },
+    {
+     "name": "lon",
+     "dtype": "float64"
+    },
+    {
+     "name": "strategic_function",
+     "dtype": "str"
+    },
+    {
+     "name": "metric",
+     "dtype": "str"
+    },
+    {
+     "name": "metric_value",
+     "dtype": "float64"
+    },
+    {
+     "name": "metric_unit",
+     "dtype": "str"
+    },
+    {
+     "name": "metric_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "metric_source",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "13_DEFENSA_PRESUPUESTOS",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "ms_mil_xpnd_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_xpnd_cn",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_xpnd_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_xpnd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_totl_p1",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_totl_tf_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "13b_CAPACIDADES_HIST_COW",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "cow_milex_thousand_usd_current",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_milper_thousands",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_iron_steel_thousand_tons",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_energy_thousand_coal_ton_eq",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_total_pop_thousands",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_urban_pop_thousands",
+     "dtype": "float64"
+    },
+    {
+     "name": "cow_cinc_share",
+     "dtype": "float64"
+    },
+    {
+     "name": "terr_threat_latent",
+     "dtype": "float64"
+    },
+    {
+     "name": "terr_threat_lwr95",
+     "dtype": "float64"
+    },
+    {
+     "name": "terr_threat_upr95",
+     "dtype": "float64"
+    },
+    {
+     "name": "igo_full_memberships",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "13c_SERVICIO_MILITAR",
+   "primary_key": [
+    "country_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "conscription_status",
+     "dtype": "str"
+    },
+    {
+     "name": "since",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "ref_date",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "14_DEFENSA_INVENTARIOS",
+   "primary_key": [
+    "country_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "nuclear_status",
+     "dtype": "str"
+    },
+    {
+     "name": "first_test_date",
+     "dtype": "str"
+    },
+    {
+     "name": "first_test_name",
+     "dtype": "str"
+    },
+    {
+     "name": "warheads_total_inventory_2024_01",
+     "dtype": "int64"
+    },
+    {
+     "name": "warheads_total_inventory_2025_01",
+     "dtype": "int64"
+    },
+    {
+     "name": "npt_status",
+     "dtype": "str"
+    },
+    {
+     "name": "doctrine_note",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "14b_INVENTARIOS_ESTRATEGICOS",
+   "primary_key": [
+    "inventory_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "inventory_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "category",
+     "dtype": "str"
+    },
+    {
+     "name": "item_definition",
+     "dtype": "str"
+    },
+    {
+     "name": "value_low",
+     "dtype": "float64"
+    },
+    {
+     "name": "value_high",
+     "dtype": "float64"
+    },
+    {
+     "name": "ref_date",
+     "dtype": "str"
+    },
+    {
+     "name": "status_note",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "15_DEFENSA_INDUSTRIA",
+   "primary_key": [
+    "company_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "company_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "ownership",
+     "dtype": "str"
+    },
+    {
+     "name": "sector",
+     "dtype": "str"
+    },
+    {
+     "name": "main_products",
+     "dtype": "str"
+    },
+    {
+     "name": "founded",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "15b_PROGRAMAS_DEFENSA",
+   "primary_key": [
+    "program_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "program_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "program_type",
+     "dtype": "str"
+    },
+    {
+     "name": "start",
+     "dtype": "str"
+    },
+    {
+     "name": "status",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "15c_COMERCIO_ARMAS",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "ms_mil_xprt_kd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ms_mil_mprt_kd",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "16_CONFLICTOS",
+   "primary_key": [
+    "conflict_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "conflict_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "category",
+     "dtype": "str"
+    },
+    {
+     "name": "start",
+     "dtype": "str"
+    },
+    {
+     "name": "end",
+     "dtype": "str"
+    },
+    {
+     "name": "side_a",
+     "dtype": "str"
+    },
+    {
+     "name": "side_b",
+     "dtype": "str"
+    },
+    {
+     "name": "external_support",
+     "dtype": "str"
+    },
+    {
+     "name": "territory",
+     "dtype": "str"
+    },
+    {
+     "name": "declared_objectives",
+     "dtype": "str"
+    },
+    {
+     "name": "structural_causes",
+     "dtype": "str"
+    },
+    {
+     "name": "trigger",
+     "dtype": "str"
+    },
+    {
+     "name": "outcome",
+     "dtype": "str"
+    },
+    {
+     "name": "territorial_change_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "regime_change",
+     "dtype": "str"
+    },
+    {
+     "name": "deaths_low",
+     "dtype": "int64"
+    },
+    {
+     "name": "deaths_high",
+     "dtype": "int64"
+    },
+    {
+     "name": "deaths_basis",
+     "dtype": "str"
+    },
+    {
+     "name": "displaced_note",
+     "dtype": "str"
+    },
+    {
+     "name": "long_term_consequences",
+     "dtype": "str"
+    },
+    {
+     "name": "historiographic_debate",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "participant_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "16b_UCDP_CONFLICTOS",
+   "primary_key": [
+    "conflict_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "conflict_id",
+     "dtype": "str"
+    },
+    {
+     "name": "old_conflict_id",
+     "dtype": "category"
+    },
+    {
+     "name": "location",
+     "dtype": "category"
+    },
+    {
+     "name": "side_a",
+     "dtype": "category"
+    },
+    {
+     "name": "side_b",
+     "dtype": "str"
+    },
+    {
+     "name": "territory_name",
+     "dtype": "category"
+    },
+    {
+     "name": "country_a_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_b_id",
+     "dtype": "str"
+    },
+    {
+     "name": "type_of_conflict",
+     "dtype": "str"
+    },
+    {
+     "name": "incompatibility",
+     "dtype": "str"
+    },
+    {
+     "name": "start_date",
+     "dtype": "str"
+    },
+    {
+     "name": "first_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "last_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "active_years",
+     "dtype": "int64"
+    },
+    {
+     "name": "years_war_level",
+     "dtype": "int64"
+    },
+    {
+     "name": "max_intensity",
+     "dtype": "float64"
+    },
+    {
+     "name": "intensity_note",
+     "dtype": "str"
+    },
+    {
+     "name": "names_source",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "16c_COW_GUERRAS_INTER",
+   "primary_key": [
+    "war_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "war_id",
+     "dtype": "str"
+    },
+    {
+     "name": "cow_warnum",
+     "dtype": "int64"
+    },
+    {
+     "name": "year_start",
+     "dtype": "int64"
+    },
+    {
+     "name": "year_end",
+     "dtype": "int64"
+    },
+    {
+     "name": "side_a_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "side_b_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "initiator_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "winner_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "battle_deaths_sum",
+     "dtype": "float64"
+    },
+    {
+     "name": "battle_deaths_missing_states",
+     "dtype": "int64"
+    },
+    {
+     "name": "per_state_deaths",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "note",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "16d_COW_GUERRAS_INTRA",
+   "primary_key": [
+    "war_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "war_id",
+     "dtype": "str"
+    },
+    {
+     "name": "warnum",
+     "dtype": "float64"
+    },
+    {
+     "name": "war_name",
+     "dtype": "str"
+    },
+    {
+     "name": "war_type",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year_start",
+     "dtype": "int64"
+    },
+    {
+     "name": "year_end",
+     "dtype": "int64"
+    },
+    {
+     "name": "side_a",
+     "dtype": "str"
+    },
+    {
+     "name": "side_b",
+     "dtype": "str"
+    },
+    {
+     "name": "internationalized",
+     "dtype": "float64"
+    },
+    {
+     "name": "outcome_code",
+     "dtype": "float64"
+    },
+    {
+     "name": "side_a_deaths",
+     "dtype": "float64"
+    },
+    {
+     "name": "side_b_deaths",
+     "dtype": "float64"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "16e_GOLPES_ESTADO",
+   "primary_key": [
+    "coup_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "coup_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "powell_country",
+     "dtype": "category"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "Int32"
+    },
+    {
+     "name": "outcome",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "16f_DISPUTAS_MILITARIZADAS",
+   "primary_key": [
+    "mid_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "mid_id",
+     "dtype": "str"
+    },
+    {
+     "name": "dispnum",
+     "dtype": "float64"
+    },
+    {
+     "name": "styear",
+     "dtype": "float64"
+    },
+    {
+     "name": "stmon",
+     "dtype": "float64"
+    },
+    {
+     "name": "side_a_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "side_b_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "originators",
+     "dtype": "str"
+    },
+    {
+     "name": "hostlev",
+     "dtype": "float64"
+    },
+    {
+     "name": "hiact",
+     "dtype": "float64"
+    },
+    {
+     "name": "fatality",
+     "dtype": "float64"
+    },
+    {
+     "name": "outcome",
+     "dtype": "float64"
+    },
+    {
+     "name": "settle",
+     "dtype": "float64"
+    },
+    {
+     "name": "mindur",
+     "dtype": "float64"
+    },
+    {
+     "name": "maxdur",
+     "dtype": "float64"
+    },
+    {
+     "name": "recip",
+     "dtype": "float64"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "17_CONFLICTOS_EVENTOS",
+   "primary_key": [
+    "event_id"
+   ],
+   "foreign_keys": {
+    "conflict_id": "16_CONFLICTOS.conflict_id"
+   },
+   "columns": [
+    {
+     "name": "event_id",
+     "dtype": "str"
+    },
+    {
+     "name": "conflict_id",
+     "dtype": "str"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "event_type",
+     "dtype": "str"
+    },
+    {
+     "name": "location",
+     "dtype": "str"
+    },
+    {
+     "name": "actors",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "significance",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "17b_UCDP_CONFLICTO_ANIO",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "conflict_id": "16b_UCDP_CONFLICTOS.conflict_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "conflict_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "country_a_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_b_id",
+     "dtype": "str"
+    },
+    {
+     "name": "type_of_conflict",
+     "dtype": "str"
+    },
+    {
+     "name": "incompatibility",
+     "dtype": "str"
+    },
+    {
+     "name": "intensity_level",
+     "dtype": "float64"
+    },
+    {
+     "name": "ep_end",
+     "dtype": "float64"
+    },
+    {
+     "name": "ep_end_date",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "18_INTELIGENCIA",
+   "primary_key": [
+    "agency_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "agency_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "acronym",
+     "dtype": "str"
+    },
+    {
+     "name": "agency_type",
+     "dtype": "str"
+    },
+    {
+     "name": "founded",
+     "dtype": "str"
+    },
+    {
+     "name": "dissolved",
+     "dtype": "str"
+    },
+    {
+     "name": "predecessor",
+     "dtype": "str"
+    },
+    {
+     "name": "parent_body",
+     "dtype": "str"
+    },
+    {
+     "name": "competences",
+     "dtype": "str"
+    },
+    {
+     "name": "oversight",
+     "dtype": "str"
+    },
+    {
+     "name": "official_url",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "18b_INTELIGENCIA_CASOS",
+   "primary_key": [
+    "case_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "case_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "date_start",
+     "dtype": "str"
+    },
+    {
+     "name": "date_end",
+     "dtype": "str"
+    },
+    {
+     "name": "case_type",
+     "dtype": "str"
+    },
+    {
+     "name": "perpetrator",
+     "dtype": "str"
+    },
+    {
+     "name": "target",
+     "dtype": "str"
+    },
+    {
+     "name": "agencies",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "outcome",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty_type",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "19_INSTITUCIONES",
+   "primary_key": [
+    "country_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "state_form",
+     "dtype": "str"
+    },
+    {
+     "name": "government_form",
+     "dtype": "str"
+    },
+    {
+     "name": "constitution_year",
+     "dtype": "str"
+    },
+    {
+     "name": "last_major_reform",
+     "dtype": "str"
+    },
+    {
+     "name": "legislature_structure",
+     "dtype": "str"
+    },
+    {
+     "name": "lower_house",
+     "dtype": "str"
+    },
+    {
+     "name": "lower_seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "upper_house",
+     "dtype": "str"
+    },
+    {
+     "name": "upper_seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "head_of_state_term_years",
+     "dtype": "float64"
+    },
+    {
+     "name": "reelection_rule",
+     "dtype": "str"
+    },
+    {
+     "name": "electoral_system_lower",
+     "dtype": "str"
+    },
+    {
+     "name": "exec_selection",
+     "dtype": "str"
+    },
+    {
+     "name": "emergency_powers_note",
+     "dtype": "str"
+    },
+    {
+     "name": "central_bank",
+     "dtype": "str"
+    },
+    {
+     "name": "central_bank_founded",
+     "dtype": "str"
+    },
+    {
+     "name": "ref_date",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "19b_REFORMAS_INSTITUCIONALES",
+   "primary_key": [
+    "reform_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "reform_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "institution",
+     "dtype": "str"
+    },
+    {
+     "name": "reform_type",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "19c_REGIMEN_PANEL_VDEM",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "v2x_regime",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_regime_amb",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_polyarchy",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_libdem",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_partipdem",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_delibdem",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_egaldem",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_liberal",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xcl_rol",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_jucon",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xlg_legcon",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_freexp_altinf",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_frassoc_thick",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xel_frefair",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_suffr",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_elecoff",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_civlib",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_clphy",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_clpol",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_clpriv",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_corr",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_pubcorr",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_execorr",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_rule",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_neopat",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_ex_military",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_ex_party",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_ex_hereditary",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_ex_confidence",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_ex_direlect",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_accountability",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_horacc",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_veracc",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_diagacc",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_feduni",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_divparctrl",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xps_party",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_cspart",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xcs_ccsi",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_gender",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2juhcind",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2juncind",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2jucorrdc",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2lgbicam",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2lgfemleg",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elmulpar",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elfrfair",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elintim",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2psparban",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2mecenefm",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2meharjrn",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2csreprss",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2cacamps",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2caviol",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2exl_legitideol",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2exl_legitlead",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2exl_legitperf",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2exl_legitratio",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2smgovdom",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2smfordom",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_fh_status",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_fh_pr",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_fh_cl",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_p_polity",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_polity2",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_boix_regime",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_lexical_index",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_ti_cpi",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_vae",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_pve",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_gee",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_rqe",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_rle",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_cce",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_democracy_trans",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_democracy_breakdowns",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_legparty",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_coups",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_pt_coup",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_pt_coup_attempts",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_civil_war",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "19d_PERIODOS_REGIMEN",
+   "primary_key": [
+    "regime_period_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "regime_period_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "gwf_casename",
+     "dtype": "string"
+    },
+    {
+     "name": "gwf_full_regimetype",
+     "dtype": "category"
+    },
+    {
+     "name": "gwf_startyr",
+     "dtype": "Int32"
+    },
+    {
+     "name": "gwf_endyr",
+     "dtype": "Int32"
+    },
+    {
+     "name": "gwf_howend",
+     "dtype": "category"
+    },
+    {
+     "name": "gwf_violent",
+     "dtype": "category"
+    },
+    {
+     "name": "start_event",
+     "dtype": "category"
+    },
+    {
+     "name": "end_event",
+     "dtype": "category"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "20_GOBIERNOS",
+   "primary_key": [
+    "spell_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id",
+    "person_id": "21_ACTORES.person_id"
+   },
+   "columns": [
+    {
+     "name": "spell_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "person_id",
+     "dtype": "str"
+    },
+    {
+     "name": "leader_name",
+     "dtype": "str"
+    },
+    {
+     "name": "start_date",
+     "dtype": "str"
+    },
+    {
+     "name": "end_date",
+     "dtype": "str"
+    },
+    {
+     "name": "entry",
+     "dtype": "str"
+    },
+    {
+     "name": "exit",
+     "dtype": "str"
+    },
+    {
+     "name": "exitcode",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "dataset",
+     "dtype": "str"
+    },
+    {
+     "name": "elected",
+     "dtype": "float64"
+    },
+    {
+     "name": "military_career",
+     "dtype": "float64"
+    },
+    {
+     "name": "government_type_start",
+     "dtype": "str"
+    },
+    {
+     "name": "government_type_end",
+     "dtype": "str"
+    },
+    {
+     "name": "archigos_link",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "20b_JEFES_ESTADO_GOBIERNO_ANUAL",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "head_of_state_name",
+     "dtype": "str"
+    },
+    {
+     "name": "head_of_state_title",
+     "dtype": "str"
+    },
+    {
+     "name": "hos_is_also_hog",
+     "dtype": "float64"
+    },
+    {
+     "name": "head_of_gov_name",
+     "dtype": "str"
+    },
+    {
+     "name": "head_of_gov_title",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "21_ACTORES",
+   "primary_key": [
+    "person_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "person_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "full_name_reign",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "role_type",
+     "dtype": "str"
+    },
+    {
+     "name": "birth_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "gender",
+     "dtype": "str"
+    },
+    {
+     "name": "education_level",
+     "dtype": "float64"
+    },
+    {
+     "name": "military_service",
+     "dtype": "float64"
+    },
+    {
+     "name": "combat_experience",
+     "dtype": "float64"
+    },
+    {
+     "name": "rebel_experience",
+     "dtype": "float64"
+    },
+    {
+     "name": "military_career_reign",
+     "dtype": "float64"
+    },
+    {
+     "name": "n_spells",
+     "dtype": "float64"
+    },
+    {
+     "name": "attribute_note",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "21b_RELACIONES_ACTORES",
+   "primary_key": [
+    "relation_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "relation_id",
+     "dtype": "str"
+    },
+    {
+     "name": "actor_a",
+     "dtype": "str"
+    },
+    {
+     "name": "actor_b",
+     "dtype": "str"
+    },
+    {
+     "name": "relation_type",
+     "dtype": "str"
+    },
+    {
+     "name": "start",
+     "dtype": "str"
+    },
+    {
+     "name": "end",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "22_PARTIDOS",
+   "primary_key": [
+    "party_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "party_id",
+     "dtype": "str"
+    },
+    {
+     "name": "party_name_en",
+     "dtype": "str"
+    },
+    {
+     "name": "party_short",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "first_election_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "last_election_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "n_elections",
+     "dtype": "int64"
+    },
+    {
+     "name": "max_vote_share_pct",
+     "dtype": "float64"
+    },
+    {
+     "name": "last_left_right",
+     "dtype": "float64"
+    },
+    {
+     "name": "last_populism_index",
+     "dtype": "float64"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "22b_PARTIDOS_ELECCIONES",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "party_id": "22_PARTIDOS.party_id",
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "party_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "party_name_en",
+     "dtype": "str"
+    },
+    {
+     "name": "party_short",
+     "dtype": "str"
+    },
+    {
+     "name": "vote_share_pct",
+     "dtype": "float64"
+    },
+    {
+     "name": "seat_share_pct",
+     "dtype": "float64"
+    },
+    {
+     "name": "seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "total_seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "left_right_position",
+     "dtype": "float64"
+    },
+    {
+     "name": "populism_index",
+     "dtype": "float64"
+    },
+    {
+     "name": "anti_pluralism_index",
+     "dtype": "float64"
+    },
+    {
+     "name": "government_support",
+     "dtype": "float64"
+    },
+    {
+     "name": "rejects_violence",
+     "dtype": "float64"
+    },
+    {
+     "name": "immigration_position",
+     "dtype": "float64"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "23_ELECCIONES",
+   "primary_key": [
+    "electionid"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "electionid",
+     "dtype": "string"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "nelda_country",
+     "dtype": "string"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "types",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda1",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda2",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda3",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda4",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda5",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda6",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda7",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda8",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda9",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda10",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda11",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda12",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda13",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda14",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda15",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda16",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda17",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda18",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda19",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda20",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda21",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda22",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda23",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda24",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda25",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda26",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda27",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda28",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda29",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda30",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda31",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda32",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda33",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda34",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda35",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda36",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda37",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda38",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda39",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda40",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda41",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda42",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda43",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda44",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda45",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda46",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda47",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda48",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda49",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda50",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda51",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda52",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda53",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda54",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda55",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda56",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda57",
+     "dtype": "string"
+    },
+    {
+     "name": "nelda58",
+     "dtype": "string"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "23b_RESULTADOS_RECIENTES",
+   "primary_key": [
+    "result_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "result_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "election_type",
+     "dtype": "str"
+    },
+    {
+     "name": "round",
+     "dtype": "int64"
+    },
+    {
+     "name": "candidate_or_party",
+     "dtype": "str"
+    },
+    {
+     "name": "party_or_coalition",
+     "dtype": "str"
+    },
+    {
+     "name": "votes",
+     "dtype": "float64"
+    },
+    {
+     "name": "pct",
+     "dtype": "float64"
+    },
+    {
+     "name": "seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "total_seats",
+     "dtype": "float64"
+    },
+    {
+     "name": "turnout_pct",
+     "dtype": "float64"
+    },
+    {
+     "name": "result_type",
+     "dtype": "str"
+    },
+    {
+     "name": "winner",
+     "dtype": "int64"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "23c_ELECCIONES_VDEM",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "v2eltype_0",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2eltype_1",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2eltype_6",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2eltype_7",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2eltrnout",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elturnhog",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elturnhos",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elmulpar",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elfrfair",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2elintim",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_elecreg",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "24_DIPLOMACIA",
+   "primary_key": [
+    "treaty_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "treaty_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "treaty_type",
+     "dtype": "str"
+    },
+    {
+     "name": "signed",
+     "dtype": "str"
+    },
+    {
+     "name": "in_force",
+     "dtype": "str"
+    },
+    {
+     "name": "terminated",
+     "dtype": "str"
+    },
+    {
+     "name": "parties",
+     "dtype": "str"
+    },
+    {
+     "name": "depositary_org",
+     "dtype": "str"
+    },
+    {
+     "name": "key_provisions",
+     "dtype": "str"
+    },
+    {
+     "name": "status",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "24b_ORGANIZACIONES",
+   "primary_key": [
+    "org_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "org_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "org_type",
+     "dtype": "str"
+    },
+    {
+     "name": "founded",
+     "dtype": "str"
+    },
+    {
+     "name": "headquarters",
+     "dtype": "str"
+    },
+    {
+     "name": "purpose",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "24c_MEMBRESIAS",
+   "primary_key": [
+    "membership_id"
+   ],
+   "foreign_keys": {
+    "org_id": "24b_ORGANIZACIONES.org_id",
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "membership_id",
+     "dtype": "str"
+    },
+    {
+     "name": "org_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "joined",
+     "dtype": "str"
+    },
+    {
+     "name": "left",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "24d_SANCIONES",
+   "primary_key": [
+    "sanction_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "sanction_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "sender",
+     "dtype": "str"
+    },
+    {
+     "name": "target_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "start",
+     "dtype": "str"
+    },
+    {
+     "name": "end",
+     "dtype": "str"
+    },
+    {
+     "name": "sanction_type",
+     "dtype": "str"
+    },
+    {
+     "name": "legal_basis",
+     "dtype": "str"
+    },
+    {
+     "name": "scope",
+     "dtype": "str"
+    },
+    {
+     "name": "trigger",
+     "dtype": "str"
+    },
+    {
+     "name": "effects_note",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "25_RELACIONES_ESTADOS",
+   "primary_key": [
+    "relationship_id"
+   ],
+   "foreign_keys": {
+    "actor_a_id": "03_ESTADOS.country_id",
+    "actor_b_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "relationship_id",
+     "dtype": "str"
+    },
+    {
+     "name": "actor_a_id",
+     "dtype": "str"
+    },
+    {
+     "name": "actor_b_id",
+     "dtype": "str"
+    },
+    {
+     "name": "relationship_type",
+     "dtype": "str"
+    },
+    {
+     "name": "start_date",
+     "dtype": "str"
+    },
+    {
+     "name": "end_date",
+     "dtype": "str"
+    },
+    {
+     "name": "intensity_or_status",
+     "dtype": "object"
+    },
+    {
+     "name": "evidence",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "26_HISTORIA",
+   "primary_key": [
+    "event_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "event_id",
+     "dtype": "str"
+    },
+    {
+     "name": "start_date",
+     "dtype": "str"
+    },
+    {
+     "name": "end_date",
+     "dtype": "str"
+    },
+    {
+     "name": "country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "geographic_scope",
+     "dtype": "str"
+    },
+    {
+     "name": "event_type",
+     "dtype": "str"
+    },
+    {
+     "name": "event_name",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "antecedents",
+     "dtype": "str"
+    },
+    {
+     "name": "immediate_consequences",
+     "dtype": "str"
+    },
+    {
+     "name": "long_term_consequences",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "26b_CRISIS_ECONOMICAS",
+   "primary_key": [
+    "crisis_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "crisis_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "crisis_type",
+     "dtype": "str"
+    },
+    {
+     "name": "start",
+     "dtype": "str"
+    },
+    {
+     "name": "end",
+     "dtype": "str"
+    },
+    {
+     "name": "peak_indicator",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "policy_response",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "26c_CAMBIOS_MONETARIOS",
+   "primary_key": [
+    "change_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "change_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "old_currency",
+     "dtype": "str"
+    },
+    {
+     "name": "new_currency",
+     "dtype": "str"
+    },
+    {
+     "name": "conversion_or_regime",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "27_TECNOLOGIA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "gb_xpd_rsdv_gd_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "sp_pop_scie_rd_p6",
+     "dtype": "float64"
+    },
+    {
+     "name": "ip_pat_resd",
+     "dtype": "float64"
+    },
+    {
+     "name": "ip_pat_nres",
+     "dtype": "float64"
+    },
+    {
+     "name": "ip_jrn_artc_sc",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_tech_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "tx_val_tech_mf_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "bm_gsr_royl_cd",
+     "dtype": "float64"
+    },
+    {
+     "name": "bx_gsr_royl_cd",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "28_SEGURIDAD_INTERIOR",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "vc_ihr_psrc_p5",
+     "dtype": "float64"
+    },
+    {
+     "name": "vc_btl_deth",
+     "dtype": "float64"
+    },
+    {
+     "name": "vc_idp_nwcv",
+     "dtype": "float64"
+    },
+    {
+     "name": "vc_idp_nwds",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "28b_REPRESION_VIOLENCIA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "v2clkill",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2cltort",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2csreprss",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2cacamps",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2caviol",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2x_clphy",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_pve",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_civil_war",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2pepwrses",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2pepwrsoc",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2clrgunev",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "29_ADMIN_PUBLICA",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "v2stfisccap",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2stcritrecadm",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2stcritapparm",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2svstterr",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2svdomaut",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2svinlaut",
+     "dtype": "float64"
+    },
+    {
+     "name": "v2xnp_regcorr",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_gee",
+     "dtype": "float64"
+    },
+    {
+     "name": "e_wbgi_rqe",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "30_EMPRESAS",
+   "primary_key": [
+    "company_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "company_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "sector",
+     "dtype": "str"
+    },
+    {
+     "name": "ownership_current",
+     "dtype": "str"
+    },
+    {
+     "name": "founded",
+     "dtype": "str"
+    },
+    {
+     "name": "ownership_events",
+     "dtype": "str"
+    },
+    {
+     "name": "strategic_role",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "ref_date",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "31_MEDIOAMBIENTE",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "en_ghg_co2_pc_ce_ar5",
+     "dtype": "float64"
+    },
+    {
+     "name": "en_ghg_all_mt_ce_ar5",
+     "dtype": "float64"
+    },
+    {
+     "name": "en_atm_pm25_mc_m3",
+     "dtype": "float64"
+    },
+    {
+     "name": "en_clc_mdat_zs",
+     "dtype": "float64"
+    },
+    {
+     "name": "ag_lnd_frst_k2",
+     "dtype": "float64"
+    },
+    {
+     "name": "en_pop_el5m_zs",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "31b_EMISIONES_OWID",
+   "primary_key": [
+    "country_id",
+    "year"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "owid_co2",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_co2_per_capita",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_cumulative_co2",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_share_global_co2",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_consumption_co2",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_co2_per_gdp",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_total_ghg",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_methane",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_nitrous_oxide",
+     "dtype": "float64"
+    },
+    {
+     "name": "owid_temperature_change_from_ghg",
+     "dtype": "float64"
+    }
+   ]
+  },
+  {
+   "name": "31c_CATASTROFES",
+   "primary_key": [
+    "disaster_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "disaster_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "date",
+     "dtype": "str"
+    },
+    {
+     "name": "disaster_type",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "deaths_low",
+     "dtype": "int64"
+    },
+    {
+     "name": "deaths_high",
+     "dtype": "int64"
+    },
+    {
+     "name": "economic_loss_usd_bn",
+     "dtype": "float64"
+    },
+    {
+     "name": "loss_basis",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "32_INDICADORES_COMPARADOS",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "benchmark_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "indicator_id",
+     "dtype": "str"
+    },
+    {
+     "name": "indicator_label",
+     "dtype": "str"
+    },
+    {
+     "name": "value",
+     "dtype": "float64"
+    },
+    {
+     "name": "data_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "source_sheet",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "33_EVENTOS_CAUSALES",
+   "primary_key": [
+    "causal_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "causal_id",
+     "dtype": "str"
+    },
+    {
+     "name": "source_variable",
+     "dtype": "str"
+    },
+    {
+     "name": "target_variable",
+     "dtype": "str"
+    },
+    {
+     "name": "relation",
+     "dtype": "str"
+    },
+    {
+     "name": "mechanism",
+     "dtype": "str"
+    },
+    {
+     "name": "necessary_conditions",
+     "dtype": "str"
+    },
+    {
+     "name": "time_lag",
+     "dtype": "str"
+    },
+    {
+     "name": "supporting_cases",
+     "dtype": "str"
+    },
+    {
+     "name": "contradicting_cases",
+     "dtype": "str"
+    },
+    {
+     "name": "evidence_class",
+     "dtype": "str"
+    },
+    {
+     "name": "certainty",
+     "dtype": "str"
+    },
+    {
+     "name": "engine_applicability",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "verification_status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "34_ESCENARIOS",
+   "primary_key": [
+    "scenario_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "scenario_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "start_date",
+     "dtype": "str"
+    },
+    {
+     "name": "reference_region",
+     "dtype": "str"
+    },
+    {
+     "name": "focus_country_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "political_situation",
+     "dtype": "str"
+    },
+    {
+     "name": "economic_conditions",
+     "dtype": "str"
+    },
+    {
+     "name": "military_capabilities",
+     "dtype": "str"
+    },
+    {
+     "name": "international_relations",
+     "dtype": "str"
+    },
+    {
+     "name": "active_conflict_ids",
+     "dtype": "str"
+    },
+    {
+     "name": "social_situation",
+     "dtype": "str"
+    },
+    {
+     "name": "institutions",
+     "dtype": "str"
+    },
+    {
+     "name": "recent_events",
+     "dtype": "str"
+    },
+    {
+     "name": "threats",
+     "dtype": "str"
+    },
+    {
+     "name": "opportunities",
+     "dtype": "str"
+    },
+    {
+     "name": "missing_data",
+     "dtype": "str"
+    },
+    {
+     "name": "notes",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "34b_ESCENARIOS_PAISES",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "scenario_id": "34_ESCENARIOS.scenario_id",
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "scenario_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "indicator_id",
+     "dtype": "str"
+    },
+    {
+     "name": "indicator_label",
+     "dtype": "str"
+    },
+    {
+     "name": "value",
+     "dtype": "float64"
+    },
+    {
+     "name": "data_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "age_years",
+     "dtype": "float64"
+    },
+    {
+     "name": "data_status",
+     "dtype": "str"
+    },
+    {
+     "name": "source_sheet",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "35_PARAMETROS_JUEGO",
+   "primary_key": [
+    "parameter_id"
+   ],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "parameter_id",
+     "dtype": "str"
+    },
+    {
+     "name": "name",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "scale_unit",
+     "dtype": "str"
+    },
+    {
+     "name": "historical_variables",
+     "dtype": "str"
+    },
+    {
+     "name": "method",
+     "dtype": "str"
+    },
+    {
+     "name": "assumptions_limitations",
+     "dtype": "str"
+    },
+    {
+     "name": "confidence",
+     "dtype": "str"
+    },
+    {
+     "name": "value_class",
+     "dtype": "str"
+    },
+    {
+     "name": "source_ids",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "35b_PARAMETROS_VALORES",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "parameter_id": "35_PARAMETROS_JUEGO.parameter_id",
+    "scenario_id": "34_ESCENARIOS.scenario_id",
+    "country_id": "03_ESTADOS.country_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "scenario_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "parameter_id",
+     "dtype": "str"
+    },
+    {
+     "name": "value",
+     "dtype": "object"
+    },
+    {
+     "name": "basis_data_year",
+     "dtype": "float64"
+    },
+    {
+     "name": "basis_values",
+     "dtype": "str"
+    },
+    {
+     "name": "valid_for_date",
+     "dtype": "str"
+    },
+    {
+     "name": "value_class",
+     "dtype": "str"
+    },
+    {
+     "name": "status",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "36_CALIDAD_DATOS",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "sheet",
+     "dtype": "str"
+    },
+    {
+     "name": "indicator_id",
+     "dtype": "str"
+    },
+    {
+     "name": "n_observations",
+     "dtype": "int64"
+    },
+    {
+     "name": "n_countries",
+     "dtype": "int64"
+    },
+    {
+     "name": "first_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "last_year",
+     "dtype": "int64"
+    },
+    {
+     "name": "pct_filled_in_panel",
+     "dtype": "float64"
+    },
+    {
+     "name": "share_exact_zero",
+     "dtype": "float64"
+    },
+    {
+     "name": "issue",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "36b_PROBLEMAS",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "issue_id",
+     "dtype": "str"
+    },
+    {
+     "name": "scope",
+     "dtype": "str"
+    },
+    {
+     "name": "issue",
+     "dtype": "str"
+    },
+    {
+     "name": "impact",
+     "dtype": "str"
+    },
+    {
+     "name": "action",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "36c_VERIFICACION_MUESTRAL",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "check_id",
+     "dtype": "str"
+    },
+    {
+     "name": "table",
+     "dtype": "str"
+    },
+    {
+     "name": "record",
+     "dtype": "str"
+    },
+    {
+     "name": "field",
+     "dtype": "str"
+    },
+    {
+     "name": "value_in_db",
+     "dtype": "str"
+    },
+    {
+     "name": "value_in_source",
+     "dtype": "str"
+    },
+    {
+     "name": "method",
+     "dtype": "str"
+    },
+    {
+     "name": "result",
+     "dtype": "str"
+    },
+    {
+     "name": "source_id",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "37_FUENTES",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "source_id",
+     "dtype": "str"
+    },
+    {
+     "name": "title",
+     "dtype": "str"
+    },
+    {
+     "name": "author_org",
+     "dtype": "str"
+    },
+    {
+     "name": "url",
+     "dtype": "str"
+    },
+    {
+     "name": "source_type",
+     "dtype": "str"
+    },
+    {
+     "name": "publication_date",
+     "dtype": "str"
+    },
+    {
+     "name": "period_covered",
+     "dtype": "str"
+    },
+    {
+     "name": "access_date",
+     "dtype": "str"
+    },
+    {
+     "name": "accessed_in_session",
+     "dtype": "str"
+    },
+    {
+     "name": "access_route",
+     "dtype": "str"
+    },
+    {
+     "name": "file_sha256",
+     "dtype": "str"
+    },
+    {
+     "name": "methodology",
+     "dtype": "str"
+    },
+    {
+     "name": "variables_supported",
+     "dtype": "str"
+    },
+    {
+     "name": "countries_covered",
+     "dtype": "str"
+    },
+    {
+     "name": "known_limitations",
+     "dtype": "str"
+    },
+    {
+     "name": "observations",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "38_CITAS_DATOS",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "citation_id",
+     "dtype": "str"
+    },
+    {
+     "name": "target_table",
+     "dtype": "str"
+    },
+    {
+     "name": "target_column",
+     "dtype": "str"
+    },
+    {
+     "name": "target_records",
+     "dtype": "str"
+    },
+    {
+     "name": "source_id",
+     "dtype": "str"
+    },
+    {
+     "name": "locator",
+     "dtype": "str"
+    },
+    {
+     "name": "note",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "39_PENDIENTES",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "pending_id",
+     "dtype": "str"
+    },
+    {
+     "name": "area",
+     "dtype": "str"
+    },
+    {
+     "name": "scope",
+     "dtype": "str"
+    },
+    {
+     "name": "description",
+     "dtype": "str"
+    },
+    {
+     "name": "reason",
+     "dtype": "str"
+    },
+    {
+     "name": "priority",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "40_IMPORTACION",
+   "primary_key": [],
+   "foreign_keys": {},
+   "columns": [
+    {
+     "name": "step",
+     "dtype": "int64"
+    },
+    {
+     "name": "topic",
+     "dtype": "str"
+    },
+    {
+     "name": "instruction",
+     "dtype": "str"
+    }
+   ]
+  },
+  {
+   "name": "observaciones_largo",
+   "file": "csv/observaciones_largo.csv.gz",
+   "primary_key": [
+    "record_id"
+   ],
+   "foreign_keys": {
+    "country_id": "03_ESTADOS.country_id",
+    "indicator_id": "02b_INDICADORES.indicator_id",
+    "source_id": "37_FUENTES.source_id"
+   },
+   "columns": [
+    {
+     "name": "record_id",
+     "dtype": "str"
+    },
+    {
+     "name": "country_id",
+     "dtype": "str"
+    },
+    {
+     "name": "indicator_id",
+     "dtype": "str"
+    },
+    {
+     "name": "year",
+     "dtype": "int64"
+    },
+    {
+     "name": "period_start",
+     "dtype": "str"
+    },
+    {
+     "name": "period_end",
+     "dtype": "str"
+    },
+    {
+     "name": "value",
+     "dtype": "float64"
+    },
+    {
+     "name": "unit",
+     "dtype": "str"
+    },
+    {
+     "name": "currency",
+     "dtype": "str"
+    },
+    {
+     "name": "price_basis",
+     "dtype": "str"
+    },
+    {
+     "name": "geographic_scope",
+     "dtype": "str"
+    },
+    {
+     "name": "observation_type",
+     "dtype": "str"
+    },
+    {
+     "name": "source_id",
+     "dtype": "str"
+    },
+    {
+     "name": "source_reference",
+     "dtype": "str"
+    },
+    {
+     "name": "confidence_level",
+     "dtype": "str"
+    },
+    {
+     "name": "methodology_notes",
+     "dtype": "str"
+    },
+    {
+     "name": "last_verified",
+     "dtype": "str"
+    }
+   ],
+   "n_rows": 1180736
+  }
+ ]
+}

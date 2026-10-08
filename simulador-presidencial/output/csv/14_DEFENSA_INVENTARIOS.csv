@@ -1,0 +1,22 @@
+country_id,nuclear_status,first_test_date,first_test_name,warheads_total_inventory_2024_01,warheads_total_inventory_2025_01,npt_status,doctrine_note,verification_status,source_ids,certainty
+USA,estado_nuclear_TNP,1945-07-16,Trinity,5328,5177,parte (EEN reconocido),Disuasión extendida a aliados; Nuclear Posture Review 2022 (no se descarta primer uso en circunstancias extremas),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+RUS,estado_nuclear_TNP,1949-08-29,RDS-1,5580,5459,parte (EEN reconocido; continuador de la URSS),Doctrina revisada en noviembre de 2024: amplía supuestos de uso (ataque de Estado no nuclear apoyado por potencia nuclear),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+GBR,estado_nuclear_TNP,1952-10-03,Hurricane,225,225,parte (EEN reconocido),Disuasión mínima basada en SSBN (Trident); techo de arsenal elevado a 260 (2021),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+FRA,estado_nuclear_TNP,1960-02-13,Gerboise Bleue,290,290,parte (EEN reconocido),Disuasión estrictamente defensiva de 'intereses vitales'; componentes aéreo y naval,VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+CHN,estado_nuclear_TNP,1964-10-16,Proyecto 596,500,600,parte (EEN reconocido),Política declarada de no primer uso; expansión rápida (~100 ojivas/año desde 2023 según SIPRI),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+IND,estado_nuclear_fuera_TNP,1974-05-18,Smiling Buddha (Pokhran-I),172,180,no parte,No primer uso con represalia masiva; tríada en desarrollo,VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+PAK,estado_nuclear_fuera_TNP,1998-05-28,Chagai-I,170,170,no parte,Disuasión de espectro completo; armas tácticas (Nasr); primer uso no descartado,VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Alta
+ISR,estado_nuclear_no_declarado,,(sin prueba reconocida),90,90,no parte,Opacidad nuclear (amimut),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Media
+PRK,estado_nuclear_fuera_TNP,2006-10-09,Primera prueba subterránea,50,50,retirada anunciada en 2003,Ley de 2022 sobre política nuclear (uso preventivo); material fisible para hasta ~40 ojivas más (SIPRI),VERIF_SESION,SRC_SIPRI_YB2025_NUC;SRC_HIROSHIMA_NUC,Media
+ZAF,programa_desmantelado,,(sin prueba confirmada),0,0,parte desde 1991,Construyó 6 dispositivos y los desmanteló (1989-1991),CONOC_EXPERTO,SRC_NTI,Alta
+UKR,arsenal_heredado_transferido,,,0,0,parte desde 1994,Heredó ~1.900 ojivas estratégicas soviéticas; transferidas a Rusia (Memorando de Budapest),CONOC_EXPERTO,SRC_NTI,Alta
+KAZ,arsenal_heredado_transferido,,,0,0,parte,Arsenal soviético transferido a Rusia (1995),CONOC_EXPERTO,SRC_NTI,Alta
+BLR,arsenal_heredado_transferido_y_despliegue_ruso,,,0,0,parte,Armas soviéticas transferidas (1996); Rusia anunció despliegue de armas nucleares tácticas en su territorio (2023),CONOC_EXPERTO,SRC_NTI,Media
+IRN,programa_umbral,,,0,0,parte (amenaza de retirada),"Uranio enriquecido al 60% acumulado (OIEA, 2024-2025); instalaciones atacadas en junio de 2025",CONOC_EXPERTO,SRC_NTI,Media
+IRQ,programa_desmantelado,,,0,0,parte,Programa destruido tras 1991 (UNSCOM); Osirak bombardeado en 1981,CONOC_EXPERTO,SRC_NTI,Alta
+LBY,programa_desmantelado,,,0,0,parte,Renuncia en diciembre de 2003,CONOC_EXPERTO,SRC_NTI,Alta
+SYR,programa_destruido,,,0,0,parte,Reactor de Al Kibar destruido por Israel (2007),CONOC_EXPERTO,SRC_NTI,Media
+BRA,programa_abandonado,,,0,0,parte desde 1998,Programa paralelo militar abandonado; submarino de propulsión nuclear en desarrollo,CONOC_EXPERTO,SRC_NTI,Media
+ARG,programa_abandonado,,,0,0,parte desde 1995,Acuerdo ABACC con Brasil (1991),CONOC_EXPERTO,SRC_NTI,Media
+KOR,programa_abandonado,,,0,0,parte,Programa clandestino abandonado en los años 70 bajo presión de EE.UU.,CONOC_EXPERTO,SRC_NTI,Media
+TWN,programa_abandonado,,,0,0,no reconocido como Estado parte,Programa desmantelado en 1988 bajo presión de EE.UU.,CONOC_EXPERTO,SRC_NTI,Media

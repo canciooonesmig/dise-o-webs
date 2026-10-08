@@ -1,0 +1,41 @@
+crisis_id,country_id,crisis_type,start,end,peak_indicator,description,policy_response,certainty,source_ids,verification_status
+EC001,DEU,hiperinflacion,1922-08,1923-12,Inflación mensual pico ~29.500% (oct. 1923),República de Weimar.,Rentenmark (1923),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC002,HUN,hiperinflacion,1945-08,1946-07,"Inflación mensual pico ~4,19×10^16 % (jul. 1946), la mayor registrada",Pengő.,Forint (1946),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC003,ZWE,hiperinflacion,2007-03,2008-11,"Inflación mensual pico ~7,96×10^10 % (nov. 2008)",Colapso económico tras reforma agraria y emisión monetaria.,Dolarización multimoneda (2009),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC004,BOL,hiperinflacion,1984-04,1985-09,Inflación mensual pico ~183% (feb. 1985),,"Nueva Política Económica (DS 21060, 1985)",Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC005,ARG,hiperinflacion,1989-05,1990-03,Inflación mensual pico ~197% (jul. 1989),,Plan Bonex; Convertibilidad (1991),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC006,PER,hiperinflacion,1988-07,1990-08,Inflación mensual pico ~397% (ago. 1990),,'Fujishock' (1990),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC007,BRA,hiperinflacion,1989-12,1990-03,Inflación mensual pico ~82% (mar. 1990),,Plan Collor; Plan Real (1994),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC008,SRB,hiperinflacion,1992-04,1994-01,"Inflación mensual pico ~3,13×10^8 % (ene. 1994)",RF Yugoslavia bajo sanciones.,Programa Avramović (1994),Alta,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC009,VEN,hiperinflacion,2016-11,2021,"Inflación anual >60.000% (2018, estimaciones)",,"Dolarización de facto; reconversiones monetarias (2018, 2021)",Media,SRC_HANKE_KRUS,CONOC_EXPERTO
+EC010,MEX,crisis_deuda_soberana,1982-08,1989,Default/reprogramación,Crisis de deuda latinoamericana.,Programas del FMI; Plan Brady,Alta,SRC_LAEVEN_VALENCIA;SRC_REINHART_ROGOFF,CONOC_EXPERTO
+EC011,MEX,crisis_monetaria_bancaria,1994-12,1996,"Depreciación del peso >50%; PIB -6,3% (1995)",Crisis del Tequila.,Paquete EE.UU./FMI; FOBAPROA,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC012,ARG,crisis_deuda_soberana,2001-12,2005,Default de ~95.000 M USD,Mayor default soberano de su momento.,Canje 2005 (quita ~65%),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC013,ARG,crisis_deuda_soberana,2020-05,2020-09,Default técnico y reestructuración de ~65.000 M USD,,Canje 2020,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC014,ARG,programa_fmi,2018-06,2024,Acuerdo Stand-By de 57.000 M USD (el mayor de la historia del FMI),,EFF 2022 (~44.000 M USD) y nuevo EFF 2025 (20.000 M USD),Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC015,RUS,crisis_deuda_monetaria,1998-08,1999,Moratoria y devaluación,,,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC016,THA,crisis_bancaria_monetaria,1997-07,2000,Baht -50%,,Programa FMI,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC017,IDN,crisis_bancaria_monetaria,1997-11,2001,Rupia -80%; PIB -13% (1998),,Programa FMI; caída de Suharto,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC018,KOR,crisis_bancaria_monetaria,1997-08,1998,Rescate FMI 57.000 M USD,,Reestructuración de chaebols,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC019,USA,crisis_bancaria_sistemica,2007-12,2011,Quiebra de Lehman; TARP,Crisis de las hipotecas subprime.,"Rescates, QE, Dodd-Frank (2010)",Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC020,GBR,crisis_bancaria_sistemica,2007-09,2011,Northern Rock; nacionalización de RBS y Lloyds (parcial),,,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC021,ISL,crisis_bancaria_sistemica,2008-10,2012,Colapso de los tres grandes bancos (~10 veces el PIB),,Controles de capital (2008-2017),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC022,IRL,crisis_bancaria_sistemica,2008-09,2012,Garantía bancaria general; rescate UE/FMI (2010),,,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC023,GRC,crisis_deuda_soberana,2010-05,2018-08,"Reestructuración PSI (2012), mayor de la historia (~200.000 M EUR)",,Tres programas de rescate; corralito y controles de capital (2015),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC024,ESP,crisis_bancaria_sistemica,2008-09,2012,Rescate bancario europeo de hasta 100.000 M EUR (2012),Burbuja inmobiliaria y cajas de ahorros.,FROB; SAREB,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC025,CYP,crisis_bancaria_sistemica,2011-06,2015,'Bail-in' de depósitos (2013),,Controles de capital,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC026,TUR,crisis_monetaria,2018-08,2023,Lira -30% (2018); inflación ~85% (oct. 2022),Política monetaria heterodoxa.,Giro ortodoxo (junio 2023),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC027,LBN,crisis_bancaria_deuda,2019-10,,Default (03-2020); libra -95%,Colapso del esquema financiero.,Controles informales de capital,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC028,LKA,crisis_deuda_soberana,2022-04,2024,Default; inflación ~70%,"Escasez de divisas, protestas ('Aragalaya'), huida de Rajapaksa.",Programa FMI (2023),Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC029,GHA,crisis_deuda_soberana,2022-12,2024,Default de deuda externa,,Programa FMI (2023),Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC030,ZMB,crisis_deuda_soberana,2020-11,2024,Primer default africano de la pandemia,,Marco Común G20,Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC031,EGY,crisis_monetaria,2016-11,2024,Flotación de la libra (2016); devaluaciones 2022-2024,,"Programas FMI; inversión de los EAU en Ras El-Hekma (35.000 M USD, 2024)",Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC032,PAK,crisis_balanza_pagos,2022,2023,Reservas < 1 mes de importaciones,,Acuerdo Stand-By FMI (07-2023),Alta,SRC_IMF_HIST_LENDING,CONOC_EXPERTO
+EC033,JPN,crisis_bancaria_estancamiento,1991,2003,Estallido de la burbuja; 'década perdida',,Recapitalización bancaria tardía,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC034,CHL,crisis_bancaria,1982-11,1985,PIB -14% (1982),,Intervención bancaria,Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC035,URY,crisis_bancaria,2002-01,2005,Corrida bancaria por contagio argentino,,Canje de deuda voluntario (2003),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC036,ECU,crisis_bancaria_deuda,1998-08,2000-01,Feriado bancario (1999); default,,Dolarización (2000),Alta,SRC_LAEVEN_VALENCIA,CONOC_EXPERTO
+EC037,CHN,crisis_inmobiliaria,2021-08,,Default de Evergrande (12-2021); liquidación ordenada en 2024,Sobreendeudamiento inmobiliario.,Estímulos y medidas de vivienda,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+EC038,WLD,shock_precio_materias_primas,2014-06,2016-02,Brent de ~115 a ~28 USD/barril,Caída del precio del petróleo.,,Alta,SRC_EI_SR,CONOC_EXPERTO
+EC039,WLD,shock_precio_materias_primas,2020-04-20,2020-04-20,WTI en negativo (-37 USD),Pandemia.,Recortes OPEP+,Alta,SRC_EI_SR,CONOC_EXPERTO
+EC040,RUS,shock_sanciones,2022-02,2022-12,Congelación de reservas; rublo 2022 volátil,,"Controles de capital, alza de tipos al 20%",Alta,SRC_EU_SANCTIONS,CONOC_EXPERTO

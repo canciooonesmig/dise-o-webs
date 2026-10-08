@@ -1,0 +1,21 @@
+org_id,name,org_type,founded,headquarters,purpose,source_ids
+ORG_UN,Organización de las Naciones Unidas,universal,1945-10-24,Nueva York,"Seguridad, cooperación",SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_UNSC_P5,Consejo de Seguridad ONU – miembros permanentes,organo,1945-10-24,Nueva York,Veto,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_NATO,Organización del Tratado del Atlántico Norte,alianza_militar,1949-04-04,Bruselas,Defensa colectiva,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_WARSAW,Pacto de Varsovia,alianza_militar,1955-05-14,Moscú,Defensa del bloque soviético,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_EU,Unión Europea (y predecesoras CEE/CE),integracion_regional,1958-01-01,Bruselas,Integración económica y política,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_EUROZONE,Zona euro,union_monetaria,1999-01-01,Fráncfort,Moneda común,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_OPEC,Organización de Países Exportadores de Petróleo,cartel_materias_primas,1960-09-14,Viena,Coordinación petrolera,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_G7,Grupo de los Siete,foro,1975-11-15,,Coordinación económica de democracias industriales,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_BRICS,BRICS,foro,2009-06-16,,Coordinación de economías emergentes,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_SCO,Organización de Cooperación de Shanghái,organizacion_regional_seguridad,2001-06-15,Pekín,Seguridad y cooperación euroasiática,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_CSTO,Organización del Tratado de Seguridad Colectiva,alianza_militar,2002-10-07,Moscú,Defensa colectiva postsoviética,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_ASEAN,Asociación de Naciones del Sudeste Asiático,integracion_regional,1967-08-08,Yakarta,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_AU,Unión Africana (OUA 1963-2002),integracion_regional,1963-05-25,Adís Abeba,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_MERCOSUR,Mercado Común del Sur,integracion_regional,1991-03-26,Montevideo,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_GCC,Consejo de Cooperación del Golfo,integracion_regional,1981-05-25,Riad,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_OECD,Organización para la Cooperación y el Desarrollo Económicos,organizacion_economica,1961-09-30,París,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_QUAD,Diálogo de Seguridad Cuadrilateral,foro_seguridad,2007,,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_FIVE_EYES,Alianza de inteligencia Five Eyes (UKUSA),alianza_inteligencia,1946-03-05,,Intercambio de SIGINT,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_CIS,Comunidad de Estados Independientes,organizacion_regional,1991-12-08,Minsk,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC
+ORG_AES,Alianza/Confederación de Estados del Sahel,alianza_defensiva_regional,2023-09-16,,,SRC_UN_MEMBERS;SRC_NATO_MEMBERS;SRC_EU_MEMBERS;SRC_OPEC

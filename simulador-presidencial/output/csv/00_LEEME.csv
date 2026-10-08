@@ -1,0 +1,14 @@
+section,content
+Propósito,"Base de conocimiento histórica, económica, militar, institucional y geopolítica para un simulador presidencial. Distingue datos observados (A), estimaciones (B) y parámetros de simulación (C)."
+Fecha de construcción,2026-10-08. Datos estadísticos hasta 2024 (V-Dem hasta 2025). Acontecimientos curados hasta mediados de 2025.
+Alcance geográfico,"286 entidades: Estados soberanos actuales, territorios, Estados históricos (1789-) y agregados. Identificador country_id estable (ISO3 / V-Dem / H_*)."
+Alcance temporal,"Series: 1789-2025 (V-Dem), 1816-2016 (COW), 1946-2024 (UCDP), 1960-2024 (WDI), 1900-2024 (OWID). Prioridad 1945-actualidad."
+Metodología,"1) Descarga reproducible de conjuntos de datos (scripts/02_download_sources.py, 01_download_wdi.py) con hash SHA-256. 2) Normalización de identificadores mediante crosswalk COW/GW/V-Dem/ISO (03b). 3) Paneles país-año por tema. 4) Tablas curadas para conflictos, tratados, inteligencia, instituciones, historia, causalidad y escenarios. 5) Parámetros derivados con método explícito. 6) Validación automática (scripts/20_validate.py)."
+Restricción de acceso,"El entorno de construcción no podía acceder a los portales oficiales (worldbank.org, imf.org, sipri.org, ucdp.uu.se, v-dem.net...). Se usaron réplicas públicas en GitHub de los mismos conjuntos de datos, registrando URL y hash en 37_FUENTES. La búsqueda web solo devolvía resúmenes, por lo que la verificación de cifras curadas fue muestral (36c)."
+Confianza,"WDI: confianza base por indicador (Alta para cuentas nacionales y demografía oficial; Media para estimaciones, encuestas dispersas, gasto militar y seguridad). En el formato largo, observaciones económicas de años con autocracia cerrada (V-Dem RoW=0) se rebajan un nivel. V-Dem: Media (estimaciones de expertos). Curados: asignada registro a registro."
+Faltantes,Celda vacía = no disponible. No se imputan ceros ni se interpola. Los valores -9/-8 de COW se convierten en vacío. Las interpolaciones de origen se señalan en 02b_INDICADORES.interpolation.
+Contradicciones,"Cuando las fuentes difieren (víctimas, resultados impugnados) se conservan rangos (deaths_low/high) o filas separadas por result_type."
+Escenarios,34b toma el último dato ≤ fecha del escenario (máx. 3 años de antigüedad) e informa data_year: nunca se usan datos posteriores.
+Parámetros,35/35b: clase C. Reglas de umbrales documentadas; escalas categóricas cuando la precisión numérica no está justificada.
+Archivos complementarios,"output/csv/*.csv (UTF-8, una por hoja), output/csv/observaciones_largo.csv.gz, output/schema/schema.json, output/validation_report.md."
+Limitaciones principales,Ver 36_CALIDAD_DATOS (problemas Q001-Q012) y 39_PENDIENTES. Las tablas curadas (CONOC_EXPERTO) requieren verificación antes de usos críticos.

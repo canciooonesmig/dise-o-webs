@@ -1,0 +1,26 @@
+dispute_id,name,claimant_ids,controller,dispute_type,since,status,strategic_value,notes,certainty,source_ids,verification_status
+DSP001,Cachemira,IND;PAK;CHN,IND;PAK;CHN (dividido),territorial_armada,1947,activa,"Alta: agua (Indo), posición militar, identidad nacional","Tres guerras indo-pakistaníes relacionadas (1947, 1965, 1999 Kargil) y crisis de 2016, 2019 y 2025.",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP002,Taiwán,CHN;TWN,TWN,soberania,1949,activa,"Muy alta: semiconductores, primera cadena de islas",Riesgo de bloqueo/invasión; EE.UU. con ambigüedad estratégica (Taiwan Relations Act 1979).,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP003,"Mar de China Meridional (Spratly, Paracel, Scarborough)",CHN;VNM;PHL;MYS;BRN;TWN,Mixto,maritima_insular,1947 ('línea de nueve trazos'),activa,"Muy alta: rutas comerciales, pesca, hidrocarburos",Laudo arbitral CPA 2016 (Filipinas c. China) rechaza la línea de nueve trazos; China no lo acepta.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP004,Islas Senkaku/Diaoyu,JPN;CHN;TWN,JPN,insular,1971,activa,Media-alta,Incluidas en el ámbito del tratado de seguridad EE.UU.-Japón según declaraciones oficiales estadounidenses.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP005,Kuriles del sur,JPN;RUS,RUS,insular,1945,activa,Media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP006,Dokdo/Takeshima,KOR;JPN,KOR,insular,1952,activa,Baja-media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP007,Sáhara Occidental,MAR;RASD(Polisario),MAR (~80%),descolonizacion,1975,activa,"Media: fosfatos, pesca",EE.UU. reconoció la soberanía marroquí en 2020.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP008,"Malvinas/Falkland, Georgias y Sandwich del Sur",ARG;GBR,GBR,insular,1833,activa_diplomatica,"Media: pesca, hidrocarburos, Antártida",,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP009,Esequibo,VEN;GUY,GUY,territorial,1899/1962,activa,Alta: petróleo offshore (Stabroek),Caso ante la CIJ.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP010,Crimea y territorios ocupados de Ucrania,UKR;RUS,RUS,anexion_guerra,2014,activa_guerra,Muy alta,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP011,Altos del Golán,SYR;ISR,ISR,ocupacion,1967,activa,"Alta: agua, altura militar",EE.UU. reconoció la soberanía israelí en 2019.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP012,Cisjordania y Jerusalén Este,PSE;ISR,ISR (y ANP en áreas A/B),ocupacion,1967,activa,Muy alta,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP013,Chipre del Norte,CYP;TUR,TUR/RTNC,ocupacion,1974,activa,Media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP014,Abjasia y Osetia del Sur,GEO;RUS,RUS (protectorados),secesion,1992/2008,activa,Media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP015,Transnistria,MDA;RUS(apoyo),Autoridades separatistas,secesion,1992,congelada,Baja-media,Presencia militar rusa.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP016,"Línea de Control Real chino-india (Ladakh, Arunachal)",IND;CHN,Mixto,frontera_no_demarcada,1962,activa,Alta,"Choque del valle de Galwan, junio 2020.",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP017,Abyei,SDN;SSD,Administración interina / UNISFA,territorial,2011,activa,Media: petróleo,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP018,Triángulo de Hala'ib,EGY;SDN,EGY,territorial,1958,latente,Baja,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP019,Gibraltar,ESP;GBR,GBR,soberania,1713,diplomatica,Media: estrecho,Tratado de Utrecht.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP020,Acceso soberano al mar de Bolivia,BOL;CHL,CHL,reivindicacion_maritima,1884/1904,cerrada_judicialmente_2018,Media,CIJ 2018: Chile no tiene obligación de negociar.,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP021,Belice (reclamación guatemalteca),GTM;BLZ,BLZ,territorial,1859,ante_CIJ,Baja,"Ambos países sometieron el caso a la CIJ por referéndums (2018, 2019).",Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP022,Ártico (plataforma continental extendida),RUS;CAN;DNK;NOR;USA,Mixto,maritima,2001,activa_juridica,"Alta: rutas, recursos",Presentaciones ante la CLPC.,Media,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP023,Kosovo,SRB;XKX,XKX,secesion_reconocimiento_parcial,2008,activa_diplomatica,Media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP024,Nagorno Karabaj,ARM;AZE,AZE desde 2023,territorial,1988,resuelta_militarmente_2023,Media,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO
+DSP025,Franja de Gaza,PSE;ISR,Guerra/ocupación desde 2023,conflicto_armado,2007/2023,activa_guerra,Alta,,Alta,SRC_ACADEMIC_HIST,CONOC_EXPERTO

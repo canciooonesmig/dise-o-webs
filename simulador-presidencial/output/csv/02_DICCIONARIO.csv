@@ -1,0 +1,1096 @@
+sheet,column,description,dtype,is_primary_key,foreign_key,n_non_empty
+05_DEMOGRAFIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,14190
+05_DEMOGRAFIA,year,Año calendario,numérico,si,,14190
+05_DEMOGRAFIA,sp_pop_totl,"Population, total — unidad: Unit; tipo: estimacion_demografica_ONU_WPP",numérico,,,13945
+05_DEMOGRAFIA,sp_urb_totl_in_zs,Urban population (% of total population) — unidad: Percentage; tipo: dato_oficial_compilado,numérico,,,13975
+05_DEMOGRAFIA,sp_rur_totl_zs,Rural population (% of total population) — unidad: Percentage; tipo: dato_oficial_compilado,numérico,,,13975
+05_DEMOGRAFIA,en_pop_dnst,Population density (people per sq. km of land area) — unidad: people per square kilometer of land area; tipo: dato_oficial_compilado,numérico,,,12194
+05_DEMOGRAFIA,sp_dyn_cbrt_in,"Birth rate, crude (per 1,000 people) — unidad: Per 1000 people; tipo: estimacion_demografica_ONU_WPP",numérico,,,13945
+05_DEMOGRAFIA,sp_dyn_cdrt_in,"Death rate, crude (per 1,000 people) — unidad: Per 1000 people; tipo: estimacion_demografica_ONU_WPP",numérico,,,13945
+05_DEMOGRAFIA,sp_dyn_imrt_in,"Mortality rate, infant (per 1,000 live births) — unidad: Per 1000 live births; tipo: estimacion_demografica_ONU_WPP",numérico,,,11830
+05_DEMOGRAFIA,sp_dyn_le00_in,"Life expectancy at birth, total (years) — unidad: Years; tipo: estimacion_demografica_ONU_WPP",numérico,,,13941
+05_DEMOGRAFIA,sp_dyn_tfrt_in,"Fertility rate, total (births per woman) — unidad: Births per woman; tipo: estimacion_demografica_ONU_WPP",numérico,,,13943
+05_DEMOGRAFIA,sm_pop_netm,Net migration — unidad: Unit; tipo: estimacion_demografica_ONU_WPP,numérico,,,14190
+05_DEMOGRAFIA,sp_pop_0014_to_zs,Population ages 0-14 (% of total population) — unidad: Percentage; tipo: estimacion_demografica_ONU_WPP,numérico,,,13975
+05_DEMOGRAFIA,sp_pop_1564_to_zs,Population ages 15-64 (% of total population) — unidad: Percentage; tipo: estimacion_demografica_ONU_WPP,numérico,,,13975
+05_DEMOGRAFIA,sp_pop_65up_to_zs,Population ages 65 and above (% of total population) — unidad: Percentage; tipo: estimacion_demografica_ONU_WPP,numérico,,,13975
+05_DEMOGRAFIA,sp_pop_dpnd,Age dependency ratio (% of working-age population) — unidad: Percentage; tipo: estimacion_demografica_ONU_WPP,numérico,,,13945
+06_INDICADORES_SOCIALES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,12131
+06_INDICADORES_SOCIALES,year,Año calendario,numérico,si,,12131
+06_INDICADORES_SOCIALES,sl_tlf_totl_in,"Labor force, total — unidad: Persons; tipo: dato_oficial_compilado",numérico,,,6646
+06_INDICADORES_SOCIALES,sl_tlf_cact_zs,"Labor force participation rate, total (% of total population ages 15+) (modeled ILO estimate) — unidad: % of total population ages 15+; tipo: estimacion_modelada",numérico,,,6646
+06_INDICADORES_SOCIALES,sl_uem_totl_zs,"Unemployment, total (% of total labor force) (modeled ILO estimate) — unidad: % of total labor force; tipo: estimacion_modelada",numérico,,,6461
+06_INDICADORES_SOCIALES,sl_uem_1524_zs,"Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate) — unidad: % of total labor force ages 15-24; tipo: estimacion_modelada",numérico,,,6461
+06_INDICADORES_SOCIALES,sl_emp_vuln_zs,"Vulnerable employment, total (% of total employment) (modeled ILO estimate) — unidad: % of total employment; tipo: estimacion_modelada",numérico,,,6461
+06_INDICADORES_SOCIALES,se_adt_litr_zs,"Literacy rate, adult total (% of people ages 15 and above) — unidad: % of people ages 15 and above; tipo: dato_oficial_compilado",numérico,,,1117
+06_INDICADORES_SOCIALES,se_prm_enrr,"School enrollment, primary (% gross) — unidad: % of population in the 5-year age group immediately following preprimary education; tipo: dato_oficial_compilado",numérico,,,7468
+06_INDICADORES_SOCIALES,se_sec_enrr,"School enrollment, secondary (% gross) — unidad: % of population in the 5-year age group immediately following primary education; tipo: dato_oficial_compilado",numérico,,,6254
+06_INDICADORES_SOCIALES,se_ter_enrr,"School enrollment, tertiary (% gross) — unidad: % of population in the 5-year age group immediately following upper secondary education; tipo: dato_oficial_compilado",numérico,,,5329
+06_INDICADORES_SOCIALES,se_xpd_totl_gd_zs,"Government expenditure on education, total (% of GDP) — unidad: % of GDP; tipo: dato_oficial_compilado",numérico,,,5105
+06_INDICADORES_SOCIALES,si_pov_gini,Gini index — unidad: %; tipo: indice_derivado,numérico,,,2430
+06_INDICADORES_SOCIALES,si_pov_dday,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population) — unidad: %; tipo: dato_oficial_compilado,numérico,,,2430
+06_INDICADORES_SOCIALES,si_dst_10th_10,Income share held by highest 10% — unidad: %; tipo: dato_oficial_compilado,numérico,,,2430
+06_INDICADORES_SOCIALES,sh_xpd_chex_gd_zs,Current health expenditure (% of GDP) — unidad: Percentage; tipo: dato_oficial_compilado,numérico,,,4562
+06_INDICADORES_SOCIALES,sh_med_phys_zs,"Physicians (per 1,000 people) — unidad: Per 1000 people; tipo: dato_oficial_compilado",numérico,,,5356
+06_INDICADORES_SOCIALES,sh_med_beds_zs,"Hospital beds (per 1,000 people) — unidad: Per 1000 people; tipo: dato_oficial_compilado",numérico,,,4714
+06_INDICADORES_SOCIALES,sh_sta_mmrt,"Maternal mortality ratio (modeled estimate, per 100,000 live births) — unidad: Per 100,000 live births; tipo: estimacion_modelada",numérico,,,7527
+06_INDICADORES_SOCIALES,eg_elc_accs_zs,Access to electricity (% of population) — unidad: % (share) of population; tipo: dato_oficial_compilado,numérico,,,6464
+06_INDICADORES_SOCIALES,sh_h2o_smdw_zs,People using safely managed drinking water services (% of population) — unidad: % of population; tipo: dato_oficial_compilado,numérico,,,3666
+06_INDICADORES_SOCIALES,sh_sta_smss_zs,People using safely managed sanitation services (% of population) — unidad: % of population; tipo: dato_oficial_compilado,numérico,,,3544
+06_INDICADORES_SOCIALES,it_net_user_zs,Individuals using the Internet (% of population) — unidad: % of population; tipo: dato_oficial_compilado,numérico,,,6170
+06_INDICADORES_SOCIALES,it_cel_sets_p2,Mobile cellular subscriptions (per 100 people) — unidad: number of subscriptions*100/population; tipo: dato_oficial_compilado,numérico,,,10510
+06_INDICADORES_SOCIALES,sn_itk_defc_zs,Prevalence of undernourishment (% of population) — unidad: Percentage; tipo: dato_oficial_compilado,numérico,,,3831
+07_MACROECONOMIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,11723
+07_MACROECONOMIA,year,Año calendario,numérico,si,,11723
+07_MACROECONOMIA,ny_gdp_mktp_cd,GDP (current US$) — unidad: Current US$; tipo: dato_oficial_compilado,numérico,,,11483
+07_MACROECONOMIA,ny_gdp_mktp_kd,GDP (constant 2015 US$) — unidad: constant 2015 US$; tipo: dato_oficial_compilado,numérico,,,11253
+07_MACROECONOMIA,ny_gdp_mktp_kd_zg,GDP (annual % growth) — unidad: %; tipo: dato_oficial_compilado,numérico,,,11130
+07_MACROECONOMIA,ny_gdp_pcap_cd,GDP per capita (current US$) — unidad: Current US$; tipo: dato_oficial_compilado,numérico,,,11483
+07_MACROECONOMIA,ny_gdp_pcap_kd_zg,GDP per capita (annual % growth) — unidad: %; tipo: dato_oficial_compilado,numérico,,,11130
+07_MACROECONOMIA,ny_gdp_pcap_pp_cd,"GDP per capita, PPP (current international $) — unidad: Current international $; tipo: dato_oficial_compilado",numérico,,,6775
+07_MACROECONOMIA,ny_gdp_pcap_pp_kd,"GDP per capita, PPP (constant 2021 international $) — unidad: Constant 2021 international $; tipo: dato_oficial_compilado",numérico,,,6729
+07_MACROECONOMIA,ny_gdp_mktp_pp_cd,"GDP, PPP (current international $) — unidad: Current international $; tipo: dato_oficial_compilado",numérico,,,6775
+07_MACROECONOMIA,ny_gdp_mktp_pp_kd,"GDP, PPP (constant 2021 international $) — unidad: Constant 2021 international $; tipo: dato_oficial_compilado",numérico,,,6729
+07_MACROECONOMIA,ny_gnp_pcap_cd,"GNI per capita, Atlas method (current US$) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,10365
+07_MACROECONOMIA,nv_agr_totl_zs,"Agriculture, forestry, and fishing, value added (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,8828
+07_MACROECONOMIA,nv_ind_totl_zs,"Industry, including construction, value added (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,8783
+07_MACROECONOMIA,nv_ind_manf_zs,"Manufacturing, value added (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,8000
+07_MACROECONOMIA,nv_srv_totl_zs,"Services, value added (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,8357
+07_MACROECONOMIA,ne_gdi_totl_zs,Gross capital formation (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8378
+07_MACROECONOMIA,ne_gdi_ftot_zs,Gross fixed capital formation (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7881
+07_MACROECONOMIA,ne_con_govt_zs,General government final consumption expenditure (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8403
+07_MACROECONOMIA,ne_con_prvt_zs,Households and NPISHs final consumption expenditure (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8363
+07_MACROECONOMIA,ny_gns_ictr_zs,Gross savings (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,6305
+07_MACROECONOMIA,fp_cpi_totl_zg,"Inflation, consumer prices (annual % growth) — unidad: %; tipo: dato_oficial_compilado",numérico,,,8971
+07_MACROECONOMIA,ny_gdp_defl_kd_zg,"Inflation, GDP deflator (annual % growth) — unidad: %; tipo: dato_oficial_compilado",numérico,,,11087
+07_MACROECONOMIA,sl_gdp_pcap_em_kd,GDP per person employed (constant 2021 PPP $) — unidad: constant 2017 PPP $; tipo: dato_oficial_compilado,numérico,,,5893
+08_FINANZAS_PUBLICAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,4791
+08_FINANZAS_PUBLICAS,year,Año calendario,numérico,si,,4791
+08_FINANZAS_PUBLICAS,gc_rev_xgrt_gd_zs,"Revenue, excluding grants (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,4661
+08_FINANZAS_PUBLICAS,gc_tax_totl_gd_zs,Tax revenue (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4686
+08_FINANZAS_PUBLICAS,gc_xpn_totl_gd_zs,Expense (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4452
+08_FINANZAS_PUBLICAS,gc_nld_totl_gd_zs,Net lending (+) / net borrowing (-) (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4436
+08_FINANZAS_PUBLICAS,gc_dod_totl_gd_zs,"Central government debt, total (% of GDP) — unidad: %; tipo: dato_oficial_compilado",numérico,,,1638
+08_FINANZAS_PUBLICAS,gc_dod_totl_cn,"Central government debt, total (current LCU) — unidad: current LCU; tipo: dato_oficial_compilado",numérico,,,1640
+08_FINANZAS_PUBLICAS,gc_tax_gsrv_rv_zs,Taxes on goods and services (% of revenue) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4592
+08_FINANZAS_PUBLICAS,gc_tax_intt_rv_zs,Taxes on international trade (% of revenue) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4004
+08_FINANZAS_PUBLICAS,gc_xpn_intp_zs,Interest payments (% of expense) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4289
+08_FINANZAS_PUBLICAS,gc_xpn_intp_rv_zs,Interest payments (% of revenue) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4484
+08_FINANZAS_PUBLICAS,gc_xpn_comp_zs,Compensation of employees (% of expense) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4301
+08_FINANZAS_PUBLICAS,gc_xpn_trft_zs,Subsidies and other transfers (% of expense) — unidad: %; tipo: dato_oficial_compilado,numérico,,,3662
+09_MONEDA_MERCADOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,12612
+09_MONEDA_MERCADOS,year,Año calendario,numérico,si,,12612
+09_MONEDA_MERCADOS,pa_nus_fcrf,"Official exchange rate (LCU per US$, period average) — unidad: LCU per US$; tipo: dato_oficial_compilado",numérico,,,12229
+09_MONEDA_MERCADOS,pa_nus_ppp,"PPP conversion factor, GDP (LCU per international $) — unidad: Local currency unit per international dollar; tipo: dato_oficial_compilado",numérico,,,6843
+09_MONEDA_MERCADOS,fr_inr_lend,Lending interest rate (%) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4717
+09_MONEDA_MERCADOS,fr_inr_dpst,Deposit interest rate (%) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4896
+09_MONEDA_MERCADOS,fr_inr_rinr,Real interest rate (%) — unidad: %; tipo: dato_oficial_compilado,numérico,,,4694
+09_MONEDA_MERCADOS,fi_res_totl_cd,"Total reserves, including gold (current US$) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,9340
+09_MONEDA_MERCADOS,fi_res_totl_mo,Total reserves in months of imports — unidad: months; tipo: dato_oficial_compilado,numérico,,,6978
+09_MONEDA_MERCADOS,fm_lbl_bmny_gd_zs,Broad money (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8283
+09_MONEDA_MERCADOS,fm_lbl_bmny_zg,Broad money (annual % growth) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8261
+09_MONEDA_MERCADOS,fs_ast_prvt_gd_zs,Domestic credit to private sector (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7486
+09_MONEDA_MERCADOS,cm_mkt_lcap_gd_zs,"Market capitalization of listed domestic companies (% of GDP) — unidad: End-of-year total market capitalization of listed domestic companies, divided by gross domestic product, expressed as a percentage.; tipo: dato_oficial_compilado",numérico,,,2696
+10_COMERCIO,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,11523
+10_COMERCIO,year,Año calendario,numérico,si,,11523
+10_COMERCIO,ne_exp_gnfs_cd,Exports of goods and services (current US$) — unidad: Current US$; tipo: dato_oficial_compilado,numérico,,,8760
+10_COMERCIO,ne_imp_gnfs_cd,Imports of goods and services (current US$) — unidad: Current US$; tipo: dato_oficial_compilado,numérico,,,8760
+10_COMERCIO,ne_exp_gnfs_zs,Exports of goods and services (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8744
+10_COMERCIO,ne_imp_gnfs_zs,Imports of goods and services (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8744
+10_COMERCIO,ne_trd_gnfs_zs,Trade (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,8744
+10_COMERCIO,bn_cab_xoka_cd,"Current account balance (current US$, BoP) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,7688
+10_COMERCIO,bn_cab_xoka_gd_zs,Current account balance (% of GDP) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7621
+10_COMERCIO,bx_klt_dinv_cd_wd,"Foreign direct investment, net inflows (BoP, current US$) — unidad: BoP, current US$; tipo: dato_oficial_compilado",numérico,,,9527
+10_COMERCIO,bx_klt_dinv_wd_gd_zs,"Foreign direct investment, net inflows (% of GDP) — unidad: % of GDP; tipo: dato_oficial_compilado",numérico,,,9215
+10_COMERCIO,dt_dod_dect_cd,"External debt stocks, total (DOD, current US$) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,5785
+10_COMERCIO,dt_dod_dect_gn_zs,External debt stocks (% of GNI) — unidad: % of GNI; tipo: dato_oficial_compilado,numérico,,,5537
+10_COMERCIO,dt_tds_dect_ex_zs,"Total debt service (% of exports of goods, services and primary income) — unidad: % of exports of goods, services and primary income; tipo: dato_oficial_compilado",numérico,,,4784
+10_COMERCIO,tm_tax_mrch_wm_ar_zs,"Tariff rate, applied, weighted mean, all products (%) — unidad: %; tipo: dato_oficial_compilado",numérico,,,3771
+10_COMERCIO,tx_val_fuel_zs_un,Fuel exports (% of merchandise exports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7497
+10_COMERCIO,tx_val_manf_zs_un,Manufactures exports (% of merchandise exports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7909
+10_COMERCIO,tx_val_food_zs_un,Food exports (% of merchandise exports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7937
+10_COMERCIO,tx_val_mmtl_zs_un,Ores and metals exports (% of merchandise exports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7786
+10_COMERCIO,tx_val_agri_zs_un,Agricultural raw materials exports (% of merchandise exports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7882
+10_COMERCIO,tm_val_fuel_zs_un,Fuel imports (% of merchandise imports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7959
+10_COMERCIO,tm_val_food_zs_un,Food imports (% of merchandise imports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7969
+10_COMERCIO,tm_val_manf_zs_un,Manufactures imports (% of merchandise imports) — unidad: %; tipo: dato_oficial_compilado,numérico,,,7969
+10_COMERCIO,bx_trf_pwkr_dt_gd_zs,"Personal remittances, received (% of GDP) — unidad: % of GDP; tipo: dato_oficial_compilado",numérico,,,7014
+10_COMERCIO,dt_oda_odat_gn_zs,Net ODA received (% of GNI) — unidad: % of GNI; tipo: dato_oficial_compilado,numérico,,,7855
+11_RECURSOS_ENERGIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,13484
+11_RECURSOS_ENERGIA,year,Año calendario,numérico,si,,13484
+11_RECURSOS_ENERGIA,eg_imp_cons_zs,"Energy imports, net (% of energy use) — unidad: % (share) of energy use; tipo: dato_oficial_compilado",numérico,,,4399
+11_RECURSOS_ENERGIA,eg_use_pcap_kg_oe,Energy use (kg of oil equivalent per capita) — unidad: kg of oil equivalent per capita; tipo: dato_oficial_compilado,numérico,,,5196
+11_RECURSOS_ENERGIA,eg_use_elec_kh_pc,Electric power consumption (kWh per capita) — unidad: kilowatt-hour (kWh) per capita; tipo: dato_oficial_compilado,numérico,,,5057
+11_RECURSOS_ENERGIA,ny_gdp_totl_rt_zs,Total natural resources rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,9164
+11_RECURSOS_ENERGIA,ny_gdp_petr_rt_zs,Oil rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,8357
+11_RECURSOS_ENERGIA,ny_gdp_ngas_rt_zs,Natural gas rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,8352
+11_RECURSOS_ENERGIA,ny_gdp_coal_rt_zs,Coal rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,8282
+11_RECURSOS_ENERGIA,ny_gdp_minr_rt_zs,Mineral rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,9196
+11_RECURSOS_ENERGIA,ny_gdp_frst_rt_zs,Forest rents (% of GDP) — unidad: % (share) of GDP; tipo: dato_oficial_compilado,numérico,,,9196
+11_RECURSOS_ENERGIA,eg_elc_rnew_zs,Renewable electricity output (% of total electricity output) — unidad: % (share) of electricity output; tipo: dato_oficial_compilado,numérico,,,5753
+11_RECURSOS_ENERGIA,eg_fec_rnew_zs,Renewable energy consumption (% of total final energy consumption) — unidad: % (share) of final energy consumption; tipo: dato_oficial_compilado,numérico,,,6680
+11_RECURSOS_ENERGIA,eg_elc_nucl_zs,Electricity production from nuclear sources (% of total) — unidad: % (share) of total electricity production; tipo: dato_oficial_compilado,numérico,,,5962
+11_RECURSOS_ENERGIA,eg_elc_hyro_zs,Electricity production from hydroelectric sources (% of total) — unidad: % (share) of total electricity production; tipo: dato_oficial_compilado,numérico,,,6223
+11_RECURSOS_ENERGIA,eg_elc_ngas_zs,Electricity production from natural gas sources (% of total) — unidad: % (share) of total electricity production; tipo: dato_oficial_compilado,numérico,,,6137
+11_RECURSOS_ENERGIA,eg_elc_coal_zs,Electricity production from coal sources (% of total) — unidad: % (share) of total electricity production; tipo: dato_oficial_compilado,numérico,,,6093
+11_RECURSOS_ENERGIA,eg_elc_petr_zs,Electricity production from oil sources (% of total) — unidad: % (share) of total electricity production; tipo: dato_oficial_compilado,numérico,,,6260
+11_RECURSOS_ENERGIA,ag_lnd_totl_k2,Land area (sq. km) — unidad: square kilometers; tipo: dato_oficial_compilado,numérico,,,12223
+11_RECURSOS_ENERGIA,ag_srf_totl_k2,Surface area (sq. km) — unidad: square kilometers; tipo: dato_oficial_compilado,numérico,,,13308
+11_RECURSOS_ENERGIA,ag_lnd_agri_zs,Agricultural land (% of land area) — unidad: % (share) of land area; tipo: dato_oficial_compilado,numérico,,,11995
+11_RECURSOS_ENERGIA,ag_lnd_arbl_zs,Arable land (% of land area) — unidad: % (share) of land area; tipo: dato_oficial_compilado,numérico,,,11745
+11_RECURSOS_ENERGIA,ag_lnd_frst_zs,Forest area (% of land area) — unidad: % (share) of land area; tipo: dato_oficial_compilado,numérico,,,6993
+11_RECURSOS_ENERGIA,er_h2o_intr_pc,Renewable internal freshwater resources per capita (cubic meters) — unidad: cubic meters; tipo: dato_oficial_compilado,numérico,,,10376
+11_RECURSOS_ENERGIA,er_h2o_fwtl_zs,"Annual freshwater withdrawals, total (% of internal resources) — unidad: % (share) of internal resources; tipo: dato_oficial_compilado",numérico,,,6137
+11_RECURSOS_ENERGIA,er_h2o_fwst_zs,Level of water stress: freshwater withdrawal as a proportion of available freshwater resources — unidad: % (ratio); tipo: dato_oficial_compilado,numérico,,,6167
+11_RECURSOS_ENERGIA,ag_prd_food_xd,Food production index (2014-2016 = 100) — unidad: index (2014-2016=100); tipo: indice_derivado,numérico,,,10949
+11_RECURSOS_ENERGIA,ag_yld_crel_kg,Cereal yield (kg per hectare) — unidad: kg per hectare; tipo: dato_oficial_compilado,numérico,,,10280
+12_INFRAESTRUCTURA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,9381
+12_INFRAESTRUCTURA,year,Año calendario,numérico,si,,9381
+12_INFRAESTRUCTURA,is_air_psgr,"Air transport, passengers carried — unidad: Number; tipo: dato_oficial_compilado",numérico,,,7929
+12_INFRAESTRUCTURA,is_air_dprt,"Air transport, registered carrier departures worldwide — unidad: Count; tipo: dato_oficial_compilado",numérico,,,7926
+12_INFRAESTRUCTURA,is_air_good_mt_k1,"Air transport, freight (million ton-km) — unidad: tonnes-km; tipo: dato_oficial_compilado",numérico,,,7513
+12_INFRAESTRUCTURA,is_rrs_totl_km,Rail lines (total route-km) — unidad: Kilometers; tipo: dato_oficial_compilado,numérico,,,2139
+12_INFRAESTRUCTURA,is_rrs_good_mt_k6,"Railways, goods transported (million ton-km) — unidad: Ton-km; tipo: dato_oficial_compilado",numérico,,,2165
+12_INFRAESTRUCTURA,is_shp_good_tu,Container port traffic (TEU: 20 foot equivalent units) — unidad: TEU: 20 foot equivalent units; tipo: dato_oficial_compilado,numérico,,,2717
+12_INFRAESTRUCTURA,it_net_bbnd_p2,Fixed broadband subscriptions (per 100 people) — unidad: number of subscriptions*100/population; tipo: dato_oficial_compilado,numérico,,,4296
+12_INFRAESTRUCTURA,lp_lpi_ovrl_xq,Logistics performance index: Overall (1=low to 5=high) — unidad: 1=low to 5=high; tipo: indice_derivado,numérico,,,1071
+12_INFRAESTRUCTURA,eg_elc_loss_zs,Electric power transmission and distribution losses (% of output) — unidad: % (share) of total electricity output; tipo: dato_oficial_compilado,numérico,,,5030
+13_DEFENSA_PRESUPUESTOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,8832
+13_DEFENSA_PRESUPUESTOS,year,Año calendario,numérico,si,,8832
+13_DEFENSA_PRESUPUESTOS,ms_mil_xpnd_cd,Military expenditure (current USD) — unidad: USD current; tipo: indice_volumen_TIV,numérico,,,8248
+13_DEFENSA_PRESUPUESTOS,ms_mil_xpnd_cn,Military expenditure (current LCU) — unidad: Domestic currency; tipo: indice_volumen_TIV,numérico,,,8248
+13_DEFENSA_PRESUPUESTOS,ms_mil_xpnd_gd_zs,Military expenditure (% of GDP) — unidad: % of GDP; tipo: indice_volumen_TIV,numérico,,,7909
+13_DEFENSA_PRESUPUESTOS,ms_mil_xpnd_zs,Military expenditure (% of general government expenditure) — unidad: Percentage; tipo: indice_volumen_TIV,numérico,,,4665
+13_DEFENSA_PRESUPUESTOS,ms_mil_totl_p1,"Armed forces personnel, total — unidad: número (recuento); tipo: dato_oficial_compilado",numérico,,,5355
+13_DEFENSA_PRESUPUESTOS,ms_mil_totl_tf_zs,Armed forces personnel (% of total labor force) — unidad: % of total labor force; tipo: dato_oficial_compilado,numérico,,,5025
+15c_COMERCIO_ARMAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,7067
+15c_COMERCIO_ARMAS,year,Año calendario,numérico,si,,7067
+15c_COMERCIO_ARMAS,ms_mil_xprt_kd,Arms exports (SIPRI trend indicator values) — unidad: SIPRI trend-indicator values (TIVs); tipo: indice_volumen_TIV,numérico,,,2383
+15c_COMERCIO_ARMAS,ms_mil_mprt_kd,Arms imports (SIPRI trend indicator values) — unidad: SIPRI trend-indicator values (TIVs); tipo: indice_volumen_TIV,numérico,,,6873
+27_TECNOLOGIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,7706
+27_TECNOLOGIA,year,Año calendario,numérico,si,,7706
+27_TECNOLOGIA,gb_xpd_rsdv_gd_zs,Research and development expenditure (% of GDP) — unidad: % of GDP; tipo: dato_oficial_compilado,numérico,,,2458
+27_TECNOLOGIA,sp_pop_scie_rd_p6,Researchers in R&D (per million people) — unidad: Per million people; tipo: dato_oficial_compilado,numérico,,,1971
+27_TECNOLOGIA,ip_pat_resd,"Patent applications, residents — unidad: número (recuento); tipo: dato_oficial_compilado",numérico,,,3856
+27_TECNOLOGIA,ip_pat_nres,"Patent applications, nonresidents — unidad: número (recuento); tipo: dato_oficial_compilado",numérico,,,4181
+27_TECNOLOGIA,ip_jrn_artc_sc,Scientific and technical journal articles — unidad: Fractional count; tipo: dato_oficial_compilado,numérico,,,5292
+27_TECNOLOGIA,tx_val_tech_cd,High-technology exports (current US$) — unidad: USD current; tipo: dato_oficial_compilado,numérico,,,2683
+27_TECNOLOGIA,tx_val_tech_mf_zs,High-technology exports (% of manufactured exports) — unidad: % of GDP; tipo: dato_oficial_compilado,numérico,,,2665
+27_TECNOLOGIA,bm_gsr_royl_cd,"Charges for the use of intellectual property, payments (BoP, current US$) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,5082
+27_TECNOLOGIA,bx_gsr_royl_cd,"Charges for the use of intellectual property, receipts (BoP, current US$) — unidad: Current US$; tipo: dato_oficial_compilado",numérico,,,3861
+28_SEGURIDAD_INTERIOR,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,5214
+28_SEGURIDAD_INTERIOR,year,Año calendario,numérico,si,,5214
+28_SEGURIDAD_INTERIOR,vc_ihr_psrc_p5,"Intentional homicides (per 100,000 people) — unidad: Rate per 100,000 population; tipo: dato_oficial_compilado",numérico,,,4015
+28_SEGURIDAD_INTERIOR,vc_btl_deth,Battle-related deaths (number of people) — unidad: Count; tipo: dato_oficial_compilado,numérico,,,1212
+28_SEGURIDAD_INTERIOR,vc_idp_nwcv,"Internally displaced persons, new displacement associated with conflict and violence (number of cases) — unidad: number of cases; tipo: dato_oficial_compilado",numérico,,,513
+28_SEGURIDAD_INTERIOR,vc_idp_nwds,"Internally displaced persons, new displacement associated with disasters (number of cases) — unidad: number of cases; tipo: dato_oficial_compilado",numérico,,,1767
+31_MEDIOAMBIENTE,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,11438
+31_MEDIOAMBIENTE,year,Año calendario,numérico,si,,11438
+31_MEDIOAMBIENTE,en_ghg_co2_pc_ce_ar5,Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita) — unidad: t CO2e/capita; tipo: dato_oficial_compilado,numérico,,,11055
+31_MEDIOAMBIENTE,en_ghg_all_mt_ce_ar5,Total greenhouse gas emissions excluding LULUCF (Mt CO2e) — unidad: Mt CO2eq; tipo: dato_oficial_compilado,numérico,,,11055
+31_MEDIOAMBIENTE,en_atm_pm25_mc_m3,"PM2.5 air pollution, mean annual exposure (micrograms per cubic meter) — unidad: microgram per cubic meter; tipo: dato_oficial_compilado",numérico,,,6138
+31_MEDIOAMBIENTE,en_clc_mdat_zs,"Droughts, floods, extreme temperatures (% of population, average 1990-2009) — unidad: % (share) of population, average 1990-2009; tipo: dato_oficial_compilado",numérico,,,167
+31_MEDIOAMBIENTE,ag_lnd_frst_k2,Forest area (sq. km) — unidad: square kilometers; tipo: dato_oficial_compilado,numérico,,,6993
+31_MEDIOAMBIENTE,en_pop_el5m_zs,Population living in areas where elevation is below 5 meters (% of total population) — unidad: % (share) of population; tipo: dato_oficial_compilado,numérico,,,639
+03_ESTADOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,,286
+03_ESTADOS,name_es,,texto/fecha,,,286
+03_ESTADOS,name_official_es,,texto/fecha,,,250
+03_ESTADOS,name_en,,texto/fecha,,,286
+03_ESTADOS,entity_type,,texto/fecha,,,286
+03_ESTADOS,entity_note,,texto/fecha,,,20
+03_ESTADOS,iso_alpha2,,texto/fecha,,,250
+03_ESTADOS,iso_alpha3,,texto/fecha,,,249
+03_ESTADOS,iso_numeric,,texto/fecha,,,249
+03_ESTADOS,cow_codes,,texto/fecha,,,212
+03_ESTADOS,gw_codes,,texto/fecha,,,197
+03_ESTADOS,vdem_id,,texto/fecha,,,202
+03_ESTADOS,vdem_country_num,,numérico,,,202
+03_ESTADOS,un_member,,texto/fecha,,,250
+03_ESTADOS,cow_first,,texto/fecha,,,212
+03_ESTADOS,cow_last,,texto/fecha,,,212
+03_ESTADOS,gw_first,,texto/fecha,,,197
+03_ESTADOS,gw_last,,texto/fecha,,,197
+03_ESTADOS,sovereignty_start_curated,,texto/fecha,,,8
+03_ESTADOS,sovereignty_end_curated,,texto/fecha,,,7
+03_ESTADOS,colonial_ruler,,texto/fecha,,,168
+03_ESTADOS,independence_from,,texto/fecha,,,168
+03_ESTADOS,independence_date_icow,,texto/fecha,,,212
+03_ESTADOS,independence_violent,,numérico,,,212
+03_ESTADOS,independence_type_icow,,numérico,,,212
+03_ESTADOS,capital,,texto/fecha,,,245
+03_ESTADOS,lat,,numérico,,,250
+03_ESTADOS,lon,,numérico,,,250
+03_ESTADOS,region,,texto/fecha,,,276
+03_ESTADOS,subregion,,texto/fecha,,,245
+03_ESTADOS,region_vdem6,,texto/fecha,,,202
+03_ESTADOS,area_km2,,numérico,,,250
+03_ESTADOS,landlocked,,texto/fecha,,,250
+03_ESTADOS,borders,,texto/fecha,,,165
+03_ESTADOS,n_land_borders,,numérico,,,250
+03_ESTADOS,ruggedness_index,,numérico,,,192
+03_ESTADOS,pct_mountainous,,numérico,,,191
+03_ESTADOS,currencies,,texto/fecha,,,246
+03_ESTADOS,languages,,texto/fecha,,,249
+03_ESTADOS,cow_major_power_periods,,texto/fecha,,,9
+03_ESTADOS,maoz_regional_power,,texto/fecha,,,15
+03_ESTADOS,vdem_first_year,,numérico,,,202
+03_ESTADOS,vdem_last_year,,numérico,,,202
+03_ESTADOS,geo_source,,texto/fecha,,,286
+03_ESTADOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,286
+03b_IDS_EXTERNOS,record_id,Identificador único de registro,texto/fecha,si,,910
+03b_IDS_EXTERNOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,910
+03b_IDS_EXTERNOS,scheme,,texto/fecha,,,910
+03b_IDS_EXTERNOS,code,,texto/fecha,,,910
+03b_IDS_EXTERNOS,code_label,,texto/fecha,,,910
+03b_IDS_EXTERNOS,abbrev,,texto/fecha,,,910
+03b_IDS_EXTERNOS,valid_from,,texto/fecha,,,661
+03b_IDS_EXTERNOS,valid_to,,texto/fecha,,,661
+03b_IDS_EXTERNOS,source_id,,texto/fecha,,37_FUENTES.source_id,910
+03b_IDS_EXTERNOS,note,,texto/fecha,,,459
+04_CAMBIOS_TERRITORIALES,change_id,,texto/fecha,si,,304
+04_CAMBIOS_TERRITORIALES,date_start,,texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,date_end,,texto/fecha,,,93
+04_CAMBIOS_TERRITORIALES,territory,,texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,from_ids,,texto/fecha,,,59
+04_CAMBIOS_TERRITORIALES,to_ids,,texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,change_type,,texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,legal_status_note,,texto/fecha,,,303
+04_CAMBIOS_TERRITORIALES,description,,texto/fecha,,,290
+04_CAMBIOS_TERRITORIALES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,304
+04_CAMBIOS_TERRITORIALES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,304
+04b_INDEPENDENCIAS,record_id,Identificador único de registro,texto/fecha,si,,217
+04b_INDEPENDENCIAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,217
+04b_INDEPENDENCIAS,name,,texto/fecha,,,217
+04b_INDEPENDENCIAS,ColRuler_id,,texto/fecha,,,171
+04b_INDEPENDENCIAS,IndFrom_id,,texto/fecha,,,173
+04b_INDEPENDENCIAS,independence_date,,texto/fecha,,,217
+04b_INDEPENDENCIAS,independence_violent_code,,numérico,,,217
+04b_INDEPENDENCIAS,independence_type_code,,numérico,,,217
+04b_INDEPENDENCIAS,SecFrom_id,,texto/fecha,,,33
+04b_INDEPENDENCIAS,secession_date,,texto/fecha,,,38
+04b_INDEPENDENCIAS,Into_id,,texto/fecha,,,19
+04b_INDEPENDENCIAS,absorbed_date,,texto/fecha,,,19
+04b_INDEPENDENCIAS,notes,,texto/fecha,,,159
+04b_INDEPENDENCIAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,217
+04c_DISPUTAS_TERRITORIALES,dispute_id,,texto/fecha,si,,25
+04c_DISPUTAS_TERRITORIALES,name,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,claimant_ids,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,controller,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,dispute_type,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,since,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,status,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,strategic_value,,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,notes,,texto/fecha,,,13
+04c_DISPUTAS_TERRITORIALES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,25
+04c_DISPUTAS_TERRITORIALES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,25
+06b_FRACCIONALIZACION,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,11316
+06b_FRACCIONALIZACION,year,Año calendario,numérico,si,,11316
+06b_FRACCIONALIZACION,creg_ethnic_frac,creg_ethnic_frac — unidad: índice 0-1; tipo: indice_derivado,numérico,,,8643
+06b_FRACCIONALIZACION,creg_ethnic_polar,creg_ethnic_polar — unidad: índice 0-1; tipo: indice_derivado,numérico,,,8643
+06b_FRACCIONALIZACION,creg_relig_frac,creg_relig_frac — unidad: índice 0-1; tipo: indice_derivado,numérico,,,8790
+06b_FRACCIONALIZACION,creg_relig_polar,creg_relig_polar — unidad: índice 0-1; tipo: indice_derivado,numérico,,,8790
+06b_FRACCIONALIZACION,hief_ethnic_frac,hief_ethnic_frac — unidad: índice 0-1; tipo: indice_derivado,numérico,,,8783
+07b_PIB_POBLACION_HIST,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,26720
+07b_PIB_POBLACION_HIST,year,Año calendario,numérico,si,,26720
+07b_PIB_POBLACION_HIST,e_gdp,GDP — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: estimacion_modelo_latente (Fariss et al.),numérico,,,22191
+07b_PIB_POBLACION_HIST,e_gdppc,GDP per capita — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: estimacion_modelo_latente (Fariss et al.),numérico,,,22191
+07b_PIB_POBLACION_HIST,e_pop,Population — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: estimacion_modelo_latente (Fariss et al.),numérico,,,22191
+07b_PIB_POBLACION_HIST,e_miinflat,Inflation — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12139
+07b_PIB_POBLACION_HIST,e_cow_exports,Exports — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12896
+07b_PIB_POBLACION_HIST,e_cow_imports,Imports — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12380
+07b_PIB_POBLACION_HIST,e_total_oil_income_pc,Petroleum production per capita — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,14531
+07b_PIB_POBLACION_HIST,e_total_fuel_income_pc,"Petroleum, coal, and natural gas production per capita — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada",numérico,,,10609
+07b_PIB_POBLACION_HIST,e_total_resources_income_pc,"Petroleum, coal, natural gas, and metals production per capita — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada",numérico,,,10566
+07b_PIB_POBLACION_HIST,e_miurbani,Urbanization — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,17078
+07b_PIB_POBLACION_HIST,e_pelifeex,Life expectancy — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,25492
+07b_PIB_POBLACION_HIST,e_peaveduc,Education 15+ — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12996
+07b_PIB_POBLACION_HIST,e_radio_n,Radios — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,10293
+10b_COMERCIO_HIST_COW,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,14375
+10b_COMERCIO_HIST_COW,year,Año calendario,numérico,si,,14375
+10b_COMERCIO_HIST_COW,cow_imports_musd_current,cow_imports_musd_current — unidad: millones de USD corrientes; tipo: dato_compilado_fuentes_historicas,numérico,,,12858
+10b_COMERCIO_HIST_COW,cow_exports_musd_current,cow_exports_musd_current — unidad: millones de USD corrientes; tipo: dato_compilado_fuentes_historicas,numérico,,,13585
+11b_ENERGIA_OWID,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,17145
+11b_ENERGIA_OWID,year,Año calendario,numérico,si,,17145
+11b_ENERGIA_OWID,owid_primary_energy_consumption,primary_energy_consumption — unidad: TWh; tipo: dato_compilado,numérico,,,10311
+11b_ENERGIA_OWID,owid_energy_per_capita,energy_per_capita — unidad: kWh por persona; tipo: dato_compilado,numérico,,,10267
+11b_ENERGIA_OWID,owid_oil_production,oil_production — unidad: TWh; tipo: dato_compilado,numérico,,,13751
+11b_ENERGIA_OWID,owid_gas_production,gas_production — unidad: TWh; tipo: dato_compilado,numérico,,,13205
+11b_ENERGIA_OWID,owid_coal_production,coal_production — unidad: TWh; tipo: dato_compilado,numérico,,,12993
+11b_ENERGIA_OWID,owid_oil_consumption,oil_consumption — unidad: TWh; tipo: dato_compilado,numérico,,,4465
+11b_ENERGIA_OWID,owid_gas_consumption,gas_consumption — unidad: TWh; tipo: dato_compilado,numérico,,,4465
+11b_ENERGIA_OWID,owid_coal_consumption,coal_consumption — unidad: TWh; tipo: dato_compilado,numérico,,,4465
+11b_ENERGIA_OWID,owid_electricity_generation,electricity_generation — unidad: TWh; tipo: dato_compilado,numérico,,,6577
+11b_ENERGIA_OWID,owid_electricity_demand,electricity_demand — unidad: TWh; tipo: dato_compilado,numérico,,,5717
+11b_ENERGIA_OWID,owid_net_elec_imports,net_elec_imports — unidad: TWh; tipo: dato_compilado,numérico,,,5717
+11b_ENERGIA_OWID,owid_nuclear_electricity,nuclear_electricity — unidad: TWh; tipo: dato_compilado,numérico,,,8321
+11b_ENERGIA_OWID,owid_hydro_electricity,hydro_electricity — unidad: TWh; tipo: dato_compilado,numérico,,,7802
+11b_ENERGIA_OWID,owid_solar_electricity,solar_electricity — unidad: TWh; tipo: dato_compilado,numérico,,,7879
+11b_ENERGIA_OWID,owid_wind_electricity,wind_electricity — unidad: TWh; tipo: dato_compilado,numérico,,,7691
+11b_ENERGIA_OWID,owid_fossil_share_elec,fossil_share_elec — unidad: % de la generación eléctrica; tipo: dato_compilado,numérico,,,6066
+11b_ENERGIA_OWID,owid_renewables_share_elec,renewables_share_elec — unidad: % de la generación eléctrica; tipo: dato_compilado,numérico,,,6551
+11b_ENERGIA_OWID,owid_low_carbon_share_elec,low_carbon_share_elec — unidad: % de la generación eléctrica; tipo: dato_compilado,numérico,,,6551
+11b_ENERGIA_OWID,owid_fossil_share_energy,fossil_share_energy — unidad: % de la energía primaria; tipo: dato_compilado,numérico,,,4459
+11b_ENERGIA_OWID,owid_carbon_intensity_elec,carbon_intensity_elec — unidad: gCO2 por kWh; tipo: dato_compilado,numérico,,,5691
+11c_RESERVAS_ENERGETICAS,reserve_id,,texto/fecha,si,,20
+11c_RESERVAS_ENERGETICAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,resource,,texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,value,Valor numérico o categórico,numérico,,,20
+11c_RESERVAS_ENERGETICAS,unit,,texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,ref_date,,texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,definition,,texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,20
+11c_RESERVAS_ENERGETICAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,20
+11d_MINERALES_CRITICOS,mineral_id,,texto/fecha,si,,15
+11d_MINERALES_CRITICOS,mineral,,texto/fecha,,,15
+11d_MINERALES_CRITICOS,stage,,texto/fecha,,,15
+11d_MINERALES_CRITICOS,dominant_country_ids,,texto/fecha,,,15
+11d_MINERALES_CRITICOS,share_range_text,,texto/fecha,,,15
+11d_MINERALES_CRITICOS,ref_period,,texto/fecha,,,15
+11d_MINERALES_CRITICOS,strategic_use,,texto/fecha,,,14
+11d_MINERALES_CRITICOS,vulnerability_note,,texto/fecha,,,13
+11d_MINERALES_CRITICOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,15
+11d_MINERALES_CRITICOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,15
+11d_MINERALES_CRITICOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,15
+12b_NODOS_ESTRATEGICOS,node_id,,texto/fecha,si,,32
+12b_NODOS_ESTRATEGICOS,name,,texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,node_type,,texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,country_ids,,texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,lat,,numérico,,,32
+12b_NODOS_ESTRATEGICOS,lon,,numérico,,,32
+12b_NODOS_ESTRATEGICOS,strategic_function,,texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,metric,,texto/fecha,,,4
+12b_NODOS_ESTRATEGICOS,metric_value,,numérico,,,4
+12b_NODOS_ESTRATEGICOS,metric_unit,,texto/fecha,,,4
+12b_NODOS_ESTRATEGICOS,metric_year,,numérico,,,4
+12b_NODOS_ESTRATEGICOS,metric_source,,texto/fecha,,,7
+12b_NODOS_ESTRATEGICOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,notes,,texto/fecha,,,10
+12b_NODOS_ESTRATEGICOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,32
+12b_NODOS_ESTRATEGICOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,32
+13b_CAPACIDADES_HIST_COW,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,17119
+13b_CAPACIDADES_HIST_COW,year,Año calendario,numérico,si,,17119
+13b_CAPACIDADES_HIST_COW,cow_milex_thousand_usd_current,cow_milex_thousand_usd_current — unidad: miles de USD corrientes; tipo: dato_compilado_fuentes_historicas,numérico,,,14760
+13b_CAPACIDADES_HIST_COW,cow_milper_thousands,cow_milper_thousands — unidad: miles de personas; tipo: dato_compilado_fuentes_historicas,numérico,,,16663
+13b_CAPACIDADES_HIST_COW,cow_iron_steel_thousand_tons,cow_iron_steel_thousand_tons — unidad: miles de toneladas; tipo: dato_compilado_fuentes_historicas,numérico,,,17093
+13b_CAPACIDADES_HIST_COW,cow_energy_thousand_coal_ton_eq,cow_energy_thousand_coal_ton_eq — unidad: miles de t equivalentes de carbón; tipo: dato_compilado_fuentes_historicas,numérico,,,16672
+13b_CAPACIDADES_HIST_COW,cow_total_pop_thousands,cow_total_pop_thousands — unidad: miles de personas; tipo: dato_compilado_fuentes_historicas,numérico,,,17119
+13b_CAPACIDADES_HIST_COW,cow_urban_pop_thousands,cow_urban_pop_thousands — unidad: miles de personas (ciudades >100.000); tipo: dato_compilado_fuentes_historicas,numérico,,,17051
+13b_CAPACIDADES_HIST_COW,cow_cinc_share,cow_cinc_share — unidad: proporción del total del sistema (0-1); tipo: indice_derivado,numérico,,,17119
+13b_CAPACIDADES_HIST_COW,terr_threat_latent,terr_threat_latent — unidad: escala latente; tipo: estimacion_modelo_latente,numérico,,,14779
+13b_CAPACIDADES_HIST_COW,terr_threat_lwr95,terr_threat_lwr95 — unidad: escala latente; tipo: estimacion_modelo_latente,numérico,,,14779
+13b_CAPACIDADES_HIST_COW,terr_threat_upr95,terr_threat_upr95 — unidad: escala latente; tipo: estimacion_modelo_latente,numérico,,,14779
+13b_CAPACIDADES_HIST_COW,igo_full_memberships,igo_full_memberships — unidad: número de OIG; tipo: dato_compilado,numérico,,,15557
+13c_SERVICIO_MILITAR,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,46
+13c_SERVICIO_MILITAR,conscription_status,,texto/fecha,,,46
+13c_SERVICIO_MILITAR,since,,texto/fecha,,,18
+13c_SERVICIO_MILITAR,notes,,texto/fecha,,,31
+13c_SERVICIO_MILITAR,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,46
+13c_SERVICIO_MILITAR,ref_date,,texto/fecha,,,46
+13c_SERVICIO_MILITAR,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,46
+13c_SERVICIO_MILITAR,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,46
+14_DEFENSA_INVENTARIOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,21
+14_DEFENSA_INVENTARIOS,nuclear_status,,texto/fecha,,,21
+14_DEFENSA_INVENTARIOS,first_test_date,,texto/fecha,,,8
+14_DEFENSA_INVENTARIOS,first_test_name,,texto/fecha,,,10
+14_DEFENSA_INVENTARIOS,warheads_total_inventory_2024_01,,numérico,,,21
+14_DEFENSA_INVENTARIOS,warheads_total_inventory_2025_01,,numérico,,,21
+14_DEFENSA_INVENTARIOS,npt_status,,texto/fecha,,,21
+14_DEFENSA_INVENTARIOS,doctrine_note,,texto/fecha,,,21
+14_DEFENSA_INVENTARIOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,21
+14_DEFENSA_INVENTARIOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,21
+14_DEFENSA_INVENTARIOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,21
+14b_INVENTARIOS_ESTRATEGICOS,inventory_id,,texto/fecha,si,,22
+14b_INVENTARIOS_ESTRATEGICOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,22
+14b_INVENTARIOS_ESTRATEGICOS,category,,texto/fecha,,,22
+14b_INVENTARIOS_ESTRATEGICOS,item_definition,,texto/fecha,,,22
+14b_INVENTARIOS_ESTRATEGICOS,value_low,,numérico,,,20
+14b_INVENTARIOS_ESTRATEGICOS,value_high,,numérico,,,20
+14b_INVENTARIOS_ESTRATEGICOS,ref_date,,texto/fecha,,,22
+14b_INVENTARIOS_ESTRATEGICOS,status_note,,texto/fecha,,,14
+14b_INVENTARIOS_ESTRATEGICOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,22
+14b_INVENTARIOS_ESTRATEGICOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,22
+14b_INVENTARIOS_ESTRATEGICOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,22
+15_DEFENSA_INDUSTRIA,company_id,,texto/fecha,si,,40
+15_DEFENSA_INDUSTRIA,name,,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,ownership,,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,sector,,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,main_products,,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,founded,,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,notes,,texto/fecha,,,8
+15_DEFENSA_INDUSTRIA,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,40
+15_DEFENSA_INDUSTRIA,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,40
+15b_PROGRAMAS_DEFENSA,program_id,,texto/fecha,si,,14
+15b_PROGRAMAS_DEFENSA,country_ids,,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,name,,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,program_type,,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,start,,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,status,,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,description,,texto/fecha,,,12
+15b_PROGRAMAS_DEFENSA,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,14
+15b_PROGRAMAS_DEFENSA,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,14
+16_CONFLICTOS,conflict_id,,texto/fecha,si,,73
+16_CONFLICTOS,name,,texto/fecha,,,73
+16_CONFLICTOS,category,,texto/fecha,,,73
+16_CONFLICTOS,start,,texto/fecha,,,73
+16_CONFLICTOS,end,,texto/fecha,,,65
+16_CONFLICTOS,side_a,,texto/fecha,,,73
+16_CONFLICTOS,side_b,,texto/fecha,,,72
+16_CONFLICTOS,external_support,,texto/fecha,,,32
+16_CONFLICTOS,territory,,texto/fecha,,,73
+16_CONFLICTOS,declared_objectives,,texto/fecha,,,30
+16_CONFLICTOS,structural_causes,,texto/fecha,,,35
+16_CONFLICTOS,trigger,,texto/fecha,,,50
+16_CONFLICTOS,outcome,,texto/fecha,,,73
+16_CONFLICTOS,territorial_change_ids,,texto/fecha,,,20
+16_CONFLICTOS,regime_change,,texto/fecha,,,73
+16_CONFLICTOS,deaths_low,,numérico,,,73
+16_CONFLICTOS,deaths_high,,numérico,,,73
+16_CONFLICTOS,deaths_basis,,texto/fecha,,,46
+16_CONFLICTOS,displaced_note,,texto/fecha,,,28
+16_CONFLICTOS,long_term_consequences,,texto/fecha,,,41
+16_CONFLICTOS,historiographic_debate,,texto/fecha,,,19
+16_CONFLICTOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,73
+16_CONFLICTOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,73
+16_CONFLICTOS,participant_ids,,texto/fecha,,,67
+16_CONFLICTOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,73
+16b_UCDP_CONFLICTOS,conflict_id,,texto/fecha,si,,303
+16b_UCDP_CONFLICTOS,old_conflict_id,,texto/fecha,,,224
+16b_UCDP_CONFLICTOS,location,,texto/fecha,,,224
+16b_UCDP_CONFLICTOS,side_a,,texto/fecha,,,224
+16b_UCDP_CONFLICTOS,side_b,,texto/fecha,,,224
+16b_UCDP_CONFLICTOS,territory_name,,texto/fecha,,,136
+16b_UCDP_CONFLICTOS,country_a_id,,texto/fecha,,,301
+16b_UCDP_CONFLICTOS,country_b_id,,texto/fecha,,,52
+16b_UCDP_CONFLICTOS,type_of_conflict,,texto/fecha,,,303
+16b_UCDP_CONFLICTOS,incompatibility,,texto/fecha,,,303
+16b_UCDP_CONFLICTOS,start_date,Fecha de inicio ISO (AAAA[-MM[-DD]]),texto/fecha,,,303
+16b_UCDP_CONFLICTOS,first_year,,numérico,,,303
+16b_UCDP_CONFLICTOS,last_year,,numérico,,,303
+16b_UCDP_CONFLICTOS,active_years,,numérico,,,303
+16b_UCDP_CONFLICTOS,years_war_level,,numérico,,,303
+16b_UCDP_CONFLICTOS,max_intensity,,numérico,,,303
+16b_UCDP_CONFLICTOS,intensity_note,,texto/fecha,,,303
+16b_UCDP_CONFLICTOS,names_source,,texto/fecha,,,303
+16b_UCDP_CONFLICTOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,303
+16c_COW_GUERRAS_INTER,war_id,,texto/fecha,si,,95
+16c_COW_GUERRAS_INTER,cow_warnum,,numérico,,,95
+16c_COW_GUERRAS_INTER,year_start,,numérico,,,95
+16c_COW_GUERRAS_INTER,year_end,,numérico,,,95
+16c_COW_GUERRAS_INTER,side_a_ids,,texto/fecha,,,95
+16c_COW_GUERRAS_INTER,side_b_ids,,texto/fecha,,,95
+16c_COW_GUERRAS_INTER,initiator_ids,,texto/fecha,,,95
+16c_COW_GUERRAS_INTER,winner_ids,,texto/fecha,,,77
+16c_COW_GUERRAS_INTER,battle_deaths_sum,,numérico,,,95
+16c_COW_GUERRAS_INTER,battle_deaths_missing_states,,numérico,,,95
+16c_COW_GUERRAS_INTER,per_state_deaths,,texto/fecha,,,95
+16c_COW_GUERRAS_INTER,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,95
+16c_COW_GUERRAS_INTER,note,,texto/fecha,,,95
+16d_COW_GUERRAS_INTRA,war_id,,texto/fecha,si,,306
+16d_COW_GUERRAS_INTRA,warnum,,numérico,,,306
+16d_COW_GUERRAS_INTRA,war_name,,texto/fecha,,,306
+16d_COW_GUERRAS_INTRA,war_type,,texto/fecha,,,306
+16d_COW_GUERRAS_INTRA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,,306
+16d_COW_GUERRAS_INTRA,year_start,,numérico,,,306
+16d_COW_GUERRAS_INTRA,year_end,,numérico,,,306
+16d_COW_GUERRAS_INTRA,side_a,,texto/fecha,,,306
+16d_COW_GUERRAS_INTRA,side_b,,texto/fecha,,,306
+16d_COW_GUERRAS_INTRA,internationalized,,numérico,,,306
+16d_COW_GUERRAS_INTRA,outcome_code,,numérico,,,306
+16d_COW_GUERRAS_INTRA,side_a_deaths,,numérico,,,185
+16d_COW_GUERRAS_INTRA,side_b_deaths,,numérico,,,169
+16d_COW_GUERRAS_INTRA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,306
+16e_GOLPES_ESTADO,coup_id,,texto/fecha,si,,473
+16e_GOLPES_ESTADO,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,473
+16e_GOLPES_ESTADO,powell_country,,texto/fecha,,,473
+16e_GOLPES_ESTADO,date,,texto/fecha,,,473
+16e_GOLPES_ESTADO,year,Año calendario,texto/fecha,,,473
+16e_GOLPES_ESTADO,outcome,,texto/fecha,,,473
+16e_GOLPES_ESTADO,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,473
+16f_DISPUTAS_MILITARIZADAS,mid_id,,texto/fecha,si,,2174
+16f_DISPUTAS_MILITARIZADAS,dispnum,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,styear,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,stmon,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,side_a_ids,,texto/fecha,,,2174
+16f_DISPUTAS_MILITARIZADAS,side_b_ids,,texto/fecha,,,2174
+16f_DISPUTAS_MILITARIZADAS,originators,,texto/fecha,,,2174
+16f_DISPUTAS_MILITARIZADAS,hostlev,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,hiact,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,fatality,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,outcome,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,settle,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,mindur,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,maxdur,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,recip,,numérico,,,2174
+16f_DISPUTAS_MILITARIZADAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,2174
+17_CONFLICTOS_EVENTOS,event_id,,texto/fecha,si,,50
+17_CONFLICTOS_EVENTOS,conflict_id,,texto/fecha,,16_CONFLICTOS.conflict_id,50
+17_CONFLICTOS_EVENTOS,date,,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,event_type,,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,location,,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,actors,,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,description,,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,significance,,texto/fecha,,,22
+17_CONFLICTOS_EVENTOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,50
+17_CONFLICTOS_EVENTOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,50
+17b_UCDP_CONFLICTO_ANIO,record_id,Identificador único de registro,texto/fecha,si,,5652
+17b_UCDP_CONFLICTO_ANIO,conflict_id,,texto/fecha,,16b_UCDP_CONFLICTOS.conflict_id,5652
+17b_UCDP_CONFLICTO_ANIO,year,Año calendario,numérico,,,5652
+17b_UCDP_CONFLICTO_ANIO,country_a_id,,texto/fecha,,,5649
+17b_UCDP_CONFLICTO_ANIO,country_b_id,,texto/fecha,,,355
+17b_UCDP_CONFLICTO_ANIO,type_of_conflict,,texto/fecha,,,5652
+17b_UCDP_CONFLICTO_ANIO,incompatibility,,texto/fecha,,,5652
+17b_UCDP_CONFLICTO_ANIO,intensity_level,,numérico,,,5652
+17b_UCDP_CONFLICTO_ANIO,ep_end,,numérico,,,5652
+17b_UCDP_CONFLICTO_ANIO,ep_end_date,,texto/fecha,,,851
+18_INTELIGENCIA,agency_id,,texto/fecha,si,,52
+18_INTELIGENCIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,52
+18_INTELIGENCIA,name,,texto/fecha,,,52
+18_INTELIGENCIA,acronym,,texto/fecha,,,52
+18_INTELIGENCIA,agency_type,,texto/fecha,,,52
+18_INTELIGENCIA,founded,,texto/fecha,,,52
+18_INTELIGENCIA,dissolved,,texto/fecha,,,2
+18_INTELIGENCIA,predecessor,,texto/fecha,,,34
+18_INTELIGENCIA,parent_body,,texto/fecha,,,52
+18_INTELIGENCIA,competences,,texto/fecha,,,48
+18_INTELIGENCIA,oversight,,texto/fecha,,,47
+18_INTELIGENCIA,official_url,,texto/fecha,,,32
+18_INTELIGENCIA,notes,,texto/fecha,,,11
+18_INTELIGENCIA,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,52
+18_INTELIGENCIA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,52
+18_INTELIGENCIA,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,case_id,,texto/fecha,si,,52
+18b_INTELIGENCIA_CASOS,name,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,date_start,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,date_end,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,case_type,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,perpetrator,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,target,,texto/fecha,,,51
+18b_INTELIGENCIA_CASOS,agencies,,texto/fecha,,,51
+18b_INTELIGENCIA_CASOS,description,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,outcome,,texto/fecha,,,48
+18b_INTELIGENCIA_CASOS,certainty_type,,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,52
+18b_INTELIGENCIA_CASOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,52
+19_INSTITUCIONES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,69
+19_INSTITUCIONES,state_form,,texto/fecha,,,69
+19_INSTITUCIONES,government_form,,texto/fecha,,,69
+19_INSTITUCIONES,constitution_year,,texto/fecha,,,69
+19_INSTITUCIONES,last_major_reform,,texto/fecha,,,45
+19_INSTITUCIONES,legislature_structure,,texto/fecha,,,69
+19_INSTITUCIONES,lower_house,,texto/fecha,,,68
+19_INSTITUCIONES,lower_seats,,numérico,,,68
+19_INSTITUCIONES,upper_house,,texto/fecha,,,40
+19_INSTITUCIONES,upper_seats,,numérico,,,40
+19_INSTITUCIONES,head_of_state_term_years,,numérico,,,53
+19_INSTITUCIONES,reelection_rule,,texto/fecha,,,59
+19_INSTITUCIONES,electoral_system_lower,,texto/fecha,,,68
+19_INSTITUCIONES,exec_selection,,texto/fecha,,,69
+19_INSTITUCIONES,emergency_powers_note,,texto/fecha,,,33
+19_INSTITUCIONES,central_bank,,texto/fecha,,,69
+19_INSTITUCIONES,central_bank_founded,,texto/fecha,,,69
+19_INSTITUCIONES,ref_date,,texto/fecha,,,69
+19_INSTITUCIONES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,69
+19_INSTITUCIONES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,69
+19_INSTITUCIONES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,69
+19b_REFORMAS_INSTITUCIONALES,reform_id,,texto/fecha,si,,40
+19b_REFORMAS_INSTITUCIONALES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,40
+19b_REFORMAS_INSTITUCIONALES,date,,texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,institution,,texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,reform_type,,texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,description,,texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,40
+19b_REFORMAS_INSTITUCIONALES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,40
+19c_REGIMEN_PANEL_VDEM,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,19857
+19c_REGIMEN_PANEL_VDEM,year,Año calendario,numérico,si,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_regime,Regimes of the world -- the RoW measure — unidad: Ordinal.; tipo: indice_latente_expertos,numérico,,,19760
+19c_REGIMEN_PANEL_VDEM,v2x_regime_amb,Regimes of the world -- the RoW measure with categories for ambiguous cases — unidad: Ordinal.; tipo: indice_latente_expertos,numérico,,,19760
+19c_REGIMEN_PANEL_VDEM,v2x_polyarchy,"Electoral democracy index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19777
+19c_REGIMEN_PANEL_VDEM,v2x_libdem,"Liberal democracy index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19534
+19c_REGIMEN_PANEL_VDEM,v2x_partipdem,"Participatory democracy index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19698
+19c_REGIMEN_PANEL_VDEM,v2x_delibdem,"Deliberative democracy index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19667
+19c_REGIMEN_PANEL_VDEM,v2x_egaldem,"Egalitarian democracy index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19667
+19c_REGIMEN_PANEL_VDEM,v2x_liberal,"Liberal component index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19605
+19c_REGIMEN_PANEL_VDEM,v2xcl_rol,"Equality before the law and individual liberty index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19851
+19c_REGIMEN_PANEL_VDEM,v2x_jucon,"Judicial constraints on the executive index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19617
+19c_REGIMEN_PANEL_VDEM,v2xlg_legcon,"Legislative constraints on the executive index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,17057
+19c_REGIMEN_PANEL_VDEM,v2x_freexp_altinf,"Freedom of Expression and Alternative Sources of Information index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19821
+19c_REGIMEN_PANEL_VDEM,v2x_frassoc_thick,"Freedom of association thick index   — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19856
+19c_REGIMEN_PANEL_VDEM,v2xel_frefair,"Clean elections index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19835
+19c_REGIMEN_PANEL_VDEM,v2x_suffr,"Share of population with suffrage — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19848
+19c_REGIMEN_PANEL_VDEM,v2x_elecoff,Elected officials index — unidad: Interval.; tipo: indice_latente_expertos,numérico,,,19835
+19c_REGIMEN_PANEL_VDEM,v2x_civlib,"Civil liberties index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19851
+19c_REGIMEN_PANEL_VDEM,v2x_clphy,"Physical violence index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19851
+19c_REGIMEN_PANEL_VDEM,v2x_clpol,"Political civil liberties index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_clpriv,"Private civil liberties index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19851
+19c_REGIMEN_PANEL_VDEM,v2x_corr,"Political corruption index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19624
+19c_REGIMEN_PANEL_VDEM,v2x_pubcorr,"Public sector corruption index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19733
+19c_REGIMEN_PANEL_VDEM,v2x_execorr,"Executive corruption index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19730
+19c_REGIMEN_PANEL_VDEM,v2x_rule,"Rule of law index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19781
+19c_REGIMEN_PANEL_VDEM,v2x_neopat,"Neopatrimonial Rule Index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19645
+19c_REGIMEN_PANEL_VDEM,v2x_ex_military,"Military dimension index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_ex_party,"Ruling party dimension index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_ex_hereditary,"Hereditary dimension index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_ex_confidence,"Confidence dimension index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19755
+19c_REGIMEN_PANEL_VDEM,v2x_ex_direlect,"Direct election dimension index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19825
+19c_REGIMEN_PANEL_VDEM,v2x_accountability,"Accountability index — unidad: We provide two versions of this index. The first is the normalized output from the the hierarchical latent variable analysis. It is on an unbounded interval scale. The second, denoted by *_osp, is a version of this output which we scale using a standard normal cumulative distribution function. It is thus scaled low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19719
+19c_REGIMEN_PANEL_VDEM,v2x_horacc,"Horizontal accountability index — unidad: We provide two versions of this index. The first is the normalized output from the the hierarchical latent variable analysis. It is on an unbounded interval scale. The second, denoted by *_osp, is a version of this output which we scale using a standard normal cumulative distribution function. It is thus scaled low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19719
+19c_REGIMEN_PANEL_VDEM,v2x_veracc,"Vertical accountability index — unidad: We provide two versions of this index. The first is the normalized output from the the hierarchical latent variable analysis. It is on an unbounded interval scale. The second, denoted by *_osp, is a version of this output which we scale using a standard normal cumulative distribution function. It is thus scaled low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19719
+19c_REGIMEN_PANEL_VDEM,v2x_diagacc,"Diagonal accountability index — unidad: We provide two versions of this index. The first is the normalized output from the the hierarchical latent variable analysis. It is on an unbounded interval scale. The second, denoted by *_osp, is a version of this output which we scale using a standard normal cumulative distribution function. It is thus scaled low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19719
+19c_REGIMEN_PANEL_VDEM,v2x_feduni,"Division of power index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_divparctrl,"Divided party control index — unidad: Interval, from low to high.; tipo: indice_latente_expertos",numérico,,,19638
+19c_REGIMEN_PANEL_VDEM,v2xps_party,"Party institutionalization index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,15042
+19c_REGIMEN_PANEL_VDEM,v2x_cspart,"Civil society participation index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19856
+19c_REGIMEN_PANEL_VDEM,v2xcs_ccsi,"Core civil society index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2x_gender,"Women political empowerment index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19184
+19c_REGIMEN_PANEL_VDEM,v2juhcind,"High court independence — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19662
+19c_REGIMEN_PANEL_VDEM,v2juncind,"Lower court independence — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19853
+19c_REGIMEN_PANEL_VDEM,v2jucorrdc,"Judicial corruption decision — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19675
+19c_REGIMEN_PANEL_VDEM,v2lgbicam,Legislature bicameral — unidad: Ordinal.; tipo: estimacion_latente_expertos,numérico,,,19847
+19c_REGIMEN_PANEL_VDEM,v2lgfemleg,Lower chamber female legislators — unidad: Interval.; tipo: estimacion_latente_expertos,numérico,,,14186
+19c_REGIMEN_PANEL_VDEM,v2elmulpar,"Elections multiparty — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,13258
+19c_REGIMEN_PANEL_VDEM,v2elfrfair,"Election free and fair — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,13254
+19c_REGIMEN_PANEL_VDEM,v2elintim,"Election government intimidation — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,13255
+19c_REGIMEN_PANEL_VDEM,v2psparban,"Party ban — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19856
+19c_REGIMEN_PANEL_VDEM,v2mecenefm,"Government censorship effort --- Media — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19700
+19c_REGIMEN_PANEL_VDEM,v2meharjrn,"Harassment of journalists — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19776
+19c_REGIMEN_PANEL_VDEM,v2csreprss,"CSO repression — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19857
+19c_REGIMEN_PANEL_VDEM,v2cacamps,"Political polarization — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19333
+19c_REGIMEN_PANEL_VDEM,v2caviol,"Political violence — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19352
+19c_REGIMEN_PANEL_VDEM,v2exl_legitideol,"Ideology  — unidad: Ordinal, converted to interval by the measurement model. ; tipo: estimacion_latente_expertos",numérico,,,18913
+19c_REGIMEN_PANEL_VDEM,v2exl_legitlead,"Person of the Leader — unidad: Ordinal, converted to interval by the measurement model. ; tipo: estimacion_latente_expertos",numérico,,,18927
+19c_REGIMEN_PANEL_VDEM,v2exl_legitperf,"Performance legitimation  — unidad: Ordinal, converted to interval by the measurement model. ; tipo: estimacion_latente_expertos",numérico,,,18914
+19c_REGIMEN_PANEL_VDEM,v2exl_legitratio,"Rational-legal legitimation  — unidad: Ordinal, converted to interval by the measurement model. ; tipo: estimacion_latente_expertos",numérico,,,18914
+19c_REGIMEN_PANEL_VDEM,v2smgovdom,"Government dissemination of false information domestic  — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,4636
+19c_REGIMEN_PANEL_VDEM,v2smfordom,"Foreign governments dissemination of false information  — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,4636
+19c_REGIMEN_PANEL_VDEM,e_fh_status,Status — unidad: Ordinal.; tipo: variable_externa_compilada,numérico,,,8332
+19c_REGIMEN_PANEL_VDEM,e_fh_pr,Political rights — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,8332
+19c_REGIMEN_PANEL_VDEM,e_fh_cl,Civil liberties — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,8332
+19c_REGIMEN_PANEL_VDEM,e_p_polity,Polity combined score — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12835
+19c_REGIMEN_PANEL_VDEM,e_polity2,Polity revised combined score — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,12621
+19c_REGIMEN_PANEL_VDEM,e_boix_regime,Democracy (BMR) — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,13425
+19c_REGIMEN_PANEL_VDEM,e_lexical_index,Lexical index — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,19325
+19c_REGIMEN_PANEL_VDEM,e_ti_cpi,Corruption perception index — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,2206
+19c_REGIMEN_PANEL_VDEM,e_wbgi_vae,Voice and accountability --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4430
+19c_REGIMEN_PANEL_VDEM,e_wbgi_pve,Political stability --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4430
+19c_REGIMEN_PANEL_VDEM,e_wbgi_gee,Government effectiveness — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4417
+19c_REGIMEN_PANEL_VDEM,e_wbgi_rqe,Regulatory quality --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4420
+19c_REGIMEN_PANEL_VDEM,e_wbgi_rle,Rule of law --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4430
+19c_REGIMEN_PANEL_VDEM,e_wbgi_cce,Control of corruption --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4430
+19c_REGIMEN_PANEL_VDEM,e_democracy_trans,Democratic transition — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,13425
+19c_REGIMEN_PANEL_VDEM,e_democracy_breakdowns,Democratic breakdowns — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,13425
+19c_REGIMEN_PANEL_VDEM,e_legparty,Number of Parties in legislature — unidad: Nominal.; tipo: variable_externa_compilada,numérico,,,11030
+19c_REGIMEN_PANEL_VDEM,e_coups,Coups — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,11214
+19c_REGIMEN_PANEL_VDEM,e_pt_coup,Number of successful coup attempts in a year — unidad: Numeric; tipo: variable_externa_compilada,numérico,,,11062
+19c_REGIMEN_PANEL_VDEM,e_pt_coup_attempts,Number of coups attempts in a year — unidad: Numeric; tipo: variable_externa_compilada,numérico,,,11062
+19c_REGIMEN_PANEL_VDEM,e_civil_war,Civil war — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,10423
+19d_PERIODOS_REGIMEN,regime_period_id,,texto/fecha,si,,486
+19d_PERIODOS_REGIMEN,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,486
+19d_PERIODOS_REGIMEN,gwf_casename,,texto/fecha,,,486
+19d_PERIODOS_REGIMEN,gwf_full_regimetype,,texto/fecha,,,486
+19d_PERIODOS_REGIMEN,gwf_startyr,,texto/fecha,,,280
+19d_PERIODOS_REGIMEN,gwf_endyr,,texto/fecha,,,223
+19d_PERIODOS_REGIMEN,gwf_howend,,texto/fecha,,,280
+19d_PERIODOS_REGIMEN,gwf_violent,,texto/fecha,,,280
+19d_PERIODOS_REGIMEN,start_event,,texto/fecha,,,280
+19d_PERIODOS_REGIMEN,end_event,,texto/fecha,,,280
+19d_PERIODOS_REGIMEN,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,486
+20_GOBIERNOS,spell_id,,texto/fecha,si,,5953
+20_GOBIERNOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,5953
+20_GOBIERNOS,person_id,,texto/fecha,,21_ACTORES.person_id,5953
+20_GOBIERNOS,leader_name,,texto/fecha,,,5953
+20_GOBIERNOS,start_date,Fecha de inicio ISO (AAAA[-MM[-DD]]),texto/fecha,,,5953
+20_GOBIERNOS,end_date,Fecha de término ISO; vacío = vigente/en curso,texto/fecha,,,5590
+20_GOBIERNOS,entry,,texto/fecha,,,3409
+20_GOBIERNOS,exit,,texto/fecha,,,3409
+20_GOBIERNOS,exitcode,,texto/fecha,,,3409
+20_GOBIERNOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,5953
+20_GOBIERNOS,dataset,,texto/fecha,,,5953
+20_GOBIERNOS,elected,,numérico,,,2544
+20_GOBIERNOS,military_career,,numérico,,,2544
+20_GOBIERNOS,government_type_start,,texto/fecha,,,2544
+20_GOBIERNOS,government_type_end,,texto/fecha,,,2544
+20_GOBIERNOS,archigos_link,,texto/fecha,,,2544
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,19857
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,year,Año calendario,numérico,si,,19857
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,head_of_state_name,,texto/fecha,,,19855
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,head_of_state_title,,texto/fecha,,,19855
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,hos_is_also_hog,,numérico,,,19856
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,head_of_gov_name,,texto/fecha,,,9696
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,head_of_gov_title,,texto/fecha,,,9696
+20b_JEFES_ESTADO_GOBIERNO_ANUAL,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,19857
+21_ACTORES,person_id,,texto/fecha,si,,3338
+21_ACTORES,name,,texto/fecha,,,3338
+21_ACTORES,full_name_reign,,texto/fecha,,,2220
+21_ACTORES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,3338
+21_ACTORES,role_type,,texto/fecha,,,3338
+21_ACTORES,birth_year,,numérico,,,2783
+21_ACTORES,gender,,texto/fecha,,,3338
+21_ACTORES,education_level,,numérico,,,2256
+21_ACTORES,military_service,,numérico,,,2364
+21_ACTORES,combat_experience,,numérico,,,2355
+21_ACTORES,rebel_experience,,numérico,,,2359
+21_ACTORES,military_career_reign,,numérico,,,2220
+21_ACTORES,n_spells,,numérico,,,2802
+21_ACTORES,attribute_note,,texto/fecha,,,3338
+21_ACTORES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,3338
+21b_RELACIONES_ACTORES,relation_id,,texto/fecha,si,,35
+21b_RELACIONES_ACTORES,actor_a,,texto/fecha,,,35
+21b_RELACIONES_ACTORES,actor_b,,texto/fecha,,,35
+21b_RELACIONES_ACTORES,relation_type,,texto/fecha,,,35
+21b_RELACIONES_ACTORES,start,,texto/fecha,,,29
+21b_RELACIONES_ACTORES,end,,texto/fecha,,,27
+21b_RELACIONES_ACTORES,description,,texto/fecha,,,35
+21b_RELACIONES_ACTORES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,35
+21b_RELACIONES_ACTORES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,35
+21b_RELACIONES_ACTORES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,35
+22_PARTIDOS,party_id,,texto/fecha,si,,3467
+22_PARTIDOS,party_name_en,,texto/fecha,,,3467
+22_PARTIDOS,party_short,,texto/fecha,,,3466
+22_PARTIDOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,3467
+22_PARTIDOS,first_election_year,,numérico,,,3467
+22_PARTIDOS,last_election_year,,numérico,,,3467
+22_PARTIDOS,n_elections,,numérico,,,3467
+22_PARTIDOS,max_vote_share_pct,,numérico,,,2487
+22_PARTIDOS,last_left_right,,numérico,,,1928
+22_PARTIDOS,last_populism_index,,numérico,,,1931
+22_PARTIDOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,3467
+22b_PARTIDOS_ELECCIONES,record_id,Identificador único de registro,texto/fecha,si,,11898
+22b_PARTIDOS_ELECCIONES,party_id,,texto/fecha,,22_PARTIDOS.party_id,11898
+22b_PARTIDOS_ELECCIONES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,11898
+22b_PARTIDOS_ELECCIONES,year,Año calendario,numérico,,,11898
+22b_PARTIDOS_ELECCIONES,party_name_en,,texto/fecha,,,11898
+22b_PARTIDOS_ELECCIONES,party_short,,texto/fecha,,,11897
+22b_PARTIDOS_ELECCIONES,vote_share_pct,,numérico,,,8598
+22b_PARTIDOS_ELECCIONES,seat_share_pct,,numérico,,,10824
+22b_PARTIDOS_ELECCIONES,seats,,numérico,,,10812
+22b_PARTIDOS_ELECCIONES,total_seats,,numérico,,,10824
+22b_PARTIDOS_ELECCIONES,left_right_position,,numérico,,,6303
+22b_PARTIDOS_ELECCIONES,populism_index,,numérico,,,6308
+22b_PARTIDOS_ELECCIONES,anti_pluralism_index,,numérico,,,6305
+22b_PARTIDOS_ELECCIONES,government_support,,numérico,,,6281
+22b_PARTIDOS_ELECCIONES,rejects_violence,,numérico,,,6307
+22b_PARTIDOS_ELECCIONES,immigration_position,,numérico,,,6305
+22b_PARTIDOS_ELECCIONES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,11898
+23_ELECCIONES,electionid,,texto/fecha,si,,2974
+23_ELECCIONES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,2974
+23_ELECCIONES,nelda_country,,texto/fecha,,,2974
+23_ELECCIONES,year,Año calendario,numérico,,,2974
+23_ELECCIONES,types,,texto/fecha,,,2974
+23_ELECCIONES,nelda1,,texto/fecha,,,2974
+23_ELECCIONES,nelda2,,texto/fecha,,,2974
+23_ELECCIONES,nelda3,,texto/fecha,,,2973
+23_ELECCIONES,nelda4,,texto/fecha,,,2974
+23_ELECCIONES,nelda5,,texto/fecha,,,2974
+23_ELECCIONES,nelda6,,texto/fecha,,,2472
+23_ELECCIONES,nelda7,,texto/fecha,,,1650
+23_ELECCIONES,nelda8,,texto/fecha,,,1711
+23_ELECCIONES,nelda9,,texto/fecha,,,1754
+23_ELECCIONES,nelda10,,texto/fecha,,,2974
+23_ELECCIONES,nelda11,,texto/fecha,,,2974
+23_ELECCIONES,nelda12,,texto/fecha,,,2866
+23_ELECCIONES,nelda13,,texto/fecha,,,2842
+23_ELECCIONES,nelda14,,texto/fecha,,,2758
+23_ELECCIONES,nelda15,,texto/fecha,,,2763
+23_ELECCIONES,nelda16,,texto/fecha,,,2917
+23_ELECCIONES,nelda17,,texto/fecha,,,2970
+23_ELECCIONES,nelda18,,texto/fecha,,,2971
+23_ELECCIONES,nelda19,,texto/fecha,,,2953
+23_ELECCIONES,nelda20,,texto/fecha,,,2973
+23_ELECCIONES,nelda21,,texto/fecha,,,1542
+23_ELECCIONES,nelda22,,texto/fecha,,,471
+23_ELECCIONES,nelda23,,texto/fecha,,,315
+23_ELECCIONES,nelda24,,texto/fecha,,,2519
+23_ELECCIONES,nelda25,,texto/fecha,,,2959
+23_ELECCIONES,nelda26,,texto/fecha,,,1082
+23_ELECCIONES,nelda27,,texto/fecha,,,2720
+23_ELECCIONES,nelda28,,texto/fecha,,,1845
+23_ELECCIONES,nelda29,,texto/fecha,,,2968
+23_ELECCIONES,nelda30,,texto/fecha,,,417
+23_ELECCIONES,nelda31,,texto/fecha,,,416
+23_ELECCIONES,nelda32,,texto/fecha,,,1613
+23_ELECCIONES,nelda33,,texto/fecha,,,2965
+23_ELECCIONES,nelda34,,texto/fecha,,,2321
+23_ELECCIONES,nelda35,,texto/fecha,,,43
+23_ELECCIONES,nelda36,,texto/fecha,,,43
+23_ELECCIONES,nelda37,,texto/fecha,,,45
+23_ELECCIONES,nelda38,,texto/fecha,,,42
+23_ELECCIONES,nelda39,,texto/fecha,,,2031
+23_ELECCIONES,nelda40,,texto/fecha,,,714
+23_ELECCIONES,nelda41,,texto/fecha,,,713
+23_ELECCIONES,nelda42,,texto/fecha,,,714
+23_ELECCIONES,nelda43,,texto/fecha,,,2971
+23_ELECCIONES,nelda44,,texto/fecha,,,2972
+23_ELECCIONES,nelda45,,texto/fecha,,,2972
+23_ELECCIONES,nelda46,,texto/fecha,,,1111
+23_ELECCIONES,nelda47,,texto/fecha,,,1010
+23_ELECCIONES,nelda48,,texto/fecha,,,2909
+23_ELECCIONES,nelda49,,texto/fecha,,,2905
+23_ELECCIONES,nelda50,,texto/fecha,,,2923
+23_ELECCIONES,nelda51,,texto/fecha,,,2789
+23_ELECCIONES,nelda52,,texto/fecha,,,2789
+23_ELECCIONES,nelda53,,texto/fecha,,,2972
+23_ELECCIONES,nelda54,,texto/fecha,,,2587
+23_ELECCIONES,nelda55,,texto/fecha,,,2718
+23_ELECCIONES,nelda56,,texto/fecha,,,2715
+23_ELECCIONES,nelda57,,texto/fecha,,,2972
+23_ELECCIONES,nelda58,,texto/fecha,,,2925
+23_ELECCIONES,date,,texto/fecha,,,2974
+23_ELECCIONES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,2974
+23b_RESULTADOS_RECIENTES,result_id,,texto/fecha,si,,64
+23b_RESULTADOS_RECIENTES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,64
+23b_RESULTADOS_RECIENTES,date,,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,election_type,,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,round,,numérico,,,64
+23b_RESULTADOS_RECIENTES,candidate_or_party,,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,party_or_coalition,,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,votes,,numérico,,,39
+23b_RESULTADOS_RECIENTES,pct,,numérico,,,63
+23b_RESULTADOS_RECIENTES,seats,,numérico,,,26
+23b_RESULTADOS_RECIENTES,total_seats,,numérico,,,26
+23b_RESULTADOS_RECIENTES,turnout_pct,,numérico,,,55
+23b_RESULTADOS_RECIENTES,result_type,,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,winner,,numérico,,,64
+23b_RESULTADOS_RECIENTES,notes,,texto/fecha,,,25
+23b_RESULTADOS_RECIENTES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,64
+23b_RESULTADOS_RECIENTES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,64
+23c_ELECCIONES_VDEM,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,4056
+23c_ELECCIONES_VDEM,year,Año calendario,numérico,si,,4056
+23c_ELECCIONES_VDEM,v2eltype_0,Election type [categoría 0] — unidad: indicador binario (categoría 0 de v2eltype); tipo: estimacion_latente_expertos,numérico,,,4056
+23c_ELECCIONES_VDEM,v2eltype_1,Election type [categoría 1] — unidad: indicador binario (categoría 1 de v2eltype); tipo: estimacion_latente_expertos,numérico,,,4056
+23c_ELECCIONES_VDEM,v2eltype_6,Election type [categoría 6] — unidad: indicador binario (categoría 6 de v2eltype); tipo: estimacion_latente_expertos,numérico,,,4056
+23c_ELECCIONES_VDEM,v2eltype_7,Election type [categoría 7] — unidad: indicador binario (categoría 7 de v2eltype); tipo: estimacion_latente_expertos,numérico,,,4056
+23c_ELECCIONES_VDEM,v2eltrnout,Election turnout — unidad: ver codebook V-Dem; tipo: estimacion_latente_expertos,numérico,,,3007
+23c_ELECCIONES_VDEM,v2elturnhog,Election HOG turnover ordinal — unidad: Ordinal.; tipo: estimacion_latente_expertos,numérico,,,3929
+23c_ELECCIONES_VDEM,v2elturnhos,Election HOS turnover ordinal — unidad: Ordinal.; tipo: estimacion_latente_expertos,numérico,,,3933
+23c_ELECCIONES_VDEM,v2elmulpar,"Elections multiparty — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,4054
+23c_ELECCIONES_VDEM,v2elfrfair,"Election free and fair — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,4053
+23c_ELECCIONES_VDEM,v2elintim,"Election government intimidation — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,4054
+23c_ELECCIONES_VDEM,v2x_elecreg,Electoral regime index — unidad: Dichotomous.; tipo: indice_latente_expertos,numérico,,,4056
+24_DIPLOMACIA,treaty_id,,texto/fecha,si,,60
+24_DIPLOMACIA,name,,texto/fecha,,,60
+24_DIPLOMACIA,treaty_type,,texto/fecha,,,60
+24_DIPLOMACIA,signed,,texto/fecha,,,60
+24_DIPLOMACIA,in_force,,texto/fecha,,,55
+24_DIPLOMACIA,terminated,,texto/fecha,,,11
+24_DIPLOMACIA,parties,,texto/fecha,,,60
+24_DIPLOMACIA,depositary_org,,texto/fecha,,,23
+24_DIPLOMACIA,key_provisions,,texto/fecha,,,50
+24_DIPLOMACIA,status,,texto/fecha,,,60
+24_DIPLOMACIA,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,60
+24_DIPLOMACIA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,60
+24_DIPLOMACIA,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,60
+24b_ORGANIZACIONES,org_id,,texto/fecha,si,,20
+24b_ORGANIZACIONES,name,,texto/fecha,,,20
+24b_ORGANIZACIONES,org_type,,texto/fecha,,,20
+24b_ORGANIZACIONES,founded,,texto/fecha,,,20
+24b_ORGANIZACIONES,headquarters,,texto/fecha,,,15
+24b_ORGANIZACIONES,purpose,,texto/fecha,,,12
+24b_ORGANIZACIONES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,20
+24c_MEMBRESIAS,membership_id,,texto/fecha,si,,218
+24c_MEMBRESIAS,org_id,,texto/fecha,,24b_ORGANIZACIONES.org_id,218
+24c_MEMBRESIAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,218
+24c_MEMBRESIAS,joined,,texto/fecha,,,218
+24c_MEMBRESIAS,left,,texto/fecha,,,15
+24c_MEMBRESIAS,notes,,texto/fecha,,,95
+24c_MEMBRESIAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,218
+24c_MEMBRESIAS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,218
+24c_MEMBRESIAS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,218
+24d_SANCIONES,sanction_id,,texto/fecha,si,,20
+24d_SANCIONES,name,,texto/fecha,,,20
+24d_SANCIONES,sender,,texto/fecha,,,20
+24d_SANCIONES,target_ids,,texto/fecha,,,20
+24d_SANCIONES,start,,texto/fecha,,,20
+24d_SANCIONES,end,,texto/fecha,,,10
+24d_SANCIONES,sanction_type,,texto/fecha,,,20
+24d_SANCIONES,legal_basis,,texto/fecha,,,20
+24d_SANCIONES,scope,,texto/fecha,,,20
+24d_SANCIONES,trigger,,texto/fecha,,,20
+24d_SANCIONES,effects_note,,texto/fecha,,,18
+24d_SANCIONES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,20
+24d_SANCIONES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,20
+24d_SANCIONES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,20
+25_RELACIONES_ESTADOS,relationship_id,,texto/fecha,si,,12547
+25_RELACIONES_ESTADOS,actor_a_id,,texto/fecha,,03_ESTADOS.country_id,12545
+25_RELACIONES_ESTADOS,actor_b_id,,texto/fecha,,03_ESTADOS.country_id,12545
+25_RELACIONES_ESTADOS,relationship_type,,texto/fecha,,,12547
+25_RELACIONES_ESTADOS,start_date,Fecha de inicio ISO (AAAA[-MM[-DD]]),texto/fecha,,,12547
+25_RELACIONES_ESTADOS,end_date,Fecha de término ISO; vacío = vigente/en curso,texto/fecha,,,4390
+25_RELACIONES_ESTADOS,intensity_or_status,,texto/fecha,,,12475
+25_RELACIONES_ESTADOS,evidence,,texto/fecha,,,12547
+25_RELACIONES_ESTADOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,12547
+26_HISTORIA,event_id,,texto/fecha,si,,96
+26_HISTORIA,start_date,Fecha de inicio ISO (AAAA[-MM[-DD]]),texto/fecha,,,96
+26_HISTORIA,end_date,Fecha de término ISO; vacío = vigente/en curso,texto/fecha,,,93
+26_HISTORIA,country_ids,,texto/fecha,,,96
+26_HISTORIA,geographic_scope,,texto/fecha,,,96
+26_HISTORIA,event_type,,texto/fecha,,,96
+26_HISTORIA,event_name,,texto/fecha,,,96
+26_HISTORIA,description,,texto/fecha,,,91
+26_HISTORIA,antecedents,,texto/fecha,,,65
+26_HISTORIA,immediate_consequences,,texto/fecha,,,87
+26_HISTORIA,long_term_consequences,,texto/fecha,,,70
+26_HISTORIA,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,96
+26_HISTORIA,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,96
+26_HISTORIA,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,96
+26b_CRISIS_ECONOMICAS,crisis_id,,texto/fecha,si,,40
+26b_CRISIS_ECONOMICAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,40
+26b_CRISIS_ECONOMICAS,crisis_type,,texto/fecha,,,40
+26b_CRISIS_ECONOMICAS,start,,texto/fecha,,,40
+26b_CRISIS_ECONOMICAS,end,,texto/fecha,,,38
+26b_CRISIS_ECONOMICAS,peak_indicator,,texto/fecha,,,40
+26b_CRISIS_ECONOMICAS,description,,texto/fecha,,,15
+26b_CRISIS_ECONOMICAS,policy_response,,texto/fecha,,,36
+26b_CRISIS_ECONOMICAS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,40
+26b_CRISIS_ECONOMICAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,40
+26b_CRISIS_ECONOMICAS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,40
+26c_CAMBIOS_MONETARIOS,change_id,,texto/fecha,si,,30
+26c_CAMBIOS_MONETARIOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,30
+26c_CAMBIOS_MONETARIOS,date,,texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,old_currency,,texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,new_currency,,texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,conversion_or_regime,,texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,description,,texto/fecha,,,12
+26c_CAMBIOS_MONETARIOS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,30
+26c_CAMBIOS_MONETARIOS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,30
+29_ADMIN_PUBLICA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,19857
+29_ADMIN_PUBLICA,year,Año calendario,numérico,si,,19857
+29_ADMIN_PUBLICA,v2stfisccap,State fiscal source of revenue — unidad: Ordinal.; tipo: estimacion_latente_expertos,numérico,,,18558
+29_ADMIN_PUBLICA,v2stcritrecadm,Criteria for appointment decisions in the state administration — unidad: Ordinal.; tipo: estimacion_latente_expertos,numérico,,,18442
+29_ADMIN_PUBLICA,v2stcritapparm,Criteria for appointment decisions in the armed forces — unidad: ver codebook V-Dem; tipo: estimacion_latente_expertos,numérico,,,18414
+29_ADMIN_PUBLICA,v2svstterr,State authority over territory — unidad: Interval.; tipo: estimacion_latente_expertos,numérico,,,14309
+29_ADMIN_PUBLICA,v2svdomaut,"Domestic autonomy — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19856
+29_ADMIN_PUBLICA,v2svinlaut,"International autonomy — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19856
+29_ADMIN_PUBLICA,v2xnp_regcorr,"Regime corruption — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19754
+29_ADMIN_PUBLICA,e_wbgi_gee,Government effectiveness — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4417
+29_ADMIN_PUBLICA,e_wbgi_rqe,Regulatory quality --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4420
+30_EMPRESAS,company_id,,texto/fecha,si,,56
+30_EMPRESAS,name,,texto/fecha,,,56
+30_EMPRESAS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,56
+30_EMPRESAS,sector,,texto/fecha,,,56
+30_EMPRESAS,ownership_current,,texto/fecha,,,56
+30_EMPRESAS,founded,,texto/fecha,,,56
+30_EMPRESAS,ownership_events,,texto/fecha,,,24
+30_EMPRESAS,strategic_role,,texto/fecha,,,34
+30_EMPRESAS,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,56
+30_EMPRESAS,ref_date,,texto/fecha,,,56
+30_EMPRESAS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,56
+30_EMPRESAS,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,56
+28b_REPRESION_VIOLENCIA,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,19857
+28b_REPRESION_VIOLENCIA,year,Año calendario,numérico,si,,19857
+28b_REPRESION_VIOLENCIA,v2clkill,"Freedom from political killings — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19851
+28b_REPRESION_VIOLENCIA,v2cltort,"Freedom from torture — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19857
+28b_REPRESION_VIOLENCIA,v2csreprss,"CSO repression — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19857
+28b_REPRESION_VIOLENCIA,v2cacamps,"Political polarization — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19333
+28b_REPRESION_VIOLENCIA,v2caviol,"Political violence — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19352
+28b_REPRESION_VIOLENCIA,v2x_clphy,"Physical violence index — unidad: Interval, from low to high (0-1).; tipo: indice_latente_expertos",numérico,,,19851
+28b_REPRESION_VIOLENCIA,e_wbgi_pve,Political stability --- estimate — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,4430
+28b_REPRESION_VIOLENCIA,e_civil_war,Civil war — unidad: ver codebook V-Dem / fuente original de la variable externa; tipo: variable_externa_compilada,numérico,,,10423
+28b_REPRESION_VIOLENCIA,v2pepwrses,"Power distributed by socioeconomic position — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19856
+28b_REPRESION_VIOLENCIA,v2pepwrsoc,"Power distributed by social group — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19856
+28b_REPRESION_VIOLENCIA,v2clrgunev,"Subnational civil liberties unevenness — unidad: Ordinal, converted to interval by the measurement model.; tipo: estimacion_latente_expertos",numérico,,,19828
+31c_CATASTROFES,disaster_id,,texto/fecha,si,,25
+31c_CATASTROFES,country_ids,,texto/fecha,,,25
+31c_CATASTROFES,date,,texto/fecha,,,25
+31c_CATASTROFES,disaster_type,,texto/fecha,,,25
+31c_CATASTROFES,name,,texto/fecha,,,25
+31c_CATASTROFES,deaths_low,,numérico,,,25
+31c_CATASTROFES,deaths_high,,numérico,,,25
+31c_CATASTROFES,economic_loss_usd_bn,,numérico,,,9
+31c_CATASTROFES,loss_basis,,texto/fecha,,,9
+31c_CATASTROFES,notes,,texto/fecha,,,14
+31c_CATASTROFES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,25
+31c_CATASTROFES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,25
+31c_CATASTROFES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,25
+31b_EMISIONES_OWID,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,si,03_ESTADOS.country_id,38556
+31b_EMISIONES_OWID,year,Año calendario,numérico,si,,38556
+31b_EMISIONES_OWID,owid_co2,co2 — unidad: millones de t CO2; tipo: dato_compilado,numérico,,,23408
+31b_EMISIONES_OWID,owid_co2_per_capita,co2_per_capita — unidad: t CO2 por persona; tipo: dato_compilado,numérico,,,22945
+31b_EMISIONES_OWID,owid_cumulative_co2,cumulative_co2 — unidad: millones de t CO2; tipo: dato_compilado,numérico,,,23408
+31b_EMISIONES_OWID,owid_share_global_co2,share_global_co2 — unidad: % del total mundial; tipo: dato_compilado,numérico,,,23408
+31b_EMISIONES_OWID,owid_consumption_co2,consumption_co2 — unidad: millones de t CO2 (basado en consumo); tipo: dato_compilado,numérico,,,4064
+31b_EMISIONES_OWID,owid_co2_per_gdp,co2_per_gdp — unidad: kg CO2 por USD PPA (2011); tipo: dato_compilado,numérico,,,14672
+31b_EMISIONES_OWID,owid_total_ghg,total_ghg — unidad: millones de t CO2eq; tipo: dato_compilado,numérico,,,34825
+31b_EMISIONES_OWID,owid_methane,methane — unidad: millones de t CO2eq; tipo: dato_compilado,numérico,,,34825
+31b_EMISIONES_OWID,owid_nitrous_oxide,nitrous_oxide — unidad: millones de t CO2eq; tipo: dato_compilado,numérico,,,35175
+31b_EMISIONES_OWID,owid_temperature_change_from_ghg,temperature_change_from_ghg — unidad: °C; tipo: dato_compilado,numérico,,,37410
+33_EVENTOS_CAUSALES,causal_id,,texto/fecha,si,,30
+33_EVENTOS_CAUSALES,source_variable,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,target_variable,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,relation,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,mechanism,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,necessary_conditions,,texto/fecha,,,22
+33_EVENTOS_CAUSALES,time_lag,,texto/fecha,,,27
+33_EVENTOS_CAUSALES,supporting_cases,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,contradicting_cases,,texto/fecha,,,24
+33_EVENTOS_CAUSALES,evidence_class,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,certainty,Nivel de certeza: Alta | Media | Baja,texto/fecha,,,30
+33_EVENTOS_CAUSALES,engine_applicability,,texto/fecha,,,30
+33_EVENTOS_CAUSALES,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,30
+33_EVENTOS_CAUSALES,verification_status,VERIF_SESION | CONOC_EXPERTO | DATASET (ver 00_LEEME),texto/fecha,,,30
+34_ESCENARIOS,scenario_id,,texto/fecha,si,,20
+34_ESCENARIOS,name,,texto/fecha,,,20
+34_ESCENARIOS,start_date,Fecha de inicio ISO (AAAA[-MM[-DD]]),texto/fecha,,,20
+34_ESCENARIOS,reference_region,,texto/fecha,,,20
+34_ESCENARIOS,focus_country_ids,,texto/fecha,,,20
+34_ESCENARIOS,political_situation,,texto/fecha,,,16
+34_ESCENARIOS,economic_conditions,,texto/fecha,,,19
+34_ESCENARIOS,military_capabilities,,texto/fecha,,,9
+34_ESCENARIOS,international_relations,,texto/fecha,,,17
+34_ESCENARIOS,active_conflict_ids,,texto/fecha,,,19
+34_ESCENARIOS,social_situation,,texto/fecha,,,5
+34_ESCENARIOS,institutions,,texto/fecha,,,6
+34_ESCENARIOS,recent_events,,texto/fecha,,,10
+34_ESCENARIOS,threats,,texto/fecha,,,16
+34_ESCENARIOS,opportunities,,texto/fecha,,,13
+34_ESCENARIOS,missing_data,,texto/fecha,,,6
+34_ESCENARIOS,notes,,texto/fecha,,,3
+34_ESCENARIOS,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,20
+32_INDICADORES_COMPARADOS,record_id,Identificador único de registro,texto/fecha,si,,22349
+32_INDICADORES_COMPARADOS,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,22349
+32_INDICADORES_COMPARADOS,benchmark_year,,numérico,,,22349
+32_INDICADORES_COMPARADOS,indicator_id,,texto/fecha,,,22349
+32_INDICADORES_COMPARADOS,indicator_label,,texto/fecha,,,22349
+32_INDICADORES_COMPARADOS,value,Valor numérico o categórico,numérico,,,22349
+32_INDICADORES_COMPARADOS,data_year,Año del dato efectivamente usado,numérico,,,22349
+32_INDICADORES_COMPARADOS,source_sheet,,texto/fecha,,,22349
+34b_ESCENARIOS_PAISES,record_id,Identificador único de registro,texto/fecha,si,,3465
+34b_ESCENARIOS_PAISES,scenario_id,,texto/fecha,,34_ESCENARIOS.scenario_id,3465
+34b_ESCENARIOS_PAISES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,3465
+34b_ESCENARIOS_PAISES,indicator_id,,texto/fecha,,,3465
+34b_ESCENARIOS_PAISES,indicator_label,,texto/fecha,,,3465
+34b_ESCENARIOS_PAISES,value,Valor numérico o categórico,numérico,,,2559
+34b_ESCENARIOS_PAISES,data_year,Año del dato efectivamente usado,numérico,,,2559
+34b_ESCENARIOS_PAISES,age_years,,numérico,,,2559
+34b_ESCENARIOS_PAISES,data_status,,texto/fecha,,,3465
+34b_ESCENARIOS_PAISES,source_sheet,,texto/fecha,,,3465
+35_PARAMETROS_JUEGO,parameter_id,,texto/fecha,si,,10
+35_PARAMETROS_JUEGO,name,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,description,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,scale_unit,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,historical_variables,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,method,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,assumptions_limitations,,texto/fecha,,,9
+35_PARAMETROS_JUEGO,confidence,Nivel de confianza: Alta | Media | Baja,texto/fecha,,,10
+35_PARAMETROS_JUEGO,value_class,,texto/fecha,,,10
+35_PARAMETROS_JUEGO,source_ids,Fuentes (FK a 37_FUENTES; varias separadas por ';'),texto/fecha,,,10
+35b_PARAMETROS_VALORES,record_id,Identificador único de registro,texto/fecha,si,,1650
+35b_PARAMETROS_VALORES,scenario_id,,texto/fecha,,34_ESCENARIOS.scenario_id,1650
+35b_PARAMETROS_VALORES,country_id,Identificador de país/entidad (FK a 03_ESTADOS),texto/fecha,,03_ESTADOS.country_id,1650
+35b_PARAMETROS_VALORES,parameter_id,,texto/fecha,,35_PARAMETROS_JUEGO.parameter_id,1650
+35b_PARAMETROS_VALORES,value,Valor numérico o categórico,texto/fecha,,,1250
+35b_PARAMETROS_VALORES,basis_data_year,,numérico,,,1250
+35b_PARAMETROS_VALORES,basis_values,,texto/fecha,,,1650
+35b_PARAMETROS_VALORES,valid_for_date,,texto/fecha,,,1650
+35b_PARAMETROS_VALORES,value_class,,texto/fecha,,,1650
+35b_PARAMETROS_VALORES,status,,texto/fecha,,,1650

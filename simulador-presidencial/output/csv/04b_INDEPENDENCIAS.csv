@@ -1,0 +1,218 @@
+record_id,country_id,name,ColRuler_id,IndFrom_id,independence_date,independence_violent_code,independence_type_code,SecFrom_id,secession_date,Into_id,absorbed_date,notes,source_ids
+IND0001,USA,United States of America,GBR,GBR,1783-09,1,2,,,,,Independence dated as Treaty of Paris (ending American revolution),SRC_ICOW_COL
+IND0002,CAN,Canada,GBR,GBR,1867-07,0,2,,,,,Independent but not a COW system member from 1867-1920 due to British control of foreign policy,SRC_ICOW_COL
+IND0003,BHS,Bahamas,GBR,GBR,1973-07,0,2,,,,,,SRC_ICOW_COL
+IND0004,CUB,Cuba,ESP,USA,1902-05,0,2,,,,,COW system interrupted 9/1906-1/1909 (US occup); indep from USA coded as nonviolent (but long revolt against Spanish rule before USA acquired Cuba),SRC_ICOW_COL
+IND0005,HTI,Haiti,FRA,FRA,1804-01,1,2,,,,,COW system interrupted 7/1915-8/1934 (US occup),SRC_ICOW_COL
+IND0006,DOM,Dominican Republic,ESP,HTI,1844-02,1,3,HTI,1844-02,,,COW system interrupted 11/1916-9/1924 (US occup); terr chg data incl 1865 indep from Spain; ruled by Haiti (not a COW system member) from 1822 to 1844 revolution,SRC_ICOW_COL
+IND0007,JAM,Jamaica,GBR,GBR,1962-08,0,2,,,,,,SRC_ICOW_COL
+IND0008,TTO,Trinidad and Tobago,GBR,GBR,1962-08,0,2,,,,,Part of West Indies Federation 1958-1962,SRC_ICOW_COL
+IND0009,BRB,Barbados,GBR,GBR,1966-11,0,2,,,,,,SRC_ICOW_COL
+IND0010,DMA,Dominica,GBR,GBR,1978-11,0,2,,,,,Settled by French; taken by Britain in 18th century,SRC_ICOW_COL
+IND0011,GRD,Grenada,GBR,GBR,1974-02,0,2,,,,,Founded by French but ceded to British in 1763,SRC_ICOW_COL
+IND0012,LCA,St. Lucia,GBR,GBR,1979-02,0,2,,,,,French abandoned claim in 1814 Treaty of Paris,SRC_ICOW_COL
+IND0013,VCT,St. Vincent and Grenadines,GBR,GBR,1979-10,0,2,,,,,Includes northern Grenadine Islands (incl Union and Bequia),SRC_ICOW_COL
+IND0014,ATG,Antigua and Barbuda,GBR,GBR,1981-11,0,2,,,,,Includes Antigua/Barbuda/Redonda islands,SRC_ICOW_COL
+IND0015,KNA,St. Kitts and Nevis,GBR,GBR,1983-09,0,2,,,,,British consolidated control in 1783; St. Kitts & Nevis united in 1882,SRC_ICOW_COL
+IND0016,MEX,Mexico,ESP,ESP,1821-09,1,2,,,,,,SRC_ICOW_COL
+IND0017,BLZ,Belize,GBR,GBR,1981-09,0,2,,,,,,SRC_ICOW_COL
+IND0018,GTM,Guatemala,ESP,,1839-04,1,3,,1839-04,,,Seceded from United States/Provinces of Cent.Am. (not in COW system; G&W 7/1/1823-12/31/1839),SRC_ICOW_COL
+IND0019,HND,Honduras,ESP,,1838-11,1,3,,1838-11,,,Seceded from United States/Provinces of Cent.Am. (not in COW system; G&W 7/1/1823-12/31/1839),SRC_ICOW_COL
+IND0020,SLV,El Salvador,ESP,,1840-04,1,3,,1840-04,,,Seceded from United States/Provinces of Cent.Am. (not in COW system; G&W 7/1/1823-12/31/1839),SRC_ICOW_COL
+IND0021,NIC,Nicaragua,ESP,,1838-04,1,3,,1838-04,,,Seceded from United States/Provinces of Cent.Am. (not in COW system; G&W 7/1/1823-12/31/1839),SRC_ICOW_COL
+IND0022,CRI,Costa Rica,ESP,,1838-11,1,3,,1838-11,,,Seceded from United States/Provinces of Cent.Am. (not in COW system; G&W 7/1/1823-12/31/1839),SRC_ICOW_COL
+IND0023,PAN,Panama,ESP,COL,1903-11,1,3,COL,1903-11,,,Was part of Colombia until US supported 1903 rebellion,SRC_ICOW_COL
+IND0024,COL,Colombia,ESP,ESP,1819-12,1,2,,,,,I (and COW) consider Gran Colombia (G&W system: 8/30/1821-9/22/1830) same entity as Colombia,SRC_ICOW_COL
+IND0025,VEN,Venezuela,ESP,COL,1830-01,0,3,COL,1830-01,,,Seceded from Gran Colombia (not in COW system; G&W: 8/30/1821-9/22/1830),SRC_ICOW_COL
+IND0026,GUY,Guyana,ESP,GBR,1966-05,0,2,,,,,Founded by Dutch but ceded to British in 1814,SRC_ICOW_COL
+IND0027,SUR,Suriname,ESP,NLD,1975-11,0,2,,,,,Ceded by British to Dutch in 1667 Treaty of Breda,SRC_ICOW_COL
+IND0028,ECU,Ecuador,ESP,COL,1830-05,0,3,COL,1830-05,,,Seceded from Gran Colombia (not in COW system; in G&W system 8/30/1821-9/22/1830),SRC_ICOW_COL
+IND0029,PER,Peru,ESP,ESP,1824-12,1,2,BOL,1839-02,,,Part of Peru-Bolivia Confederation from 1836-9 (not in COW or G&W system) - Terr chg data also codes 1839 secession,SRC_ICOW_COL
+IND0030,BRA,Brazil,PRT,PRT,1822-09,0,2,,,,,,SRC_ICOW_COL
+IND0031,BOL,Bolivia,ESP,ESP,1825-08,1,2,,,,,Part of Peru-Bolivia Confederation from 1836-9 (not in COW or G&W system); was part of Peru and later Arg. under Spanish rule,SRC_ICOW_COL
+IND0032,PRY,Paraguay,ESP,ESP,1811-05,1,2,,,,,COW system membership interrupted 6/1870-6/1876 (Arg/Braz occup); was part of Argentina under Spanish rule,SRC_ICOW_COL
+IND0033,CHL,Chile,ESP,ESP,1818-02,1,2,,,,,,SRC_ICOW_COL
+IND0034,ARG,Argentina,ESP,ESP,1816-07,1,2,,,,,,SRC_ICOW_COL
+IND0035,URY,Uruguay,ESP,BRA,1828-08,1,3,BRA,1828-08,,,Colonized by Spain (ruled from Argentina); annexed by Brazil from 1820-7 as Cisplatine province,SRC_ICOW_COL
+IND0036,GBR,United Kingdom,,,1066-12,1,1,,,,,,SRC_ICOW_COL
+IND0037,IRL,Ireland,GBR,GBR,1922-12,1,3,GBR,1922-12,,,Ruled as part of UK (not as a colony),SRC_ICOW_COL
+IND0038,NLD,Netherlands,,ESP,1581-07,1,2,,,,,COW system interrupted 7/1940-6/1945 (Ger occup); ruled by Austrian Hapsburgs until 1472 & Spanish Hapsburgs until 1581,SRC_ICOW_COL
+IND0039,BEL,Belgium,NLD,NLD,1830-10,1,3,NLD,1830-10,,,COW system interrupted 5/1940-6/1945 (Ger occup); seceded from Netherlands in 1830-31 (recognized by Dutch in 1839),SRC_ICOW_COL
+IND0040,LUX,Luxembourg,NLD,NLD,1867-05,0,2,NLD,1867-05,,,COW system interrupted 5/1940-9/1944 (Ger occup); part went to Belgium in 1839; remaining Dutch part became independent in 1867,SRC_ICOW_COL
+IND0041,FRA,France,,,9491-05,1,1,,,,,COW system interrupted 11/1942-8/1944 (Ger occup),SRC_ICOW_COL
+IND0042,MCO,Monaco,,,1419-06,0,1,,,,,Annexed to France 1793-1814 / protected by Sardinia 1815-60,SRC_ICOW_COL
+IND0043,LIE,Liechtenstein,,,1806-07,1,4,,,,,Independent due to Napoleonic partition of Holy Roman Empire; in Austrian customs union to 1918 / Swiss customs union since 1924,SRC_ICOW_COL
+IND0044,CHE,Switzerland,,,1291-08,0,1,,,,,,SRC_ICOW_COL
+IND0045,ESP,Spain,,,1479-01,1,1,,,,,,SRC_ICOW_COL
+IND0046,AND,Andorra,,,1278-09,0,1,,,,,Nominal French & Spanish suzerainty not enough to code as colonization,SRC_ICOW_COL
+IND0047,PRT,Portugal,,,1139-07,0,1,,,,,Dependency of Spain 1580-1640,SRC_ICOW_COL
+IND0048,HVR,Hanover,,,1814-10,1,1,,,DEU,1866-07,Merged into unified Germany,SRC_ICOW_COL
+IND0049,BVR,Bavaria,,,1505-07,1,1,,,DEU,1871-01,Merged into unified Germany,SRC_ICOW_COL
+IND0050,DEU,Germany (Prussia),,,1618-07,0,1,,,,,COW system interrupted 5/1945-10/1990 (split into East-West Germany); Polity codes indep of Germany (violent unification) in 1871 / COW codes unified Germany as continuation of #255 Prussia,SRC_ICOW_COL
+IND0051,DEU,German Fed. Rep. (West),,DEU,1949-09,1,4,DEU,1949-09,DEU,1990-10,Temporary 1945-90 split of Germany following WWII,SRC_ICOW_COL
+IND0052,DDR,German Dem. Rep. (East),,DEU,1949-10,1,4,DEU,1949-10,DEU,1990-10,Temporary 1945-90 split of Germany following WWII,SRC_ICOW_COL
+IND0053,BDN,Baden,,,1771-10,0,1,,,DEU,1870-12,Merged into unified Germany,SRC_ICOW_COL
+IND0054,SXN,Saxony,,,1806-12,1,4,,,DEU,1867-04,Formed by Napoleonic partition of Holy Roman Empire; merged into unified Germany,SRC_ICOW_COL
+IND0055,WRG,Wuerttemburg,,,1806-01,1,4,,,DEU,1870-12,Formed by Napoleonic partition of Holy Roman Empire; merged into unified Germany,SRC_ICOW_COL
+IND0056,HKS,Hesse - Kassel (Electoral),,,1806-08,1,4,,,DEU,1866-07,Formed by Napoleonic partition of Holy Roman Empire; merged into unified Germany,SRC_ICOW_COL
+IND0057,HDM,Hesse - Darmstadt (Grand Ducal),,,1806-08,1,4,,,DEU,1867-04,Formed by Napoleonic partition of Holy Roman Empire; merged into unified Germany,SRC_ICOW_COL
+IND0058,MCL,Mecklenburg-Schwerin,,,1621-01,0,1,,,DEU,1867-04,Merged into unified Germany,SRC_ICOW_COL
+IND0059,POL,Poland,DEU,RUS,1918-11,1,3,,,,,COW system interrupted 9/1939-6/1945 (German/Russian occup),SRC_ICOW_COL
+IND0060,AUT,Austria-Hungary,,,1282-12,1,1,,,,,Polity2 coding is for #305 (Austria) but begins in 1800 (so refers to Austria-Hungary at first); COW uses #300 for Austria-Hungary and then #305/310 once they split,SRC_ICOW_COL
+IND0061,AUT,Austria,,AUT,1918-11,1,4,AUT,1918-11,,,Emerged from breakup of Hapsburg Empire; COW system interrupted 3/1939-4/1945 (German annexation) & 4/1945-7/1955 (Allied occupation);  Terr chg & Polity2 treat as continuation of Austria-Hungary / COW system codes as separate state number,SRC_ICOW_COL
+IND0062,HUN,Hungary,,AUT,1918-11,1,4,AUT,1918-11,,,Emerged from breakup of Hapsburg Empire; terr chg codes as seceding from #305 Austria (not #300 Austria-Hungary),SRC_ICOW_COL
+IND0063,CZE,Czechoslovakia,AUT,AUT,1918-10,1,4,,,,,COW system interrupted 3/1939-5/1945 (Ger occup); terr chg also codes 1945 return; emerged from breakup of Hapsburg Empire after WWI,SRC_ICOW_COL
+IND0064,CZE,Czech Republic,AUT,CZE,1993-01,0,4,CZE,1993-01,,,"Emerged from breakup of Czechoslovakia (""Velvet Divorce"")",SRC_ICOW_COL
+IND0065,SVK,Slovakia,AUT,CZE,1993-01,0,4,CZE,1993-01,,,"Emerged from breakup of Czechoslovakia (""Velvet Divorce""); terr chg includes 1939 secession from Czechoslovakia under German rule (didn't enter system)",SRC_ICOW_COL
+IND0066,ITA,Italy (Sardinia),,,1720-01,0,1,,,,,COW codes unified Italy as continuation of #325 Sardinia / Polity2 codes Sardinia separately,SRC_ICOW_COL
+IND0067,PPS,Papal States,,,1503-01,1,1,,,ITA,1860-11,Merged into unified Italy,SRC_ICOW_COL
+IND0068,TWS,Two Sicilies,,,1734-01,1,1,,,ITA,1861-02,Merged into unified Italy,SRC_ICOW_COL
+IND0069,SMR,San Marino,,,3010-01,0,1,,,,,,SRC_ICOW_COL
+IND0070,MDN,Modena,,,1452-05,0,1,,,ITA,1860-03,Merged into unified Italy,SRC_ICOW_COL
+IND0071,PRM,Parma,,,1545-09,0,1,,,ITA,1860-03,Merged into unified Italy,SRC_ICOW_COL
+IND0072,TSC,Tuscany,,,1569-08,0,1,,,ITA,1860-03,Merged into unified Italy,SRC_ICOW_COL
+IND0073,MLT,Malta,GBR,GBR,1964-09,0,2,,,,,Captured from France by British in 1800 & kept in 1814 Treaty of Paris,SRC_ICOW_COL
+IND0074,ALB,Albania,TUR,TUR,1913-07,1,2,,,,,COW system interrupted 4/1939-11/1944 (Ital/Ger occup); terr chg also codes 1945 return,SRC_ICOW_COL
+IND0075,MNE,Montenegro,TUR,SRB,2006-06,0,3,SRB,2006-06,,,Seceded from Serbia & Montenegro (former Yugoslavia),SRC_ICOW_COL
+IND0076,MKD,Macedonia,TUR,SRB,1991-09,0,3,SRB,1991-09,,,"""Former Yugoslav Republic of..."" due to Greek clam to Macedonian name",SRC_ICOW_COL
+IND0077,HRV,Croatia,AUT,SRB,1991-06,1,3,SRB,1991-06,,,Polity2 codes earlier indep in 1830,SRC_ICOW_COL
+IND0078,SRB,Yugoslavia / Serbia & Montenegro,TUR,TUR,1878-07,1,2,,,,,COW system interrupted 4/1941-10/1944 (Axis occup); G&W incl Montenegro (1868-1915) & Serbia (1878-1915) as separate states,SRC_ICOW_COL
+IND0079,BIH,Bosnia and Herzegovina,TUR,SRB,1992-03,1,3,SRB,1992-03,,,Acquired by Austria from Turkey in 1878 Treaty of Berlin,SRC_ICOW_COL
+IND0080,XKX,Kosovo,TUR,SRB,2008-02,1,3,SRB,2008-02,,,Seceded from Serbia following civil war & NATO intervention,SRC_ICOW_COL
+IND0081,SVN,Slovenia,AUT,SRB,1991-06,1,3,SRB,1991-06,,,,SRC_ICOW_COL
+IND0082,GRC,Greece,TUR,TUR,1829-08,1,2,,,,,COW system interrupted 4/1941-10/1944 (Ger occup); won independence from Ottoman Empire 1821-9 war (COW: joins system 1/1/1828),SRC_ICOW_COL
+IND0083,CYP,Cyprus,GBR,GBR,1960-08,1,2,,,,,,SRC_ICOW_COL
+IND0084,BGR,Bulgaria,TUR,TUR,1878-03,1,2,,,,,,SRC_ICOW_COL
+IND0085,MDA,Moldova,TUR,RUS,1991-12,0,3,,,,,,SRC_ICOW_COL
+IND0086,ROU,Romania,TUR,TUR,1878-07,1,2,,,,,,SRC_ICOW_COL
+IND0087,RUS,Russia (USSR),,,1457-01,1,1,,,,,Central republic of USSR (1922-91),SRC_ICOW_COL
+IND0088,EST,Estonia,RUS,RUS,1918-11,1,2,RUS,1991-09,,,Absorbed into USSR from 6/1940 until seceded 9/1991; acquired by Russia from Sweden in 1710; broke off from Russia in 1918,SRC_ICOW_COL
+IND0089,LVA,Latvia,RUS,RUS,1918-11,1,2,RUS,1991-09,,,Absorbed into USSR from 6/1940 until seceded 9/1991; seceded from Russia 1/1918,SRC_ICOW_COL
+IND0090,LTU,Lithuania,RUS,RUS,1918-02,1,2,RUS,1991-09,,,Absorbed into USSR from 6/1940 until seceded 9/1991; seceded from Russia 12/19198,SRC_ICOW_COL
+IND0091,UKR,Ukraine,RUS,RUS,1991-12,0,3,,,,,Terr chg also includes 1918 violent secession (but not system entry); acquired by Russia in 17th-18th centuries from Lithuania/Poland,SRC_ICOW_COL
+IND0092,BLR,Belarus,RUS,RUS,1991-12,0,3,,,,,Under Polish rule until obtained by Russia in partitions of Poland,SRC_ICOW_COL
+IND0093,ARM,Armenia,TUR,RUS,1991-12,0,3,,,,,Terr chg also includes 1918 violent secession (but not system entry); previously under Ottoman/Persian rule; parts ceded to Russia in 1828-89 and 1878,SRC_ICOW_COL
+IND0094,GEO,Georgia,RUS,RUS,1991-12,0,3,,,,,Terr chg also includes 1918 violent secession (but not system entry); previously under Armenia-Persian-Turkish control before annexed by Russia in 1801,SRC_ICOW_COL
+IND0095,AZE,Azerbaijan,RUS,RUS,1991-12,0,3,,,,,Terr chg also includes 1918 violent secession (but not system entry); under Ottoman/Persian rule until Russian conquest in early 19th century,SRC_ICOW_COL
+IND0096,FIN,Finland,,RUS,1917-12,1,2,,,,,Ceded by Sweden to Russia in 1809 after war,SRC_ICOW_COL
+IND0097,SWE,Sweden,,,1523-06,1,4,,,,,Broke away from Union of Kalmar (with Denmark/Norway) in 1523,SRC_ICOW_COL
+IND0098,NOR,Norway,,SWE,1905-06,0,3,SWE,1905-06,,,COW system interrupted 4/1940-5/1945 (Ger occup),SRC_ICOW_COL
+IND0099,DNK,Denmark,,,9800-01,0,1,,,,,COW system interrupted 4/1940-5/1945 (Ger occup),SRC_ICOW_COL
+IND0100,ISL,Iceland,,DNK,1944-06,0,3,DNK,1944-06,,,,SRC_ICOW_COL
+IND0101,CPV,Cape Verde,PRT,PRT,1975-07,0,2,,,,,Associated with Guinea-Bissau from 1976-81,SRC_ICOW_COL
+IND0102,STP,Sao Tome and Principe,PRT,PRT,1975-07,0,2,,,,,,SRC_ICOW_COL
+IND0103,GNB,Guinea-Bissau,PRT,PRT,1974-09,0,2,,,,,,SRC_ICOW_COL
+IND0104,GNQ,Equatorial Guinea,ESP,ESP,1968-10,0,2,,,,,,SRC_ICOW_COL
+IND0105,GMB,Gambia,GBR,GBR,1965-02,0,2,,,,,Part of limited 1982-89 Senegambia confederation with Senegal,SRC_ICOW_COL
+IND0106,MLI,Mali,FRA,FRA,1960-09,0,2,,,,,,SRC_ICOW_COL
+IND0107,SEN,Senegal,FRA,MLI,1960-08,0,2,MLI,1960-08,,,Part of Mali Federation (1959-60) & Senegambia (1982-9),SRC_ICOW_COL
+IND0108,BEN,Benin (Dahomey),FRA,FRA,1960-08,0,2,,,,,Part of French West Africa,SRC_ICOW_COL
+IND0109,MRT,Mauritania,FRA,FRA,1960-11,0,2,,,,,Part of French West Africa,SRC_ICOW_COL
+IND0110,NER,Niger,FRA,FRA,1960-08,0,2,,,,,Part of French West Africa,SRC_ICOW_COL
+IND0111,CIV,Cote d'Ivoire (Ivory Coast),FRA,FRA,1960-08,0,2,,,,,Part of French West Africa,SRC_ICOW_COL
+IND0112,GIN,Guinea,FRA,FRA,1958-10,0,2,,,,,Administered as Rivieres du Sud with Senegal until 1893; part of French W Africa,SRC_ICOW_COL
+IND0113,BFA,Burkina Faso (Upper Volta),FRA,FRA,1960-08,0,2,,,,,Part of Upper Senegal-Niger colony (with Mali),SRC_ICOW_COL
+IND0114,LBR,Liberia,,,1847-07,0,1,,,,,,SRC_ICOW_COL
+IND0115,SLE,Sierra Leone,GBR,GBR,1961-04,0,2,,,,,,SRC_ICOW_COL
+IND0116,GHA,Ghana,GBR,GBR,1957-03,0,2,,,,,,SRC_ICOW_COL
+IND0117,TGO,Togo,FRA,FRA,1960-04,0,2,,,,,British Togoland (mandated part of German Togo) joined indep. Ghana,SRC_ICOW_COL
+IND0118,CMR,Cameroon,FRA,FRA,1960-01,1,2,,,,,French/British League/UN trust - British sector split between Nigeria & Cameroon,SRC_ICOW_COL
+IND0119,NGA,Nigeria,GBR,GBR,1960-10,0,2,,,,,,SRC_ICOW_COL
+IND0120,GAB,Gabon,FRA,FRA,1960-08,0,2,,,,,Part of French Equatorial Africa,SRC_ICOW_COL
+IND0121,CAF,Central African Republic,FRA,FRA,1960-10,0,2,,,,,Part of Ubangi-Shari-Chad 1906-10 & French Equatorial Africa 1910-20,SRC_ICOW_COL
+IND0122,TCD,Chad,FRA,FRA,1960-08,0,2,,,,,Part of French Equatorial Africa 1910-20,SRC_ICOW_COL
+IND0123,COG,Congo (Brazzaville),FRA,FRA,1960-08,0,2,,,,,,SRC_ICOW_COL
+IND0124,COD,Dem. Rep. Congo (Zaire; Kinshasa),BEL,BEL,1960-06,1,2,,,,,,SRC_ICOW_COL
+IND0125,UGA,Uganda,GBR,GBR,1962-10,0,2,,,,,,SRC_ICOW_COL
+IND0126,KEN,Kenya,GBR,GBR,1963-12,1,2,,,,,,SRC_ICOW_COL
+IND0127,TZA,Tanzania (Tanganyika),GBR,GBR,1961-12,0,2,,,,,Tanganyika during mandate; united w/ Zanzibar to form Tanzania in 1964,SRC_ICOW_COL
+IND0128,ZZB,Zanzibar,GBR,GBR,1963-12,0,2,,,TZA,1964-04,Merged into Tanzania (with Tanganyika) after less than one year of independence,SRC_ICOW_COL
+IND0129,BDI,Burundi,BEL,BEL,1962-07,0,2,,,,,Part of German East Africa until granted to Belgium as League mandate / UN trust,SRC_ICOW_COL
+IND0130,RWA,Rwanda,BEL,BEL,1962-07,1,2,,,,,In German East Africa; Belgium administered with Burundi as Ruanda-Urundi,SRC_ICOW_COL
+IND0131,SOM,Somalia,ITA,ITA,1960-07,0,2,,,,,Sources disagree on whether British Somaliland incl in 1950-60 Italian mandate,SRC_ICOW_COL
+IND0132,DJI,Djibouti,FRA,FRA,1977-06,0,2,,,,,,SRC_ICOW_COL
+IND0133,ETH,Ethiopia,,,1855-02,1,1,,,,,COW system interrupted 5/1936-5/1941 (Ital occup); terr chg only includes 1941 restoration,SRC_ICOW_COL
+IND0134,ERI,Eritrea,ITA,ETH,1993-05,1,3,ETH,1993-05,,,British occupied in 1941 & administered under UN trust from 1949-52; seceded from Ethiopia after long war,SRC_ICOW_COL
+IND0135,AGO,Angola,PRT,PRT,1975-11,1,2,,,,,,SRC_ICOW_COL
+IND0136,MOZ,Mozambique,PRT,PRT,1975-06,1,2,,,,,,SRC_ICOW_COL
+IND0137,ZMB,Zambia,GBR,GBR,1964-10,0,2,,,,,Part of Fed. of Rhodesia & Nyasaland,SRC_ICOW_COL
+IND0138,ZWE,Zimbabwe (Rhodesia),GBR,GBR,1965-11,0,2,,,,,,SRC_ICOW_COL
+IND0139,MWI,Malawi,GBR,GBR,1964-07,0,2,,,,,,SRC_ICOW_COL
+IND0140,ZAF,South Africa,GBR,GBR,1910-05,0,2,,,,,Ceded by Dutch to British in 1814,SRC_ICOW_COL
+IND0141,NAM,Namibia,GBR,ZAF,1990-03,1,2,,,,,Mandated to South Africa in 1920 - mandate withdrawn in 1966,SRC_ICOW_COL
+IND0142,LSO,Lesotho,GBR,GBR,1966-10,0,2,,,,,,SRC_ICOW_COL
+IND0143,BWA,Botswana,GBR,GBR,1966-09,0,2,,,,,,SRC_ICOW_COL
+IND0144,SWZ,Swaziland,GBR,GBR,1968-09,0,2,,,,,,SRC_ICOW_COL
+IND0145,MDG,Madagascar (Malagasy Rep.),FRA,FRA,1960-06,0,2,,,,,G&W add earlier indep from 1/1/1816-8/5/1896,SRC_ICOW_COL
+IND0146,COM,Comoros,FRA,FRA,1975-07,0,2,,,,,Includes Grande Comore/Anjouan/Moheli Islands (Mayotte remained French),SRC_ICOW_COL
+IND0147,MUS,Mauritius,FRA,GBR,1968-03,0,2,,,,,French took from Dutch 1710; captured by British 1810 / formally ceded in 1814,SRC_ICOW_COL
+IND0148,SYC,Seychelles,GBR,GBR,1976-06,0,2,,,,,England took from France 1794 - later ruled as dependency from Mauritius,SRC_ICOW_COL
+IND0149,MAR,Morocco,FRA,,1666-06,1,1,,,,,Independence interrupted by 1911-56 French occupation; France and Spain both colonized Morocco (much of Spanish Morocco is now Western Sahara),SRC_ICOW_COL
+IND0150,DZA,Algeria,FRA,FRA,1962-07,1,2,,,,,G&W add earlier indep from 1/1/1816-7/5/1830,SRC_ICOW_COL
+IND0151,TUN,Tunisia,TUR,TUR,1591-01,1,2,,,,,Independence interrupted by 1881-1956 French occupation,SRC_ICOW_COL
+IND0152,LBY,Libya,TUR,GBR,1951-12,0,2,,,,,G&W add earlier indep from 1/1/1816-12/31/1834,SRC_ICOW_COL
+IND0153,SDN,Sudan,GBR,GBR,1956-01,0,2,,,,,Terr chg also codes as becoming indep in 1884 (but not joining system); jointly administered by Egyptian-British condominium (1899-indep),SRC_ICOW_COL
+IND0154,SSD,South Sudan,GBR,SDN,2011-07,1,3,SDN,2011-07,,,Seceded from Sudan by referendum after long civil war,SRC_ICOW_COL
+IND0155,IRN,Iran (Persia),,,1502-01,1,1,,,,,,SRC_ICOW_COL
+IND0156,TUR,Turkey,,,1453-05,1,1,,,,,Polity2 treats 1923 Ottoman-Turkey transition to produce a new state (violent partition),SRC_ICOW_COL
+IND0157,IRQ,Iraq,TUR,GBR,1932-10,0,2,,,,,Occupied by British from 1917-20 before becoming League mandate,SRC_ICOW_COL
+IND0158,EGY,Egypt (original),TUR,TUR,1831-11,0,2,,,,,Also occupied by British from 1882-1922 (rejoins COW 5/1937 & G/W 2/1922),SRC_ICOW_COL
+IND0159,SYR,Syria,TUR,FRA,1946-04,1,2,EGY,1961-09,,,COW system membership interrupted by 1958-61 merger into UAR (G/W leave Syria in system); French mandate (Levant States,SRC_ICOW_COL
+IND0160,LBN,Lebanon,TUR,FRA,1943-11,0,2,,,,,French mandate (Levant States) included both Lebanon & Syria,SRC_ICOW_COL
+IND0161,JOR,Jordan,TUR,GBR,1946-05,0,2,,,,,Occupied by British 1918-23 before becoming League mandate,SRC_ICOW_COL
+IND0162,ISR,Israel,TUR,GBR,1948-05,1,2,,,,,Occupied by British from 1918-23 before becoming League mandate,SRC_ICOW_COL
+IND0163,SAU,Saudi Arabia,TUR,,1926-01,1,1,,,,,Created by Ibn Saud 1927; united Hejaz (freed from Turks 1924-5 ) & Nejd (1906),SRC_ICOW_COL
+IND0164,YEM,Yemen Arab Rep. (Sanaa / North),TUR,TUR,1918-10,1,2,,,YEM,1990-05,Merged into unified Yemen,SRC_ICOW_COL
+IND0165,YEM,Yemen,GBR,YEM,1990-05,0,1,,,,,G&W merge #680 into #678 instead of creating #679; created by merger of (North) Yemen Arab Rep + (South) Yemen PDR,SRC_ICOW_COL
+IND0166,YMD,Yemen People's Rep. (Aden / South),GBR,GBR,1967-11,1,2,,,YEM,1990-05,Merged into unified Yemen;  pre-UK Ottoman connection unclear,SRC_ICOW_COL
+IND0167,KWT,Kuwait,GBR,GBR,1961-06,0,2,,,,,,SRC_ICOW_COL
+IND0168,BHR,Bahrain,GBR,GBR,1971-08,0,2,,,,,,SRC_ICOW_COL
+IND0169,QAT,Qatar,GBR,GBR,1971-09,0,2,,,,,Terr chg also codes as becoming indep in 1915 (but not joining system),SRC_ICOW_COL
+IND0170,ARE,United Arab Emirates,GBR,GBR,1971-12,0,2,,,,,"Terr chg includes the indep case as well as an ""initial system membership list"" entrry (???)",SRC_ICOW_COL
+IND0171,OMN,Oman,PRT,TUR,1741-01,1,2,,,,,Close relationship with UK - but apparently not colony- or protectorate-level,SRC_ICOW_COL
+IND0172,AFG,Afghanistan,GBR,GBR,1919-08,0,2,,,,,G&W add earlier indep from 1/1/1816-12/30/1888,SRC_ICOW_COL
+IND0173,TKM,Turkmenistan,RUS,RUS,1991-12,0,3,,,,,,SRC_ICOW_COL
+IND0174,TJK,Tajikistan,RUS,RUS,1991-12,0,3,,,,,,SRC_ICOW_COL
+IND0175,KGZ,Kyrgyzstan,RUS,RUS,1991-12,0,3,,,,,,SRC_ICOW_COL
+IND0176,UZB,Uzbekistan,RUS,RUS,1991-12,0,3,,,,,Gradually occupied by Russia over 19th century,SRC_ICOW_COL
+IND0177,KAZ,Kazakhstan,RUS,RUS,1991-12,0,3,,,,,Acquired by Russia over 18th-19th centuries after Mongol rule,SRC_ICOW_COL
+IND0178,CHN,China (PRC),,,1368-01,1,1,,,,,,SRC_ICOW_COL
+IND0179,MNG,Mongolia,CHN,CHN,1921-08,1,3,,,,,,SRC_ICOW_COL
+IND0180,TWN,Taiwan (ROC),,CHN,1949-12,1,3,CHN,1949-12,,,"Both China & Taiwan consider selves sole rulers of ""One China"" (1949-99)",SRC_ICOW_COL
+IND0181,KOR,Korea (unified),,,9180-01,1,1,,,,,Lost statehood when acquired as Japanese protectorate after Russo-Japanese War,SRC_ICOW_COL
+IND0182,PRK,North Korea (DPRK),JPN,KOR,1948-09,1,4,,,,,Not coded as leaving unified Korea because 1945 Korea was Jap. protectorate,SRC_ICOW_COL
+IND0183,KOR,South Korea (ROK),JPN,KOR,1948-08,1,4,,,,,Not coded as leaving unified Korea because 1945 Korea was Jap. protectorate,SRC_ICOW_COL
+IND0184,JPN,Japan,,,1590-01,1,1,,,,,COW system interrupted 8/1945-4/1952 (Allied occup); terr chg codes a separate indep in 1952,SRC_ICOW_COL
+IND0185,IND,India,GBR,GBR,1947-08,0,2,,,,,,SRC_ICOW_COL
+IND0186,BTN,Bhutan,GBR,IND,1947-08,0,2,,,,,Ruled by Chinese before British/Indians; British end date=indep of India,SRC_ICOW_COL
+IND0187,PAK,Pakistan,GBR,GBR,1947-08,0,2,,,,,,SRC_ICOW_COL
+IND0188,BGD,Bangladesh,GBR,PAK,1971-12,1,3,PAK,1971-12,,,"Terr chg includes the indep case as well as an ""initial system membership list"" entrry (???)",SRC_ICOW_COL
+IND0189,MMR,Myanmar (Burma),GBR,GBR,1948-01,0,2,,,,,G&W add earlier indep from 1/1/1816-12/31/1885; ruled as a province of British India from late 19th century to 1937,SRC_ICOW_COL
+IND0190,LKA,Sri Lanka (Ceylon),GBR,GBR,1948-02,0,2,,,,,,SRC_ICOW_COL
+IND0191,MDV,Maldive Islands,GBR,GBR,1965-07,0,2,,,,,,SRC_ICOW_COL
+IND0192,NPL,Nepal,,,1768-09,1,1,,,,,,SRC_ICOW_COL
+IND0193,THA,Thailand,,,1769-01,1,1,,,,,,SRC_ICOW_COL
+IND0194,KHM,Cambodia,FRA,FRA,1953-11,1,2,,,,,Ruled by Siam before French acquisition in 1863,SRC_ICOW_COL
+IND0195,LAO,Laos,FRA,FRA,1953-10,1,2,,,,,Claimed / invaded by Thais before French control established in 1893,SRC_ICOW_COL
+IND0196,VNM,Vietnam/Dem.Rep.Vietnam (North),FRA,FRA,1954-07,1,2,,,,,G&W add earlier indep from 1/1/1816-1/1/1893,SRC_ICOW_COL
+IND0197,VDR,Republic of Vietnam (South),FRA,FRA,1954-07,1,2,,,VNM,1975-04,Absorbed by Vietnam after Vietnam War,SRC_ICOW_COL
+IND0198,MYS,Malaysia,GBR,GBR,1957-08,0,2,,,,,,SRC_ICOW_COL
+IND0199,SGP,Singapore,GBR,MYS,1965-08,0,3,MYS,1965-08,,,Briefly merged with Malaysia 1962-5,SRC_ICOW_COL
+IND0200,BRN,Brunei,GBR,GBR,1984-01,0,2,,,,,,SRC_ICOW_COL
+IND0201,PHL,Philippines,ESP,USA,1946-07,0,2,,,,,US took possession from Spain after Spanish-American War,SRC_ICOW_COL
+IND0202,IDN,Indonesia,NLD,NLD,1949-12,1,2,,,,,,SRC_ICOW_COL
+IND0203,TLS,East Timor (Timor-Leste),ESP,IDN,2002-05,1,2,,,,,Formerly Portuguese Timor,SRC_ICOW_COL
+IND0204,AUS,Australia,GBR,GBR,1901-01,0,1,,,,,,SRC_ICOW_COL
+IND0205,PNG,Papua New Guinea,GBR,AUS,1975-09,0,2,,,,,Australia took over British Papua 1905 / mandated German New Guinea 1920,SRC_ICOW_COL
+IND0206,NZL,New Zealand,GBR,GBR,1907-09,0,1,,,,,,SRC_ICOW_COL
+IND0207,VUT,Vanuatu,GBR,FRA,1980-07,0,2,,,,,Britain & France set up joint condominium in 1906,SRC_ICOW_COL
+IND0208,SLB,Solomon Islands,GBR,GBR,1978-07,0,2,,,,,Includes Guadalcanal & many other islands,SRC_ICOW_COL
+IND0209,KIR,Kiribati,GBR,GBR,1979-07,0,2,,,,,Fomerly the Gilbert Islands,SRC_ICOW_COL
+IND0210,TUV,Tuvalu,GBR,GBR,1978-10,0,2,,,,,Formerly the Ellice Islands,SRC_ICOW_COL
+IND0211,FJI,Fiji,GBR,GBR,1970-10,0,2,,,,,,SRC_ICOW_COL
+IND0212,TON,Tonga,GBR,GBR,1970-06,0,2,,,,,British protectorate beginning in 1900,SRC_ICOW_COL
+IND0213,NRU,Nauru,AUS,AUS,1968-01,0,2,,,,,In German New Guinea 1888-1914; Australia ruled under League & UN mandate,SRC_ICOW_COL
+IND0214,MHL,Marshall Islands,USA,USA,1986-10,0,2,,,,,Mandated to Japan (1920) / US trust territory (1947); both occupied islands first,SRC_ICOW_COL
+IND0215,PLW,Palau,USA,USA,1994-10,0,2,,,,,Includes about 100 small islands on west end of Caroline Islands,SRC_ICOW_COL
+IND0216,FSM,Fed. States of Micronesia,USA,USA,1986-11,0,2,,,,,Includes Caroline Islands except Palau,SRC_ICOW_COL
+IND0217,WSM,Samoa (Western Samoa),NZL,NZL,1962-01,0,2,,,,,Samoa divided between US & Germany in 1899,SRC_ICOW_COL
